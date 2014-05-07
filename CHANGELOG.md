@@ -1,5 +1,5 @@
 # APSMediaPlayer CHANGELOG
 
-## 0.1.0
+## 1.7.1
 
-Initial release.
+* Initial release deployed with Cocoapods
