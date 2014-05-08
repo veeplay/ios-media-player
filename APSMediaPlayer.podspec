@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "5.0"
   s.requires_arc = true
 
-  s.resources            = "Assets/*.bundle"
-  s.source_files         = "Headers/*.h§"
-  s.public_header_files  = "Headers/*.h"
-  s.preserve_paths       = "libAPSMediaPlayer.a"
-  s.library              = "APSMediaPlayer"
-  s.xcconfig             =  { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/APSMediaPlayer"' }
+  s.source_files         = 'Headers/*.h'
+  s.resources            = 'Assets/*.bundle'
+  s.public_header_files  = 'Headers/*.h'
+  s.preserve_paths       = 'libAPSMediaPlayer.a'
+  s.library              = 'APSMediaPlayer'
+  s.xcconfig             =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/APSMediaPlayer"' }
 
   s.frameworks = "AVFoundation", "MediaPlayer"
   s.dependency "KAProgressLabel", "~> 1.2"
