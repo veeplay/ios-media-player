@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = "http://appscend.com"
   s.license          = 'Commercial'
   s.author           = { "Gabi Dobocan" => "gabi@appscend.com" }
-  s.source           = { :git => "appscend@cocoapods.appscend.net:appscendvideoplayer.git", :tag => s.version.to_s }
+  s.source           = { :git => "cocoapods.appscend.net:appscendvideoplayer.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '5.0'
   s.requires_arc = true
