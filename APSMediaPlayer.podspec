@@ -7,17 +7,18 @@ Pod::Spec.new do |s|
   s.author           = { "Gabi Dobocan" => "gabi@appscend.com" }
   s.source           = { :git => "cocoapods.appscend.net:appscendvideoplayer.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '5.0'
+  s.platform     = :ios, "5.0"
   s.requires_arc = true
 
-  s.resources            = 'Assets/*.bundle'
-  s.public_header_files  = 'Headers/*.h'
-  s.preserve_paths       = 'libAPSMediaPlayer.a'
-  s.library              = 'APSMediaPlayer'
-  s.xcconfig             =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/APSMediaPlayer"' }
+  s.resources            = "Assets/*.bundle"
+  s.source_files         = "Headers/*.h§"
+  s.public_header_files  = "Headers/*.h"
+  s.preserve_paths       = "libAPSMediaPlayer.a"
+  s.library              = "APSMediaPlayer"
+  s.xcconfig             =  { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/APSMediaPlayer"' }
 
-  s.frameworks = 'AVFoundation', 'MediaPlayer'
-  s.dependency 'KAProgressLabel', '~> 1.2'
-  s.dependency 'TBXML', '~> 1.5'
+  s.frameworks = "AVFoundation", "MediaPlayer"
+  s.dependency "KAProgressLabel", "~> 1.2"
+  s.dependency "TBXML', '~> 1.5'
   s.dependency 'TSMiniWebBrowser'
 end
