@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "APSMediaPlayer"
-  s.version          = "1.7.1"
+  s.version          = "1.7.2"
   s.summary          = "Appscend Media Player"
   s.homepage         = "http://appscend.com"
   s.license          = 'Commercial'
@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
 
   s.frameworks = "AVFoundation", "MediaPlayer"
   s.dependency "KAProgressLabel", "~> 1.2"
-  s.dependency "TBXML', '~> 1.5'
-  s.dependency 'TSMiniWebBrowser'
+  s.dependency "TBXML", "~> 1.5"
+  s.dependency "TSMiniWebBrowser"
 end
