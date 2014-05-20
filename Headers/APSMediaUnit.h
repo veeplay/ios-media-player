@@ -11,6 +11,10 @@
 #import "APSMediaOverlay.h"
 #import "APSMediaTrackableObject.h"
 
+#define kAPSMediaUnitTitle @"com.appscend.mp.unit.title"
+#define kAPSMediaUnitDescription @"com.appscend.mp.unit.description"
+#define kAPSMediaUnitImageURL @"com.appscend.mp.unit.image"
+
 typedef enum {
     APSMediaControlsDisplayBottom,
     APSMediaControlsDisplayTop,
@@ -32,6 +36,7 @@ typedef enum {
 @property (nonatomic) BOOL shouldAutoplay;
 @property (nonatomic) BOOL canReplay;
 @property (nonatomic) BOOL debug;
+@property (nonatomic) NSMutableDictionary *metadata;
 
 - (APSMediaUnit*)initWithURL:(NSURL*)url;
 

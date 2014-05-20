@@ -11,6 +11,12 @@
 @protocol KRAdapter;
 @class APSMediaOverlay;
 
+typedef enum {
+    APSHideOverlayOnWebviewDismiss,
+    APSSkipUnitOnWebviewDismiss,
+    APSDoNothingOnWebviewDismiss
+} APSWebviewDismissedAction;
+
 @protocol APSMediaPlayerOverlayController <KRAdapter>
 
 - (void)startWithParameters:(id)parameters;
@@ -33,4 +39,5 @@
 - (void)setParentOverlay:(APSMediaOverlay*)overlay;
 - (void)fullscreenToggled;
 - (void)cleanup;
+- (APSWebviewDismissedAction)onWebviewDismiss;
 @end

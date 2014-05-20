@@ -30,15 +30,18 @@ typedef enum {
     APSVASTNonLinear
 } APSVASTConfigurationOptions;
 
+@interface APSVASTRequest : NSObject
+@property (nonatomic) NSURL *URL;
+@property (nonatomic) APSVASTConfigurationOptions adType;
+@property (nonatomic) NSString *adOffset;
+@end
+
 @interface APSVASTMediaBuilderPlugin : NSObject <APSMediaBuilderPlugin> {
     __weak APSMediaBuilder *_builder;
 }
 
 @property (nonatomic) NSURL *vmapURL;
-
-@property (nonatomic) NSURL *vastURL;
-@property (nonatomic) APSVASTConfigurationOptions vastAdType;
-@property (nonatomic) NSString *vastAdOffset;
+@property (nonatomic) NSArray *vastRequests;
 
 @property (nonatomic) APSMediaControlsDisplay controlsDisplayForAds;
 @property (nonatomic) NSDictionary *controlsParametersForAds;

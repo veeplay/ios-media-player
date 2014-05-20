@@ -30,8 +30,9 @@
 + (APSMediaOverlayPosition)positionFromString:(NSString*)position;
 + (MPMovieScalingMode)scalingModeFromString:(NSString*)string;
 
-- (BOOL)configureFromData:(NSData*)data;
 - (BOOL)configureFromURL:(NSURL*)url;
+- (void)configureFromURL:(NSURL*)url onComplete:(void (^)())block;
+- (BOOL)configureFromData:(NSData*)data;
 - (BOOL)configureFromDictionary:(NSDictionary*)configuration;
 
 - (void)addPlugin:(NSObject<APSMediaBuilderPlugin>*)plugin;
@@ -39,5 +40,6 @@
 - (APSMediaBuilder*)initWithMediaUnit:(APSMediaUnit*)contentUnit;
 - (APSMediaBuilder*)initWithMediaUnits:(NSArray*)contentUnits;
 - (NSArray*)mediaUnits;
+- (void)getMediaUnitsWithCompletionBlock:(void (^)(NSArray*))block;
 
 @end

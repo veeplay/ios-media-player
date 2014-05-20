@@ -42,7 +42,7 @@ extern NSString *const APSMoviePlayerEventFullscreen;
 extern NSString *const APSMoviePlayerEventImpression;
 extern NSString *const APSMoviePlayerEventCreativeView;
 extern NSString *const APSMoviePlayerEventResume;
-extern NSString *const APSMoviePlayerEventRause;
+extern NSString *const APSMoviePlayerEventPause;
 extern NSString *const APSMoviePlayerEventRewind;
 extern NSString *const APSMoviePlayerEventMute;
 extern NSString *const APSMoviePlayerEventUnmute;
@@ -81,7 +81,9 @@ extern NSString *const APSMoviePlayerEventCollapse;
 - (void)resetPlayer;
 
 - (void)track:(NSArray*)urls forEvent:(NSString*)event type:(NSString*)type;
+
 - (void)openURL:(NSURL*)url;
+- (void)openURL:(NSURL*)url from:(UIViewController<APSMediaPlayerOverlayController>*)overlay;
 
 - (void)skip;
 - (void)next;
