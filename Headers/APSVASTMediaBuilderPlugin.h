@@ -24,16 +24,20 @@ typedef enum {
 } APSAdPodFallback;
 
 typedef enum {
+    APSVASTOpener,
     APSVASTPreroll,
     APSVASTPostroll,
+    APSVASTCloser,
     APSVASTMidroll,
     APSVASTNonLinear
 } APSVASTConfigurationOptions;
 
-@interface APSVASTRequest : NSObject
-@property (nonatomic) NSURL *URL;
+@interface APSVASTAdBreak : NSObject
+@property (nonatomic) NSArray *URLs;
 @property (nonatomic) APSVASTConfigurationOptions adType;
 @property (nonatomic) NSString *adOffset;
+@property (nonatomic) NSArray *presplitURLs;
+@property (nonatomic) NSArray *postsplitURLs;
 @end
 
 @interface APSVASTMediaBuilderPlugin : NSObject <APSMediaBuilderPlugin> {
@@ -41,7 +45,7 @@ typedef enum {
 }
 
 @property (nonatomic) NSURL *vmapURL;
-@property (nonatomic) NSArray *vastRequests;
+@property (nonatomic) NSArray *adBreaks;
 
 @property (nonatomic) APSMediaControlsDisplay controlsDisplayForAds;
 @property (nonatomic) NSDictionary *controlsParametersForAds;

@@ -40,6 +40,6 @@
 - (APSMediaBuilder*)initWithMediaUnit:(APSMediaUnit*)contentUnit;
 - (APSMediaBuilder*)initWithMediaUnits:(NSArray*)contentUnits;
 - (NSArray*)mediaUnits;
-- (void)getMediaUnitsWithCompletionBlock:(void (^)(NSArray*))block;
+- (void)requestMediaUnitsWithCompletionBlock:(void (^)(NSArray*))block;
 
 @end
