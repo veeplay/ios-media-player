@@ -36,8 +36,6 @@ typedef enum {
 @property (nonatomic) NSArray *URLs;
 @property (nonatomic) APSVASTConfigurationOptions adType;
 @property (nonatomic) NSString *adOffset;
-@property (nonatomic) NSArray *presplitURLs;
-@property (nonatomic) NSArray *postsplitURLs;
 @end
 
 @interface APSVASTMediaBuilderPlugin : NSObject <APSMediaBuilderPlugin> {
