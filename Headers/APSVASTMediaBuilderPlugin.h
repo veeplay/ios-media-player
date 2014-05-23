@@ -24,11 +24,9 @@ typedef enum {
 } APSAdPodFallback;
 
 typedef enum {
-    APSVASTOpener,
-    APSVASTPreroll,
-    APSVASTPostroll,
-    APSVASTCloser,
-    APSVASTMidroll,
+    APSVASTPreContent,
+    APSVASTPostContent,
+    APSVASTMidContent,
     APSVASTNonLinear
 } APSVASTConfigurationOptions;
 
