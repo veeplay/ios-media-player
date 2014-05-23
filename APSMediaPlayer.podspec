@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "APSMediaPlayer"
-  s.version          = "1.7.4"
+  s.version          = "1.7.5"
   s.summary          = "Appscend Media Player"
   s.homepage         = "http://appscend.com"
   s.license          = 'Commercial'
