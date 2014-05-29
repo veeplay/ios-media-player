@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files         = "Headers/*.h"
   s.resources            = "Assets/*.bundle"
   s.public_header_files  = "Headers/*.h"
-  s.preserve_paths       = "libAPSMediaPlayer.a"
+  s.preserve_paths       = "libAPSMediaPlayer.a", "Docs/*"
   s.library              = "APSMediaPlayer"
   s.xcconfig             =  { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/APSMediaPlayer"' }
 
