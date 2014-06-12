@@ -1,5 +1,7 @@
-# APSMediaPlayer CHANGELOG
 
-## 1.7.1
+#### [Current]
 
-* Initial release deployed with Cocoapods
+
+#### 1.8.1
+ * Release 1.8.1
+ * Fixed overlay configuration issue

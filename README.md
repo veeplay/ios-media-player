@@ -1,6 +1,8 @@
 ## About
 
-The Appscend Media Player allows you to:
+![Veeso](http://veeso.co/img/veeso.png)
+
+The Veeso Media Player allows you to:
 
 * Create playlists of synchronized videos and overlays
 * Configure a playlist from an external JSON file, an equivalent NSDictionary structure or directly via code attributes
@@ -14,19 +16,10 @@ The Appscend Media Player allows you to:
 There are currently two integration paths: via CocoaPods or via standard library download.
 
 1. **Installing via CocoaPods (recommended)**
-
-	- Add the player podspec repository to CocoaPods by running:
-	
-			pod repo add Appscend http://cocoapods.appscend.net/appscend.git/
-	
-	- After getting commercial access to the player repository, edit (or create) your `~/.ssh/config` file, and add the following two lines:
-	
-			Host cocoapods.appscend.net
-			User YOUR_USER_NAME
 		
 	- Add the following line to your podfile:
 	
-			pod 'APSMediaPlayer'
+			pod 'VeesoPlayer'
 		
 	- Run `pod install` to install the player and all the dependencies. Run `pod update` to keep the library updated.
 	
@@ -116,5 +109,5 @@ Appscend Video Solutions GmbH
 
 ## License
 
-Commercial license. Contact sales@appscend.com.
+Commercial license. Contact <sales@veeso.co>.
 
