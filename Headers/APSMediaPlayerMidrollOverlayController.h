@@ -11,7 +11,7 @@
 
 extern NSString* const APSMidrollOverlay;
 
-#define kAPSMidrollUnits @"aps_midroll_units"
+#define kAPSMidrollUnits @"units"
 
 /**
  The `APSMediaPlayerMidrollOverlayController` allows the dynamic insertion of media units in the current playlist.
@@ -25,5 +25,5 @@ extern NSString* const APSMidrollOverlay;
  
     - *kAPSMidrollUnits*: `NSArray` containing `APSMediaUnit`s to be inserted at play-time.
  */
-@interface APSMediaPlayerMidrollOverlayController : UIViewController<APSMediaPlayerOverlayController>
+@interface APSMediaPlayerMidrollOverlayController : APSMediaPlayerOverlayController
 @end

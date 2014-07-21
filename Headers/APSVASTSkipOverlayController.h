@@ -44,5 +44,5 @@ extern NSString* const APSSkipOverlay;
 #define kAPSSkipOverlayBorderRadius @"aps_skip_borderradius"
 #define kAPSSkipOverlayColor @"aps_skip_color"
 
-@interface APSVASTSkipOverlayController : UIViewController <APSMediaPlayerOverlayController>
+@interface APSVASTSkipOverlayController : APSMediaPlayerOverlayController
 @end

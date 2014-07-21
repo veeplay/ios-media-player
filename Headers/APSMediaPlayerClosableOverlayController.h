@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APSMediaPlayerOverlayController.h"
 @class KAProgressLabel;
 
 #define kAPSCloseImage @"aps_cls_image"
@@ -28,7 +29,7 @@
  
  The class adds a set of standard keys to any overlay controller's own defined keys, to handle close button configuration. Methods are also exposed to allow a subclass to add and remove the close button from its view stack.
  */
-@interface APSMediaPlayerClosableOverlayController : UIViewController
+@interface APSMediaPlayerClosableOverlayController : APSMediaPlayerOverlayController
 /**
  This method adds the close button to the current view stack.
  

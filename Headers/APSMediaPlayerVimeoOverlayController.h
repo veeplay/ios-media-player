@@ -13,5 +13,5 @@ extern NSString* const APSVimeoOverlay;
 
 #define kAPSVimeoURL @"aps_vimeo_url"
 
-@interface APSMediaPlayerVimeoOverlayController : UIViewController <APSMediaPlayerOverlayController, UIWebViewDelegate>
+@interface APSMediaPlayerVimeoOverlayController : APSMediaPlayerOverlayController <UIWebViewDelegate>
 @end

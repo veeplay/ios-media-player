@@ -10,19 +10,21 @@
 #import "APSMediaPlayerOverlayController.h"
 
 extern NSString* const APSControlsOverlay;
-#define kAPSControlsBarColor @"aps_controls_barcolor"
-#define kAPSControlsBarAlpha @"aps_controls_baralpha"
-#define kAPSControlsComponents @"aps_controls_components"
-#define kAPSControlsPlayedTrackColor @"aps_controls_ptrackcolor"
-#define kAPSControlsBufferedTrackColor @"aps_controls_btrackcolor"
-#define kAPSControlsEmptyTrackColor @"aps_controls_etrackcolor"
-#define kAPSControlsPlayImage @"aps_controls_playimg"
-#define kAPSControlsPauseImage @"aps_controls_pauseimg"
-#define kAPSControlsFullscreenImage @"aps_controls_fullsimg"
-#define kAPSControlsPreviousImage @"aps_controls_previousimg"
-#define kAPSControlsNextImage @"aps_controls_nextimg"
-#define kAPSControlsVisibileOnlyInFullscreen @"aps_controls_visibility"
-#define kAPSControlsAutohideDuration @"asp_controls_autohideduration"
+#define kAPSControlsBarColor @"barColor"
+#define kAPSControlsBarAlpha @"barAlpha"
+#define kAPSControlsComponents @"components"
+#define kAPSControlsPlayedTrackColor @"playedTrackColor"
+#define kAPSControlsBufferedTrackColor @"bufferedTrackColor"
+#define kAPSControlsEmptyTrackColor @"emptyTrackColor"
+#define kAPSControlsPlayImage @"playImage"
+#define kAPSControlsPauseImage @"pauseImage"
+#define kAPSControlsFullscreenImage @"fullscreenImage"
+#define kAPSControlsPreviousImage @"backImage"
+#define kAPSControlsNextImage @"forwardImage"
+#define kAPSControlsVisibileOnlyInFullscreen @"visibleInFullscreenOnly"
+#define kAPSControlsAutohideDuration @"autohideDuration"
+#define kAPSControlsLiveText @"liveText"
+#define kAPSControlsPlaybackTimeText @"playbackTimeText"
 
 extern NSString* const APSMoviePlayerCommandHideControls;
 extern NSString* const APSMoviePlayerCommandShowControls;
@@ -69,5 +71,5 @@ typedef NS_OPTIONS(NSUInteger, APSControlsOverlayComponents) {
     APSPlaybackControl                      = 1 << 8
 };
 
-@interface APSMediaPlayerControlsOverlayController : UIViewController <APSMediaPlayerOverlayController>
+@interface APSMediaPlayerControlsOverlayController : APSMediaPlayerOverlayController
 @end

@@ -68,19 +68,19 @@
 <li><p><strong>Installing via library download</strong></p>
 
 <ul>
-<li><p>Add <code>MediaPlayer.framework</code> and <code>AVFoundation.framework</code> to your project.</p>
+<li><p>Add <code>MediaPlayer.framework</code>, <code>AVFoundation.framework</code> and <code>libz.dylib</code> to your project.</p>
 
 <ul>
 <li>Select your target in the project settings screen.</li>
 <li>Select the “Build Phases” tab.</li>
 <li>Expand the “Link Binary With Libraries” area.</li>
-<li>Click the “+” button, and add “MediaPlayer.framework” and “AVFoundation.framework” to your project.</li>
+<li>Click the “+” button, and add <code>MediaPlayer.framework</code>, <code>AVFoundation.framework</code> and <code>libz.dylib</code> to your project.</li>
 </ul>
 </li>
 <li><p>Add the player’s static library to your project.</p>
 
 <ul>
-<li>Drag the “lib<a href="Classes/APSMediaPlayer.html">APSMediaPlayer</a>.a” file to your project.</li>
+<li>Drag the “libAPSMediaPlayer.a” file to your project.</li>
 <li>When prompted, make sure to check the project target that should link against the static library.</li>
 <li>Select your target in the project settings screen.</li>
 <li>Select the “Build Settings” tab.</li>
@@ -110,6 +110,8 @@
 
 
 <h2>Getting Started</h2>
+
+<p>Set up an account at <a href="http://panel.veeso.co">http://panel.veeso.co</a> and add your application&rsquo;s bundle identifier under &ldquo;License Management&rdquo;.</p>
 
 <p>Import the Player’s header file, as well as the VAST/VMAP or other plugins:</p>
 
@@ -154,6 +156,22 @@
 
 <p>In the final execution block we instruct the player to start playback using the final generated array of media units, configured remotely via JSON input.</p>
 
+<h2>Creating custom overlay controllers</h2>
+
+<p><a href="Classes/APSMediaPlayer.html">APSMediaPlayer</a> allows developers to create their own, JSON or dictionary configurable overlays. To create a custom overlay:</p>
+
+<ul>
+<li>Create a new class that inherits from <a href="Classes/APSMediaPlayerOverlayController.html">APSMediaPlayerOverlayController</a>, which is a <code>UIViewController</code> subclass itself.</li>
+<li>Implement <a href="Protocols/KRAdapter.html#//api/name/type">[KRAdapter type]</a> to return a unique string that identifies the overlay. This is also used in the configuration dictionary.</li>
+<li>Implement <a href="Protocols/APSMediaPlayerOverlayControllerProtocol.html#//api/name/load">[APSMediaPlayerOverlayControllerProtocol load]</a> to execute the custom overlay creation code. This method is invoked by the player, when first diplaying the overlay controller object. You can access configuration parameters as defined in the JSON or NSDictionary configuration using <code>self.overlay.parameters</code>. You can also access information about the currently running unit, using <code>self.overlay.parentUnit</code>.</li>
+<li>Implement any other protocol-defined method as needed, see <a href="Protocols/APSMediaPlayerOverlayControllerProtocol.html"><code>APSMediaPlayerOverlayControllerProtocol</code></a> for a complete list.</li>
+<li><p>Register the newly created class with the player:</p>
+
+<pre><code>  [[APSMediaPlayer sharedInstance] registerClass:[CLASSNAME class] inGroup:kAPSMediaPlayerOverlayControllersGroup type:@"TYPE"];
+</code></pre></li>
+</ul>
+
+
 <h2>Requirements</h2>
 
 <p><a href="Classes/APSMediaPlayer.html">APSMediaPlayer</a> relies on the following liberally-licensed pods installed as dependencies:</p>
@@ -171,7 +189,7 @@
 
 <h2>License</h2>
 
-<p>Commercial license. Contact <a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x73;&#x61;&#108;&#x65;&#x73;&#x40;&#118;&#x65;&#101;&#115;&#111;&#46;&#x63;&#111;">&#x73;&#97;&#x6c;&#x65;&#x73;&#x40;&#x76;&#x65;&#x65;&#x73;&#x6f;&#46;&#99;&#x6f;</a>.</p>
+<p>Commercial license. Contact <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x73;&#x61;&#x6c;&#101;&#115;&#x40;&#118;&#x65;&#x65;&#x73;&#111;&#46;&#x63;&#111;">&#115;&#x61;&#x6c;&#101;&#x73;&#64;&#118;&#x65;&#101;&#115;&#111;&#x2e;&#99;&#x6f;</a>.</p>
 						
 						
 					</div>
@@ -200,6 +218,8 @@
 							
 							<li><a href="Classes/APSMediaPlayerMidrollOverlayController.html">APSMediaPlayerMidrollOverlayController</a></li>
 							
+							<li><a href="Classes/APSMediaPlayerOverlayController.html">APSMediaPlayerOverlayController</a></li>
+							
 							<li><a href="Classes/APSMediaPlayerTextOverlayController.html">APSMediaPlayerTextOverlayController</a></li>
 							
 							<li><a href="Classes/APSMediaUnit.html">APSMediaUnit</a></li>
@@ -224,7 +244,7 @@
 							
 							<li><a href="Protocols/APSMediaPlayerActionDelegate.html">APSMediaPlayerActionDelegate</a></li>
 							
-							<li><a href="Protocols/APSMediaPlayerOverlayController.html">APSMediaPlayerOverlayController</a></li>
+							<li><a href="Protocols/APSMediaPlayerOverlayControllerProtocol.html">APSMediaPlayerOverlayControllerProtocol</a></li>
 							
 							<li><a href="Protocols/APSMediaTrackableObject.html">APSMediaTrackableObject</a></li>
 							
@@ -275,7 +295,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 Veeso. All rights reserved. (Last updated: 2014-06-12)</span><br />
+						<p><span class="copyright">&copy; 2014 Veeso. All rights reserved. (Last updated: 2014-07-21)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

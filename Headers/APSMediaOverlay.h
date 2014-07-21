@@ -21,6 +21,13 @@
 @class APSMediaUnit;
 @protocol APSMediaPlayerOverlayController;
 
+#ifndef kAPSMetadataTitle
+#define kAPSMetadataTitle @"aps_meta_title"
+#define kAPSMetadataDescription @"aps_meta_description"
+#define kAPSMetadataImageURL @"aps_meta_image"
+#define kAPSMetadataType @"aps_meta_type"
+#endif
+
 #ifndef NS_ENUM
 #define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
@@ -71,6 +78,8 @@ typedef NS_ENUM(NSInteger, APSMediaOverlayPosition) {
     kAPSMediaOverlayPositionUnspecified
 };
 
+extern NSString *const APSContentOverlay;
+
 /**
  *  `APSMediaOverlay` describes any overlay that the `APSMediaPlayer` instance needs to render during playback.
  */
@@ -89,7 +98,7 @@ typedef NS_ENUM(NSInteger, APSMediaOverlayPosition) {
 /**
  *  Overlay parameters. Implementation-specific to overlay controllers.
  */
-@property (nonatomic) id parameters;
+@property (nonatomic) NSMutableDictionary *parameters;
 
 /**-----------------------------------------------------------------------------
  * @name Positioning the Overlay On-Screen
@@ -117,12 +126,12 @@ typedef NS_ENUM(NSInteger, APSMediaOverlayPosition) {
 
 @property (nonatomic) NSString *height;
 /**
- *  The overlay's absolute horizontal offset in pixels, relative to the current origin. The current origin is determined by the overlay's `position` parameter, while the positive direction is always toward the center of the player surface.
+ *  The overlay's absolute horizontal offset, relative to the current origin. The current origin is determined by the overlay's `position` parameter, while the positive direction is always toward the center of the player surface. Supports pixels (e.g.: @"320") or percentages, relative to the total width (e.g.: @"50%").
  */
 
 @property (nonatomic) NSString *absoluteOffsetX;
 /**
- *  The overlay's absolute vertical offset in pixels, relative to the current origin. The current origin is determined by the overlay's `position` parameter, while the positive direction is always toward the center of the player surface.
+ *  The overlay's absolute vertical offset, relative to the current origin. The current origin is determined by the overlay's `position` parameter, while the positive direction is always toward the center of the player surface. Supports pixels (e.g.: @"320") or percentages, relative to the total height (e.g.: @"50%").
  */
 
 @property (nonatomic) NSString *absoluteOffsetY;
@@ -211,7 +220,12 @@ typedef NS_ENUM(NSInteger, APSMediaOverlayPosition) {
 /**
  *  A refence to the overlay controller object. This is set by the player, on the overlay's initial render.
  */
-@property (nonatomic) UIViewController<APSMediaPlayerOverlayController> *controller;
+@property (nonatomic) APSMediaPlayerOverlayController *controller;
+
+/**
+ *  Additional overlay information.
+ */
+@property (nonatomic) NSMutableDictionary *metadata;
 
 /**-----------------------------------------------------------------------------
  * @name Other

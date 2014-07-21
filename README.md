@@ -25,12 +25,12 @@ There are currently two integration paths: via CocoaPods or via standard library
 	
 2. **Installing via library download**
 
-	- Add `MediaPlayer.framework` and `AVFoundation.framework` to your project.
+	- Add `MediaPlayer.framework`, `AVFoundation.framework` and `libz.dylib` to your project.
 	
 		- Select your target in the project settings screen.
 		- Select the “Build Phases” tab.
 		- Expand the “Link Binary With Libraries” area.
-		- Click the “+” button, and add “MediaPlayer.framework” and “AVFoundation.framework” to your project.
+		- Click the “+” button, and add `MediaPlayer.framework`, `AVFoundation.framework` and `libz.dylib` to your project.
 		
 	- Add the player’s static library to your project.
 	
@@ -95,6 +95,18 @@ The builder is configured at this point and is able to generate an array of medi
 	}];
 
 In the final execution block we instruct the player to start playback using the final generated array of media units, configured remotely via JSON input.
+
+## Creating custom overlay controllers
+
+APSMediaPlayer allows developers to create their own, JSON or dictionary configurable overlays. To create a custom overlay:
+
+* Create a new class that inherits from APSMediaPlayerOverlayController, which is a `UIViewController` subclass itself.
+* Implement [KRAdapter type] to return a unique string that identifies the overlay. This is also used in the configuration dictionary.
+* Implement [APSMediaPlayerOverlayControllerProtocol load] to execute the custom overlay creation code. This method is invoked by the player, when first diplaying the overlay controller object. You can access configuration parameters as defined in the JSON or NSDictionary configuration using `self.overlay.parameters`. You can also access information about the currently running unit, using `self.overlay.parentUnit`.
+* Implement any other protocol-defined method as needed, see `APSMediaPlayerOverlayControllerProtocol` for a complete list.
+* Register the newly created class with the player: 
+
+        [[APSMediaPlayer sharedInstance] registerClass:[CLASSNAME class] inGroup:kAPSMediaPlayerOverlayControllersGroup type:@"TYPE"];
 
 ## Requirements
 

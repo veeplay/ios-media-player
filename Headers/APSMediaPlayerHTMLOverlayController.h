@@ -11,13 +11,14 @@
 #import "APSMediaPlayerClosableOverlayController.h"
 
 extern NSString* const APSHTMLOverlay;
-#define kAPSHTMLCodeContent @"aps_html_content"
-#define kAPSHTMLIframeSource @"aps_html_iframesource"
-#define kAPSHTMLScriptSource @"aps_html_scriptsource"
-#define kAPSHTMLPageSource @"aps_html_source"
-#define kAPSHTMLWidth @"aps_html_width"
-#define kAPSHTMLHeight @"aps_html_height"
-#define kAPSHTMLErrorURLs @"aps_html_errors"
+#define kAPSHTMLCodeContent @"code"
+#define kAPSHTMLIframeSource @"iframe"
+#define kAPSHTMLScriptSource @"script"
+#define kAPSHTMLPageSource @"url"
+#define kAPSHTMLWidth @"viewportWidth"
+#define kAPSHTMLHeight @"viewportHeight"
+#define kAPSHTMLErrorURLs @"errorTracking"
+#define kAPSHTMLOverlayWebviewDismissAction @"dismissAction"
 
 /**
  The `APSMediaPlayerHTMLOverlayController` allows the inline loading of HTML content inside an overlay placed on top of video content.
@@ -37,5 +38,5 @@ extern NSString* const APSHTMLOverlay;
      - *kAPSHTMLHeight*: `NSNumber` corresponding to the integer value to be set for the meta viewport height property.
      - *kAPSHTMLErrorURLs*: `NSArray` containing `NSURL`s to be tracked in case of error.
  */
-@interface APSMediaPlayerHTMLOverlayController : APSMediaPlayerClosableOverlayController <APSMediaPlayerOverlayController, UIWebViewDelegate>
+@interface APSMediaPlayerHTMLOverlayController : APSMediaPlayerClosableOverlayController <UIWebViewDelegate>
 @end

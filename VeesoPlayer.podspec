@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.resources            = "Assets/*.bundle"
   s.public_header_files  = "Headers/*.h"
   s.preserve_paths       = "libAPSMediaPlayer.a", "Docs/*"
-  s.library              = "APSMediaPlayer"
+  s.library              = "APSMediaPlayer", "z"
   s.xcconfig             =  { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/VeesoPlayer"' }
 
   s.frameworks = "AVFoundation", "MediaPlayer"

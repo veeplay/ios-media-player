@@ -221,11 +221,11 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Sends tracking information to one or more servers. All specified URLs will be requested via GET. See "Available Tracking Events" for a list of supported event types.
  *  @warning This method also triggers the `APSMediaPlayerTrackedEventNotification` notification.
  *
- *  @param urls  An array of `NSURL` objects that should be pinged.
+ *  @param urls  An array of `NSURL` objects that should be pinged. Also accepts an array of `NSString` objects, a single `NSURL` or a single `NSString`.
  *  @param event A descriptive text of the events.
  *  @param type  The tracked event type. See "Available Tracking Events".
  */
-- (void)track:(NSArray*)urls forEvent:(NSString*)event type:(NSString*)type;
+- (void)track:(id)urls forEvent:(NSString*)event type:(NSString*)type;
 
 /**-----------------------------------------------------------------------------
  * @name URL Handling
@@ -251,7 +251,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  @param url     The URL that needs to be loaded.
  *  @param overlay The calling overlay controller.
  */
-- (void)openURL:(NSURL*)url from:(UIViewController<APSMediaPlayerOverlayController>*)overlay;
+- (void)openURL:(NSURL*)url from:(APSMediaPlayerOverlayController*)overlayController;
 
 /**-----------------------------------------------------------------------------
  * @name Handling Playback
@@ -341,6 +341,13 @@ typedef void (^APSMediaPlayerFinishBlock)();
  */
 - (MPMovieSourceType)movieSourceType;
 
+/**
+ *  Returns `YES` if the player is currently rendering a live stream.
+ *
+ *  @return `YES` if the player is currently rendering a live stream.
+ */
+- (BOOL)isStreamingLive;
+
 /**-----------------------------------------------------------------------------
  * @name Getting Video Thumbnails
  * -----------------------------------------------------------------------------
@@ -368,6 +375,14 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Toggle the current fullscreen status.
  */
 - (void)toggleFullscreen;
+/**
+ *  Enter fullscreen mode.
+ */
+- (void)enterFullscreen;
+/**
+ *  Exit fullscreen mode.
+ */
+- (void)exitFullscreen;
 
 /**-----------------------------------------------------------------------------
  * @name Other
@@ -397,5 +412,9 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Specifies whether the player should ignore the device silent switch setting.
  */
 @property (nonatomic, assign) BOOL ignoreSilentSwitch;
+/**
+ *  Specifies whether the player should stop functioning if the currently running device is detected to be jailbroken.
+ */
+@property (nonatomic, assign) BOOL detectBreachedDevice;
 
 @end

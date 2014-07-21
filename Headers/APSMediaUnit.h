@@ -11,10 +11,12 @@
 #import "APSMediaTrackableObject.h"
 @class APSMediaOverlay;
 
-#define kAPSMediaUnitTitle @"com.appscend.mp.unit.title"
-#define kAPSMediaUnitDescription @"com.appscend.mp.unit.description"
-#define kAPSMediaUnitImageURL @"com.appscend.mp.unit.image"
-#define kAPSMediaUnitType @"com.appscend.mp.unit.type"
+#ifndef kAPSMetadataTitle
+#define kAPSMetadataTitle @"title"
+#define kAPSMetadataDescription @"description"
+#define kAPSMetadataImageURL @"image"
+#define kAPSMetadataType @"type"
+#endif
 
 extern NSString *const APSContentUnit;
 
@@ -104,7 +106,25 @@ typedef NS_ENUM(NSInteger, APSMediaControlsDisplay) {
  */
 @property (nonatomic) APSMediaControlsDisplay controlsDisplay;
 /**
- *  The configuration for the controls bar overlay. Construct this using the `configurationFromDictionary:` method of  `APSMediaPlayerControlsOverlayController`.
+ The configuration for the controls bar overlay.
+ 
+ The following keys are available:
+ 
+ - *kAPSControlsBarColor*: Set this to a `UIColor` that represents the background color of the controls bar.
+ - *kAPSControlsBarAlpha*: `NSNumber` that represents the opacity of the controls bar.
+ - *kAPSControlsComponents*: Set this to a mask that you get using OR operations on `APSControlsOverlayComponents` constants.
+ - *kAPSControlsPlayedTrackColor*: The `UIColor` of the portion of the seek bar that indicates the currently played duration of the movie.
+ - *kAPSControlsBufferedTrackColor*: The `UIColor` of the portion of the seek bar that indicates the currently buffered duration of the movie.
+ - *kAPSControlsEmptyTrackColor*: The `UIColor` of the portion of the seek bar that indicates the currently unbuffered duration of the movie.
+ - *kAPSControlsPlayImage*: The `UIImage` of the play button to use in the playback controls bar. Only displayed if the playback component is selected.
+ - *kAPSControlsPauseImage*: The `UIImage` of the pause button to use in the playback controls bar. Only displayed if the playback component is selected.
+ - *kAPSControlsFullscreenImage*: The `UIImage` of the fullscreen button to use in the playback controls bar. Only displayed if the playback component is selected.
+ - *kAPSControlsPreviousImage*: The `UIImage` of the back button to use in the playback controls bar. Only displayed if the back button component is selected.
+ - *kAPSControlsNextImage*: The `UIImage` of the forward button to use in the playback controls bar. Only displayed if the forward button component is selected.
+ - *kAPSControlsVisibileOnlyInFullscreen*: Defines whether the playback controls bar should only be visible while the player is in fullscreen mode. This is useful if implementing a custom player UX for normal mode. Set this to a `NSNumber` boolean.
+ - *kAPSControlsAutohideDuration*: The number of seconds the playback controls bar should automatically become hidden after. Set this to a `NSNumber`.
+ - *kAPSControlsLiveText*: The text to display instead of the total video duration, for live streams. Only has effect when the total duration component is selected. Defaults to `@"LIVE"`.
+ - *kAPSControlsPlaybackTimeText*: The text to display instead of the current playback time, for live streams. Only has effect when the current playback time component is selected.
  */
 @property (nonatomic) NSDictionary *controlsParameters;
 /**

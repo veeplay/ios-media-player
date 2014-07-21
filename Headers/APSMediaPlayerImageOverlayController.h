@@ -11,14 +11,14 @@
 #import "APSMediaPlayerClosableOverlayController.h"
 
 extern NSString* const APSImageOverlay;
-#define kAPSImageOverlayClickthrough @"aps_image_clickthrough"
-#define kAPSImageOverlayWebviewDismissAction @"aps_image_webdismiss"
-#define kAPSImageOverlayClicktracking @"aps_image_clicktracking"
-#define kAPSImageOverlayViewtracking @"aps_image_viewtracking"
-#define kAPSImageOverlayResourceURL @"aps_image_url"
-#define kAPSImageOverlayErrorURLs @"aps_image_error"
-#define kAPSImageOverlayBackgroundColor @"aps_image_bkcolor"
-#define kAPSImageOverlayStretchMode @"aps_image_stretch"
+#define kAPSImageOverlayClickthrough @"clickThrough"
+#define kAPSImageOverlayClicktracking @"clickTracking"
+#define kAPSImageOverlayViewtracking @"viewTracking"
+#define kAPSImageOverlayResourceURL @"url"
+#define kAPSImageOverlayErrorURLs @"errorTracking"
+#define kAPSImageOverlayBackgroundColor @"backgroundColor"
+#define kAPSImageOverlayStretchMode @"stretchMode"
+#define kAPSImageOverlayWebviewDismissAction @"dismissAction"
 
 /**
  The `APSMediaPlayerImageOverlayController` allows placing an image on top of video content.
@@ -48,5 +48,5 @@ extern NSString* const APSImageOverlay;
         - "left", that will set the overlay's `contentMode` to `UIViewContentModeLeft`
         - "right", that will set the overlay's `contentMode` to `UIViewContentModeRight`
  */
-@interface APSMediaPlayerImageOverlayController : APSMediaPlayerClosableOverlayController <APSMediaPlayerOverlayController>
+@interface APSMediaPlayerImageOverlayController : APSMediaPlayerClosableOverlayController
 @end

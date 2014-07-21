@@ -33,11 +33,10 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
     APSDoNothingOnWebviewDismiss
 };
 
-
 /**
  *  The `APSMediaPlayerOverlayController` defines all the methods that a `UIViewController` subclass must or can implement to be able to register as an overlay controller with the player. This protocol extends the `KRAdapter` protocol, so objects should also define a unique string `type` to register under.
  */
-@protocol APSMediaPlayerOverlayController <KRAdapter>
+@protocol APSMediaPlayerOverlayControllerProtocol <KRAdapter>
 /**-----------------------------------------------------------------------------
  * @name Overlay Initialization
  * -----------------------------------------------------------------------------
@@ -45,36 +44,10 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
 /**
  *  This method is invoked by the player when first diplaying the overlay controller object.
  *
- *  @param parameters The configuration parameters, copied from the `APSMediaOverlay` property with the same name.
  */
-- (void)startWithParameters:(id)parameters;
+- (void)load;
 
 @optional
-/**
- *  This method is invoked by the player after the overlay controller object creation, with a reference to the corresponding `APSMediaOverlay` object that triggered the creation.
- *
- *  @param overlay The corresponding `APSMediaOverlay`
- */
-- (void)setParentOverlay:(APSMediaOverlay*)overlay;
-
-/**-----------------------------------------------------------------------------
- * @name Overlay Dictionary Configuration
- * -----------------------------------------------------------------------------
- */
-/**
- *  The string key that will be used as the overlay type in the JSON and dictionary builder configurations.
- *
- *  @return String key.
- */
-+ (NSString*)overlayConfigurationKey;
-/**
- *  This method is called by the `APSMediaBuilder` object, in the process of its configuration, if in the JSON or `NSDictionary` configuration the overlay is defined to a type equal to the string defined by the overlay controller, using the `dictionaryConfigurationKey` method.
- *
- *  @param configuration A `NSDictionary` object containing the specific overlay controller configuration data.
- *
- *  @return The configuration dictionary, ready to be set to the `parameters` property of the `APSMediaOverlay`.
- */
-+ (NSDictionary*)configurationFromDictionary:(NSDictionary*)configuration;
 /**-----------------------------------------------------------------------------
  * @name Callbacks
  * -----------------------------------------------------------------------------
@@ -185,4 +158,14 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
  *  @return The desired action. See `APSWebviewDismissedAction` for more details.
  */
 - (APSWebviewDismissedAction)onWebviewDismiss;
+@end
+
+/**
+ *  The superclass of all overlay controllers. Implements `APSMediaPlayerOverlayControllerProtocol`.
+ */
+@interface APSMediaPlayerOverlayController : UIViewController <APSMediaPlayerOverlayControllerProtocol>
+/**
+ *  A reference to the `APSMediaOverlay` object associated with the current overlay controller.
+ */
+@property (nonatomic, weak) APSMediaOverlay *overlay;
 @end

@@ -10,10 +10,10 @@
 #import "APSMediaPlayerOverlayController.h"
 
 extern NSString* const APSTextOverlay;
-#define kAPSTextOverlayString @"aps_text_format"
-#define kAPSTextOverlayStringColor @"aps_text_color"
-#define kAPSTextOverlayStringFont @"aps_text_font"
-#define kAPSTextOverlayStringSize @"aps_text_size"
+#define kAPSTextOverlayString @"text"
+#define kAPSTextOverlayStringColor @"color"
+#define kAPSTextOverlayStringFont @"font"
+#define kAPSTextOverlayStringSize @"size"
 
 /**
  The `APSMediaPlayerTextOverlayController` allows the displaying text on top of video content.
@@ -33,7 +33,10 @@ extern NSString* const APSTextOverlay;
  ## Replacable Placeholders
  
  The `APSMediaPlayerTextOverlayController` will replace the following string placeholders with dynamic information:
- - *"__remaining__"* will be replaced with the remaining number of seconds from the current video clip being rendered.
+ 
+ - *`__remaining__`* will be replaced with the remaining number of seconds for the current video clip being rendered.
+ - *`__ad_index__`* will be replaced with the current ad index within the ad break.
+ - *`__total_ads__`* will be replaced with the total number of ads within the ad break.
  */
-@interface APSMediaPlayerTextOverlayController : UIViewController <APSMediaPlayerOverlayController>
+@interface APSMediaPlayerTextOverlayController : APSMediaPlayerOverlayController
 @end

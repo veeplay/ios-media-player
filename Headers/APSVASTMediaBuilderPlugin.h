@@ -17,10 +17,14 @@
 extern NSString *const APSVASTPrerollUnit;
 extern NSString *const APSVASTMidrollUnit;
 extern NSString *const APSVASTPostrollUnit;
+extern NSString *const APSVASTNonlinearAd;
 
 #ifndef NS_ENUM
 #define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
+
+#define kAPSMetadataCurrentAdBreakIndex @"aps_vast_adbreak_index"
+#define kAPSMetadataTotalAdBreakAds @"aps_vast_adbreak_total"
 
 /**
  *  The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.
@@ -139,7 +143,7 @@ typedef NS_ENUM(NSInteger, APSVASTConfigurationOptions) {
 /**
  The configuration for the controls bar overlay on top of video ads. 
  
- Construct this using the `configurationFromDictionary:` method of  `APSMediaPlayerControlsOverlayController`.
+ See [APSMediaUnit controlsParameters] for details on creating this dictionary.
  */
 @property (nonatomic) NSDictionary *controlsParametersForAds;
 /**
@@ -432,5 +436,22 @@ typedef NS_ENUM(NSInteger, APSVASTConfigurationOptions) {
  See `APSAdPodFallback` for possible values. Defaults to `APSAdPodFallbackSelectAll`.
  */
 @property (nonatomic) APSAdPodFallback adPodFallbackStrategy;
+
+/**
+ An array that defines the mime-types supported when choosing a media file from the VAST response.
+ 
+ Items are ordered from most preferred to least preferred. The default value for this property is `@[@"mobile/mp4",@"video/mp4",@"mobile/m3u8",@"application/x-mpegURL",@"application/vnd.apple.mpegURL",@"vnd.apple.mpegURL",@"video/m3u8"]`
+ */
+@property (nonatomic) NSArray *prefferedVideoMimeTypes;
+
+/**
+ *  Defines the behavior of the player after a banner ad is tapped and the built-in web browser is dismissed.
+ */
+@property (nonatomic) APSWebviewDismissedAction afterBannerTapped;
+
+/**
+ *  Defines the behavior of the player after a video ad is tapped and the built-in web browser is dismissed.
+ */
+@property (nonatomic) APSWebviewDismissedAction afterVideoAdTapped;
 
 @end
