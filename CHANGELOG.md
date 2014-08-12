@@ -1,3 +1,9 @@
+### 1.8.3
+* This release brings support for creating events that get triggered dynamically during playback, with async preload support. See `APSMediaEvent` documentation for detailed information.
+* Ad breaks are now individually configurable via JSON/NSDictionary.
+* Fixed issue with stalled media that would not automatically resume playback.
+* Fixed bug related to controls visibility
+
 ### 1.8.2
 This release adds support for defining custom overlay controllers, as well as several new features.
 * Mid-rolls and banner ads scheduled for fixed time intervals are now inserted dinamically within a live stream.
