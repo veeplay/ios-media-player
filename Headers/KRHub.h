@@ -59,15 +59,13 @@
  *
  *  @param cclass The class to register.
  *  @param group  The group to register the call into.
- *  @param type   The type of the registered class.
  */
-- (void)registerClass:(Class)cclass inGroup:(NSString*)group type:(NSString*)type;
+- (void)registerClass:(Class)cclass inGroup:(NSString*)group;
 /**
  *  Registers a class to the default group, under a specific type. Upon requesting a new object from this type from the default group, a new object of the registered class will be instantiated and returned.
  *
  *  @param cclass The class to register
- *  @param type   The type of the registered class.
  */
-- (void)registerClass:(Class)cclass type:(NSString*)type;
+- (void)registerClass:(Class)cclass;
 
 @end

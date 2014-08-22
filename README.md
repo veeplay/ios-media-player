@@ -1,6 +1,6 @@
 ## About
 
-![Veeso](http://veeso.co/img/veeso.png)
+[<img src="http://veeso.co/wp-content/themes/veeso/assets/img/veeso_100.png">](http://veeso.co)
 
 The Veeso Media Player allows you to:
 
@@ -96,6 +96,10 @@ The builder is configured at this point and is able to generate an array of medi
 
 In the final execution block we instruct the player to start playback using the final generated array of media units, configured remotely via JSON input.
 
+## Configuring from JSON
+
+See [this guide](http://veeso.github.io/json-docs/) for documentation on all available configuration options and examples.
+
 ## Creating custom overlay controllers
 
 APSMediaPlayer allows developers to create their own, JSON or dictionary configurable overlays. To create a custom overlay:
@@ -107,6 +111,24 @@ APSMediaPlayer allows developers to create their own, JSON or dictionary configu
 * Register the newly created class with the player: 
 
         [[APSMediaPlayer sharedInstance] registerClass:[CLASSNAME class] inGroup:kAPSMediaPlayerOverlayControllersGroup type:@"TYPE"];
+
+## Using DRM
+
+APSMediaPlayer provides support for [Marlin DRM](http://www.marlin-community.com/), using the SDKs provided by [ExpressPlay](http://expressplay.com). To install:
+
+* Install the ExpressPlay SDK.
+* Add the following line to your Podfile:
+        
+        pod "VeesoMarlinManager"
+    
+* If installing without CocoaPods, get the latest static library and header files [from the repository](https://github.com/veeso/ios-marlin-drm).
+* Instantiate a Marlin manager object and register it with the player:
+        
+        VeesoMarlinManager *marlinManager = [[VeesoMarlinManager alloc] init];
+        [[APSMediaPlayer sharedInstance] registerUnitManager:marlinManager];
+    
+* Set the `managerType` property of the `APSMediaUnit` object to `@"marlin"`.
+* Optionally, to have the player download and add a license to the local store, you can set the `kAPSMetadataDrmUrl` key in the `metadata` dictionary of an item to the string URL to the license file. To configure from JSON, set the `drm_encoding_url` metadata key.
 
 ## Requirements
 
@@ -124,4 +146,3 @@ Appscend Video Solutions GmbH
 ## License
 
 Commercial license. Contact <sales@veeso.co>.
-

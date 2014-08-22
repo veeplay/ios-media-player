@@ -48,6 +48,12 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
 - (void)load;
 
 @optional
+
+/**
+ *  This method is invoked by the player on a background thread, before the overlay start point, as set by the [APSMediaEvent preTriggerInterval] property.
+ */
+- (void)preload;
+
 /**-----------------------------------------------------------------------------
  * @name Callbacks
  * -----------------------------------------------------------------------------
@@ -65,9 +71,13 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
  */
 - (void)overlayWillBeRemoved;
 /**
- *  This method is invoked by the player, when the fullscreen status has changed.
+ *  This method is invoked by the player, when fullscreen mode is enabled.
  */
-- (void)fullscreenToggled;
+- (void)didEnterFullscreen;
+/**
+ *  This method is invoked by the player, when fullscreen mode is disabled.
+ */
+- (void)didExitFullscreen;
 
 /**-----------------------------------------------------------------------------
  * @name Handling Playback

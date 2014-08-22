@@ -10,6 +10,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "APSMediaTrackableObject.h"
 @class APSMediaOverlay;
+@class APSMediaEvent;
 
 #ifndef kAPSMetadataTitle
 #define kAPSMetadataTitle @"title"
@@ -66,7 +67,7 @@ typedef NS_ENUM(NSInteger, APSMediaControlsDisplay) {
 /**
  *  Adds an `APSMediaOverlay` object to the unit, to be rendered together.
  *
- *  @param overlay The `APSMediaPlayer` object to be connected to the unit.
+ *  @param overlay The `APSMediaOverlay` object to be connected to the unit.
  */
 - (void)addOverlay:(APSMediaOverlay*)overlay;
 
@@ -90,6 +91,36 @@ typedef NS_ENUM(NSInteger, APSMediaControlsDisplay) {
 - (NSArray*)overlays;
 
 /**-----------------------------------------------------------------------------
+ * @name Managing the media overlays connected to the current unit
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Adds an object that implements the `APSMediaEvent` protocol to the unit.
+ *
+ *  @param overlay The event to be connected to the unit.
+ */
+- (void)addEvent:(APSMediaEvent*)overlay;
+
+/**
+ *  Connects an array of objects that implement the `APSMediaEvent` protocol to the current unit.
+ *
+ *  @param overlays An array of events to be connected to the unit.
+ */
+- (void)setEvents:(NSArray*)events;
+
+/**
+ *  Removes all currently connected events.
+ */
+- (void)clearEvents;
+
+/**
+ *  Returns an array containing all event objects currently connected to the unit.
+ *
+ *  @return An array of objects that implement the `APSMediaEvent` protocol.
+ */
+- (NSArray*)events;
+
+/**-----------------------------------------------------------------------------
  * @name Unit Properties
  * -----------------------------------------------------------------------------
  */
@@ -105,6 +136,10 @@ typedef NS_ENUM(NSInteger, APSMediaControlsDisplay) {
  *  Defines how the controls bar will be displayed for the unit. See `APSMediaControlsDisplay` for possible values.
  */
 @property (nonatomic) APSMediaControlsDisplay controlsDisplay;
+/**
+ *  Assigns a unit manager to the current unit. See APSUnitManagerProtocol for more information.
+ */
+@property (nonatomic) NSString *managerType;
 /**
  The configuration for the controls bar overlay.
  

@@ -15,11 +15,11 @@
 #import "APSMediaUnit.h"
 #import "TSMiniWebBrowser.h"
 
-#define kAPSMediaPlayerOverlayControllersGroup @"com.appscend.mp.controllers.overlay"
-
 #define kAPSMediaPlayerEventType @"com.appscend.mp.event.type"
 #define kAPSMediaPlayerEventDescription @"com.appscend.mp.event.description"
 #define kAPSMediaPlayerEventURLs @"com.appscend.mp.event.urls"
+
+@protocol APSUnitManagerProtocol;
 
 ///--------------------
 /// @name Notifications
@@ -212,6 +212,18 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  @param url The URL of the video clip.
  */
 - (void)setCurrentURL:(NSURL*)url;
+/**
+ *  Adds additional overlays to display over the current unit.
+ *
+ *  @param overlays Additional `APSMediaOverlay` objects to inject.
+ */
+- (void)addOverlays:(NSArray*)overlays;
+/**
+ *  Adds additional events to the current unit's timeline.
+ *
+ *  @param overlays Additional `APSMediaEvent` objects to inject.
+ */
+- (void)addEvents:(NSArray*)events;
 
 /**-----------------------------------------------------------------------------
  * @name Tracking Playback Events
@@ -348,6 +360,13 @@ typedef void (^APSMediaPlayerFinishBlock)();
  */
 - (BOOL)isStreamingLive;
 
+/**
+ *  Obtains the most recent time-based metadata provided by the streamed movie.
+ *
+ *  @return An array of the most recent `MPTimedMetadata` objects provided by the streamed movie. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/mediaplayer/reference/MPTimedMetadata_Class/Reference/Reference.html#//apple_ref/occ/cl/MPTimedMetadata) for more details about `MPTimedMetadata`.
+ */
+- (NSArray*)timedMetadata;
+
 /**-----------------------------------------------------------------------------
  * @name Getting Video Thumbnails
  * -----------------------------------------------------------------------------
@@ -383,6 +402,31 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Exit fullscreen mode.
  */
 - (void)exitFullscreen;
+
+/**-----------------------------------------------------------------------------
+ * @name Extending
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Registers a new overlay controller with the player.
+ *
+ *  @param controllerClass The class of the new overlay controller.
+ */
+- (void)registerOverlayController:(Class<APSMediaPlayerOverlayControllerProtocol>)controllerClass;
+/**
+ *  This method instantiates and returns a new object of the class registered for the given overlay type.
+ *
+ *  @param type The type of controller required.
+ *
+ *  @return A new object that implements `APSMediaPlayerOverlayControllerProtocol` or `nil` if no controllers are registered for the given type.
+ */
+- (NSObject<APSMediaPlayerOverlayControllerProtocol>*)overlayControllerForType:(NSString*)type;
+/**
+ *  Registers a new unit manager to dynamically handle media playback.
+ *
+ *  @param managerClass The new unit manager object.
+ */
+- (void)registerUnitManager:(NSObject<APSUnitManagerProtocol>*)managerClass;
 
 /**-----------------------------------------------------------------------------
  * @name Other

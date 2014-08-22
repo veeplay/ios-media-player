@@ -1,3 +1,6 @@
+### 1.8.4
+* This release brings support for unit managers. Unit managers are external objects that implement dynamic playback operations. Use them if you need to generate media URLs using timestamps or for implementing DRM support. See APSUnitManagerProtocol for more details.
+
 ### 1.8.3
 * This release brings support for creating events that get triggered dynamically during playback, with async preload support. See `APSMediaEvent` documentation for detailed information.
 * Ad breaks are now individually configurable via JSON/NSDictionary.

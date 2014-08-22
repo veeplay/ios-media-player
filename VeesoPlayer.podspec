@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = "VeesoPlayer"
-  s.version          = "1.8.3"
+  s.version          = "1.8.4"
   s.summary          = "Veeso Media Player"
   s.homepage         = "http://veeso.co"
   s.license          = 'Commercial'
-  s.author           = { "Gabi Dobocan" => "gabi@veeso.co" }
+  s.author           = { "Veeso" => "gabi@veeso.co" }
   s.source           = { :git => "https://github.com/veeso/ios-media-player.git", :tag => s.version.to_s }
 
   s.platform     = :ios, "5.0"

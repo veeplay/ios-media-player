@@ -14,9 +14,9 @@
 #import "APSMediaPlayerTextOverlayController.h"
 #import "APSMediaPlayerImageOverlayController.h"
 #import "APSMediaPlayerHTMLOverlayController.h"
-#import "APSMediaPlayerMidrollOverlayController.h"
 #import "APSMediaPlayerYoutubeOverlayController.h"
 #import "APSMediaPlayerVimeoOverlayController.h"
+#import "APSMediaEvent.h"
 
 @class APSMediaUnit;
 @protocol APSMediaPlayerOverlayController;
@@ -83,7 +83,7 @@ extern NSString *const APSContentOverlay;
 /**
  *  `APSMediaOverlay` describes any overlay that the `APSMediaPlayer` instance needs to render during playback.
  */
-@interface APSMediaOverlay : NSObject <NSCopying, APSMediaTrackableObject>
+@interface APSMediaOverlay : APSMediaEvent <NSCopying, APSMediaTrackableObject>
 
 /**-----------------------------------------------------------------------------
  * @name Setting the Overlay Type and Parameters
@@ -135,56 +135,6 @@ extern NSString *const APSContentOverlay;
  */
 
 @property (nonatomic) NSString *absoluteOffsetY;
-/**
- *  The duration (in seconds) for the fade in effect of the overlay, when it is placed on and taken off screen.
- */
-
-/**-----------------------------------------------------------------------------
- * @name Positioning the Overlay In Time
- * -----------------------------------------------------------------------------
- */
-
-/**
- *  Sets the starting time point of the overlay.
- *
- *  @param startPoint A string format describing the time point when the player needs to display the overlay. Possible values are seconds (e.g.: @"60") or a percentage relative to the total duration of the parent clip (e.g.: @"50%").
- */
-- (void)setStartPoint:(NSString*)startPoint;
-/**
- *  Sets the ending time point of the overlay.
- *
- *  @param endPoint A string format describing the time point when the player needs to remove the overlay. Possible values are seconds (e.g.: @"60") or a percentage relative to the total duration of the parent clip (e.g.: @"50%").
- */
-- (void)setEndPoint:(NSString*)endPoint;
-
-/**
- *  The time interval (in seconds) when the player needs to display the overlay.
- *
- *  @return The initial time interval.
- *  @warning If percentual values were set via `setStartPoint`, this value will change immediately after the current clip's duration is available.
- */
-- (NSTimeInterval)startPoint;
-/**
- *  The time interval (in seconds) when the player needs to remove the overlay.
- *
- *  @return The final time interval.
- *  @warning If percentual values were set via `setStartPoint`, this value will change immediately after the current clip's duration is available.
- */
-- (NSTimeInterval)endPoint;
-
-/**
- *  Shifts air-time for an overlay by a defined amount of time.
- *
- *  @param duration Shift duration in seconds.
- */
-- (void)incrementStartAndEndPointsWithInterval:(NSTimeInterval)duration;
-
-/**
- *  Translates percentual values set via `setStartPoint` to actual time intervals in seconds, relative to a specified total duration.
- *
- *  @param duration The total duration.
- */
-- (void)adjustRelativeToDuration:(NSTimeInterval)duration;
 
 
 /**-----------------------------------------------------------------------------
@@ -201,11 +151,6 @@ extern NSString *const APSContentOverlay;
  *  This dictionary defines all URLs that need to be notified of specific events from the overlay's lifecycle. The keys are event constants, as defined in `APSMediaPlayer`, and the values are `NSArrays` containing `NSURL` objects.
  */
 @property (nonatomic) NSMutableDictionary *trackingURLs;
-
-/**
- *  If this parameter is greater than 0, then the overlay will be reshown by the media player after the specific time interval (in seconds).
- */
-@property (nonatomic) NSTimeInterval repeatAfter;
 
 /**
  *  Defines if the overlay should be removed from memory when its' opacity becomes zero.

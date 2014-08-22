@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/APSMediaEventProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/APSMediaEventProtocol</TokenIdentifier>
+			<Abstract type="html">The APSMediaEventProtocol protocol describes methods that objects extending the associated APSMediaEvent class must or can implement.</Abstract>
+			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaEventProtocol/trigger</TokenIdentifier>
+			<Abstract type="html">This code will be executed once the event is triggered by the player.</Abstract>
+			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+			
+			<Declaration>- (void)trigger</Declaration>
+			
+			
+			<Anchor>//api/name/trigger</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaEventProtocol/preload</TokenIdentifier>
+			<Abstract type="html">This method will be invoked on a different thread by the player, before the event start point, as set by the [APSMediaEvent preTriggerInterval] property.</Abstract>
+			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+			
+			<Declaration>- (void)preload</Declaration>
+			
+			
+			<Anchor>//api/name/preload</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaEventProtocol/update</TokenIdentifier>
+			<Abstract type="html">This method will be invoked by the player periodically, giving the event the opportunity to respond to updated playback information.</Abstract>
+			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+			
+			<Declaration>- (void)update</Declaration>
+			
+			
+			<Anchor>//api/name/update</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaEventProtocol/eventWillUnload</TokenIdentifier>
+			<Abstract type="html">This method will be invoked by the player once the event has reached the end point and will be deallocated.</Abstract>
+			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+			
+			<Declaration>- (void)eventWillUnload</Declaration>
+			
+			
+			<Anchor>//api/name/eventWillUnload</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
