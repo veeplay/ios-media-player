@@ -141,6 +141,30 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/trigger</TokenIdentifier>
+			<Abstract type="html">Call this to trigger the event.</Abstract>
+			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+			
+			<Declaration>- (void)trigger</Declaration>
+			
+			
+			<Anchor>//api/name/trigger</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/preload</TokenIdentifier>
+			<Abstract type="html">Call this to preload the event.</Abstract>
+			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+			
+			<Declaration>- (void)preload</Declaration>
+			
+			
+			<Anchor>//api/name/preload</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/setPreloadInterval:</TokenIdentifier>
 			<Abstract type="html">Defines the number of seconds before the scheduled start point when the event should receive the [APSMediaEventProtocol preload] message (if the method is implemented).</Abstract>
 			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
@@ -213,74 +237,38 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/setLoaded:</TokenIdentifier>
-			<Abstract type="html">Set this to YES in [APSMediaEventProtocol preload], after the background loading task is done and the event is ready to trigger.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/setState:</TokenIdentifier>
+			<Abstract type="html">The current lifecycle state of the event.</Abstract>
 			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
 			
-			<Declaration>@property BOOL loaded</Declaration>
+			<Declaration>@property APSMediaEventState state</Declaration>
 			
 			
-			<Anchor>//api/name/loaded</Anchor>
+			<Anchor>//api/name/state</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/loaded</TokenIdentifier>
-			<Abstract type="html">Set this to YES in [APSMediaEventProtocol preload], after the background loading task is done and the event is ready to trigger.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/state</TokenIdentifier>
+			<Abstract type="html">The current lifecycle state of the event.</Abstract>
 			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
 			
-			<Declaration>@property BOOL loaded</Declaration>
+			<Declaration>@property APSMediaEventState state</Declaration>
 			
 			
-			<Anchor>//api/name/loaded</Anchor>
+			<Anchor>//api/name/state</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSMediaEvent/loaded</TokenIdentifier>
-			<Abstract type="html">Set this to YES in [APSMediaEventProtocol preload], after the background loading task is done and the event is ready to trigger.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaEvent/state</TokenIdentifier>
+			<Abstract type="html">The current lifecycle state of the event.</Abstract>
 			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
 			
-			<Declaration>@property BOOL loaded</Declaration>
+			<Declaration>@property APSMediaEventState state</Declaration>
 			
 			
-			<Anchor>//api/name/loaded</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/setFailed:</TokenIdentifier>
-			<Abstract type="html">Set this to YES in [APSMediaEventProtocol preload] if preloading failed and the event should be dropped.</Abstract>
-			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
-			
-			<Declaration>@property BOOL failed</Declaration>
-			
-			
-			<Anchor>//api/name/failed</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/failed</TokenIdentifier>
-			<Abstract type="html">Set this to YES in [APSMediaEventProtocol preload] if preloading failed and the event should be dropped.</Abstract>
-			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
-			
-			<Declaration>@property BOOL failed</Declaration>
-			
-			
-			<Anchor>//api/name/failed</Anchor>
-            <NodeRef refid="2"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSMediaEvent/failed</TokenIdentifier>
-			<Abstract type="html">Set this to YES in [APSMediaEventProtocol preload] if preloading failed and the event should be dropped.</Abstract>
-			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
-			
-			<Declaration>@property BOOL failed</Declaration>
-			
-			
-			<Anchor>//api/name/failed</Anchor>
+			<Anchor>//api/name/state</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

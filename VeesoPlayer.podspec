@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VeesoPlayer"
-  s.version          = "1.8.4"
+  s.version          = "1.8.5"
   s.summary          = "Veeso Media Player"
   s.homepage         = "http://veeso.co"
   s.license          = 'Commercial'
@@ -10,11 +10,13 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "5.0"
   s.requires_arc = true
 
+  s.documentation_url = 'http://veeso.github.io/ios-docs'
+
   s.source_files         = "Headers/*.h"
   s.resources            = "Assets/*.bundle"
   s.public_header_files  = "Headers/*.h"
-  s.preserve_paths       = "libAPSMediaPlayer.a", "Docs/*"
-  s.library              = "APSMediaPlayer", "z"
+  s.preserve_paths       = "libVeesoPlayer.a", "Docs/*"
+  s.library              = "VeesoPlayer", "z"
   s.xcconfig             =  { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/VeesoPlayer"' }
 
   s.frameworks = "AVFoundation", "MediaPlayer"

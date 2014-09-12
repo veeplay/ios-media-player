@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSControlsOverlayComponents.html">
+	<File path="Constants/APSMediaControlsDisplay.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSControlsOverlayComponents</TokenIdentifier>
-			<Abstract type="html">Controls bar components.</Abstract>
-			<DeclaredIn>APSMediaPlayerControlsOverlayController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/APSMediaControlsDisplay</TokenIdentifier>
+			<Abstract type="html">Specifies how the controls bar should be displayed for a media unit.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
             
 			
 			<NodeRef refid="31"/>
@@ -14,100 +14,34 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSCurrentTimeControl</TokenIdentifier>
-            <Abstract type="html">The current playback time counter.
+            <TokenIdentifier>//apple_ref/c/econst/APSMediaControlsDisplayBottom</TokenIdentifier>
+            <Abstract type="html">The controls bar should be displayed at the bottom of the player surface.
      </Abstract>
-            <Declaration>APSCurrentTimeControl</Declaration>
+            <Declaration>APSMediaControlsDisplayBottom</Declaration>
             
-            <DeclaredIn>APSMediaPlayerControlsOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSMediaUnit.h</DeclaredIn>
             
             <NodeRef refid="31"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSTimeSliderControl</TokenIdentifier>
-            <Abstract type="html">The seek bar (time slider) control.
+            <TokenIdentifier>//apple_ref/c/econst/APSMediaControlsDisplayTop</TokenIdentifier>
+            <Abstract type="html">The controls bar should be displayed at the top of the player surface.
      </Abstract>
-            <Declaration>APSTimeSliderControl</Declaration>
+            <Declaration>APSMediaControlsDisplayTop</Declaration>
             
-            <DeclaredIn>APSMediaPlayerControlsOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSMediaUnit.h</DeclaredIn>
             
             <NodeRef refid="31"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSTotalTimeControl</TokenIdentifier>
-            <Abstract type="html">The total playback time display.
+            <TokenIdentifier>//apple_ref/c/econst/APSMediaControlsDisplayNone</TokenIdentifier>
+            <Abstract type="html">The controls bar should not be displayed for this unit.
      </Abstract>
-            <Declaration>APSTotalTimeControl</Declaration>
+            <Declaration>APSMediaControlsDisplayNone</Declaration>
             
-            <DeclaredIn>APSMediaPlayerControlsOverlayController.h</DeclaredIn>
-            
-            <NodeRef refid="31"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSAirPlayControl</TokenIdentifier>
-            <Abstract type="html">The AirPlay video control. This control only appears when an AirPlay ready device is detected in the current network.
-     </Abstract>
-            <Declaration>APSAirPlayControl</Declaration>
-            
-            <DeclaredIn>APSMediaPlayerControlsOverlayController.h</DeclaredIn>
-            
-            <NodeRef refid="31"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSFullScreenControl</TokenIdentifier>
-            <Abstract type="html">The fullscreen toggle control.
-     </Abstract>
-            <Declaration>APSFullScreenControl</Declaration>
-            
-            <DeclaredIn>APSMediaPlayerControlsOverlayController.h</DeclaredIn>
-            
-            <NodeRef refid="31"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSThumbnailTimeSliderControl</TokenIdentifier>
-            <Abstract type="html">The seek bar (time slider) control, with mid-seek thumbnail support.
-     </Abstract>
-            <Declaration>APSThumbnailTimeSliderControl</Declaration>
-            
-            <DeclaredIn>APSMediaPlayerControlsOverlayController.h</DeclaredIn>
-            
-            <NodeRef refid="31"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSPreviousControl</TokenIdentifier>
-            <Abstract type="html">Control allowing the user to return to previous unit in the playlist.
-     </Abstract>
-            <Declaration>APSPreviousControl</Declaration>
-            
-            <DeclaredIn>APSMediaPlayerControlsOverlayController.h</DeclaredIn>
-            
-            <NodeRef refid="31"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSNextControl</TokenIdentifier>
-            <Abstract type="html">Control allowing the user to proceed to the next unit in the playlist.
-     </Abstract>
-            <Declaration>APSNextControl</Declaration>
-            
-            <DeclaredIn>APSMediaPlayerControlsOverlayController.h</DeclaredIn>
-            
-            <NodeRef refid="31"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSPlaybackControl</TokenIdentifier>
-            <Abstract type="html">The play/stop control.
-     </Abstract>
-            <Declaration>APSPlaybackControl</Declaration>
-            
-            <DeclaredIn>APSMediaPlayerControlsOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSMediaUnit.h</DeclaredIn>
             
             <NodeRef refid="31"/>
         </Token>

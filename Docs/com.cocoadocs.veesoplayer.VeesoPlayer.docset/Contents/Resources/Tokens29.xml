@@ -1,29 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/KRAdapter.html">
+	<File path="Constants/APSAdPodFallback.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/KRAdapter</TokenIdentifier>
-			<Abstract type="html">The KRAdapter protocol allows an object to declare itself as being of a certain type.</Abstract>
-			<DeclaredIn>KRAdapter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/APSAdPodFallback</TokenIdentifier>
+			<Abstract type="html">VAST 3.0 defines Ad Pods, with fallback mechanisms that allow loading an ad buffet of commercials to playback if the main ads fail. This value specifies how to treat backwards compatibility issues with VAST 2.0 and 1.0, by choosing what ads are promoted to the main Ad Pod if no valid Pods are detected.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
 			
 			<NodeRef refid="29"/>
 		</Token>
 		
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/KRAdapter/type</TokenIdentifier>
-			<Abstract type="html">Returns the adapter type.</Abstract>
-			<DeclaredIn>KRAdapter.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)type</Declaration>
-			
-			<ReturnValue><Abstract type="html">An adapter type in string format.</Abstract></ReturnValue>
-			<Anchor>//api/name/type</Anchor>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSAdPodFallbackSelectAll</TokenIdentifier>
+            <Abstract type="html">Load all retrieved ads if no valid Ad Pods are found.
+     </Abstract>
+            <Declaration>APSAdPodFallbackSelectAll</Declaration>
+            
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            
             <NodeRef refid="29"/>
-		</Token>
-		
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSAdPodFallbackSelectFirst</TokenIdentifier>
+            <Abstract type="html">Load only the first retrieved ad if no valid Ad Pods are found.
+     </Abstract>
+            <Declaration>APSAdPodFallbackSelectFirst</Declaration>
+            
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSAdPodFallbackDrop</TokenIdentifier>
+            <Abstract type="html">Drop the whole ad request if no valid Ad Pods are found. This value will disable VAST 1.0 and 2.0 compatibility.
+     </Abstract>
+            <Declaration>APSAdPodFallbackDrop</Declaration>
+            
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            
+            <NodeRef refid="29"/>
+        </Token>
         
 	</File>
 </Tokens>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSVASTConfigurationOptions.html">
+	<File path="Constants/APSVASTAdBreakType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSVASTConfigurationOptions</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/c/tdef/APSVASTAdBreakType</TokenIdentifier>
 			<Abstract type="html">Defines how an APSVASTAdBreak should be placed relative to the main content units.</Abstract>
-			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
 			
 			<NodeRef refid="36"/>
@@ -19,7 +19,7 @@
      </Abstract>
             <Declaration>APSVASTPreContent</Declaration>
             
-            <DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="36"/>
         </Token>
@@ -30,7 +30,7 @@
      </Abstract>
             <Declaration>APSVASTPostContent</Declaration>
             
-            <DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="36"/>
         </Token>
@@ -41,7 +41,7 @@
      </Abstract>
             <Declaration>APSVASTMidContent</Declaration>
             
-            <DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="36"/>
         </Token>
@@ -52,7 +52,7 @@
      </Abstract>
             <Declaration>APSVASTNonLinear</Declaration>
             
-            <DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="36"/>
         </Token>

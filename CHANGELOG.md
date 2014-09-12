@@ -1,3 +1,10 @@
+### 1.8.5
+* This release fixes a series of issues that some media files with progressive download display in certain playback scenarios, including:
+  * Setting an initial playback time
+  * Resuming from a midroll block
+  * Resuming from a web browser window
+* Fixed bug with displaying midrolls on DRM units
+
 ### 1.8.4
 * This release brings support for unit managers. Unit managers are external objects that implement dynamic playback operations. Use them if you need to generate media URLs using timestamps or for implementing DRM support. See APSUnitManagerProtocol for more details.
 

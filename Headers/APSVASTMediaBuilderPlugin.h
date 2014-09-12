@@ -11,17 +11,14 @@
 #import "APSMediaUnit.h"
 #import "APSMediaOverlay.h"
 #import "APSVASTSkipOverlayController.h"
-#import "APSVASTSkipButtonConfiguration.h"
-#import "APSVASTCountdownConfiguration.h"
-#import "APSVASTBannerConfiguration.h"
-@class APSVASTAdBreak;
+#import "APSVASTAdBreak.h"
 
 #define kAPSVASTFrameworkExtensionsGroup @"com.appscend.vast.frameworkextensions"
 
-extern NSString *const APSVASTPrerollUnit;
-extern NSString *const APSVASTMidrollUnit;
-extern NSString *const APSVASTPostrollUnit;
-extern NSString *const APSVASTNonlinearAd;
+extern NSString *const kAPSVASTPrerollUnit;
+extern NSString *const kAPSVASTMidrollUnit;
+extern NSString *const kAPSVASTPostrollUnit;
+extern NSString *const kAPSVASTNonlinearAd;
 
 #ifndef NS_ENUM
 #define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
@@ -29,64 +26,6 @@ extern NSString *const APSVASTNonlinearAd;
 
 #define kAPSMetadataCurrentAdBreakIndex @"aps_vast_adbreak_index"
 #define kAPSMetadataTotalAdBreakAds @"aps_vast_adbreak_total"
-
-/**
- *  The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.
- */
-typedef NS_ENUM(NSInteger, APSResolvMultipleAdsConflictsBy) {
-    /**
-     *  Solve the issue by dropping all loaded ads.
-     */
-    APSResolvMultipleAdsConflictsByDropping,
-    /**
-     *  Solve the issue by only inserting the first valid ad retrieved, honoring the defined order in the VAST.
-     */
-    APSResolvMultipleAdsConflictsBySelectingFirst,
-    /**
-     *  Solve the issue by only inserting one random ad from the loaded batch.
-     */
-    APSResolvMultipleAdsConflictsBySelectingRandom
-};
-
-/**
- *  VAST 3.0 defines Ad Pods, with fallback mechanisms that allow loading an ad buffet of commercials to playback if the main ads fail. This value specifies how to treat backwards compatibility issues with VAST 2.0 and 1.0, by choosing what ads are promoted to the main Ad Pod if no valid Pods are detected.
- */
-typedef NS_ENUM(NSInteger, APSAdPodFallback) {
-    /**
-     *  Load all retrieved ads if no valid Ad Pods are found.
-     */
-    APSAdPodFallbackSelectAll,
-    /**
-     *  Load only the first retrieved ad if no valid Ad Pods are found.
-     */
-    APSAdPodFallbackSelectFirst,
-    /**
-     *  Drop the whole ad request if no valid Ad Pods are found. This value will disable VAST 1.0 and 2.0 compatibility.
-     */
-    APSAdPodFallbackDrop
-};
-
-/**
- *  Defines how an `APSVASTAdBreak` should be placed relative to the main content units.
- */
-typedef NS_ENUM(NSInteger, APSVASTConfigurationOptions) {
-    /**
-     *  Place the `APSMediaUnit`s corresponding to the ad break at the beginning of the main content units.
-     */
-    APSVASTPreContent,
-    /**
-     *  Place the `APSMediaUnit`s corresponding to the ad break at the end of the main content units.
-     */
-    APSVASTPostContent,
-    /**
-     *  Place the `APSMediaUnit`s corresponding to the ad break in the middle of each main content unit, at a defined offset (see the `adOffset` property of `APSVASTAdBreak`).
-     */
-    APSVASTMidContent,
-    /**
-     *  Place the `APSMediaOverlay`s corresponding to the ad break in the middle of each main content unit, ad a defined offset (see the `adOffset` property of `APSVASTAdBreak`).
-     */
-    APSVASTNonLinear
-};
 
 
 /**
@@ -111,8 +50,10 @@ typedef NS_ENUM(NSInteger, APSVASTConfigurationOptions) {
  *  The VMAP 1.0 URL that should be used to configure ad breaks.
  */
 @property (nonatomic) NSURL *vmapURL;
-
-@property (nonatomic) APSVASTAdBreak *vmapAdBreakTemplate;
+/**
+ *  The template object that holds default parameter values for ad breaks created from VMAP or VAST.
+ */
+@property (nonatomic) APSVASTAdBreak *adBreakTemplate;
 /**
  *  The currently defined ad breaks that the plugin will try to fill.
  */

@@ -9,6 +9,36 @@
 #import <Foundation/Foundation.h>
 
 /**
+ *  Describes the current lifecycle state of a APSMediaEvent.
+ */
+typedef NS_ENUM(NSInteger, APSMediaEventState) {
+    /**
+     *  The event has not yet been loaded.
+     */
+    APSMediaEventStateUnloaded,
+    /**
+     *  The event is currently preloading.
+     */
+    APSMediaEventStatePreloading,
+    /**
+     *  The event has succesfully preloaded and is ready to be triggered.
+     */
+    APSMediaEventStatePreloaded,
+    /**
+     *  The event failed to preload and should not be triggered.
+     */
+    APSMediaEventStateFailed,
+    /**
+     *  The event is triggered.
+     */
+    APSMediaEventStateTriggered,
+    /**
+     *  The event finished.
+     */
+    APSMediaEventStateFinished
+};
+
+/**
  *  The `APSMediaEventProtocol` protocol describes methods that objects extending the associated `APSMediaEvent` class must or can implement.
  */
 @protocol APSMediaEventProtocol <NSObject>
@@ -16,23 +46,23 @@
 /**
  *  This code will be executed once the event is triggered by the player.
  */
-- (void)trigger;
+- (void)onTrigger;
 
 @optional
 /**
  *  This method will be invoked on a different thread by the player, before the event start point, as set by the [APSMediaEvent preTriggerInterval] property.
  */
-- (void)preload;
+- (void)onPreload;
 
 /**
  *  This method will be invoked by the player periodically, giving the event the opportunity to respond to updated playback information.
  */
-- (void)update;
+- (void)onUpdate;
 
 /**
  *  This method will be invoked by the player once the event has reached the end point and will be deallocated.
  */
-- (void)eventWillUnload;
+- (void)onUnload;
 
 @end
 
@@ -98,6 +128,19 @@
  * -----------------------------------------------------------------------------
  */
 /**
+ *  Call this to trigger the event.
+ */
+- (void)trigger;
+/**
+ *  Call this to preload the event.
+ */
+- (void)preload;
+
+/**-----------------------------------------------------------------------------
+ * @name Asynchroneous Event Preloading
+ * -----------------------------------------------------------------------------
+ */
+/**
  *  Defines the number of seconds before the scheduled start point when the event should receive the [APSMediaEventProtocol preload] message (if the method is implemented).
  */
 @property (nonatomic) NSTimeInterval preloadInterval;
@@ -108,14 +151,9 @@
 @property (nonatomic) NSTimeInterval timeout;
 
 /**
- *  Set this to `YES` in [APSMediaEventProtocol preload], after the background loading task is done and the event is ready to trigger.
+ *  The current lifecycle state of the event.
  */
-@property BOOL loaded;
-
-/**
- *  Set this to `YES` in [APSMediaEventProtocol preload] if preloading failed and the event should be dropped.
- */
-@property BOOL failed;
+@property APSMediaEventState state;
 
 /**
  *  Set by the player to the current playback time in seconds, after the current event begins preloading. Defaults to -1 if the event did not start preloading.

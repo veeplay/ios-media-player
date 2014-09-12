@@ -61,38 +61,38 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/setVmapAdBreakTemplate:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/setAdBreakTemplate:</TokenIdentifier>
+			<Abstract type="html">The template object that holds default parameter values for ad breaks created from VMAP or VAST.</Abstract>
 			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) APSVASTAdBreak *vmapAdBreakTemplate</Declaration>
+			<Declaration>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</Declaration>
 			
 			
-			<Anchor>//api/name/vmapAdBreakTemplate</Anchor>
+			<Anchor>//api/name/adBreakTemplate</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/vmapAdBreakTemplate</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/adBreakTemplate</TokenIdentifier>
+			<Abstract type="html">The template object that holds default parameter values for ad breaks created from VMAP or VAST.</Abstract>
 			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) APSVASTAdBreak *vmapAdBreakTemplate</Declaration>
+			<Declaration>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</Declaration>
 			
 			
-			<Anchor>//api/name/vmapAdBreakTemplate</Anchor>
+			<Anchor>//api/name/adBreakTemplate</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTMediaBuilderPlugin/vmapAdBreakTemplate</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTMediaBuilderPlugin/adBreakTemplate</TokenIdentifier>
+			<Abstract type="html">The template object that holds default parameter values for ad breaks created from VMAP or VAST.</Abstract>
 			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) APSVASTAdBreak *vmapAdBreakTemplate</Declaration>
+			<Declaration>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</Declaration>
 			
 			
-			<Anchor>//api/name/vmapAdBreakTemplate</Anchor>
+			<Anchor>//api/name/adBreakTemplate</Anchor>
             <NodeRef refid="18"/>
 		</Token>
 		

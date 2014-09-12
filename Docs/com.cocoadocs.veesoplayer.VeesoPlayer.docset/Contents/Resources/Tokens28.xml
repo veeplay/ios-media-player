@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/APSUnitManagerProtocol.html">
+	<File path="Protocols/KRAdapter.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/APSUnitManagerProtocol</TokenIdentifier>
-			<Abstract type="html">This protocol provides an interface for external objects that implement dynamic playback operations. Use this if you need to generate media URLs using timestamps or for implementing DRM support.</Abstract>
-			<DeclaredIn>APSUnitManagerProtocol.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/KRAdapter</TokenIdentifier>
+			<Abstract type="html">The KRAdapter protocol allows an object to declare itself as being of a certain type.</Abstract>
+			<DeclaredIn>KRAdapter.h</DeclaredIn>
             
 			
 			<NodeRef refid="28"/>
@@ -13,31 +13,14 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSUnitManagerProtocol/startForUnit:</TokenIdentifier>
-			<Abstract type="html">When an APSMediaUnit is loaded by the player, if it declares requiring a manager that matches the current object&apos;s [KRAdapter type], this method will be invoked.</Abstract>
-			<DeclaredIn>APSUnitManagerProtocol.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/KRAdapter/type</TokenIdentifier>
+			<Abstract type="html">Returns the adapter type.</Abstract>
+			<DeclaredIn>KRAdapter.h</DeclaredIn>
 			
-			<Declaration>- (void)startForUnit:(APSMediaUnit *)unit</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>unit</Name>
-					<Abstract type="html">The currently loading unit.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (NSString *)type</Declaration>
 			
-			<Anchor>//api/name/startForUnit:</Anchor>
-            <NodeRef refid="28"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSUnitManagerProtocol/end</TokenIdentifier>
-			<Abstract type="html">When an APSMediaUnit ends playback, if it declares requiring a manager that matches the current object&apos;s [KRAdapter type], this method will be invoked.</Abstract>
-			<DeclaredIn>APSUnitManagerProtocol.h</DeclaredIn>
-			
-			<Declaration>- (void)end</Declaration>
-			
-			
-			<Anchor>//api/name/end</Anchor>
+			<ReturnValue><Abstract type="html">An adapter type in string format.</Abstract></ReturnValue>
+			<Anchor>//api/name/type</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		

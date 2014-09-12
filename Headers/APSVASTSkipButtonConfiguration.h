@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "APSVASTMediaBuilderPlugin.h"
+#import "APSMediaOverlay.h"
+#import "APSVASTSkipOverlayController.h"
 
 /**
  *  Holds all configuration parameters for the skip button displayed on top of video ads
@@ -22,7 +23,7 @@
 /**
  The default interval of time that needs to pass before the skip overlay is activated for tapping.
  
- The default value is -1, which makes the skip button active from the first moment.
+ The default value is -1, which makes the skip button invisible.
  */
 @property (nonatomic) int defaultSkipOffset;
 /**

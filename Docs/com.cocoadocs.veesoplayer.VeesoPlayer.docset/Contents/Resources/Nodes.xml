@@ -32,7 +32,6 @@
 						<NodeRef refid="19"/>
 						<NodeRef refid="20"/>
 						<NodeRef refid="21"/>
-						<NodeRef refid="22"/>
 						
 					</Subnodes>
 				</Node>
@@ -43,13 +42,13 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="22"/>
 						<NodeRef refid="23"/>
 						<NodeRef refid="24"/>
 						<NodeRef refid="25"/>
 						<NodeRef refid="26"/>
 						<NodeRef refid="27"/>
 						<NodeRef refid="28"/>
-						<NodeRef refid="29"/>
 						
 					</Subnodes>
 				</Node>
@@ -59,6 +58,7 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="29"/>
 						<NodeRef refid="30"/>
 						<NodeRef refid="31"/>
 						<NodeRef refid="32"/>
@@ -501,11 +501,6 @@
             
         </Node>
 		<Node id="21" type="file" documentType="reference">
-            <Name>APSVASTStepEvent</Name>
-            <Path>Classes/APSVASTStepEvent.html</Path>
-            
-        </Node>
-		<Node id="22" type="file" documentType="reference">
             <Name>KRHub</Name>
             <Path>Classes/KRHub.html</Path>
             
@@ -534,7 +529,7 @@
         </Node>
 		
 		
-        <Node id="23" type="file" documentType="reference">
+        <Node id="22" type="file" documentType="reference">
             <Name>APSMediaBuilderPlugin</Name>
             <Path>Protocols/APSMediaBuilderPlugin.html</Path>
             
@@ -561,7 +556,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="24" type="file" documentType="reference">
+		<Node id="23" type="file" documentType="reference">
             <Name>APSMediaEventProtocol</Name>
             <Path>Protocols/APSMediaEventProtocol.html</Path>
             
@@ -588,7 +583,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="25" type="file" documentType="reference">
+		<Node id="24" type="file" documentType="reference">
             <Name>APSMediaPlayerActionDelegate</Name>
             <Path>Protocols/APSMediaPlayerActionDelegate.html</Path>
             
@@ -615,7 +610,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="26" type="file" documentType="reference">
+		<Node id="25" type="file" documentType="reference">
             <Name>APSMediaPlayerOverlayControllerProtocol</Name>
             <Path>Protocols/APSMediaPlayerOverlayControllerProtocol.html</Path>
             
@@ -642,7 +637,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="27" type="file" documentType="reference">
+		<Node id="26" type="file" documentType="reference">
             <Name>APSMediaTrackableObject</Name>
             <Path>Protocols/APSMediaTrackableObject.html</Path>
             
@@ -669,7 +664,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="28" type="file" documentType="reference">
+		<Node id="27" type="file" documentType="reference">
             <Name>APSUnitManagerProtocol</Name>
             <Path>Protocols/APSUnitManagerProtocol.html</Path>
             
@@ -696,7 +691,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="29" type="file" documentType="reference">
+		<Node id="28" type="file" documentType="reference">
             <Name>KRAdapter</Name>
             <Path>Protocols/KRAdapter.html</Path>
             
@@ -724,19 +719,24 @@
             
         </Node>
 		
-        <Node id="30" type="file" documentType="reference">
+        <Node id="29" type="file" documentType="reference">
             <Name>APSAdPodFallback</Name>
             <Path>Constants/APSAdPodFallback.html</Path>
             
         </Node>
-		<Node id="31" type="file" documentType="reference">
+		<Node id="30" type="file" documentType="reference">
             <Name>APSControlsOverlayComponents</Name>
             <Path>Constants/APSControlsOverlayComponents.html</Path>
             
         </Node>
-		<Node id="32" type="file" documentType="reference">
+		<Node id="31" type="file" documentType="reference">
             <Name>APSMediaControlsDisplay</Name>
             <Path>Constants/APSMediaControlsDisplay.html</Path>
+            
+        </Node>
+		<Node id="32" type="file" documentType="reference">
+            <Name>APSMediaEventState</Name>
+            <Path>Constants/APSMediaEventState.html</Path>
             
         </Node>
 		<Node id="33" type="file" documentType="reference">
@@ -755,8 +755,8 @@
             
         </Node>
 		<Node id="36" type="file" documentType="reference">
-            <Name>APSVASTConfigurationOptions</Name>
-            <Path>Constants/APSVASTConfigurationOptions.html</Path>
+            <Name>APSVASTAdBreakType</Name>
+            <Path>Constants/APSVASTAdBreakType.html</Path>
             
         </Node>
 		<Node id="37" type="file" documentType="reference">

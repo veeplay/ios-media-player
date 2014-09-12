@@ -5,7 +5,7 @@
 		<Token>
 			<TokenIdentifier>//apple_ref/c/tdef/APSResolvMultipleAdsConflictsBy</TokenIdentifier>
 			<Abstract type="html">The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.</Abstract>
-			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
 			
 			<NodeRef refid="34"/>
@@ -19,7 +19,7 @@
      </Abstract>
             <Declaration>APSResolvMultipleAdsConflictsByDropping</Declaration>
             
-            <DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="34"/>
         </Token>
@@ -30,7 +30,7 @@
      </Abstract>
             <Declaration>APSResolvMultipleAdsConflictsBySelectingFirst</Declaration>
             
-            <DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="34"/>
         </Token>
@@ -41,7 +41,7 @@
      </Abstract>
             <Declaration>APSResolvMultipleAdsConflictsBySelectingRandom</Declaration>
             
-            <DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="34"/>
         </Token>
