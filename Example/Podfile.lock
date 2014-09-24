@@ -1,0 +1,23 @@
+PODS:
+  - KAProgressLabel (1.2)
+  - TBXML (1.5)
+  - TSMiniWebBrowser (1.0.1)
+  - VeesoPlayer (1.8.6):
+    - KAProgressLabel (~> 1.2)
+    - TBXML (~> 1.5)
+    - TSMiniWebBrowser
+
+DEPENDENCIES:
+  - VeesoPlayer (from `../`)
+
+EXTERNAL SOURCES:
+  VeesoPlayer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KAProgressLabel: 49d9a4b954976e56bab6179436e11b9cbf5ad384
+  TBXML: a279440030ba55c40e1455cafba3b0a44e1963d4
+  TSMiniWebBrowser: 168855429bb9f462b035d5b3d9a5432ec38849ec
+  VeesoPlayer: 5117e6abd7fe6a540fd8392d62398ab2fb6a6edc
+
+COCOAPODS: 0.33.1
