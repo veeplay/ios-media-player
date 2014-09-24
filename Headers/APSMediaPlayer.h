@@ -171,6 +171,12 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  The container `UIView` of the player.
  */
 @property (nonatomic, readonly) UIView *view;
+/**
+ *  Call this method to set the player view frame.
+ *
+ *  @param frame `CGRect` player view frame.
+ */
+- (void)setFrame:(CGRect)frame;
 
 /**-----------------------------------------------------------------------------
  * @name Working with Media Units

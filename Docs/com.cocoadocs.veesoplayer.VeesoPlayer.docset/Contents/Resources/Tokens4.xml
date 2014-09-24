@@ -61,6 +61,23 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setFrame:</TokenIdentifier>
+			<Abstract type="html">Call this method to set the player view frame.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>- (void)setFrame:(CGRect)frame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">CGRect player view frame.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setFrame:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/playMediaUnits:</TokenIdentifier>
 			<Abstract type="html">Sets and begins playback of an array of media units.</Abstract>
 			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>

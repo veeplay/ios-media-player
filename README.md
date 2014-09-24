@@ -34,7 +34,7 @@ There are currently two integration paths: via CocoaPods or via standard library
 		
 	- Add the player’s static library to your project.
 	
-		- Drag the “libAPSMediaPlayer.a” file to your project.
+		- Drag the “libVeesoPlayer.a” file to your project.
 		- When prompted, make sure to check the project target that should link against the static library.
 		- Select your target in the project settings screen.
 		- Select the “Build Settings” tab.
