@@ -11,6 +11,12 @@ The Veeso Media Player allows you to:
 * Create custom player skins, brand player with logo, insert overlay bugs, customize player controls
 * Track video and overlay lifecycle events in real-time, as rendered
 
+## Demo
+
+Install [cocoapods](http://guides.cocoapods.org/using/getting-started.html#getting-started), and then run
+
+	pod try VeesoPlayer
+
 ## Installation
 
 There are currently two integration paths: via CocoaPods or via standard library download.
