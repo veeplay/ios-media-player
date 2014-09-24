@@ -9,7 +9,6 @@
 #import "ManualConfigurationViewController.h"
 #import "APSMediaPlayer.h"
 #import "APSVASTMediaBuilderPlugin.h"
-#import "UIView+MTZoom.h"
 
 @interface ManualConfigurationViewController ()
 
