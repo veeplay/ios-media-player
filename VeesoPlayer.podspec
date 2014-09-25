@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.xcconfig             =  { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/VeesoPlayer"' }
 
   s.frameworks = "AVFoundation", "MediaPlayer"
-  s.dependency "KAProgressLabel", "~> 2.0"
+  s.dependency "KAProgressLabel", "~> 1.2"
   s.dependency "TBXML", "~> 1.5"
   s.dependency "TSMiniWebBrowser"
 end
