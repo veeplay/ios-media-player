@@ -43,6 +43,24 @@ typedef NS_ENUM(NSInteger, APSMediaControlsDisplay) {
 };
 
 /**
+ *  Specifies how the unit should handle seeking through multiple ad breaks.
+ */
+typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
+    /**
+     *  This will only trigger the first ad break.
+     */
+    APSHandleSeekEventPlayFirstBreak,
+    /**
+     *  This will only trigger the last ad break.
+     */
+    APSHandleSeekEventPlayLastBreak,
+    /**
+     *  This will trigger all ad breaks.
+     */
+    APSHandleSeekEventPlayAllBreaks
+};
+
+/**
  *  The `APSMediaUnit` class represents a clip that's ready to be rendered by the player. A media unit also references an array of `APSMediaOverlay` objects, defining the overlays connected to the unit.
  */
 @interface APSMediaUnit : NSObject <NSCopying, APSMediaTrackableObject>
@@ -194,6 +212,10 @@ typedef NS_ENUM(NSInteger, APSMediaControlsDisplay) {
  *  Additional unit information.
  */
 @property (nonatomic) NSMutableDictionary *metadata;
+/**
+ *  Defines how the unit should render multiple ad breaks that have been seeked over by the user.
+ */
+@property (nonatomic, assign) APSHandleSeekEvent seekHandling;
 
 /**-----------------------------------------------------------------------------
  * @name Utility Methods

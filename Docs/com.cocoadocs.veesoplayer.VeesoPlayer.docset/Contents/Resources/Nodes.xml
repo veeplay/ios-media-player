@@ -67,6 +67,7 @@
 						<NodeRef refid="35"/>
 						<NodeRef refid="36"/>
 						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
 						
 					</Subnodes>
 				</Node>
@@ -730,36 +731,41 @@
             
         </Node>
 		<Node id="31" type="file" documentType="reference">
+            <Name>APSHandleSeekEvent</Name>
+            <Path>Constants/APSHandleSeekEvent.html</Path>
+            
+        </Node>
+		<Node id="32" type="file" documentType="reference">
             <Name>APSMediaControlsDisplay</Name>
             <Path>Constants/APSMediaControlsDisplay.html</Path>
             
         </Node>
-		<Node id="32" type="file" documentType="reference">
+		<Node id="33" type="file" documentType="reference">
             <Name>APSMediaEventState</Name>
             <Path>Constants/APSMediaEventState.html</Path>
             
         </Node>
-		<Node id="33" type="file" documentType="reference">
+		<Node id="34" type="file" documentType="reference">
             <Name>APSMediaOverlayPosition</Name>
             <Path>Constants/APSMediaOverlayPosition.html</Path>
             
         </Node>
-		<Node id="34" type="file" documentType="reference">
+		<Node id="35" type="file" documentType="reference">
             <Name>APSResolvMultipleAdsConflictsBy</Name>
             <Path>Constants/APSResolvMultipleAdsConflictsBy.html</Path>
             
         </Node>
-		<Node id="35" type="file" documentType="reference">
+		<Node id="36" type="file" documentType="reference">
             <Name>APSSkipOverlayProgressPosition</Name>
             <Path>Constants/APSSkipOverlayProgressPosition.html</Path>
             
         </Node>
-		<Node id="36" type="file" documentType="reference">
+		<Node id="37" type="file" documentType="reference">
             <Name>APSVASTAdBreakType</Name>
             <Path>Constants/APSVASTAdBreakType.html</Path>
             
         </Node>
-		<Node id="37" type="file" documentType="reference">
+		<Node id="38" type="file" documentType="reference">
             <Name>APSWebviewDismissedAction</Name>
             <Path>Constants/APSWebviewDismissedAction.html</Path>
             

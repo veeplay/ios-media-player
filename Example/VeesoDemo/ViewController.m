@@ -12,6 +12,7 @@
 #import "DictionaryConfigurationViewController.h"
 #import "MRAIDShowcaseViewController.h"
 #import "ContinuousViewController.h"
+#import "APSMediaPlayer.h"
 
 @interface ViewController () {
     NSArray *_model;
@@ -58,6 +59,10 @@ static NSString *CellIdentifier = @"Cell";
 
 - (void)viewDidLayoutSubviews {
     self.scrollView.contentSize = CGSizeMake(840, 268);
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)buttonPressed:(id)sender {

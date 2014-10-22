@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface DemoViewController : ViewController
+@interface DemoViewController : UIViewController
 
 - (NSString*)title;
 - (NSString*)shortDescription;

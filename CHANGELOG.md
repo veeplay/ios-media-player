@@ -1,3 +1,11 @@
+### 1.8.7
+This release fixes the following issues:
+
+* A pause VAST event being sent between ads
+* VAST Fallback not working
+
+Also, a new unit configuration is available that allows choosing how many ads should be rendered when seeking in a video.
+
 ### 1.8.6
 * The player frame should be set using the `setFrame` method, now available
 * Fullscreen-related issues have been fixed, with iOS 8 support

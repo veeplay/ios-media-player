@@ -37,7 +37,7 @@
     [builder addPlugin:vastPlugin];
     
     // Configure the builder from a remote JSON configuration file and render the resulting media units
-    [builder configureFromURL:[NSURL URLWithString:@"http://veeso.github.io/json-docs/example6.json"] onComplete:^() {
+    [builder configureFromURL:[NSURL URLWithString:@"http://appscend.mobi/redStars//Phone_Item/mediaPlayerConfig?platform=1&vid=2272102"] onComplete:^() {
         [[APSMediaPlayer sharedInstance] playMediaUnits:[builder mediaUnits]];
     }];
 }

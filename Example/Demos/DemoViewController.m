@@ -44,6 +44,16 @@
     
     self.navigationItem.title = [self title];
     
+    UIImage *backgroundImage;
+    if (_isWidescreenDevice) {
+        backgroundImage = [UIImage imageNamed:@"5bg_2x"];
+    }
+    else {
+        backgroundImage = [UIImage imageNamed:@"bg"];
+    }
+    UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:backgroundImage];
+    [self.view insertSubview:backgroundImageView atIndex:0];
+    
     UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 75, 300, 40)];
     textLabel.text = [self shortDescription];
     textLabel.textColor = [UIColor whiteColor];
@@ -72,9 +82,8 @@
     [self.navigationController setNavigationBarHidden:NO];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
+- (void)viewDidDisappear:(BOOL)animated {
     [[APSMediaPlayer sharedInstance] pause];
-    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (NSUInteger)supportedInterfaceOrientations {

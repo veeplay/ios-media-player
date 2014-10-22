@@ -8,6 +8,7 @@
 
 #import "NavigationViewController.h"
 #import "APSMediaPlayer.h"
+#import "ViewController.h"
 
 @interface NavigationViewController ()
 

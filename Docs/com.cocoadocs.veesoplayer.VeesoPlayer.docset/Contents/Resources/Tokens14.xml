@@ -614,6 +614,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/setSeekHandling:</TokenIdentifier>
+			<Abstract type="html">Defines how the unit should render multiple ad breaks that have been seeked over by the user.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) APSHandleSeekEvent seekHandling</Declaration>
+			
+			
+			<Anchor>//api/name/seekHandling</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/seekHandling</TokenIdentifier>
+			<Abstract type="html">Defines how the unit should render multiple ad breaks that have been seeked over by the user.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) APSHandleSeekEvent seekHandling</Declaration>
+			
+			
+			<Anchor>//api/name/seekHandling</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaUnit/seekHandling</TokenIdentifier>
+			<Abstract type="html">Defines how the unit should render multiple ad breaks that have been seeked over by the user.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) APSHandleSeekEvent seekHandling</Declaration>
+			
+			
+			<Anchor>//api/name/seekHandling</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/APSMediaUnit/scalingModeFromString:</TokenIdentifier>
 			<Abstract type="html">Converts a string format to a MPMovieScalingMode value. See Apple&apos;s documentation for more details on MPMovieScalingMode.</Abstract>
 			<DeclaredIn>APSMediaUnit.h</DeclaredIn>

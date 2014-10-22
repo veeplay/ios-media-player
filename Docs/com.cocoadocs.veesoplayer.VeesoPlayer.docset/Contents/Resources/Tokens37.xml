@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSWebviewDismissedAction.html">
+	<File path="Constants/APSVASTAdBreakType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSWebviewDismissedAction</TokenIdentifier>
-			<Abstract type="html">Defines the action that the player should take when resuming playback after an interruption caused by user interaction, that determined the display of the in-app web browser.</Abstract>
-			<DeclaredIn>APSMediaPlayerOverlayController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/APSVASTAdBreakType</TokenIdentifier>
+			<Abstract type="html">Defines how an APSVASTAdBreak should be placed relative to the main content units.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
 			
 			<NodeRef refid="37"/>
@@ -14,34 +14,45 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSHideOverlayOnWebviewDismiss</TokenIdentifier>
-            <Abstract type="html">Player should hide the calling overlay on webview dismiss.
+            <TokenIdentifier>//apple_ref/c/econst/APSVASTPreContent</TokenIdentifier>
+            <Abstract type="html">Place the APSMediaUnits corresponding to the ad break at the beginning of the main content units.
      </Abstract>
-            <Declaration>APSHideOverlayOnWebviewDismiss</Declaration>
+            <Declaration>APSVASTPreContent</Declaration>
             
-            <DeclaredIn>APSMediaPlayerOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="37"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSSkipUnitOnWebviewDismiss</TokenIdentifier>
-            <Abstract type="html">Player should skip the current unit on webview dismiss.
+            <TokenIdentifier>//apple_ref/c/econst/APSVASTPostContent</TokenIdentifier>
+            <Abstract type="html">Place the APSMediaUnits corresponding to the ad break at the end of the main content units.
      </Abstract>
-            <Declaration>APSSkipUnitOnWebviewDismiss</Declaration>
+            <Declaration>APSVASTPostContent</Declaration>
             
-            <DeclaredIn>APSMediaPlayerOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="37"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSDoNothingOnWebviewDismiss</TokenIdentifier>
-            <Abstract type="html">No action should be taken on webview dismiss.
+            <TokenIdentifier>//apple_ref/c/econst/APSVASTMidContent</TokenIdentifier>
+            <Abstract type="html">Place the APSMediaUnits corresponding to the ad break in the middle of each main content unit, at a defined offset (see the adOffset property of APSVASTAdBreak.
      </Abstract>
-            <Declaration>APSDoNothingOnWebviewDismiss</Declaration>
+            <Declaration>APSVASTMidContent</Declaration>
             
-            <DeclaredIn>APSMediaPlayerOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            
+            <NodeRef refid="37"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSVASTNonLinear</TokenIdentifier>
+            <Abstract type="html">Place the APSMediaOverlays corresponding to the ad break in the middle of each main content unit, ad a defined offset (see the adOffset property of APSVASTAdBreak.
+     </Abstract>
+            <Declaration>APSVASTNonLinear</Declaration>
+            
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="37"/>
         </Token>
