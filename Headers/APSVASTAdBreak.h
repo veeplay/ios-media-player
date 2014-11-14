@@ -197,7 +197,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  An array that defines the mime-types supported when choosing a media file from the VAST response.
  
- Items are ordered from most preferred to least preferred. The default value for this property is `@[@"mobile/mp4",@"video/mp4",@"mobile/m3u8",@"application/x-mpegURL",@"application/vnd.apple.mpegURL",@"vnd.apple.mpegURL",@"video/m3u8"]`
+ Items are ordered from most preferred to least preferred. The default value for this property is `@[@"mobile/m3u8",@"application/x-mpegURL",@"application/vnd.apple.mpegURL",@"vnd.apple.mpegURL",@"video/m3u8",@"mobile/mp4",@"video/mp4"]`
  */
 @property (nonatomic) NSArray *prefferedVideoMimeTypes;
 

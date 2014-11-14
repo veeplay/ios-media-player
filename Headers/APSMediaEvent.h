@@ -160,4 +160,6 @@ typedef NS_ENUM(NSInteger, APSMediaEventState) {
  */
 @property NSTimeInterval preloadPoint;
 
+@property BOOL dynamicPosition;
+
 @end

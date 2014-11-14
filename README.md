@@ -57,7 +57,7 @@ There are currently two integration paths: via CocoaPods or via standard library
 		
 	- Add the player’s resource files to your project.
 	
-		- Drag all the files in the “resources” folder into your Xcode project.
+		- Drag all the files in the "Assets" folder into your Xcode project.
 		- When prompted, make sure to check the project target that should include the resources.
 		
 
@@ -162,6 +162,12 @@ APSMediaPlayer provides support for [Marlin DRM](http://www.marlin-community.com
 ## Class Reference
 
 See the full class reference [here](http://veeso.github.io/ios-docs).
+
+## Code Samples
+
+See a showcase project featuring code samples for various playback scenarios [here](https://github.com/veeso/ios-media-player/tree/master/Example).
+
+If you have CocoaPods installed, you can instantly see a demo of the Veeso player by typing `pod try VeesoPlayer` in your Terminal.
 
 ## Requirements
 

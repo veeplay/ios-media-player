@@ -308,6 +308,42 @@
             <NodeRef refid="2"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/setDynamicPosition:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+			
+			<Declaration>@property BOOL dynamicPosition</Declaration>
+			
+			
+			<Anchor>//api/name/dynamicPosition</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaEvent/dynamicPosition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+			
+			<Declaration>@property BOOL dynamicPosition</Declaration>
+			
+			
+			<Anchor>//api/name/dynamicPosition</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaEvent/dynamicPosition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+			
+			<Declaration>@property BOOL dynamicPosition</Declaration>
+			
+			
+			<Anchor>//api/name/dynamicPosition</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

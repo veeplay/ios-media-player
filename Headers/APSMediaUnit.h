@@ -132,11 +132,18 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
 - (void)clearEvents;
 
 /**
+ *  Removes a specific media event.
+ */
+- (void)removeEvent:(APSMediaEvent*)event;
+
+/**
  *  Returns an array containing all event objects currently connected to the unit.
  *
  *  @return An array of objects that implement the `APSMediaEvent` protocol.
  */
 - (NSArray*)events;
+
+- (NSArray*)dynamicEvents;
 
 /**-----------------------------------------------------------------------------
  * @name Unit Properties
@@ -209,13 +216,30 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  */
 @property (nonatomic) BOOL debug;
 /**
- *  Additional unit information.
+ *  Additional unit key-value information.
  */
 @property (nonatomic) NSMutableDictionary *metadata;
+
+/**-----------------------------------------------------------------------------
+ * @name Ad Handling
+ * -----------------------------------------------------------------------------
+ */
 /**
- *  Defines how the unit should render multiple ad breaks that have been seeked over by the user.
+ *  Defines how mid content ads should be handled when the user has skipped over several batches. Use this parameter to instruct the player to render: only the first ad batch, only the last ad batch or all passed ad batches. Defaults to `APSHandleSeekEventPlayLastBreak`.
  */
 @property (nonatomic, assign) APSHandleSeekEvent seekHandling;
+/**
+ *  For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait before displaying the first ad batch. Defaults to 300 seconds.
+ */
+@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumInitialOffset;
+/**
+ *  For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds (relative to the end of the video) that should be ad-free. Defaults to 300 seconds.
+ */
+@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumFinalOffset;
+/**
+ *  For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait between ad batches. Defaults to 300 seconds.
+ */
+@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumSpacing;
 
 /**-----------------------------------------------------------------------------
  * @name Utility Methods

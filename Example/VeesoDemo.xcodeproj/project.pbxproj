@@ -7,63 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE05D4E619D466BE00E3F513 /* APSMediaBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D45E19D466BE00E3F513 /* APSMediaBuilder.m */; };
-		CE05D4E719D466BE00E3F513 /* APSMediaEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D46119D466BE00E3F513 /* APSMediaEvent.m */; };
-		CE05D4E819D466BE00E3F513 /* APSMediaOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D46319D466BE00E3F513 /* APSMediaOverlay.m */; };
-		CE05D4E919D466BE00E3F513 /* APSMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D46519D466BE00E3F513 /* APSMediaPlayer.m */; };
-		CE05D4EA19D466BE00E3F513 /* APSMediaUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D46819D466BE00E3F513 /* APSMediaUnit.m */; };
-		CE05D4EB19D466BE00E3F513 /* APSVASTAdBreak.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D46C19D466BE00E3F513 /* APSVASTAdBreak.m */; };
-		CE05D4EC19D466BE00E3F513 /* APSVASTMediaBuilderPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D46E19D466BE00E3F513 /* APSVASTMediaBuilderPlugin.m */; };
-		CE05D4ED19D466BE00E3F513 /* APSVASTBannerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D47119D466BE00E3F513 /* APSVASTBannerConfiguration.m */; };
-		CE05D4EE19D466BE00E3F513 /* APSVASTCountdownConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D47319D466BE00E3F513 /* APSVASTCountdownConfiguration.m */; };
-		CE05D4EF19D466BE00E3F513 /* APSVASTSkipButtonConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D47519D466BE00E3F513 /* APSVASTSkipButtonConfiguration.m */; };
-		CE05D4F019D466BE00E3F513 /* APSVASTMRAIDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D47A19D466BE00E3F513 /* APSVASTMRAIDExtension.m */; };
-		CE05D4F119D466BE00E3F513 /* MPGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D47E19D466BE00E3F513 /* MPGlobal.m */; };
-		CE05D4F219D466BE00E3F513 /* MPLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D48019D466BE00E3F513 /* MPLogging.m */; };
-		CE05D4F319D466BE00E3F513 /* MRAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D48319D466BE00E3F513 /* MRAdView.m */; };
-		CE05D4F419D466BE00E3F513 /* MRAdViewDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D48519D466BE00E3F513 /* MRAdViewDisplayController.m */; };
-		CE05D4F519D466BE00E3F513 /* MRAID-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CE05D48619D466BE00E3F513 /* MRAID-LICENSE */; };
-		CE05D4F619D466BE00E3F513 /* MRCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D48819D466BE00E3F513 /* MRCommand.m */; };
-		CE05D4F719D466BE00E3F513 /* MRProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D48A19D466BE00E3F513 /* MRProperty.m */; };
-		CE05D4F819D466BE00E3F513 /* UIWebView+MPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D48C19D466BE00E3F513 /* UIWebView+MPAdditions.m */; };
-		CE05D4F919D466BE00E3F513 /* APSVASTAdNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D48F19D466BE00E3F513 /* APSVASTAdNode.m */; };
-		CE05D4FA19D466BE00E3F513 /* APSVASTCompanionAdsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D49119D466BE00E3F513 /* APSVASTCompanionAdsNode.m */; };
-		CE05D4FB19D466BE00E3F513 /* APSVASTCompanionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D49319D466BE00E3F513 /* APSVASTCompanionNode.m */; };
-		CE05D4FC19D466BE00E3F513 /* APSVASTCreativeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D49519D466BE00E3F513 /* APSVASTCreativeNode.m */; };
-		CE05D4FD19D466BE00E3F513 /* APSVASTCreativeTypeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D49719D466BE00E3F513 /* APSVASTCreativeTypeNode.m */; };
-		CE05D4FE19D466BE00E3F513 /* APSVASTIconNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D49919D466BE00E3F513 /* APSVASTIconNode.m */; };
-		CE05D4FF19D466BE00E3F513 /* APSVASTInlineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D49B19D466BE00E3F513 /* APSVASTInlineNode.m */; };
-		CE05D50019D466BE00E3F513 /* APSVASTLinearNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D49D19D466BE00E3F513 /* APSVASTLinearNode.m */; };
-		CE05D50119D466BE00E3F513 /* APSVASTMediaFileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D49F19D466BE00E3F513 /* APSVASTMediaFileNode.m */; };
-		CE05D50219D466BE00E3F513 /* APSVASTNonLinearAdsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4A119D466BE00E3F513 /* APSVASTNonLinearAdsNode.m */; };
-		CE05D50319D466BE00E3F513 /* APSVASTNonLinearNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4A319D466BE00E3F513 /* APSVASTNonLinearNode.m */; };
-		CE05D50419D466BE00E3F513 /* APSVASTRootNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4A519D466BE00E3F513 /* APSVASTRootNode.m */; };
-		CE05D50519D466BE00E3F513 /* APSVASTWrapperNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4A719D466BE00E3F513 /* APSVASTWrapperNode.m */; };
-		CE05D50619D466BE00E3F513 /* APSVASTXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4A919D466BE00E3F513 /* APSVASTXMLNode.m */; };
-		CE05D50719D466BE00E3F513 /* APSVASTSkipOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4AC19D466BE00E3F513 /* APSVASTSkipOverlayController.m */; };
-		CE05D50819D466BE00E3F513 /* APSVASTMRAIDOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4AF19D466BE00E3F513 /* APSVASTMRAIDOverlayController.m */; };
-		CE05D50919D466BE00E3F513 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = CE05D4B019D466BE00E3F513 /* CHANGELOG.md */; };
-		CE05D50A19D466BE00E3F513 /* APSOverlayContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4B319D466BE00E3F513 /* APSOverlayContainerView.m */; };
-		CE05D50B19D466BE00E3F513 /* APSProgressSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4B619D466BE00E3F513 /* APSProgressSlider.m */; };
-		CE05D50C19D466BE00E3F513 /* NSArray+APSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4B919D466BE00E3F513 /* NSArray+APSAdditions.m */; };
-		CE05D50D19D466BE00E3F513 /* NSDictionary+APSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4BB19D466BE00E3F513 /* NSDictionary+APSAdditions.m */; };
-		CE05D50E19D466BE00E3F513 /* NSMutableDictionary+APSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4BD19D466BE00E3F513 /* NSMutableDictionary+APSAdditions.m */; };
-		CE05D50F19D466BE00E3F513 /* UIColor+APSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4BF19D466BE00E3F513 /* UIColor+APSAdditions.m */; };
-		CE05D51019D466BE00E3F513 /* UIImageView+APSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4C119D466BE00E3F513 /* UIImageView+APSAdditions.m */; };
-		CE05D51219D466BE00E3F513 /* MTZoomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4C919D466BE00E3F513 /* MTZoomWindow.m */; };
-		CE05D51319D466BE00E3F513 /* Readme.mdown in Resources */ = {isa = PBXBuildFile; fileRef = CE05D4CB19D466BE00E3F513 /* Readme.mdown */; };
-		CE05D51419D466BE00E3F513 /* UIView+MTZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4CD19D466BE00E3F513 /* UIView+MTZoom.m */; };
-		CE05D51519D466BE00E3F513 /* KRHub.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4D119D466BE00E3F513 /* KRHub.m */; };
-		CE05D51619D466BE00E3F513 /* APSMediaPlayerButtonOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4D419D466BE00E3F513 /* APSMediaPlayerButtonOverlayController.m */; };
-		CE05D51719D466BE00E3F513 /* APSMediaPlayerClosableOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4D619D466BE00E3F513 /* APSMediaPlayerClosableOverlayController.m */; };
-		CE05D51819D466BE00E3F513 /* APSMediaPlayerControlsOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4D819D466BE00E3F513 /* APSMediaPlayerControlsOverlayController.m */; };
-		CE05D51919D466BE00E3F513 /* APSMediaPlayerHTMLOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4DA19D466BE00E3F513 /* APSMediaPlayerHTMLOverlayController.m */; };
-		CE05D51A19D466BE00E3F513 /* APSMediaPlayerImageOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4DC19D466BE00E3F513 /* APSMediaPlayerImageOverlayController.m */; };
-		CE05D51B19D466BE00E3F513 /* APSMediaPlayerOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4DE19D466BE00E3F513 /* APSMediaPlayerOverlayController.m */; };
-		CE05D51C19D466BE00E3F513 /* APSMediaPlayerTextOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4E019D466BE00E3F513 /* APSMediaPlayerTextOverlayController.m */; };
-		CE05D51D19D466BE00E3F513 /* APSMediaPlayerVimeoOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4E219D466BE00E3F513 /* APSMediaPlayerVimeoOverlayController.m */; };
-		CE05D51E19D466BE00E3F513 /* APSMediaPlayerYoutubeOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE05D4E419D466BE00E3F513 /* APSMediaPlayerYoutubeOverlayController.m */; };
-		CE05D51F19D466BE00E3F513 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CE05D4E519D466BE00E3F513 /* README.md */; };
+		9424893689BF44F17FBAC479 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C3F80D650C4E60A6342A9B /* libPods.a */; };
 		CE05D52119D466F300E3F513 /* libPods-KAProgressLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05D52019D466F300E3F513 /* libPods-KAProgressLabel.a */; };
 		CE05D52319D466F600E3F513 /* libPods-TBXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05D52219D466F600E3F513 /* libPods-TBXML.a */; };
 		CE05D52519D466F900E3F513 /* libPods-TSMiniWebBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05D52419D466F900E3F513 /* libPods-TSMiniWebBrowser.a */; };
@@ -111,126 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE05D45D19D466BE00E3F513 /* APSMediaBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaBuilder.h; sourceTree = "<group>"; };
-		CE05D45E19D466BE00E3F513 /* APSMediaBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaBuilder.m; sourceTree = "<group>"; };
-		CE05D45F19D466BE00E3F513 /* APSMediaBuilderPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaBuilderPlugin.h; sourceTree = "<group>"; };
-		CE05D46019D466BE00E3F513 /* APSMediaEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaEvent.h; sourceTree = "<group>"; };
-		CE05D46119D466BE00E3F513 /* APSMediaEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaEvent.m; sourceTree = "<group>"; };
-		CE05D46219D466BE00E3F513 /* APSMediaOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaOverlay.h; sourceTree = "<group>"; };
-		CE05D46319D466BE00E3F513 /* APSMediaOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaOverlay.m; sourceTree = "<group>"; };
-		CE05D46419D466BE00E3F513 /* APSMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaPlayer.h; sourceTree = "<group>"; };
-		CE05D46519D466BE00E3F513 /* APSMediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaPlayer.m; sourceTree = "<group>"; };
-		CE05D46619D466BE00E3F513 /* APSMediaTrackableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaTrackableObject.h; sourceTree = "<group>"; };
-		CE05D46719D466BE00E3F513 /* APSMediaUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaUnit.h; sourceTree = "<group>"; };
-		CE05D46819D466BE00E3F513 /* APSMediaUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaUnit.m; sourceTree = "<group>"; };
-		CE05D46919D466BE00E3F513 /* APSUnitManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSUnitManagerProtocol.h; sourceTree = "<group>"; };
-		CE05D46B19D466BE00E3F513 /* APSVASTAdBreak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTAdBreak.h; sourceTree = "<group>"; };
-		CE05D46C19D466BE00E3F513 /* APSVASTAdBreak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTAdBreak.m; sourceTree = "<group>"; };
-		CE05D46D19D466BE00E3F513 /* APSVASTMediaBuilderPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTMediaBuilderPlugin.h; sourceTree = "<group>"; };
-		CE05D46E19D466BE00E3F513 /* APSVASTMediaBuilderPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTMediaBuilderPlugin.m; sourceTree = "<group>"; };
-		CE05D47019D466BE00E3F513 /* APSVASTBannerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTBannerConfiguration.h; sourceTree = "<group>"; };
-		CE05D47119D466BE00E3F513 /* APSVASTBannerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTBannerConfiguration.m; sourceTree = "<group>"; };
-		CE05D47219D466BE00E3F513 /* APSVASTCountdownConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTCountdownConfiguration.h; sourceTree = "<group>"; };
-		CE05D47319D466BE00E3F513 /* APSVASTCountdownConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTCountdownConfiguration.m; sourceTree = "<group>"; };
-		CE05D47419D466BE00E3F513 /* APSVASTSkipButtonConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTSkipButtonConfiguration.h; sourceTree = "<group>"; };
-		CE05D47519D466BE00E3F513 /* APSVASTSkipButtonConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTSkipButtonConfiguration.m; sourceTree = "<group>"; };
-		CE05D47819D466BE00E3F513 /* APSVASTFrameworkExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTFrameworkExtension.h; sourceTree = "<group>"; };
-		CE05D47919D466BE00E3F513 /* APSVASTMRAIDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTMRAIDExtension.h; sourceTree = "<group>"; };
-		CE05D47A19D466BE00E3F513 /* APSVASTMRAIDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTMRAIDExtension.m; sourceTree = "<group>"; };
-		CE05D47C19D466BE00E3F513 /* MPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPConstants.h; sourceTree = "<group>"; };
-		CE05D47D19D466BE00E3F513 /* MPGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGlobal.h; sourceTree = "<group>"; };
-		CE05D47E19D466BE00E3F513 /* MPGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGlobal.m; sourceTree = "<group>"; };
-		CE05D47F19D466BE00E3F513 /* MPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLogging.h; sourceTree = "<group>"; };
-		CE05D48019D466BE00E3F513 /* MPLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLogging.m; sourceTree = "<group>"; };
-		CE05D48119D466BE00E3F513 /* MRAdView+Controllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRAdView+Controllers.h"; sourceTree = "<group>"; };
-		CE05D48219D466BE00E3F513 /* MRAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAdView.h; sourceTree = "<group>"; };
-		CE05D48319D466BE00E3F513 /* MRAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAdView.m; sourceTree = "<group>"; };
-		CE05D48419D466BE00E3F513 /* MRAdViewDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRAdViewDisplayController.h; sourceTree = "<group>"; };
-		CE05D48519D466BE00E3F513 /* MRAdViewDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRAdViewDisplayController.m; sourceTree = "<group>"; };
-		CE05D48619D466BE00E3F513 /* MRAID-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MRAID-LICENSE"; sourceTree = "<group>"; };
-		CE05D48719D466BE00E3F513 /* MRCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCommand.h; sourceTree = "<group>"; };
-		CE05D48819D466BE00E3F513 /* MRCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCommand.m; sourceTree = "<group>"; };
-		CE05D48919D466BE00E3F513 /* MRProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRProperty.h; sourceTree = "<group>"; };
-		CE05D48A19D466BE00E3F513 /* MRProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRProperty.m; sourceTree = "<group>"; };
-		CE05D48B19D466BE00E3F513 /* UIWebView+MPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+MPAdditions.h"; sourceTree = "<group>"; };
-		CE05D48C19D466BE00E3F513 /* UIWebView+MPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+MPAdditions.m"; sourceTree = "<group>"; };
-		CE05D48E19D466BE00E3F513 /* APSVASTAdNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTAdNode.h; sourceTree = "<group>"; };
-		CE05D48F19D466BE00E3F513 /* APSVASTAdNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTAdNode.m; sourceTree = "<group>"; };
-		CE05D49019D466BE00E3F513 /* APSVASTCompanionAdsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTCompanionAdsNode.h; sourceTree = "<group>"; };
-		CE05D49119D466BE00E3F513 /* APSVASTCompanionAdsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTCompanionAdsNode.m; sourceTree = "<group>"; };
-		CE05D49219D466BE00E3F513 /* APSVASTCompanionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTCompanionNode.h; sourceTree = "<group>"; };
-		CE05D49319D466BE00E3F513 /* APSVASTCompanionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTCompanionNode.m; sourceTree = "<group>"; };
-		CE05D49419D466BE00E3F513 /* APSVASTCreativeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTCreativeNode.h; sourceTree = "<group>"; };
-		CE05D49519D466BE00E3F513 /* APSVASTCreativeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTCreativeNode.m; sourceTree = "<group>"; };
-		CE05D49619D466BE00E3F513 /* APSVASTCreativeTypeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTCreativeTypeNode.h; sourceTree = "<group>"; };
-		CE05D49719D466BE00E3F513 /* APSVASTCreativeTypeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTCreativeTypeNode.m; sourceTree = "<group>"; };
-		CE05D49819D466BE00E3F513 /* APSVASTIconNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTIconNode.h; sourceTree = "<group>"; };
-		CE05D49919D466BE00E3F513 /* APSVASTIconNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTIconNode.m; sourceTree = "<group>"; };
-		CE05D49A19D466BE00E3F513 /* APSVASTInlineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTInlineNode.h; sourceTree = "<group>"; };
-		CE05D49B19D466BE00E3F513 /* APSVASTInlineNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTInlineNode.m; sourceTree = "<group>"; };
-		CE05D49C19D466BE00E3F513 /* APSVASTLinearNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTLinearNode.h; sourceTree = "<group>"; };
-		CE05D49D19D466BE00E3F513 /* APSVASTLinearNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTLinearNode.m; sourceTree = "<group>"; };
-		CE05D49E19D466BE00E3F513 /* APSVASTMediaFileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTMediaFileNode.h; sourceTree = "<group>"; };
-		CE05D49F19D466BE00E3F513 /* APSVASTMediaFileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTMediaFileNode.m; sourceTree = "<group>"; };
-		CE05D4A019D466BE00E3F513 /* APSVASTNonLinearAdsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTNonLinearAdsNode.h; sourceTree = "<group>"; };
-		CE05D4A119D466BE00E3F513 /* APSVASTNonLinearAdsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTNonLinearAdsNode.m; sourceTree = "<group>"; };
-		CE05D4A219D466BE00E3F513 /* APSVASTNonLinearNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTNonLinearNode.h; sourceTree = "<group>"; };
-		CE05D4A319D466BE00E3F513 /* APSVASTNonLinearNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTNonLinearNode.m; sourceTree = "<group>"; };
-		CE05D4A419D466BE00E3F513 /* APSVASTRootNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTRootNode.h; sourceTree = "<group>"; };
-		CE05D4A519D466BE00E3F513 /* APSVASTRootNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTRootNode.m; sourceTree = "<group>"; };
-		CE05D4A619D466BE00E3F513 /* APSVASTWrapperNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTWrapperNode.h; sourceTree = "<group>"; };
-		CE05D4A719D466BE00E3F513 /* APSVASTWrapperNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTWrapperNode.m; sourceTree = "<group>"; };
-		CE05D4A819D466BE00E3F513 /* APSVASTXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTXMLNode.h; sourceTree = "<group>"; };
-		CE05D4A919D466BE00E3F513 /* APSVASTXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTXMLNode.m; sourceTree = "<group>"; };
-		CE05D4AB19D466BE00E3F513 /* APSVASTSkipOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTSkipOverlayController.h; sourceTree = "<group>"; };
-		CE05D4AC19D466BE00E3F513 /* APSVASTSkipOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTSkipOverlayController.m; sourceTree = "<group>"; };
-		CE05D4AE19D466BE00E3F513 /* APSVASTMRAIDOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSVASTMRAIDOverlayController.h; sourceTree = "<group>"; };
-		CE05D4AF19D466BE00E3F513 /* APSVASTMRAIDOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSVASTMRAIDOverlayController.m; sourceTree = "<group>"; };
-		CE05D4B019D466BE00E3F513 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		CE05D4B219D466BE00E3F513 /* APSOverlayContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSOverlayContainerView.h; sourceTree = "<group>"; };
-		CE05D4B319D466BE00E3F513 /* APSOverlayContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSOverlayContainerView.m; sourceTree = "<group>"; };
-		CE05D4B519D466BE00E3F513 /* APSProgressSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSProgressSlider.h; sourceTree = "<group>"; };
-		CE05D4B619D466BE00E3F513 /* APSProgressSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSProgressSlider.m; sourceTree = "<group>"; };
-		CE05D4B819D466BE00E3F513 /* NSArray+APSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+APSAdditions.h"; sourceTree = "<group>"; };
-		CE05D4B919D466BE00E3F513 /* NSArray+APSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+APSAdditions.m"; sourceTree = "<group>"; };
-		CE05D4BA19D466BE00E3F513 /* NSDictionary+APSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+APSAdditions.h"; sourceTree = "<group>"; };
-		CE05D4BB19D466BE00E3F513 /* NSDictionary+APSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+APSAdditions.m"; sourceTree = "<group>"; };
-		CE05D4BC19D466BE00E3F513 /* NSMutableDictionary+APSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+APSAdditions.h"; sourceTree = "<group>"; };
-		CE05D4BD19D466BE00E3F513 /* NSMutableDictionary+APSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+APSAdditions.m"; sourceTree = "<group>"; };
-		CE05D4BE19D466BE00E3F513 /* UIColor+APSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+APSAdditions.h"; sourceTree = "<group>"; };
-		CE05D4BF19D466BE00E3F513 /* UIColor+APSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+APSAdditions.m"; sourceTree = "<group>"; };
-		CE05D4C019D466BE00E3F513 /* UIImageView+APSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+APSAdditions.h"; sourceTree = "<group>"; };
-		CE05D4C119D466BE00E3F513 /* UIImageView+APSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+APSAdditions.m"; sourceTree = "<group>"; };
-		CE05D4C419D466BE00E3F513 /* VeesoMarlinManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeesoMarlinManager.h; sourceTree = "<group>"; };
-		CE05D4C519D466BE00E3F513 /* VeesoMarlinManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeesoMarlinManager.m; sourceTree = "<group>"; };
-		CE05D4C819D466BE00E3F513 /* MTZoomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZoomWindow.h; sourceTree = "<group>"; };
-		CE05D4C919D466BE00E3F513 /* MTZoomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTZoomWindow.m; sourceTree = "<group>"; };
-		CE05D4CA19D466BE00E3F513 /* MTZoomWindowDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTZoomWindowDelegate.h; sourceTree = "<group>"; };
-		CE05D4CB19D466BE00E3F513 /* Readme.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.mdown; sourceTree = "<group>"; };
-		CE05D4CC19D466BE00E3F513 /* UIView+MTZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MTZoom.h"; sourceTree = "<group>"; };
-		CE05D4CD19D466BE00E3F513 /* UIView+MTZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MTZoom.m"; sourceTree = "<group>"; };
-		CE05D4CF19D466BE00E3F513 /* KRAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRAdapter.h; sourceTree = "<group>"; };
-		CE05D4D019D466BE00E3F513 /* KRHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRHub.h; sourceTree = "<group>"; };
-		CE05D4D119D466BE00E3F513 /* KRHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRHub.m; sourceTree = "<group>"; };
-		CE05D4D319D466BE00E3F513 /* APSMediaPlayerButtonOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaPlayerButtonOverlayController.h; sourceTree = "<group>"; };
-		CE05D4D419D466BE00E3F513 /* APSMediaPlayerButtonOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaPlayerButtonOverlayController.m; sourceTree = "<group>"; };
-		CE05D4D519D466BE00E3F513 /* APSMediaPlayerClosableOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaPlayerClosableOverlayController.h; sourceTree = "<group>"; };
-		CE05D4D619D466BE00E3F513 /* APSMediaPlayerClosableOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaPlayerClosableOverlayController.m; sourceTree = "<group>"; };
-		CE05D4D719D466BE00E3F513 /* APSMediaPlayerControlsOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaPlayerControlsOverlayController.h; sourceTree = "<group>"; };
-		CE05D4D819D466BE00E3F513 /* APSMediaPlayerControlsOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaPlayerControlsOverlayController.m; sourceTree = "<group>"; };
-		CE05D4D919D466BE00E3F513 /* APSMediaPlayerHTMLOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaPlayerHTMLOverlayController.h; sourceTree = "<group>"; };
-		CE05D4DA19D466BE00E3F513 /* APSMediaPlayerHTMLOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaPlayerHTMLOverlayController.m; sourceTree = "<group>"; };
-		CE05D4DB19D466BE00E3F513 /* APSMediaPlayerImageOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaPlayerImageOverlayController.h; sourceTree = "<group>"; };
-		CE05D4DC19D466BE00E3F513 /* APSMediaPlayerImageOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaPlayerImageOverlayController.m; sourceTree = "<group>"; };
-		CE05D4DD19D466BE00E3F513 /* APSMediaPlayerOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaPlayerOverlayController.h; sourceTree = "<group>"; };
-		CE05D4DE19D466BE00E3F513 /* APSMediaPlayerOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaPlayerOverlayController.m; sourceTree = "<group>"; };
-		CE05D4DF19D466BE00E3F513 /* APSMediaPlayerTextOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaPlayerTextOverlayController.h; sourceTree = "<group>"; };
-		CE05D4E019D466BE00E3F513 /* APSMediaPlayerTextOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaPlayerTextOverlayController.m; sourceTree = "<group>"; };
-		CE05D4E119D466BE00E3F513 /* APSMediaPlayerVimeoOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaPlayerVimeoOverlayController.h; sourceTree = "<group>"; };
-		CE05D4E219D466BE00E3F513 /* APSMediaPlayerVimeoOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaPlayerVimeoOverlayController.m; sourceTree = "<group>"; };
-		CE05D4E319D466BE00E3F513 /* APSMediaPlayerYoutubeOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMediaPlayerYoutubeOverlayController.h; sourceTree = "<group>"; };
-		CE05D4E419D466BE00E3F513 /* APSMediaPlayerYoutubeOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMediaPlayerYoutubeOverlayController.m; sourceTree = "<group>"; };
-		CE05D4E519D466BE00E3F513 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		49E78968F9260281DF9452B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C348D6FA6842E8836C779EB0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CE05D52019D466F300E3F513 /* libPods-KAProgressLabel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-KAProgressLabel.a"; path = "Pods/build/Debug-iphoneos/libPods-KAProgressLabel.a"; sourceTree = "<group>"; };
 		CE05D52219D466F600E3F513 /* libPods-TBXML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-TBXML.a"; path = "Pods/build/Debug-iphoneos/libPods-TBXML.a"; sourceTree = "<group>"; };
 		CE05D52419D466F900E3F513 /* libPods-TSMiniWebBrowser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-TSMiniWebBrowser.a"; path = "Pods/build/Debug-iphoneos/libPods-TSMiniWebBrowser.a"; sourceTree = "<group>"; };
@@ -277,7 +103,6 @@
 		CEEDEE0619B285E000D2436B /* VeesoDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VeesoDemoTests-Info.plist"; sourceTree = "<group>"; };
 		CEEDEE0819B285E000D2436B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEEDEE0A19B285E000D2436B /* VeesoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeesoDemoTests.m; sourceTree = "<group>"; };
-		DB665DD551BF46C5B658AD05 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E6C3F80D650C4E60A6342A9B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -292,6 +117,7 @@
 				CEEDEDDF19B285E000D2436B /* CoreGraphics.framework in Frameworks */,
 				CEEDEDE119B285E000D2436B /* UIKit.framework in Frameworks */,
 				CEEDEDDD19B285E000D2436B /* Foundation.framework in Frameworks */,
+				9424893689BF44F17FBAC479 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,268 +134,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE05D45C19D466BE00E3F513 /* Classes */ = {
+		3C4A1415703FC776099A007B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CE05D45D19D466BE00E3F513 /* APSMediaBuilder.h */,
-				CE05D45E19D466BE00E3F513 /* APSMediaBuilder.m */,
-				CE05D45F19D466BE00E3F513 /* APSMediaBuilderPlugin.h */,
-				CE05D46019D466BE00E3F513 /* APSMediaEvent.h */,
-				CE05D46119D466BE00E3F513 /* APSMediaEvent.m */,
-				CE05D46219D466BE00E3F513 /* APSMediaOverlay.h */,
-				CE05D46319D466BE00E3F513 /* APSMediaOverlay.m */,
-				CE05D46419D466BE00E3F513 /* APSMediaPlayer.h */,
-				CE05D46519D466BE00E3F513 /* APSMediaPlayer.m */,
-				CE05D46619D466BE00E3F513 /* APSMediaTrackableObject.h */,
-				CE05D46719D466BE00E3F513 /* APSMediaUnit.h */,
-				CE05D46819D466BE00E3F513 /* APSMediaUnit.m */,
-				CE05D46919D466BE00E3F513 /* APSUnitManagerProtocol.h */,
-				CE05D46A19D466BE00E3F513 /* APSVAST */,
-				CE05D4B019D466BE00E3F513 /* CHANGELOG.md */,
-				CE05D4B119D466BE00E3F513 /* Internal */,
-				CE05D4CE19D466BE00E3F513 /* KRHub */,
-				CE05D4D219D466BE00E3F513 /* OverlayControllers */,
-				CE05D4E519D466BE00E3F513 /* README.md */,
+				49E78968F9260281DF9452B3 /* Pods.debug.xcconfig */,
+				C348D6FA6842E8836C779EB0 /* Pods.release.xcconfig */,
 			);
-			name = Classes;
-			path = ../../../Classes;
-			sourceTree = "<group>";
-		};
-		CE05D46A19D466BE00E3F513 /* APSVAST */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D46B19D466BE00E3F513 /* APSVASTAdBreak.h */,
-				CE05D46C19D466BE00E3F513 /* APSVASTAdBreak.m */,
-				CE05D46D19D466BE00E3F513 /* APSVASTMediaBuilderPlugin.h */,
-				CE05D46E19D466BE00E3F513 /* APSVASTMediaBuilderPlugin.m */,
-				CE05D46F19D466BE00E3F513 /* Configurations */,
-				CE05D47619D466BE00E3F513 /* Internal */,
-				CE05D4AA19D466BE00E3F513 /* Overlays */,
-			);
-			path = APSVAST;
-			sourceTree = "<group>";
-		};
-		CE05D46F19D466BE00E3F513 /* Configurations */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D47019D466BE00E3F513 /* APSVASTBannerConfiguration.h */,
-				CE05D47119D466BE00E3F513 /* APSVASTBannerConfiguration.m */,
-				CE05D47219D466BE00E3F513 /* APSVASTCountdownConfiguration.h */,
-				CE05D47319D466BE00E3F513 /* APSVASTCountdownConfiguration.m */,
-				CE05D47419D466BE00E3F513 /* APSVASTSkipButtonConfiguration.h */,
-				CE05D47519D466BE00E3F513 /* APSVASTSkipButtonConfiguration.m */,
-			);
-			path = Configurations;
-			sourceTree = "<group>";
-		};
-		CE05D47619D466BE00E3F513 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D47719D466BE00E3F513 /* Extensions */,
-				CE05D48D19D466BE00E3F513 /* Nodes */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		CE05D47719D466BE00E3F513 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D47819D466BE00E3F513 /* APSVASTFrameworkExtension.h */,
-				CE05D47919D466BE00E3F513 /* APSVASTMRAIDExtension.h */,
-				CE05D47A19D466BE00E3F513 /* APSVASTMRAIDExtension.m */,
-				CE05D47B19D466BE00E3F513 /* MRAID */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		CE05D47B19D466BE00E3F513 /* MRAID */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D47C19D466BE00E3F513 /* MPConstants.h */,
-				CE05D47D19D466BE00E3F513 /* MPGlobal.h */,
-				CE05D47E19D466BE00E3F513 /* MPGlobal.m */,
-				CE05D47F19D466BE00E3F513 /* MPLogging.h */,
-				CE05D48019D466BE00E3F513 /* MPLogging.m */,
-				CE05D48119D466BE00E3F513 /* MRAdView+Controllers.h */,
-				CE05D48219D466BE00E3F513 /* MRAdView.h */,
-				CE05D48319D466BE00E3F513 /* MRAdView.m */,
-				CE05D48419D466BE00E3F513 /* MRAdViewDisplayController.h */,
-				CE05D48519D466BE00E3F513 /* MRAdViewDisplayController.m */,
-				CE05D48619D466BE00E3F513 /* MRAID-LICENSE */,
-				CE05D48719D466BE00E3F513 /* MRCommand.h */,
-				CE05D48819D466BE00E3F513 /* MRCommand.m */,
-				CE05D48919D466BE00E3F513 /* MRProperty.h */,
-				CE05D48A19D466BE00E3F513 /* MRProperty.m */,
-				CE05D48B19D466BE00E3F513 /* UIWebView+MPAdditions.h */,
-				CE05D48C19D466BE00E3F513 /* UIWebView+MPAdditions.m */,
-			);
-			path = MRAID;
-			sourceTree = "<group>";
-		};
-		CE05D48D19D466BE00E3F513 /* Nodes */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D48E19D466BE00E3F513 /* APSVASTAdNode.h */,
-				CE05D48F19D466BE00E3F513 /* APSVASTAdNode.m */,
-				CE05D49019D466BE00E3F513 /* APSVASTCompanionAdsNode.h */,
-				CE05D49119D466BE00E3F513 /* APSVASTCompanionAdsNode.m */,
-				CE05D49219D466BE00E3F513 /* APSVASTCompanionNode.h */,
-				CE05D49319D466BE00E3F513 /* APSVASTCompanionNode.m */,
-				CE05D49419D466BE00E3F513 /* APSVASTCreativeNode.h */,
-				CE05D49519D466BE00E3F513 /* APSVASTCreativeNode.m */,
-				CE05D49619D466BE00E3F513 /* APSVASTCreativeTypeNode.h */,
-				CE05D49719D466BE00E3F513 /* APSVASTCreativeTypeNode.m */,
-				CE05D49819D466BE00E3F513 /* APSVASTIconNode.h */,
-				CE05D49919D466BE00E3F513 /* APSVASTIconNode.m */,
-				CE05D49A19D466BE00E3F513 /* APSVASTInlineNode.h */,
-				CE05D49B19D466BE00E3F513 /* APSVASTInlineNode.m */,
-				CE05D49C19D466BE00E3F513 /* APSVASTLinearNode.h */,
-				CE05D49D19D466BE00E3F513 /* APSVASTLinearNode.m */,
-				CE05D49E19D466BE00E3F513 /* APSVASTMediaFileNode.h */,
-				CE05D49F19D466BE00E3F513 /* APSVASTMediaFileNode.m */,
-				CE05D4A019D466BE00E3F513 /* APSVASTNonLinearAdsNode.h */,
-				CE05D4A119D466BE00E3F513 /* APSVASTNonLinearAdsNode.m */,
-				CE05D4A219D466BE00E3F513 /* APSVASTNonLinearNode.h */,
-				CE05D4A319D466BE00E3F513 /* APSVASTNonLinearNode.m */,
-				CE05D4A419D466BE00E3F513 /* APSVASTRootNode.h */,
-				CE05D4A519D466BE00E3F513 /* APSVASTRootNode.m */,
-				CE05D4A619D466BE00E3F513 /* APSVASTWrapperNode.h */,
-				CE05D4A719D466BE00E3F513 /* APSVASTWrapperNode.m */,
-				CE05D4A819D466BE00E3F513 /* APSVASTXMLNode.h */,
-				CE05D4A919D466BE00E3F513 /* APSVASTXMLNode.m */,
-			);
-			path = Nodes;
-			sourceTree = "<group>";
-		};
-		CE05D4AA19D466BE00E3F513 /* Overlays */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4AB19D466BE00E3F513 /* APSVASTSkipOverlayController.h */,
-				CE05D4AC19D466BE00E3F513 /* APSVASTSkipOverlayController.m */,
-				CE05D4AD19D466BE00E3F513 /* Internal */,
-			);
-			path = Overlays;
-			sourceTree = "<group>";
-		};
-		CE05D4AD19D466BE00E3F513 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4AE19D466BE00E3F513 /* APSVASTMRAIDOverlayController.h */,
-				CE05D4AF19D466BE00E3F513 /* APSVASTMRAIDOverlayController.m */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		CE05D4B119D466BE00E3F513 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4B219D466BE00E3F513 /* APSOverlayContainerView.h */,
-				CE05D4B319D466BE00E3F513 /* APSOverlayContainerView.m */,
-				CE05D4B419D466BE00E3F513 /* APSProgressSlider */,
-				CE05D4B719D466BE00E3F513 /* Categories */,
-				CE05D4C219D466BE00E3F513 /* DRM */,
-				CE05D4C619D466BE00E3F513 /* Libraries */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		CE05D4B419D466BE00E3F513 /* APSProgressSlider */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4B519D466BE00E3F513 /* APSProgressSlider.h */,
-				CE05D4B619D466BE00E3F513 /* APSProgressSlider.m */,
-			);
-			path = APSProgressSlider;
-			sourceTree = "<group>";
-		};
-		CE05D4B719D466BE00E3F513 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4B819D466BE00E3F513 /* NSArray+APSAdditions.h */,
-				CE05D4B919D466BE00E3F513 /* NSArray+APSAdditions.m */,
-				CE05D4BA19D466BE00E3F513 /* NSDictionary+APSAdditions.h */,
-				CE05D4BB19D466BE00E3F513 /* NSDictionary+APSAdditions.m */,
-				CE05D4BC19D466BE00E3F513 /* NSMutableDictionary+APSAdditions.h */,
-				CE05D4BD19D466BE00E3F513 /* NSMutableDictionary+APSAdditions.m */,
-				CE05D4BE19D466BE00E3F513 /* UIColor+APSAdditions.h */,
-				CE05D4BF19D466BE00E3F513 /* UIColor+APSAdditions.m */,
-				CE05D4C019D466BE00E3F513 /* UIImageView+APSAdditions.h */,
-				CE05D4C119D466BE00E3F513 /* UIImageView+APSAdditions.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		CE05D4C219D466BE00E3F513 /* DRM */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4C319D466BE00E3F513 /* Marlin */,
-			);
-			path = DRM;
-			sourceTree = "<group>";
-		};
-		CE05D4C319D466BE00E3F513 /* Marlin */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4C419D466BE00E3F513 /* VeesoMarlinManager.h */,
-				CE05D4C519D466BE00E3F513 /* VeesoMarlinManager.m */,
-			);
-			path = Marlin;
-			sourceTree = "<group>";
-		};
-		CE05D4C619D466BE00E3F513 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4C719D466BE00E3F513 /* MTZoomWindow */,
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		CE05D4C719D466BE00E3F513 /* MTZoomWindow */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4C819D466BE00E3F513 /* MTZoomWindow.h */,
-				CE05D4C919D466BE00E3F513 /* MTZoomWindow.m */,
-				CE05D4CA19D466BE00E3F513 /* MTZoomWindowDelegate.h */,
-				CE05D4CB19D466BE00E3F513 /* Readme.mdown */,
-				CE05D4CC19D466BE00E3F513 /* UIView+MTZoom.h */,
-				CE05D4CD19D466BE00E3F513 /* UIView+MTZoom.m */,
-			);
-			path = MTZoomWindow;
-			sourceTree = "<group>";
-		};
-		CE05D4CE19D466BE00E3F513 /* KRHub */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4CF19D466BE00E3F513 /* KRAdapter.h */,
-				CE05D4D019D466BE00E3F513 /* KRHub.h */,
-				CE05D4D119D466BE00E3F513 /* KRHub.m */,
-			);
-			path = KRHub;
-			sourceTree = "<group>";
-		};
-		CE05D4D219D466BE00E3F513 /* OverlayControllers */ = {
-			isa = PBXGroup;
-			children = (
-				CE05D4D319D466BE00E3F513 /* APSMediaPlayerButtonOverlayController.h */,
-				CE05D4D419D466BE00E3F513 /* APSMediaPlayerButtonOverlayController.m */,
-				CE05D4D519D466BE00E3F513 /* APSMediaPlayerClosableOverlayController.h */,
-				CE05D4D619D466BE00E3F513 /* APSMediaPlayerClosableOverlayController.m */,
-				CE05D4D719D466BE00E3F513 /* APSMediaPlayerControlsOverlayController.h */,
-				CE05D4D819D466BE00E3F513 /* APSMediaPlayerControlsOverlayController.m */,
-				CE05D4D919D466BE00E3F513 /* APSMediaPlayerHTMLOverlayController.h */,
-				CE05D4DA19D466BE00E3F513 /* APSMediaPlayerHTMLOverlayController.m */,
-				CE05D4DB19D466BE00E3F513 /* APSMediaPlayerImageOverlayController.h */,
-				CE05D4DC19D466BE00E3F513 /* APSMediaPlayerImageOverlayController.m */,
-				CE05D4DD19D466BE00E3F513 /* APSMediaPlayerOverlayController.h */,
-				CE05D4DE19D466BE00E3F513 /* APSMediaPlayerOverlayController.m */,
-				CE05D4DF19D466BE00E3F513 /* APSMediaPlayerTextOverlayController.h */,
-				CE05D4E019D466BE00E3F513 /* APSMediaPlayerTextOverlayController.m */,
-				CE05D4E119D466BE00E3F513 /* APSMediaPlayerVimeoOverlayController.h */,
-				CE05D4E219D466BE00E3F513 /* APSMediaPlayerVimeoOverlayController.m */,
-				CE05D4E319D466BE00E3F513 /* APSMediaPlayerYoutubeOverlayController.h */,
-				CE05D4E419D466BE00E3F513 /* APSMediaPlayerYoutubeOverlayController.m */,
-			);
-			path = OverlayControllers;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CE0B7B4519B481DD008ECF95 /* Demos */ = {
@@ -610,12 +181,11 @@
 		CEEDEDD019B285DF00D2436B = {
 			isa = PBXGroup;
 			children = (
-				CE05D45C19D466BE00E3F513 /* Classes */,
 				CEEDEDE219B285E000D2436B /* VeesoDemo */,
 				CEEDEE0419B285E000D2436B /* VeesoDemoTests */,
 				CEEDEDDB19B285E000D2436B /* Frameworks */,
 				CEEDEDDA19B285E000D2436B /* Products */,
-				DB665DD551BF46C5B658AD05 /* Pods.xcconfig */,
+				3C4A1415703FC776099A007B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -771,7 +341,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC1C53F19B3C30000758D1E /* i_2@2x.jpg in Resources */,
-				CE05D50919D466BE00E3F513 /* CHANGELOG.md in Resources */,
 				CEC1C54319B3C30000758D1E /* i_4@2x.jpg in Resources */,
 				CEC1C54119B3C30000758D1E /* i_3@2x.jpg in Resources */,
 				CEC1C54419B3C30000758D1E /* i_5.jpg in Resources */,
@@ -779,12 +348,9 @@
 				CEC1C53E19B3C30000758D1E /* i_2.jpg in Resources */,
 				CEC1C54219B3C30000758D1E /* i_4.jpg in Resources */,
 				CEEDEDF819B285E000D2436B /* Images.xcassets in Resources */,
-				CE05D4F519D466BE00E3F513 /* MRAID-LICENSE in Resources */,
 				CEEDEDF019B285E000D2436B /* Main_iPhone.storyboard in Resources */,
-				CE05D51F19D466BE00E3F513 /* README.md in Resources */,
 				CEEDEDE719B285E000D2436B /* InfoPlist.strings in Resources */,
 				CEC1C53D19B3C30000758D1E /* i_1@2x.jpg in Resources */,
-				CE05D51319D466BE00E3F513 /* Readme.mdown in Resources */,
 				CEC1C53C19B3C30000758D1E /* i_1.jpg in Resources */,
 				CEC1C54519B3C30000758D1E /* i_5@2x.jpg in Resources */,
 			);
@@ -828,7 +394,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -838,69 +404,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE05D4FA19D466BE00E3F513 /* APSVASTCompanionAdsNode.m in Sources */,
 				CE14C18819C9023F00545727 /* ContinuousViewController.m in Sources */,
-				CE05D50219D466BE00E3F513 /* APSVASTNonLinearAdsNode.m in Sources */,
-				CE05D50C19D466BE00E3F513 /* NSArray+APSAdditions.m in Sources */,
-				CE05D50E19D466BE00E3F513 /* NSMutableDictionary+APSAdditions.m in Sources */,
-				CE05D51819D466BE00E3F513 /* APSMediaPlayerControlsOverlayController.m in Sources */,
 				CE14C18319C758A000545727 /* MRAIDShowcaseViewController.m in Sources */,
 				CEEDEDF619B285E000D2436B /* ViewController.m in Sources */,
 				CE0973B219C1FBC700B287B9 /* DictionaryConfigurationViewController.m in Sources */,
-				CE05D4F319D466BE00E3F513 /* MRAdView.m in Sources */,
-				CE05D50A19D466BE00E3F513 /* APSOverlayContainerView.m in Sources */,
-				CE05D4EF19D466BE00E3F513 /* APSVASTSkipButtonConfiguration.m in Sources */,
-				CE05D51C19D466BE00E3F513 /* APSMediaPlayerTextOverlayController.m in Sources */,
-				CE05D4F119D466BE00E3F513 /* MPGlobal.m in Sources */,
-				CE05D4EC19D466BE00E3F513 /* APSVASTMediaBuilderPlugin.m in Sources */,
-				CE05D4F819D466BE00E3F513 /* UIWebView+MPAdditions.m in Sources */,
-				CE05D51519D466BE00E3F513 /* KRHub.m in Sources */,
-				CE05D51219D466BE00E3F513 /* MTZoomWindow.m in Sources */,
-				CE05D4E919D466BE00E3F513 /* APSMediaPlayer.m in Sources */,
-				CE05D51B19D466BE00E3F513 /* APSMediaPlayerOverlayController.m in Sources */,
-				CE05D4FC19D466BE00E3F513 /* APSVASTCreativeNode.m in Sources */,
-				CE05D50B19D466BE00E3F513 /* APSProgressSlider.m in Sources */,
-				CE05D4FF19D466BE00E3F513 /* APSVASTInlineNode.m in Sources */,
-				CE05D51619D466BE00E3F513 /* APSMediaPlayerButtonOverlayController.m in Sources */,
-				CE05D51A19D466BE00E3F513 /* APSMediaPlayerImageOverlayController.m in Sources */,
-				CE05D50619D466BE00E3F513 /* APSVASTXMLNode.m in Sources */,
-				CE05D4FB19D466BE00E3F513 /* APSVASTCompanionNode.m in Sources */,
-				CE05D4E719D466BE00E3F513 /* APSMediaEvent.m in Sources */,
-				CE05D4F919D466BE00E3F513 /* APSVASTAdNode.m in Sources */,
-				CE05D50F19D466BE00E3F513 /* UIColor+APSAdditions.m in Sources */,
-				CE05D50319D466BE00E3F513 /* APSVASTNonLinearNode.m in Sources */,
-				CE05D50819D466BE00E3F513 /* APSVASTMRAIDOverlayController.m in Sources */,
-				CE05D4F219D466BE00E3F513 /* MPLogging.m in Sources */,
 				CE14C18C19C9B78700545727 /* NavigationViewController.m in Sources */,
-				CE05D4F619D466BE00E3F513 /* MRCommand.m in Sources */,
-				CE05D4F019D466BE00E3F513 /* APSVASTMRAIDExtension.m in Sources */,
-				CE05D50D19D466BE00E3F513 /* NSDictionary+APSAdditions.m in Sources */,
-				CE05D51719D466BE00E3F513 /* APSMediaPlayerClosableOverlayController.m in Sources */,
-				CE05D51E19D466BE00E3F513 /* APSMediaPlayerYoutubeOverlayController.m in Sources */,
-				CE05D4EB19D466BE00E3F513 /* APSVASTAdBreak.m in Sources */,
-				CE05D50019D466BE00E3F513 /* APSVASTLinearNode.m in Sources */,
-				CE05D50419D466BE00E3F513 /* APSVASTRootNode.m in Sources */,
 				CE2C9A7D19CFAB6800A8C74C /* DemoViewController.m in Sources */,
-				CE05D4EA19D466BE00E3F513 /* APSMediaUnit.m in Sources */,
-				CE05D4F419D466BE00E3F513 /* MRAdViewDisplayController.m in Sources */,
-				CE05D4FE19D466BE00E3F513 /* APSVASTIconNode.m in Sources */,
-				CE05D50519D466BE00E3F513 /* APSVASTWrapperNode.m in Sources */,
-				CE05D51419D466BE00E3F513 /* UIView+MTZoom.m in Sources */,
-				CE05D4EE19D466BE00E3F513 /* APSVASTCountdownConfiguration.m in Sources */,
-				CE05D51019D466BE00E3F513 /* UIImageView+APSAdditions.m in Sources */,
-				CE05D50119D466BE00E3F513 /* APSVASTMediaFileNode.m in Sources */,
-				CE05D50719D466BE00E3F513 /* APSVASTSkipOverlayController.m in Sources */,
-				CE05D4ED19D466BE00E3F513 /* APSVASTBannerConfiguration.m in Sources */,
-				CE05D4E619D466BE00E3F513 /* APSMediaBuilder.m in Sources */,
 				CE0973B119C1FBC400B287B9 /* JSONConfigurationViewController.m in Sources */,
 				CEEDEDED19B285E000D2436B /* AppDelegate.m in Sources */,
-				CE05D4F719D466BE00E3F513 /* MRProperty.m in Sources */,
-				CE05D4E819D466BE00E3F513 /* APSMediaOverlay.m in Sources */,
 				CEEDEDE919B285E000D2436B /* main.m in Sources */,
-				CE05D51D19D466BE00E3F513 /* APSMediaPlayerVimeoOverlayController.m in Sources */,
-				CE05D51919D466BE00E3F513 /* APSMediaPlayerHTMLOverlayController.m in Sources */,
 				CE0973B019C1FBC100B287B9 /* ManualConfigurationViewController.m in Sources */,
-				CE05D4FD19D466BE00E3F513 /* APSVASTCreativeTypeNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1024,7 +537,7 @@
 		};
 		CEEDEE0F19B285E000D2436B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB665DD551BF46C5B658AD05 /* Pods.xcconfig */;
+			baseConfigurationReference = 49E78968F9260281DF9452B3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1032,11 +545,6 @@
 				GCC_PREFIX_HEADER = "VeesoDemo/VeesoDemo-Prefix.pch";
 				INFOPLIST_FILE = "VeesoDemo/VeesoDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(PODS_ROOT)/VeesoPlayer\"",
-					../,
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1045,7 +553,7 @@
 		};
 		CEEDEE1019B285E000D2436B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB665DD551BF46C5B658AD05 /* Pods.xcconfig */;
+			baseConfigurationReference = C348D6FA6842E8836C779EB0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1053,11 +561,6 @@
 				GCC_PREFIX_HEADER = "VeesoDemo/VeesoDemo-Prefix.pch";
 				INFOPLIST_FILE = "VeesoDemo/VeesoDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(PODS_ROOT)/VeesoPlayer\"",
-					../,
-					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

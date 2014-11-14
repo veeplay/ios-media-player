@@ -134,6 +134,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/removeEvent:</TokenIdentifier>
+			<Abstract type="html">Removes a specific media event.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>- (void)removeEvent:(APSMediaEvent *)event</Declaration>
+			
+			
+			<Anchor>//api/name/removeEvent:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/events</TokenIdentifier>
 			<Abstract type="html">Returns an array containing all event objects currently connected to the unit.</Abstract>
 			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
@@ -142,6 +154,18 @@
 			
 			<ReturnValue><Abstract type="html">An array of objects that implement the APSMediaEvent protocol.</Abstract></ReturnValue>
 			<Anchor>//api/name/events</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/dynamicEvents</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)dynamicEvents</Declaration>
+			
+			
+			<Anchor>//api/name/dynamicEvents</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
@@ -579,7 +603,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/setMetadata:</TokenIdentifier>
-			<Abstract type="html">Additional unit information.</Abstract>
+			<Abstract type="html">Additional unit key-value information.</Abstract>
 			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) NSMutableDictionary *metadata</Declaration>
@@ -591,7 +615,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/metadata</TokenIdentifier>
-			<Abstract type="html">Additional unit information.</Abstract>
+			<Abstract type="html">Additional unit key-value information.</Abstract>
 			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) NSMutableDictionary *metadata</Declaration>
@@ -603,7 +627,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/APSMediaUnit/metadata</TokenIdentifier>
-			<Abstract type="html">Additional unit information.</Abstract>
+			<Abstract type="html">Additional unit key-value information.</Abstract>
 			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) NSMutableDictionary *metadata</Declaration>
@@ -615,7 +639,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/setSeekHandling:</TokenIdentifier>
-			<Abstract type="html">Defines how the unit should render multiple ad breaks that have been seeked over by the user.</Abstract>
+			<Abstract type="html">Defines how mid content ads should be handled when the user has skipped over several batches. Use this parameter to instruct the player to render: only the first ad batch, only the last ad batch or all passed ad batches. Defaults to APSHandleSeekEventPlayLastBreak.</Abstract>
 			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) APSHandleSeekEvent seekHandling</Declaration>
@@ -627,7 +651,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/seekHandling</TokenIdentifier>
-			<Abstract type="html">Defines how the unit should render multiple ad breaks that have been seeked over by the user.</Abstract>
+			<Abstract type="html">Defines how mid content ads should be handled when the user has skipped over several batches. Use this parameter to instruct the player to render: only the first ad batch, only the last ad batch or all passed ad batches. Defaults to APSHandleSeekEventPlayLastBreak.</Abstract>
 			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) APSHandleSeekEvent seekHandling</Declaration>
@@ -639,13 +663,121 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/APSMediaUnit/seekHandling</TokenIdentifier>
-			<Abstract type="html">Defines how the unit should render multiple ad breaks that have been seeked over by the user.</Abstract>
+			<Abstract type="html">Defines how mid content ads should be handled when the user has skipped over several batches. Use this parameter to instruct the player to render: only the first ad batch, only the last ad batch or all passed ad batches. Defaults to APSHandleSeekEventPlayLastBreak.</Abstract>
 			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) APSHandleSeekEvent seekHandling</Declaration>
 			
 			
 			<Anchor>//api/name/seekHandling</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/setMidcontentAdMinimumInitialOffset:</TokenIdentifier>
+			<Abstract type="html">For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait before displaying the first ad batch. Defaults to 300 seconds.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumInitialOffset</Declaration>
+			
+			
+			<Anchor>//api/name/midcontentAdMinimumInitialOffset</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/midcontentAdMinimumInitialOffset</TokenIdentifier>
+			<Abstract type="html">For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait before displaying the first ad batch. Defaults to 300 seconds.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumInitialOffset</Declaration>
+			
+			
+			<Anchor>//api/name/midcontentAdMinimumInitialOffset</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaUnit/midcontentAdMinimumInitialOffset</TokenIdentifier>
+			<Abstract type="html">For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait before displaying the first ad batch. Defaults to 300 seconds.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumInitialOffset</Declaration>
+			
+			
+			<Anchor>//api/name/midcontentAdMinimumInitialOffset</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/setMidcontentAdMinimumFinalOffset:</TokenIdentifier>
+			<Abstract type="html">For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds (relative to the end of the video) that should be ad-free. Defaults to 300 seconds.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumFinalOffset</Declaration>
+			
+			
+			<Anchor>//api/name/midcontentAdMinimumFinalOffset</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/midcontentAdMinimumFinalOffset</TokenIdentifier>
+			<Abstract type="html">For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds (relative to the end of the video) that should be ad-free. Defaults to 300 seconds.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumFinalOffset</Declaration>
+			
+			
+			<Anchor>//api/name/midcontentAdMinimumFinalOffset</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaUnit/midcontentAdMinimumFinalOffset</TokenIdentifier>
+			<Abstract type="html">For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds (relative to the end of the video) that should be ad-free. Defaults to 300 seconds.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumFinalOffset</Declaration>
+			
+			
+			<Anchor>//api/name/midcontentAdMinimumFinalOffset</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/setMidcontentAdMinimumSpacing:</TokenIdentifier>
+			<Abstract type="html">For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait between ad batches. Defaults to 300 seconds.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumSpacing</Declaration>
+			
+			
+			<Anchor>//api/name/midcontentAdMinimumSpacing</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/midcontentAdMinimumSpacing</TokenIdentifier>
+			<Abstract type="html">For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait between ad batches. Defaults to 300 seconds.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumSpacing</Declaration>
+			
+			
+			<Anchor>//api/name/midcontentAdMinimumSpacing</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaUnit/midcontentAdMinimumSpacing</TokenIdentifier>
+			<Abstract type="html">For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait between ad batches. Defaults to 300 seconds.</Abstract>
+			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumSpacing</Declaration>
+			
+			
+			<Anchor>//api/name/midcontentAdMinimumSpacing</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
