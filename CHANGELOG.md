@@ -1,3 +1,6 @@
+### 1.8.9
+Added parameter that allows using the advertising identifier in ad requests.
+
 ### 1.8.8
 Veeso now supports mid-content ads (banners or midroll videos) that can be automatically scheduled to fit the main video duration, according to configurable parameters. For more details, see the `midcontentAdMinimumInitialOffset`, `midcontentAdMinimumFinalOffset` and `midcontentAdMinimumSpacing` parameters of `APSMediaUnit`.
 

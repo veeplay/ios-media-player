@@ -466,5 +466,9 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Specifies whether the player should stop functioning if the currently running device is detected to be jailbroken.
  */
 @property (nonatomic, assign) BOOL detectBreachedDevice;
+/**
+ *  Use this property to store the unique device advertising identifier, that can then be used by 3rd party components.
+ */
+@property (nonatomic) NSString *advertisingIdentifier;
 
 @end

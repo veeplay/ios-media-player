@@ -874,6 +874,42 @@
             <NodeRef refid="4"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setAdvertisingIdentifier:</TokenIdentifier>
+			<Abstract type="html">Use this property to store the unique device advertising identifier, that can then be used by 3rd party components.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *advertisingIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/advertisingIdentifier</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/advertisingIdentifier</TokenIdentifier>
+			<Abstract type="html">Use this property to store the unique device advertising identifier, that can then be used by 3rd party components.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *advertisingIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/advertisingIdentifier</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaPlayer/advertisingIdentifier</TokenIdentifier>
+			<Abstract type="html">Use this property to store the unique device advertising identifier, that can then be used by 3rd party components.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *advertisingIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/advertisingIdentifier</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
         
 	</File>
 </Tokens>
