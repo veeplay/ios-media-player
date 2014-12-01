@@ -1,3 +1,6 @@
+### 1.8.10
+Fixed issue with adding quote-encoding to URLs read via VAST.
+
 ### 1.8.9
 Added parameter that allows using the advertising identifier in ad requests.
 
