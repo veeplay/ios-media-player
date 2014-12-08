@@ -209,25 +209,43 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/track:forEvent:type:</TokenIdentifier>
-			<Abstract type="html">Sends tracking information to one or more servers. All specified URLs will be requested via GET. See &quot;Available Tracking Events&quot; for a list of supported event types.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/trackEvent:type:forObject:metadata:urls:</TokenIdentifier>
+			<Abstract type="html">This method triggers an APSMediaPlayerTrackedEventNotification notification.</Abstract>
 			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
 			
-			<Declaration>- (void)track:(id)urls forEvent:(NSString *)event type:(NSString *)type</Declaration>
+			<Declaration>- (void)trackEvent:(NSString *)event type:(NSString *)type forObject:(id)object metadata:(NSDictionary *)metadata urls:(id)urls</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>urls</Name>
-					<Abstract type="html">An array of NSURL objects that should be pinged. Also accepts an array of NSString objects, a single NSURL or a single NSString.</Abstract>
-				</Parameter><Parameter>
 					<Name>event</Name>
-					<Abstract type="html">A descriptive text of the events.</Abstract>
+					<Abstract type="html">The specific event subtype. May be nil for simple events.</Abstract>
 				</Parameter><Parameter>
 					<Name>type</Name>
 					<Abstract type="html">The tracked event type. See &quot;Available Tracking Events&quot;.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The APSMediaUnit or APSMediaOverlay instance that generated the notification. Can be nil for non-unit related events.</Abstract>
+				</Parameter><Parameter>
+					<Name>metadata</Name>
+					<Abstract type="html">Additional key-value pairs to send via the notification&apos;s userInfo to subscribers.</Abstract>
+				</Parameter><Parameter>
+					<Name>urls</Name>
+					<Abstract type="html">An array of NSURL objects representing addresses that should be pinged. Also accepts an array of NSString objects, a single NSURL or a single NSString.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/track:forEvent:type:</Anchor>
+			<Anchor>//api/name/trackEvent:type:forObject:metadata:urls:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/trackEvent:type:forObject:</TokenIdentifier>
+			<Abstract type="html">This is a wrapper for trackEvent:type:forObject:metadata:urls:</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>- (void)trackEvent:(NSString *)event type:(NSString *)type forObject:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/trackEvent:type:forObject:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
@@ -397,6 +415,18 @@
 			
 			
 			<Anchor>//api/name/pause</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/interrupt</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>- (void)interrupt</Declaration>
+			
+			
+			<Anchor>//api/name/interrupt</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

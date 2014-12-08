@@ -860,6 +860,42 @@
             <NodeRef refid="15"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setMetadata:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/metadata</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/metadata</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

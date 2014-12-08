@@ -22,10 +22,10 @@
 @protocol APSMediaPlayerOverlayController;
 
 #ifndef kAPSMetadataTitle
-#define kAPSMetadataTitle @"aps_meta_title"
-#define kAPSMetadataDescription @"aps_meta_description"
-#define kAPSMetadataImageURL @"aps_meta_image"
-#define kAPSMetadataType @"aps_meta_type"
+#define kAPSMetadataTitle @"title"
+#define kAPSMetadataDescription @"description"
+#define kAPSMetadataImageURL @"image"
+#define kAPSMetadataType @"type"
 #endif
 
 #ifndef NS_ENUM

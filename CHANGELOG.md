@@ -1,3 +1,6 @@
+### 1.8.11
+Fixed issue with the creation of exit units via JSON/Dictionary configuration.
+
 ### 1.8.10
 Fixed issue with adding quote-encoding to URLs read via VAST.
 

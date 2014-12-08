@@ -15,9 +15,10 @@
 #import "APSMediaUnit.h"
 #import "TSMiniWebBrowser.h"
 
-#define kAPSMediaPlayerEventType @"com.appscend.mp.event.type"
-#define kAPSMediaPlayerEventDescription @"com.appscend.mp.event.description"
-#define kAPSMediaPlayerEventURLs @"com.appscend.mp.event.urls"
+#define kAPSMediaPlayerEventType @"event.type"
+#define kAPSMediaPlayerEvent @"event"
+#define kAPSMediaPlayerEventURLs @"event.urls"
+#define kAPSMediaPlayerEventSource @"event.source"
 
 @protocol APSUnitManagerProtocol;
 
@@ -87,6 +88,7 @@ extern NSString *const APSMediaPlayerEventCreativeView;
 extern NSString *const APSMediaPlayerEventResume;
 extern NSString *const APSMediaPlayerEventPause;
 extern NSString *const APSMediaPlayerEventRewind;
+extern NSString *const APSMediaPlayerEventForward;
 extern NSString *const APSMediaPlayerEventMute;
 extern NSString *const APSMediaPlayerEventUnmute;
 extern NSString *const APSMediaPlayerEventError;
@@ -98,6 +100,13 @@ extern NSString *const APSMediaPlayerEventClick;
 extern NSString *const APSMediaPlayerEventIconView;
 extern NSString *const APSMediaPlayerEventExpand;
 extern NSString *const APSMediaPlayerEventCollapse;
+extern NSString *const APSMediaPlayerEventUpdate;
+extern NSString *const APSMediaPlayerEventSeeked;
+
+#define kAPSMediaPlayerCurrentPlaybackTime @"current_playback_time"
+#define kAPSMediaPlayerCurrentDuration @"current_duration"
+#define kAPSMediaPlayerError @"error"
+#define kAPSMediaPlayerSeekStart @"seek_start"
 
 /**
  *  The `APSMediaPlayerActionDelegate` protocol declares the two methods that a class must implement in order to become an `APSMediaPlayer` actionDelegate. The object implementing `APSMediaPlayer` will receive information about the URLs that need to be executed as the user interacts with the player.
@@ -236,14 +245,21 @@ typedef void (^APSMediaPlayerFinishBlock)();
  * -----------------------------------------------------------------------------
  */
 /**
- *  Sends tracking information to one or more servers. All specified URLs will be requested via GET. See "Available Tracking Events" for a list of supported event types.
- *  @warning This method also triggers the `APSMediaPlayerTrackedEventNotification` notification.
+ *  This method triggers an `APSMediaPlayerTrackedEventNotification` notification.
+ *  @warning Also sends tracking information to one or more servers. All specified URLs will be requested via GET. If the given object is an instance of the `APSMediaUnit` or the `APSMediaOverlay` classes, the `trackingURLs` dictionary property will be searched for the `type` key to identify the URLs that need to be pinged. Alternatively, you can pass a `NSArray`, a `NSURL` or a `NSString` as the object parameter. See "Available Tracking Events" for a list of supported event types.
  *
- *  @param urls  An array of `NSURL` objects that should be pinged. Also accepts an array of `NSString` objects, a single `NSURL` or a single `NSString`.
- *  @param event A descriptive text of the events.
+ *  @param event The specific event subtype. May be nil for simple events.
  *  @param type  The tracked event type. See "Available Tracking Events".
+ *  @param object The `APSMediaUnit` or `APSMediaOverlay` instance that generated the notification. Can be nil for non-unit related events.
+ *  @param metadata Additional key-value pairs to send via the notification's userInfo to subscribers.
+ *  @param urls An array of `NSURL` objects representing addresses that should be pinged. Also accepts an array of `NSString` objects, a single `NSURL` or a single `NSString`. 
  */
-- (void)track:(id)urls forEvent:(NSString*)event type:(NSString*)type;
+- (void)trackEvent:(NSString*)event type:(NSString*)type forObject:(id)object metadata:(NSDictionary*)metadata urls:(id)urls;
+
+/**
+ *  This is a wrapper for trackEvent:type:forObject:metadata:urls:
+ */
+- (void)trackEvent:(NSString*)event type:(NSString*)type forObject:(id)object;
 
 /**-----------------------------------------------------------------------------
  * @name URL Handling
@@ -287,6 +303,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Pauses playback of the current unit.
  */
 - (void)pause;
+- (void)interrupt;
 /**
  *  Stops playback of the current unit.
  */

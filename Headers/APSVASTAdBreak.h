@@ -239,4 +239,6 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  */
 @property (nonatomic) BOOL debug;
 
+@property (nonatomic) NSMutableDictionary *metadata;
+
 @end

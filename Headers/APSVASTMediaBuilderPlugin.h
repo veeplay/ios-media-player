@@ -24,8 +24,10 @@ extern NSString *const kAPSVASTNonlinearAd;
 #define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
 
-#define kAPSMetadataCurrentAdBreakIndex @"aps_vast_adbreak_index"
-#define kAPSMetadataTotalAdBreakAds @"aps_vast_adbreak_total"
+#define kAPSMetadataCurrentAdSourceIndex @"adbreak.source_index"
+#define kAPSMetadataCurrentAdBreakIndex @"adbreak.index"
+#define kAPSMetadataCurrentAdIndex @"adbreak.current"
+#define kAPSMetadataTotalAdBreakAds @"adbreak.total"
 
 
 /**
