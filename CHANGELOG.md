@@ -1,3 +1,6 @@
+### 1.8.12
+Fixed issue with event tracking.
+
 ### 1.8.11
 Fixed issue with the creation of exit units via JSON/Dictionary configuration.
 
