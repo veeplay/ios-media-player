@@ -46,7 +46,7 @@
     // Create the post-roll ad break
     APSVASTAdBreak *postroll = [[APSVASTAdBreak alloc] init];
     postroll.type = APSVASTPostContent;
-    postroll.sources = @[@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/movies/vast_multiple_ads.xml"];
+    postroll.sources = @[@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/vast/vast_multiple_ads.xml"];
     
     _vastPlugin.adBreaks = @[postroll];
     

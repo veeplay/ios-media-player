@@ -32,7 +32,7 @@
     // Create the MRAID banner ad
     APSVASTAdBreak *banner = [[APSVASTAdBreak alloc] init];
     banner.type = APSVASTNonLinear;
-    banner.adOffset = @"5";
+    banner.adOffset = @"15";
     banner.sources = @[@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/vast/vast_nonlinear_mraid.xml"];
     banner.bannerConfiguration.showCloseButton = NO;
     
