@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   s.source_files         = "Headers/*.h"
   s.resources            = "Assets/*.bundle"
   s.public_header_files  = "Headers/*.h"
-  s.preserve_paths       = "libVeesoPlayer.a", "Docs/*"
+  s.preserve_paths       = "Docs/*"
   s.library              = "VeesoPlayer", "z"
-  s.xcconfig             =  { "LIBRARY_SEARCH_PATHS" => '"$(PODS_ROOT)/VeesoPlayer"' }
+  s.vendored_libraries   = "libVeesoPlayer.a"
 
   s.frameworks = "AVFoundation", "MediaPlayer"
   s.dependency "KAProgressLabel", "~> 1.2"
