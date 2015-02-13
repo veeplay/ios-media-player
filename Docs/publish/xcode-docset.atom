@@ -1,20 +1,20 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>docsets/VeesoPlayer/xcode-docset.atom/20150112175534</id>
+    <id>docsets/VeesoPlayer/xcode-docset.atom/20150213143226</id>
     <title type="text">VeesoPlayer</title>
     <rights>Copyright © 2015 Veeso. All rights reserved.</rights>
     <link rel="self" href="docsets/VeesoPlayer/xcode-docset.atom"></link>
     <docset:publisherName>Veeso</docset:publisherName>
     <docset:publisherID>com.cocoadocs.veesoplayer.documentation</docset:publisherID>
-    <updated>2015-01-12T17:55:34+02:00</updated>
+    <updated>2015-02-13T14:32:26+02:00</updated>
     <entry>
-        <id>tag:(null),2015-01-12:com.cocoadocs.veesoplayer.VeesoPlayer/1.8.13</id>
+        <id>tag:(null),2015-02-13:com.cocoadocs.veesoplayer.VeesoPlayer/1.8.14</id>
         <title type="text">VeesoPlayer Documentation</title>
-        <updated>2015-01-12T17:55:34+02:00</updated>
-        <content type="text">VeesoPlayer Documentation (v1.8.13)</content>
-        <link rel="enclosure" type="application/octet-stream" href="docsets/VeesoPlayer/docset.xar" length="1305081"></link>
+        <updated>2015-02-13T14:32:26+02:00</updated>
+        <content type="text">VeesoPlayer Documentation (v1.8.14)</content>
+        <link rel="enclosure" type="application/octet-stream" href="docsets/VeesoPlayer/docset.xar" length="1313241"></link>
         <docset:identifier>com.cocoadocs.veesoplayer.VeesoPlayer</docset:identifier>
-        <docset:version>1.8.13</docset:version>
+        <docset:version>1.8.14</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
     </entry>
 </feed>

@@ -230,11 +230,6 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 @property (nonatomic) APSWebviewDismissedAction afterVideoAdTapped;
 
 /**
- *  This dictionary defines all URLs that need to be notified of specific events from the ad break's lifecycle. The keys are event constants, as defined in `APSMediaPlayer`, and the values are `NSArray`s containing `NSURL` objects.
- */
-@property (nonatomic) NSMutableDictionary *trackingURLs;
-
-/**
  *  Defines if the break should log debug information to the console.
  */
 @property (nonatomic) BOOL debug;

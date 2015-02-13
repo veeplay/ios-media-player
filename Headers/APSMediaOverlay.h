@@ -148,11 +148,6 @@ extern NSString *const APSContentOverlay;
 @property (nonatomic) CGFloat fadeInDuration;
 
 /**
- *  This dictionary defines all URLs that need to be notified of specific events from the overlay's lifecycle. The keys are event constants, as defined in `APSMediaPlayer`, and the values are `NSArrays` containing `NSURL` objects.
- */
-@property (nonatomic) NSMutableDictionary *trackingURLs;
-
-/**
  *  Defines if the overlay should be removed from memory when its' opacity becomes zero.
  */
 @property (nonatomic) BOOL removeWhenHidden;

@@ -1,3 +1,6 @@
+### 1.8.14
+Added metadata support to ad breaks.
+
 ### 1.8.13
 Fixed issue with multiple impressions and pause events being sent when clicking on ads.
 Fixed issue playing midrolls at a certain time interval inside a live stream.

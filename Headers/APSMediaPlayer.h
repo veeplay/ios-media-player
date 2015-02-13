@@ -80,6 +80,7 @@ extern NSString *const APSMediaPlayerInvalidLicenseNotification;
 /// @name Available Tracking Events
 ///-------------------------------------
 extern NSString *const APSMediaPlayerEventLaunch;
+extern NSString *const APSMediaPlayerEventStart;
 extern NSString *const APSMediaPlayerEventFinish;
 extern NSString *const APSMediaPlayerEventExitFullscreen;
 extern NSString *const APSMediaPlayerEventFullscreen;

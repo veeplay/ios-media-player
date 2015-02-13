@@ -192,10 +192,6 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  */
 @property (nonatomic) MPMovieScalingMode scalingMode;
 /**
- *  This dictionary defines all URLs that need to be notified of specific events from the unit's lifecycle. The keys are event constants, as defined in `APSMediaPlayer`, and the values are `NSArrays` containing `NSURL` objects.
- */
-@property (nonatomic) NSMutableDictionary *trackingURLs;
-/**
  *  An array of other media units to be played instead of the current one, should an error be encountered. The unit at index 0 has the highest priority.
  */
 @property (nonatomic) NSMutableArray *buffet;
