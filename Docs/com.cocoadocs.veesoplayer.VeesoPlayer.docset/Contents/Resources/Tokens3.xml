@@ -337,42 +337,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSMediaOverlay/setTrackingURLs:</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the overlay&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSMediaOverlay.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSMediaOverlay/trackingURLs</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the overlay&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSMediaOverlay.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSMediaOverlay/trackingURLs</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the overlay&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSMediaOverlay.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaOverlay/setRemoveWhenHidden:</TokenIdentifier>
 			<Abstract type="html">Defines if the overlay should be removed from memory when its&apos; opacity becomes zero.</Abstract>
 			<DeclaredIn>APSMediaOverlay.h</DeclaredIn>

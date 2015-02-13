@@ -789,42 +789,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setTrackingURLs:</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the ad break&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/trackingURLs</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the ad break&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/trackingURLs</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the ad break&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setDebug:</TokenIdentifier>
 			<Abstract type="html">Defines if the break should log debug information to the console.</Abstract>
 			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>

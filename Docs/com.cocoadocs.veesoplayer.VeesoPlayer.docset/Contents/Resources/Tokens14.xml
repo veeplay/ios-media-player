@@ -386,42 +386,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/setTrackingURLs:</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the unit&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/trackingURLs</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the unit&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSMediaUnit/trackingURLs</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the unit&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
-            <NodeRef refid="14"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaUnit/setBuffet:</TokenIdentifier>
 			<Abstract type="html">An array of other media units to be played instead of the current one, should an error be encountered. The unit at index 0 has the highest priority.</Abstract>
 			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
