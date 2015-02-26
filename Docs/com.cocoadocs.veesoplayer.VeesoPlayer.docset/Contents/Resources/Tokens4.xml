@@ -780,6 +780,54 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setAllowsAirPlay:</TokenIdentifier>
+			<Abstract type="html">Specifies whether the movie player allows AirPlay movie playback.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL allowsAirPlay</Declaration>
+			
+			
+			<Anchor>//api/name/allowsAirPlay</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/allowsAirPlay</TokenIdentifier>
+			<Abstract type="html">Specifies whether the movie player allows AirPlay movie playback.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL allowsAirPlay</Declaration>
+			
+			
+			<Anchor>//api/name/allowsAirPlay</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaPlayer/allowsAirPlay</TokenIdentifier>
+			<Abstract type="html">Specifies whether the movie player allows AirPlay movie playback.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL allowsAirPlay</Declaration>
+			
+			
+			<Anchor>//api/name/allowsAirPlay</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/airPlayVideoActive</TokenIdentifier>
+			<Abstract type="html">Indicates whether the movie player is currently playing video via AirPlay.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)airPlayVideoActive</Declaration>
+			
+			
+			<Anchor>//api/name/airPlayVideoActive</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/showActivityIndicator</TokenIdentifier>
 			<Abstract type="html">Shows an activity indicator, centrally in the player surface.</Abstract>
 			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>

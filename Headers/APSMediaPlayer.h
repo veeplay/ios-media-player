@@ -451,6 +451,18 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  @param managerClass The new unit manager object.
  */
 - (void)registerUnitManager:(NSObject<APSUnitManagerProtocol>*)managerClass;
+/**-----------------------------------------------------------------------------
+ * @name Airplay
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Specifies whether the movie player allows AirPlay movie playback.
+ */
+@property (nonatomic) BOOL allowsAirPlay;
+/**
+ *  Indicates whether the movie player is currently playing video via AirPlay.
+ */
+- (BOOL)airPlayVideoActive;
 
 /**-----------------------------------------------------------------------------
  * @name Other

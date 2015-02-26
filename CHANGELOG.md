@@ -1,3 +1,6 @@
+### 1.8.15
+Exposed AirPlay control properties (allowsAirPlay and airPlayVideoActive).
+
 ### 1.8.14
 Added metadata support to ad breaks.
 
