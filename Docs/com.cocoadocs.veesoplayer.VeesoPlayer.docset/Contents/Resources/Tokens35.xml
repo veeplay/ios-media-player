@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSResolvMultipleAdsConflictsBy.html">
+	<File path="Constants/APSAVPlayerSeekStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSResolvMultipleAdsConflictsBy</TokenIdentifier>
-			<Abstract type="html">The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.</Abstract>
-			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/APSAVPlayerSeekStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
             
 			
 			<NodeRef refid="35"/>
@@ -14,34 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSResolvMultipleAdsConflictsByDropping</TokenIdentifier>
-            <Abstract type="html">Solve the issue by dropping all loaded ads.
-     </Abstract>
-            <Declaration>APSResolvMultipleAdsConflictsByDropping</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/APSAVPlayerSeekStatusNoSeeking</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>APSAVPlayerSeekStatusNoSeeking</Declaration>
             
-            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
-            
-            <NodeRef refid="35"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSResolvMultipleAdsConflictsBySelectingFirst</TokenIdentifier>
-            <Abstract type="html">Solve the issue by only inserting the first valid ad retrieved, honoring the defined order in the VAST.
-     </Abstract>
-            <Declaration>APSResolvMultipleAdsConflictsBySelectingFirst</Declaration>
-            
-            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            <DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
             
             <NodeRef refid="35"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSResolvMultipleAdsConflictsBySelectingRandom</TokenIdentifier>
-            <Abstract type="html">Solve the issue by only inserting one random ad from the loaded batch.
-     </Abstract>
-            <Declaration>APSResolvMultipleAdsConflictsBySelectingRandom</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/APSAVPlayerSeekStatusBackward</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>APSAVPlayerSeekStatusBackward</Declaration>
             
-            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            <DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="35"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSAVPlayerSeekStatusForward</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>APSAVPlayerSeekStatusForward</Declaration>
+            
+            <DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
             
             <NodeRef refid="35"/>
         </Token>

@@ -20,6 +20,11 @@
 #define kAPSMediaPlayerEventURLs @"event.urls"
 #define kAPSMediaPlayerEventSource @"event.source"
 
+NS_ENUM(NSInteger, APSBackendPlayer) {
+    APSBackendAVPlayer,
+    APSBackendMPMoviePlayer
+};
+
 @protocol APSUnitManagerProtocol;
 
 ///--------------------
@@ -154,9 +159,9 @@ typedef void (^APSMediaPlayerFinishBlock)();
  - **APSMediaPlayerTrackedEventNotification**
  Posted when a trackable playback event occurs.
  The `userinfo` dictionary contains additional information about the tracked event:
-     - the `kAPSMediaPlayerEventDescription` key returns a string description of the tracked event
-     - the `kAPSMediaPlayerEventType` key returns one of the possible event type constants
-     - the `kAPSMediaPlayerEventURLs` key returns an array of NSURLs that were pinged to track the event
+ - the `kAPSMediaPlayerEventDescription` key returns a string description of the tracked event
+ - the `kAPSMediaPlayerEventType` key returns one of the possible event type constants
+ - the `kAPSMediaPlayerEventURLs` key returns an array of NSURLs that were pinged to track the event
  - **APSMediaPlayerInvalidLicenseNotification**
  Posted when the player license is invalid. Playback will be disabled.
  
@@ -187,6 +192,11 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  @param frame `CGRect` player view frame.
  */
 - (void)setFrame:(CGRect)frame;
+
+/**
+ *  The backend player class. Use `[APSAVPlayer class]` for the AVPlayer-based backend or `[APSMPMoviePlayer class]` for the MPMoviePlayerController-based backend
+ */
+@property (nonatomic) enum APSBackendPlayer backendPlayer;
 
 /**-----------------------------------------------------------------------------
  * @name Working with Media Units
@@ -253,7 +263,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  @param type  The tracked event type. See "Available Tracking Events".
  *  @param object The `APSMediaUnit` or `APSMediaOverlay` instance that generated the notification. Can be nil for non-unit related events.
  *  @param metadata Additional key-value pairs to send via the notification's userInfo to subscribers.
- *  @param urls An array of `NSURL` objects representing addresses that should be pinged. Also accepts an array of `NSString` objects, a single `NSURL` or a single `NSString`. 
+ *  @param urls An array of `NSURL` objects representing addresses that should be pinged. Also accepts an array of `NSString` objects, a single `NSURL` or a single `NSString`.
  */
 - (void)trackEvent:(NSString*)event type:(NSString*)type forObject:(id)object metadata:(NSDictionary*)metadata urls:(id)urls;
 

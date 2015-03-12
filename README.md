@@ -1,8 +1,6 @@
 ## About
 
-[<img src="http://veeso.co/wp-content/themes/veeso/assets/img/veeso_100.png">](http://veeso.co)
-
-The Veeso Media Player allows you to:
+The Appscend Media Player allows you to:
 
 * Create playlists of synchronized videos and overlays
 * Configure a playlist from an external JSON file, an equivalent NSDictionary structure or directly via code attributes
@@ -11,36 +9,39 @@ The Veeso Media Player allows you to:
 * Create custom player skins, brand player with logo, insert overlay bugs, customize player controls
 * Track video and overlay lifecycle events in real-time, as rendered
 
-## Demo
-
-Install [cocoapods](http://guides.cocoapods.org/using/getting-started.html#getting-started), and then run
-
-	pod try VeesoPlayer
-
 ## Installation
 
 There are currently two integration paths: via CocoaPods or via standard library download.
 
 1. **Installing via CocoaPods (recommended)**
+
+	- Add the player podspec repository to CocoaPods by running:
+	
+			pod repo add Appscend http://cocoapods.appscend.net/appscend.git/
+	
+	- After getting commercial access to the player repository, edit (or create) your `~/.ssh/config` file, and add the following two lines:
+	
+			Host cocoapods.appscend.net
+			User YOUR_USER_NAME
 		
 	- Add the following line to your podfile:
 	
-			pod 'VeesoPlayer'
+			pod 'APSMediaPlayer'
 		
 	- Run `pod install` to install the player and all the dependencies. Run `pod update` to keep the library updated.
 	
 2. **Installing via library download**
 
-	- Add `MediaPlayer.framework`, `AVFoundation.framework` and `libz.dylib` to your project.
+	- Add `MediaPlayer.framework` and `AVFoundation.framework` to your project.
 	
 		- Select your target in the project settings screen.
 		- Select the “Build Phases” tab.
 		- Expand the “Link Binary With Libraries” area.
-		- Click the “+” button, and add `MediaPlayer.framework`, `AVFoundation.framework` and `libz.dylib` to your project.
+		- Click the “+” button, and add “MediaPlayer.framework” and “AVFoundation.framework” to your project.
 		
 	- Add the player’s static library to your project.
 	
-		- Drag the “libVeesoPlayer.a” file to your project.
+		- Drag the “libAPSMediaPlayer.a” file to your project.
 		- When prompted, make sure to check the project target that should link against the static library.
 		- Select your target in the project settings screen.
 		- Select the “Build Settings” tab.
@@ -57,13 +58,11 @@ There are currently two integration paths: via CocoaPods or via standard library
 		
 	- Add the player’s resource files to your project.
 	
-		- Drag all the files in the "Assets" folder into your Xcode project.
+		- Drag all the files in the “resources” folder into your Xcode project.
 		- When prompted, make sure to check the project target that should include the resources.
 		
 
 ## Getting Started
-
-Set up an account at http://panel.veeso.co and add your application's bundle identifier under "License Management".
 
 Import the Player’s header file, as well as the VAST/VMAP or other plugins:
 
@@ -102,73 +101,6 @@ The builder is configured at this point and is able to generate an array of medi
 
 In the final execution block we instruct the player to start playback using the final generated array of media units, configured remotely via JSON input.
 
-## Configuring from JSON
-
-See [this guide](http://veeso.github.io/json-docs/) for documentation on all available configuration options and examples.
-
-## Creating custom overlay controllers
-
-APSMediaPlayer allows developers to create their own, JSON or dictionary configurable overlays. To create a custom overlay:
-
-* Create a new class that inherits from APSMediaPlayerOverlayController, which is a `UIViewController` subclass itself.
-* Implement [KRAdapter type] to return a unique string that identifies the overlay. This is also used in the configuration dictionary.
-* Implement [APSMediaPlayerOverlayControllerProtocol load] to execute the custom overlay creation code. This method is invoked by the player, when first diplaying the overlay controller object. You can access configuration parameters as defined in the JSON or NSDictionary configuration using `self.overlay.parameters`. You can also access information about the currently running unit, using `self.overlay.parentUnit`.
-* Implement any other protocol-defined method as needed, see `APSMediaPlayerOverlayControllerProtocol` for a complete list.
-* Register the newly created class with the player: 
-
-        [[APSMediaPlayer sharedInstance] registerClass:[CLASSNAME class] inGroup:kAPSMediaPlayerOverlayControllersGroup type:@"TYPE"];
-
-## Using DRM
-
-APSMediaPlayer provides support for [Marlin DRM](http://www.marlin-community.com/), using the SDKs provided by [ExpressPlay](http://expressplay.com). To install:
-
-* Install the ExpressPlay SDK.
-* Add the following line to your Podfile:
-        
-        pod "VeesoMarlinManager"
-    
-* If installing without CocoaPods, get the latest static library and header files [from the repository](https://github.com/veeso/ios-marlin-drm).
-* Import the VeesoMarlinManager header file:
- 
-        #import "VeesoMarlinManager.h"
-
-* Instantiate a Marlin manager object and register it with the player:
-        
-        VeesoMarlinManager *marlinManager = [[VeesoMarlinManager alloc] init];
-        [[APSMediaPlayer sharedInstance] registerUnitManager:marlinManager];
-    
-* Set the `managerType` property of the `APSMediaUnit` object to `@"marlin"`.
-* Optionally, to have the player download and add a broadband license to the local store, you can set the `kAPSMetadataDrmUrl` key in the `metadata` dictionary of an item to the string URL to the license file. To configure from JSON, set the `drm_encoding_url` metadata key.
-
-### Example Unit Configurations
-
-* Configuring a unit progamatically:
-
-        APSMediaUnit *unit = [[APSMediaUnit alloc] init];
-        unit.url = [NSURL URLWithString:@"http://url.to/your-protected-media"];
-        unit.managerType = kVeesoMarlinDRMEncoding;
-        unit.metadata = [NSMutableDictionary dictionaryWithDictionary: @{ kAPSMetadataDrmUrl: @"http://url.to/marlin-broadband-key" }];
-        
-* Configuring a unit from JSON:
-
-        {
-                "url": "http://url.to/your-protected-media",
-                "manager": "marlin",
-                "metadata": {
-                        "drm_encoding_url": "http://url.to/marlin-broadband-key"
-                }
-        }
-
-## Class Reference
-
-See the full class reference [here](http://veeso.github.io/ios-docs).
-
-## Code Samples
-
-See a showcase project featuring code samples for various playback scenarios [here](https://github.com/veeso/ios-media-player/tree/master/Example).
-
-If you have CocoaPods installed, you can instantly see a demo of the Veeso player by typing `pod try VeesoPlayer` in your Terminal.
-
 ## Requirements
 
 APSMediaPlayer relies on the following liberally-licensed pods installed as dependencies:
@@ -184,4 +116,5 @@ Appscend Video Solutions GmbH
 
 ## License
 
-Commercial license. Contact <sales@veeso.co>.
+Commercial license. Contact sales@appscend.com.
+

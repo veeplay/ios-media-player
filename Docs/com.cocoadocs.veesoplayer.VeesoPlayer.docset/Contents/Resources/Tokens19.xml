@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/APSVASTSkipButtonConfiguration.html">
+	<File path="Classes/APSVASTAdBreak.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/APSVASTSkipButtonConfiguration</TokenIdentifier>
-			<Abstract type="html">Holds all configuration parameters for the skip button displayed on top of video ads</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/APSVASTAdBreak</TokenIdentifier>
+			<Abstract type="html">An APSVASTAdBreak object defines an ad break for which the builder plugin will try to generate APSMediaUnits and insert them into the playlist.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
 			
 			<NodeRef refid="19"/>
@@ -13,506 +13,850 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setPosition:</TokenIdentifier>
-			<Abstract type="html">The position of the skip ad overlay, relative to the player surface.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setSources:</TokenIdentifier>
+			<Abstract type="html">An array of NSString objects indicating the VAST URLs that will be called in order to populate the ad break with ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) APSMediaOverlayPosition position</Declaration>
+			<Declaration>@property (nonatomic) NSArray *sources</Declaration>
 			
 			
-			<Anchor>//api/name/position</Anchor>
+			<Anchor>//api/name/sources</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/position</TokenIdentifier>
-			<Abstract type="html">The position of the skip ad overlay, relative to the player surface.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/sources</TokenIdentifier>
+			<Abstract type="html">An array of NSString objects indicating the VAST URLs that will be called in order to populate the ad break with ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) APSMediaOverlayPosition position</Declaration>
+			<Declaration>@property (nonatomic) NSArray *sources</Declaration>
 			
 			
-			<Anchor>//api/name/position</Anchor>
+			<Anchor>//api/name/sources</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/position</TokenIdentifier>
-			<Abstract type="html">The position of the skip ad overlay, relative to the player surface.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/sources</TokenIdentifier>
+			<Abstract type="html">An array of NSString objects indicating the VAST URLs that will be called in order to populate the ad break with ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) APSMediaOverlayPosition position</Declaration>
+			<Declaration>@property (nonatomic) NSArray *sources</Declaration>
 			
 			
-			<Anchor>//api/name/position</Anchor>
+			<Anchor>//api/name/sources</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setDefaultSkipOffset:</TokenIdentifier>
-			<Abstract type="html">The default interval of time that needs to pass before the skip overlay is activated for tapping.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setType:</TokenIdentifier>
+			<Abstract type="html">The ad break type. Specifies how the rezulting APSMediaUnits and APSMediaOverlays need to be placed relative to the main content units. See APSVASTConfigurationOptions for more details about the possible values.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) int defaultSkipOffset</Declaration>
+			<Declaration>@property (nonatomic) APSVASTAdBreakType type</Declaration>
 			
 			
-			<Anchor>//api/name/defaultSkipOffset</Anchor>
+			<Anchor>//api/name/type</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/defaultSkipOffset</TokenIdentifier>
-			<Abstract type="html">The default interval of time that needs to pass before the skip overlay is activated for tapping.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/type</TokenIdentifier>
+			<Abstract type="html">The ad break type. Specifies how the rezulting APSMediaUnits and APSMediaOverlays need to be placed relative to the main content units. See APSVASTConfigurationOptions for more details about the possible values.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) int defaultSkipOffset</Declaration>
+			<Declaration>@property (nonatomic) APSVASTAdBreakType type</Declaration>
 			
 			
-			<Anchor>//api/name/defaultSkipOffset</Anchor>
+			<Anchor>//api/name/type</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/defaultSkipOffset</TokenIdentifier>
-			<Abstract type="html">The default interval of time that needs to pass before the skip overlay is activated for tapping.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/type</TokenIdentifier>
+			<Abstract type="html">The ad break type. Specifies how the rezulting APSMediaUnits and APSMediaOverlays need to be placed relative to the main content units. See APSVASTConfigurationOptions for more details about the possible values.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) int defaultSkipOffset</Declaration>
+			<Declaration>@property (nonatomic) APSVASTAdBreakType type</Declaration>
 			
 			
-			<Anchor>//api/name/defaultSkipOffset</Anchor>
+			<Anchor>//api/name/type</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setText:</TokenIdentifier>
-			<Abstract type="html">The text that should be displayed in the skip button.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setAdOffset:</TokenIdentifier>
+			<Abstract type="html">A string format that defines when midrolls and nonlinear ads should be inserted mid-unit for each content unit.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *text</Declaration>
+			<Declaration>@property (nonatomic) NSString *adOffset</Declaration>
 			
 			
-			<Anchor>//api/name/text</Anchor>
+			<Anchor>//api/name/adOffset</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/text</TokenIdentifier>
-			<Abstract type="html">The text that should be displayed in the skip button.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/adOffset</TokenIdentifier>
+			<Abstract type="html">A string format that defines when midrolls and nonlinear ads should be inserted mid-unit for each content unit.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *text</Declaration>
+			<Declaration>@property (nonatomic) NSString *adOffset</Declaration>
 			
 			
-			<Anchor>//api/name/text</Anchor>
+			<Anchor>//api/name/adOffset</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/text</TokenIdentifier>
-			<Abstract type="html">The text that should be displayed in the skip button.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/adOffset</TokenIdentifier>
+			<Abstract type="html">A string format that defines when midrolls and nonlinear ads should be inserted mid-unit for each content unit.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *text</Declaration>
+			<Declaration>@property (nonatomic) NSString *adOffset</Declaration>
 			
 			
-			<Anchor>//api/name/text</Anchor>
+			<Anchor>//api/name/adOffset</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setTextColor:</TokenIdentifier>
-			<Abstract type="html">The color of the text diplayed in the skip button.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setRepeatAfter:</TokenIdentifier>
+			<Abstract type="html">Defines the time interval in seconds after which the ad break will be repeated.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *textColor</Declaration>
+			<Declaration>@property (nonatomic) NSTimeInterval repeatAfter</Declaration>
 			
 			
-			<Anchor>//api/name/textColor</Anchor>
+			<Anchor>//api/name/repeatAfter</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/textColor</TokenIdentifier>
-			<Abstract type="html">The color of the text diplayed in the skip button.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/repeatAfter</TokenIdentifier>
+			<Abstract type="html">Defines the time interval in seconds after which the ad break will be repeated.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *textColor</Declaration>
+			<Declaration>@property (nonatomic) NSTimeInterval repeatAfter</Declaration>
 			
 			
-			<Anchor>//api/name/textColor</Anchor>
+			<Anchor>//api/name/repeatAfter</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/textColor</TokenIdentifier>
-			<Abstract type="html">The color of the text diplayed in the skip button.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/repeatAfter</TokenIdentifier>
+			<Abstract type="html">Defines the time interval in seconds after which the ad break will be repeated.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *textColor</Declaration>
+			<Declaration>@property (nonatomic) NSTimeInterval repeatAfter</Declaration>
 			
 			
-			<Anchor>//api/name/textColor</Anchor>
+			<Anchor>//api/name/repeatAfter</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setProgressPosition:</TokenIdentifier>
-			<Abstract type="html">Defines where inside the skip overlay should the progress circle be rendered.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setUserAgent:</TokenIdentifier>
+			<Abstract type="html">The user agent that should be used when making HTTP requests.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) APSSkipOverlayProgressPosition progressPosition</Declaration>
+			<Declaration>@property (nonatomic) NSString *userAgent</Declaration>
 			
 			
-			<Anchor>//api/name/progressPosition</Anchor>
+			<Anchor>//api/name/userAgent</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/progressPosition</TokenIdentifier>
-			<Abstract type="html">Defines where inside the skip overlay should the progress circle be rendered.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/userAgent</TokenIdentifier>
+			<Abstract type="html">The user agent that should be used when making HTTP requests.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) APSSkipOverlayProgressPosition progressPosition</Declaration>
+			<Declaration>@property (nonatomic) NSString *userAgent</Declaration>
 			
 			
-			<Anchor>//api/name/progressPosition</Anchor>
+			<Anchor>//api/name/userAgent</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/progressPosition</TokenIdentifier>
-			<Abstract type="html">Defines where inside the skip overlay should the progress circle be rendered.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/userAgent</TokenIdentifier>
+			<Abstract type="html">The user agent that should be used when making HTTP requests.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) APSSkipOverlayProgressPosition progressPosition</Declaration>
+			<Declaration>@property (nonatomic) NSString *userAgent</Declaration>
 			
 			
-			<Anchor>//api/name/progressPosition</Anchor>
+			<Anchor>//api/name/userAgent</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setProgressCircleColor:</TokenIdentifier>
-			<Abstract type="html">Defines the color of the progress bar indicating the elapsed time since ad has started.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/configureFromDictionary:</TokenIdentifier>
+			<Abstract type="html">Configure an AdBreak from a dictionary structure.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *progressCircleColor</Declaration>
+			<Declaration>- (void)configureFromDictionary:(NSDictionary *)configuration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">Configuration dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/progressCircleColor</Anchor>
+			<Anchor>//api/name/configureFromDictionary:</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/progressCircleColor</TokenIdentifier>
-			<Abstract type="html">Defines the color of the progress bar indicating the elapsed time since ad has started.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setControlsDisplayForAds:</TokenIdentifier>
+			<Abstract type="html">Specifies how the controls bar will be displayed on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *progressCircleColor</Declaration>
+			<Declaration>@property (nonatomic) APSMediaControlsDisplay controlsDisplayForAds</Declaration>
 			
 			
-			<Anchor>//api/name/progressCircleColor</Anchor>
+			<Anchor>//api/name/controlsDisplayForAds</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/progressCircleColor</TokenIdentifier>
-			<Abstract type="html">Defines the color of the progress bar indicating the elapsed time since ad has started.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/controlsDisplayForAds</TokenIdentifier>
+			<Abstract type="html">Specifies how the controls bar will be displayed on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *progressCircleColor</Declaration>
+			<Declaration>@property (nonatomic) APSMediaControlsDisplay controlsDisplayForAds</Declaration>
 			
 			
-			<Anchor>//api/name/progressCircleColor</Anchor>
+			<Anchor>//api/name/controlsDisplayForAds</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setProgressCircleTextColor:</TokenIdentifier>
-			<Abstract type="html">Defines the color of the text in the middle of the progress circle, indicating the number of seconds left until skip activation.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/controlsDisplayForAds</TokenIdentifier>
+			<Abstract type="html">Specifies how the controls bar will be displayed on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *progressCircleTextColor</Declaration>
+			<Declaration>@property (nonatomic) APSMediaControlsDisplay controlsDisplayForAds</Declaration>
 			
 			
-			<Anchor>//api/name/progressCircleTextColor</Anchor>
+			<Anchor>//api/name/controlsDisplayForAds</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/progressCircleTextColor</TokenIdentifier>
-			<Abstract type="html">Defines the color of the text in the middle of the progress circle, indicating the number of seconds left until skip activation.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setControlsParametersForAds:</TokenIdentifier>
+			<Abstract type="html">The configuration for the controls bar overlay on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *progressCircleTextColor</Declaration>
+			<Declaration>@property (nonatomic) NSDictionary *controlsParametersForAds</Declaration>
 			
 			
-			<Anchor>//api/name/progressCircleTextColor</Anchor>
+			<Anchor>//api/name/controlsParametersForAds</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/progressCircleTextColor</TokenIdentifier>
-			<Abstract type="html">Defines the color of the text in the middle of the progress circle, indicating the number of seconds left until skip activation.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/controlsParametersForAds</TokenIdentifier>
+			<Abstract type="html">The configuration for the controls bar overlay on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *progressCircleTextColor</Declaration>
+			<Declaration>@property (nonatomic) NSDictionary *controlsParametersForAds</Declaration>
 			
 			
-			<Anchor>//api/name/progressCircleTextColor</Anchor>
+			<Anchor>//api/name/controlsParametersForAds</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setProgressCircleTrackColor:</TokenIdentifier>
-			<Abstract type="html">Defines the color of the progress bar indicating the total duration of the ad.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/controlsParametersForAds</TokenIdentifier>
+			<Abstract type="html">The configuration for the controls bar overlay on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *progressCircleTrackColor</Declaration>
+			<Declaration>@property (nonatomic) NSDictionary *controlsParametersForAds</Declaration>
 			
 			
-			<Anchor>//api/name/progressCircleTrackColor</Anchor>
+			<Anchor>//api/name/controlsParametersForAds</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/progressCircleTrackColor</TokenIdentifier>
-			<Abstract type="html">Defines the color of the progress bar indicating the total duration of the ad.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setDefaultIconHeightPercentage:</TokenIdentifier>
+			<Abstract type="html">Icons are rendered to a height that&apos;s proportional to the current player view height. This property defines the percentage of the current height to render ads to, while preserving the original aspect ration in calculating the rendered width.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *progressCircleTrackColor</Declaration>
+			<Declaration>@property (nonatomic) CGFloat defaultIconHeightPercentage</Declaration>
 			
 			
-			<Anchor>//api/name/progressCircleTrackColor</Anchor>
+			<Anchor>//api/name/defaultIconHeightPercentage</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/progressCircleTrackColor</TokenIdentifier>
-			<Abstract type="html">Defines the color of the progress bar indicating the total duration of the ad.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/defaultIconHeightPercentage</TokenIdentifier>
+			<Abstract type="html">Icons are rendered to a height that&apos;s proportional to the current player view height. This property defines the percentage of the current height to render ads to, while preserving the original aspect ration in calculating the rendered width.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *progressCircleTrackColor</Declaration>
+			<Declaration>@property (nonatomic) CGFloat defaultIconHeightPercentage</Declaration>
 			
 			
-			<Anchor>//api/name/progressCircleTrackColor</Anchor>
+			<Anchor>//api/name/defaultIconHeightPercentage</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setPadding:</TokenIdentifier>
-			<Abstract type="html">The internal padding that the skip overlay should apply to its content.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/defaultIconHeightPercentage</TokenIdentifier>
+			<Abstract type="html">Icons are rendered to a height that&apos;s proportional to the current player view height. This property defines the percentage of the current height to render ads to, while preserving the original aspect ration in calculating the rendered width.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) int padding</Declaration>
+			<Declaration>@property (nonatomic) CGFloat defaultIconHeightPercentage</Declaration>
 			
 			
-			<Anchor>//api/name/padding</Anchor>
+			<Anchor>//api/name/defaultIconHeightPercentage</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/padding</TokenIdentifier>
-			<Abstract type="html">The internal padding that the skip overlay should apply to its content.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setIconFadeInDuration:</TokenIdentifier>
+			<Abstract type="html">The fade-in animation duration for displaying icons, in seconds.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) int padding</Declaration>
+			<Declaration>@property (nonatomic) CGFloat iconFadeInDuration</Declaration>
 			
 			
-			<Anchor>//api/name/padding</Anchor>
+			<Anchor>//api/name/iconFadeInDuration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/padding</TokenIdentifier>
-			<Abstract type="html">The internal padding that the skip overlay should apply to its content.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/iconFadeInDuration</TokenIdentifier>
+			<Abstract type="html">The fade-in animation duration for displaying icons, in seconds.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) int padding</Declaration>
+			<Declaration>@property (nonatomic) CGFloat iconFadeInDuration</Declaration>
 			
 			
-			<Anchor>//api/name/padding</Anchor>
+			<Anchor>//api/name/iconFadeInDuration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setBorderColor:</TokenIdentifier>
-			<Abstract type="html">The color of the border for the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/iconFadeInDuration</TokenIdentifier>
+			<Abstract type="html">The fade-in animation duration for displaying icons, in seconds.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *borderColor</Declaration>
+			<Declaration>@property (nonatomic) CGFloat iconFadeInDuration</Declaration>
 			
 			
-			<Anchor>//api/name/borderColor</Anchor>
+			<Anchor>//api/name/iconFadeInDuration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/borderColor</TokenIdentifier>
-			<Abstract type="html">The color of the border for the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setSkipButtonConfiguration:</TokenIdentifier>
+			<Abstract type="html">Holds the configuration object for the skip button that appears on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *borderColor</Declaration>
+			<Declaration>@property (nonatomic) APSVASTSkipButtonConfiguration *skipButtonConfiguration</Declaration>
 			
 			
-			<Anchor>//api/name/borderColor</Anchor>
+			<Anchor>//api/name/skipButtonConfiguration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/borderColor</TokenIdentifier>
-			<Abstract type="html">The color of the border for the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/skipButtonConfiguration</TokenIdentifier>
+			<Abstract type="html">Holds the configuration object for the skip button that appears on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *borderColor</Declaration>
+			<Declaration>@property (nonatomic) APSVASTSkipButtonConfiguration *skipButtonConfiguration</Declaration>
 			
 			
-			<Anchor>//api/name/borderColor</Anchor>
+			<Anchor>//api/name/skipButtonConfiguration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setBorderRadius:</TokenIdentifier>
-			<Abstract type="html">The corner radius of the border for the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/skipButtonConfiguration</TokenIdentifier>
+			<Abstract type="html">Holds the configuration object for the skip button that appears on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) int borderRadius</Declaration>
+			<Declaration>@property (nonatomic) APSVASTSkipButtonConfiguration *skipButtonConfiguration</Declaration>
 			
 			
-			<Anchor>//api/name/borderRadius</Anchor>
+			<Anchor>//api/name/skipButtonConfiguration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/borderRadius</TokenIdentifier>
-			<Abstract type="html">The corner radius of the border for the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setCountdownConfiguration:</TokenIdentifier>
+			<Abstract type="html">Holds the configuration object for the countdown overlay that appears on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) int borderRadius</Declaration>
+			<Declaration>@property (nonatomic) APSVASTCountdownConfiguration *countdownConfiguration</Declaration>
 			
 			
-			<Anchor>//api/name/borderRadius</Anchor>
+			<Anchor>//api/name/countdownConfiguration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/borderRadius</TokenIdentifier>
-			<Abstract type="html">The corner radius of the border for the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/countdownConfiguration</TokenIdentifier>
+			<Abstract type="html">Holds the configuration object for the countdown overlay that appears on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) int borderRadius</Declaration>
+			<Declaration>@property (nonatomic) APSVASTCountdownConfiguration *countdownConfiguration</Declaration>
 			
 			
-			<Anchor>//api/name/borderRadius</Anchor>
+			<Anchor>//api/name/countdownConfiguration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setBackgroundColor:</TokenIdentifier>
-			<Abstract type="html">The background color for the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/countdownConfiguration</TokenIdentifier>
+			<Abstract type="html">Holds the configuration object for the countdown overlay that appears on top of video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *backgroundColor</Declaration>
+			<Declaration>@property (nonatomic) APSVASTCountdownConfiguration *countdownConfiguration</Declaration>
 			
 			
-			<Anchor>//api/name/backgroundColor</Anchor>
+			<Anchor>//api/name/countdownConfiguration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/backgroundColor</TokenIdentifier>
-			<Abstract type="html">The background color for the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setBannerConfiguration:</TokenIdentifier>
+			<Abstract type="html">@name Non-linear Ads Configuration
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *backgroundColor</Declaration>
+			<Declaration>@property (nonatomic) APSVASTBannerConfiguration *bannerConfiguration</Declaration>
 			
 			
-			<Anchor>//api/name/backgroundColor</Anchor>
+			<Anchor>//api/name/bannerConfiguration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/backgroundColor</TokenIdentifier>
-			<Abstract type="html">The background color for the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/bannerConfiguration</TokenIdentifier>
+			<Abstract type="html">@name Non-linear Ads Configuration
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *backgroundColor</Declaration>
+			<Declaration>@property (nonatomic) APSVASTBannerConfiguration *bannerConfiguration</Declaration>
 			
 			
-			<Anchor>//api/name/backgroundColor</Anchor>
+			<Anchor>//api/name/bannerConfiguration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setWidth:</TokenIdentifier>
-			<Abstract type="html">The width of the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/bannerConfiguration</TokenIdentifier>
+			<Abstract type="html">@name Non-linear Ads Configuration
+-----------------------------------------------------------------------------</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *width</Declaration>
+			<Declaration>@property (nonatomic) APSVASTBannerConfiguration *bannerConfiguration</Declaration>
 			
 			
-			<Anchor>//api/name/width</Anchor>
+			<Anchor>//api/name/bannerConfiguration</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/width</TokenIdentifier>
-			<Abstract type="html">The width of the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setAllowMultipleAds:</TokenIdentifier>
+			<Abstract type="html">Defines whether the break should allow more than one ad to be played, even if more ads are retrieved.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *width</Declaration>
+			<Declaration>@property (nonatomic) BOOL allowMultipleAds</Declaration>
 			
 			
-			<Anchor>//api/name/width</Anchor>
+			<Anchor>//api/name/allowMultipleAds</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/width</TokenIdentifier>
-			<Abstract type="html">The width of the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/allowMultipleAds</TokenIdentifier>
+			<Abstract type="html">Defines whether the break should allow more than one ad to be played, even if more ads are retrieved.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *width</Declaration>
+			<Declaration>@property (nonatomic) BOOL allowMultipleAds</Declaration>
 			
 			
-			<Anchor>//api/name/width</Anchor>
+			<Anchor>//api/name/allowMultipleAds</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/setHeight:</TokenIdentifier>
-			<Abstract type="html">The height of the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/allowMultipleAds</TokenIdentifier>
+			<Abstract type="html">Defines whether the break should allow more than one ad to be played, even if more ads are retrieved.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *height</Declaration>
+			<Declaration>@property (nonatomic) BOOL allowMultipleAds</Declaration>
 			
 			
-			<Anchor>//api/name/height</Anchor>
+			<Anchor>//api/name/allowMultipleAds</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/APSVASTSkipButtonConfiguration/height</TokenIdentifier>
-			<Abstract type="html">The height of the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setFollowWrappers:</TokenIdentifier>
+			<Abstract type="html">Defines whether VAST Wrappers should be followed for the given URL sources.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *height</Declaration>
+			<Declaration>@property (nonatomic) BOOL followWrappers</Declaration>
 			
 			
-			<Anchor>//api/name/height</Anchor>
+			<Anchor>//api/name/followWrappers</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/APSVASTSkipButtonConfiguration/height</TokenIdentifier>
-			<Abstract type="html">The height of the skip overlay.</Abstract>
-			<DeclaredIn>APSVASTSkipButtonConfiguration.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/followWrappers</TokenIdentifier>
+			<Abstract type="html">Defines whether VAST Wrappers should be followed for the given URL sources.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSString *height</Declaration>
+			<Declaration>@property (nonatomic) BOOL followWrappers</Declaration>
 			
 			
-			<Anchor>//api/name/height</Anchor>
+			<Anchor>//api/name/followWrappers</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/followWrappers</TokenIdentifier>
+			<Abstract type="html">Defines whether VAST Wrappers should be followed for the given URL sources.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL followWrappers</Declaration>
+			
+			
+			<Anchor>//api/name/followWrappers</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setMultipleAdsConflictsPolicy:</TokenIdentifier>
+			<Abstract type="html">The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSResolvMultipleAdsConflictsBy multipleAdsConflictsPolicy</Declaration>
+			
+			
+			<Anchor>//api/name/multipleAdsConflictsPolicy</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/multipleAdsConflictsPolicy</TokenIdentifier>
+			<Abstract type="html">The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSResolvMultipleAdsConflictsBy multipleAdsConflictsPolicy</Declaration>
+			
+			
+			<Anchor>//api/name/multipleAdsConflictsPolicy</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/multipleAdsConflictsPolicy</TokenIdentifier>
+			<Abstract type="html">The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSResolvMultipleAdsConflictsBy multipleAdsConflictsPolicy</Declaration>
+			
+			
+			<Anchor>//api/name/multipleAdsConflictsPolicy</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setAdPodFallbackStrategy:</TokenIdentifier>
+			<Abstract type="html">VAST 3.0 defines Ad Pods, with fallback mechanisms that allow loading an ad buffet of commercials to playback if the main ads fail. This value specifies how to treat backwards compatibility issues with VAST 2.0 and 1.0, by choosing what ads are promoted to the main Ad Pod if no valid Pods are detected.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSAdPodFallback adPodFallbackStrategy</Declaration>
+			
+			
+			<Anchor>//api/name/adPodFallbackStrategy</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/adPodFallbackStrategy</TokenIdentifier>
+			<Abstract type="html">VAST 3.0 defines Ad Pods, with fallback mechanisms that allow loading an ad buffet of commercials to playback if the main ads fail. This value specifies how to treat backwards compatibility issues with VAST 2.0 and 1.0, by choosing what ads are promoted to the main Ad Pod if no valid Pods are detected.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSAdPodFallback adPodFallbackStrategy</Declaration>
+			
+			
+			<Anchor>//api/name/adPodFallbackStrategy</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/adPodFallbackStrategy</TokenIdentifier>
+			<Abstract type="html">VAST 3.0 defines Ad Pods, with fallback mechanisms that allow loading an ad buffet of commercials to playback if the main ads fail. This value specifies how to treat backwards compatibility issues with VAST 2.0 and 1.0, by choosing what ads are promoted to the main Ad Pod if no valid Pods are detected.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSAdPodFallback adPodFallbackStrategy</Declaration>
+			
+			
+			<Anchor>//api/name/adPodFallbackStrategy</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setPrefferedVideoMimeTypes:</TokenIdentifier>
+			<Abstract type="html">An array that defines the mime-types supported when choosing a media file from the VAST response.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *prefferedVideoMimeTypes</Declaration>
+			
+			
+			<Anchor>//api/name/prefferedVideoMimeTypes</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/prefferedVideoMimeTypes</TokenIdentifier>
+			<Abstract type="html">An array that defines the mime-types supported when choosing a media file from the VAST response.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *prefferedVideoMimeTypes</Declaration>
+			
+			
+			<Anchor>//api/name/prefferedVideoMimeTypes</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/prefferedVideoMimeTypes</TokenIdentifier>
+			<Abstract type="html">An array that defines the mime-types supported when choosing a media file from the VAST response.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *prefferedVideoMimeTypes</Declaration>
+			
+			
+			<Anchor>//api/name/prefferedVideoMimeTypes</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setScalingMode:</TokenIdentifier>
+			<Abstract type="html">The ad video clip scaling mode, relative to the player surface.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) MPMovieScalingMode scalingMode</Declaration>
+			
+			
+			<Anchor>//api/name/scalingMode</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/scalingMode</TokenIdentifier>
+			<Abstract type="html">The ad video clip scaling mode, relative to the player surface.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) MPMovieScalingMode scalingMode</Declaration>
+			
+			
+			<Anchor>//api/name/scalingMode</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/scalingMode</TokenIdentifier>
+			<Abstract type="html">The ad video clip scaling mode, relative to the player surface.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) MPMovieScalingMode scalingMode</Declaration>
+			
+			
+			<Anchor>//api/name/scalingMode</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setAllowPinchToFullscreen:</TokenIdentifier>
+			<Abstract type="html">Defines if the pinch-to-fullscreen gesture should be activated for generated video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL allowPinchToFullscreen</Declaration>
+			
+			
+			<Anchor>//api/name/allowPinchToFullscreen</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/allowPinchToFullscreen</TokenIdentifier>
+			<Abstract type="html">Defines if the pinch-to-fullscreen gesture should be activated for generated video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL allowPinchToFullscreen</Declaration>
+			
+			
+			<Anchor>//api/name/allowPinchToFullscreen</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/allowPinchToFullscreen</TokenIdentifier>
+			<Abstract type="html">Defines if the pinch-to-fullscreen gesture should be activated for generated video ads.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL allowPinchToFullscreen</Declaration>
+			
+			
+			<Anchor>//api/name/allowPinchToFullscreen</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setAfterBannerTapped:</TokenIdentifier>
+			<Abstract type="html">Defines the behavior of the player after a banner ad is tapped and the built-in web browser is dismissed.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSWebviewDismissedAction afterBannerTapped</Declaration>
+			
+			
+			<Anchor>//api/name/afterBannerTapped</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/afterBannerTapped</TokenIdentifier>
+			<Abstract type="html">Defines the behavior of the player after a banner ad is tapped and the built-in web browser is dismissed.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSWebviewDismissedAction afterBannerTapped</Declaration>
+			
+			
+			<Anchor>//api/name/afterBannerTapped</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/afterBannerTapped</TokenIdentifier>
+			<Abstract type="html">Defines the behavior of the player after a banner ad is tapped and the built-in web browser is dismissed.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSWebviewDismissedAction afterBannerTapped</Declaration>
+			
+			
+			<Anchor>//api/name/afterBannerTapped</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setAfterVideoAdTapped:</TokenIdentifier>
+			<Abstract type="html">Defines the behavior of the player after a video ad is tapped and the built-in web browser is dismissed.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSWebviewDismissedAction afterVideoAdTapped</Declaration>
+			
+			
+			<Anchor>//api/name/afterVideoAdTapped</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/afterVideoAdTapped</TokenIdentifier>
+			<Abstract type="html">Defines the behavior of the player after a video ad is tapped and the built-in web browser is dismissed.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSWebviewDismissedAction afterVideoAdTapped</Declaration>
+			
+			
+			<Anchor>//api/name/afterVideoAdTapped</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/afterVideoAdTapped</TokenIdentifier>
+			<Abstract type="html">Defines the behavior of the player after a video ad is tapped and the built-in web browser is dismissed.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSWebviewDismissedAction afterVideoAdTapped</Declaration>
+			
+			
+			<Anchor>//api/name/afterVideoAdTapped</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setDebug:</TokenIdentifier>
+			<Abstract type="html">Defines if the break should log debug information to the console.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL debug</Declaration>
+			
+			
+			<Anchor>//api/name/debug</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/debug</TokenIdentifier>
+			<Abstract type="html">Defines if the break should log debug information to the console.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL debug</Declaration>
+			
+			
+			<Anchor>//api/name/debug</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/debug</TokenIdentifier>
+			<Abstract type="html">Defines if the break should log debug information to the console.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL debug</Declaration>
+			
+			
+			<Anchor>//api/name/debug</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/setMetadata:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTAdBreak/metadata</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTAdBreak/metadata</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *metadata</Declaration>
+			
+			
+			<Anchor>//api/name/metadata</Anchor>
             <NodeRef refid="19"/>
 		</Token>
 		

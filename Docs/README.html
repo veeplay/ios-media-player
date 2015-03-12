@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h2>About</h2>
+
+<p>The Appscend Media Player allows you to:</p>
+
+<ul>
+<li>Create playlists of synchronized videos and overlays</li>
+<li>Configure a playlist from an external JSON file, an equivalent NSDictionary structure or directly via code attributes</li>
+<li>Create custom, native overlays</li>
+<li>Automatically configure ad linear inserts (pre, mid and post rolls) as well as nonlinear inserts (banner overlays), VAST 1.0, 2.0, 3.0 and VMAP 1.0 compliant</li>
+<li>Create custom player skins, brand player with logo, insert overlay bugs, customize player controls</li>
+<li>Track video and overlay lifecycle events in real-time, as rendered</li>
+</ul>
+
+<h2>Installation</h2>
+
+<p>There are currently two integration paths: via CocoaPods or via standard library download.</p>
+
+<ol>
+<li><strong>Installing via CocoaPods (recommended)</strong></li>
+</ol>
+
+<pre><code>- Add the player podspec repository to CocoaPods by running:
+
+        pod repo add Appscend http://cocoapods.appscend.net/appscend.git/
+
+- After getting commercial access to the player repository, edit (or create) your `~/.ssh/config` file, and add the following two lines:
+
+        Host cocoapods.appscend.net
+        User YOUR_USER_NAME
+
+- Add the following line to your podfile:
+
+        pod 'APSMediaPlayer'
+
+- Run `pod install` to install the player and all the dependencies. Run `pod update` to keep the library updated.
+</code></pre>
+
+<ol>
+<li><strong>Installing via library download</strong></li>
+</ol>
+
+<pre><code>- Add `MediaPlayer.framework` and `AVFoundation.framework` to your project.
+
+    - Select your target in the project settings screen.
+    - Select the “Build Phases” tab.
+    - Expand the “Link Binary With Libraries” area.
+    - Click the “+” button, and add “MediaPlayer.framework” and “AVFoundation.framework” to your project.
+
+- Add the player’s static library to your project.
+
+    - Drag the “libAPSMediaPlayer.a” file to your project.
+    - When prompted, make sure to check the project target that should link against the static library.
+    - Select your target in the project settings screen.
+    - Select the “Build Settings” tab.
+    - Search for “Other Linker Flags” and make sure that the “-ObjC” flag is present. If it is not, add it.
+    - Search for “iOS Deployment Target” and make sure to set the value to iOS 5 and up (iOS &lt; 5 is not supported).
+
+- Add the player’s header files to your project.
+
+    - Drag all the header files in the “headers” folder into your Xcode project OR
+
+    - Select your target in the project settings screen.
+    - Select the “Build Settings” tab.
+    - Search for “Header Search Paths” and make sure that all the header files are in a location that Xcode knows about.
+
+- Add the player’s resource files to your project.
+
+    - Drag all the files in the “resources” folder into your Xcode project.
+    - When prompted, make sure to check the project target that should include the resources.
+</code></pre>
+
+<h2>Getting Started</h2>
+
+<p>Import the Player’s header file, as well as the VAST/VMAP or other plugins:</p>
+
+<pre><code>#import "APSMediaPlayer.h" 
+#import "APSVASTMediaBuilderPlugin.h"
+</code></pre>
+
+<p>Create a new APSMediaBuilder instance and add plugins as required APSMediaUnit : </p>
+
+<pre><code>APSMediaBuilder *builder = [[APSMediaBuilder alloc] init]; 
+[builder addPlugin:[[APSVASTMediaBuilderPlugin alloc] init]]; 
+</code></pre>
+
+<p>Optionally, APSMediaUnit set the debugMode flag to YES to enable console logging: </p>
+
+<pre><code>builder.debugMode = YES;
+</code></pre>
+
+<p>Add the media player to a view: </p>
+
+<pre><code>[APSMediaPlayer sharedInstance].view.frame = CGRectMake(5, 5, 310, 450); 
+[self.view addSubview:[APSMediaPlayer sharedInstance].view];
+</code></pre>
+
+<p>The next step is to create a playlist of <code>APSMediaUnit</code>s to feed to the player for playback. This is what the <code>builder</code> object does; it acts like a configurable <code>APSMediaUnit</code> and <code>APSMediaOverlay</code> factory. Configuration can be done by specifying a URL to a JSON configuration file or by providing a similar configuration structure in a <code>NSDictionary</code> container.</p>
+
+<p>Since remote configuration is a process involving network requests, the builder exposes an asynchroneous configuration method:</p>
+
+<pre><code>[builder configureFromURL:[NSURL URLWithString:@"http://example.com/player.json"] onComplete:^ {
+    // TODO: Request and play media units here
+}];
+</code></pre>
+
+<p>The builder is configured at this point and is able to generate an array of media units ready for playback. When requesting unit generation however, plugins like <code>APSVASTMediaBuilderPlugin</code> require making additional network requests in order to work. So, again, there is an asynchroneous unit retrieval method:</p>
+
+<pre><code>[builder configureFromURL:[NSURL URLWithString:@"http://example.com/player.json"] onComplete:^ {
+    [builder requestMediaUnitsWithCompletionBlock:^(NSArray *units) {
+        [[APSMediaPlayer sharedInstance] playMediaUnits:units];
+    }];
+}];
+</code></pre>
+
+<p>In the final execution block we instruct the player to start playback using the final generated array of media units, configured remotely via JSON input.</p>
+
+<h2>Requirements</h2>
+
+<p>APSMediaPlayer relies on the following liberally-licensed pods installed as dependencies:</p>
+
+<ul>
+<li>KAProgressLabel - <a href="https://github.com/kirualex/KAProgressLabel/blob/master/LICENSE">LICENSE</a>
+</li>
+<li>TBXML - <a href="https://github.com/71squared/TBXML">LICENSE</a>
+</li>
+<li>TSMiniWebBrowser - <a href="https://github.com/tonisalae/TSMiniWebBrowser/blob/master/LICENSE">LICENSE</a>
+</li>
+</ul>
+
+<h2>Author</h2>
+
+<p>Appscend Video Solutions GmbH</p>
+
+<h2>License</h2>
+
+<p>Commercial license. Contact sales@appscend.com.</p>
+</body></html>

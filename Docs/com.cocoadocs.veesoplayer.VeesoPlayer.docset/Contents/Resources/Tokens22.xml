@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/APSMediaBuilderPlugin.html">
+	<File path="Classes/APSVASTMediaBuilderPlugin.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/APSMediaBuilderPlugin</TokenIdentifier>
-			<Abstract type="html">Defines methods that need to be implemented by any object that want to register as an APSMediaBuilder plugin.</Abstract>
-			<DeclaredIn>APSMediaBuilderPlugin.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/APSVASTMediaBuilderPlugin</TokenIdentifier>
+			<Abstract type="html">The VAST Media Builder plugin extends an APSMediaBuilder object by inserting preroll, postroll, midroll and non-linear ad breaks, loaded from VAST 1.0, VAST 2.0, VAST 3.0 and VMAP 1.0 sources.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
             
 			
 			<NodeRef refid="22"/>
@@ -13,48 +13,158 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaBuilderPlugin/startForBuilder:</TokenIdentifier>
-			<Abstract type="html">This method will be called at the beginning of the mediaUnits method of the APSMediaBuilder object that registered the plugin.</Abstract>
-			<DeclaredIn>APSMediaBuilderPlugin.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/adBreaksForVMAP</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>- (void)startForBuilder:(APSMediaBuilder *)builder</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>builder</Name>
-					<Abstract type="html">A reference to the calling APSMediaBuilder object.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>- (NSArray *)adBreaksForVMAP</Declaration>
 			
-			<Anchor>//api/name/startForBuilder:</Anchor>
+			
+			<Anchor>//api/name/adBreaksForVMAP</Anchor>
             <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaBuilderPlugin/dictionaryConfigurationKey</TokenIdentifier>
-			<Abstract type="html">The string key that will be used in the root of JSON and dictionary builder configurations to hold all the specific configuration details for the plugin.</Abstract>
-			<DeclaredIn>APSMediaBuilderPlugin.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/setVmapURL:</TokenIdentifier>
+			<Abstract type="html">The VMAP 1.0 URL that should be used to configure ad breaks.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)dictionaryConfigurationKey</Declaration>
+			<Declaration>@property (nonatomic) NSURL *vmapURL</Declaration>
 			
-			<ReturnValue><Abstract type="html">String key.</Abstract></ReturnValue>
-			<Anchor>//api/name/dictionaryConfigurationKey</Anchor>
+			
+			<Anchor>//api/name/vmapURL</Anchor>
             <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaBuilderPlugin/configureFromDictionary:</TokenIdentifier>
-			<Abstract type="html">This method is called by the APSMediaBuilder object, in the process of its configuration. The method is only called if in the root of the configuring JSON or NSDictionary there is a key equal to the string defined by the plugin using the dictionaryConfigurationKey method.</Abstract>
-			<DeclaredIn>APSMediaBuilderPlugin.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/vmapURL</TokenIdentifier>
+			<Abstract type="html">The VMAP 1.0 URL that should be used to configure ad breaks.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>- (void)configureFromDictionary:(NSDictionary *)configuration</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>configuration</Name>
-					<Abstract type="html">A NSDictionary object containing the specific plugin configuration data.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic) NSURL *vmapURL</Declaration>
 			
-			<Anchor>//api/name/configureFromDictionary:</Anchor>
+			
+			<Anchor>//api/name/vmapURL</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTMediaBuilderPlugin/vmapURL</TokenIdentifier>
+			<Abstract type="html">The VMAP 1.0 URL that should be used to configure ad breaks.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSURL *vmapURL</Declaration>
+			
+			
+			<Anchor>//api/name/vmapURL</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/setAdBreakTemplate:</TokenIdentifier>
+			<Abstract type="html">The template object that holds default parameter values for ad breaks created from VMAP or VAST.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</Declaration>
+			
+			
+			<Anchor>//api/name/adBreakTemplate</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/adBreakTemplate</TokenIdentifier>
+			<Abstract type="html">The template object that holds default parameter values for ad breaks created from VMAP or VAST.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</Declaration>
+			
+			
+			<Anchor>//api/name/adBreakTemplate</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTMediaBuilderPlugin/adBreakTemplate</TokenIdentifier>
+			<Abstract type="html">The template object that holds default parameter values for ad breaks created from VMAP or VAST.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</Declaration>
+			
+			
+			<Anchor>//api/name/adBreakTemplate</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/setAdBreaks:</TokenIdentifier>
+			<Abstract type="html">The currently defined ad breaks that the plugin will try to fill.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *adBreaks</Declaration>
+			
+			
+			<Anchor>//api/name/adBreaks</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/adBreaks</TokenIdentifier>
+			<Abstract type="html">The currently defined ad breaks that the plugin will try to fill.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *adBreaks</Declaration>
+			
+			
+			<Anchor>//api/name/adBreaks</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTMediaBuilderPlugin/adBreaks</TokenIdentifier>
+			<Abstract type="html">The currently defined ad breaks that the plugin will try to fill.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *adBreaks</Declaration>
+			
+			
+			<Anchor>//api/name/adBreaks</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/setDefaultAdBreakPositions:</TokenIdentifier>
+			<Abstract type="html">When loading ads via VMAP and using ad break positioning via &quot;#&quot;, this array defines the available, pre-defined positions that ads can be inserted at.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *defaultAdBreakPositions</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAdBreakPositions</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/defaultAdBreakPositions</TokenIdentifier>
+			<Abstract type="html">When loading ads via VMAP and using ad break positioning via &quot;#&quot;, this array defines the available, pre-defined positions that ads can be inserted at.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *defaultAdBreakPositions</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAdBreakPositions</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTMediaBuilderPlugin/defaultAdBreakPositions</TokenIdentifier>
+			<Abstract type="html">When loading ads via VMAP and using ad break positioning via &quot;#&quot;, this array defines the available, pre-defined positions that ads can be inserted at.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *defaultAdBreakPositions</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAdBreakPositions</Anchor>
             <NodeRef refid="22"/>
 		</Token>
 		

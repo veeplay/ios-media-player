@@ -5,7 +5,7 @@
   margin-top: 1em;
   margin-bottom: 0.4em; }
 #GFM h1 {
-  border-left: 4px #2caae1 solid;
+  border-left: 4px #2CAAE1 solid;
   padding-left: 20px;
   margin-left: -30px;
   font-size: 48px;
@@ -14,7 +14,7 @@
   font-size: 40px;
   line-height: 52px; }
 #GFM h3 {
-  color: #428bca;
+  color: #428BCA;
   font-size: 32px;
   line-height: 41px; }
 #GFM h4 {
@@ -97,8 +97,8 @@ dl {
   width: 100%; }
   #GFM table th {
     font-weight: bold;
-    border: 1px solid #1b3a54;
-    background-color: #1b3a54;
+    border: 1px solid #1B3A54;
+    background-color: #1B3A54;
     padding: 6px 13px; }
   #GFM table td {
     border: 1px solid #ccc;
@@ -110,8 +110,7 @@ dl {
     max-width: 100%; }
 #GFM code, #GFM tt {
   margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap; }
+  padding: 0 5px; }
 #GFM pre > code {
   margin: 0;
   padding: 0;
@@ -119,7 +118,7 @@ dl {
 #GFM pre {
   background-color: #F2F2F2;
   border: 0;
-  border-left: 2px solid #428bca;
+  border-left: 2px solid #428BCA;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
@@ -159,10 +158,9 @@ dl {
 #GFM .highlight .err {
   border: 1px solid #FF0000; }
 #GFM .highlight .k {
-  color: #007020;
-  font-weight: bold; }
+  color: #418aca; }
 #GFM .highlight .o {
-  color: #666666; }
+  color: #000; }
 #GFM .highlight .cm {
   color: #408090;
   font-style: italic; }
@@ -188,24 +186,19 @@ dl {
 #GFM .highlight .go {
   color: #303030; }
 #GFM .highlight .gp {
-  color: #C65D09;
-  font-weight: bold; }
+  color: #C65D09; }
 #GFM .highlight .gs {
   font-weight: bold; }
 #GFM .highlight .gu {
-  color: #800080;
-  font-weight: bold; }
+  color: #800080; }
 #GFM .highlight .gt {
   color: #0040D0; }
 #GFM .highlight .kc {
-  color: #007020;
-  font-weight: bold; }
+  color: #007020; }
 #GFM .highlight .kd {
-  color: #007020;
-  font-weight: bold; }
+  color: #007020; }
 #GFM .highlight .kn {
-  color: #007020;
-  font-weight: bold; }
+  color: #007020; }
 #GFM .highlight .kp {
   color: #007020; }
 #GFM .highlight .kr {
@@ -216,13 +209,13 @@ dl {
 #GFM .highlight .m {
   color: #208050; }
 #GFM .highlight .s {
-  color: #4070A0; }
+  color: #2dabe1; }
 #GFM .highlight .n {
-  color: #4E95DF; }
+  color: #3a3a3a; }
 #GFM .highlight .na {
   color: #4070A0; }
 #GFM .highlight .nb {
-  color: #007020; }
+  color: #418aca; }
 #GFM .highlight .nc {
   color: #0E84B5;
   font-weight: bold; }
@@ -237,10 +230,9 @@ dl {
 #GFM .highlight .ne {
   color: #007020; }
 #GFM .highlight .nf {
-  color: #06287E; }
+  color: #428BCA; }
 #GFM .highlight .nl {
-  color: #002070;
-  font-weight: bold; }
+  color: black; }
 #GFM .highlight .nn {
   color: #0E84B5;
   font-weight: bold; }
@@ -248,7 +240,7 @@ dl {
   color: #062873;
   font-weight: bold; }
 #GFM .highlight .nv {
-  color: #BB60D5; }
+  color: #2dabe1; }
 #GFM .highlight .ow {
   color: #007020;
   font-weight: bold; }
@@ -259,7 +251,7 @@ dl {
 #GFM .highlight .mh {
   color: #208050; }
 #GFM .highlight .mi {
-  color: #208050; }
+  color: #418aca; }
 #GFM .highlight .mo {
   color: #208050; }
 #GFM .highlight .sb {
@@ -288,7 +280,7 @@ dl {
 #GFM .highlight .ss {
   color: #517918; }
 #GFM .highlight .bp {
-  color: #4E95DF; }
+  color: #418aca; }
 #GFM .highlight .vc {
   color: #BB60D5; }
 #GFM .highlight .vg {
@@ -297,3 +289,5 @@ dl {
   color: #BB60D5; }
 #GFM .highlight .il {
   color: #208050; }
+
+/*# sourceMappingURL=appledoc_gfm.css.map */

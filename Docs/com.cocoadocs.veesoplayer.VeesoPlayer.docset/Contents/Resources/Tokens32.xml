@@ -1,50 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSMediaControlsDisplay.html">
+	<File path="Protocols/APSMediaTrackableObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSMediaControlsDisplay</TokenIdentifier>
-			<Abstract type="html">Specifies how the controls bar should be displayed for a media unit.</Abstract>
-			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/APSMediaTrackableObject</TokenIdentifier>
+			<Abstract type="html">Defines the properties that an object needs to implement to become trackable by the player.</Abstract>
+			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
             
 			
 			<NodeRef refid="32"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSMediaControlsDisplayBottom</TokenIdentifier>
-            <Abstract type="html">The controls bar should be displayed at the bottom of the player surface.
-     </Abstract>
-            <Declaration>APSMediaControlsDisplayBottom</Declaration>
-            
-            <DeclaredIn>APSMediaUnit.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaTrackableObject/setTrackingURLs:</TokenIdentifier>
+			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the object&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
+			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
+			
+			
+			<Anchor>//api/name/trackingURLs</Anchor>
             <NodeRef refid="32"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSMediaControlsDisplayTop</TokenIdentifier>
-            <Abstract type="html">The controls bar should be displayed at the top of the player surface.
-     </Abstract>
-            <Declaration>APSMediaControlsDisplayTop</Declaration>
-            
-            <DeclaredIn>APSMediaUnit.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaTrackableObject/trackingURLs</TokenIdentifier>
+			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the object&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
+			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
+			
+			
+			<Anchor>//api/name/trackingURLs</Anchor>
             <NodeRef refid="32"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSMediaControlsDisplayNone</TokenIdentifier>
-            <Abstract type="html">The controls bar should not be displayed for this unit.
-     </Abstract>
-            <Declaration>APSMediaControlsDisplayNone</Declaration>
-            
-            <DeclaredIn>APSMediaUnit.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/APSMediaTrackableObject/trackingURLs</TokenIdentifier>
+			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the object&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
+			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
+			
+			
+			<Anchor>//api/name/trackingURLs</Anchor>
             <NodeRef refid="32"/>
-        </Token>
+		</Token>
+		
         
 	</File>
 </Tokens>

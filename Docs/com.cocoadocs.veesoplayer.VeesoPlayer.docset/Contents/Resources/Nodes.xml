@@ -8,7 +8,7 @@
                 
 				
 				<Node type="folder">
-					<Name>Classes</Name>
+					<Name></Name>
 					<Path>index.html</Path>
 					<Subnodes>
 						<NodeRef refid="1"/>
@@ -32,42 +32,58 @@
 						<NodeRef refid="19"/>
 						<NodeRef refid="20"/>
 						<NodeRef refid="21"/>
-						
-					</Subnodes>
-				</Node>
-				
-				
-                
-				<Node>
-					<Name>Protocols</Name>
-					<Path>index.html</Path>
-					<Subnodes>
 						<NodeRef refid="22"/>
 						<NodeRef refid="23"/>
 						<NodeRef refid="24"/>
 						<NodeRef refid="25"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node>
+					<Name></Name>
+					<Path>index.html</Path>
+					<Subnodes>
 						<NodeRef refid="26"/>
-						<NodeRef refid="27"/>
-						<NodeRef refid="28"/>
 						
 					</Subnodes>
 				</Node>
 				
                 
 				<Node>
-					<Name>Constants</Name>
+					<Name></Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
 						<NodeRef refid="29"/>
 						<NodeRef refid="30"/>
 						<NodeRef refid="31"/>
 						<NodeRef refid="32"/>
 						<NodeRef refid="33"/>
 						<NodeRef refid="34"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name></Name>
+					<Path>index.html</Path>
+					<Subnodes>
 						<NodeRef refid="35"/>
 						<NodeRef refid="36"/>
 						<NodeRef refid="37"/>
 						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
 						
 					</Subnodes>
 				</Node>
@@ -78,6 +94,71 @@
 	<Library>
 		
 		<Node id="1" type="file" documentType="reference">
+            <Name>APSAVPlayer</Name>
+            <Path>Classes/APSAVPlayer.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/APSAVPlayer.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/APSAVPlayer.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/APSAVPlayer.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/APSAVPlayer.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>APSAVPlayerView</Name>
+            <Path>Classes/APSAVPlayerView.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/APSAVPlayerView.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/APSAVPlayerView.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/APSAVPlayerView.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>APSMPMoviePlayer</Name>
+            <Path>Classes/APSMPMoviePlayer.html</Path>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
             <Name>APSMediaBuilder</Name>
             <Path>Classes/APSMediaBuilder.html</Path>
             
@@ -116,7 +197,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="2" type="file" documentType="reference">
+		<Node id="5" type="file" documentType="reference">
             <Name>APSMediaEvent</Name>
             <Path>Classes/APSMediaEvent.html</Path>
             
@@ -149,7 +230,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="3" type="file" documentType="reference">
+		<Node id="6" type="file" documentType="reference">
             <Name>APSMediaOverlay</Name>
             <Path>Classes/APSMediaOverlay.html</Path>
             
@@ -182,7 +263,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="4" type="file" documentType="reference">
+		<Node id="7" type="file" documentType="reference">
             <Name>APSMediaPlayer</Name>
             <Path>Classes/APSMediaPlayer.html</Path>
             
@@ -221,12 +302,12 @@
             </Subnodes>
             
         </Node>
-		<Node id="5" type="file" documentType="reference">
+		<Node id="8" type="file" documentType="reference">
             <Name>APSMediaPlayerButtonOverlayController</Name>
             <Path>Classes/APSMediaPlayerButtonOverlayController.html</Path>
             
         </Node>
-		<Node id="6" type="file" documentType="reference">
+		<Node id="9" type="file" documentType="reference">
             <Name>APSMediaPlayerClosableOverlayController</Name>
             <Path>Classes/APSMediaPlayerClosableOverlayController.html</Path>
             
@@ -253,22 +334,22 @@
             </Subnodes>
             
         </Node>
-		<Node id="7" type="file" documentType="reference">
+		<Node id="10" type="file" documentType="reference">
             <Name>APSMediaPlayerControlsOverlayController</Name>
             <Path>Classes/APSMediaPlayerControlsOverlayController.html</Path>
             
         </Node>
-		<Node id="8" type="file" documentType="reference">
+		<Node id="11" type="file" documentType="reference">
             <Name>APSMediaPlayerHTMLOverlayController</Name>
             <Path>Classes/APSMediaPlayerHTMLOverlayController.html</Path>
             
         </Node>
-		<Node id="9" type="file" documentType="reference">
+		<Node id="12" type="file" documentType="reference">
             <Name>APSMediaPlayerImageOverlayController</Name>
             <Path>Classes/APSMediaPlayerImageOverlayController.html</Path>
             
         </Node>
-		<Node id="10" type="file" documentType="reference">
+		<Node id="13" type="file" documentType="reference">
             <Name>APSMediaPlayerOverlayController</Name>
             <Path>Classes/APSMediaPlayerOverlayController.html</Path>
             
@@ -295,22 +376,22 @@
             </Subnodes>
             
         </Node>
-		<Node id="11" type="file" documentType="reference">
+		<Node id="14" type="file" documentType="reference">
             <Name>APSMediaPlayerTextOverlayController</Name>
             <Path>Classes/APSMediaPlayerTextOverlayController.html</Path>
             
         </Node>
-		<Node id="12" type="file" documentType="reference">
+		<Node id="15" type="file" documentType="reference">
             <Name>APSMediaPlayerVimeoOverlayController</Name>
             <Path>Classes/APSMediaPlayerVimeoOverlayController.html</Path>
             
         </Node>
-		<Node id="13" type="file" documentType="reference">
+		<Node id="16" type="file" documentType="reference">
             <Name>APSMediaPlayerYoutubeOverlayController</Name>
             <Path>Classes/APSMediaPlayerYoutubeOverlayController.html</Path>
             
         </Node>
-		<Node id="14" type="file" documentType="reference">
+		<Node id="17" type="file" documentType="reference">
             <Name>APSMediaUnit</Name>
             <Path>Classes/APSMediaUnit.html</Path>
             
@@ -349,7 +430,34 @@
             </Subnodes>
             
         </Node>
-		<Node id="15" type="file" documentType="reference">
+		<Node id="18" type="file" documentType="reference">
+            <Name>APSTimedMetadata</Name>
+            <Path>Classes/APSTimedMetadata.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/APSTimedMetadata.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/APSTimedMetadata.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/APSTimedMetadata.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
             <Name>APSVASTAdBreak</Name>
             <Path>Classes/APSVASTAdBreak.html</Path>
             
@@ -382,7 +490,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="16" type="file" documentType="reference">
+		<Node id="20" type="file" documentType="reference">
             <Name>APSVASTBannerConfiguration</Name>
             <Path>Classes/APSVASTBannerConfiguration.html</Path>
             
@@ -409,7 +517,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="17" type="file" documentType="reference">
+		<Node id="21" type="file" documentType="reference">
             <Name>APSVASTCountdownConfiguration</Name>
             <Path>Classes/APSVASTCountdownConfiguration.html</Path>
             
@@ -436,7 +544,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="18" type="file" documentType="reference">
+		<Node id="22" type="file" documentType="reference">
             <Name>APSVASTMediaBuilderPlugin</Name>
             <Path>Classes/APSVASTMediaBuilderPlugin.html</Path>
             
@@ -469,7 +577,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="19" type="file" documentType="reference">
+		<Node id="23" type="file" documentType="reference">
             <Name>APSVASTSkipButtonConfiguration</Name>
             <Path>Classes/APSVASTSkipButtonConfiguration.html</Path>
             
@@ -496,12 +604,12 @@
             </Subnodes>
             
         </Node>
-		<Node id="20" type="file" documentType="reference">
+		<Node id="24" type="file" documentType="reference">
             <Name>APSVASTSkipOverlayController</Name>
             <Path>Classes/APSVASTSkipOverlayController.html</Path>
             
         </Node>
-		<Node id="21" type="file" documentType="reference">
+		<Node id="25" type="file" documentType="reference">
             <Name>KRHub</Name>
             <Path>Classes/KRHub.html</Path>
             
@@ -529,8 +637,35 @@
             
         </Node>
 		
+		<Node id="26" type="file" documentType="reference">
+            <Name>AVPlayer(View)</Name>
+            <Path>Categories/AVPlayer+View.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Categories/AVPlayer+View.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Categories/AVPlayer+View.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Categories/AVPlayer+View.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
 		
-        <Node id="22" type="file" documentType="reference">
+        <Node id="27" type="file" documentType="reference">
             <Name>APSMediaBuilderPlugin</Name>
             <Path>Protocols/APSMediaBuilderPlugin.html</Path>
             
@@ -557,7 +692,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="23" type="file" documentType="reference">
+		<Node id="28" type="file" documentType="reference">
             <Name>APSMediaEventProtocol</Name>
             <Path>Protocols/APSMediaEventProtocol.html</Path>
             
@@ -584,7 +719,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="24" type="file" documentType="reference">
+		<Node id="29" type="file" documentType="reference">
             <Name>APSMediaPlayerActionDelegate</Name>
             <Path>Protocols/APSMediaPlayerActionDelegate.html</Path>
             
@@ -611,7 +746,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="25" type="file" documentType="reference">
+		<Node id="30" type="file" documentType="reference">
             <Name>APSMediaPlayerOverlayControllerProtocol</Name>
             <Path>Protocols/APSMediaPlayerOverlayControllerProtocol.html</Path>
             
@@ -638,7 +773,40 @@
             </Subnodes>
             
         </Node>
-		<Node id="26" type="file" documentType="reference">
+		<Node id="31" type="file" documentType="reference">
+            <Name>APSMediaPlayerProtocol</Name>
+            <Path>Protocols/APSMediaPlayerProtocol.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/APSMediaPlayerProtocol.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/APSMediaPlayerProtocol.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Protocols/APSMediaPlayerProtocol.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/APSMediaPlayerProtocol.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="32" type="file" documentType="reference">
             <Name>APSMediaTrackableObject</Name>
             <Path>Protocols/APSMediaTrackableObject.html</Path>
             
@@ -665,7 +833,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="27" type="file" documentType="reference">
+		<Node id="33" type="file" documentType="reference">
             <Name>APSUnitManagerProtocol</Name>
             <Path>Protocols/APSUnitManagerProtocol.html</Path>
             
@@ -692,7 +860,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="28" type="file" documentType="reference">
+		<Node id="34" type="file" documentType="reference">
             <Name>KRAdapter</Name>
             <Path>Protocols/KRAdapter.html</Path>
             
@@ -720,52 +888,62 @@
             
         </Node>
 		
-        <Node id="29" type="file" documentType="reference">
+        <Node id="35" type="file" documentType="reference">
+            <Name>APSAVPlayerSeekStatus</Name>
+            <Path>Constants/APSAVPlayerSeekStatus.html</Path>
+            
+        </Node>
+		<Node id="36" type="file" documentType="reference">
             <Name>APSAdPodFallback</Name>
             <Path>Constants/APSAdPodFallback.html</Path>
             
         </Node>
-		<Node id="30" type="file" documentType="reference">
+		<Node id="37" type="file" documentType="reference">
             <Name>APSControlsOverlayComponents</Name>
             <Path>Constants/APSControlsOverlayComponents.html</Path>
             
         </Node>
-		<Node id="31" type="file" documentType="reference">
+		<Node id="38" type="file" documentType="reference">
             <Name>APSHandleSeekEvent</Name>
             <Path>Constants/APSHandleSeekEvent.html</Path>
             
         </Node>
-		<Node id="32" type="file" documentType="reference">
+		<Node id="39" type="file" documentType="reference">
             <Name>APSMediaControlsDisplay</Name>
             <Path>Constants/APSMediaControlsDisplay.html</Path>
             
         </Node>
-		<Node id="33" type="file" documentType="reference">
+		<Node id="40" type="file" documentType="reference">
             <Name>APSMediaEventState</Name>
             <Path>Constants/APSMediaEventState.html</Path>
             
         </Node>
-		<Node id="34" type="file" documentType="reference">
+		<Node id="41" type="file" documentType="reference">
             <Name>APSMediaOverlayPosition</Name>
             <Path>Constants/APSMediaOverlayPosition.html</Path>
             
         </Node>
-		<Node id="35" type="file" documentType="reference">
+		<Node id="42" type="file" documentType="reference">
+            <Name>APSMoviePlayerSourceType</Name>
+            <Path>Constants/APSMoviePlayerSourceType.html</Path>
+            
+        </Node>
+		<Node id="43" type="file" documentType="reference">
             <Name>APSResolvMultipleAdsConflictsBy</Name>
             <Path>Constants/APSResolvMultipleAdsConflictsBy.html</Path>
             
         </Node>
-		<Node id="36" type="file" documentType="reference">
+		<Node id="44" type="file" documentType="reference">
             <Name>APSSkipOverlayProgressPosition</Name>
             <Path>Constants/APSSkipOverlayProgressPosition.html</Path>
             
         </Node>
-		<Node id="37" type="file" documentType="reference">
+		<Node id="45" type="file" documentType="reference">
             <Name>APSVASTAdBreakType</Name>
             <Path>Constants/APSVASTAdBreakType.html</Path>
             
         </Node>
-		<Node id="38" type="file" documentType="reference">
+		<Node id="46" type="file" documentType="reference">
             <Name>APSWebviewDismissedAction</Name>
             <Path>Constants/APSWebviewDismissedAction.html</Path>
             
