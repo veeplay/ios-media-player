@@ -1,3 +1,10 @@
+### 2.0.1
+Asynchronously check if an asset is playable
+
+### 2.0.0
+Support for multiple backends (AVPlayer and MPMovieController)
+Gapless playback between ads and content
+
 ### 1.8.15
 Exposed AirPlay control properties (allowsAirPlay and airPlayVideoActive).
 

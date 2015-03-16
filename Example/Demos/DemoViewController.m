@@ -82,8 +82,12 @@
     [self.navigationController setNavigationBarHidden:NO];
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
-    [[APSMediaPlayer sharedInstance] pause];
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    if (self.isMovingFromParentViewController) {
+        [[APSMediaPlayer sharedInstance] stop];
+    }
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
