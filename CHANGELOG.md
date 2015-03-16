@@ -47,9 +47,9 @@ Also, a new unit configuration is available that allows choosing how many ads sh
 
 ### 1.8.5
 * This release fixes a series of issues that some media files with progressive download display in certain playback scenarios, including:
-  * Setting an initial playback time
-  * Resuming from a midroll block
-  * Resuming from a web browser window
+* Setting an initial playback time
+* Resuming from a midroll block
+* Resuming from a web browser window
 * Fixed bug with displaying midrolls on DRM units
 
 ### 1.8.4
@@ -74,5 +74,5 @@ This release adds support for defining custom overlay controllers, as well as se
 * Live streaming detection added, configurable text for the total duration and current playback time components of the controls bar.
 
 ### 1.8.1
- * Release 1.8.1
- * Fixed overlay configuration issue
+* Release 1.8.1
+* Fixed overlay configuration issue
