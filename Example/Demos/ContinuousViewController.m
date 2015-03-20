@@ -46,12 +46,12 @@
     // Create the post-roll ad break
     APSVASTAdBreak *postroll = [[APSVASTAdBreak alloc] init];
     postroll.type = APSVASTPostContent;
-    postroll.sources = @[@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/vast/vast_multiple_ads.xml"];
+    postroll.sources = @[@"http://az739004.vo.msecnd.net/vast/vast_multiple_ads.xml"];
     
     _vastPlugin.adBreaks = @[postroll];
     
     // Create the main content unit
-    APSMediaUnit *unit = [[APSMediaUnit alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/movies/soa%d.mp4", (arc4random_uniform(5) + 1)]]];
+    APSMediaUnit *unit = [[APSMediaUnit alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://veeplaydemo.streaming.mediaservices.windows.net/1244d4f6-57f1-44c3-9d47-b9f07275b337/soa%d-m3u8-aapl.ism/Manifest(format=m3u8-aapl)", (arc4random_uniform(5) + 1)]]];
     _builder.contentUnits = @[unit];
     
     // Render the playlist

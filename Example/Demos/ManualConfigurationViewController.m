@@ -36,14 +36,14 @@
     // Create the pre-roll ad break
     APSVASTAdBreak *preroll = [[APSVASTAdBreak alloc] init];
     preroll.type = APSVASTPreContent;
-    preroll.sources = @[@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/vast/vast_twitter.xml"];
+    preroll.sources = @[@"http://az739004.vo.msecnd.net/vast/vast_twitter.xml"];
     preroll.debug = YES;
     
     // Create the banner ad
     APSVASTAdBreak *banner = [[APSVASTAdBreak alloc] init];
     banner.type = APSVASTNonLinear;
     banner.adOffset = @"15";
-    banner.sources = @[@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/vast/vast_nonlinear.xml"];
+    banner.sources = @[@"http://az739004.vo.msecnd.net/vast/vast_nonlinear.xml"];
     banner.debug = YES;
     
     // Move the close button to the left, and configure some colors
@@ -54,7 +54,7 @@
     vastPlugin.adBreaks = @[preroll, banner];
     
     // Create the main content unit
-    APSMediaUnit *unit = [[APSMediaUnit alloc] initWithURL:[NSURL URLWithString:@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/movies/assassins.mp4"]];
+    APSMediaUnit *unit = [[APSMediaUnit alloc] initWithURL:[NSURL URLWithString:@"http://veeplaydemo.streaming.mediaservices.windows.net/ca4d815a-9f06-4ea8-9eeb-00e87b92d812/assassins-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"]];
     builder.contentUnits = @[unit];
     
     // Render the playlist

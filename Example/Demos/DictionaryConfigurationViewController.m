@@ -39,24 +39,24 @@
 
 - (NSDictionary*)configurationDictionary {
     return @{
-            @"ads": @{
-                    @"debug":@(YES),
-                    @"vmap":@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/vmap/vmap.xml",
-                    @"countdown": @{
-                        @"text": @"Content will resume in __remaining__s"
-                    }
-                    },
-            @"content": @[
-                    @{
-                        @"url": @"http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8",
-                        @"controls": @{
-                            @"components" : @[@"playback", @"totalTime", @"currentTime", @"fullscreen"],
-                            @"barColor": @"ff0000",
-                            @"barAlpha": @(0.5)
-                            }
-                        }
-                    ]
-            };
+             @"ads": @{
+                     @"debug":@(YES),
+                     @"vmap":@"http://az739004.vo.msecnd.net/vmap/vmap.xml",
+                     @"countdown": @{
+                             @"text": @"Content will resume in __remaining__s"
+                             }
+                     },
+             @"content": @[
+                     @{
+                         @"url": @"http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8",
+                         @"controls": @{
+                                 @"components" : @[@"playback", @"totalTime", @"currentTime", @"fullscreen"],
+                                 @"barColor": @"ff0000",
+                                 @"barAlpha": @(0.5)
+                                 }
+                         }
+                     ]
+             };
 }
 
 @end
