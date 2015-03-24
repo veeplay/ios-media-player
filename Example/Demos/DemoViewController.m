@@ -79,11 +79,13 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
     [self.navigationController setNavigationBarHidden:NO];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
+- (void) viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
     
     if (self.isMovingFromParentViewController) {
         [[APSMediaPlayer sharedInstance] stop];
@@ -97,9 +99,9 @@
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     
     if (UIInterfaceOrientationIsPortrait(toInterfaceOrientation))
-        [APSMediaPlayer sharedInstance].frame = CGRectMake(10, 110, 300, 280);
+        [APSMediaPlayer sharedInstance].frame = CGRectMake(0, 110, 320, 280);
     else
-        [APSMediaPlayer sharedInstance].frame = CGRectMake(10, 110, _isWidescreenDevice?548:460, 200);
+        [APSMediaPlayer sharedInstance].frame = CGRectMake(00, 110, _isWidescreenDevice?568:480, 200);
 }
 
 @end
