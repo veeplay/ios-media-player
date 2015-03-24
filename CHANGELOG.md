@@ -1,3 +1,9 @@
+### 2.0.3
+Fix an issue when going fullscreen while in landscape orientation
+
+### 2.0.2
+Fix orientation issues after a video was fullscreen
+
 ### 2.0.1
 Asynchronously check if an asset is playable
 
