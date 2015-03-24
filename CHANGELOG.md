@@ -1,7 +1,3 @@
-### 2.0.2
-Fix issue with orientation after returning from VeesoPlayer
-Fix issue with going fullscreen when an ad is preloaded
-
 ### 2.0.1
 Asynchronously check if an asset is playable
 
