@@ -1,3 +1,6 @@
+### 1.8.16
+Fixed issue with unwanted resuming of playback after coming back from background or from a modal view controller.
+
 ### 1.8.15
 Exposed AirPlay control properties (allowsAirPlay and airPlayVideoActive).
 
