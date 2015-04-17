@@ -11,6 +11,7 @@
 #import "APSMediaUnit.h"
 #import "APSMediaOverlay.h"
 #import "APSVASTSkipOverlayController.h"
+#import "APSVASTFullscreenOverlayController.h"
 #import "APSVASTAdBreak.h"
 
 #define kAPSVASTFrameworkExtensionsGroup @"com.appscend.vast.frameworkextensions"
@@ -34,7 +35,7 @@ extern NSString *const kAPSVASTNonlinearAd;
  The VAST Media Builder plugin extends an `APSMediaBuilder` object by inserting preroll, postroll, midroll and non-linear ad breaks, loaded from VAST 1.0, VAST 2.0, VAST 3.0 and VMAP 1.0 sources.
  
  Use the `[APSMediaBuilder addPlugin:]` method to attach an `APSVASTMediaBuilderPlugin` object to a media builder.
-
+ 
  Configuration of the plugin can be done in three ways:
  
  - programatically configure the plugin object, using available properties;
