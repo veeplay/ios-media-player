@@ -1,3 +1,6 @@
+### 1.8.18
+Make fullscreen button border transparent by default
+
 ### 1.8.17
 Added fullscreen button on ads
 
