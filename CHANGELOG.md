@@ -1,3 +1,6 @@
+### 1.8.20
+Accept values with format #RRGGBB on aps_colorFromHexString
+
 ### 1.8.19
 Fix skipping ads by seeking in the media file
 
