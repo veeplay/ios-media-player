@@ -1,3 +1,6 @@
+### 2.0.4
+Accept values with format #RRGGBB on aps_colorFromHexString
+
 ### 2.0.3
 Fix an issue when going fullscreen while in landscape orientation
 

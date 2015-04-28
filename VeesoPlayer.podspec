@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VeesoPlayer"
-  s.version          = "2.0.3"
+  s.version          = "2.0.4"
   s.summary          = "Veeso Media Player"
   s.homepage         = "http://veeso.co"
   s.license          = 'Commercial'
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.library              = "VeesoPlayer", "z"
   s.vendored_libraries   = "libVeesoPlayer.a"
 
-  s.frameworks = "AVFoundation", "MediaPlayer"
+  s.frameworks = "AVFoundation", "MediaPlayer", "CoreMedia"
   s.dependency "KAProgressLabel", "~> 1.2"
   s.dependency "TBXML", "~> 1.5"
   s.dependency "TSMiniWebBrowser"

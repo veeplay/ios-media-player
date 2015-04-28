@@ -19,6 +19,7 @@ extern NSString* const APSControlsOverlay;
 #define kAPSControlsPlayImage @"playImage"
 #define kAPSControlsPauseImage @"pauseImage"
 #define kAPSControlsFullscreenImage @"fullscreenImage"
+#define kAPSControlsLeaveFullscreenImage @"leaveFullscreenImage"
 #define kAPSControlsPreviousImage @"backImage"
 #define kAPSControlsNextImage @"forwardImage"
 #define kAPSControlsVisibileOnlyInFullscreen @"visibleInFullscreenOnly"
