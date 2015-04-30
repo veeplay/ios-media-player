@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <GoogleCast/GoogleCast.h>
 
 #import "KRHub.h"
 #import "APSMediaBuilder.h"
@@ -22,7 +23,8 @@
 
 NS_ENUM(NSInteger, APSBackendPlayer) {
     APSBackendAVPlayer,
-    APSBackendMPMoviePlayer
+    APSBackendMPMoviePlayer,
+    APSBackendChromecastPlayer
 };
 
 @protocol APSUnitManagerProtocol;
@@ -79,6 +81,22 @@ extern NSString *const APSMediaPlayerTrackedEventNotification;
  *  Posted when the player license is invalid. Playback will be disabled.
  */
 extern NSString *const APSMediaPlayerInvalidLicenseNotification;
+/**
+ *  Posted when a Chromecast device comes online
+ */
+extern NSString *const APSMediaPlayerChromeCastDeviceOnline;
+/**
+ *  Posted when a Chromecast device goes offline
+ */
+extern NSString *const APSMediaPlayerChromeCastDeviceOffline;
+/**
+ *   Posted when the player connected to a Chromecast compatible device
+ */
+extern NSString *const APSMediaPlayerChromeCastConnectedNotification;
+/*
+ *  Posted when the player disconnected from a Chromecast compatible device
+ */
+extern NSString *const APSMediaPlayerChromeCastDisconnectedNotification;
 
 
 ///-------------------------------------
@@ -169,7 +187,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  
  - *kAPSMediaPlayerOverlayControllersGroup* - The group name that 3rd party overlay controllers must use when registering with the player.
  */
-@interface APSMediaPlayer : KRHub <TSMiniWebBrowserDelegate>
+@interface APSMediaPlayer : KRHub <TSMiniWebBrowserDelegate, GCKDeviceScannerListener, GCKDeviceManagerDelegate, UIActionSheetDelegate>
 
 /**-----------------------------------------------------------------------------
  * @name Accessing the APSMediaPlayer Instance and its View
@@ -473,6 +491,49 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Indicates whether the movie player is currently playing video via AirPlay.
  */
 - (BOOL)airPlayVideoActive;
+/**-----------------------------------------------------------------------------
+ * @name Chromecast
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Indicates whether there is a Chromecast device available
+ */
+- (BOOL)chromecastAvailable;
+/*
+ *  Indicates whether the movie player is currently playing video via Chromecast
+ */
+- (BOOL)chromecastActive;
+/**
+ *  Returns a list of detected GCKDevices
+ */
+- (NSArray*)chromecastDevices;
+/**
+ *  Show an UIActionSheet with detected devices
+ */
+- (void)showChromecastDevices;
+/**
+ *  Connect to a specified device
+ *
+ *  @param device A GCKDevice to connect to
+ *
+ */
+- (void)connectToChromecastDevice:(GCKDevice*)device;
+/**
+ *  Get the current GCKDeviceManager
+ */
+- (GCKDeviceManager*)currentChromecastDeviceManager;
+/**
+ *  Get the current GCKDevice
+ */
+- (GCKDevice*)currentChromecastDevice;
+/**
+ *  Get the current media control channel
+ */
+- (GCKMediaControlChannel*)currentChromecastMediaControlChannel;
+/*
+ *  Disconnect from the current connected device
+ */
+- (void)disconnectChromecast;
 
 /**-----------------------------------------------------------------------------
  * @name Other
@@ -489,7 +550,11 @@ typedef void (^APSMediaPlayerFinishBlock)();
 /**
  *  Resets all displayed overlays.
  */
-- (void)resetDisplayedOverlays;
+- (void)resetDisplayedOverlays __deprecated_msg("use resetDisplayedOverlays:animated instead.");
+/**
+ *  Resets all displayed overlays.
+ */
+- (void)resetDisplayedOverlays:(BOOL)animated;
 /**
  *  Parses a string format and returns a translated time interval in seconds.
  *
@@ -510,5 +575,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Use this property to store the unique device advertising identifier, that can then be used by 3rd party components.
  */
 @property (nonatomic) NSString *advertisingIdentifier;
+
+- (void) clear;
 
 @end

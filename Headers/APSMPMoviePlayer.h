@@ -8,7 +8,13 @@
 
 #import <MediaPlayer/MediaPlayer.h>
 #import "APSMediaPlayerProtocol.h"
+#import "KRAdapter.h"
 
-@interface APSMPMoviePlayer : MPMoviePlayerController <APSMediaPlayerProtocol>
+@interface APSMPMoviePlayer : MPMoviePlayerController <APSMediaPlayerProtocol, KRAdapter>
+
+/**
+ *  The priority based on which the backend will be selected
+ */
++ (NSInteger) backendPriority;
 
 @end

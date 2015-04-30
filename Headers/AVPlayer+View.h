@@ -12,6 +12,6 @@
 
 @interface AVPlayer (View)
 
-@property (nonatomic, strong) APSAVPlayerView *view;
+@property (nonatomic, weak) APSAVPlayerView *view;
 
 @end

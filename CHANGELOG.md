@@ -1,3 +1,6 @@
+### 2.0.5
+Chromecast support
+
 ### 2.0.4
 Accept values with format #RRGGBB on aps_colorFromHexString
 

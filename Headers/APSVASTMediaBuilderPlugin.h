@@ -11,6 +11,7 @@
 #import "APSMediaUnit.h"
 #import "APSMediaOverlay.h"
 #import "APSVASTSkipOverlayController.h"
+#import "APSVASTFullscreenOverlayController.h"
 #import "APSVASTAdBreak.h"
 
 #define kAPSVASTFrameworkExtensionsGroup @"com.appscend.vast.frameworkextensions"

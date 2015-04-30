@@ -240,4 +240,9 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  */
 - (void) insertURL:(NSURL *)url atIndex:(NSInteger)index;
 
+/**
+ *  The priority based on which the backend will be selected
+ */
++ (NSInteger) backendPriority;
+
 @end

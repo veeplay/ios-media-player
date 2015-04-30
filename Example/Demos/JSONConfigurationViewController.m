@@ -37,7 +37,7 @@
     [builder addPlugin:vastPlugin];
     
     // Configure the builder from a remote JSON configuration file and render the resulting media units
-    [builder configureFromURL:[NSURL URLWithString:@"http://az739004.vo.msecnd.net/json/example6.json"] onComplete:^() {
+    [builder configureFromURL:[NSURL URLWithString:@"http://az739004.vo.msecnd.net/json/example5.json"] onComplete:^() {
         [[APSMediaPlayer sharedInstance] playMediaUnits:[builder mediaUnits]];
     }];
 }

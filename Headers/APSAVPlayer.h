@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "KRAdapter.h"
 #import "APSAVPlayerView.h"
 #import "AVPlayer+View.h"
 #import "APSMediaPlayerProtocol.h"
 
 
-@interface APSAVPlayer : NSObject <MPMediaPlayback, APSMediaPlayerProtocol>
+@interface APSAVPlayer : NSObject <MPMediaPlayback, APSMediaPlayerProtocol, KRAdapter>
 
 /**-----------------------------------------------------------------------------
  * @name Accessing the APSAVPlayer's view
@@ -214,5 +215,10 @@
  *
  */
 - (void)requestThumbnailImagesAtTimes:(NSArray *)playbackTimes timeOption:(MPMovieTimeOption)option;
+
+/**
+ *  The priority based on which the backend will be selected
+ */
++ (NSInteger) backendPriority;
 
 @end

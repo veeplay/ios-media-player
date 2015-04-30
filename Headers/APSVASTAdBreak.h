@@ -10,6 +10,7 @@
 #import "APSMediaEvent.h"
 #import "APSMediaTrackableObject.h"
 #import "APSVASTSkipButtonConfiguration.h"
+#import "APSVASTFullscreenButtonConfiguration.h"
 #import "APSVASTCountdownConfiguration.h"
 #import "APSVASTBannerConfiguration.h"
 #import "APSMediaUnit.h"
@@ -151,6 +152,15 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  *  Holds the configuration object for the skip button that appears on top of video ads.
  */
 @property (nonatomic) APSVASTSkipButtonConfiguration *skipButtonConfiguration;
+
+/**-----------------------------------------------------------------------------
+* @name Fullscreen Button Configuration
+* -----------------------------------------------------------------------------
+*/
+/**
+ *  Holds the configuration object for the fullscreen button that appears on top of video ads.
+ */
+@property (nonatomic) APSVASTFullscreenButtonConfiguration *fullscreenButtonConfiguration;
 
 /**-----------------------------------------------------------------------------
  * @name Countdown to Next Unit Overlay Configuration
