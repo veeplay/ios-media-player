@@ -1,3 +1,6 @@
+### 1.8.21
+Fix skipping ads when seeking
+
 ### 1.8.20
 Accept values with format #RRGGBB on aps_colorFromHexString
 
