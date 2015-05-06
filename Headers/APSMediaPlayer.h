@@ -221,6 +221,13 @@ typedef void (^APSMediaPlayerFinishBlock)();
  * -----------------------------------------------------------------------------
  */
 /**
+ *  Prepare media units so they can be gapless played (when supported)
+ *
+ *  @param mediaUnits An array of `APSMediaUnit` objects.
+ *
+ */
+- (void)prepareMediaUnits:(NSArray *)mediaUnits;
+/**
  *  Sets and begins playback of an array of media units.
  *
  *  @param mediaUnits An array of `APSMediaUnit` objects.
@@ -555,6 +562,10 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Resets all displayed overlays.
  */
 - (void)resetDisplayedOverlays:(BOOL)animated;
+/**
+ *  Returns an array of units owned by an APSVASTAdbreak object
+ */
+- (NSArray*)unitsForAdbreak:(APSVASTAdBreak *)adbreak;
 /**
  *  Parses a string format and returns a translated time interval in seconds.
  *

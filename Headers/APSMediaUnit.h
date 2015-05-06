@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "APSMediaTrackableObject.h"
+
+@class APSVASTAdBreak;
 @class APSMediaOverlay;
 @class APSMediaEvent;
 
@@ -215,6 +217,10 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  *  Additional unit key-value information.
  */
 @property (nonatomic) NSMutableDictionary *metadata;
+/**
+ *  The APSVASTAdBreak objects which created this unit
+ */
+@property (nonatomic, weak) APSVASTAdBreak *adbreak;
 
 /**-----------------------------------------------------------------------------
  * @name Ad Handling
