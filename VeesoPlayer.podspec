@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VeesoPlayer"
-  s.version          = "2.0.5"
+  s.version          = "2.0.6"
   s.summary          = "Veeso Media Player"
   s.homepage         = "http://veeso.co"
   s.license          = 'Commercial'
