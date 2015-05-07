@@ -1,3 +1,6 @@
+### 2.0.7
+Fix crash caused by not properly removing KVO observers
+
 ### 2.0.6
 Fix skipping ads when seeking
 
