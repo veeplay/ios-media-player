@@ -1,3 +1,6 @@
+### 2.0.8
+Fix unwanted removal of latest item in playlist when seeking
+
 ### 2.0.7
 Fix crash caused by not properly removing KVO observers
 

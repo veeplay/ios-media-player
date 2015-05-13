@@ -21,7 +21,8 @@
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
-    return [self.topViewController supportedInterfaceOrientations];
+    if ([[APSMediaPlayer sharedInstance] isFullscreen]) return UIInterfaceOrientationMaskAll;
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 - (BOOL)shouldAutorotate {
