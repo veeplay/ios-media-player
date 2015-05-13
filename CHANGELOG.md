@@ -1,3 +1,6 @@
+### 1.8.22
+Fix unwanted removal of latest item in playlist when seeking 
+
 ### 1.8.21
 Fix skipping ads when seeking
 
