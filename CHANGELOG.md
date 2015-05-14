@@ -1,3 +1,6 @@
+### 1.8.23
+Fix removal of units which haven't preloaded yet
+
 ### 1.8.22
 Fix unwanted removal of latest item in playlist when seeking 
 
