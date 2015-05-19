@@ -1,3 +1,6 @@
+### 1.8.24
+Fix for MPMoviePlayerController still reporting old current time while seeking
+
 ### 1.8.23
 Fix removal of units which haven't preloaded yet
 
