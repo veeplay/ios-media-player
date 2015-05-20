@@ -1,3 +1,6 @@
+### 1.8.25
+Workaround for MPMoviePlayerController to correctly report currentPlaybackTime while seeking
+
 ### 1.8.24
 Fix for MPMoviePlayerController still reporting old current time while seeking
 
