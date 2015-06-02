@@ -1,3 +1,6 @@
+### 1.8.26
+Fix a potential crash when the current unit could not be retrieved
+
 ### 1.8.25
 Workaround for MPMoviePlayerController to correctly report currentPlaybackTime while seeking
 
