@@ -27,6 +27,10 @@
 ///--------------------
 
 /**
+ *  Posted when the fullscreen button was pressed and internal fullscreen handling is disabled
+ */
+extern NSString *const APSMediaPlayerToggleFullscreenNotification;
+/**
  *  Posted before the media player enters fullscreen
  */
 extern NSString *const APSMediaPlayerWillEnterFullscreenNotification;
@@ -74,6 +78,14 @@ extern NSString *const APSMediaPlayerTrackedEventNotification;
  *  Posted when the player license is invalid. Playback will be disabled.
  */
 extern NSString *const APSMediaPlayerInvalidLicenseNotification;
+/**
+ *  Posted when the internal minibrowser will open because an ad was tapped
+ */
+extern NSString *const APSMediaPlayerWillOpenMiniBrowser;
+/**
+ *  Posted when the internal minibrowser will be dismissed
+ */
+extern NSString *const APSMediaPlayerWillCloseMiniBrowser;
 
 
 ///-------------------------------------
@@ -187,6 +199,10 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  @param frame `CGRect` player view frame.
  */
 - (void)setFrame:(CGRect)frame;
+/**
+ *  Set this to NO to disable internal fullscreen handling
+ */
+@property (nonatomic) BOOL internalFullscreenSupport;
 
 /**-----------------------------------------------------------------------------
  * @name Working with Media Units

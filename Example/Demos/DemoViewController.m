@@ -79,23 +79,34 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
     [self.navigationController setNavigationBarHidden:NO];
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
-    [[APSMediaPlayer sharedInstance] pause];
+- (void) viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    if (self.isMovingFromParentViewController) {
+        [[APSMediaPlayer sharedInstance] stop];
+    }
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskAll;
 }
 
+- (CGRect) playerFrameForOrientation:(UIInterfaceOrientation)orientation {
+    if (UIInterfaceOrientationIsPortrait(orientation)) {
+        return CGRectMake(0, 110, 320, 280);
+    } else {
+        return CGRectMake(00, 110, _isWidescreenDevice?568:480, 200);
+    }
+}
+
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-    
-    if (UIInterfaceOrientationIsPortrait(toInterfaceOrientation))
-        [APSMediaPlayer sharedInstance].frame = CGRectMake(10, 110, 300, 280);
-    else
-        [APSMediaPlayer sharedInstance].frame = CGRectMake(10, 110, _isWidescreenDevice?548:460, 200);
+    if ([APSMediaPlayer sharedInstance].view.superview == self.view)
+        [APSMediaPlayer sharedInstance].view.frame = [self playerFrameForOrientation:toInterfaceOrientation];
 }
 
 @end
