@@ -31,6 +31,9 @@
     APSMediaBuilder *builder = [[APSMediaBuilder alloc] init];
     [builder addPlugin:vastPlugin];
     
+    // Enable internal fullscreen handling
+    [[APSMediaPlayer sharedInstance] setInternalFullscreenSupport:YES];
+    
     [builder configureFromDictionary:[self configurationDictionary]];
     [builder requestMediaUnitsWithCompletionBlock:^(NSArray *units) {
         [[APSMediaPlayer sharedInstance] playMediaUnits:units];

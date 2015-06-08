@@ -35,6 +35,9 @@
     _builder = [[APSMediaBuilder alloc] init];
     [_builder addPlugin:_vastPlugin];
     
+    // Enable internal fullscreen handling
+    [[APSMediaPlayer sharedInstance] setInternalFullscreenSupport:YES];
+    
     [APSMediaPlayer sharedInstance].onFinish = ^() {
         [self advancePlaylist];
     };

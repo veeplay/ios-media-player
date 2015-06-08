@@ -29,6 +29,9 @@
     APSMediaBuilder *builder = [[APSMediaBuilder alloc] init];
     [builder addPlugin:vastPlugin];
     
+    // Enable internal fullscreen handling
+    [[APSMediaPlayer sharedInstance] setInternalFullscreenSupport:YES];
+    
     // Create the MRAID banner ad
     APSVASTAdBreak *banner = [[APSVASTAdBreak alloc] init];
     banner.type = APSVASTNonLinear;
