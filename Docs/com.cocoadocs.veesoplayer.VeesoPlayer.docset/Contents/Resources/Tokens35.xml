@@ -1,47 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSAVPlayerSeekStatus.html">
+	<File path="Protocols/APSMediaTrackableObject.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSAVPlayerSeekStatus</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/APSMediaTrackableObject</TokenIdentifier>
+			<Abstract type="html">Defines the properties that an object needs to implement to become trackable by the player.</Abstract>
+			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
             
 			
 			<NodeRef refid="35"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSAVPlayerSeekStatusNoSeeking</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>APSAVPlayerSeekStatusNoSeeking</Declaration>
-            
-            <DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaTrackableObject/setTrackingURLs:</TokenIdentifier>
+			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the object&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
+			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
+			
+			
+			<Anchor>//api/name/trackingURLs</Anchor>
             <NodeRef refid="35"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSAVPlayerSeekStatusBackward</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>APSAVPlayerSeekStatusBackward</Declaration>
-            
-            <DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaTrackableObject/trackingURLs</TokenIdentifier>
+			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the object&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
+			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
+			
+			
+			<Anchor>//api/name/trackingURLs</Anchor>
             <NodeRef refid="35"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSAVPlayerSeekStatusForward</TokenIdentifier>
-            <Abstract type="html"></Abstract>
-            <Declaration>APSAVPlayerSeekStatusForward</Declaration>
-            
-            <DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/APSMediaTrackableObject/trackingURLs</TokenIdentifier>
+			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the object&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
+			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
+			
+			
+			<Anchor>//api/name/trackingURLs</Anchor>
             <NodeRef refid="35"/>
-        </Token>
+		</Token>
+		
         
 	</File>
 </Tokens>

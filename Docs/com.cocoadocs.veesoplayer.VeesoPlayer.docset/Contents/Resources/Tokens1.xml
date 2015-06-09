@@ -812,6 +812,18 @@ a VOD stream or a live stream.</Abstract>
             <NodeRef refid="1"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/APSAVPlayer/backendPriority</TokenIdentifier>
+			<Abstract type="html">The priority based on which the backend will be selected</Abstract>
+			<DeclaredIn>APSAVPlayer.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)backendPriority</Declaration>
+			
+			
+			<Anchor>//api/name/backendPriority</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSHandleSeekEvent.html">
+	<File path="Constants/APSAVPlayerSeekStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSHandleSeekEvent</TokenIdentifier>
-			<Abstract type="html">Specifies how the unit should handle seeking through multiple ad breaks.</Abstract>
-			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/APSAVPlayerSeekStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
             
 			
 			<NodeRef refid="38"/>
@@ -14,34 +14,31 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSHandleSeekEventPlayFirstBreak</TokenIdentifier>
-            <Abstract type="html">This will only trigger the first ad break.
-     </Abstract>
-            <Declaration>APSHandleSeekEventPlayFirstBreak</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/APSAVPlayerSeekStatusNoSeeking</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>APSAVPlayerSeekStatusNoSeeking</Declaration>
             
-            <DeclaredIn>APSMediaUnit.h</DeclaredIn>
-            
-            <NodeRef refid="38"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSHandleSeekEventPlayLastBreak</TokenIdentifier>
-            <Abstract type="html">This will only trigger the last ad break.
-     </Abstract>
-            <Declaration>APSHandleSeekEventPlayLastBreak</Declaration>
-            
-            <DeclaredIn>APSMediaUnit.h</DeclaredIn>
+            <DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
             
             <NodeRef refid="38"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSHandleSeekEventPlayAllBreaks</TokenIdentifier>
-            <Abstract type="html">This will trigger all ad breaks.
-     </Abstract>
-            <Declaration>APSHandleSeekEventPlayAllBreaks</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/APSAVPlayerSeekStatusBackward</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>APSAVPlayerSeekStatusBackward</Declaration>
             
-            <DeclaredIn>APSMediaUnit.h</DeclaredIn>
+            <DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="38"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSAVPlayerSeekStatusForward</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>APSAVPlayerSeekStatusForward</Declaration>
+            
+            <DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
             
             <NodeRef refid="38"/>
         </Token>

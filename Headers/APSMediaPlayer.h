@@ -34,6 +34,10 @@ NS_ENUM(NSInteger, APSBackendPlayer) {
 ///--------------------
 
 /**
+ *  Posted when the fullscreen button was pressed and internal fullscreen handling is disabled
+ */
+extern NSString *const APSMediaPlayerToggleFullscreenNotification;
+/**
  *  Posted before the media player enters fullscreen
  */
 extern NSString *const APSMediaPlayerWillEnterFullscreenNotification;
@@ -97,7 +101,14 @@ extern NSString *const APSMediaPlayerChromeCastConnectedNotification;
  *  Posted when the player disconnected from a Chromecast compatible device
  */
 extern NSString *const APSMediaPlayerChromeCastDisconnectedNotification;
-
+/**
+ *  Posted when the internal minibrowser will open because an ad was tapped
+ */
+extern NSString *const APSMediaPlayerWillOpenMiniBrowser;
+/**
+ *  Posted when the internal minibrowser will be dismissed
+ */
+extern NSString *const APSMediaPlayerWillCloseMiniBrowser;
 
 ///-------------------------------------
 /// @name Available Tracking Events
@@ -215,6 +226,11 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  The backend player class. Use `[APSAVPlayer class]` for the AVPlayer-based backend or `[APSMPMoviePlayer class]` for the MPMoviePlayerController-based backend
  */
 @property (nonatomic) enum APSBackendPlayer backendPlayer;
+
+/**
+ *  Set this to NO to disable internal fullscreen handling
+ */
+@property (nonatomic) BOOL internalFullscreenSupport;
 
 /**-----------------------------------------------------------------------------
  * @name Working with Media Units
@@ -566,6 +582,10 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Returns an array of units owned by an APSVASTAdbreak object
  */
 - (NSArray*)unitsForAdbreak:(APSVASTAdBreak *)adbreak;
+/*
+ *  Returns an array of current unit's adbreaks
+ */
+- (NSArray *)adbreaks;
 /**
  *  Parses a string format and returns a translated time interval in seconds.
  *

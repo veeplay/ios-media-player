@@ -41,7 +41,7 @@
 <li><strong>Installing via library download</strong></li>
 </ol>
 
-<pre><code>- Add `MediaPlayer.framework`, `AVFoundation.framework` and `libz.dylib` to your project.
+<pre><code>- Add `MediaPlayer.framework`, `AVFoundation.framework`, `CoreMedia.framework`, [`GoogleCast.framework`](https://developers.google.com/cast/docs/downloads#ios), `SystemConfiguration.framework` and `libz.dylib` to your project.
 
     - Select your target in the project settings screen.
     - Select the “Build Phases” tab.
@@ -138,6 +138,32 @@
 </code></pre>
 </li>
 </ul>
+
+<h2>Using Chromecast</h2>
+
+<p>You can enable Chromecast playback by adding <code>chromecast</code> into the components array under the <code>controls</code> section in your JSON configuration file:</p>
+
+<pre><code>    {
+            "content": [
+                    "url": "http://......",
+                    "autoplay": true,
+                    "controls": {
+                            "components": [
+                                    "playback",
+                                    "totalTime",
+                                    "slider",
+                                    "currentTime",
+                                    "chromecast"
+                            ]
+                    }
+            ]
+    }
+</code></pre>
+
+<p>Also you can configure this programatically by adding APSChromecastControl to the <code>controlsParameters</code> property on <code>APSMediaUnit</code>:</p>
+
+<pre><code>    unit.controlsParameters = @{kAPSControlsComponents: @(APSPlaybackControl|APSCurrentTimeControl|APSTimeSliderControl|APSTotalTimeControl|APSChromecastControl|APSFullScreenControl)};
+</code></pre>
 
 <h2>Using DRM</h2>
 

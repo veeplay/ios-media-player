@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/APSMediaTrackableObject.html">
+	<File path="Protocols/APSMediaPlayerActionDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/APSMediaTrackableObject</TokenIdentifier>
-			<Abstract type="html">Defines the properties that an object needs to implement to become trackable by the player.</Abstract>
-			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/APSMediaPlayerActionDelegate</TokenIdentifier>
+			<Abstract type="html">The APSMediaPlayerActionDelegate protocol declares the two methods that a class must implement in order to become an APSMediaPlayer actionDelegate. The object implementing APSMediaPlayer will receive information about the URLs that need to be executed as the user interacts with the player.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
             
 			
 			<NodeRef refid="32"/>
@@ -13,38 +13,36 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaTrackableObject/setTrackingURLs:</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the object&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaPlayerActionDelegate/canRespondTo:</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value indicating whether the receiver is able to interpret and react to the given input NSURL.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
+			<Declaration>- (BOOL)canRespondTo:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL that needs to be launched.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the object can interpret and react to the given input URL, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/canRespondTo:</Anchor>
             <NodeRef refid="32"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaTrackableObject/trackingURLs</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the object&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaPlayerActionDelegate/respondTo:</TokenIdentifier>
+			<Abstract type="html">If the APSMediaPlayerActionDelegate implementing object returns YES from the canRespondTo method for a certain URL, this method will be triggered to request effective execution.</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
+			<Declaration>- (void)respondTo:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL that needs to be launched.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
-            <NodeRef refid="32"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfp/APSMediaTrackableObject/trackingURLs</TokenIdentifier>
-			<Abstract type="html">This dictionary defines all URLs that need to be notified of specific events from the object&apos;s lifecycle. The keys are event constants, as defined in APSMediaPlayer, and the values are NSArrays containing NSURL objects.</Abstract>
-			<DeclaredIn>APSMediaTrackableObject.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) NSMutableDictionary *trackingURLs</Declaration>
-			
-			
-			<Anchor>//api/name/trackingURLs</Anchor>
+			<Anchor>//api/name/respondTo:</Anchor>
             <NodeRef refid="32"/>
 		</Token>
 		

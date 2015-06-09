@@ -14,5 +14,6 @@
 - (NSString*)shortDescription;
 - (NSString*)longDescription;
 - (void)configurePlayer;
+- (CGRect) playerFrameForOrientation:(UIInterfaceOrientation)orientation;
 
 @end

@@ -8,6 +8,6 @@
 
 #import "DemoViewController.h"
 
-@interface ManualConfigurationViewController : DemoViewController
+@interface ManualConfigurationViewController : DemoViewController <UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
 
 @end

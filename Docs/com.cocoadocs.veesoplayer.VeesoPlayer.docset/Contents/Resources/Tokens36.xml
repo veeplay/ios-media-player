@@ -1,50 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSAdPodFallback.html">
+	<File path="Protocols/APSUnitManagerProtocol.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSAdPodFallback</TokenIdentifier>
-			<Abstract type="html">VAST 3.0 defines Ad Pods, with fallback mechanisms that allow loading an ad buffet of commercials to playback if the main ads fail. This value specifies how to treat backwards compatibility issues with VAST 2.0 and 1.0, by choosing what ads are promoted to the main Ad Pod if no valid Pods are detected.</Abstract>
-			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/APSUnitManagerProtocol</TokenIdentifier>
+			<Abstract type="html">This protocol provides an interface for external objects that implement dynamic playback operations. Use this if you need to generate media URLs using timestamps or for implementing DRM support.</Abstract>
+			<DeclaredIn>APSUnitManagerProtocol.h</DeclaredIn>
             
 			
 			<NodeRef refid="36"/>
 		</Token>
 		
 		
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSAdPodFallbackSelectAll</TokenIdentifier>
-            <Abstract type="html">Load all retrieved ads if no valid Ad Pods are found.
-     </Abstract>
-            <Declaration>APSAdPodFallbackSelectAll</Declaration>
-            
-            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
-            
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSUnitManagerProtocol/startForUnit:</TokenIdentifier>
+			<Abstract type="html">When an APSMediaUnit is loaded by the player, if it declares requiring a manager that matches the current object&apos;s [KRAdapter type], this method will be invoked.</Abstract>
+			<DeclaredIn>APSUnitManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)startForUnit:(APSMediaUnit *)unit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>unit</Name>
+					<Abstract type="html">The currently loading unit.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startForUnit:</Anchor>
             <NodeRef refid="36"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSAdPodFallbackSelectFirst</TokenIdentifier>
-            <Abstract type="html">Load only the first retrieved ad if no valid Ad Pods are found.
-     </Abstract>
-            <Declaration>APSAdPodFallbackSelectFirst</Declaration>
-            
-            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
-            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSUnitManagerProtocol/end</TokenIdentifier>
+			<Abstract type="html">When an APSMediaUnit ends playback, if it declares requiring a manager that matches the current object&apos;s [KRAdapter type], this method will be invoked.</Abstract>
+			<DeclaredIn>APSUnitManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)end</Declaration>
+			
+			
+			<Anchor>//api/name/end</Anchor>
             <NodeRef refid="36"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSAdPodFallbackDrop</TokenIdentifier>
-            <Abstract type="html">Drop the whole ad request if no valid Ad Pods are found. This value will disable VAST 1.0 and 2.0 compatibility.
-     </Abstract>
-            <Declaration>APSAdPodFallbackDrop</Declaration>
-            
-            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
-            
-            <NodeRef refid="36"/>
-        </Token>
+		</Token>
+		
         
 	</File>
 </Tokens>

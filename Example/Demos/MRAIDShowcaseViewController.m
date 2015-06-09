@@ -29,17 +29,20 @@
     APSMediaBuilder *builder = [[APSMediaBuilder alloc] init];
     [builder addPlugin:vastPlugin];
     
+    // Enable internal fullscreen handling
+    [[APSMediaPlayer sharedInstance] setInternalFullscreenSupport:YES];
+    
     // Create the MRAID banner ad
     APSVASTAdBreak *banner = [[APSVASTAdBreak alloc] init];
     banner.type = APSVASTNonLinear;
     banner.adOffset = @"15";
-    banner.sources = @[@"http://az739004.vo.msecnd.net/vast/vast_nonlinear_mraid.xml"];
+    banner.sources = @[@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/vast/vast_nonlinear_mraid.xml"];
     banner.bannerConfiguration.showCloseButton = NO;
     
     vastPlugin.adBreaks = @[banner];
     
     // Create the main content unit
-    APSMediaUnit *unit = [[APSMediaUnit alloc] initWithURL:[NSURL URLWithString:@"http://veeplaydemo.streaming.mediaservices.windows.net/67c1472f-6517-49b5-bda8-0b228bb19d67/deusex-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"]];
+    APSMediaUnit *unit = [[APSMediaUnit alloc] initWithURL:[NSURL URLWithString:@"https://s3-eu-west-1.amazonaws.com/demo-app.assets.appscend.com/movies/deusex.mp4"]];
     builder.contentUnits = @[unit];
     
     // Render the playlist

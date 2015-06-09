@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/KRHub.html">
+	<File path="Classes/APSVASTMediaBuilderPlugin.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/KRHub</TokenIdentifier>
-			<Abstract type="html">A KRHub object can easily become a container of references to other objects or classes, organized in groups. To be able to register themselves with a KRHub, objects must implement the KRAdapter protocol. Within a single group there can not be more objects that declare the same type.</Abstract>
-			<DeclaredIn>KRHub.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/APSVASTMediaBuilderPlugin</TokenIdentifier>
+			<Abstract type="html">The VAST Media Builder plugin extends an APSMediaBuilder object by inserting preroll, postroll, midroll and non-linear ad breaks, loaded from VAST 1.0, VAST 2.0, VAST 3.0 and VMAP 1.0 sources.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
             
 			
 			<NodeRef refid="25"/>
@@ -13,130 +13,158 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KRHub/adaptersForGroup:</TokenIdentifier>
-			<Abstract type="html">Returns the list of available registered objects for a specified group.</Abstract>
-			<DeclaredIn>KRHub.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/adBreaksForVMAP</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>- (NSMutableDictionary *)adaptersForGroup:(NSString *)group</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>group</Name>
-					<Abstract type="html">The required group.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">A dictionary containing all objects registered for the required group. The dictionary keys are the types, as specified by the objects.</Abstract></ReturnValue>
-			<Anchor>//api/name/adaptersForGroup:</Anchor>
+			<Declaration>- (NSArray *)adBreaksForVMAP</Declaration>
+			
+			
+			<Anchor>//api/name/adBreaksForVMAP</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KRHub/registerAdapter:</TokenIdentifier>
-			<Abstract type="html">Registers a new adapter to the default group.</Abstract>
-			<DeclaredIn>KRHub.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/setVmapURL:</TokenIdentifier>
+			<Abstract type="html">The VMAP 1.0 URL that should be used to configure ad breaks.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>- (void)registerAdapter:(NSObject&lt;KRAdapter&gt; *)adapter</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>adapter</Name>
-					<Abstract type="html">The adapter to be registered. The object needs to implement KRAdapter.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic) NSURL *vmapURL</Declaration>
 			
-			<Anchor>//api/name/registerAdapter:</Anchor>
+			
+			<Anchor>//api/name/vmapURL</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KRHub/adapterForType:</TokenIdentifier>
-			<Abstract type="html">Returns an object of the specified type, if such an object is currently registered in the default group.</Abstract>
-			<DeclaredIn>KRHub.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/vmapURL</TokenIdentifier>
+			<Abstract type="html">The VMAP 1.0 URL that should be used to configure ad breaks.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>- (NSObject&lt;KRAdapter&gt; *)adapterForType:(NSString *)type</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>type</Name>
-					<Abstract type="html">The required object type.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">An object if any is registered, nil otherwise.</Abstract></ReturnValue>
-			<Anchor>//api/name/adapterForType:</Anchor>
+			<Declaration>@property (nonatomic) NSURL *vmapURL</Declaration>
+			
+			
+			<Anchor>//api/name/vmapURL</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KRHub/registerAdapter:inGroup:</TokenIdentifier>
-			<Abstract type="html">Registeres a new adapter to a specific group</Abstract>
-			<DeclaredIn>KRHub.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTMediaBuilderPlugin/vmapURL</TokenIdentifier>
+			<Abstract type="html">The VMAP 1.0 URL that should be used to configure ad breaks.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>- (void)registerAdapter:(NSObject&lt;KRAdapter&gt; *)adapter inGroup:(NSString *)group</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>adapter</Name>
-					<Abstract type="html">The adapter to be registered. The object needs to implement KRAdapter.</Abstract>
-				</Parameter><Parameter>
-					<Name>group</Name>
-					<Abstract type="html">The group to register the adapter into.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic) NSURL *vmapURL</Declaration>
 			
-			<Anchor>//api/name/registerAdapter:inGroup:</Anchor>
+			
+			<Anchor>//api/name/vmapURL</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KRHub/adapterForType:inGroup:</TokenIdentifier>
-			<Abstract type="html">Returns an object of the specified type, if such an object is currently registered in the specified group.</Abstract>
-			<DeclaredIn>KRHub.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/setAdBreakTemplate:</TokenIdentifier>
+			<Abstract type="html">The template object that holds default parameter values for ad breaks created from VMAP or VAST.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>- (NSObject&lt;KRAdapter&gt; *)adapterForType:(NSString *)type inGroup:(NSString *)group</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>type</Name>
-					<Abstract type="html">The required object type.</Abstract>
-				</Parameter><Parameter>
-					<Name>group</Name>
-					<Abstract type="html">The required group.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">An object if any is registered, nil otherwise.</Abstract></ReturnValue>
-			<Anchor>//api/name/adapterForType:inGroup:</Anchor>
+			<Declaration>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</Declaration>
+			
+			
+			<Anchor>//api/name/adBreakTemplate</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KRHub/registerClass:inGroup:</TokenIdentifier>
-			<Abstract type="html">Registers a class to a specific group and a specific type. Upon requesting a new object from this group and type, a new object of the registered class will be instantiated and returned.</Abstract>
-			<DeclaredIn>KRHub.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/adBreakTemplate</TokenIdentifier>
+			<Abstract type="html">The template object that holds default parameter values for ad breaks created from VMAP or VAST.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>- (void)registerClass:(Class)cclass inGroup:(NSString *)group</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>cclass</Name>
-					<Abstract type="html">The class to register.</Abstract>
-				</Parameter><Parameter>
-					<Name>group</Name>
-					<Abstract type="html">The group to register the call into.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</Declaration>
 			
-			<Anchor>//api/name/registerClass:inGroup:</Anchor>
+			
+			<Anchor>//api/name/adBreakTemplate</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KRHub/registerClass:</TokenIdentifier>
-			<Abstract type="html">Registers a class to the default group, under a specific type. Upon requesting a new object from this type from the default group, a new object of the registered class will be instantiated and returned.</Abstract>
-			<DeclaredIn>KRHub.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTMediaBuilderPlugin/adBreakTemplate</TokenIdentifier>
+			<Abstract type="html">The template object that holds default parameter values for ad breaks created from VMAP or VAST.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
 			
-			<Declaration>- (void)registerClass:(Class)cclass</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>cclass</Name>
-					<Abstract type="html">The class to register</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</Declaration>
 			
-			<Anchor>//api/name/registerClass:</Anchor>
+			
+			<Anchor>//api/name/adBreakTemplate</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/setAdBreaks:</TokenIdentifier>
+			<Abstract type="html">The currently defined ad breaks that the plugin will try to fill.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *adBreaks</Declaration>
+			
+			
+			<Anchor>//api/name/adBreaks</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/adBreaks</TokenIdentifier>
+			<Abstract type="html">The currently defined ad breaks that the plugin will try to fill.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *adBreaks</Declaration>
+			
+			
+			<Anchor>//api/name/adBreaks</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTMediaBuilderPlugin/adBreaks</TokenIdentifier>
+			<Abstract type="html">The currently defined ad breaks that the plugin will try to fill.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *adBreaks</Declaration>
+			
+			
+			<Anchor>//api/name/adBreaks</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/setDefaultAdBreakPositions:</TokenIdentifier>
+			<Abstract type="html">When loading ads via VMAP and using ad break positioning via &quot;#&quot;, this array defines the available, pre-defined positions that ads can be inserted at.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *defaultAdBreakPositions</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAdBreakPositions</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSVASTMediaBuilderPlugin/defaultAdBreakPositions</TokenIdentifier>
+			<Abstract type="html">When loading ads via VMAP and using ad break positioning via &quot;#&quot;, this array defines the available, pre-defined positions that ads can be inserted at.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *defaultAdBreakPositions</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAdBreakPositions</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSVASTMediaBuilderPlugin/defaultAdBreakPositions</TokenIdentifier>
+			<Abstract type="html">When loading ads via VMAP and using ad break positioning via &quot;#&quot;, this array defines the available, pre-defined positions that ads can be inserted at.</Abstract>
+			<DeclaredIn>APSVASTMediaBuilderPlugin.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSArray *defaultAdBreakPositions</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAdBreakPositions</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		

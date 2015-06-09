@@ -1,65 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/APSMediaEventProtocol.html">
+	<File path="Constants/APSVASTAdBreakType.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/APSMediaEventProtocol</TokenIdentifier>
-			<Abstract type="html">The APSMediaEventProtocol protocol describes methods that objects extending the associated APSMediaEvent class must or can implement.</Abstract>
-			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/APSVASTAdBreakType</TokenIdentifier>
+			<Abstract type="html">Defines how an APSVASTAdBreak should be placed relative to the main content units.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
 			
 			<NodeRef refid="48"/>
 		</Token>
 		
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaEventProtocol/onTrigger</TokenIdentifier>
-			<Abstract type="html">This code will be executed once the event is triggered by the player.</Abstract>
-			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
-			
-			<Declaration>- (void)onTrigger</Declaration>
-			
-			
-			<Anchor>//api/name/onTrigger</Anchor>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSVASTPreContent</TokenIdentifier>
+            <Abstract type="html">Place the APSMediaUnits corresponding to the ad break at the beginning of the main content units.
+     </Abstract>
+            <Declaration>APSVASTPreContent</Declaration>
+            
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            
             <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaEventProtocol/onPreload</TokenIdentifier>
-			<Abstract type="html">This method will be invoked on a different thread by the player, before the event start point, as set by the [APSMediaEvent preTriggerInterval] property.</Abstract>
-			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
-			
-			<Declaration>- (void)onPreload</Declaration>
-			
-			
-			<Anchor>//api/name/onPreload</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSVASTPostContent</TokenIdentifier>
+            <Abstract type="html">Place the APSMediaUnits corresponding to the ad break at the end of the main content units.
+     </Abstract>
+            <Declaration>APSVASTPostContent</Declaration>
+            
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            
             <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaEventProtocol/onUpdate</TokenIdentifier>
-			<Abstract type="html">This method will be invoked by the player periodically, giving the event the opportunity to respond to updated playback information.</Abstract>
-			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
-			
-			<Declaration>- (void)onUpdate</Declaration>
-			
-			
-			<Anchor>//api/name/onUpdate</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSVASTMidContent</TokenIdentifier>
+            <Abstract type="html">Place the APSMediaUnits corresponding to the ad break in the middle of each main content unit, at a defined offset (see the adOffset property of APSVASTAdBreak.
+     </Abstract>
+            <Declaration>APSVASTMidContent</Declaration>
+            
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            
             <NodeRef refid="48"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaEventProtocol/onUnload</TokenIdentifier>
-			<Abstract type="html">This method will be invoked by the player once the event has reached the end point and will be deallocated.</Abstract>
-			<DeclaredIn>APSMediaEvent.h</DeclaredIn>
-			
-			<Declaration>- (void)onUnload</Declaration>
-			
-			
-			<Anchor>//api/name/onUnload</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSVASTNonLinear</TokenIdentifier>
+            <Abstract type="html">Place the APSMediaOverlays corresponding to the ad break in the middle of each main content unit, ad a defined offset (see the adOffset property of APSVASTAdBreak.
+     </Abstract>
+            <Declaration>APSVASTNonLinear</Declaration>
+            
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            
             <NodeRef refid="48"/>
-		</Token>
-		
+        </Token>
         
 	</File>
 </Tokens>

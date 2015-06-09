@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/APSVASTSkipOverlayController.html">
+	<File path="Classes/APSVASTFullscreenOverlayController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/APSVASTSkipOverlayController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/APSVASTFullscreenOverlayController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
+			<DeclaredIn>APSVASTFullscreenOverlayController.h</DeclaredIn>
             
 			
 			<NodeRef refid="24"/>

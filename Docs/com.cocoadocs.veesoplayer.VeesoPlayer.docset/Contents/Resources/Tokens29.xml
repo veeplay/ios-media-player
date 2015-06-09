@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/APSMediaPlayerActionDelegate.html">
+	<File path="Categories/AVPlayer+View.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/APSMediaPlayerActionDelegate</TokenIdentifier>
-			<Abstract type="html">The APSMediaPlayerActionDelegate protocol declares the two methods that a class must implement in order to become an APSMediaPlayer actionDelegate. The object implementing APSMediaPlayer will receive information about the URLs that need to be executed as the user interacts with the player.</Abstract>
-			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/AVPlayer(View)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVPlayer+View.h</DeclaredIn>
             
 			
 			<NodeRef refid="29"/>
@@ -13,36 +13,38 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaPlayerActionDelegate/canRespondTo:</TokenIdentifier>
-			<Abstract type="html">Returns a Boolean value indicating whether the receiver is able to interpret and react to the given input NSURL.</Abstract>
-			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AVPlayer/setView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVPlayer+View.h</DeclaredIn>
 			
-			<Declaration>- (BOOL)canRespondTo:(NSURL *)url</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">The URL that needs to be launched.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the object can interpret and react to the given input URL, NO otherwise.</Abstract></ReturnValue>
-			<Anchor>//api/name/canRespondTo:</Anchor>
+			<Declaration>@property (nonatomic, weak) APSAVPlayerView *view</Declaration>
+			
+			
+			<Anchor>//api/name/view</Anchor>
             <NodeRef refid="29"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaPlayerActionDelegate/respondTo:</TokenIdentifier>
-			<Abstract type="html">If the APSMediaPlayerActionDelegate implementing object returns YES from the canRespondTo method for a certain URL, this method will be triggered to request effective execution.</Abstract>
-			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/AVPlayer/view</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVPlayer+View.h</DeclaredIn>
 			
-			<Declaration>- (void)respondTo:(NSURL *)url</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">The URL that needs to be launched.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, weak) APSAVPlayerView *view</Declaration>
 			
-			<Anchor>//api/name/respondTo:</Anchor>
+			
+			<Anchor>//api/name/view</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AVPlayer/view</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AVPlayer+View.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) APSAVPlayerView *view</Declaration>
+			
+			
+			<Anchor>//api/name/view</Anchor>
             <NodeRef refid="29"/>
 		</Token>
 		

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSSkipOverlayProgressPosition.html">
+	<File path="Constants/APSMediaOverlayPosition.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSSkipOverlayProgressPosition</TokenIdentifier>
-			<Abstract type="html">Defines where inside the skip overlay should the progress circle be rendered.</Abstract>
-			<DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/APSMediaOverlayPosition</TokenIdentifier>
+			<Abstract type="html">Describes the position the overlay should take when placed on-screen by the player.</Abstract>
+			<DeclaredIn>APSMediaOverlay.h</DeclaredIn>
             
 			
 			<NodeRef refid="44"/>
@@ -14,34 +14,111 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kAPSSkipOverlayProgressPositionLeft</TokenIdentifier>
-            <Abstract type="html">Render the progress circle in the left side of the skip overlay.
+            <TokenIdentifier>//apple_ref/c/econst/kAPSMediaOverlayPositionFullscreen</TokenIdentifier>
+            <Abstract type="html">The overlay should be stretched to fit the whole player surface.
      </Abstract>
-            <Declaration>kAPSSkipOverlayProgressPositionLeft</Declaration>
+            <Declaration>kAPSMediaOverlayPositionFullscreen</Declaration>
             
-            <DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSMediaOverlay.h</DeclaredIn>
             
             <NodeRef refid="44"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kAPSSkipOverlayProgressPositionRight</TokenIdentifier>
-            <Abstract type="html">Render the progress circle in the right side of the skip overlay.
+            <TokenIdentifier>//apple_ref/c/econst/kAPSMediaOverlayPositionBottomLeft</TokenIdentifier>
+            <Abstract type="html">The overlay should be bottom-left aligned with the player surface.
      </Abstract>
-            <Declaration>kAPSSkipOverlayProgressPositionRight</Declaration>
+            <Declaration>kAPSMediaOverlayPositionBottomLeft</Declaration>
             
-            <DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSMediaOverlay.h</DeclaredIn>
             
             <NodeRef refid="44"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kAPSSkipOverlayProgressPositionHidden</TokenIdentifier>
-            <Abstract type="html">Do not render the progress circle.
+            <TokenIdentifier>//apple_ref/c/econst/kAPSMediaOverlayPositionBottomRight</TokenIdentifier>
+            <Abstract type="html">The overlay should be bottom-right aligned with the player surface.
      </Abstract>
-            <Declaration>kAPSSkipOverlayProgressPositionHidden</Declaration>
+            <Declaration>kAPSMediaOverlayPositionBottomRight</Declaration>
             
-            <DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSMediaOverlay.h</DeclaredIn>
+            
+            <NodeRef refid="44"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kAPSMediaOverlayPositionTopLeft</TokenIdentifier>
+            <Abstract type="html">The overlay should be top-left aligned with the player surface.
+     </Abstract>
+            <Declaration>kAPSMediaOverlayPositionTopLeft</Declaration>
+            
+            <DeclaredIn>APSMediaOverlay.h</DeclaredIn>
+            
+            <NodeRef refid="44"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kAPSMediaOverlayPositionTopRight</TokenIdentifier>
+            <Abstract type="html">The overlay should be top-right aligned with the player surface.
+     </Abstract>
+            <Declaration>kAPSMediaOverlayPositionTopRight</Declaration>
+            
+            <DeclaredIn>APSMediaOverlay.h</DeclaredIn>
+            
+            <NodeRef refid="44"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kAPSMediaOverlayPositionTop</TokenIdentifier>
+            <Abstract type="html">The overlay should be placed centrally in the top of the player surface.
+     </Abstract>
+            <Declaration>kAPSMediaOverlayPositionTop</Declaration>
+            
+            <DeclaredIn>APSMediaOverlay.h</DeclaredIn>
+            
+            <NodeRef refid="44"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kAPSMediaOverlayPositionBottom</TokenIdentifier>
+            <Abstract type="html">The overlay should be placed centrally at the bottom of the player surface.
+     </Abstract>
+            <Declaration>kAPSMediaOverlayPositionBottom</Declaration>
+            
+            <DeclaredIn>APSMediaOverlay.h</DeclaredIn>
+            
+            <NodeRef refid="44"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kAPSMediaOverlayPositionLeft</TokenIdentifier>
+            <Abstract type="html">The overlay should be vertically centered to the left of the player surface.
+     </Abstract>
+            <Declaration>kAPSMediaOverlayPositionLeft</Declaration>
+            
+            <DeclaredIn>APSMediaOverlay.h</DeclaredIn>
+            
+            <NodeRef refid="44"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kAPSMediaOverlayPositionRight</TokenIdentifier>
+            <Abstract type="html">The overlay should be vertically centered to the right of the player surface.
+     </Abstract>
+            <Declaration>kAPSMediaOverlayPositionRight</Declaration>
+            
+            <DeclaredIn>APSMediaOverlay.h</DeclaredIn>
+            
+            <NodeRef refid="44"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/kAPSMediaOverlayPositionUnspecified</TokenIdentifier>
+            <Abstract type="html">The overlay will not be placed on screen.
+     </Abstract>
+            <Declaration>kAPSMediaOverlayPositionUnspecified</Declaration>
+            
+            <DeclaredIn>APSMediaOverlay.h</DeclaredIn>
             
             <NodeRef refid="44"/>
         </Token>
