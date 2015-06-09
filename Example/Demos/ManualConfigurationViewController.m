@@ -73,11 +73,11 @@
     banner.bannerConfiguration.closeButtonProgressColor = @"ffffff";
     banner.bannerConfiguration.closeButtonXColor = @"ffffff";
     
-    vastPlugin.adBreaks = @[banner];
+    vastPlugin.adBreaks = @[preroll, banner];
     
     // Create the main content unit
     APSMediaUnit *unit = [[APSMediaUnit alloc] initWithURL:[NSURL URLWithString:@"http://veeplaydemo.streaming.mediaservices.windows.net/ca4d815a-9f06-4ea8-9eeb-00e87b92d812/assassins-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"]];
-    builder.contentUnits = @[preroll, unit];
+    builder.contentUnits = @[unit];
     
     // Render the playlist
     [APSMediaPlayer sharedInstance].modalViewControllerRoot = self;
