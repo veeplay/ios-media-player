@@ -1,3 +1,6 @@
+### 2.0.11
+Use a UIViewController instead of MTZoomWindow for fullscreen support
+
 ### 2.0.10
 Provide an interface to disable internal fullscreen handling
 

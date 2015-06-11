@@ -16,6 +16,7 @@ extern NSString* const APSControlsOverlay;
 #define kAPSControlsPlayedTrackColor @"playedTrackColor"
 #define kAPSControlsBufferedTrackColor @"bufferedTrackColor"
 #define kAPSControlsEmptyTrackColor @"emptyTrackColor"
+#define kAPSControlsAdMarkColor @"adMarkColor"
 #define kAPSControlsPlayImage @"playImage"
 #define kAPSControlsPauseImage @"pauseImage"
 #define kAPSControlsFullscreenImage @"fullscreenImage"
@@ -75,7 +76,12 @@ typedef NS_OPTIONS(NSUInteger, APSControlsOverlayComponents) {
     /**
      *  The play/stop control.
      */
-    APSPlaybackControl                      = 1 << 9
+    APSPlaybackControl                      = 1 << 9,
+    /**
+     *  The ad marks
+     */
+    APSAdMarksControl                       = 1 << 10
+     
 };
 
 @interface APSMediaPlayerControlsOverlayController : APSMediaPlayerOverlayController
