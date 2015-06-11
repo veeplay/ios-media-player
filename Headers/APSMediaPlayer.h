@@ -35,9 +35,17 @@ extern NSString *const APSMediaPlayerToggleFullscreenNotification;
  */
 extern NSString *const APSMediaPlayerWillEnterFullscreenNotification;
 /**
+ *  Posted after the media player enters fullscreen
+ */
+extern NSString *const APSMediaPlayerDidEnterFullscreenNotification;
+/**
  *  Posted before the media player exists fullscreen
  */
 extern NSString *const APSMediaPlayerWillExitFullscreenNotification;
+/**
+ *  Posted after the media player exists fullscreen
+ */
+extern NSString *const APSMediaPlayerDidExitFullscreenNotification;
 /**
  *  Posted when the user taps on the media player surface
  */
@@ -176,7 +184,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  
  - *kAPSMediaPlayerOverlayControllersGroup* - The group name that 3rd party overlay controllers must use when registering with the player.
  */
-@interface APSMediaPlayer : KRHub <TSMiniWebBrowserDelegate>
+@interface APSMediaPlayer : KRHub <TSMiniWebBrowserDelegate, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
 
 /**-----------------------------------------------------------------------------
  * @name Accessing the APSMediaPlayer Instance and its View
