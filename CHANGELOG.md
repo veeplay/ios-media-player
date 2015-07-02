@@ -1,3 +1,6 @@
+### 1.8.26b
+Workaround for a crash in MPMoviePlayerController and iOS 8.4
+
 ### 1.8.26
 Fix a potential crash when the current unit could not be retrieved
 
