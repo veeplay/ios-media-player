@@ -1,3 +1,6 @@
+### 1.8.29
+Workaround for a crash in MPMoviePlayerController and iOS 8.4
+
 ### 1.8.28
 Use a UIViewController instead of MTZoomWindow for fullscreen support
 
