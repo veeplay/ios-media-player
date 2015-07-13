@@ -1,3 +1,6 @@
+### 2.0.13
+Fix current time not updating after seek
+
 ### 2.0.12
 Workaround for a crash in MPMoviePlayerController and iOS 8.4
 
