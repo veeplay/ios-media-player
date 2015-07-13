@@ -1,4 +1,7 @@
-### 1.8.26b
+### 1.8.26.2
+Another workaround for a crash in MPMoviePlayerController and iOS 8.4
+
+### 1.8.26.1
 Workaround for a crash in MPMoviePlayerController and iOS 8.4
 
 ### 1.8.26
