@@ -26,6 +26,7 @@ extern NSString* const APSControlsOverlay;
 #define kAPSControlsAutohideDuration @"autohideDuration"
 #define kAPSControlsLiveText @"liveText"
 #define kAPSControlsPlaybackTimeText @"playbackTimeText"
+#define kAPSControlsUpdateCurrentTimeWhileSeeking @"updateTimeWhileSeeking"
 
 extern NSString* const APSMoviePlayerCommandHideControls;
 extern NSString* const APSMoviePlayerCommandShowControls;

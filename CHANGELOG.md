@@ -1,3 +1,6 @@
+### 1.8.30
+Option to update the current time while dragging the knot from the seek bar
+
 ### 1.8.29
 Workaround for a crash in MPMoviePlayerController and iOS 8.4
 
