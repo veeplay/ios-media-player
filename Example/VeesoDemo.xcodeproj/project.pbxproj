@@ -10,9 +10,6 @@
 		9424893689BF44F17FBAC479 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C3F80D650C4E60A6342A9B /* libPods.a */; };
 		A5B8E9B11B25FE6C00384445 /* FullscreenTransitioner.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B8E9AE1B25FE6C00384445 /* FullscreenTransitioner.m */; };
 		A5B8E9B21B25FE6C00384445 /* FullscreenPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B8E9B01B25FE6C00384445 /* FullscreenPresentationController.m */; };
-		CE05D52119D466F300E3F513 /* libPods-KAProgressLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05D52019D466F300E3F513 /* libPods-KAProgressLabel.a */; };
-		CE05D52319D466F600E3F513 /* libPods-TBXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05D52219D466F600E3F513 /* libPods-TBXML.a */; };
-		CE05D52519D466F900E3F513 /* libPods-TSMiniWebBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE05D52419D466F900E3F513 /* libPods-TSMiniWebBrowser.a */; };
 		CE0973B019C1FBC100B287B9 /* ManualConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B7B4719B48361008ECF95 /* ManualConfigurationViewController.m */; };
 		CE0973B119C1FBC400B287B9 /* JSONConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE09734C19B68CA800B287B9 /* JSONConfigurationViewController.m */; };
 		CE0973B219C1FBC700B287B9 /* DictionaryConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE09734F19B69B7B00B287B9 /* DictionaryConfigurationViewController.m */; };
@@ -117,9 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE05D52519D466F900E3F513 /* libPods-TSMiniWebBrowser.a in Frameworks */,
-				CE05D52319D466F600E3F513 /* libPods-TBXML.a in Frameworks */,
-				CE05D52119D466F300E3F513 /* libPods-KAProgressLabel.a in Frameworks */,
 				CEEDEDDF19B285E000D2436B /* CoreGraphics.framework in Frameworks */,
 				CEEDEDE119B285E000D2436B /* UIKit.framework in Frameworks */,
 				CEEDEDDD19B285E000D2436B /* Foundation.framework in Frameworks */,

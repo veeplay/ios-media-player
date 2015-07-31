@@ -51,7 +51,7 @@
                      },
              @"content": @[
                      @{
-                         @"url": @"http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8",
+                         @"url": @"http://wpc.c1a9.edgecastcdn.net/hls-live/20C1A9/cnn/ls_satlink/b_528.m3u8",
                          @"controls": @{
                                  @"components" : @[@"playback", @"totalTime", @"currentTime", @"fullscreen"],
                                  @"barColor": @"ff0000",
