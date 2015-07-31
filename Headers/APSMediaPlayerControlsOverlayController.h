@@ -29,6 +29,7 @@ extern NSString* const APSControlsOverlay;
 #define kAPSControlsPlaybackTimeText @"playbackTimeText"
 #define kAPSControlsChromecastDisconnectedImage @"chromecastDisconnectedImage"
 #define kAPSControlsChromecastConnectedImage @"chromecastConnectedImage"
+#define kAPSControlsUpdateCurrentTimeWhileSeeking @"updateTimeWhileSeeking"
 
 extern NSString* const APSMoviePlayerCommandHideControls;
 extern NSString* const APSMoviePlayerCommandShowControls;

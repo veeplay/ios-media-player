@@ -187,6 +187,7 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  - *kAPSControlsAutohideDuration*: The number of seconds the playback controls bar should automatically become hidden after. Set this to a `NSNumber`.
  - *kAPSControlsLiveText*: The text to display instead of the total video duration, for live streams. Only has effect when the total duration component is selected. Defaults to `@"LIVE"`.
  - *kAPSControlsPlaybackTimeText*: The text to display instead of the current playback time, for live streams. Only has effect when the current playback time component is selected.
+ - *kAPSControlsUpdateCurrentTimeWhileSeeking*: The current time text is showing the current seek position when dragging the seek bar
  */
 @property (nonatomic) NSDictionary *controlsParameters;
 /**

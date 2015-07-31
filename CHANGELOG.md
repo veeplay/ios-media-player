@@ -1,3 +1,6 @@
+### 2.0.14
+Option to update the current time while dragging the knot from the seek bar
+
 ### 2.0.13
 Fix current time not updating after seek
 
