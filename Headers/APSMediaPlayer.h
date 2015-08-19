@@ -21,7 +21,7 @@
 #define kAPSMediaPlayerEventURLs @"event.urls"
 #define kAPSMediaPlayerEventSource @"event.source"
 
-NS_ENUM(NSInteger, APSBackendPlayer) {
+typedef NS_ENUM(NSInteger, APSBackendPlayer) {
     APSBackendAVPlayer,
     APSBackendMPMoviePlayer,
     APSBackendChromecastPlayer
@@ -454,6 +454,30 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  @return An array of the most recent `MPTimedMetadata` objects provided by the streamed movie. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/mediaplayer/reference/MPTimedMetadata_Class/Reference/Reference.html#//apple_ref/occ/cl/MPTimedMetadata) for more details about `MPTimedMetadata`.
  */
 - (NSArray*)timedMetadata;
+/**
+ *  Set the sound volume of the player, in the range of 0.0 to 1.0.
+ *
+ *  @param volume `CGFloat` sound volume.
+ */
+- (void)setVolume:(CGFloat)volume;
+/**
+ * Get the sound volume of the player, in the range of 0.0 to 1.0.
+ *
+ * @return The sound volume of the player
+ */
+-(CGFloat)getVolume;
+/**
+ *  Mute the player
+ *
+ *  @param mute `BOOL` set YES to mute or NO to unmute.
+ */
+- (void)setMute:(BOOL)mute;
+/**
+ * Get if the player is muted or no
+ *
+ * @return The mute status
+ */
+-(BOOL)getMute;
 
 /**-----------------------------------------------------------------------------
  * @name Getting Video Thumbnails
