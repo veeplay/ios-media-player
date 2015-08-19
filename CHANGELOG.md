@@ -1,3 +1,6 @@
+### 1.8.31
+Expose methods to set and get the sound volume
+
 ### 1.8.30
 Option to update the current time while dragging the knot from the seek bar
 
