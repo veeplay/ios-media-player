@@ -796,6 +796,64 @@ a VOD stream or a live stream.</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaPlayerProtocol/setVolume:</TokenIdentifier>
+			<Abstract type="html">Set the sound volume of the player, in the range of 0.0 to 1.0.</Abstract>
+			<DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)setVolume:(CGFloat)volume</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>volume</Name>
+					<Abstract type="html">CGFloat sound volume.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setVolume:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaPlayerProtocol/getVolume</TokenIdentifier>
+			<Abstract type="html">Get the sound volume of the player, in the range of 0.0 to 1.0.</Abstract>
+			<DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (CGFloat)getVolume</Declaration>
+			
+			<ReturnValue><Abstract type="html">The sound volume of the player</Abstract></ReturnValue>
+			<Anchor>//api/name/getVolume</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaPlayerProtocol/setMute:</TokenIdentifier>
+			<Abstract type="html">Mute the player</Abstract>
+			<DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)setMute:(BOOL)mute</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mute</Name>
+					<Abstract type="html">BOOL set YES to mute or NO to unmute.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setMute:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaPlayerProtocol/getMute</TokenIdentifier>
+			<Abstract type="html">Get if the player is muted or no</Abstract>
+			<DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)getMute</Declaration>
+			
+			<ReturnValue><Abstract type="html">The mute status</Abstract></ReturnValue>
+			<Anchor>//api/name/getMute</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/intfm/APSMediaPlayerProtocol/appendURL:</TokenIdentifier>
 			<Abstract type="html">Add an URL to the current play queue</Abstract>
 			<DeclaredIn>APSMediaPlayerProtocol.h</DeclaredIn>

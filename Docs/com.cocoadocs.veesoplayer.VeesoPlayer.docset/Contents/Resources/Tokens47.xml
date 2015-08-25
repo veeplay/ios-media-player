@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSSkipOverlayProgressPosition.html">
+	<File path="Constants/APSResolvMultipleAdsConflictsBy.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSSkipOverlayProgressPosition</TokenIdentifier>
-			<Abstract type="html">Defines where inside the skip overlay should the progress circle be rendered.</Abstract>
-			<DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/APSResolvMultipleAdsConflictsBy</TokenIdentifier>
+			<Abstract type="html">The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.</Abstract>
+			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
 			
 			<NodeRef refid="47"/>
@@ -14,34 +14,34 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kAPSSkipOverlayProgressPositionLeft</TokenIdentifier>
-            <Abstract type="html">Render the progress circle in the left side of the skip overlay.
+            <TokenIdentifier>//apple_ref/c/econst/APSResolvMultipleAdsConflictsByDropping</TokenIdentifier>
+            <Abstract type="html">Solve the issue by dropping all loaded ads.
      </Abstract>
-            <Declaration>kAPSSkipOverlayProgressPositionLeft</Declaration>
+            <Declaration>APSResolvMultipleAdsConflictsByDropping</Declaration>
             
-            <DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="47"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kAPSSkipOverlayProgressPositionRight</TokenIdentifier>
-            <Abstract type="html">Render the progress circle in the right side of the skip overlay.
+            <TokenIdentifier>//apple_ref/c/econst/APSResolvMultipleAdsConflictsBySelectingFirst</TokenIdentifier>
+            <Abstract type="html">Solve the issue by only inserting the first valid ad retrieved, honoring the defined order in the VAST.
      </Abstract>
-            <Declaration>kAPSSkipOverlayProgressPositionRight</Declaration>
+            <Declaration>APSResolvMultipleAdsConflictsBySelectingFirst</Declaration>
             
-            <DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="47"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/kAPSSkipOverlayProgressPositionHidden</TokenIdentifier>
-            <Abstract type="html">Do not render the progress circle.
+            <TokenIdentifier>//apple_ref/c/econst/APSResolvMultipleAdsConflictsBySelectingRandom</TokenIdentifier>
+            <Abstract type="html">Solve the issue by only inserting one random ad from the loaded batch.
      </Abstract>
-            <Declaration>kAPSSkipOverlayProgressPositionHidden</Declaration>
+            <Declaration>APSResolvMultipleAdsConflictsBySelectingRandom</Declaration>
             
-            <DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
+            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
             
             <NodeRef refid="47"/>
         </Token>

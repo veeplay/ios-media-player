@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSMediaControlsDisplay.html">
+	<File path="Constants/APSHandleSeekEvent.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSMediaControlsDisplay</TokenIdentifier>
-			<Abstract type="html">Specifies how the controls bar should be displayed for a media unit.</Abstract>
+			<TokenIdentifier>//apple_ref/c/tdef/APSHandleSeekEvent</TokenIdentifier>
+			<Abstract type="html">Specifies how the unit should handle seeking through multiple ad breaks.</Abstract>
 			<DeclaredIn>APSMediaUnit.h</DeclaredIn>
             
 			
@@ -14,10 +14,10 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSMediaControlsDisplayBottom</TokenIdentifier>
-            <Abstract type="html">The controls bar should be displayed at the bottom of the player surface.
+            <TokenIdentifier>//apple_ref/c/econst/APSHandleSeekEventPlayFirstBreak</TokenIdentifier>
+            <Abstract type="html">This will only trigger the first ad break.
      </Abstract>
-            <Declaration>APSMediaControlsDisplayBottom</Declaration>
+            <Declaration>APSHandleSeekEventPlayFirstBreak</Declaration>
             
             <DeclaredIn>APSMediaUnit.h</DeclaredIn>
             
@@ -25,10 +25,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSMediaControlsDisplayTop</TokenIdentifier>
-            <Abstract type="html">The controls bar should be displayed at the top of the player surface.
+            <TokenIdentifier>//apple_ref/c/econst/APSHandleSeekEventPlayLastBreak</TokenIdentifier>
+            <Abstract type="html">This will only trigger the last ad break.
      </Abstract>
-            <Declaration>APSMediaControlsDisplayTop</Declaration>
+            <Declaration>APSHandleSeekEventPlayLastBreak</Declaration>
             
             <DeclaredIn>APSMediaUnit.h</DeclaredIn>
             
@@ -36,10 +36,10 @@
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSMediaControlsDisplayNone</TokenIdentifier>
-            <Abstract type="html">The controls bar should not be displayed for this unit.
+            <TokenIdentifier>//apple_ref/c/econst/APSHandleSeekEventPlayAllBreaks</TokenIdentifier>
+            <Abstract type="html">This will trigger all ad breaks.
      </Abstract>
-            <Declaration>APSMediaControlsDisplayNone</Declaration>
+            <Declaration>APSHandleSeekEventPlayAllBreaks</Declaration>
             
             <DeclaredIn>APSMediaUnit.h</DeclaredIn>
             

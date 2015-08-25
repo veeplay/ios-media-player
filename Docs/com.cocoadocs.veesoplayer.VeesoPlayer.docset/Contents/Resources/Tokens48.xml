@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/APSVASTAdBreakType.html">
+	<File path="Constants/APSSkipOverlayProgressPosition.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/APSVASTAdBreakType</TokenIdentifier>
-			<Abstract type="html">Defines how an APSVASTAdBreak should be placed relative to the main content units.</Abstract>
-			<DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/APSSkipOverlayProgressPosition</TokenIdentifier>
+			<Abstract type="html">Defines where inside the skip overlay should the progress circle be rendered.</Abstract>
+			<DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
             
 			
 			<NodeRef refid="48"/>
@@ -14,45 +14,34 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSVASTPreContent</TokenIdentifier>
-            <Abstract type="html">Place the APSMediaUnits corresponding to the ad break at the beginning of the main content units.
+            <TokenIdentifier>//apple_ref/c/econst/kAPSSkipOverlayProgressPositionLeft</TokenIdentifier>
+            <Abstract type="html">Render the progress circle in the left side of the skip overlay.
      </Abstract>
-            <Declaration>APSVASTPreContent</Declaration>
+            <Declaration>kAPSSkipOverlayProgressPositionLeft</Declaration>
             
-            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            <DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
             
             <NodeRef refid="48"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSVASTPostContent</TokenIdentifier>
-            <Abstract type="html">Place the APSMediaUnits corresponding to the ad break at the end of the main content units.
+            <TokenIdentifier>//apple_ref/c/econst/kAPSSkipOverlayProgressPositionRight</TokenIdentifier>
+            <Abstract type="html">Render the progress circle in the right side of the skip overlay.
      </Abstract>
-            <Declaration>APSVASTPostContent</Declaration>
+            <Declaration>kAPSSkipOverlayProgressPositionRight</Declaration>
             
-            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            <DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
             
             <NodeRef refid="48"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSVASTMidContent</TokenIdentifier>
-            <Abstract type="html">Place the APSMediaUnits corresponding to the ad break in the middle of each main content unit, at a defined offset (see the adOffset property of APSVASTAdBreak.
+            <TokenIdentifier>//apple_ref/c/econst/kAPSSkipOverlayProgressPositionHidden</TokenIdentifier>
+            <Abstract type="html">Do not render the progress circle.
      </Abstract>
-            <Declaration>APSVASTMidContent</Declaration>
+            <Declaration>kAPSSkipOverlayProgressPositionHidden</Declaration>
             
-            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
-            
-            <NodeRef refid="48"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/APSVASTNonLinear</TokenIdentifier>
-            <Abstract type="html">Place the APSMediaOverlays corresponding to the ad break in the middle of each main content unit, ad a defined offset (see the adOffset property of APSVASTAdBreak.
-     </Abstract>
-            <Declaration>APSVASTNonLinear</Declaration>
-            
-            <DeclaredIn>APSVASTAdBreak.h</DeclaredIn>
+            <DeclaredIn>APSVASTSkipOverlayController.h</DeclaredIn>
             
             <NodeRef refid="48"/>
         </Token>
