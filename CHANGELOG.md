@@ -1,3 +1,6 @@
+### 1.8.32
+Fix current time not updating sometimes after seeking using the seekbar.
+
 ### 1.8.31
 Expose methods to set and get the sound volume
 
