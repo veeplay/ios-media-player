@@ -1,3 +1,6 @@
+### 2.0.17
+Fix a crash caused by invalid VAST data
+
 ### 2.0.16
 Fix current time not updating sometimes after seeking using the seekbar.
 
