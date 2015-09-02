@@ -1,3 +1,6 @@
+### 1.8.26.3
+Fix a crash caused by invalid VAST data
+
 ### 1.8.26.2
 Another workaround for a crash in MPMoviePlayerController and iOS 8.4
 
