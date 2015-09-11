@@ -1,3 +1,6 @@
+### 1.8.34
+Use HTTPS for tracking requests
+
 ### 1.8.33
 Fix a crash caused by invalid VAST data
 
