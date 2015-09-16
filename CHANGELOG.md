@@ -1,3 +1,6 @@
+### 2.0.19
+Allow custom Application ID for Chromecast
+
 ### 2.0.18
 Use HTTPS for tracking requests
 
