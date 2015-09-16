@@ -245,6 +245,11 @@ typedef void (^APSMediaPlayerFinishBlock)();
  */
 @property (nonatomic) BOOL fullscreenOnLandscapeRotate;
 
+/*
+ *  Set the Chromecast application ID
+ */
+@property (nonatomic, strong) NSString *chromecastAppId;
+
 /**-----------------------------------------------------------------------------
  * @name Working with Media Units
  * -----------------------------------------------------------------------------
