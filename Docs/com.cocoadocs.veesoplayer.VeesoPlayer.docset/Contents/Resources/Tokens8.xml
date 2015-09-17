@@ -186,6 +186,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setChromecastAppId:</TokenIdentifier>
+			<Abstract type="html">Set the Chromecast application ID to be launched when playing via Chromecast</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *chromecastAppId</Declaration>
+			
+			
+			<Anchor>//api/name/chromecastAppId</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/chromecastAppId</TokenIdentifier>
+			<Abstract type="html">Set the Chromecast application ID to be launched when playing via Chromecast</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *chromecastAppId</Declaration>
+			
+			
+			<Anchor>//api/name/chromecastAppId</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaPlayer/chromecastAppId</TokenIdentifier>
+			<Abstract type="html">Set the Chromecast application ID to be launched when playing via Chromecast</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *chromecastAppId</Declaration>
+			
+			
+			<Anchor>//api/name/chromecastAppId</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/prepareMediaUnits:</TokenIdentifier>
 			<Abstract type="html">Prepare media units so they can be gapless played (when supported)</Abstract>
 			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>

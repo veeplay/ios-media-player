@@ -1,3 +1,6 @@
+### 2.0.20
+Do not exit from fullscreen when stopping the player
+
 ### 2.0.19
 Allow custom Application ID for Chromecast
 
