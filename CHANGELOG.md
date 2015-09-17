@@ -1,3 +1,6 @@
+### 2.0.21
+New leaveFullscreenOnStop property to configure the fullscreen behaviour on stop
+
 ### 2.0.20
 Do not exit from fullscreen when stopping the player
 

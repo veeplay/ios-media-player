@@ -241,6 +241,11 @@ typedef void (^APSMediaPlayerFinishBlock)();
 @property (nonatomic) BOOL internalFullscreenSupport;
 
 /**
+ *  Set this to NO if you don't want the player to automatically leave fullscreen state after stopping or playing all media units
+ */
+@property (nonatomic) BOOL leaveFullscreenOnStop;
+
+/**
  *  Enable auto-fullscreen on device orientation
  */
 @property (nonatomic) BOOL fullscreenOnLandscapeRotate;
