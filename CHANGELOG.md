@@ -1,3 +1,6 @@
+### 2.0.22
+Include ad ID in tracking notification
+
 ### 2.0.21
 New leaveFullscreenOnStop property to configure the fullscreen behaviour on stop
 

@@ -150,6 +150,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setLeaveFullscreenOnStop:</TokenIdentifier>
+			<Abstract type="html">Set this to NO if you don&apos;t want the player to automatically leave fullscreen state after stopping or playing all media units</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL leaveFullscreenOnStop</Declaration>
+			
+			
+			<Anchor>//api/name/leaveFullscreenOnStop</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/leaveFullscreenOnStop</TokenIdentifier>
+			<Abstract type="html">Set this to NO if you don&apos;t want the player to automatically leave fullscreen state after stopping or playing all media units</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL leaveFullscreenOnStop</Declaration>
+			
+			
+			<Anchor>//api/name/leaveFullscreenOnStop</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaPlayer/leaveFullscreenOnStop</TokenIdentifier>
+			<Abstract type="html">Set this to NO if you don&apos;t want the player to automatically leave fullscreen state after stopping or playing all media units</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL leaveFullscreenOnStop</Declaration>
+			
+			
+			<Anchor>//api/name/leaveFullscreenOnStop</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setFullscreenOnLandscapeRotate:</TokenIdentifier>
 			<Abstract type="html">Enable auto-fullscreen on device orientation</Abstract>
 			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
