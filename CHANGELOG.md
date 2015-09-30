@@ -1,3 +1,6 @@
+### 2.0.23
+Fix returning currentPlaybackTime while MPMoviePlayerController is seeking
+
 ### 2.0.22
 Include ad ID in tracking notification
 
