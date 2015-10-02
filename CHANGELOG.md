@@ -1,3 +1,6 @@
+### 2.0.23.1
+Ignore Prerolls and midrolls until unit.initialPlaybackTime, if specified
+
 ### 2.0.23
 Fix returning currentPlaybackTime while MPMoviePlayerController is seeking
 
