@@ -1,3 +1,6 @@
+### 2.0.23.2
+Another fix for currentPlaybackTime nor properly updated after seeking
+
 ### 2.0.23.1
 Ignore Prerolls and midrolls until unit.initialPlaybackTime, if specified
 
