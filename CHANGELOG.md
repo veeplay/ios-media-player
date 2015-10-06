@@ -1,3 +1,6 @@
+### 2.0.24
+Rotate video when in fullscreen and landscape orientation is not supported
+
 ### 2.0.23.2
 Another fix for currentPlaybackTime nor properly updated after seeking
 
