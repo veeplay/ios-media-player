@@ -1,3 +1,6 @@
+### 2.0.24.1
+Further fullscreen related improvements
+
 ### 2.0.24
 Rotate video when in fullscreen and landscape orientation is not supported
 
