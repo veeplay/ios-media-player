@@ -20,8 +20,7 @@
     [super viewDidLoad];
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
-    if ([[APSMediaPlayer sharedInstance] isFullscreen]) return UIInterfaceOrientationMaskAll;
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
 }
 

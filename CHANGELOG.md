@@ -1,3 +1,6 @@
+### 2.0.25
+Disable fullscreen on rotate if the application already supports that orientation
+
 ### 2.0.24.1
 Further fullscreen related improvements
 
