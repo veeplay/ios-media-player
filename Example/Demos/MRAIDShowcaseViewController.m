@@ -31,6 +31,7 @@
     
     // Enable internal fullscreen handling
     [[APSMediaPlayer sharedInstance] setInternalFullscreenSupport:YES];
+    [[APSMediaPlayer sharedInstance] setFullscreenOnLandscapeRotate:YES];
     
     // Create the MRAID banner ad
     APSVASTAdBreak *banner = [[APSVASTAdBreak alloc] init];

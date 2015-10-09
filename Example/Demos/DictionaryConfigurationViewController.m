@@ -33,6 +33,7 @@
     
     // Enable internal fullscreen handling
     [[APSMediaPlayer sharedInstance] setInternalFullscreenSupport:YES];
+    [[APSMediaPlayer sharedInstance] setFullscreenOnLandscapeRotate:YES];
     
     [builder configureFromDictionary:[self configurationDictionary]];
     [builder requestMediaUnitsWithCompletionBlock:^(NSArray *units) {

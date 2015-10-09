@@ -37,6 +37,7 @@
     
     // Enable internal fullscreen handling
     [[APSMediaPlayer sharedInstance] setInternalFullscreenSupport:YES];
+    [[APSMediaPlayer sharedInstance] setFullscreenOnLandscapeRotate:YES];
     
     [APSMediaPlayer sharedInstance].onFinish = ^() {
         [self advancePlaylist];
