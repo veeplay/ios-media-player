@@ -1,3 +1,6 @@
+### 2.0.26
+Added accessibility labels and hints
+
 ### 2.0.25
 Disable fullscreen on rotate if the application already supports that orientation
 
