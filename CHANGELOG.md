@@ -1,3 +1,6 @@
+### 2.0.26.3
+Workaround for MPMoviePlayerController not sending MPMoviePlayerLoadStateDidChangeNotification sometimes
+
 ### 2.0.26.2
 Fix a linker issue
 
