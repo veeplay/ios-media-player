@@ -1,3 +1,6 @@
+### 2.0.26.4
+Optimize AVPlayer-based backend initialization
+
 ### 2.0.26.3
 Workaround for MPMoviePlayerController not sending MPMoviePlayerLoadStateDidChangeNotification sometimes
 
