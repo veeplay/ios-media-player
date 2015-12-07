@@ -1,3 +1,6 @@
+### 2.0.27
+Allow using of external media backends
+
 ### 2.0.26.4
 Optimize AVPlayer-based backend initialization
 

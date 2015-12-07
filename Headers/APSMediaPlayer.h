@@ -24,7 +24,8 @@
 typedef NS_ENUM(NSInteger, APSBackendPlayer) {
     APSBackendAVPlayer,
     APSBackendMPMoviePlayer,
-    APSBackendChromecastPlayer
+    APSBackendChromecastPlayer,
+    APSBackendCustomPlayer
 };
 
 @protocol APSUnitManagerProtocol;
@@ -234,6 +235,11 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  The backend player class. Use `[APSAVPlayer class]` for the AVPlayer-based backend or `[APSMPMoviePlayer class]` for the MPMoviePlayerController-based backend
  */
 @property (nonatomic) enum APSBackendPlayer backendPlayer;
+
+/**
+ *  A class which is compliant to `APSMediaPlayerProtocol` and which will be used as a backend player
+ */
+@property (nonatomic, strong) Class backendPlayerClass;
 
 /**
  *  Set this to NO to disable internal fullscreen handling
