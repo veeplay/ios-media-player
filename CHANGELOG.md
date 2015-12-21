@@ -1,3 +1,6 @@
+### 2.0.28
+Improved Voiceover support
+
 ### 2.0.27
 Allow using of external media backends
 

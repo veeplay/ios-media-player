@@ -114,6 +114,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setBackendPlayerClass:</TokenIdentifier>
+			<Abstract type="html">A class which is compliant to APSMediaPlayerProtocol and which will be used as a backend player</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) Class backendPlayerClass</Declaration>
+			
+			
+			<Anchor>//api/name/backendPlayerClass</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/backendPlayerClass</TokenIdentifier>
+			<Abstract type="html">A class which is compliant to APSMediaPlayerProtocol and which will be used as a backend player</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) Class backendPlayerClass</Declaration>
+			
+			
+			<Anchor>//api/name/backendPlayerClass</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaPlayer/backendPlayerClass</TokenIdentifier>
+			<Abstract type="html">A class which is compliant to APSMediaPlayerProtocol and which will be used as a backend player</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) Class backendPlayerClass</Declaration>
+			
+			
+			<Anchor>//api/name/backendPlayerClass</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setInternalFullscreenSupport:</TokenIdentifier>
 			<Abstract type="html">Set this to NO to disable internal fullscreen handling</Abstract>
 			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
