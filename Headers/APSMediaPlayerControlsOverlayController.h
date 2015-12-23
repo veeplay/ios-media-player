@@ -16,6 +16,7 @@ extern NSString* const APSControlsOverlay;
 #define kAPSControlsPlayedTrackColor @"playedTrackColor"
 #define kAPSControlsBufferedTrackColor @"bufferedTrackColor"
 #define kAPSControlsEmptyTrackColor @"emptyTrackColor"
+#define kAPSControlsSeekThumbImage @"seekThumbImage"
 #define kAPSControlsAdMarkColor @"adMarkColor"
 #define kAPSControlsPlayImage @"playImage"
 #define kAPSControlsPauseImage @"pauseImage"
