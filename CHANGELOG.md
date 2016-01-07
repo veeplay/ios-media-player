@@ -1,3 +1,6 @@
+### 2.0.30
+Bugfixes
+
 ### 2.0.29
 Fix wrong behaviour when seeking back and using `APSHandleSeekEventPlayLastBreak`
 
