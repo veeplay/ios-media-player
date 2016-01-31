@@ -121,31 +121,50 @@ APSMediaPlayer allows developers to create their own, JSON or dictionary configu
 
 ## Using Chromecast
 
-You can enable Chromecast playback by adding `chromecast` into the components array under the `controls` section in your JSON configuration file:
+To connect and send playback to the [Google Chromecast](https://www.google.com/chromecast), you need to install the Veeplay Chromecast plugin. See full documentation [here](http://veeplay.github.io/ios-chromecast-plugin/).
+
+To install:
+
+* Add the following line to your Podfile:
+
+        pod "VeeplayChromecast"
+
+* Alternatively, if installing without CocoaPods, get the latest static library, header files and assets [from the repository](https://github.com/veeplay/ios-chromecast-plugin). Also, install the latest version of the [Google Cast iOS Sender API library](https://developers.google.com/cast/docs/ios_sender).
+* Import the VeeplayChromecastManager header file:
+
+        #import "VeeplayChromecastManager.h"
+
+To start the plugin, set your Chromecast application id on the shared instance of `APSChromeCastManager`:
+
+        [APSChromecastManager sharedInstance].chromecastAppId = @"appid"
+
+You can display the Chromecast playback control in the control bar by adding `chromecast` into the components array, under the `controls` section in your JSON configuration file:
 
         {
-                "content": [
-                        "url": "http://......",
-                        "autoplay": true,
-                        "controls": {
-                                "components": [
-                                        "playback",
-                                        "totalTime",
-                                        "slider",
-                                        "currentTime",
-                                        "chromecast"
-                                ]
-                        }
-                ]
+            "content": [
+                "url": "http://......",
+                "autoplay": true,
+                "controls": {
+                    "components": [
+                        "playback",
+                        "totalTime",
+                        "slider",
+                        "currentTime",
+                        "chromecast"
+                    ]
+                }
+            ]
         }
 
-Also you can configure this programatically by adding APSChromecastControl to the `controlsParameters` property on `APSMediaUnit`:
+Also, you can configure this programatically by adding kAPSChromecastControl to the `controlsParameters` property on `APSMediaUnit`:
 
-        unit.controlsParameters = @{kAPSControlsComponents: @(APSPlaybackControl|APSCurrentTimeControl|APSTimeSliderControl|APSTotalTimeControl|APSChromecastControl|APSFullScreenControl)};
+        unit.controlsParameters = @{kAPSControlsComponents: @(APSPlaybackControl|APSCurrentTimeControl|APSTimeSliderControl|APSTotalTimeControl|kAPSChromecastControl|APSFullScreenControl)};
 
-## Using DRM
+## Using Marlin DRM
 
-APSMediaPlayer provides support for [Marlin DRM](http://www.marlin-community.com/), using the SDKs provided by [ExpressPlay](http://expressplay.com). To install:
+APSMediaPlayer provides support for [Marlin DRM](http://www.marlin-community.com/), using the SDKs provided by [ExpressPlay](http://expressplay.com). See full documentation [here](http://veeplay.github.io/ios-marlin-drm/).
+
+To install:
 
 * Install the ExpressPlay SDK.
 * Add the following line to your Podfile:
@@ -186,7 +205,7 @@ APSMediaPlayer provides support for [Marlin DRM](http://www.marlin-community.com
 
 ## Class Reference
 
-See the full class reference [here](http://veeplay.github.io/ios-docs).
+See the full class reference [here](http://veeplay.github.io/ios-media-player/).
 
 ## Code Samples
 
