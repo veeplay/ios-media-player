@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
   s.resources            = "Assets/*.bundle"
   s.public_header_files  = "Headers/*.h"
   s.preserve_paths       = "Docs/*"
-  s.library              = "Veeplay", "z"
+  s.library              = "z"
   s.vendored_libraries   = "libVeeplay.a"
 
   s.frameworks = "AVFoundation", "MediaPlayer", "CoreMedia"
-  s.dependency "KAProgressLabel", "~> 1.2"
+  s.dependency "KAProgressLabel", "~> 3.0"
   s.dependency "TBXML", "~> 1.5"
   s.dependency "TSMiniWebBrowser"
 end
