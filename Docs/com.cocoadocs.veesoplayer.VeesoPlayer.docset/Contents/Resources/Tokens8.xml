@@ -114,6 +114,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setBackendPlayerClass:</TokenIdentifier>
+			<Abstract type="html">A class which is compliant to APSMediaPlayerProtocol and which will be used as a backend player</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) Class backendPlayerClass</Declaration>
+			
+			
+			<Anchor>//api/name/backendPlayerClass</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/backendPlayerClass</TokenIdentifier>
+			<Abstract type="html">A class which is compliant to APSMediaPlayerProtocol and which will be used as a backend player</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) Class backendPlayerClass</Declaration>
+			
+			
+			<Anchor>//api/name/backendPlayerClass</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaPlayer/backendPlayerClass</TokenIdentifier>
+			<Abstract type="html">A class which is compliant to APSMediaPlayerProtocol and which will be used as a backend player</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) Class backendPlayerClass</Declaration>
+			
+			
+			<Anchor>//api/name/backendPlayerClass</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setInternalFullscreenSupport:</TokenIdentifier>
 			<Abstract type="html">Set this to NO to disable internal fullscreen handling</Abstract>
 			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
@@ -150,6 +186,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setLeaveFullscreenOnStop:</TokenIdentifier>
+			<Abstract type="html">Set this to NO if you don&apos;t want the player to automatically leave fullscreen state after stopping or playing all media units</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL leaveFullscreenOnStop</Declaration>
+			
+			
+			<Anchor>//api/name/leaveFullscreenOnStop</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/leaveFullscreenOnStop</TokenIdentifier>
+			<Abstract type="html">Set this to NO if you don&apos;t want the player to automatically leave fullscreen state after stopping or playing all media units</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL leaveFullscreenOnStop</Declaration>
+			
+			
+			<Anchor>//api/name/leaveFullscreenOnStop</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaPlayer/leaveFullscreenOnStop</TokenIdentifier>
+			<Abstract type="html">Set this to NO if you don&apos;t want the player to automatically leave fullscreen state after stopping or playing all media units</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL leaveFullscreenOnStop</Declaration>
+			
+			
+			<Anchor>//api/name/leaveFullscreenOnStop</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setFullscreenOnLandscapeRotate:</TokenIdentifier>
 			<Abstract type="html">Enable auto-fullscreen on device orientation</Abstract>
 			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
@@ -182,6 +254,42 @@
 			
 			
 			<Anchor>//api/name/fullscreenOnLandscapeRotate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/setChromecastAppId:</TokenIdentifier>
+			<Abstract type="html">Set the Chromecast application ID to be launched when playing via Chromecast</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *chromecastAppId</Declaration>
+			
+			
+			<Anchor>//api/name/chromecastAppId</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/APSMediaPlayer/chromecastAppId</TokenIdentifier>
+			<Abstract type="html">Set the Chromecast application ID to be launched when playing via Chromecast</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *chromecastAppId</Declaration>
+			
+			
+			<Anchor>//api/name/chromecastAppId</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/APSMediaPlayer/chromecastAppId</TokenIdentifier>
+			<Abstract type="html">Set the Chromecast application ID to be launched when playing via Chromecast</Abstract>
+			<DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *chromecastAppId</Declaration>
+			
+			
+			<Anchor>//api/name/chromecastAppId</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

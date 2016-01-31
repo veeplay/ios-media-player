@@ -38,6 +38,7 @@
     
     // Enable internal fullscreen handling
     [[APSMediaPlayer sharedInstance] setInternalFullscreenSupport:YES];
+    [[APSMediaPlayer sharedInstance] setFullscreenOnLandscapeRotate:YES];
     
     // Configure the builder from a remote JSON configuration file and render the resulting media units
     [builder configureFromURL:[NSURL URLWithString:@"http://veeso.github.io/json-docs/example6.json"] onComplete:^() {

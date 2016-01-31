@@ -43,5 +43,15 @@
             <NodeRef refid="40"/>
         </Token>
         
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/APSBackendCustomPlayer</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>APSBackendCustomPlayer</Declaration>
+            
+            <DeclaredIn>APSMediaPlayer.h</DeclaredIn>
+            
+            <NodeRef refid="40"/>
+        </Token>
+        
 	</File>
 </Tokens>

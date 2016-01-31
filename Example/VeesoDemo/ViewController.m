@@ -30,7 +30,7 @@ static NSString *CellIdentifier = @"Cell";
     
     _model = [self demos];
     
-	UIImage * backgroundImage;
+    UIImage * backgroundImage;
     
     self.tableView.contentInset = UIEdgeInsetsMake(0, -10, 0, 0);
     
@@ -67,7 +67,7 @@ static NSString *CellIdentifier = @"Cell";
 
 - (void)buttonPressed:(id)sender {
     UIButton *button = (UIButton*)sender;
-
+    
     if (button == self.demosButton)
         [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
     else if (button == self.sdkButton)

@@ -96,6 +96,7 @@
     
     // Disable internal fullscreen handling
     [[APSMediaPlayer sharedInstance] setInternalFullscreenSupport:NO];
+    [[APSMediaPlayer sharedInstance] setFullscreenOnLandscapeRotate:NO];
 }
 
 - (void) manageFullscreen {
