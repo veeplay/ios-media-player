@@ -11,6 +11,7 @@
 #import "APSVASTMediaBuilderPlugin.h"
 #import "FullscreenTransitioner.h"
 #import "FullscreenPresentationController.h"
+#import "DemoOverlayController.h"
 
 @interface ManualConfigurationViewController ()
 
@@ -75,13 +76,23 @@
     
     vastPlugin.adBreaks = @[preroll, banner];
     
+    [[APSMediaPlayer sharedInstance] registerOverlayController:[DemoOverlayController class]];
+    
     // Create the main content unit
     APSMediaUnit *unit = [[APSMediaUnit alloc] initWithURL:[NSURL URLWithString:@"http://veeplaydemo.streaming.mediaservices.windows.net/ca4d815a-9f06-4ea8-9eeb-00e87b92d812/assassins-m3u8-aapl.ism/Manifest(format=m3u8-aapl)"]];
+    APSMediaOverlay *overlay = [[APSMediaOverlay alloc] init];
+    overlay.type = DemoOverlay;
+    overlay.position = kAPSMediaOverlayPositionFullscreen;
+    overlay.startPoint = @"0";
+    overlay.endPoint = @"10";
+    overlay.parameters[@"color"] = [UIColor greenColor];
+    unit.overlays = @[overlay];
+    
     builder.contentUnits = @[unit];
     
     // Render the playlist
     [APSMediaPlayer sharedInstance].modalViewControllerRoot = self;
-    [[APSMediaPlayer sharedInstance] playMediaUnits:[builder mediaUnits]];
+    [[APSMediaPlayer sharedInstance] playMediaUnits:@[unit]];
     
     // Disable internal fullscreen handling
     [[APSMediaPlayer sharedInstance] setInternalFullscreenSupport:NO];

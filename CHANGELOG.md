@@ -1,3 +1,60 @@
+### 2.0.29
+Fix wrong behaviour when seeking back and using `APSHandleSeekEventPlayLastBreak`
+
+### 2.0.28
+Improved Voiceover support
+
+### 2.0.27
+Allow using of external media backends
+
+### 2.0.26.4
+Optimize AVPlayer-based backend initialization
+
+### 2.0.26.3
+Workaround for MPMoviePlayerController not sending MPMoviePlayerLoadStateDidChangeNotification sometimes
+
+### 2.0.26.2
+Fix a linker issue
+
+### 2.0.26.1
+Fix a random issue when UI was not properly updated when unit's initialPlayBackTime was greater than 0
+
+### 2.0.26
+Added accessibility labels and hints
+
+### 2.0.25
+Disable fullscreen on rotate if the application already supports that orientation
+
+### 2.0.24.1
+Further fullscreen related improvements
+
+### 2.0.24
+Rotate video when in fullscreen and landscape orientation is not supported
+
+### 2.0.23.2
+Another fix for currentPlaybackTime nor properly updated after seeking
+
+### 2.0.23.1
+Ignore Prerolls and midrolls until unit.initialPlaybackTime, if specified
+
+### 2.0.23
+Fix returning currentPlaybackTime while MPMoviePlayerController is seeking
+
+### 2.0.22
+Include ad ID in tracking notification
+
+### 2.0.21
+New leaveFullscreenOnStop property to configure the fullscreen behaviour on stop
+
+### 2.0.20
+Do not exit from fullscreen when stopping the player
+
+### 2.0.19
+Allow custom Application ID for Chromecast
+
+### 2.0.18
+Use HTTPS for tracking requests
+
 ### 2.0.17
 Fix a crash caused by invalid VAST data
 

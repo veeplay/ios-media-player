@@ -1,9 +1,9 @@
 //
 //  APSVASTFullscreenButtonConfiguration.h
-//  VeesoDemo
+//  Veeplay
 //
 //  Created by Ovidiu on 16/04/15.
-//  Copyright (c) 2015 Veeso. All rights reserved.
+//  Copyright (c) 2015 Veeplay. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

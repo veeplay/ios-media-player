@@ -1,23 +1,31 @@
 PODS:
+  - google-cast-sdk (2.7.1):
+    - google-cast-sdk/Assets
+    - google-cast-sdk/Core
+  - google-cast-sdk/Assets (2.7.1):
+    - google-cast-sdk/Core
+  - google-cast-sdk/Core (2.7.1)
   - KAProgressLabel (1.2)
   - TBXML (1.5)
   - TSMiniWebBrowser (1.0.1)
-  - VeesoPlayer (1.8.13):
+  - VeesoPlayer (2.0.17):
+    - google-cast-sdk
     - KAProgressLabel (~> 1.2)
     - TBXML (~> 1.5)
     - TSMiniWebBrowser
 
 DEPENDENCIES:
-  - VeesoPlayer (from `../`)
+  - VeesoPlayer (from `../VeesoPlayer.podspec`)
 
 EXTERNAL SOURCES:
   VeesoPlayer:
-    :path: ../
+    :path: ../VeesoPlayer.podspec
 
 SPEC CHECKSUMS:
-  KAProgressLabel: 49d9a4b954976e56bab6179436e11b9cbf5ad384
-  TBXML: a279440030ba55c40e1455cafba3b0a44e1963d4
-  TSMiniWebBrowser: 168855429bb9f462b035d5b3d9a5432ec38849ec
-  VeesoPlayer: 8b48e379c9335ec6977836627a9e151f55364470
+  google-cast-sdk: 9c98a8fbe8277277ab01a3318ee965c9aef3d4c9
+  KAProgressLabel: 1a24e6fb02e95f33c9f28763fcfbc4c6ea7dce09
+  TBXML: 9f9dadb239f2f2af1dadb87fe43a0ce6e479379a
+  TSMiniWebBrowser: ca9d2b548584d197d360d58696e22e811c9329f0
+  VeesoPlayer: 947bff8bde6ffbaec33de3bb926faa73dadfee57
 
 COCOAPODS: 0.34.1

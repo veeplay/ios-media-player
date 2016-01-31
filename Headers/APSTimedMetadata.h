@@ -1,6 +1,6 @@
 //
 //  APSTimedMetadata.h
-//  VeesoPlayer
+//  Veeplay
 //
 //  Created by Ovidiu on 18/02/15.
 //  Copyright (c) 2015 Appscend. All rights reserved.

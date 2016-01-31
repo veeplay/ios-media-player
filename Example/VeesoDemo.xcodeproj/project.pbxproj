@@ -17,6 +17,7 @@
 		CE14C18819C9023F00545727 /* ContinuousViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE14C18719C9023F00545727 /* ContinuousViewController.m */; };
 		CE14C18C19C9B78700545727 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE14C18B19C9B78700545727 /* NavigationViewController.m */; };
 		CE2C9A7D19CFAB6800A8C74C /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C9A7C19CFAB6800A8C74C /* DemoViewController.m */; };
+		CEB961911B9FC9540081543F /* DemoOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB961901B9FC9540081543F /* DemoOverlayController.m */; };
 		CEC1C53C19B3C30000758D1E /* i_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC1C53219B3C30000758D1E /* i_1.jpg */; };
 		CEC1C53D19B3C30000758D1E /* i_1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC1C53319B3C30000758D1E /* i_1@2x.jpg */; };
 		CEC1C53E19B3C30000758D1E /* i_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC1C53419B3C30000758D1E /* i_2.jpg */; };
@@ -77,6 +78,8 @@
 		CE14C18B19C9B78700545727 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		CE2C9A7B19CFAB6800A8C74C /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoViewController.h; path = Demos/DemoViewController.h; sourceTree = SOURCE_ROOT; };
 		CE2C9A7C19CFAB6800A8C74C /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoViewController.m; path = Demos/DemoViewController.m; sourceTree = SOURCE_ROOT; };
+		CEB9618F1B9FC9540081543F /* DemoOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoOverlayController.h; sourceTree = "<group>"; };
+		CEB961901B9FC9540081543F /* DemoOverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoOverlayController.m; sourceTree = "<group>"; };
 		CEC1C53219B3C30000758D1E /* i_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i_1.jpg; sourceTree = "<group>"; };
 		CEC1C53319B3C30000758D1E /* i_1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "i_1@2x.jpg"; sourceTree = "<group>"; };
 		CEC1C53419B3C30000758D1E /* i_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i_2.jpg; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				CE14C18219C758A000545727 /* MRAIDShowcaseViewController.m */,
 				CE14C18619C9023F00545727 /* ContinuousViewController.h */,
 				CE14C18719C9023F00545727 /* ContinuousViewController.m */,
+				CEB9618F1B9FC9540081543F /* DemoOverlayController.h */,
+				CEB961901B9FC9540081543F /* DemoOverlayController.m */,
 			);
 			path = Demos;
 			sourceTree = SOURCE_ROOT;
@@ -409,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5B8E9B21B25FE6C00384445 /* FullscreenPresentationController.m in Sources */,
+				CEB961911B9FC9540081543F /* DemoOverlayController.m in Sources */,
 				CE14C18819C9023F00545727 /* ContinuousViewController.m in Sources */,
 				CE14C18319C758A000545727 /* MRAIDShowcaseViewController.m in Sources */,
 				CEEDEDF619B285E000D2436B /* ViewController.m in Sources */,

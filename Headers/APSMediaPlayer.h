@@ -8,24 +8,25 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
-#import <GoogleCast/GoogleCast.h>
 
 #import "KRHub.h"
 #import "APSMediaBuilder.h"
 #import "APSMediaOverlay.h"
 #import "APSMediaUnit.h"
 #import "TSMiniWebBrowser.h"
+#import "APSTypes.h"
 
 #define kAPSMediaPlayerEventType @"event.type"
 #define kAPSMediaPlayerEvent @"event"
 #define kAPSMediaPlayerEventURLs @"event.urls"
 #define kAPSMediaPlayerEventSource @"event.source"
 
-typedef NS_ENUM(NSInteger, APSBackendPlayer) {
-    APSBackendAVPlayer,
-    APSBackendMPMoviePlayer,
-    APSBackendChromecastPlayer
-};
+#define kAPSMediaPlayerOverlayControllersGroup @"com.appscend.mp.controllers.overlay"
+#define kAPSMediaPlayerUnitManagersGroup @"com.appscend.mp.unitmanager"
+#define kAPSMediaPlayerBackendsGroup @"com.appscend.mp.backend"
+#define kAPSMediaPlayerControlPluginsGroup @"com.appscend.mp.controlplugin"
+
+typedef NSString* APSBackendPlayer;
 
 @protocol APSUnitManagerProtocol;
 
@@ -78,7 +79,7 @@ extern NSString *const APSMediaPlayerUnitFinishedNotification;
  */
 extern NSString *const APSMediaPlayerErrorNotification;
 /**
- *  Posted when the media player playback state has changed. You can immediately get the new state using the `playbackState` method of the APSMediaPlayer instance. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/doc/c_ref/MPMoviePlaybackState) on MPMoviePlaybackState for more details about the available playback states .
+ *  Posted when the media player playback state has changed. You can immediately get the new state using the `playbackState` method of the APSMediaPlayer instance.
  */
 extern NSString *const APSMediaPlayerStatusChangedNotification;
 /**
@@ -94,22 +95,6 @@ extern NSString *const APSMediaPlayerTrackedEventNotification;
  */
 extern NSString *const APSMediaPlayerInvalidLicenseNotification;
 /**
- *  Posted when a Chromecast device comes online
- */
-extern NSString *const APSMediaPlayerChromeCastDeviceOnline;
-/**
- *  Posted when a Chromecast device goes offline
- */
-extern NSString *const APSMediaPlayerChromeCastDeviceOffline;
-/**
- *   Posted when the player connected to a Chromecast compatible device
- */
-extern NSString *const APSMediaPlayerChromeCastConnectedNotification;
-/*
- *  Posted when the player disconnected from a Chromecast compatible device
- */
-extern NSString *const APSMediaPlayerChromeCastDisconnectedNotification;
-/**
  *  Posted when the internal minibrowser will open because an ad was tapped
  */
 extern NSString *const APSMediaPlayerWillOpenMiniBrowser;
@@ -117,6 +102,30 @@ extern NSString *const APSMediaPlayerWillOpenMiniBrowser;
  *  Posted when the internal minibrowser will be dismissed
  */
 extern NSString *const APSMediaPlayerWillCloseMiniBrowser;
+/**
+ *  Posted when the internal player backend finished playback
+ */
+extern NSString *const APSMediaPlayerPlaybackDidFinishNotification;
+/**
+ *  Posted when the media load state changed
+ */
+extern NSString *const APSMediaPlayerLoadStateDidChangeNotification;
+/**
+ *  Posted when the duration of the played media becomes available
+ */
+extern NSString *const APSMediaPlayerDurationAvailableNotification;
+/**
+ *  Posted when the media playback state changed
+ */
+extern NSString *const APSMediaPlayerPlaybackStateDidChangeNotification;
+/**
+ *  Posted when the volume changed
+ */
+extern NSString *const APSMediaPlayerVolumeDidChangeNotification;
+/**
+ *  Key for the `APSMediaPlayerPlaybackDidFinishNotification` notification user info dictionary that contains the reason for playback finish
+ */
+extern NSString *const APSMediaPlayerPlaybackDidFinishReasonUserInfoKey;
 
 ///-------------------------------------
 /// @name Available Tracking Events
@@ -192,7 +201,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  - **APSMediaPlayerUpdateNotification** - Posted every time the internal status of the media player changes. This will happen roughly once every second.
  - **APSMediaPlayerUnitFinishedNotification** - Posted when a media unit finishes playback, before the remaining playlist units are processed. The `userInfo` dictionary contains the APSMediaUnit object that just finished playback under the `unit` key.
  - **APSMediaPlayerErrorNotification** - Posted when the media player encounters an error in the process of unit playback. The `userInfo` dictionary contains the NSError object that represents the error under the `error` key.
- - **APSMediaPlayerStatusChangedNotification** - Posted when the media player playback state has changed. You can immediately get the new state using the `playbackState` method of the APSMediaPlayer instance. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/doc/c_ref/MPMoviePlaybackState) on MPMoviePlaybackState for more details about the available playback states.
+ - **APSMediaPlayerStatusChangedNotification** - Posted when the media player playback state has changed. You can immediately get the new state using the `playbackState` method of the APSMediaPlayer instance.
  - **APSMediaPlayerTrackedEventNotification**
  Posted when a trackable playback event occurs.
  The `userinfo` dictionary contains additional information about the tracked event:
@@ -206,7 +215,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  
  - *kAPSMediaPlayerOverlayControllersGroup* - The group name that 3rd party overlay controllers must use when registering with the player.
  */
-@interface APSMediaPlayer : KRHub <TSMiniWebBrowserDelegate, GCKDeviceScannerListener, GCKDeviceManagerDelegate, UIActionSheetDelegate, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
+@interface APSMediaPlayer : KRHub <TSMiniWebBrowserDelegate, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
 
 /**-----------------------------------------------------------------------------
  * @name Accessing the APSMediaPlayer Instance and its View
@@ -233,7 +242,12 @@ typedef void (^APSMediaPlayerFinishBlock)();
 /**
  *  The backend player class. Use `[APSAVPlayer class]` for the AVPlayer-based backend or `[APSMPMoviePlayer class]` for the MPMoviePlayerController-based backend
  */
-@property (nonatomic) enum APSBackendPlayer backendPlayer;
+@property (nonatomic) APSBackendPlayer backendPlayer;
+
+/**
+ *  A class which is compliant to `APSMediaPlayerProtocol` and which will be used as a backend player
+ */
+@property (nonatomic, strong) Class backendPlayerClass;
 
 /**
  *  Set this to NO to disable internal fullscreen handling
@@ -241,9 +255,15 @@ typedef void (^APSMediaPlayerFinishBlock)();
 @property (nonatomic) BOOL internalFullscreenSupport;
 
 /**
+ *  Set this to NO if you don't want the player to automatically leave fullscreen state after stopping or playing all media units
+ */
+@property (nonatomic) BOOL leaveFullscreenOnStop;
+
+/**
  *  Enable auto-fullscreen on device orientation
  */
 @property (nonatomic) BOOL fullscreenOnLandscapeRotate;
+
 
 /**-----------------------------------------------------------------------------
  * @name Working with Media Units
@@ -423,23 +443,23 @@ typedef void (^APSMediaPlayerFinishBlock)();
  */
 - (NSTimeInterval)playableDuration;
 /**
- *  Returns the current unit's playback state. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/doc/c_ref/MPMoviePlaybackState) for more details about `MPMoviePlaybackState`.
+ *  Returns the current unit's playback state.
  *
  *  @return The current playback state.
  */
-- (MPMoviePlaybackState)playbackState;
+- (APSMoviePlaybackState)playbackState;
 /**
- *  Returns the current unit's load state. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/c/tdef/MPMovieLoadState) for more details about `MPMovieLoadState`.
+ *  Returns the current unit's load state.
  *
  *  @return The current load state.
  */
-- (MPMovieLoadState)loadState;
+- (APSMovieLoadState)loadState;
 /**
- *  Returns the current unit's movie source type. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/doc/c_ref/MPMovieSourceType) for more details about `MPMovieSourceType`.
+ *  Returns the current unit's movie source type.
  *
  *  @return The movie source type.
  */
-- (MPMovieSourceType)movieSourceType;
+- (APSMovieSourceType)movieSourceType;
 
 /**
  *  Returns `YES` if the player is currently rendering a live stream.
@@ -492,7 +512,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *
  *  @warning This method executes blocking operations on the calling thread.
  */
-- (UIImage*)thumbnailImageAtTime:(NSTimeInterval)time;
+- (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock)block;
 
 /**-----------------------------------------------------------------------------
  * @name Handling Fullscreen
@@ -551,49 +571,6 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Indicates whether the movie player is currently playing video via AirPlay.
  */
 - (BOOL)airPlayVideoActive;
-/**-----------------------------------------------------------------------------
- * @name Chromecast
- * -----------------------------------------------------------------------------
- */
-/**
- *  Indicates whether there is a Chromecast device available
- */
-- (BOOL)chromecastAvailable;
-/*
- *  Indicates whether the movie player is currently playing video via Chromecast
- */
-- (BOOL)chromecastActive;
-/**
- *  Returns a list of detected GCKDevices
- */
-- (NSArray*)chromecastDevices;
-/**
- *  Show an UIActionSheet with detected devices
- */
-- (void)showChromecastDevices;
-/**
- *  Connect to a specified device
- *
- *  @param device A GCKDevice to connect to
- *
- */
-- (void)connectToChromecastDevice:(GCKDevice*)device;
-/**
- *  Get the current GCKDeviceManager
- */
-- (GCKDeviceManager*)currentChromecastDeviceManager;
-/**
- *  Get the current GCKDevice
- */
-- (GCKDevice*)currentChromecastDevice;
-/**
- *  Get the current media control channel
- */
-- (GCKMediaControlChannel*)currentChromecastMediaControlChannel;
-/*
- *  Disconnect from the current connected device
- */
-- (void)disconnectChromecast;
 
 /**-----------------------------------------------------------------------------
  * @name Other

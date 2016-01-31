@@ -9,17 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
-
-typedef NS_ENUM(NSInteger, APSMoviePlayerSourceType) {
-    APSMoviePlayerSourceTypeOnDemand,
-    APSMoviePlayerSourceTypeLive
-};
-
-typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
-    APSAVPlayerSeekStatusNoSeeking,
-    APSAVPlayerSeekStatusBackward,
-    APSAVPlayerSeekStatusForward
-};
+#import "APSTypes.h"
 
 @protocol APSMediaPlayerProtocol <NSObject>
 
@@ -77,7 +67,7 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
 /**
  *  Get or set the scaling mode of the video according to its viewport
  */
-@property (nonatomic) MPMovieScalingMode scalingMode;
+@property (nonatomic) APSMovieScalingMode scalingMode;
 
 /**
  *  Get or set if the player should autoplay an URL as soon as it is provided
@@ -87,22 +77,22 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
 /**
  *  Get the current playback state
  */
-@property (nonatomic, readonly) MPMoviePlaybackState playbackState;
+@property (nonatomic, readonly) APSMoviePlaybackState playbackState;
 
 /**
  *  Get the current state of the buffer
  */
-@property (nonatomic, readonly) MPMovieLoadState loadState;
+@property (nonatomic, readonly) APSMovieLoadState loadState;
 
 /**
  *  Get the current media's source type (e.g. file or stream)
  */
-@property (nonatomic) MPMovieSourceType movieSourceType;
+@property (nonatomic) APSMovieSourceType movieSourceType;
 
 /**
  *  Set or get how the player controls will appear
  */
-@property (nonatomic) MPMovieControlStyle controlStyle;
+@property (nonatomic) APSMovieControlStyle controlStyle;
 
 /**
  *  Obtains the most recent time-based metadata provided by the streamed movie.
@@ -188,55 +178,37 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  *  @return The thumbnail image
  *
  */
-- (UIImage *) thumbnailAt:(NSTimeInterval) playbackTime;
+- (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock)block;
 
-/**
- *  Request a thumbnail image
- *
- *  @param playbackTime The time, in seconds, when the thumbnail should be taken from the video
- *
- *  @param option Precision
- *
- *  @return The thumbnail image
- *
- */
-- (UIImage *)thumbnailImageAtTime:(NSTimeInterval)playbackTime timeOption:(MPMovieTimeOption)option;
-
-/**
- *  Request a thumbnail image
- *
- *  @param playbackTimes A NSArray of NSTimeInterval, in seconds, when the thumbnail should be taken from the video
- *
- *  @param option Precision
- *
- *  @return The thumbnail image
- *
- */
-- (void)requestThumbnailImagesAtTimes:(NSArray *)playbackTimes timeOption:(MPMovieTimeOption)option;
 /**
  *  Set the sound volume of the player, in the range of 0.0 to 1.0.
  *
  *  @param volume `CGFloat` sound volume.
  */
 - (void)setVolume:(CGFloat)volume;
+
 /**
  * Get the sound volume of the player, in the range of 0.0 to 1.0.
  *
  * @return The sound volume of the player
  */
 -(CGFloat)getVolume;
+
 /**
  *  Mute the player
  *
  *  @param mute `BOOL` set YES to mute or NO to unmute.
  */
 - (void)setMute:(BOOL)mute;
+
 /**
  * Get if the player is muted or no
  *
  * @return The mute status
  */
 -(BOOL)getMute;
+
+-(BOOL)needsInitialPlaybackTimeDispatch;
 
 
 @optional
@@ -268,5 +240,9 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  *  The priority based on which the backend will be selected
  */
 + (NSInteger) backendPriority;
+
+- (void) willSetURL:(NSURL*)url;
+- (void) didSetURL:(NSURL*)url;
+- (void) clear;
 
 @end

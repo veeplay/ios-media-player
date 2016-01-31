@@ -16,6 +16,7 @@ extern NSString* const APSControlsOverlay;
 #define kAPSControlsPlayedTrackColor @"playedTrackColor"
 #define kAPSControlsBufferedTrackColor @"bufferedTrackColor"
 #define kAPSControlsEmptyTrackColor @"emptyTrackColor"
+#define kAPSControlsSeekThumbImage @"seekThumbImage"
 #define kAPSControlsAdMarkColor @"adMarkColor"
 #define kAPSControlsPlayImage @"playImage"
 #define kAPSControlsPauseImage @"pauseImage"
@@ -27,12 +28,12 @@ extern NSString* const APSControlsOverlay;
 #define kAPSControlsAutohideDuration @"autohideDuration"
 #define kAPSControlsLiveText @"liveText"
 #define kAPSControlsPlaybackTimeText @"playbackTimeText"
-#define kAPSControlsChromecastDisconnectedImage @"chromecastDisconnectedImage"
-#define kAPSControlsChromecastConnectedImage @"chromecastConnectedImage"
 #define kAPSControlsUpdateCurrentTimeWhileSeeking @"updateTimeWhileSeeking"
 
 extern NSString* const APSMoviePlayerCommandHideControls;
 extern NSString* const APSMoviePlayerCommandShowControls;
+
+extern NSString* const APSMoviePlayerCommandExtendControlPlugin;
 
 /**
  *  Controls bar components.
@@ -55,33 +56,29 @@ typedef NS_OPTIONS(NSUInteger, APSControlsOverlayComponents) {
      */
     APSAirPlayControl                       = 1 << 3,
     /**
-     *  The Chromecast video control. This control only appears when a Chromecast ready device is detected in the current network.
-     */
-    APSChromecastControl                    = 1 << 4,
-    /**
      *  The fullscreen toggle control.
      */
-    APSFullScreenControl                    = 1 << 5,
+    APSFullScreenControl                    = 1 << 4,
     /**
      *  The seek bar (time slider) control, with mid-seek thumbnail support.
      */
-    APSThumbnailTimeSliderControl           = 1 << 6,
+    APSThumbnailTimeSliderControl           = 1 << 5,
     /**
      *  Control allowing the user to return to previous unit in the playlist.
      */
-    APSPreviousControl                      = 1 << 7,
+    APSPreviousControl                      = 1 << 6,
     /**
      *  Control allowing the user to proceed to the next unit in the playlist.
      */
-    APSNextControl                          = 1 << 8,
+    APSNextControl                          = 1 << 7,
     /**
      *  The play/stop control.
      */
-    APSPlaybackControl                      = 1 << 9,
+    APSPlaybackControl                      = 1 << 8,
     /**
      *  The ad marks
      */
-    APSAdMarksControl                       = 1 << 10
+    APSAdMarksControl                       = 1 << 9
      
 };
 

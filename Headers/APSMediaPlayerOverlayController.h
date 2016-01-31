@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "APSTypes.h"
 @protocol KRAdapter;
 @class APSMediaOverlay;
 
@@ -114,29 +115,29 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
  */
 - (NSTimeInterval)duration;
 /**
- Allows an overlay controller to return a playback state in place of the parent `APSMediaUnit` object, if the `url` property of that object is nil. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/doc/c_ref/MPMoviePlaybackState) for more details about `MPMoviePlaybackState`.
+ Allows an overlay controller to return a playback state in place of the parent `APSMediaUnit` object, if the `url` property of that object is nil.
  
  This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
  *
  *  @return The current overlay-managed playback state.
  */
-- (MPMoviePlaybackState)playbackState;
+- (APSMoviePlaybackState)playbackState;
 /**
- Allows an overlay controller to return a load state in place of the parent `APSMediaUnit` object, if the `url` property of that object is nil. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/c/tdef/MPMovieLoadState) for more details about `MPMovieLoadState`.
+ Allows an overlay controller to return a load state in place of the parent `APSMediaUnit` object, if the `url` property of that object is nil.
  
  This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
  *
  *  @return The current overlay-managed load state.
  */
-- (MPMovieLoadState)loadState;
+- (APSMovieLoadState)loadState;
 /**
- Allows an overlay controller to return a media source type in place of the parent `APSMediaUnit` object, if the `url` property of that object is nil. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/doc/c_ref/MPMovieSourceType) for more details about `MPMovieSourceType`.
+ Allows an overlay controller to return a media source type in place of the parent `APSMediaUnit` object, if the `url` property of that object is nil.
  
  This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
  *
  *  @return The current overlay-managed media source type.
  */
-- (MPMovieSourceType)movieSourceType;
+- (APSMovieSourceType)movieSourceType;
 /**
  *  Allows an overlay that handles media playback in place of the parent unit to start playback.
  */
@@ -156,7 +157,7 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
  *
  *  @return The resulting thumbnail.
  */
-- (UIImage*)thumbnailImageAtTime:(NSTimeInterval)time;
+- (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock)block;
 
 /**-----------------------------------------------------------------------------
  * @name Defining Behavior for Webview Dismiss Events

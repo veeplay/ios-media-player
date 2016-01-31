@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import "APSMediaTrackableObject.h"
+#import "APSTypes.h"
 
 @class APSVASTAdBreak;
 @class APSMediaOverlay;
@@ -191,9 +192,9 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  */
 @property (nonatomic) NSDictionary *controlsParameters;
 /**
- *  The video clip scaling mode, relative to the player surface. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/doc/c_ref/MPMovieScalingMode) for more details on `MPMovieScalingMode`. Defaults to `MPMovieScalingModeNone`.
+ *  The video clip scaling mode, relative to the player surface. Defaults to `APSMovieScalingModeNone`.
  */
-@property (nonatomic) MPMovieScalingMode scalingMode;
+@property (nonatomic) APSMovieScalingMode scalingMode;
 /**
  *  An array of other media units to be played instead of the current one, should an error be encountered. The unit at index 0 has the highest priority.
  */
@@ -249,17 +250,17 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  * -----------------------------------------------------------------------------
  */
 /**
- Converts a string format to a `MPMovieScalingMode` value. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/doc/c_ref/MPMovieScalingMode) for more details on `MPMovieScalingMode`.
+ Converts a string format to a `APSMovieScalingMode` value.
 
  Possible input values are:
  
- - *"aspectFit"*, that will be converted to `MPMovieScalingModeAspectFit`
- - *"aspectFill"*, that will be converted to `MPMovieScalingModeAspectFill`
- - *"fill"*, that will be converted to `MPMovieScalingModeFill`
+ - *"aspectFit"*, that will be converted to `APSMovieScalingModeAspectFit`
+ - *"aspectFill"*, that will be converted to `APSMovieScalingModeAspectFill`
+ - *"fill"*, that will be converted to `APSMovieScalingModeFill`
 
  @param string A string format to be converted.
  
- @return A `MPMovieScalingMode` value.
+ @return A `APSMovieScalingMode` value.
  */
-+ (MPMovieScalingMode)scalingModeFromString:(NSString*)string;
++ (APSMovieScalingMode)scalingModeFromString:(NSString*)string;
 @end

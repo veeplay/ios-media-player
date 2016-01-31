@@ -218,9 +218,9 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  The ad video clip scaling mode, relative to the player surface.
  
- See Apple's [documentation](https://developer.apple.com/library/ios/documentation/MediaPlayer/Reference/MPMoviePlayerController_Class/Reference/Reference.html#//apple_ref/doc/c_ref/MPMovieScalingMode) for more details on `MPMovieScalingMode`. Defaults to `MPMovieScalingModeNone`.
+ Defaults to `APSMovieScalingModeAspectFit`.
  */
-@property (nonatomic) MPMovieScalingMode scalingMode;
+@property (nonatomic) APSMovieScalingMode scalingMode;
 
 /**
  Defines if the pinch-to-fullscreen gesture should be activated for generated video ads.
