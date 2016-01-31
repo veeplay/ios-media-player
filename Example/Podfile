@@ -1,1 +1,5 @@
-pod 'VeesoPlayer', :path => "../VeesoPlayer.podspec"
+platform :ios, '6.0'
+
+target "VeeplayDemo" do
+  pod 'Veeplay', :path => "../Veeplay.podspec"
+end

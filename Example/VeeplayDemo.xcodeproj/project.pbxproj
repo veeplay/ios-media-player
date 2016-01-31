@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9424893689BF44F17FBAC479 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C3F80D650C4E60A6342A9B /* libPods.a */; };
+		5CF1D294A7BD3BAF793C915A /* libPods-VeeplayDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C69202B41A9604DE8A8CE920 /* libPods-VeeplayDemo.a */; };
 		A5B8E9B11B25FE6C00384445 /* FullscreenTransitioner.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B8E9AE1B25FE6C00384445 /* FullscreenTransitioner.m */; };
 		A5B8E9B21B25FE6C00384445 /* FullscreenPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B8E9B01B25FE6C00384445 /* FullscreenPresentationController.m */; };
 		CE0973B019C1FBC100B287B9 /* ManualConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B7B4719B48361008ECF95 /* ManualConfigurationViewController.m */; };
@@ -37,30 +37,16 @@
 		CEEDEDF019B285E000D2436B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEDEDEE19B285E000D2436B /* Main_iPhone.storyboard */; };
 		CEEDEDF619B285E000D2436B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEDF519B285E000D2436B /* ViewController.m */; };
 		CEEDEDF819B285E000D2436B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEDEDF719B285E000D2436B /* Images.xcassets */; };
-		CEEDEDFF19B285E000D2436B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEDEDFE19B285E000D2436B /* XCTest.framework */; };
-		CEEDEE0019B285E000D2436B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEDEDDC19B285E000D2436B /* Foundation.framework */; };
-		CEEDEE0119B285E000D2436B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEDEDE019B285E000D2436B /* UIKit.framework */; };
-		CEEDEE0919B285E000D2436B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEEDEE0719B285E000D2436B /* InfoPlist.strings */; };
-		CEEDEE0B19B285E000D2436B /* VeesoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEDEE0A19B285E000D2436B /* VeesoDemoTests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CEEDEE0219B285E000D2436B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEEDEDD119B285DF00D2436B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEEDEDD819B285E000D2436B;
-			remoteInfo = VeesoDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		49E78968F9260281DF9452B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		329184D6FD0395280166C111 /* Pods-VeeplayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeeplayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VeeplayDemo/Pods-VeeplayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3A03F951F4696B82D2E931C8 /* Pods-VeeplayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeeplayDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VeeplayDemo/Pods-VeeplayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A5B8E9AD1B25FE6C00384445 /* FullscreenTransitioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullscreenTransitioner.h; sourceTree = "<group>"; };
 		A5B8E9AE1B25FE6C00384445 /* FullscreenTransitioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullscreenTransitioner.m; sourceTree = "<group>"; };
 		A5B8E9AF1B25FE6C00384445 /* FullscreenPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullscreenPresentationController.h; sourceTree = "<group>"; };
 		A5B8E9B01B25FE6C00384445 /* FullscreenPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullscreenPresentationController.m; sourceTree = "<group>"; };
-		C348D6FA6842E8836C779EB0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C69202B41A9604DE8A8CE920 /* libPods-VeeplayDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VeeplayDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE05D52019D466F300E3F513 /* libPods-KAProgressLabel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-KAProgressLabel.a"; path = "Pods/build/Debug-iphoneos/libPods-KAProgressLabel.a"; sourceTree = "<group>"; };
 		CE05D52219D466F600E3F513 /* libPods-TBXML.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-TBXML.a"; path = "Pods/build/Debug-iphoneos/libPods-TBXML.a"; sourceTree = "<group>"; };
 		CE05D52419D466F900E3F513 /* libPods-TSMiniWebBrowser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-TSMiniWebBrowser.a"; path = "Pods/build/Debug-iphoneos/libPods-TSMiniWebBrowser.a"; sourceTree = "<group>"; };
@@ -90,7 +76,7 @@
 		CEC1C53919B3C30000758D1E /* i_4@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "i_4@2x.jpg"; sourceTree = "<group>"; };
 		CEC1C53A19B3C30000758D1E /* i_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i_5.jpg; sourceTree = "<group>"; };
 		CEC1C53B19B3C30000758D1E /* i_5@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "i_5@2x.jpg"; sourceTree = "<group>"; };
-		CEEDEDD919B285E000D2436B /* VeesoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeesoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEDEDD919B285E000D2436B /* VeesoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = VeesoDemo.app; path = VeeplayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEDEDDC19B285E000D2436B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEEDEDDE19B285E000D2436B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CEEDEDE019B285E000D2436B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -104,12 +90,10 @@
 		CEEDEDF419B285E000D2436B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CEEDEDF519B285E000D2436B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEEDEDF719B285E000D2436B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CEEDEDFD19B285E000D2436B /* VeesoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeesoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEDEDFE19B285E000D2436B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CEEDEE0619B285E000D2436B /* VeesoDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VeesoDemoTests-Info.plist"; sourceTree = "<group>"; };
 		CEEDEE0819B285E000D2436B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEEDEE0A19B285E000D2436B /* VeesoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeesoDemoTests.m; sourceTree = "<group>"; };
-		E6C3F80D650C4E60A6342A9B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,28 +104,18 @@
 				CEEDEDDF19B285E000D2436B /* CoreGraphics.framework in Frameworks */,
 				CEEDEDE119B285E000D2436B /* UIKit.framework in Frameworks */,
 				CEEDEDDD19B285E000D2436B /* Foundation.framework in Frameworks */,
-				9424893689BF44F17FBAC479 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEEDEDFA19B285E000D2436B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEEDEDFF19B285E000D2436B /* XCTest.framework in Frameworks */,
-				CEEDEE0119B285E000D2436B /* UIKit.framework in Frameworks */,
-				CEEDEE0019B285E000D2436B /* Foundation.framework in Frameworks */,
+				5CF1D294A7BD3BAF793C915A /* libPods-VeeplayDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C4A1415703FC776099A007B /* Pods */ = {
+		184337570C76F12A0D109D7D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				49E78968F9260281DF9452B3 /* Pods.debug.xcconfig */,
-				C348D6FA6842E8836C779EB0 /* Pods.release.xcconfig */,
+				3A03F951F4696B82D2E931C8 /* Pods-VeeplayDemo.debug.xcconfig */,
+				329184D6FD0395280166C111 /* Pods-VeeplayDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -186,11 +160,11 @@
 		CEEDEDD019B285DF00D2436B = {
 			isa = PBXGroup;
 			children = (
-				CEEDEDE219B285E000D2436B /* VeesoDemo */,
+				CEEDEDE219B285E000D2436B /* VeeplayDemo */,
 				CEEDEE0419B285E000D2436B /* VeesoDemoTests */,
 				CEEDEDDB19B285E000D2436B /* Frameworks */,
 				CEEDEDDA19B285E000D2436B /* Products */,
-				3C4A1415703FC776099A007B /* Pods */,
+				184337570C76F12A0D109D7D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				CEEDEDD919B285E000D2436B /* VeesoDemo.app */,
-				CEEDEDFD19B285E000D2436B /* VeesoDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,12 +186,12 @@
 				CEEDEDDE19B285E000D2436B /* CoreGraphics.framework */,
 				CEEDEDE019B285E000D2436B /* UIKit.framework */,
 				CEEDEDFE19B285E000D2436B /* XCTest.framework */,
-				E6C3F80D650C4E60A6342A9B /* libPods.a */,
+				C69202B41A9604DE8A8CE920 /* libPods-VeeplayDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CEEDEDE219B285E000D2436B /* VeesoDemo */ = {
+		CEEDEDE219B285E000D2436B /* VeeplayDemo */ = {
 			isa = PBXGroup;
 			children = (
 				CE0B7B4519B481DD008ECF95 /* Demos */,
@@ -238,7 +211,7 @@
 				A5B8E9AF1B25FE6C00384445 /* FullscreenPresentationController.h */,
 				A5B8E9B01B25FE6C00384445 /* FullscreenPresentationController.m */,
 			);
-			path = VeesoDemo;
+			path = VeeplayDemo;
 			sourceTree = "<group>";
 		};
 		CEEDEDE319B285E000D2436B /* Supporting Files */ = {
@@ -274,42 +247,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEEDEDD819B285E000D2436B /* VeesoDemo */ = {
+		CEEDEDD819B285E000D2436B /* VeeplayDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEEDEE0E19B285E000D2436B /* Build configuration list for PBXNativeTarget "VeesoDemo" */;
+			buildConfigurationList = CEEDEE0E19B285E000D2436B /* Build configuration list for PBXNativeTarget "VeeplayDemo" */;
 			buildPhases = (
-				82F168586850409288AC7B38 /* Check Pods Manifest.lock */,
+				048E9337F7CB339BE74619D3 /* Check Pods Manifest.lock */,
 				CEEDEDD519B285E000D2436B /* Sources */,
 				CEEDEDD619B285E000D2436B /* Frameworks */,
 				CEEDEDD719B285E000D2436B /* Resources */,
-				9A5171EF7ACA4325958C1118 /* Copy Pods Resources */,
+				1372E16F55AD0942947452B4 /* Embed Pods Frameworks */,
+				1BCECE86F1CFEFC35B3BB0F3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = VeesoDemo;
+			name = VeeplayDemo;
 			productName = VeesoDemo;
 			productReference = CEEDEDD919B285E000D2436B /* VeesoDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		CEEDEDFC19B285E000D2436B /* VeesoDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEEDEE1119B285E000D2436B /* Build configuration list for PBXNativeTarget "VeesoDemoTests" */;
-			buildPhases = (
-				CEEDEDF919B285E000D2436B /* Sources */,
-				CEEDEDFA19B285E000D2436B /* Frameworks */,
-				CEEDEDFB19B285E000D2436B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CEEDEE0319B285E000D2436B /* PBXTargetDependency */,
-			);
-			name = VeesoDemoTests;
-			productName = VeesoDemoTests;
-			productReference = CEEDEDFD19B285E000D2436B /* VeesoDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -319,13 +275,8 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Veeso;
-				TargetAttributes = {
-					CEEDEDFC19B285E000D2436B = {
-						TestTargetID = CEEDEDD819B285E000D2436B;
-					};
-				};
 			};
-			buildConfigurationList = CEEDEDD419B285DF00D2436B /* Build configuration list for PBXProject "VeesoDemo" */;
+			buildConfigurationList = CEEDEDD419B285DF00D2436B /* Build configuration list for PBXProject "VeeplayDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -338,8 +289,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEEDEDD819B285E000D2436B /* VeesoDemo */,
-				CEEDEDFC19B285E000D2436B /* VeesoDemoTests */,
+				CEEDEDD819B285E000D2436B /* VeeplayDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -365,18 +315,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEEDEDFB19B285E000D2436B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEEDEE0919B285E000D2436B /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		82F168586850409288AC7B38 /* Check Pods Manifest.lock */ = {
+		048E9337F7CB339BE74619D3 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -391,7 +333,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9A5171EF7ACA4325958C1118 /* Copy Pods Resources */ = {
+		1372E16F55AD0942947452B4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeeplayDemo/Pods-VeeplayDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BCECE86F1CFEFC35B3BB0F3 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,7 +360,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeeplayDemo/Pods-VeeplayDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -429,23 +386,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEEDEDF919B285E000D2436B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEEDEE0B19B285E000D2436B /* VeesoDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CEEDEE0319B285E000D2436B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEEDEDD819B285E000D2436B /* VeesoDemo */;
-			targetProxy = CEEDEE0219B285E000D2436B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEEDEDE519B285E000D2436B /* InfoPlist.strings */ = {
@@ -551,13 +492,13 @@
 		};
 		CEEDEE0F19B285E000D2436B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49E78968F9260281DF9452B3 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 3A03F951F4696B82D2E931C8 /* Pods-VeeplayDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VeesoDemo/VeesoDemo-Prefix.pch";
-				INFOPLIST_FILE = "VeesoDemo/VeesoDemo-Info.plist";
+				GCC_PREFIX_HEADER = "VeeplayDemo/VeeplayDemo-Prefix.pch";
+				INFOPLIST_FILE = "VeeplayDemo/VeeplayDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -567,14 +508,14 @@
 		};
 		CEEDEE1019B285E000D2436B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C348D6FA6842E8836C779EB0 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 329184D6FD0395280166C111 /* Pods-VeeplayDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VeesoDemo/VeesoDemo-Prefix.pch";
-				INFOPLIST_FILE = "VeesoDemo/VeesoDemo-Info.plist";
+				GCC_PREFIX_HEADER = "VeeplayDemo/VeeplayDemo-Prefix.pch";
+				INFOPLIST_FILE = "VeeplayDemo/VeeplayDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -582,50 +523,10 @@
 			};
 			name = Release;
 		};
-		CEEDEE1219B285E000D2436B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VeesoDemo.app/VeesoDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VeesoDemo/VeesoDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "VeesoDemoTests/VeesoDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		CEEDEE1319B285E000D2436B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VeesoDemo.app/VeesoDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VeesoDemo/VeesoDemo-Prefix.pch";
-				INFOPLIST_FILE = "VeesoDemoTests/VeesoDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEEDEDD419B285DF00D2436B /* Build configuration list for PBXProject "VeesoDemo" */ = {
+		CEEDEDD419B285DF00D2436B /* Build configuration list for PBXProject "VeeplayDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEEDEE0C19B285E000D2436B /* Debug */,
@@ -634,20 +535,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEEDEE0E19B285E000D2436B /* Build configuration list for PBXNativeTarget "VeesoDemo" */ = {
+		CEEDEE0E19B285E000D2436B /* Build configuration list for PBXNativeTarget "VeeplayDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEEDEE0F19B285E000D2436B /* Debug */,
 				CEEDEE1019B285E000D2436B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEEDEE1119B285E000D2436B /* Build configuration list for PBXNativeTarget "VeesoDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEEDEE1219B285E000D2436B /* Debug */,
-				CEEDEE1319B285E000D2436B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
