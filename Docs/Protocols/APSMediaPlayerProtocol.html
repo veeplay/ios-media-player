@@ -1,278 +1,176 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>APSMediaPlayerProtocol Protocol Reference</title>
-		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
-		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.2 (build 963)" />
-	</head>
-	<body>
-		<header id="top_header">
-			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Veeplay Media Player </a></h1>
-				<a id="developerHome" href="../index.html">Veeplay</a>
-			</div>
+<head>
+	<meta charset="utf-8">
+
+	<title>APSMediaPlayerProtocol Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
 			
-			<div id="title" role="banner">
-				<h1 class="hideInXcode">APSMediaPlayerProtocol Protocol Reference</h1>
-			</div>
-			<ul id="headerButtons" role="toolbar">
-				<li id="toc_button">
-					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
-				</li>
-				<li id="jumpto_button" role="navigation">
-					<select id="jumpTo">
+			<h1 id="library-title">
+				<a href="../index.html">Veeplay Media Player </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Veeplay</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
 	<option value="overview">Overview</option>
 	
-	
+
 	
 	
 	<option value="tasks">Tasks</option>
 	
 	
+
 	
 	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/airPlayVideoActive">airPlayVideoActive</option>
+		
+		<option value="//api/name/allowsAirPlay">allowsAirPlay</option>
+		
+		<option value="//api/name/contentURL">contentURL</option>
+		
+		<option value="//api/name/controlStyle">controlStyle</option>
+		
+		<option value="//api/name/currentPlaybackRate">currentPlaybackRate</option>
+		
+		<option value="//api/name/currentPlaybackTime">currentPlaybackTime</option>
+		
+		<option value="//api/name/duration">duration</option>
+		
+		<option value="//api/name/initialPlaybackTime">initialPlaybackTime</option>
+		
+		<option value="//api/name/isPreparedToPlay">isPreparedToPlay</option>
+		
+		<option value="//api/name/loadState">loadState</option>
+		
+		<option value="//api/name/movieSourceType">movieSourceType</option>
+		
+		<option value="//api/name/playableDuration">playableDuration</option>
+		
+		<option value="//api/name/playbackState">playbackState</option>
+		
+		<option value="//api/name/scalingMode">scalingMode</option>
+		
+		<option value="//api/name/shouldAutoplay">shouldAutoplay</option>
+		
+		<option value="//api/name/timedMetadata">timedMetadata</option>
+		
+		<option value="//api/name/view">view</option>
+		
+	</optgroup>
 	
-	<option value="properties">Properties</option>
+
 	
-	<option value="//api/name/airPlayVideoActive">&nbsp;&nbsp;&nbsp;&nbsp;airPlayVideoActive</option>
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/backendPriority">+ backendPriority</option>
+		
+	</optgroup>
 	
-	<option value="//api/name/allowsAirPlay">&nbsp;&nbsp;&nbsp;&nbsp;allowsAirPlay</option>
+
 	
-	<option value="//api/name/contentURL">&nbsp;&nbsp;&nbsp;&nbsp;contentURL</option>
-	
-	<option value="//api/name/controlStyle">&nbsp;&nbsp;&nbsp;&nbsp;controlStyle</option>
-	
-	<option value="//api/name/currentPlaybackRate">&nbsp;&nbsp;&nbsp;&nbsp;currentPlaybackRate</option>
-	
-	<option value="//api/name/currentPlaybackTime">&nbsp;&nbsp;&nbsp;&nbsp;currentPlaybackTime</option>
-	
-	<option value="//api/name/duration">&nbsp;&nbsp;&nbsp;&nbsp;duration</option>
-	
-	<option value="//api/name/initialPlaybackTime">&nbsp;&nbsp;&nbsp;&nbsp;initialPlaybackTime</option>
-	
-	<option value="//api/name/isPreparedToPlay">&nbsp;&nbsp;&nbsp;&nbsp;isPreparedToPlay</option>
-	
-	<option value="//api/name/loadState">&nbsp;&nbsp;&nbsp;&nbsp;loadState</option>
-	
-	<option value="//api/name/movieSourceType">&nbsp;&nbsp;&nbsp;&nbsp;movieSourceType</option>
-	
-	<option value="//api/name/playableDuration">&nbsp;&nbsp;&nbsp;&nbsp;playableDuration</option>
-	
-	<option value="//api/name/playbackState">&nbsp;&nbsp;&nbsp;&nbsp;playbackState</option>
-	
-	<option value="//api/name/scalingMode">&nbsp;&nbsp;&nbsp;&nbsp;scalingMode</option>
-	
-	<option value="//api/name/shouldAutoplay">&nbsp;&nbsp;&nbsp;&nbsp;shouldAutoplay</option>
-	
-	<option value="//api/name/timedMetadata">&nbsp;&nbsp;&nbsp;&nbsp;timedMetadata</option>
-	
-	<option value="//api/name/view">&nbsp;&nbsp;&nbsp;&nbsp;view</option>
-	
-	
-	
-	
-	<option value="class_methods">Class Methods</option>
-	
-	<option value="//api/name/backendPriority">&nbsp;&nbsp;&nbsp;&nbsp;+ backendPriority</option>
-	
-	
-	
-	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/appendURL:">&nbsp;&nbsp;&nbsp;&nbsp;- appendURL:</option>
-	
-	<option value="//api/name/beginSeekingBackward">&nbsp;&nbsp;&nbsp;&nbsp;- beginSeekingBackward</option>
-	
-	<option value="//api/name/beginSeekingForward">&nbsp;&nbsp;&nbsp;&nbsp;- beginSeekingForward</option>
-	
-	<option value="//api/name/clear">&nbsp;&nbsp;&nbsp;&nbsp;- clear</option>
-	
-	<option value="//api/name/didSetURL:">&nbsp;&nbsp;&nbsp;&nbsp;- didSetURL:</option>
-	
-	<option value="//api/name/endSeeking">&nbsp;&nbsp;&nbsp;&nbsp;- endSeeking</option>
-	
-	<option value="//api/name/getMute">&nbsp;&nbsp;&nbsp;&nbsp;- getMute</option>
-	
-	<option value="//api/name/getVolume">&nbsp;&nbsp;&nbsp;&nbsp;- getVolume</option>
-	
-	<option value="//api/name/initWithURLs:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURLs:</option>
-	
-	<option value="//api/name/insertURL:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- insertURL:atIndex:</option>
-	
-	<option value="//api/name/pause">&nbsp;&nbsp;&nbsp;&nbsp;- pause</option>
-	
-	<option value="//api/name/play">&nbsp;&nbsp;&nbsp;&nbsp;- play</option>
-	
-	<option value="//api/name/prepareToPlay">&nbsp;&nbsp;&nbsp;&nbsp;- prepareToPlay</option>
-	
-	<option value="//api/name/setMute:">&nbsp;&nbsp;&nbsp;&nbsp;- setMute:</option>
-	
-	<option value="//api/name/setVolume:">&nbsp;&nbsp;&nbsp;&nbsp;- setVolume:</option>
-	
-	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
-	
-	<option value="//api/name/streamSourceType">&nbsp;&nbsp;&nbsp;&nbsp;- streamSourceType</option>
-	
-	<option value="//api/name/thumbnailAt:withCompletionBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- thumbnailAt:withCompletionBlock:</option>
-	
-	<option value="//api/name/willSetURL:">&nbsp;&nbsp;&nbsp;&nbsp;- willSetURL:</option>
-	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/appendURL:">- appendURL:</option>
+		
+		<option value="//api/name/beginSeekingBackward">- beginSeekingBackward</option>
+		
+		<option value="//api/name/beginSeekingForward">- beginSeekingForward</option>
+		
+		<option value="//api/name/clear">- clear</option>
+		
+		<option value="//api/name/didSetURL:">- didSetURL:</option>
+		
+		<option value="//api/name/endSeeking">- endSeeking</option>
+		
+		<option value="//api/name/getMute">- getMute</option>
+		
+		<option value="//api/name/getVolume">- getVolume</option>
+		
+		<option value="//api/name/initWithURLs:">- initWithURLs:</option>
+		
+		<option value="//api/name/insertURL:atIndex:">- insertURL:atIndex:</option>
+		
+		<option value="//api/name/pause">- pause</option>
+		
+		<option value="//api/name/play">- play</option>
+		
+		<option value="//api/name/prepareToPlay">- prepareToPlay</option>
+		
+		<option value="//api/name/setMute:">- setMute:</option>
+		
+		<option value="//api/name/setVolume:">- setVolume:</option>
+		
+		<option value="//api/name/stop">- stop</option>
+		
+		<option value="//api/name/streamSourceType">- streamSourceType</option>
+		
+		<option value="//api/name/thumbnailAt:withCompletionBlock:">- thumbnailAt:withCompletionBlock:</option>
+		
+		<option value="//api/name/willSetURL:">- willSetURL:</option>
+		
+	</optgroup>
 	
 	
 </select>
-				</li>
-			</ul>
-		</header>
-		<nav id="tocContainer" class="isShowingTOC">
-			<ul id="toc" role="tree">
-				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
 
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">APSMediaPlayerProtocol Protocol Reference</h1>
 
-
-
-<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the APSAVPlayer&apos;s view">Accessing the APSAVPlayer&apos;s view</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Properties">Properties</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Required protocol methods">Required protocol methods</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Optional protocol methods">Optional protocol methods</a></span></li>
-	
-</ul></li>
-
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/airPlayVideoActive">airPlayVideoActive</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowsAirPlay">allowsAirPlay</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/contentURL">contentURL</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/controlStyle">controlStyle</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentPlaybackRate">currentPlaybackRate</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentPlaybackTime">currentPlaybackTime</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/duration">duration</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initialPlaybackTime">initialPlaybackTime</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPreparedToPlay">isPreparedToPlay</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loadState">loadState</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/movieSourceType">movieSourceType</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playableDuration">playableDuration</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playbackState">playbackState</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scalingMode">scalingMode</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutoplay">shouldAutoplay</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timedMetadata">timedMetadata</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/view">view</a></span></li>
-	
-</ul></li>
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backendPriority">backendPriority</a></span></li>
-	
-</ul></li>
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendURL:">appendURL:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginSeekingBackward">beginSeekingBackward</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginSeekingForward">beginSeekingForward</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clear">clear</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSetURL:">didSetURL:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endSeeking">endSeeking</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getMute">getMute</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getVolume">getVolume</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURLs:">initWithURLs:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertURL:atIndex:">insertURL:atIndex:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pause">pause</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/play">play</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareToPlay">prepareToPlay</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMute:">setMute:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setVolume:">setVolume:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/streamSourceType">streamSourceType</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/thumbnailAt:withCompletionBlock:">thumbnailAt:withCompletionBlock:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willSetURL:">willSetURL:</a></span></li>
-	
-</ul></li>
-
-
-			</ul>
-		</nav>
-		<article>
-			<div id="contents" class="isShowingTOC" role="main">
-				<a title="APSMediaPlayerProtocol Protocol Reference" name="top"></a>
-				<div class="main-navigation navigation-top">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="header">
-					<div class="section-header">
-						<h1 class="title title-header">APSMediaPlayerProtocol Protocol Reference</h1>
-					</div>		
-				</div>
-				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Conforms to</td>
-	<td class="specification-value">NSObject</td>
+	<th>Conforms to</th>
+	<td>NSObject</td>
 </tr><tr>
-	<td class="specification-title">Declared in</td>
-	<td class="specification-value">APSMediaPlayerProtocol.h</td>
+	<th>Declared in</th>
+	<td>APSMediaPlayerProtocol.h</td>
 </tr>
 						</tbody></table></div>
 					
-                    
+
                     
 					
 					<div class="section section-overview">
@@ -300,2034 +198,1896 @@
 					</div>
 					
 					
-					
+
 					
 					
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
-						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
-						
+
 						<a title="Accessing the APSAVPlayer&apos;s view" name="task_Accessing the APSAVPlayer&apos;s view"></a>
-						<h3 class="subsubtitle task-title">Accessing the APSAVPlayer&apos;s view</h3>
+						<h2 class="task-title">Accessing the APSAVPlayer&apos;s view</h2>
 
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/view">&nbsp;&nbsp;view</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li>
-						</ul>
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/view" title="view"></a>
+	<h3 class="method-title"><code><a href="#//api/name/view">&nbsp;&nbsp;view</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The container <code>UIView</code> of the player.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UIView *view</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The container <code>UIView</code> of the player.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
 						
-						
+
 						<a title="Properties" name="task_Properties"></a>
-						<h3 class="subsubtitle task-title">Properties</h3>
+						<h2 class="task-title">Properties</h2>
 
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/isPreparedToPlay">&nbsp;&nbsp;isPreparedToPlay</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initialPlaybackTime">&nbsp;&nbsp;initialPlaybackTime</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/currentPlaybackTime">&nbsp;&nbsp;currentPlaybackTime</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/playableDuration">&nbsp;&nbsp;playableDuration</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/duration">&nbsp;&nbsp;duration</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/currentPlaybackRate">&nbsp;&nbsp;currentPlaybackRate</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/contentURL">&nbsp;&nbsp;contentURL</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/scalingMode">&nbsp;&nbsp;scalingMode</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/shouldAutoplay">&nbsp;&nbsp;shouldAutoplay</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/playbackState">&nbsp;&nbsp;playbackState</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/loadState">&nbsp;&nbsp;loadState</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/movieSourceType">&nbsp;&nbsp;movieSourceType</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/controlStyle">&nbsp;&nbsp;controlStyle</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/timedMetadata">&nbsp;&nbsp;timedMetadata</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/allowsAirPlay">&nbsp;&nbsp;allowsAirPlay</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/airPlayVideoActive">&nbsp;&nbsp;airPlayVideoActive</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	<span class="task-item-suffix">required method</span>
-</li>
-						</ul>
-						
-						
-						<a title="Required protocol methods" name="task_Required protocol methods"></a>
-						<h3 class="subsubtitle task-title">Required protocol methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithURLs:">&ndash;&nbsp;initWithURLs:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/prepareToPlay">&ndash;&nbsp;prepareToPlay</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/play">&ndash;&nbsp;play</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/pause">&ndash;&nbsp;pause</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/beginSeekingForward">&ndash;&nbsp;beginSeekingForward</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/beginSeekingBackward">&ndash;&nbsp;beginSeekingBackward</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/endSeeking">&ndash;&nbsp;endSeeking</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/streamSourceType">&ndash;&nbsp;streamSourceType</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/thumbnailAt:withCompletionBlock:">&ndash;&nbsp;thumbnailAt:withCompletionBlock:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setVolume:">&ndash;&nbsp;setVolume:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/getVolume">&ndash;&nbsp;getVolume</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setMute:">&ndash;&nbsp;setMute:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/getMute">&ndash;&nbsp;getMute</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li>
-						</ul>
-						
-						
-						<a title="Optional protocol methods" name="task_Optional protocol methods"></a>
-						<h3 class="subsubtitle task-title">Optional protocol methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/appendURL:">&ndash;&nbsp;appendURL:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/insertURL:atIndex:">&ndash;&nbsp;insertURL:atIndex:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/backendPriority">+&nbsp;backendPriority</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/willSetURL:">&ndash;&nbsp;willSetURL:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/didSetURL:">&ndash;&nbsp;didSetURL:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/clear">&ndash;&nbsp;clear</a></code>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-					</div>
-					
-					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/airPlayVideoActive" title="airPlayVideoActive"></a>
-	<h3 class="subsubtitle method-title">airPlayVideoActive</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Check out if AirPlay video is started or stopped.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL airPlayVideoActive</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Check out if AirPlay video is started or stopped.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/allowsAirPlay" title="allowsAirPlay"></a>
-	<h3 class="subsubtitle method-title">allowsAirPlay</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Specifies whether the movie player allows AirPlay movie playback.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL allowsAirPlay</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Specifies whether the movie player allows AirPlay movie playback.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/contentURL" title="contentURL"></a>
-	<h3 class="subsubtitle method-title">contentURL</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get or set the current media&rsquo;s URL</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSURL *contentURL</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get or set the current media&rsquo;s URL</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/controlStyle" title="controlStyle"></a>
-	<h3 class="subsubtitle method-title">controlStyle</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Set or get how the player controls will appear</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMovieControlStyle controlStyle</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set or get how the player controls will appear</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/currentPlaybackRate" title="currentPlaybackRate"></a>
-	<h3 class="subsubtitle method-title">currentPlaybackRate</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get or set the current playback rate</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) float currentPlaybackRate</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get or set the current playback rate</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/currentPlaybackTime" title="currentPlaybackTime"></a>
-	<h3 class="subsubtitle method-title">currentPlaybackTime</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get or set the current position in stream</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval currentPlaybackTime</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get or set the current position in stream</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/duration" title="duration"></a>
-	<h3 class="subsubtitle method-title">duration</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get the total duration of the video</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSTimeInterval duration</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get the total duration of the video</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/initialPlaybackTime" title="initialPlaybackTime"></a>
-	<h3 class="subsubtitle method-title">initialPlaybackTime</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get or set the initial time in stream from which the player will start playing the media</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval initialPlaybackTime</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get or set the initial time in stream from which the player will start playing the media</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/isPreparedToPlay" title="isPreparedToPlay"></a>
-	<h3 class="subsubtitle method-title">isPreparedToPlay</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Returns a Boolean value specifing if the player is ready to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/isPreparedToPlay">&nbsp;&nbsp;isPreparedToPlay</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isPreparedToPlay</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns a Boolean value specifing if the player is ready to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a Boolean value specifing if the player is ready to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isPreparedToPlay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a Boolean value specifing if the player is ready to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/loadState" title="loadState"></a>
-	<h3 class="subsubtitle method-title">loadState</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get the current state of the buffer</p>
-	</div>		
-	
-    
+</div><div class="section-method">
+	<a name="//api/name/initialPlaybackTime" title="initialPlaybackTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initialPlaybackTime">&nbsp;&nbsp;initialPlaybackTime</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) APSMovieLoadState loadState</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get the current state of the buffer</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set the initial time in stream from which the player will start playing the media</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval initialPlaybackTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set the initial time in stream from which the player will start playing the media</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/movieSourceType" title="movieSourceType"></a>
-	<h3 class="subsubtitle method-title">movieSourceType</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get the current media&rsquo;s source type (e.g. file or stream)</p>
-	</div>		
-	
-    
+</div><div class="section-method">
+	<a name="//api/name/currentPlaybackTime" title="currentPlaybackTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentPlaybackTime">&nbsp;&nbsp;currentPlaybackTime</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMovieSourceType movieSourceType</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get the current media&rsquo;s source type (e.g. file or stream)</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set the current position in stream</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval currentPlaybackTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set the current position in stream</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
+</div><div class="section-method">
 	<a name="//api/name/playableDuration" title="playableDuration"></a>
-	<h3 class="subsubtitle method-title">playableDuration</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get the <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/duration">duration</a> of the buffered content</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/playableDuration">&nbsp;&nbsp;playableDuration</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSTimeInterval playableDuration</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get the <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/duration">duration</a> of the buffered content</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/duration">duration</a> of the buffered content</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSTimeInterval playableDuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/duration">duration</a> of the buffered content</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/playbackState" title="playbackState"></a>
-	<h3 class="subsubtitle method-title">playbackState</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get the current playback state</p>
-	</div>		
-	
-    
+</div><div class="section-method">
+	<a name="//api/name/duration" title="duration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/duration">&nbsp;&nbsp;duration</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) APSMoviePlaybackState playbackState</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get the current playback state</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the total duration of the video</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSTimeInterval duration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the total duration of the video</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
+</div><div class="section-method">
+	<a name="//api/name/currentPlaybackRate" title="currentPlaybackRate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentPlaybackRate">&nbsp;&nbsp;currentPlaybackRate</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set the current playback rate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) float currentPlaybackRate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set the current playback rate</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contentURL" title="contentURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contentURL">&nbsp;&nbsp;contentURL</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set the current media&rsquo;s URL</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSURL *contentURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set the current media&rsquo;s URL</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/scalingMode" title="scalingMode"></a>
-	<h3 class="subsubtitle method-title">scalingMode</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get or set the scaling mode of the video according to its viewport</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/scalingMode">&nbsp;&nbsp;scalingMode</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMovieScalingMode scalingMode</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get or set the scaling mode of the video according to its viewport</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set the scaling mode of the video according to its viewport</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMovieScalingMode scalingMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set the scaling mode of the video according to its viewport</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
+</div><div class="section-method">
 	<a name="//api/name/shouldAutoplay" title="shouldAutoplay"></a>
-	<h3 class="subsubtitle method-title">shouldAutoplay</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get or set if the player should auto<a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> an URL as soon as it is provided</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/shouldAutoplay">&nbsp;&nbsp;shouldAutoplay</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL shouldAutoplay</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get or set if the player should auto<a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> an URL as soon as it is provided</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set if the player should auto<a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> an URL as soon as it is provided</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL shouldAutoplay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set if the player should auto<a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> an URL as soon as it is provided</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
+</div><div class="section-method">
+	<a name="//api/name/playbackState" title="playbackState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playbackState">&nbsp;&nbsp;playbackState</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the current playback state</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) APSMoviePlaybackState playbackState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the current playback state</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadState" title="loadState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadState">&nbsp;&nbsp;loadState</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the current state of the buffer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) APSMovieLoadState loadState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the current state of the buffer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/movieSourceType" title="movieSourceType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/movieSourceType">&nbsp;&nbsp;movieSourceType</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the current media&rsquo;s source type (e.g. file or stream)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMovieSourceType movieSourceType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the current media&rsquo;s source type (e.g. file or stream)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/controlStyle" title="controlStyle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/controlStyle">&nbsp;&nbsp;controlStyle</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set or get how the player controls will appear</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMovieControlStyle controlStyle</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set or get how the player controls will appear</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/timedMetadata" title="timedMetadata"></a>
-	<h3 class="subsubtitle method-title">timedMetadata</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Obtains the most recent time-based metadata provided by the streamed movie.</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/timedMetadata">&nbsp;&nbsp;timedMetadata</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *timedMetadata</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Obtains the most recent time-based metadata provided by the streamed movie.</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Obtains the most recent time-based metadata provided by the streamed movie.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *timedMetadata</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Obtains the most recent time-based metadata provided by the streamed movie.</p>
 
 <p>Returns an array of the most recent MPTimedMetadata objects provided by the media stream.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/view" title="view"></a>
-	<h3 class="subsubtitle method-title">view</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The container <code>UIView</code> of the player.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UIView *view</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The container <code>UIView</code> of the player.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Class Methods" name="class_methods"></a>
-						<h2 class="subtitle subtitle-methods">Class Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/backendPriority" title="backendPriority"></a>
-	<h3 class="subsubtitle method-title">backendPriority</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The priority based on which the backend will be selected</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>+ (NSInteger)backendPriority</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The priority based on which the backend will be selected</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/appendURL:" title="appendURL:"></a>
-	<h3 class="subsubtitle method-title">appendURL:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Add an URL to the current <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> queue</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)appendURL:(NSURL *)<em>url</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>url</em></dt>
-			<dd><p>A NSURL instance pointing to the media location</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Add an URL to the current <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> queue</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/beginSeekingBackward" title="beginSeekingBackward"></a>
-	<h3 class="subsubtitle method-title">beginSeekingBackward</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Rewind the media</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)beginSeekingBackward</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Rewind the media</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/beginSeekingForward" title="beginSeekingForward"></a>
-	<h3 class="subsubtitle method-title">beginSeekingForward</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Play the media with an increased playback rate (speed)</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)beginSeekingForward</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Play the media with an increased playback rate (speed)</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/clear" title="clear"></a>
-	<h3 class="subsubtitle method-title">clear</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>This is invoked by the player after playback is complete</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)clear</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This is invoked by the player after playback is complete</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/didSetURL:" title="didSetURL:"></a>
-	<h3 class="subsubtitle method-title">didSetURL:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>This is invoked by the player after setting a new URL for playback</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)didSetURL:(NSURL *)<em>url</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>url</em></dt>
-			<dd><p>A NSURL instance pointing to the media location</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This is invoked by the player after setting a new URL for playback</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/endSeeking" title="endSeeking"></a>
-	<h3 class="subsubtitle method-title">endSeeking</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Stop the seeking process startd by <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/beginSeekingForward">beginSeekingForward</a> or <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/beginSeekingBackward">beginSeekingBackward</a>;</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)endSeeking</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Stop the seeking process startd by <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/beginSeekingForward">beginSeekingForward</a> or <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/beginSeekingBackward">beginSeekingBackward</a>;</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/getMute" title="getMute"></a>
-	<h3 class="subsubtitle method-title">getMute</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get if the player is muted or no</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (BOOL)getMute</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The mute status</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get if the player is muted or no</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/getVolume" title="getVolume"></a>
-	<h3 class="subsubtitle method-title">getVolume</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get the sound volume of the player, in the range of 0.0 to 1.0.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (CGFloat)getVolume</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The sound volume of the player</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get the sound volume of the player, in the range of 0.0 to 1.0.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/initWithURLs:" title="initWithURLs:"></a>
-	<h3 class="subsubtitle method-title">initWithURLs:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Create a <a href="../Classes/APSAVPlayer.html">APSAVPlayer</a> instance</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (id)initWithURLs:(NSArray *)<em>urls</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>urls</em></dt>
-			<dd><p>A NSArray of NSURLs pointing to the media location</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The <a href="../Classes/APSAVPlayer.html"><code>APSAVPlayer</code></a> instance</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Create a <a href="../Classes/APSAVPlayer.html">APSAVPlayer</a> instance</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/insertURL:atIndex:" title="insertURL:atIndex:"></a>
-	<h3 class="subsubtitle method-title">insertURL:atIndex:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Insert an URL to the current <a href="#//api/name/play">play</a> queue at the given position</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)insertURL:(NSURL *)<em>url</em> atIndex:(NSInteger)<em>index</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>url</em></dt>
-			<dd><p>A NSURL instance pointing to the media location</p>
-
-<p>@param index</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Insert an URL to the current <a href="#//api/name/play">play</a> queue at the given position</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/pause" title="pause"></a>
-	<h3 class="subsubtitle method-title">pause</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Pause the current playing media</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)pause</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Pause the current playing media</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/play" title="play"></a>
-	<h3 class="subsubtitle method-title">play</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Play the current media in the queue</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)play</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Play the current media in the queue</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/prepareToPlay" title="prepareToPlay"></a>
-	<h3 class="subsubtitle method-title">prepareToPlay</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Prepare to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media. This is also automatically called on <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a></p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)prepareToPlay</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Prepare to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media. This is also automatically called on <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a></p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/setMute:" title="setMute:"></a>
-	<h3 class="subsubtitle method-title">setMute:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Mute the player</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)setMute:(BOOL)<em>mute</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>mute</em></dt>
-			<dd><p><code>BOOL</code> set YES to mute or NO to unmute.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Mute the player</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/setVolume:" title="setVolume:"></a>
-	<h3 class="subsubtitle method-title">setVolume:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Set the sound volume of the player, in the range of 0.0 to 1.0.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)setVolume:(CGFloat)<em>volume</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>volume</em></dt>
-			<dd><p><code>CGFloat</code> sound volume.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set the sound volume of the player, in the range of 0.0 to 1.0.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/stop" title="stop"></a>
-	<h3 class="subsubtitle method-title">stop</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Stop the player, remove all the items from the queue and remove the player&rsquo;s CALayer from its superlayer</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Stop the player, remove all the items from the queue and remove the player&rsquo;s CALayer from its superlayer</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/streamSourceType" title="streamSourceType"></a>
-	<h3 class="subsubtitle method-title">streamSourceType</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Get the stream&rsquo;s source type. Different by <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/movieSourceType">movieSourceType</a> because it returns if the stream is
-a VOD stream or a live stream.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (APSMovieStreamSourceType)streamSourceType</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The stream&rsquo;s type as a <a href="../Constants/APSMovieStreamSourceType.html"><code>APSMovieStreamSourceType</code></a> enum</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Get the stream&rsquo;s source type. Different by <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/movieSourceType">movieSourceType</a> because it returns if the stream is
-a VOD stream or a live stream.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/thumbnailAt:withCompletionBlock:" title="thumbnailAt:withCompletionBlock:"></a>
-	<h3 class="subsubtitle method-title">thumbnailAt:withCompletionBlock:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Request a thumbnail image</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)thumbnailAt:(NSTimeInterval)<em>playbackTime</em> withCompletionBlock:(APSThumbnailGeneratedBlock)<em>block</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>playbackTime</em></dt>
-			<dd><p>The time when the thumbnail should be taken from the video.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>block</em></dt>
-			<dd><p>The block to be invoked on thumbnail generation completion.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Request a thumbnail image</p><div class="warning"><p><strong>Warning:</strong> This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.</p></div>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/willSetURL:" title="willSetURL:"></a>
-	<h3 class="subsubtitle method-title">willSetURL:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>This is invoked by the player before setting a new URL for playback</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)willSetURL:(NSURL *)<em>url</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>url</em></dt>
-			<dd><p>A NSURL instance pointing to the media location</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This is invoked by the player before setting a new URL for playback</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
-					
-                    
-                    
-				</div>
-				<div class="main-navigation navigation-bottom">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="footer">
-					<hr />
-					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2016 Veeplay. All rights reserved. (Last updated: 2016-02-01)</span><br />
-						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
-						
-					</div>
-				</div>
 			</div>
-		</article>
-		<script type="text/javascript">
-			function jumpToChange()
-			{
-				window.location.hash = this.options[this.selectedIndex].value;
-			}
 			
-			function toggleTOC()
-			{
-				var contents = document.getElementById('contents');
-				var tocContainer = document.getElementById('tocContainer');
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/allowsAirPlay" title="allowsAirPlay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allowsAirPlay">&nbsp;&nbsp;allowsAirPlay</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies whether the movie player allows AirPlay movie playback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL allowsAirPlay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Specifies whether the movie player allows AirPlay movie playback.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/airPlayVideoActive" title="airPlayVideoActive"></a>
+	<h3 class="method-title"><code><a href="#//api/name/airPlayVideoActive">&nbsp;&nbsp;airPlayVideoActive</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check out if AirPlay video is started or stopped.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL airPlayVideoActive</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Check out if AirPlay video is started or stopped.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Required protocol methods" name="task_Required protocol methods"></a>
+						<h2 class="task-title">Required protocol methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithURLs:" title="initWithURLs:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithURLs:">&ndash;&nbsp;initWithURLs:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a <a href="../Classes/APSAVPlayer.html">APSAVPlayer</a> instance</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithURLs:(NSArray *)<em>urls</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
 				
-				if (this.getAttribute('class') == 'open')
-				{
-					this.setAttribute('class', '');
-					contents.setAttribute('class', '');
-					tocContainer.setAttribute('class', '');
+					<tr>
+						<th scope="row" class="argument-name"><code>urls</code></th>
+						<td><p>A NSArray of NSURLs pointing to the media location</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The <a href="../Classes/APSAVPlayer.html"><code>APSAVPlayer</code></a> instance</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Create a <a href="../Classes/APSAVPlayer.html">APSAVPlayer</a> instance</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/prepareToPlay" title="prepareToPlay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prepareToPlay">&ndash;&nbsp;prepareToPlay</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Prepare to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media. This is also automatically called on <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)prepareToPlay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Prepare to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media. This is also automatically called on <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/play" title="play"></a>
+	<h3 class="method-title"><code><a href="#//api/name/play">&ndash;&nbsp;play</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Play the current media in the queue</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)play</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Play the current media in the queue</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pause" title="pause"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pause">&ndash;&nbsp;pause</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Pause the current playing media</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)pause</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Pause the current playing media</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stop the player, remove all the items from the queue and remove the player&rsquo;s CALayer from its superlayer</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stop the player, remove all the items from the queue and remove the player&rsquo;s CALayer from its superlayer</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beginSeekingForward" title="beginSeekingForward"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beginSeekingForward">&ndash;&nbsp;beginSeekingForward</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Play the media with an increased playback rate (speed)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)beginSeekingForward</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Play the media with an increased playback rate (speed)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/beginSeekingBackward" title="beginSeekingBackward"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beginSeekingBackward">&ndash;&nbsp;beginSeekingBackward</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Rewind the media</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)beginSeekingBackward</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Rewind the media</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/endSeeking" title="endSeeking"></a>
+	<h3 class="method-title"><code><a href="#//api/name/endSeeking">&ndash;&nbsp;endSeeking</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stop the seeking process startd by <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/beginSeekingForward">beginSeekingForward</a> or <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/beginSeekingBackward">beginSeekingBackward</a>;</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)endSeeking</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stop the seeking process startd by <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/beginSeekingForward">beginSeekingForward</a> or <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/beginSeekingBackward">beginSeekingBackward</a>;</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/streamSourceType" title="streamSourceType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/streamSourceType">&ndash;&nbsp;streamSourceType</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the stream&rsquo;s source type. Different by <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/movieSourceType">movieSourceType</a> because it returns if the stream is
+a VOD stream or a live stream.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (APSMovieStreamSourceType)streamSourceType</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The stream&rsquo;s type as a <a href="../Constants/APSMovieStreamSourceType.html"><code>APSMovieStreamSourceType</code></a> enum</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the stream&rsquo;s source type. Different by <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/movieSourceType">movieSourceType</a> because it returns if the stream is
+a VOD stream or a live stream.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/thumbnailAt:withCompletionBlock:" title="thumbnailAt:withCompletionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/thumbnailAt:withCompletionBlock:">&ndash;&nbsp;thumbnailAt:withCompletionBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request a thumbnail image</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)thumbnailAt:(NSTimeInterval)<em>playbackTime</em> withCompletionBlock:(APSThumbnailGeneratedBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playbackTime</code></th>
+						<td><p>The time when the thumbnail should be taken from the video.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be invoked on thumbnail generation completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Request a thumbnail image</p><div class="warning"><p><strong>Warning:</strong> This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setVolume:" title="setVolume:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setVolume:">&ndash;&nbsp;setVolume:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the sound volume of the player, in the range of 0.0 to 1.0.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setVolume:(CGFloat)<em>volume</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>volume</code></th>
+						<td><p><code>CGFloat</code> sound volume.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the sound volume of the player, in the range of 0.0 to 1.0.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getVolume" title="getVolume"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getVolume">&ndash;&nbsp;getVolume</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the sound volume of the player, in the range of 0.0 to 1.0.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CGFloat)getVolume</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The sound volume of the player</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the sound volume of the player, in the range of 0.0 to 1.0.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setMute:" title="setMute:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMute:">&ndash;&nbsp;setMute:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Mute the player</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setMute:(BOOL)<em>mute</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mute</code></th>
+						<td><p><code>BOOL</code> set YES to mute or NO to unmute.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Mute the player</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMute" title="getMute"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMute">&ndash;&nbsp;getMute</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get if the player is muted or no</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getMute</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The mute status</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get if the player is muted or no</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Optional protocol methods" name="task_Optional protocol methods"></a>
+						<h2 class="task-title">Optional protocol methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/appendURL:" title="appendURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appendURL:">&ndash;&nbsp;appendURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add an URL to the current <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> queue</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)appendURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>A NSURL instance pointing to the media location</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Add an URL to the current <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> queue</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/insertURL:atIndex:" title="insertURL:atIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/insertURL:atIndex:">&ndash;&nbsp;insertURL:atIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Insert an URL to the current <a href="#//api/name/play">play</a> queue at the given position</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)insertURL:(NSURL *)<em>url</em> atIndex:(NSInteger)<em>index</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>A NSURL instance pointing to the media location</p>
+
+<p>@param index</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Insert an URL to the current <a href="#//api/name/play">play</a> queue at the given position</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/backendPriority" title="backendPriority"></a>
+	<h3 class="method-title"><code><a href="#//api/name/backendPriority">+&nbsp;backendPriority</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The priority based on which the backend will be selected</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSInteger)backendPriority</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The priority based on which the backend will be selected</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/willSetURL:" title="willSetURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/willSetURL:">&ndash;&nbsp;willSetURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is invoked by the player before setting a new URL for playback</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)willSetURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>A NSURL instance pointing to the media location</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is invoked by the player before setting a new URL for playback</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didSetURL:" title="didSetURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didSetURL:">&ndash;&nbsp;didSetURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is invoked by the player after setting a new URL for playback</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didSetURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>A NSURL instance pointing to the media location</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is invoked by the player after setting a new URL for playback</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clear" title="clear"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clear">&ndash;&nbsp;clear</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is invoked by the player after playback is complete</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clear</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is invoked by the player after playback is complete</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
 					
-					window.name = "hideTOC";
-				}
-				else
-				{
-					this.setAttribute('class', 'open');
-					contents.setAttribute('class', 'isShowingTOC');
-					tocContainer.setAttribute('class', 'isShowingTOC');
 					
-					window.name = "";
-				}
-				return false;
-			}
-			
-			function toggleTOCEntryChildren(e)
-			{
-				e.stopPropagation();
-				var currentClass = this.getAttribute('class');
-				if (currentClass == 'children') {
-					this.setAttribute('class', 'children open');
-				}
-				else if (currentClass == 'children open') {
-					this.setAttribute('class', 'children');
-				}
-				return false;
-			}
-			
-			function tocEntryClick(e)
-			{
-				e.stopPropagation();
-				return true;
-			}
-			
-			function init()
-			{
-				var selectElement = document.getElementById('jumpTo');
-				selectElement.addEventListener('change', jumpToChange, false);
-				
-				var tocButton = document.getElementById('table_of_contents');
-				tocButton.addEventListener('click', toggleTOC, false);
-				
-				var taskTreeItem = document.getElementById('task_treeitem');
-				if (taskTreeItem.getElementsByTagName('li').length > 0)
-				{
-					taskTreeItem.setAttribute('class', 'children');
-					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
-				}
-				
-				var tocList = document.getElementById('toc');
-				
-				var tocEntries = tocList.getElementsByTagName('li');
-				for (var i = 0; i < tocEntries.length; i++) {
-					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
-				}
-				
-				var tocLinks = tocList.getElementsByTagName('a');
-				for (var i = 0; i < tocLinks.length; i++) {
-					tocLinks[i].addEventListener('click', tocEntryClick, false);
-				}
-				
-				if (window.name == "hideTOC") {
-					toggleTOC.call(tocButton);
-				}
-			}
-			
-			window.onload = init;
-			
-			// If showing in Xcode, hide the TOC and Header
-			if (navigator.userAgent.match(/xcode/i)) {
-				document.getElementById("contents").className = "hideInXcode"
-				document.getElementById("tocContainer").className = "hideInXcode"
-				document.getElementById("top_header").className = "hideInXcode"
-			}
-			
-		</script>
-	</body>
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Veeplay. All rights reserved. Updated: 2016-02-01</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
 </html>

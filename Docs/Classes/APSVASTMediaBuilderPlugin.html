@@ -1,152 +1,115 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>APSVASTMediaBuilderPlugin Class Reference</title>
-		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
-		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.2 (build 963)" />
-	</head>
-	<body>
-		<header id="top_header">
-			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">Veeplay Media Player </a></h1>
-				<a id="developerHome" href="../index.html">Veeplay</a>
-			</div>
+<head>
+	<meta charset="utf-8">
+
+	<title>APSVASTMediaBuilderPlugin Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
 			
-			<div id="title" role="banner">
-				<h1 class="hideInXcode">APSVASTMediaBuilderPlugin Class Reference</h1>
-			</div>
-			<ul id="headerButtons" role="toolbar">
-				<li id="toc_button">
-					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
-				</li>
-				<li id="jumpto_button" role="navigation">
-					<select id="jumpTo">
+			<h1 id="library-title">
+				<a href="../index.html">Veeplay Media Player </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Veeplay</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
 	<option value="overview">Overview</option>
 	
-	
+
 	
 	
 	<option value="tasks">Tasks</option>
 	
 	
+
 	
 	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/adBreakTemplate">adBreakTemplate</option>
+		
+		<option value="//api/name/adBreaks">adBreaks</option>
+		
+		<option value="//api/name/defaultAdBreakPositions">defaultAdBreakPositions</option>
+		
+		<option value="//api/name/vmapURL">vmapURL</option>
+		
+	</optgroup>
 	
-	<option value="properties">Properties</option>
+
 	
-	<option value="//api/name/adBreakTemplate">&nbsp;&nbsp;&nbsp;&nbsp;adBreakTemplate</option>
+
 	
-	<option value="//api/name/adBreaks">&nbsp;&nbsp;&nbsp;&nbsp;adBreaks</option>
-	
-	<option value="//api/name/defaultAdBreakPositions">&nbsp;&nbsp;&nbsp;&nbsp;defaultAdBreakPositions</option>
-	
-	<option value="//api/name/vmapURL">&nbsp;&nbsp;&nbsp;&nbsp;vmapURL</option>
-	
-	
-	
-	
-	
-	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/configureFromDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- configureFromDictionary:</option>
-	
-	<option value="//api/name/dictionaryConfigurationKey">&nbsp;&nbsp;&nbsp;&nbsp;- dictionaryConfigurationKey</option>
-	
-	<option value="//api/name/startForBuilder:">&nbsp;&nbsp;&nbsp;&nbsp;- startForBuilder:</option>
-	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/configureFromDictionary:">- configureFromDictionary:</option>
+		
+		<option value="//api/name/dictionaryConfigurationKey">- dictionaryConfigurationKey</option>
+		
+		<option value="//api/name/startForBuilder:">- startForBuilder:</option>
+		
+	</optgroup>
 	
 	
 </select>
-				</li>
-			</ul>
-		</header>
-		<nav id="tocContainer" class="isShowingTOC">
-			<ul id="toc" role="tree">
-				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
 
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">APSVASTMediaBuilderPlugin Class Reference</h1>
 
-
-
-<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Ad Breaks">Configuring Ad Breaks</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Other Configurations">Other Configurations</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Plugin Dictionary Configuration">Plugin Dictionary Configuration</a></span></li>
-	
-</ul></li>
-
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adBreakTemplate">adBreakTemplate</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/adBreaks">adBreaks</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultAdBreakPositions">defaultAdBreakPositions</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/vmapURL">vmapURL</a></span></li>
-	
-</ul></li>
-
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureFromDictionary:">configureFromDictionary:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dictionaryConfigurationKey">dictionaryConfigurationKey</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startForBuilder:">startForBuilder:</a></span></li>
-	
-</ul></li>
-
-
-			</ul>
-		</nav>
-		<article>
-			<div id="contents" class="isShowingTOC" role="main">
-				<a title="APSVASTMediaBuilderPlugin Class Reference" name="top"></a>
-				<div class="main-navigation navigation-top">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="header">
-					<div class="section-header">
-						<h1 class="title title-header">APSVASTMediaBuilderPlugin Class Reference</h1>
-					</div>		
-				</div>
-				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
+	<th>Inherits from</th>
+	<td>NSObject</td>
 </tr><tr>
-	<td class="specification-title">Conforms to</td>
-	<td class="specification-value"><a href="../Protocols/APSMediaBuilderPlugin.html">APSMediaBuilderPlugin</a></td>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/APSMediaBuilderPlugin.html">APSMediaBuilderPlugin</a></td>
 </tr><tr>
-	<td class="specification-title">Declared in</td>
-	<td class="specification-value">APSVASTMediaBuilderPlugin.h<br />APSVASTMediaBuilderPlugin.m</td>
+	<th>Declared in</th>
+	<td>APSVASTMediaBuilderPlugin.h<br />APSVASTMediaBuilderPlugin.m</td>
 </tr>
 						</tbody></table></div>
 					
-                    
+
                     
 					
 					<div class="section section-overview">
@@ -167,526 +130,412 @@
 					</div>
 					
 					
-					
+
 					
 					
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
-						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
-						
+
 						<a title="Configuring Ad Breaks" name="task_Configuring Ad Breaks"></a>
-						<h3 class="subsubtitle task-title">Configuring Ad Breaks</h3>
+						<h2 class="task-title">Configuring Ad Breaks</h2>
 
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/vmapURL">&nbsp;&nbsp;vmapURL</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/adBreakTemplate">&nbsp;&nbsp;adBreakTemplate</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/adBreaks">&nbsp;&nbsp;adBreaks</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li>
-						</ul>
-						
-						
-						<a title="Other Configurations" name="task_Other Configurations"></a>
-						<h3 class="subsubtitle task-title">Other Configurations</h3>
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/vmapURL" title="vmapURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/vmapURL">&nbsp;&nbsp;vmapURL</a></code>
+</h3>
 
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/defaultAdBreakPositions">&nbsp;&nbsp;defaultAdBreakPositions</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li>
-						</ul>
-						
-						
-						<a title="Plugin Dictionary Configuration" name="task_Plugin Dictionary Configuration"></a>
-						<h3 class="subsubtitle task-title">Plugin Dictionary Configuration</h3>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/dictionaryConfigurationKey">&ndash;&nbsp;dictionaryConfigurationKey</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/configureFromDictionary:">&ndash;&nbsp;configureFromDictionary:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/startForBuilder:">&ndash;&nbsp;startForBuilder:</a></code>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-					</div>
-					
-					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The VMAP 1.0 URL that should be used to configure ad breaks.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSURL *vmapURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The VMAP 1.0 URL that should be used to configure ad breaks.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTMediaBuilderPlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/adBreakTemplate" title="adBreakTemplate"></a>
-	<h3 class="subsubtitle method-title">adBreakTemplate</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The template object that holds default parameter values for ad breaks created from VMAP or VAST.</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/adBreakTemplate">&nbsp;&nbsp;adBreakTemplate</a></code>
+</h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The template object that holds default parameter values for ad breaks created from VMAP or VAST.</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The template object that holds default parameter values for ad breaks created from VMAP or VAST.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSVASTAdBreak *adBreakTemplate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The template object that holds default parameter values for ad breaks created from VMAP or VAST.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTMediaBuilderPlugin.h</code></p>
+			</div>
+			
+			
+		</div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSVASTMediaBuilderPlugin.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
+</div><div class="section-method">
 	<a name="//api/name/adBreaks" title="adBreaks"></a>
-	<h3 class="subsubtitle method-title">adBreaks</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The currently defined ad breaks that the plugin will try to fill.</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/adBreaks">&nbsp;&nbsp;adBreaks</a></code>
+</h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *adBreaks</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The currently defined ad breaks that the plugin will try to fill.</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The currently defined ad breaks that the plugin will try to fill.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *adBreaks</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The currently defined ad breaks that the plugin will try to fill.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTMediaBuilderPlugin.h</code></p>
+			</div>
+			
+			
+		</div>
 	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSVASTMediaBuilderPlugin.h</code><br />
-	</div>				
-	
-	
 </div>
+						</div>
 						
-						<div class="section-method">
+
+						<a title="Other Configurations" name="task_Other Configurations"></a>
+						<h2 class="task-title">Other Configurations</h2>
+
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/defaultAdBreakPositions" title="defaultAdBreakPositions"></a>
-	<h3 class="subsubtitle method-title">defaultAdBreakPositions</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>When loading ads via VMAP and using ad break positioning via &ldquo;#&rdquo;, this array defines the available, pre-defined positions that ads can be inserted at.</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/defaultAdBreakPositions">&nbsp;&nbsp;defaultAdBreakPositions</a></code>
+</h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *defaultAdBreakPositions</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>When loading ads via VMAP and using ad break positioning via &ldquo;#&rdquo;, this array defines the available, pre-defined positions that ads can be inserted at.</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>When loading ads via VMAP and using ad break positioning via &ldquo;#&rdquo;, this array defines the available, pre-defined positions that ads can be inserted at.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *defaultAdBreakPositions</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When loading ads via VMAP and using ad break positioning via &ldquo;#&rdquo;, this array defines the available, pre-defined positions that ads can be inserted at.</p>
 
 <p>Positions are defined using strings that can either specify absolute time intervals in seconds (e.g.: @&ldquo;10&rdquo;) or percentual values, relative to the full playback time (e.g.: @&ldquo;50%&rdquo;). Defaults to <code>@[@"5", @"75%"]</code>.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSVASTMediaBuilderPlugin.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/vmapURL" title="vmapURL"></a>
-	<h3 class="subsubtitle method-title">vmapURL</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The VMAP 1.0 URL that should be used to configure ad breaks.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSURL *vmapURL</code></div>
-
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The VMAP 1.0 URL that should be used to configure ad breaks.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSVASTMediaBuilderPlugin.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
-					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/configureFromDictionary:" title="configureFromDictionary:"></a>
-	<h3 class="subsubtitle method-title">configureFromDictionary:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>This method is called by the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object, in the process of its configuration. The method is only called if in the root of the configuring JSON or <code>NSDictionary</code> there is a key equal to the string defined by the plugin using the <a href="../Protocols/APSMediaBuilderPlugin.html#//api/name/dictionaryConfigurationKey"><code>dictionaryConfigurationKey</code></a> method.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)configureFromDictionary:(NSDictionary *)<em>adConfiguration</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>configuration</em></dt>
-			<dd><p>A <code>NSDictionary</code> object containing the specific plugin configuration data.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method is called by the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object, in the process of its configuration. The method is only called if in the root of the configuring JSON or <code>NSDictionary</code> there is a key equal to the string defined by the plugin using the <a href="../Protocols/APSMediaBuilderPlugin.html#//api/name/dictionaryConfigurationKey"><code>dictionaryConfigurationKey</code></a> method.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaBuilderPlugin.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/dictionaryConfigurationKey" title="dictionaryConfigurationKey"></a>
-	<h3 class="subsubtitle method-title">dictionaryConfigurationKey</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>The string key that will be used in the root of JSON and dictionary builder configurations to hold all the specific configuration details for the plugin.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (NSString *)dictionaryConfigurationKey</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>String key.</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The string key that will be used in the root of JSON and dictionary builder configurations to hold all the specific configuration details for the plugin.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaBuilderPlugin.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/startForBuilder:" title="startForBuilder:"></a>
-	<h3 class="subsubtitle method-title">startForBuilder:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>This method will be called at the beginning of the <code>mediaUnits</code> method of the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object that registered the plugin.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)startForBuilder:(APSMediaBuilder *)<em>builder</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>builder</em></dt>
-			<dd><p>A reference to the calling <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method will be called at the beginning of the <code>mediaUnits</code> method of the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object that registered the plugin.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaBuilderPlugin.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
-					
-                    
-                    
-				</div>
-				<div class="main-navigation navigation-bottom">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="footer">
-					<hr />
-					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2016 Veeplay. All rights reserved. (Last updated: 2016-02-01)</span><br />
-						
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
-						
-					</div>
-				</div>
 			</div>
-		</article>
-		<script type="text/javascript">
-			function jumpToChange()
-			{
-				window.location.hash = this.options[this.selectedIndex].value;
-			}
 			
-			function toggleTOC()
-			{
-				var contents = document.getElementById('contents');
-				var tocContainer = document.getElementById('tocContainer');
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTMediaBuilderPlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Plugin Dictionary Configuration" name="task_Plugin Dictionary Configuration"></a>
+						<h2 class="task-title">Plugin Dictionary Configuration</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/dictionaryConfigurationKey" title="dictionaryConfigurationKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dictionaryConfigurationKey">&ndash;&nbsp;dictionaryConfigurationKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The string key that will be used in the root of JSON and dictionary builder configurations to hold all the specific configuration details for the plugin.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)dictionaryConfigurationKey</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>String key.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The string key that will be used in the root of JSON and dictionary builder configurations to hold all the specific configuration details for the plugin.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaBuilderPlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureFromDictionary:" title="configureFromDictionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureFromDictionary:">&ndash;&nbsp;configureFromDictionary:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is called by the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object, in the process of its configuration. The method is only called if in the root of the configuring JSON or <code>NSDictionary</code> there is a key equal to the string defined by the plugin using the <a href="../Protocols/APSMediaBuilderPlugin.html#//api/name/dictionaryConfigurationKey"><code>dictionaryConfigurationKey</code></a> method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configureFromDictionary:(NSDictionary *)<em>adConfiguration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
 				
-				if (this.getAttribute('class') == 'open')
-				{
-					this.setAttribute('class', '');
-					contents.setAttribute('class', '');
-					tocContainer.setAttribute('class', '');
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>A <code>NSDictionary</code> object containing the specific plugin configuration data.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called by the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object, in the process of its configuration. The method is only called if in the root of the configuring JSON or <code>NSDictionary</code> there is a key equal to the string defined by the plugin using the <a href="../Protocols/APSMediaBuilderPlugin.html#//api/name/dictionaryConfigurationKey"><code>dictionaryConfigurationKey</code></a> method.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaBuilderPlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startForBuilder:" title="startForBuilder:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startForBuilder:">&ndash;&nbsp;startForBuilder:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will be called at the beginning of the <code>mediaUnits</code> method of the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object that registered the plugin.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startForBuilder:(APSMediaBuilder *)<em>builder</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>builder</code></th>
+						<td><p>A reference to the calling <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method will be called at the beginning of the <code>mediaUnits</code> method of the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object that registered the plugin.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaBuilderPlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
 					
-					window.name = "hideTOC";
-				}
-				else
-				{
-					this.setAttribute('class', 'open');
-					contents.setAttribute('class', 'isShowingTOC');
-					tocContainer.setAttribute('class', 'isShowingTOC');
 					
-					window.name = "";
-				}
-				return false;
-			}
-			
-			function toggleTOCEntryChildren(e)
-			{
-				e.stopPropagation();
-				var currentClass = this.getAttribute('class');
-				if (currentClass == 'children') {
-					this.setAttribute('class', 'children open');
-				}
-				else if (currentClass == 'children open') {
-					this.setAttribute('class', 'children');
-				}
-				return false;
-			}
-			
-			function tocEntryClick(e)
-			{
-				e.stopPropagation();
-				return true;
-			}
-			
-			function init()
-			{
-				var selectElement = document.getElementById('jumpTo');
-				selectElement.addEventListener('change', jumpToChange, false);
-				
-				var tocButton = document.getElementById('table_of_contents');
-				tocButton.addEventListener('click', toggleTOC, false);
-				
-				var taskTreeItem = document.getElementById('task_treeitem');
-				if (taskTreeItem.getElementsByTagName('li').length > 0)
-				{
-					taskTreeItem.setAttribute('class', 'children');
-					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
-				}
-				
-				var tocList = document.getElementById('toc');
-				
-				var tocEntries = tocList.getElementsByTagName('li');
-				for (var i = 0; i < tocEntries.length; i++) {
-					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
-				}
-				
-				var tocLinks = tocList.getElementsByTagName('a');
-				for (var i = 0; i < tocLinks.length; i++) {
-					tocLinks[i].addEventListener('click', tocEntryClick, false);
-				}
-				
-				if (window.name == "hideTOC") {
-					toggleTOC.call(tocButton);
-				}
-			}
-			
-			window.onload = init;
-			
-			// If showing in Xcode, hide the TOC and Header
-			if (navigator.userAgent.match(/xcode/i)) {
-				document.getElementById("contents").className = "hideInXcode"
-				document.getElementById("tocContainer").className = "hideInXcode"
-				document.getElementById("top_header").className = "hideInXcode"
-			}
-			
-		</script>
-	</body>
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Veeplay. All rights reserved. Updated: 2016-02-01</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
 </html>
