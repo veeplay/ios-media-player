@@ -140,12 +140,17 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
 - (void)removeEvent:(APSMediaEvent*)event;
 
 /**
- *  Returns an array containing all event objects currently connected to the unit.
+ *  Returns an array containing all event objects currently connected to the unit, that are not dynamic (see [APSMediaEvent dynamicPosition]).
  *
  *  @return An array of objects that implement the `APSMediaEvent` protocol.
  */
 - (NSArray*)events;
 
+/**
+ *  Returns an array containing all event objects currently connected to the unit, that are dynamic (see [APSMediaEvent dynamicPosition]).
+ *
+ *  @return An array of objects that implement the `APSMediaEvent` protocol.
+ */
 - (NSArray*)dynamicEvents;
 
 /**-----------------------------------------------------------------------------

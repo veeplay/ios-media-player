@@ -20,6 +20,13 @@
 #define kAPSMediaPlayerEvent @"event"
 #define kAPSMediaPlayerEventURLs @"event.urls"
 #define kAPSMediaPlayerEventSource @"event.source"
+#define kAPSMediaPlayerCurrentPlaybackTime @"current_playback_time"
+#define kAPSMediaPlayerCurrentDuration @"current_duration"
+#define kAPSMediaPlayerError @"error"
+#define kAPSMediaPlayerSeekStart @"seek_start"
+
+#define kAPSMediaPlayerPlaybackDidFinishReason @"finish_reason"
+#define KAPSMediaPlayerCurrentUnit @"unit"
 
 #define kAPSMediaPlayerOverlayControllersGroup @"com.appscend.mp.controllers.overlay"
 #define kAPSMediaPlayerUnitManagersGroup @"com.appscend.mp.unitmanager"
@@ -71,7 +78,7 @@ extern NSString *const APSMediaPlayerControlsHiddenNotification;
  */
 extern NSString *const APSMediaPlayerUpdateNotification;
 /**
- *  Posted when a media unit finishes playback, before the remaining playlist units are processed. The `userInfo` dictionary contains the APSMediaUnit object that just finished playback under the `unit` key.
+ *  Posted when a media unit finishes playback, before the remaining playlist units are processed. The `userInfo` dictionary contains the APSMediaUnit object that just finished playback under the `KAPSMediaPlayerCurrentUnit` key.
  */
 extern NSString *const APSMediaPlayerUnitFinishedNotification;
 /**
@@ -88,6 +95,10 @@ extern NSString *const APSMediaPlayerStatusChangedNotification;
  *  - the `kAPSMediaPlayerEventDescription` key returns a string description of the tracked event
  *  - the `kAPSMediaPlayerEventType` key returns one of the possible event type constants
  *  - the `kAPSMediaPlayerEventURLs` key returns an array of NSURLs that were pinged to track the event
+ *  - the `kAPSMediaPlayerCurrentPlaybackTime` key returns the playback time when the event was triggered
+ *  - the `kAPSMediaPlayerCurrentDuration` key returns the total duration of the unit that triggered the event
+ *  - the `kAPSMediaPlayerError` is present in case the event signals an error
+ *  - the `kAPSMediaPlayerSeekStart` is present for `APSMediaPlayerEventSeeked` events and indicates the playback time when the seek started
  */
 extern NSString *const APSMediaPlayerTrackedEventNotification;
 /**
@@ -122,10 +133,6 @@ extern NSString *const APSMediaPlayerPlaybackStateDidChangeNotification;
  *  Posted when the volume changed
  */
 extern NSString *const APSMediaPlayerVolumeDidChangeNotification;
-/**
- *  Key for the `APSMediaPlayerPlaybackDidFinishNotification` notification user info dictionary that contains the reason for playback finish
- */
-extern NSString *const APSMediaPlayerPlaybackDidFinishReasonUserInfoKey;
 
 ///-------------------------------------
 /// @name Available Tracking Events
@@ -154,11 +161,6 @@ extern NSString *const APSMediaPlayerEventExpand;
 extern NSString *const APSMediaPlayerEventCollapse;
 extern NSString *const APSMediaPlayerEventUpdate;
 extern NSString *const APSMediaPlayerEventSeeked;
-
-#define kAPSMediaPlayerCurrentPlaybackTime @"current_playback_time"
-#define kAPSMediaPlayerCurrentDuration @"current_duration"
-#define kAPSMediaPlayerError @"error"
-#define kAPSMediaPlayerSeekStart @"seek_start"
 
 /**
  *  The `APSMediaPlayerActionDelegate` protocol declares the two methods that a class must implement in order to become an `APSMediaPlayer` actionDelegate. The object implementing `APSMediaPlayer` will receive information about the URLs that need to be executed as the user interacts with the player.
@@ -193,27 +195,42 @@ typedef void (^APSMediaPlayerFinishBlock)();
  
  ## Notifications
  
+ - **APSMediaPlayerToggleFullscreenNotification** - Posted with each toggle of the fullscreen status
  - **APSMediaPlayerWillEnterFullscreenNotification** - Posted before the media player enters fullscreen
+ - **APSMediaPlayerDidEnterFullscreenNotification** - Posted after the media player enters fullscreen
  - **APSMediaPlayerWillExitFullscreenNotification** - Posted before the media player exists fullscreen
+ - **APSMediaPlayerDidExitFullscreenNotification** - Posted after the media player exits fullscreen
  - **APSMediaPlayerWasTappedNotification** - Posted when the user taps on the media player surface
  - **APSMediaPlayerControlsDisplayedNotification** - Posted when the video controls bar becomes visible
  - **APSMediaPlayerControlsHiddenNotification** - Posted when the video controls bar becomes hidden
  - **APSMediaPlayerUpdateNotification** - Posted every time the internal status of the media player changes. This will happen roughly once every second.
- - **APSMediaPlayerUnitFinishedNotification** - Posted when a media unit finishes playback, before the remaining playlist units are processed. The `userInfo` dictionary contains the APSMediaUnit object that just finished playback under the `unit` key.
- - **APSMediaPlayerErrorNotification** - Posted when the media player encounters an error in the process of unit playback. The `userInfo` dictionary contains the NSError object that represents the error under the `error` key.
+ - **APSMediaPlayerUnitFinishedNotification** - Posted when a media unit finishes playback, before the remaining playlist units are processed. The `userInfo` dictionary contains the APSMediaUnit object that just finished playback under the `KAPSMediaPlayerCurrentUnit` key.
+ - **APSMediaPlayerErrorNotification** - Posted when the media player encounters an error in the process of unit playback. The `userInfo` dictionary contains the NSError object that represents the error under the `kAPSMediaPlayerError` key.
  - **APSMediaPlayerStatusChangedNotification** - Posted when the media player playback state has changed. You can immediately get the new state using the `playbackState` method of the APSMediaPlayer instance.
- - **APSMediaPlayerTrackedEventNotification**
- Posted when a trackable playback event occurs.
+ - **APSMediaPlayerTrackedEventNotification** - Posted when a trackable playback event occurs.
  The `userinfo` dictionary contains additional information about the tracked event:
  - the `kAPSMediaPlayerEventDescription` key returns a string description of the tracked event
  - the `kAPSMediaPlayerEventType` key returns one of the possible event type constants
  - the `kAPSMediaPlayerEventURLs` key returns an array of NSURLs that were pinged to track the event
- - **APSMediaPlayerInvalidLicenseNotification**
- Posted when the player license is invalid. Playback will be disabled.
+ - the `kAPSMediaPlayerCurrentPlaybackTime` key returns the playback time when the event was triggered
+ - the `kAPSMediaPlayerCurrentDuration` key returns the total duration of the unit that triggered the event
+ - the `kAPSMediaPlayerError` is present in case the event signals an error
+ - the `kAPSMediaPlayerSeekStart` is present for `APSMediaPlayerEventSeeked` events and indicates the playback time when the seek started
+ - **APSMediaPlayerInvalidLicenseNotification** - Posted when the player license is invalid. Playback will be disabled.
+ - **APSMediaPlayerWillOpenMiniBrowser** - Posted when the internal minibrowser will be opened.
+ - **APSMediaPlayerWillCloseMiniBrowser** - Posted when the internal minibrowser will be dismissed.
+ - **APSMediaPlayerPlaybackDidFinishNotification** - Posted when the internal player backend finished playback. The reason for playback finish in the form of a `APSMovieFinishReason` value can be retrieved from the userInfo dictionary attached to the notification, under the `kAPSMediaPlayerPlaybackDidFinishReason` key.
+ - **APSMediaPlayerLoadStateDidChangeNotification** - Posted when the media load state changed. Value can be retrieved from player shared instance.
+ - **APSMediaPlayerDurationAvailableNotification** - Posted when the duration of the played media becomes available. Value can be retrieved from player shared instance.
+ - **APSMediaPlayerPlaybackStateDidChangeNotification** - Posted when the media playback state changed. Value can be retrieved from player shared instance.
+ - **APSMediaPlayerVolumeDidChangeNotification** - Posted when the volume changed. Value can be retrieved from player shared instance.
  
- ## Constants
+ ## Adapter groups
  
- - *kAPSMediaPlayerOverlayControllersGroup* - The group name that 3rd party overlay controllers must use when registering with the player.
+ - *kAPSMediaPlayerOverlayControllersGroup* - The group name that 3rd party overlay controllers must use when registering with the player. See `APSMediaPlayerOverlayControllerProtocol` for more details.
+ - *kAPSMediaPlayerUnitManagersGroup* - The group name that 3rd party unit managers must use when registering with the player. See `APSUnitManagerProtocol` for more details.
+ - *kAPSMediaPlayerBackendsGroup* - The group name that 3rd party backend renderers must use when registering with the player. See `APSMediaPlayerProtocol` for more details.
+ - *kAPSMediaPlayerControlPluginsGroup* - The group name that 3rd party control plugins must use when registering with the player. See `APSControlPluginProtocol` for more details.
  */
 @interface APSMediaPlayer : KRHub <TSMiniWebBrowserDelegate, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
 
@@ -240,17 +257,17 @@ typedef void (^APSMediaPlayerFinishBlock)();
 - (void)setFrame:(CGRect)frame;
 
 /**
- *  The backend player class. Use `[APSAVPlayer class]` for the AVPlayer-based backend or `[APSMPMoviePlayer class]` for the MPMoviePlayerController-based backend
+ *  The backend player to use - call this if you are using constants instead of classes. Otherwise, use `backendPlayerClass`.
  */
 @property (nonatomic) APSBackendPlayer backendPlayer;
 
 /**
- *  A class which is compliant to `APSMediaPlayerProtocol` and which will be used as a backend player
+ *  A class which is compliant to `APSMediaPlayerProtocol` and which will be used as a backend player. Use `[APSAVPlayer class]` for the AVPlayer-based backend or `[APSMPMoviePlayer class]` for the MPMoviePlayerController-based backend.
  */
 @property (nonatomic, strong) Class backendPlayerClass;
 
 /**
- *  Set this to NO to disable internal fullscreen handling
+ *  Set this to NO to disable internal fullscreen handling. Fullscreen functionality should be implemented externally, using the available methods and notifications emitted by the player.
  */
 @property (nonatomic) BOOL internalFullscreenSupport;
 
@@ -343,6 +360,10 @@ typedef void (^APSMediaPlayerFinishBlock)();
 
 /**
  *  This is a wrapper for trackEvent:type:forObject:metadata:urls:
+ *
+ *  @param event The specific event subtype. May be nil for simple events.
+ *  @param type  The tracked event type. See "Available Tracking Events".
+ *  @param object The `APSMediaUnit` or `APSMediaOverlay` instance that generated the notification. Can be nil for non-unit related events.
  */
 - (void)trackEvent:(NSString*)event type:(NSString*)type forObject:(id)object;
 
@@ -368,7 +389,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Instructs the player that a new URL needs to be interpreted and executed. This method also specifies the calling overlay controller, as it can define specific behavior for the player upon returning to the foreground after the playback interruption (see `onWebviewDismiss` in `APSMediaPlayerOverlayController.h`).
  *
  *  @param url     The URL that needs to be loaded.
- *  @param overlay The calling overlay controller.
+ *  @param overlayController The calling overlay controller.
  */
 - (void)openURL:(NSURL*)url from:(APSMediaPlayerOverlayController*)overlayController;
 
@@ -388,6 +409,9 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Pauses playback of the current unit.
  */
 - (void)pause;
+/**
+ *  Interrupts video playback - same as pause, but will not trigger the same events as human interaction would.
+ */
 - (void)interrupt;
 /**
  *  Stops playback of the current unit.
@@ -506,11 +530,10 @@ typedef void (^APSMediaPlayerFinishBlock)();
 /**
  *  Returns a snapshot image of the current video, at the requested time interval in the playback.
  *
- *  @param time The time when the thumbnail should be taken from the video.
+ *  @param playbackTime The time when the thumbnail should be taken from the video.
+ *  @param block The block to be invoked on thumbnail generation completion.
  *
- *  @return The resulting thumbnail.
- *
- *  @warning This method executes blocking operations on the calling thread.
+ *  @warning This method executes blocking operations on a background thread, and invokes the callback block on the main thread.
  */
 - (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock)block;
 
@@ -621,6 +644,9 @@ typedef void (^APSMediaPlayerFinishBlock)();
  */
 @property (nonatomic) NSString *advertisingIdentifier;
 
+/**
+ *  Resets the media player backend.
+ */
 - (void) clear;
 
 @end

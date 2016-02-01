@@ -16,7 +16,7 @@ extern NSString* const APSTextOverlay;
 #define kAPSTextOverlayStringSize @"size"
 
 /**
- The `APSMediaPlayerTextOverlayController` allows the displaying text on top of video content.
+ The `APSMediaPlayerTextOverlayController` allows the displaying of text on top of video content.
  
  ## Configuration
  

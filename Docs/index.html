@@ -185,33 +185,57 @@
 
 <h2>Using Chromecast</h2>
 
-<p>You can enable Chromecast playback by adding <code>chromecast</code> into the components array under the <code>controls</code> section in your JSON configuration file:</p>
+<p>To connect and send playback to the <a href="https://www.google.com/chromecast">Google Chromecast</a>, you need to install the Veeplay Chromecast plugin. See full documentation <a href="http://veeplay.github.io/ios-chromecast-plugin/">here</a>.</p>
+
+<p>To install:</p>
+
+<ul>
+<li><p>Add the following line to your Podfile:</p>
+
+<pre><code>  pod "VeeplayChromecast"
+</code></pre></li>
+<li><p>Alternatively, if installing without CocoaPods, get the latest static library, header files and assets <a href="https://github.com/veeplay/ios-chromecast-plugin">from the repository</a>. Also, install the latest version of the <a href="https://developers.google.com/cast/docs/ios_sender">Google Cast iOS Sender API library</a>.</p></li>
+<li><p>Import the VeeplayChromecastManager header file:</p>
+
+<pre><code>  #import "VeeplayChromecastManager.h"
+</code></pre></li>
+</ul>
+
+
+<p>To start the plugin, set your Chromecast application id on the shared instance of <code>APSChromeCastManager</code>:</p>
+
+<pre><code>    [APSChromecastManager sharedInstance].chromecastAppId = @"appid"
+</code></pre>
+
+<p>You can display the Chromecast playback control in the control bar by adding <code>chromecast</code> into the components array, under the <code>controls</code> section in your JSON configuration file:</p>
 
 <pre><code>    {
-            "content": [
-                    "url": "http://......",
-                    "autoplay": true,
-                    "controls": {
-                            "components": [
-                                    "playback",
-                                    "totalTime",
-                                    "slider",
-                                    "currentTime",
-                                    "chromecast"
-                            ]
-                    }
-            ]
+        "content": [
+            "url": "http://......",
+            "autoplay": true,
+            "controls": {
+                "components": [
+                    "playback",
+                    "totalTime",
+                    "slider",
+                    "currentTime",
+                    "chromecast"
+                ]
+            }
+        ]
     }
 </code></pre>
 
-<p>Also you can configure this programatically by adding APSChromecastControl to the <code>controlsParameters</code> property on <a href="Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a>:</p>
+<p>Also, you can configure this programatically by adding kAPSChromecastControl to the <code>controlsParameters</code> property on <a href="Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a>:</p>
 
-<pre><code>    unit.controlsParameters = @{kAPSControlsComponents: @(APSPlaybackControl|APSCurrentTimeControl|APSTimeSliderControl|APSTotalTimeControl|APSChromecastControl|APSFullScreenControl)};
+<pre><code>    unit.controlsParameters = @{kAPSControlsComponents: @(APSPlaybackControl|APSCurrentTimeControl|APSTimeSliderControl|APSTotalTimeControl|kAPSChromecastControl|APSFullScreenControl)};
 </code></pre>
 
-<h2>Using DRM</h2>
+<h2>Using Marlin DRM</h2>
 
-<p><a href="Classes/APSMediaPlayer.html">APSMediaPlayer</a> provides support for <a href="http://www.marlin-community.com/">Marlin DRM</a>, using the SDKs provided by <a href="http://expressplay.com">ExpressPlay</a>. To install:</p>
+<p><a href="Classes/APSMediaPlayer.html">APSMediaPlayer</a> provides support for <a href="http://www.marlin-community.com/">Marlin DRM</a>, using the SDKs provided by <a href="http://expressplay.com">ExpressPlay</a>. See full documentation <a href="http://veeplay.github.io/ios-marlin-drm/">here</a>.</p>
+
+<p>To install:</p>
 
 <ul>
 <li>Install the ExpressPlay SDK.</li>
@@ -259,7 +283,7 @@
 
 <h2>Class Reference</h2>
 
-<p>See the full class reference <a href="http://veeplay.github.io/ios-docs">here</a>.</p>
+<p>See the full class reference <a href="http://veeplay.github.io/ios-media-player/">here</a>.</p>
 
 <h2>Code Samples</h2>
 
@@ -284,7 +308,7 @@
 
 <h2>License</h2>
 
-<p>Commercial license. Contact <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#111;&#x3a;&#115;&#97;&#108;&#101;&#x73;&#x40;&#118;&#x65;&#x65;&#112;&#108;&#x61;&#121;&#46;&#99;&#111;&#x6d;">&#x73;&#97;&#108;&#101;&#x73;&#x40;&#x76;&#101;&#101;&#112;&#108;&#x61;&#x79;&#x2e;&#x63;&#x6f;&#x6d;</a>.</p>
+<p>Commercial license. Contact <a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#x73;&#x61;&#x6c;&#101;&#x73;&#x40;&#x76;&#101;&#101;&#112;&#108;&#x61;&#121;&#46;&#x63;&#111;&#x6d;">&#x73;&#97;&#108;&#101;&#x73;&#x40;&#118;&#x65;&#x65;&#x70;&#108;&#x61;&#x79;&#46;&#99;&#111;&#x6d;</a>.</p>
 						
 						
 					</div>
@@ -315,6 +339,8 @@
 							
 							<li><a href="Classes/APSMediaPlayerClosableOverlayController.html">APSMediaPlayerClosableOverlayController</a></li>
 							
+							<li><a href="Classes/APSMediaPlayerControlsOverlayController.html">APSMediaPlayerControlsOverlayController</a></li>
+							
 							<li><a href="Classes/APSMediaPlayerHTMLOverlayController.html">APSMediaPlayerHTMLOverlayController</a></li>
 							
 							<li><a href="Classes/APSMediaPlayerImageOverlayController.html">APSMediaPlayerImageOverlayController</a></li>
@@ -322,6 +348,8 @@
 							<li><a href="Classes/APSMediaPlayerOverlayController.html">APSMediaPlayerOverlayController</a></li>
 							
 							<li><a href="Classes/APSMediaPlayerTextOverlayController.html">APSMediaPlayerTextOverlayController</a></li>
+							
+							<li><a href="Classes/APSMediaPlayerYoutubeOverlayController.html">APSMediaPlayerYoutubeOverlayController</a></li>
 							
 							<li><a href="Classes/APSMediaUnit.html">APSMediaUnit</a></li>
 							
@@ -335,9 +363,13 @@
 							
 							<li><a href="Classes/APSVASTFullscreenButtonConfiguration.html">APSVASTFullscreenButtonConfiguration</a></li>
 							
+							<li><a href="Classes/APSVASTFullscreenOverlayController.html">APSVASTFullscreenOverlayController</a></li>
+							
 							<li><a href="Classes/APSVASTMediaBuilderPlugin.html">APSVASTMediaBuilderPlugin</a></li>
 							
 							<li><a href="Classes/APSVASTSkipButtonConfiguration.html">APSVASTSkipButtonConfiguration</a></li>
+							
+							<li><a href="Classes/APSVASTSkipOverlayController.html">APSVASTSkipOverlayController</a></li>
 							
 							<li><a href="Classes/KRHub.html">KRHub</a></li>
 							
@@ -350,6 +382,8 @@
 						
 						<h2 class="index-title">Protocol References</h2>
 						<ul>
+							
+							<li><a href="Protocols/APSControlPluginProtocol.html">APSControlPluginProtocol</a></li>
 							
 							<li><a href="Protocols/APSMediaBuilderPlugin.html">APSMediaBuilderPlugin</a></li>
 							
@@ -395,11 +429,11 @@
                         
                         <li><a href="Constants/APSMoviePlaybackState.html">APSMoviePlaybackState</a></li>
                         
-                        <li><a href="Constants/APSMoviePlayerSourceType.html">APSMoviePlayerSourceType</a></li>
-                        
                         <li><a href="Constants/APSMovieScalingMode.html">APSMovieScalingMode</a></li>
                         
                         <li><a href="Constants/APSMovieSourceType.html">APSMovieSourceType</a></li>
+                        
+                        <li><a href="Constants/APSMovieStreamSourceType.html">APSMovieStreamSourceType</a></li>
                         
                         <li><a href="Constants/APSResolvMultipleAdsConflictsBy.html">APSResolvMultipleAdsConflictsBy</a></li>
                         
@@ -421,7 +455,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2016 Veeplay. All rights reserved. (Last updated: 2016-01-31)</span><br />
+						<p><span class="copyright">&copy; 2016 Veeplay. All rights reserved. (Last updated: 2016-02-01)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

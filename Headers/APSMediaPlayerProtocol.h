@@ -11,6 +11,20 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "APSTypes.h"
 
+/**
+ * This protocol allows 3rd party implementations of the media rendering engine that stands behind Veeplay. This protocol extends the `KRAdapter` protocol, so objects should also implement a `type` method, returning a unique string to register under.
+ 
+  To use:
+ 
+  - Create a new class that implements this protocol
+  - Register it with the player shared instance:
+ 
+            [[APSMediaPlayer sharedInstance] registerClass:[<YOURCLASS> class] inGroup:kAPSMediaPlayerBackendsGroup];
+ 
+  - Set up the class with the player:
+ 
+            [[APSMediaPlayer sharedInstance] setBackendPlayerClass:[<YOURCLASS> class]];
+ */
 @protocol APSMediaPlayerProtocol <NSObject>
 
 @required
@@ -165,18 +179,18 @@
  *  Get the stream's source type. Different by movieSourceType because it returns if the stream is
  *  a VOD stream or a live stream.
  *
- *  @return The stream's type as a `APSMoviePlayerSourceType` enum
+ *  @return The stream's type as a `APSMovieStreamSourceType` enum
  *
  */
-- (APSMoviePlayerSourceType) streamSourceType;
+- (APSMovieStreamSourceType) streamSourceType;
 
 /**
  *  Request a thumbnail image
  *
- *  @param playbackTime The time, in seconds, when the thumbnail should be taken from the video
+ *  @param playbackTime The time when the thumbnail should be taken from the video.
+ *  @param block The block to be invoked on thumbnail generation completion.
  *
- *  @return The thumbnail image
- *
+ *  @warning This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.
  */
 - (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock)block;
 
@@ -241,8 +255,25 @@
  */
 + (NSInteger) backendPriority;
 
+/**
+ *  This is invoked by the player before setting a new URL for playback
+ *
+ *  @param url A NSURL instance pointing to the media location
+ *
+ */
 - (void) willSetURL:(NSURL*)url;
+
+/**
+ *  This is invoked by the player after setting a new URL for playback
+ *
+ *  @param url A NSURL instance pointing to the media location
+ *
+ */
 - (void) didSetURL:(NSURL*)url;
+
+/**
+ *  This is invoked by the player after playback is complete
+ */
 - (void) clear;
 
 @end

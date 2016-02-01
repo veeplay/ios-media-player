@@ -8,7 +8,9 @@
 
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>
-
+/**
+ This class encapsulates timed metadata information retrieved from the video stream. See `[APSMediaPlayer timedMetadata]`.
+ */
 @interface APSTimedMetadata : MPTimedMetadata
 
 /**-----------------------------------------------------------------------------
