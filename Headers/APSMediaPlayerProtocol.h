@@ -11,6 +11,12 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "APSTypes.h"
 
+typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
+    APSAVPlayerSeekStatusNoSeeking,
+    APSAVPlayerSeekStatusBackward,
+    APSAVPlayerSeekStatusForward
+};
+
 /**
  * This protocol allows 3rd party implementations of the media rendering engine that stands behind Veeplay. This protocol extends the `KRAdapter` protocol, so objects should also implement a `type` method, returning a unique string to register under.
  
@@ -132,15 +138,6 @@
  */
 
 /**
- *  Create a APSAVPlayer instance
- *
- *  @param urls A NSArray of NSURLs pointing to the media location
- *
- *  @return The `APSAVPlayer` instance
- */
-- (id) initWithURLs:(NSArray *) urls;
-
-/**
  *  Prepare to play media. This is also automatically called on play
  */
 - (void) prepareToPlay;
@@ -230,8 +227,6 @@
  * @name Optional protocol methods
  * -----------------------------------------------------------------------------
  */
-
-
 /**
  *  Add an URL to the current play queue
  *
@@ -275,5 +270,20 @@
  *  This is invoked by the player after playback is complete
  */
 - (void) clear;
+
+/**
+ *  Start Picture in Picture, if possible
+ */
+- (void) startPictureInPicture;
+
+/**
+ *  Stop Picture in Picture
+ */
+- (void) stopPictureInPicture;
+
+/**
+ *  Get Picture in Picture status
+ */
+- (BOOL) isPictureInPictureActive;
 
 @end

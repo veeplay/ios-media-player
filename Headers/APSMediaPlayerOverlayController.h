@@ -90,6 +90,14 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
  *  This method is invoked by the player, when fullscreen mode is disabled.
  */
 - (void)didExitFullscreen;
+/**
+ *  This method is invoked by the player, when picture in picture mode is enabled.
+ */
+- (void)didStartPictureInPicture;
+/**
+ *  This method is invoked by the player, when picture in picture mode is disabled.
+ */
+- (void)didStopPictureInPicture;
 
 /**-----------------------------------------------------------------------------
  * @name Handling Playback

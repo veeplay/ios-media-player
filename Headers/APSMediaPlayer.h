@@ -62,6 +62,22 @@ extern NSString *const APSMediaPlayerWillExitFullscreenNotification;
  */
 extern NSString *const APSMediaPlayerDidExitFullscreenNotification;
 /**
+ *  Posted before starting Picture in Picture mode
+ */
+extern NSString *const APSMediaPlayerWillStartPictureInPictureNotification;
+/**
+ *  Posted after Picture in Picture mode was started
+ */
+extern NSString *const APSMediaPlayerDidStartPictureInPictureNotification;
+/**
+ *  Posted before stopping Picture in Picture mode
+ */
+extern NSString *const APSMediaPlayerWillStopPictureInPictureNotification;
+/**
+ *  Posted after stopping Picture in Picture mode
+ */
+extern NSString *const APSMediaPlayerDidStopPictureInPictureNotification;
+/**
  *  Posted when the user taps on the media player surface
  */
 extern NSString *const APSMediaPlayerWasTappedNotification;
@@ -557,6 +573,27 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  Exit fullscreen mode.
  */
 - (void)exitFullscreen;
+
+/**-----------------------------------------------------------------------------
+ * @name Handling Picture in Picture
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *  Returns a Boolean value specifing if Picture in Picture is currently active
+ */
+- (BOOL) isPictureInPictureActive;
+/**
+ *  Toggle Picture in Picture mode
+ */
+- (void) togglePictureInPicture;
+/**
+ *  Start Picture in Picture mode
+ */
+- (void) startPictureInPicture;
+/**
+ *  Stop Picture in Picture mode
+ */
+- (void) stopPictureInPicture;
 
 /**-----------------------------------------------------------------------------
  * @name Extending

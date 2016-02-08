@@ -22,6 +22,8 @@ extern NSString* const APSControlsOverlay;
 #define kAPSControlsPauseImage @"pauseImage"
 #define kAPSControlsFullscreenImage @"fullscreenImage"
 #define kAPSControlsLeaveFullscreenImage @"leaveFullscreenImage"
+#define kAPSControlsEnterPictureInPictureImage @"enterPictureInPictureImage"
+#define kAPSControlsLeavePictureInPictureImage @"leavePictureInPictureImage"
 #define kAPSControlsPreviousImage @"backImage"
 #define kAPSControlsNextImage @"forwardImage"
 #define kAPSControlsVisibileOnlyInFullscreen @"visibleInFullscreenOnly"
@@ -78,7 +80,11 @@ typedef NS_OPTIONS(NSUInteger, APSControlsOverlayComponents) {
     /**
      *  The ad marks
      */
-    APSAdMarksControl                       = 1 << 9
+    APSAdMarksControl                       = 1 << 9,
+    /**
+     *  The PiP toggle control
+     */
+    APSPiPControl                           = 1 << 10
      
 };
 

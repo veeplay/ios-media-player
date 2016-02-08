@@ -120,9 +120,9 @@
 		
 		<option value="//api/name/getVolume">- getVolume</option>
 		
-		<option value="//api/name/initWithURLs:">- initWithURLs:</option>
-		
 		<option value="//api/name/insertURL:atIndex:">- insertURL:atIndex:</option>
+		
+		<option value="//api/name/isPictureInPictureActive">- isPictureInPictureActive</option>
 		
 		<option value="//api/name/pause">- pause</option>
 		
@@ -134,7 +134,11 @@
 		
 		<option value="//api/name/setVolume:">- setVolume:</option>
 		
+		<option value="//api/name/startPictureInPicture">- startPictureInPicture</option>
+		
 		<option value="//api/name/stop">- stop</option>
+		
+		<option value="//api/name/stopPictureInPicture">- stopPictureInPicture</option>
 		
 		<option value="//api/name/streamSourceType">- streamSourceType</option>
 		
@@ -1010,69 +1014,6 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/initWithURLs:" title="initWithURLs:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithURLs:">&ndash;&nbsp;initWithURLs:</a></code>
-<span class="task-item-suffix">required method</span></h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Create a <a href="../Classes/APSAVPlayer.html">APSAVPlayer</a> instance</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (id)initWithURLs:(NSArray *)<em>urls</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>urls</code></th>
-						<td><p>A NSArray of NSURLs pointing to the media location</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>The <a href="../Classes/APSAVPlayer.html"><code>APSAVPlayer</code></a> instance</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Create a <a href="../Classes/APSAVPlayer.html">APSAVPlayer</a> instance</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/prepareToPlay" title="prepareToPlay"></a>
 	<h3 class="method-title"><code><a href="#//api/name/prepareToPlay">&ndash;&nbsp;prepareToPlay</a></code>
 <span class="task-item-suffix">required method</span></h3>
@@ -2062,6 +2003,144 @@ a VOD stream or a live stream.</p>
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/startPictureInPicture" title="startPictureInPicture"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startPictureInPicture">&ndash;&nbsp;startPictureInPicture</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start Picture in Picture, if possible</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startPictureInPicture</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Start Picture in Picture, if possible</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopPictureInPicture" title="stopPictureInPicture"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopPictureInPicture">&ndash;&nbsp;stopPictureInPicture</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stop Picture in Picture</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopPictureInPicture</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Stop Picture in Picture</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isPictureInPictureActive" title="isPictureInPictureActive"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isPictureInPictureActive">&ndash;&nbsp;isPictureInPictureActive</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get Picture in Picture status</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isPictureInPictureActive</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get Picture in Picture status</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -2077,7 +2156,7 @@ a VOD stream or a live stream.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Veeplay. All rights reserved. Updated: 2016-02-02</p>
+						<p class="copyright">Copyright &copy; 2016 Veeplay. All rights reserved. Updated: 2016-02-08</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
