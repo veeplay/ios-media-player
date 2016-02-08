@@ -183,7 +183,7 @@ To install:
 * Set the `managerType` property of the `APSMediaUnit` object to `@"marlin"`.
 * Optionally, to have the player download and add a broadband license to the local store, you can set the `kAPSMetadataDrmUrl` key in the `metadata` dictionary of an item to the string URL to the license file. To configure from JSON, set the `drm_encoding_url` metadata key.
 
-### Enabling Picture in Picture support
+## Enabling Picture in Picture support
 
 To enable Picture in Picture support please make sure you configured your project as described in [Apple's documentation](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/AdoptingMultitaskingOniPad/QuickStartForPictureInPicture.html) then:
 
