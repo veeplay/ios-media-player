@@ -13,6 +13,35 @@
 #import "APSMediaPlayerProtocol.h"
 #import "AVPlayer+View.h"
 
+/**
+ *  Posted when Picture in Picture mode is not possible
+ */
+extern NSString *const APSPipPlayerNotPossible;
+/**
+ *  Posted when Picture in Picture mode is not supported
+ */
+extern NSString *const APSPipPlayerNotSupported;
+/**
+ *  Posted when the the player failed to initiate Picture in Picture mode
+ */
+extern NSString *const APSPipPlayerFailedToStartPictureInPictureWithError;
+/**
+ *  Posted before the player will start Picture in Picture mode
+ */
+extern NSString *const APSPipPlayerWillStartPictureInPicture;
+/**
+ *  Posted after the player did start Picture in Picture mode
+ */
+extern NSString *const APSPipPlayerDidStartPictureInPicture;
+/**
+ *  Posted before the player will stop Picture in Picture mode
+ */
+extern NSString *const APSPipPlayerWillStopPictureInPicture;
+/**
+ *  Posted after the player did stop Picture in Picture mode
+ */
+extern NSString *const APSPipPlayerDidStopPictureInPicture;
+
 @interface APSPiPPlayer : NSObject <MPMediaPlayback, APSMediaPlayerProtocol, AVPictureInPictureControllerDelegate, KRAdapter>
 
 /**-----------------------------------------------------------------------------
