@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Veeplay"
-  s.version          = "2.1"
+  s.version          = "2.2"
   s.summary          = "Veeplay Media Player - Crossplatform media player with video ads support"
   s.homepage         = "http://veeplay.com"
   s.license          = { :type => "Commercial", :text => "Contact office@veeplay.com" }
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.library              = "z"
   s.vendored_libraries   = "libVeeplay.a"
 
-  s.frameworks = "AVFoundation", "MediaPlayer", "CoreMedia"
+  s.frameworks = "AVFoundation", "MediaPlayer", "CoreMedia", "AVKit"
   s.dependency "KAProgressLabel", "~> 3.0"
   s.dependency "TBXML", "~> 1.5"
   s.dependency "TSMiniWebBrowser"

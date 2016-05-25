@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -57,8 +59,6 @@
 	<option value="//api/name/getMute">&nbsp;&nbsp;&nbsp;&nbsp;- getMute</option>
 	
 	<option value="//api/name/getVolume">&nbsp;&nbsp;&nbsp;&nbsp;- getVolume</option>
-	
-	<option value="//api/name/initWithURLs:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURLs:</option>
 	
 	<option value="//api/name/initialPlaybackTime">&nbsp;&nbsp;&nbsp;&nbsp;- initialPlaybackTime</option>
 	
@@ -93,6 +93,8 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
@@ -129,8 +131,6 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getMute">getMute</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getVolume">getVolume</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURLs:">initWithURLs:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initialPlaybackTime">initialPlaybackTime</a></span></li>
 	
@@ -193,6 +193,18 @@
                     
                     
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>APSMPMoviePlayer</code> is a media backend renderer that handles playback via the native <code>MPMoviePlayer</code> classes. See <a href="../Protocols/APSMediaPlayerProtocol.html"><code>APSMediaPlayerProtocol</code></a> for more details.</p>
+
+<p>To use, set up with the player shared instance:</p>
+
+<p>[sharedInstance setBackendPlayerClass:[APSMPMoviePlayer class]];</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -207,12 +219,6 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/backendPriority">+&nbsp;backendPriority</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithURLs:">&ndash;&nbsp;initWithURLs:</a></code>
 	</span>
 	
 	
@@ -645,62 +651,6 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithURLs:" title="initWithURLs:"></a>
-	<h3 class="subsubtitle method-title">initWithURLs:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Create a <a href="../Classes/APSAVPlayer.html">APSAVPlayer</a> instance</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (id)initWithURLs:(NSArray *)<em>urls</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>urls</em></dt>
-			<dd><p>A NSArray of NSURLs pointing to the media location</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The <a href="../Classes/APSAVPlayer.html"><code>APSAVPlayer</code></a> instance</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Create a <a href="../Classes/APSAVPlayer.html">APSAVPlayer</a> instance</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/initialPlaybackTime" title="initialPlaybackTime"></a>
 	<h3 class="subsubtitle method-title">initialPlaybackTime</h3>
 	
@@ -1061,7 +1011,7 @@ a VOD stream or a live stream.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (APSMoviePlayerSourceType)streamSourceType</code></div>
+	<div class="method-subsection method-declaration"><code>- (APSMovieStreamSourceType)streamSourceType</code></div>
 
     
 	
@@ -1069,7 +1019,7 @@ a VOD stream or a live stream.</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The stream&rsquo;s type as a <a href="../Constants/APSMoviePlayerSourceType.html"><code>APSMoviePlayerSourceType</code></a> enum</p>
+		<p>The stream&rsquo;s type as a <a href="../Constants/APSMovieStreamSourceType.html"><code>APSMovieStreamSourceType</code></a> enum</p>
 	</div>
 	
 	
@@ -1117,17 +1067,17 @@ a VOD stream or a live stream.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>playbackTime</em></dt>
-			<dd><p>The time, in seconds, when the thumbnail should be taken from the video</p></dd>
+			<dd><p>The time when the thumbnail should be taken from the video.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be invoked on thumbnail generation completion.</p></dd>
 		</dl>
 		
 	</div>
 	
 	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The thumbnail image</p>
-	</div>
 	
 	
 	
@@ -1135,7 +1085,7 @@ a VOD stream or a live stream.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Request a thumbnail image</p>
+		<p>Request a thumbnail image</p><div class="warning"><p><strong>Warning:</strong> This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.</p></div>
 	</div>
 	
 	
@@ -1256,7 +1206,7 @@ a VOD stream or a live stream.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2016 Veeplay. All rights reserved. (Last updated: 2016-01-31)</span><br />
+						<p><span class="copyright">&copy; 2016 Veeplay. All rights reserved. (Last updated: 2016-05-25)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

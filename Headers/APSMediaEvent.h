@@ -160,6 +160,9 @@ typedef NS_ENUM(NSInteger, APSMediaEventState) {
  */
 @property NSTimeInterval preloadPoint;
 
+/**
+ *  Set this to `YES` if the event has no specific start time, and the player should handle insertion.
+ */
 @property BOOL dynamicPosition;
 
 @end

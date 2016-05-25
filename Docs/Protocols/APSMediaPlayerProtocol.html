@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -85,9 +87,17 @@
 	
 	<option value="//api/name/appendURL:">&nbsp;&nbsp;&nbsp;&nbsp;- appendURL:</option>
 	
+	<option value="//api/name/availableSubtitles">&nbsp;&nbsp;&nbsp;&nbsp;- availableSubtitles</option>
+	
 	<option value="//api/name/beginSeekingBackward">&nbsp;&nbsp;&nbsp;&nbsp;- beginSeekingBackward</option>
 	
 	<option value="//api/name/beginSeekingForward">&nbsp;&nbsp;&nbsp;&nbsp;- beginSeekingForward</option>
+	
+	<option value="//api/name/clear">&nbsp;&nbsp;&nbsp;&nbsp;- clear</option>
+	
+	<option value="//api/name/didSetURL:">&nbsp;&nbsp;&nbsp;&nbsp;- didSetURL:</option>
+	
+	<option value="//api/name/enableSubtitle:">&nbsp;&nbsp;&nbsp;&nbsp;- enableSubtitle:</option>
 	
 	<option value="//api/name/endSeeking">&nbsp;&nbsp;&nbsp;&nbsp;- endSeeking</option>
 	
@@ -95,9 +105,9 @@
 	
 	<option value="//api/name/getVolume">&nbsp;&nbsp;&nbsp;&nbsp;- getVolume</option>
 	
-	<option value="//api/name/initWithURLs:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithURLs:</option>
-	
 	<option value="//api/name/insertURL:atIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- insertURL:atIndex:</option>
+	
+	<option value="//api/name/isPictureInPictureActive">&nbsp;&nbsp;&nbsp;&nbsp;- isPictureInPictureActive</option>
 	
 	<option value="//api/name/pause">&nbsp;&nbsp;&nbsp;&nbsp;- pause</option>
 	
@@ -109,11 +119,17 @@
 	
 	<option value="//api/name/setVolume:">&nbsp;&nbsp;&nbsp;&nbsp;- setVolume:</option>
 	
+	<option value="//api/name/startPictureInPicture">&nbsp;&nbsp;&nbsp;&nbsp;- startPictureInPicture</option>
+	
 	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	<option value="//api/name/stopPictureInPicture">&nbsp;&nbsp;&nbsp;&nbsp;- stopPictureInPicture</option>
 	
 	<option value="//api/name/streamSourceType">&nbsp;&nbsp;&nbsp;&nbsp;- streamSourceType</option>
 	
 	<option value="//api/name/thumbnailAt:withCompletionBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- thumbnailAt:withCompletionBlock:</option>
+	
+	<option value="//api/name/willSetURL:">&nbsp;&nbsp;&nbsp;&nbsp;- willSetURL:</option>
 	
 	
 	
@@ -124,6 +140,8 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
@@ -195,9 +213,17 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appendURL:">appendURL:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/availableSubtitles">availableSubtitles</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginSeekingBackward">beginSeekingBackward</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/beginSeekingForward">beginSeekingForward</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/clear">clear</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didSetURL:">didSetURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableSubtitle:">enableSubtitle:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endSeeking">endSeeking</a></span></li>
 	
@@ -205,9 +231,9 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getVolume">getVolume</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithURLs:">initWithURLs:</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/insertURL:atIndex:">insertURL:atIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPictureInPictureActive">isPictureInPictureActive</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pause">pause</a></span></li>
 	
@@ -219,11 +245,17 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setVolume:">setVolume:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startPictureInPicture">startPictureInPicture</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopPictureInPicture">stopPictureInPicture</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/streamSourceType">streamSourceType</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/thumbnailAt:withCompletionBlock:">thumbnailAt:withCompletionBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willSetURL:">willSetURL:</a></span></li>
 	
 </ul></li>
 
@@ -258,6 +290,32 @@
 					
                     
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<ul>
+<li><p>This protocol allows 3rd party implementations of the media rendering engine that stands behind Vee<a href="#//api/name/play">play</a>. This protocol extends the <a href="../Protocols/KRAdapter.html"><code>KRAdapter</code></a> protocol, so objects should also implement a <code>type</code> method, returning a unique string to register under.</p>
+
+<p>To use:</p>
+
+<ul>
+<li>Create a new class that implements this protocol</li>
+<li><p>Register it with the player shared instance:</p>
+
+<pre><code>    [[APSMediaPlayer sharedInstance] registerClass:[&lt;YOURCLASS&gt; class] inGroup:kAPSMediaPlayerBackendsGroup];
+</code></pre></li>
+<li><p>Set up the class with the player:</p>
+
+<pre><code>    [[APSMediaPlayer sharedInstance] setBackendPlayerClass:[&lt;YOURCLASS&gt; class]];
+</code></pre></li>
+</ul>
+</li>
+</ul>
+
+					</div>
+					
+					
 					
 					
 					
@@ -390,12 +448,6 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithURLs:">&ndash;&nbsp;initWithURLs:</a></code>
-	</span>
-	
-	<span class="task-item-suffix">required method</span>
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/prepareToPlay">&ndash;&nbsp;prepareToPlay</a></code>
 	</span>
 	
@@ -495,6 +547,54 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/backendPriority">+&nbsp;backendPriority</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willSetURL:">&ndash;&nbsp;willSetURL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didSetURL:">&ndash;&nbsp;didSetURL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/clear">&ndash;&nbsp;clear</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startPictureInPicture">&ndash;&nbsp;startPictureInPicture</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopPictureInPicture">&ndash;&nbsp;stopPictureInPicture</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isPictureInPictureActive">&ndash;&nbsp;isPictureInPictureActive</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/availableSubtitles">&ndash;&nbsp;availableSubtitles</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableSubtitle:">&ndash;&nbsp;enableSubtitle:</a></code>
 	</span>
 	
 	
@@ -1319,6 +1419,52 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/availableSubtitles" title="availableSubtitles"></a>
+	<h3 class="subsubtitle method-title">availableSubtitles</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get a list of available subtitles</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)availableSubtitles</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A <code>NSDictionary</code> containing the subtitles in format {&ldquo;language_code&rdquo;: &ldquo;Language name&rdquo;}</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get a list of available subtitles</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/beginSeekingBackward" title="beginSeekingBackward"></a>
 	<h3 class="subsubtitle method-title">beginSeekingBackward</h3>
 	
@@ -1384,6 +1530,149 @@
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Play the media with an increased playback rate (speed)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/clear" title="clear"></a>
+	<h3 class="subsubtitle method-title">clear</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is invoked by the player after playback is complete</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)clear</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is invoked by the player after playback is complete</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didSetURL:" title="didSetURL:"></a>
+	<h3 class="subsubtitle method-title">didSetURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is invoked by the player after setting a new URL for playback</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didSetURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>A NSURL instance pointing to the media location</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is invoked by the player after setting a new URL for playback</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableSubtitle:" title="enableSubtitle:"></a>
+	<h3 class="subsubtitle method-title">enableSubtitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enable the corresponding subtitle for the given language</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enableSubtitle:(NSString *)<em>language</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>language</em></dt>
+			<dd><p><code>NSString</code> the language code to enable</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Enable the corresponding subtitle for the given language</p>
 	</div>
 	
 	
@@ -1534,62 +1823,6 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithURLs:" title="initWithURLs:"></a>
-	<h3 class="subsubtitle method-title">initWithURLs:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Create a <a href="../Classes/APSAVPlayer.html">APSAVPlayer</a> instance</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (id)initWithURLs:(NSArray *)<em>urls</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>urls</em></dt>
-			<dd><p>A NSArray of NSURLs pointing to the media location</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The <a href="../Classes/APSAVPlayer.html"><code>APSAVPlayer</code></a> instance</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Create a <a href="../Classes/APSAVPlayer.html">APSAVPlayer</a> instance</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
 	<a name="//api/name/insertURL:atIndex:" title="insertURL:atIndex:"></a>
 	<h3 class="subsubtitle method-title">insertURL:atIndex:</h3>
 	
@@ -1626,6 +1859,47 @@
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>Insert an URL to the current <a href="#//api/name/play">play</a> queue at the given position</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isPictureInPictureActive" title="isPictureInPictureActive"></a>
+	<h3 class="subsubtitle method-title">isPictureInPictureActive</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Get Picture in Picture status</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isPictureInPictureActive</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Get Picture in Picture status</p>
 	</div>
 	
 	
@@ -1868,6 +2142,47 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/startPictureInPicture" title="startPictureInPicture"></a>
+	<h3 class="subsubtitle method-title">startPictureInPicture</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start Picture in Picture, if possible</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startPictureInPicture</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Start Picture in Picture, if possible</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/stop" title="stop"></a>
 	<h3 class="subsubtitle method-title">stop</h3>
 	
@@ -1909,6 +2224,47 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/stopPictureInPicture" title="stopPictureInPicture"></a>
+	<h3 class="subsubtitle method-title">stopPictureInPicture</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop Picture in Picture</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopPictureInPicture</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stop Picture in Picture</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/streamSourceType" title="streamSourceType"></a>
 	<h3 class="subsubtitle method-title">streamSourceType</h3>
 	
@@ -1921,7 +2277,7 @@ a VOD stream or a live stream.</p>
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (APSMoviePlayerSourceType)streamSourceType</code></div>
+	<div class="method-subsection method-declaration"><code>- (APSMovieStreamSourceType)streamSourceType</code></div>
 
     
 	
@@ -1929,7 +2285,7 @@ a VOD stream or a live stream.</p>
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The stream&rsquo;s type as a <a href="../Constants/APSMoviePlayerSourceType.html"><code>APSMoviePlayerSourceType</code></a> enum</p>
+		<p>The stream&rsquo;s type as a <a href="../Constants/APSMovieStreamSourceType.html"><code>APSMovieStreamSourceType</code></a> enum</p>
 	</div>
 	
 	
@@ -1977,17 +2333,17 @@ a VOD stream or a live stream.</p>
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>playbackTime</em></dt>
-			<dd><p>The time, in seconds, when the thumbnail should be taken from the video</p></dd>
+			<dd><p>The time when the thumbnail should be taken from the video.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be invoked on thumbnail generation completion.</p></dd>
 		</dl>
 		
 	</div>
 	
 	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The thumbnail image</p>
-	</div>
 	
 	
 	
@@ -1995,7 +2351,58 @@ a VOD stream or a live stream.</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Request a thumbnail image</p>
+		<p>Request a thumbnail image</p><div class="warning"><p><strong>Warning:</strong> This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">APSMediaPlayerProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/willSetURL:" title="willSetURL:"></a>
+	<h3 class="subsubtitle method-title">willSetURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is invoked by the player before setting a new URL for playback</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)willSetURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>A NSURL instance pointing to the media location</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is invoked by the player before setting a new URL for playback</p>
 	</div>
 	
 	
@@ -2027,7 +2434,7 @@ a VOD stream or a live stream.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2016 Veeplay. All rights reserved. (Last updated: 2016-01-31)</span><br />
+						<p><span class="copyright">&copy; 2016 Veeplay. All rights reserved. (Last updated: 2016-05-25)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

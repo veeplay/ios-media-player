@@ -12,6 +12,19 @@
 
 /**
  *  This protocol provides an interface for external objects that implement dynamic playback operations. Use this if you need to generate media URLs using timestamps or for implementing DRM support.
+ 
+ This protocol extends the `KRAdapter` protocol, so objects should also implement a `type` method, returning a unique string to register under.
+ 
+ To use:
+ 
+ - Create a new class that implements this protocol
+ - Register it with the player shared instance:
+ 
+            [[APSMediaPlayer sharedInstance] registerUnitManager:[<YOURCLASS> new]];
+ 
+ - Set up with the `APSMediaUnit`:
+ 
+            unit.managerType = @"<YOURSTRINGCONSTANT>"
  */
 @protocol APSUnitManagerProtocol <NSObject, KRAdapter>
 

@@ -35,7 +35,18 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
 };
 
 /**
- *  The `APSMediaPlayerOverlayController` defines all the methods that a `UIViewController` subclass must or can implement to be able to register as an overlay controller with the player. This protocol extends the `KRAdapter` protocol, so objects should also define a unique string `type` to register under.
+ *  The `APSMediaPlayerOverlayController` defines all the methods that a `UIViewController` subclass must or can implement to be able to register as an overlay controller with the player. This protocol extends the `KRAdapter` protocol, so objects should also implement a `type` method, returning a unique string to register under.
+ 
+  To use:
+ 
+  - Create a new class that implements this protocol
+  - Register it with the player shared instance:
+ 
+                [[APSMediaPlayer sharedInstance] registerClass:[<YOURCLASS> class] inGroup:kAPSMediaPlayerOverlayControllersGroup];
+ 
+  - Set up with the `APSMediaOverlay`:
+ 
+                overlay.type = @"<YOURSTRINGCONSTANT>"
  */
 @protocol APSMediaPlayerOverlayControllerProtocol <KRAdapter>
 /**-----------------------------------------------------------------------------
@@ -79,6 +90,14 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
  *  This method is invoked by the player, when fullscreen mode is disabled.
  */
 - (void)didExitFullscreen;
+/**
+ *  This method is invoked by the player, when picture in picture mode is enabled.
+ */
+- (void)didStartPictureInPicture;
+/**
+ *  This method is invoked by the player, when picture in picture mode is disabled.
+ */
+- (void)didStopPictureInPicture;
 
 /**-----------------------------------------------------------------------------
  * @name Handling Playback
@@ -153,9 +172,10 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
 /**
  *  Allows an overlay that handles media playback in place of the parent unit to return a thumbnail image at a specific time interval from the managed video.
  *
- *  @param time The time when the thumbnail should be taken from the video.
+ *  @param playbackTime The time when the thumbnail should be taken from the video.
+ *  @param block The block to be invoked on thumbnail generation completion.
  *
- *  @return The resulting thumbnail.
+ *  @warning This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.
  */
 - (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock)block;
 

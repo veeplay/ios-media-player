@@ -49,6 +49,10 @@
 	
 	<option value="//api/name/didExitFullscreen">&nbsp;&nbsp;&nbsp;&nbsp;- didExitFullscreen</option>
 	
+	<option value="//api/name/didStartPictureInPicture">&nbsp;&nbsp;&nbsp;&nbsp;- didStartPictureInPicture</option>
+	
+	<option value="//api/name/didStopPictureInPicture">&nbsp;&nbsp;&nbsp;&nbsp;- didStopPictureInPicture</option>
+	
 	<option value="//api/name/duration">&nbsp;&nbsp;&nbsp;&nbsp;- duration</option>
 	
 	<option value="//api/name/load">&nbsp;&nbsp;&nbsp;&nbsp;- load</option>
@@ -121,6 +125,10 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didExitFullscreen">didExitFullscreen</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didStartPictureInPicture">didStartPictureInPicture</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didStopPictureInPicture">didStopPictureInPicture</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/duration">duration</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/load">load</a></span></li>
@@ -188,7 +196,25 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The <a href="../Classes/APSMediaPlayerOverlayController.html"><code>APSMediaPlayerOverlayController</code></a> defines all the methods that a <code>UIViewController</code> subclass must or can implement to be able to register as an overlay controller with the player. This protocol extends the <a href="../Protocols/KRAdapter.html"><code>KRAdapter</code></a> protocol, so objects should also define a unique string <code>type</code> to register under.</p>
+						<ul>
+<li>The <a href="../Classes/APSMediaPlayerOverlayController.html"><code>APSMediaPlayerOverlayController</code></a> defines all the methods that a <code>UIViewController</code> subclass must or can implement to be able to register as an overlay controller with the player. This protocol extends the <a href="../Protocols/KRAdapter.html"><code>KRAdapter</code></a> protocol, so objects should also implement a <code>type</code> method, returning a unique string to register under.</li>
+</ul>
+
+
+<p>  To use:</p>
+
+<ul>
+<li>Create a new class that implements this protocol</li>
+<li><p>Register it with the player shared instance:</p>
+
+<pre><code>        [[APSMediaPlayer sharedInstance] registerClass:[&lt;YOURCLASS&gt; class] inGroup:kAPSMediaPlayerOverlayControllersGroup];
+</code></pre></li>
+<li><p>Set up with the <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a>:</p>
+
+<pre><code>        overlay.type = @"&lt;YOURSTRINGCONSTANT&gt;"
+</code></pre></li>
+</ul>
+
 					</div>
 					
 					
@@ -245,6 +271,18 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/didExitFullscreen">&ndash;&nbsp;didExitFullscreen</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didStartPictureInPicture">&ndash;&nbsp;didStartPictureInPicture</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didStopPictureInPicture">&ndash;&nbsp;didStopPictureInPicture</a></code>
 	</span>
 	
 	
@@ -481,6 +519,88 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/didStartPictureInPicture" title="didStartPictureInPicture"></a>
+	<h3 class="subsubtitle method-title">didStartPictureInPicture</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is invoked by the player, when picture in picture mode is enabled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didStartPictureInPicture</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is invoked by the player, when picture in picture mode is enabled.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">APSMediaPlayerOverlayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didStopPictureInPicture" title="didStopPictureInPicture"></a>
+	<h3 class="subsubtitle method-title">didStopPictureInPicture</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method is invoked by the player, when picture in picture mode is disabled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didStopPictureInPicture</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is invoked by the player, when picture in picture mode is disabled.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">APSMediaPlayerOverlayController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/duration" title="duration"></a>
 	<h3 class="subsubtitle method-title">duration</h3>
 	
@@ -531,10 +651,6 @@
 	
 	
 	
-	<div class="method-subsection brief-description">
-		<p>This method is invoked by the player when first diplaying the overlay controller object.</p>
-	</div>		
-	
     
 
 	<div class="method-subsection method-declaration"><code>- (void)load</code></div>
@@ -546,11 +662,6 @@
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method is invoked by the player when first diplaying the overlay controller object.</p>
-	</div>
 	
 	
 	
@@ -1070,18 +1181,18 @@
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>time</em></dt>
+			<dt><em>playbackTime</em></dt>
 			<dd><p>The time when the thumbnail should be taken from the video.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block to be invoked on thumbnail generation completion.</p></dd>
 		</dl>
 		
 	</div>
 	
 	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The resulting thumbnail.</p>
-	</div>
 	
 	
 	
@@ -1089,7 +1200,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Allows an overlay that handles media playback in place of the parent unit to return a thumbnail image at a specific time interval from the managed video.</p>
+		<p>Allows an overlay that handles media playback in place of the parent unit to return a thumbnail image at a specific time interval from the managed video.</p><div class="warning"><p><strong>Warning:</strong> This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.</p></div>
 	</div>
 	
 	
@@ -1164,7 +1275,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2016 Veeplay. All rights reserved. (Last updated: 2016-01-31)</span><br />
+						<p><span class="copyright">&copy; 2016 Veeplay. All rights reserved. (Last updated: 2016-05-25)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
