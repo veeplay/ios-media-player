@@ -64,7 +64,7 @@ There are currently two integration paths: via CocoaPods or via standard library
 
 ## Getting Started
 
-Set up an account at http://panel.veeso.co and add your application's bundle identifier under "License Management".
+Set up an account at http://panel.veeplay.com and add your application's bundle identifier under "License Management".
 
 Import the Player’s header file, as well as the VAST/VMAP or other plugins:
 
