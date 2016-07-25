@@ -1,4 +1,7 @@
-### 2.6
+### 2.6.2
+Fixed issue with invalid media playback errors not being triggered on AVPlayer backend 
+
+### 2.6.1
 Fixed issue with AVPlayerItem generating a KVO crash on deallocation due to invalid media
 
 ### 2.5
