@@ -184,6 +184,41 @@ To install:
 * Set the `managerType` property of the `APSMediaUnit` object to `@"marlin"`.
 * Optionally, to have the player download and add a broadband license to the local store, you can set the `kAPSMetadataDrmUrl` key in the `metadata` dictionary of an item to the string URL to the license file. To configure from JSON, set the `drm_encoding_url` metadata key.
 
+## Enabling Picture in Picture support
+
+To enable Picture in Picture support please make sure you configured your project as described in [Apple's documentation](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/AdoptingMultitaskingOniPad/QuickStartForPictureInPicture.html) then:
+
+* Import PiP backend's header file:
+
+        #import <APSPiPPlayer.h>
+        
+* Set the backend player's class to `APSPipPlayer`:
+
+        [[APSMediaPlayer sharedInstance] setBackendPlayerClass:[APSPiPPlayer class]];
+        
+* (Optional) Display the Picture in Picture control in the control bar by adding `APSPiPControl` to the `controlsParameters` property on `APSMediaUnit`:
+
+        unit.controlsParameters = @{kAPSControlsComponents: @(APSPlaybackControl|APSCurrentTimeControl|APSTimeSliderControl|APSTotalTimeControl|kAPSChromecastControl|APSPiPControl)};
+        
+    * Alternatively you can display the Picture in Picture playback control in the control bar by adding `pictureInPicture` into the components array, under the `controls` section in your JSON configuration file:
+
+
+        {
+            "content": [
+                "url": "http://......",
+                "autoplay": true,
+                "controls": {
+                    "components": [
+                        "playback",
+                        "totalTime",
+                        "slider",
+                        "currentTime",
+                        "pictureInPicture"
+                    ]
+                }
+            ]
+        }
+
 ### Example Unit Configurations
 
 * Configuring a unit progamatically:
