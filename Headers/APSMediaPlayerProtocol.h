@@ -286,4 +286,17 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  */
 - (BOOL) isPictureInPictureActive;
 
+/**
+ *  Get a list of available subtitles
+ *
+ *  @return A `NSDictionary` containing the subtitles in format {"language_code": "Language name"}
+ */
+- (NSDictionary *) availableSubtitles;
+/**
+ *  Enable the corresponding subtitle for the given language
+ *
+ *  @param language `NSString` the language code to enable
+ */
+- (void)enableSubtitle:(NSString *)language;
+
 @end

@@ -297,6 +297,10 @@ typedef void (^APSMediaPlayerFinishBlock)();
  */
 @property (nonatomic) BOOL fullscreenOnLandscapeRotate;
 
+/**
+ *  Define allowed orientations for fullscreen mode
+ */
+@property (nonatomic) APSFullscreenOrientationBehaviour fullscreenOrientationBehaviour;
 
 /**-----------------------------------------------------------------------------
  * @name Working with Media Units
@@ -538,6 +542,20 @@ typedef void (^APSMediaPlayerFinishBlock)();
  * @return The mute status
  */
 -(BOOL)getMute;
+/**
+ *  Returns a NSDictionary with available subtitles
+ *  The dictionary has the form {"language_code" : "Language Name"}
+ *
+ *  @return A `NSDictionary` with available subtitles
+ */
+- (NSDictionary *)availableSubtitles;
+/**
+ *  Enable the corresponding subtitle for the given language
+ *
+ *  @param language `NSString` the language code to enable
+ *
+ */
+- (void)enableSubtitle:(NSString *)language;
 
 /**-----------------------------------------------------------------------------
  * @name Getting Video Thumbnails

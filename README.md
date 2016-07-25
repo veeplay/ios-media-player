@@ -1,3 +1,4 @@
+
 ## About
 
 [<img src="http://veeplay.com/wp-content/themes/veeplay/images/logo_veeplay_small.png">](http://veeplay.com)
@@ -36,7 +37,7 @@ There are currently two integration paths: via CocoaPods or via standard library
         - Select your target in the project settings screen.
         - Select the “Build Phases” tab.
         - Expand the “Link Binary With Libraries” area.
-        - Click the “+” button, and add `MediaPlayer.framework`, `AVFoundation.framework` and `libz.dylib` to your project.
+        - Click the “+” button, and add `MediaPlayer.framework`, `AVFoundation.framework`, `CoreMedia.framework`, `SystemConfiguration.framework` and `libz.dylib` to your project.
         
     - Add the player’s static library to your project.
     
@@ -63,7 +64,7 @@ There are currently two integration paths: via CocoaPods or via standard library
 
 ## Getting Started
 
-Set up an account at http://panel.veeso.co and add your application's bundle identifier under "License Management".
+Set up an account at http://panel.veeplay.com and add your application's bundle identifier under "License Management".
 
 Import the Player’s header file, as well as the VAST/VMAP or other plugins:
 
@@ -182,42 +183,6 @@ To install:
     
 * Set the `managerType` property of the `APSMediaUnit` object to `@"marlin"`.
 * Optionally, to have the player download and add a broadband license to the local store, you can set the `kAPSMetadataDrmUrl` key in the `metadata` dictionary of an item to the string URL to the license file. To configure from JSON, set the `drm_encoding_url` metadata key.
-
-## Enabling Picture in Picture support
-
-To enable Picture in Picture support please make sure you configured your project as described in [Apple's documentation](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/AdoptingMultitaskingOniPad/QuickStartForPictureInPicture.html) then:
-
-* Import PiP backend's header file:
-
-        #import <APSPiPPlayer.h>
-        
-* Set the backend player's class to `APSPipPlayer`:
-
-        [[APSMediaPlayer sharedInstance] setBackendPlayerClass:[APSPiPPlayer class]];
-        
-* (Optional) Display the Picture in Picture control in the control bar by adding `APSPiPControl` to the `controlsParameters` property on `APSMediaUnit`:
-
-        unit.controlsParameters = @{kAPSControlsComponents: @(APSPlaybackControl|APSCurrentTimeControl|APSTimeSliderControl|APSTotalTimeControl|kAPSChromecastControl|APSPiPControl)};
-        
-    * Alternatively you can display the Picture in Picture playback control in the control bar by adding `pictureInPicture` into the components array, under the `controls` section in your JSON configuration file:
-
-
-        {
-            "content": [
-                "url": "http://......",
-                "autoplay": true,
-                "controls": {
-                    "components": [
-                        "playback",
-                        "totalTime",
-                        "slider",
-                        "currentTime",
-                        "pictureInPicture"
-                    ]
-                }
-            ]
-        }
-
 
 ### Example Unit Configurations
 

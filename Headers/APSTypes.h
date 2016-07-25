@@ -93,6 +93,16 @@ typedef NS_ENUM(NSInteger, APSMovieFinishReason) {
     APSMovieFinishReasonUserExited
 };
 
+/** Possible settings for fullscreen orientation handling */
+typedef NS_ENUM(NSInteger, APSFullscreenOrientationBehaviour) {
+    /** Default fullscreen orientation - matches phone orientation, according to user and app level settings */
+    APSDefaultOrientation,
+    /** Force portrait orientation for videos in fullscreen mode */
+    APSForcePortrait,
+    /** Force landscape orientation for videos in fullscreen mode */
+    APSForceLandscape
+};
+
 /** A block that is used by the thumbnail generation methods to asynchronously return an image */
 typedef void (^APSThumbnailGeneratedBlock)(UIImage *thumbnail);
 
