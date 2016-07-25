@@ -297,6 +297,10 @@ typedef void (^APSMediaPlayerFinishBlock)();
  */
 @property (nonatomic) BOOL fullscreenOnLandscapeRotate;
 
+/**
+ *  Define allowed orientations for fullscreen mode
+ */
+@property (nonatomic) APSFullscreenOrientationBehaviour fullscreenOrientationBehaviour;
 
 /**-----------------------------------------------------------------------------
  * @name Working with Media Units
