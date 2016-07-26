@@ -1,3 +1,7 @@
+### 2.6.3
+* Added 'fullscreenOrientationBehaviour' property to allow setting a single permitted interface orientation for fullscreen playback
+* Added 'APSMediaPlayerEventPlaylistFinish' event on playlist end
+
 ### 2.6.2
 Fixed issue with invalid media playback errors not being triggered on AVPlayer backend 
 

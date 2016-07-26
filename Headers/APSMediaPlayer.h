@@ -156,6 +156,7 @@ extern NSString *const APSMediaPlayerVolumeDidChangeNotification;
 extern NSString *const APSMediaPlayerEventLaunch;
 extern NSString *const APSMediaPlayerEventStart;
 extern NSString *const APSMediaPlayerEventFinish;
+extern NSString *const APSMediaPlayerEventPlaylistFinish;
 extern NSString *const APSMediaPlayerEventExitFullscreen;
 extern NSString *const APSMediaPlayerEventFullscreen;
 extern NSString *const APSMediaPlayerEventImpression;
