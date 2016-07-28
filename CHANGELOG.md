@@ -1,3 +1,7 @@
+### 2.6.4
+* Expanded fullscreen orientation support
+* Fixed issue with media unit timeout not triggering an error
+
 ### 2.6.3
 * Added 'fullscreenOrientationBehaviour' property to allow setting a single permitted interface orientation for fullscreen playback
 * Added 'APSMediaPlayerEventPlaylistFinish' event on playlist end
