@@ -303,6 +303,11 @@ typedef void (^APSMediaPlayerFinishBlock)();
  */
 @property (nonatomic) APSFullscreenOrientationBehaviour fullscreenOrientationBehaviour;
 
+/**
+ *  Overwrite orientations allowed by the app. This is used for fullscreen support. Falls back to settings from the app's plist as well as settings on the root view controller.
+ */
+@property (nonatomic) UIInterfaceOrientation allowedAppInterfaceOrientation;
+
 /**-----------------------------------------------------------------------------
  * @name Working with Media Units
  * -----------------------------------------------------------------------------

@@ -1,3 +1,6 @@
+### 2.6.5
+Added 'allowedAppInterfaceOrientation' property to allow overriding orientations defined in the .plist configurations / on the root view controller (in case the app manages view rotation independently). Use this if having issues with fullscreen functionality.
+
 ### 2.6.4
 * Expanded fullscreen orientation support
 * Fixed issue with media unit timeout not triggering an error
