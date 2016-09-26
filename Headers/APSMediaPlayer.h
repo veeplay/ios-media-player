@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <TSMiniWebBrowser/TSMiniWebBrowser.h>
 
 #import "KRHub.h"
 #import "APSMediaBuilder.h"
 #import "APSMediaOverlay.h"
 #import "APSMediaUnit.h"
-#import "TSMiniWebBrowser.h"
 #import "APSTypes.h"
 
 #define kAPSMediaPlayerEventType @"event.type"
