@@ -23,4 +23,5 @@ Pod::Spec.new do |s|
   s.dependency "KAProgressLabel", "~> 3.0"
   s.dependency "TBXML", "~> 1.5"
   s.dependency "TSMiniWebBrowser"
+  s.dependency "Reachability"
 end
