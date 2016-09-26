@@ -1,3 +1,6 @@
+### 2.6.7
+Added Reachability as a Cocoapods dependency
+
 ### 2.6.6
 Fixed issue with seekbar having wrong width after view frame change
 
