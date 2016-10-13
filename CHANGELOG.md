@@ -1,3 +1,6 @@
+### 2.6.8
+Send a 'NSNotification' if retrieving VAST data fails
+
 ### 2.6.7
 Added Reachability as a Cocoapods dependency
 
