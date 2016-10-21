@@ -16,6 +16,7 @@
 #import "APSMediaPlayerHTMLOverlayController.h"
 #import "APSMediaPlayerYoutubeOverlayController.h"
 #import "APSMediaPlayerVimeoOverlayController.h"
+#import "APSMediaPlayerSubtitlesOverlayController.h"
 #import "APSMediaEvent.h"
 
 @class APSMediaUnit;
@@ -113,8 +114,8 @@ extern NSString *const APSContentOverlay;
 /**
  *  The order of the overlay in the current view stack.
  */
-
 @property (nonatomic) int zIndex;
+
 /**
  *  The width of the overlay. Supports pixels (e.g.: @"320") or percentages, relative to the total width (e.g.: @"50%").
  */

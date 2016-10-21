@@ -1,3 +1,6 @@
+### 2.6.9
+SRT subtitles support
+
 ### 2.6.8
 Send a 'NSNotification' if retrieving VAST data fails
 
