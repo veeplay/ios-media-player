@@ -1,3 +1,7 @@
+### 2.7.0
+Subtitles fixes
+Fix an issue with seekbar layout when changing orientation
+
 ### 2.6.9
 SRT subtitles support
 
