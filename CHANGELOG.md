@@ -1,3 +1,6 @@
+### 2.8.0
+New unit manager for YouTube videos
+
 ### 2.7.0
 Subtitles fixes
 Fix an issue with seekbar layout when changing orientation
