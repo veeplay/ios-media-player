@@ -13,5 +13,5 @@ extern NSString* const APSYoutubeOverlay;
 
 #define kAPSYoutubeURL @"aps_youtube_url"
 
-@interface APSMediaPlayerYoutubeOverlayController : APSMediaPlayerOverlayController <UIWebViewDelegate>
+__deprecated @interface APSMediaPlayerYoutubeOverlayController : APSMediaPlayerOverlayController <UIWebViewDelegate>
 @end
