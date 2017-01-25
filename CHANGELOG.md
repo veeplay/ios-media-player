@@ -1,3 +1,6 @@
+### 2.8.1
+Fix fullscreen window size in landscape mode
+
 ### 2.8.0
 New unit manager for YouTube videos
 
