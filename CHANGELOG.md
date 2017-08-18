@@ -1,3 +1,6 @@
+### 2.8.2
+New unit manager for Vimeo videos
+
 ### 2.8.1
 Fix fullscreen window size in landscape mode
 
