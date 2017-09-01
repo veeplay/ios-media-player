@@ -1,3 +1,6 @@
+### 2.8.3
+Stability improvements
+
 ### 2.8.2
 New unit manager for Vimeo videos
 
@@ -35,7 +38,7 @@ Added 'allowedAppInterfaceOrientation' property to allow overriding orientations
 * Added 'APSMediaPlayerEventPlaylistFinish' event on playlist end
 
 ### 2.6.2
-Fixed issue with invalid media playback errors not being triggered on AVPlayer backend 
+Fixed issue with invalid media playback errors not being triggered on AVPlayer backend
 
 ### 2.6.1
 Fixed issue with AVPlayerItem generating a KVO crash on deallocation due to invalid media
