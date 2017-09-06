@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Veeplay"
-  s.version          = "2.8.3"
+  s.version          = "2.8.4"
   s.summary          = "Veeplay Media Player - Crossplatform media player with video ads support"
   s.homepage         = "http://veeplay.com"
   s.license          = { :type => "Commercial", :text => "Contact office@veeplay.com" }
@@ -26,5 +26,4 @@ Pod::Spec.new do |s|
   s.dependency "Reachability"
   s.dependency "XCDYouTubeKit", "~> 2.5"
   s.dependency "YTVimeoExtractor", "~> 1.2"
-  s.dependency "KVOController", "~> 1.2.0"
 end

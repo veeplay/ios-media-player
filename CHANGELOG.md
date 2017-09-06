@@ -1,3 +1,6 @@
+### 2.8.4
+Fix overlapping media issue
+
 ### 2.8.3
 Stability improvements
 

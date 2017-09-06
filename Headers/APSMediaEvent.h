@@ -64,12 +64,6 @@ typedef NS_ENUM(NSInteger, APSMediaEventState) {
  */
 - (void)onUnload;
 
-/**
- *  This method allow setting event's state without triggering KVO observers
- *  To be used inside - observeValueForKeyPath:ofObject:change:context:
- */
-- (void)setStateWithoutTriggeringKVO:(APSMediaEventState)state;
-
 @end
 
 /**
