@@ -1,3 +1,7 @@
+### 2.8.5
+Fix crashes caused by objects being deallocated while still having observers attached to them
+Fix small issue with AVPlayer backend
+
 ### 2.8.4
 Fix overlapping media issue
 
