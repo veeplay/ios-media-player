@@ -1,5 +1,5 @@
-### 2.8.7
-Set `modalPresentationCapturesStatusBarAppearance` on fullscreen view controller
+### 2.8.8
+Fix URL encoding issue in APSAVPlayer
 
 ### 2.8.6
 Fix missing KVOController dependency in Podspec

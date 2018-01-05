@@ -137,6 +137,181 @@
 						<a title="Tasks" name="tasks"></a>
 						
 
+						<a title="Plugin Dictionary Configuration" name="task_Plugin Dictionary Configuration"></a>
+						<h2 class="task-title">Plugin Dictionary Configuration</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/dictionaryConfigurationKey" title="dictionaryConfigurationKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dictionaryConfigurationKey">&ndash;&nbsp;dictionaryConfigurationKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The string key that will be used in the root of JSON and dictionary builder configurations to hold all the specific configuration details for the plugin.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)dictionaryConfigurationKey</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>String key.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The string key that will be used in the root of JSON and dictionary builder configurations to hold all the specific configuration details for the plugin.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaBuilderPlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureFromDictionary:" title="configureFromDictionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureFromDictionary:">&ndash;&nbsp;configureFromDictionary:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is called by the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object, in the process of its configuration. The method is only called if in the root of the configuring JSON or <code>NSDictionary</code> there is a key equal to the string defined by the plugin using the <a href="../Protocols/APSMediaBuilderPlugin.html#//api/name/dictionaryConfigurationKey"><code>dictionaryConfigurationKey</code></a> method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configureFromDictionary:(NSDictionary *)<em>adConfiguration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>A <code>NSDictionary</code> object containing the specific plugin configuration data.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called by the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object, in the process of its configuration. The method is only called if in the root of the configuring JSON or <code>NSDictionary</code> there is a key equal to the string defined by the plugin using the <a href="../Protocols/APSMediaBuilderPlugin.html#//api/name/dictionaryConfigurationKey"><code>dictionaryConfigurationKey</code></a> method.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaBuilderPlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startForBuilder:" title="startForBuilder:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startForBuilder:">&ndash;&nbsp;startForBuilder:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method will be called at the beginning of the <code>mediaUnits</code> method of the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object that registered the plugin.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startForBuilder:(APSMediaBuilder *)<em>builder</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>builder</code></th>
+						<td><p>A reference to the calling <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method will be called at the beginning of the <code>mediaUnits</code> method of the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object that registered the plugin.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaBuilderPlugin.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
 						<a title="Configuring Ad Breaks" name="task_Configuring Ad Breaks"></a>
 						<h2 class="task-title">Configuring Ad Breaks</h2>
 
@@ -338,181 +513,6 @@
 </div>
 						</div>
 						
-
-						<a title="Plugin Dictionary Configuration" name="task_Plugin Dictionary Configuration"></a>
-						<h2 class="task-title">Plugin Dictionary Configuration</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/dictionaryConfigurationKey" title="dictionaryConfigurationKey"></a>
-	<h3 class="method-title"><code><a href="#//api/name/dictionaryConfigurationKey">&ndash;&nbsp;dictionaryConfigurationKey</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>The string key that will be used in the root of JSON and dictionary builder configurations to hold all the specific configuration details for the plugin.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSString *)dictionaryConfigurationKey</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>String key.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>The string key that will be used in the root of JSON and dictionary builder configurations to hold all the specific configuration details for the plugin.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaBuilderPlugin.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/configureFromDictionary:" title="configureFromDictionary:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/configureFromDictionary:">&ndash;&nbsp;configureFromDictionary:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>This method is called by the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object, in the process of its configuration. The method is only called if in the root of the configuring JSON or <code>NSDictionary</code> there is a key equal to the string defined by the plugin using the <a href="../Protocols/APSMediaBuilderPlugin.html#//api/name/dictionaryConfigurationKey"><code>dictionaryConfigurationKey</code></a> method.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)configureFromDictionary:(NSDictionary *)<em>adConfiguration</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>configuration</code></th>
-						<td><p>A <code>NSDictionary</code> object containing the specific plugin configuration data.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>This method is called by the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object, in the process of its configuration. The method is only called if in the root of the configuring JSON or <code>NSDictionary</code> there is a key equal to the string defined by the plugin using the <a href="../Protocols/APSMediaBuilderPlugin.html#//api/name/dictionaryConfigurationKey"><code>dictionaryConfigurationKey</code></a> method.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaBuilderPlugin.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/startForBuilder:" title="startForBuilder:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startForBuilder:">&ndash;&nbsp;startForBuilder:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>This method will be called at the beginning of the <code>mediaUnits</code> method of the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object that registered the plugin.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)startForBuilder:(APSMediaBuilder *)<em>builder</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>builder</code></th>
-						<td><p>A reference to the calling <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>This method will be called at the beginning of the <code>mediaUnits</code> method of the <a href="../Classes/APSMediaBuilder.html"><code>APSMediaBuilder</code></a> object that registered the plugin.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaBuilderPlugin.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
 					</div>
 					
 					
@@ -525,7 +525,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Veeplay. All rights reserved. Updated: 2017-11-03</p>
+						<p class="copyright">Copyright &copy; 2018 Veeplay. All rights reserved. Updated: 2018-01-05</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
