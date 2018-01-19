@@ -1,3 +1,6 @@
+### 2.8.9
+Stability improvements in APSAVPlayer
+
 ### 2.8.8
 Fix URL encoding issue in APSAVPlayer
 

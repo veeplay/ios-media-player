@@ -70,8 +70,6 @@
 		
 		<option value="//api/name/allowsAirPlay">- allowsAirPlay</option>
 		
-		<option value="//api/name/appendURL:">- appendURL:</option>
-		
 		<option value="//api/name/availableSubtitles">- availableSubtitles</option>
 		
 		<option value="//api/name/beginSeekingBackward">- beginSeekingBackward</option>
@@ -238,8 +236,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/appendURL:" title="appendURL:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/appendURL:">&ndash;&nbsp;appendURL:</a></code>
+	<a name="//api/name/isPreparedToPlay" title="isPreparedToPlay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isPreparedToPlay">&ndash;&nbsp;isPreparedToPlay</a></code>
 </h3>
 
 	<div class="method-info">
@@ -249,26 +247,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Add an URL to the current <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> queue</p>
+				<p>Returns a Boolean value specifing if the player is ready to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)appendURL:(NSURL *)<em>url</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)isPreparedToPlay</code></div>
 
 		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>url</code></th>
-						<td><p>A NSURL instance pointing to the media location</p></td>
-					</tr>
-				
-				</table>
-			</div>
 			
 
 			
@@ -278,7 +264,283 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Add an URL to the current <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> queue</p>
+				<p>Returns a Boolean value specifing if the player is ready to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentPlaybackTime" title="currentPlaybackTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentPlaybackTime">&ndash;&nbsp;currentPlaybackTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set the current position in stream</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)currentPlaybackTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set the current position in stream</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currentPlaybackRate" title="currentPlaybackRate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentPlaybackRate">&ndash;&nbsp;currentPlaybackRate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set the current playback rate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (float)currentPlaybackRate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set the current playback rate</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playableDuration" title="playableDuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playableDuration">&ndash;&nbsp;playableDuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/duration">duration</a> of the buffered content</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)playableDuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/duration">duration</a> of the buffered content</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/duration" title="duration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/duration">&ndash;&nbsp;duration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the total duration of the video</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)duration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the total duration of the video</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contentURL" title="contentURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contentURL">&ndash;&nbsp;contentURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set the current media&rsquo;s URL</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURL *)contentURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set the current media&rsquo;s URL</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setContentURL:" title="setContentURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setContentURL:">&ndash;&nbsp;setContentURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set the current media&rsquo;s URL</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setContentURL:(NSURL *)<em>contentURL</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set the current media&rsquo;s URL</p>
 			</div>
 			
 
@@ -618,8 +880,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/isPreparedToPlay" title="isPreparedToPlay"></a>
-	<h3 class="method-title"><code><a href="#//api/name/isPreparedToPlay">&ndash;&nbsp;isPreparedToPlay</a></code>
+	<a name="//api/name/setScalingMode:" title="setScalingMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setScalingMode:">&ndash;&nbsp;setScalingMode:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -629,12 +891,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Returns a Boolean value specifing if the player is ready to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media</p>
+				<p>Get or set the scaling mode of the video according to its viewport</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL)isPreparedToPlay</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)setScalingMode:(APSMovieScalingMode)<em>scalingMode</em></code></div>
 
 		    
 			
@@ -646,7 +908,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Returns a Boolean value specifing if the player is ready to <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> media</p>
+				<p>Get or set the scaling mode of the video according to its viewport</p>
 			</div>
 			
 
@@ -664,8 +926,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/currentPlaybackTime" title="currentPlaybackTime"></a>
-	<h3 class="method-title"><code><a href="#//api/name/currentPlaybackTime">&ndash;&nbsp;currentPlaybackTime</a></code>
+	<a name="//api/name/setShouldAutoplay:" title="setShouldAutoplay:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setShouldAutoplay:">&ndash;&nbsp;setShouldAutoplay:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -675,12 +937,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get or set the current position in stream</p>
+				<p>Get or set if the player should auto<a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> an URL as soon as it is provided</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)currentPlaybackTime</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)setShouldAutoplay:(BOOL)<em>shouldAutoplay</em></code></div>
 
 		    
 			
@@ -692,7 +954,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get or set the current position in stream</p>
+				<p>Get or set if the player should auto<a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> an URL as soon as it is provided</p>
 			</div>
 			
 
@@ -710,8 +972,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/setCurrentPlaybackTime:" title="setCurrentPlaybackTime:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setCurrentPlaybackTime:">&ndash;&nbsp;setCurrentPlaybackTime:</a></code>
+	<a name="//api/name/playbackState" title="playbackState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playbackState">&ndash;&nbsp;playbackState</a></code>
 </h3>
 
 	<div class="method-info">
@@ -721,12 +983,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get or set the current position in stream</p>
+				<p>Get the current playback state</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)setCurrentPlaybackTime:(NSTimeInterval)<em>currentPlaybackTime</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (APSMoviePlaybackState)playbackState</code></div>
 
 		    
 			
@@ -738,7 +1000,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get or set the current position in stream</p>
+				<p>Get the current playback state</p>
 			</div>
 			
 
@@ -756,8 +1018,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/currentPlaybackRate" title="currentPlaybackRate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/currentPlaybackRate">&ndash;&nbsp;currentPlaybackRate</a></code>
+	<a name="//api/name/loadState" title="loadState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadState">&ndash;&nbsp;loadState</a></code>
 </h3>
 
 	<div class="method-info">
@@ -767,12 +1029,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get or set the current playback rate</p>
+				<p>Get the current state of the buffer</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (float)currentPlaybackRate</code></div>
+			<div class="method-subsection method-declaration"><code>- (APSMovieLoadState)loadState</code></div>
 
 		    
 			
@@ -784,7 +1046,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get or set the current playback rate</p>
+				<p>Get the current state of the buffer</p>
 			</div>
 			
 
@@ -884,6 +1146,238 @@ a VOD stream or a live stream.</p>
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Get the stream&rsquo;s source type. Different by <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/movieSourceType">movieSourceType</a> because it returns if the stream is
 a VOD stream or a live stream.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/timedMetadata" title="timedMetadata"></a>
+	<h3 class="method-title"><code><a href="#//api/name/timedMetadata">&ndash;&nbsp;timedMetadata</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Obtains the most recent time-based metadata provided by the streamed movie.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)timedMetadata</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Obtains the most recent time-based metadata provided by the streamed movie.</p>
+
+<p>Returns an array of the most recent MPTimedMetadata objects provided by the media stream.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/allowsAirPlay" title="allowsAirPlay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allowsAirPlay">&ndash;&nbsp;allowsAirPlay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies whether the movie player allows AirPlay movie playback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)allowsAirPlay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Specifies whether the movie player allows AirPlay movie playback.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAllowsAirPlay:" title="setAllowsAirPlay:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAllowsAirPlay:">&ndash;&nbsp;setAllowsAirPlay:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies whether the movie player allows AirPlay movie playback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAllowsAirPlay:(BOOL)<em>allowsAirPlay</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Specifies whether the movie player allows AirPlay movie playback.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/airPlayVideoActive" title="airPlayVideoActive"></a>
+	<h3 class="method-title"><code><a href="#//api/name/airPlayVideoActive">&ndash;&nbsp;airPlayVideoActive</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check out if AirPlay video is started or stopped.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)airPlayVideoActive</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Check out if AirPlay video is started or stopped.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCurrentPlaybackTime:" title="setCurrentPlaybackTime:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCurrentPlaybackTime:">&ndash;&nbsp;setCurrentPlaybackTime:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get or set the current position in stream</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setCurrentPlaybackTime:(NSTimeInterval)<em>currentPlaybackTime</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get or set the current position in stream</p>
 			</div>
 			
 
@@ -1291,560 +1785,6 @@ a VOD stream or a live stream.</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/playableDuration" title="playableDuration"></a>
-	<h3 class="method-title"><code><a href="#//api/name/playableDuration">&ndash;&nbsp;playableDuration</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get the <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/duration">duration</a> of the buffered content</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)playableDuration</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get the <a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/duration">duration</a> of the buffered content</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/duration" title="duration"></a>
-	<h3 class="method-title"><code><a href="#//api/name/duration">&ndash;&nbsp;duration</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get the total duration of the video</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)duration</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get the total duration of the video</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/contentURL" title="contentURL"></a>
-	<h3 class="method-title"><code><a href="#//api/name/contentURL">&ndash;&nbsp;contentURL</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get or set the current media&rsquo;s URL</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSURL *)contentURL</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get or set the current media&rsquo;s URL</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setContentURL:" title="setContentURL:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setContentURL:">&ndash;&nbsp;setContentURL:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get or set the current media&rsquo;s URL</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setContentURL:(NSURL *)<em>contentURL</em></code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get or set the current media&rsquo;s URL</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setScalingMode:" title="setScalingMode:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setScalingMode:">&ndash;&nbsp;setScalingMode:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get or set the scaling mode of the video according to its viewport</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setScalingMode:(APSMovieScalingMode)<em>scalingMode</em></code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get or set the scaling mode of the video according to its viewport</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setShouldAutoplay:" title="setShouldAutoplay:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setShouldAutoplay:">&ndash;&nbsp;setShouldAutoplay:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get or set if the player should auto<a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> an URL as soon as it is provided</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setShouldAutoplay:(BOOL)<em>shouldAutoplay</em></code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get or set if the player should auto<a href="../Protocols/APSMediaPlayerProtocol.html#//api/name/play">play</a> an URL as soon as it is provided</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/playbackState" title="playbackState"></a>
-	<h3 class="method-title"><code><a href="#//api/name/playbackState">&ndash;&nbsp;playbackState</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get the current playback state</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (APSMoviePlaybackState)playbackState</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get the current playback state</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/loadState" title="loadState"></a>
-	<h3 class="method-title"><code><a href="#//api/name/loadState">&ndash;&nbsp;loadState</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Get the current state of the buffer</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (APSMovieLoadState)loadState</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get the current state of the buffer</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/timedMetadata" title="timedMetadata"></a>
-	<h3 class="method-title"><code><a href="#//api/name/timedMetadata">&ndash;&nbsp;timedMetadata</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Obtains the most recent time-based metadata provided by the streamed movie.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSArray *)timedMetadata</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Obtains the most recent time-based metadata provided by the streamed movie.</p>
-
-<p>Returns an array of the most recent MPTimedMetadata objects provided by the media stream.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/allowsAirPlay" title="allowsAirPlay"></a>
-	<h3 class="method-title"><code><a href="#//api/name/allowsAirPlay">&ndash;&nbsp;allowsAirPlay</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Specifies whether the movie player allows AirPlay movie playback.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)allowsAirPlay</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Specifies whether the movie player allows AirPlay movie playback.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setAllowsAirPlay:" title="setAllowsAirPlay:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setAllowsAirPlay:">&ndash;&nbsp;setAllowsAirPlay:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Specifies whether the movie player allows AirPlay movie playback.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setAllowsAirPlay:(BOOL)<em>allowsAirPlay</em></code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Specifies whether the movie player allows AirPlay movie playback.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/airPlayVideoActive" title="airPlayVideoActive"></a>
-	<h3 class="method-title"><code><a href="#//api/name/airPlayVideoActive">&ndash;&nbsp;airPlayVideoActive</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Check out if AirPlay video is started or stopped.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)airPlayVideoActive</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Check out if AirPlay video is started or stopped.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/type" title="type"></a>
 	<h3 class="method-title"><code><a href="#//api/name/type">&ndash;&nbsp;type</a></code>
 </h3>
@@ -1910,7 +1850,7 @@ a VOD stream or a live stream.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Veeplay. All rights reserved. Updated: 2018-01-05</p>
+						<p class="copyright">Copyright &copy; 2018 Veeplay. All rights reserved. Updated: 2018-01-19</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
