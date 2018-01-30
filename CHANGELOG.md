@@ -1,3 +1,6 @@
+### 2.9.0
+Support for "subtitlesUrl" property in media units
+
 ### 2.8.9
 Stability improvements in APSAVPlayer
 

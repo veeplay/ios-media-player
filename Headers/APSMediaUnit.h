@@ -174,6 +174,10 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  */
 @property (nonatomic) NSString *managerType;
 /**
+ *  A NSURL pointing to the SRT subtitles to be loaded
+ */
+@property (nonatomic) NSURL *subtitlesURL;
+/**
  The configuration for the controls bar overlay.
  
  The following keys are available:
