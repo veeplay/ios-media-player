@@ -1,3 +1,6 @@
+### 2.9.1
+Fix some video not being played because of slow state changes in AVPlayer
+
 ### 2.9.0
 Support for "subtitlesUrl" property in media units
 
