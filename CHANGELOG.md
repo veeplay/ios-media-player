@@ -1,3 +1,6 @@
+### 2.9.2
+Fix UI thread being blocked by requesting duration from AVPlayer
+
 ### 2.9.1
 Fix some video not being played because of slow state changes in AVPlayer
 
