@@ -109,6 +109,11 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  */
 @property (nonatomic) APSMovieSourceType movieSourceType;
 
+/*
+ *  Check if the current media is a live or on-demand stream
+ */
+@property (nonatomic, readonly) BOOL isStreamingLive;
+
 /**
  *  Set or get how the player controls will appear
  */
@@ -130,7 +135,6 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  *  Check out if AirPlay video is started or stopped.
  */
 @property(nonatomic, readonly) BOOL airPlayVideoActive;
-
 
 /**-----------------------------------------------------------------------------
  * @name Required protocol methods
