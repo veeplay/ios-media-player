@@ -1,3 +1,6 @@
+### 2.9.4
+New property added on APSMediaPlayer to set the User-Agent for HTTP requests
+
 ### 2.9.3
 Fix a crash which occurs when receiving invalid VAST URLs
 

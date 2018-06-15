@@ -282,7 +282,10 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  A class which is compliant to `APSMediaPlayerProtocol` and which will be used as a backend player. Use `[APSAVPlayer class]` for the AVPlayer-based backend or `[APSMPMoviePlayer class]` for the MPMoviePlayerController-based backend.
  */
 @property (nonatomic, strong) Class backendPlayerClass;
-
+/**
+ *  The user agent that should be used when making HTTP requests.
+ */
+@property (nonatomic) NSString *userAgent;
 /**
  *  Set this to NO to disable internal fullscreen handling. Fullscreen functionality should be implemented externally, using the available methods and notifications emitted by the player.
  */
