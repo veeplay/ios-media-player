@@ -1,3 +1,9 @@
+### 2.9.6
+Preliminary VAST 4 support
+
+### 2.9.5
+Use NSURLSession instead of deprecated NSURLConnection for tracking urls
+
 ### 2.9.4
 New property added on APSMediaPlayer to set the User-Agent for HTTP requests
 
