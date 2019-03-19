@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<title></title>
+	<title>APSVASTAdBreak Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -43,9 +43,97 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/adCount">adCount</option>
+		
+		<option value="//api/name/adOffset">adOffset</option>
+		
+		<option value="//api/name/adPodFallbackStrategy">adPodFallbackStrategy</option>
+		
+		<option value="//api/name/advertisingIdentifier">advertisingIdentifier</option>
+		
+		<option value="//api/name/advertisingIdentifierType">advertisingIdentifierType</option>
+		
+		<option value="//api/name/afterBannerTapped">afterBannerTapped</option>
+		
+		<option value="//api/name/afterVideoAdTapped">afterVideoAdTapped</option>
+		
+		<option value="//api/name/allowMultipleAds">allowMultipleAds</option>
+		
+		<option value="//api/name/allowPinchToFullscreen">allowPinchToFullscreen</option>
+		
+		<option value="//api/name/bannerConfiguration">bannerConfiguration</option>
+		
+		<option value="//api/name/blockedAdCategories">blockedAdCategories</option>
+		
+		<option value="//api/name/controlsDisplayForAds">controlsDisplayForAds</option>
+		
+		<option value="//api/name/controlsParametersForAds">controlsParametersForAds</option>
+		
+		<option value="//api/name/countdownConfiguration">countdownConfiguration</option>
+		
+		<option value="//api/name/debug">debug</option>
+		
+		<option value="//api/name/defaultIconHeightPercentage">defaultIconHeightPercentage</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/desiredAdCategories">desiredAdCategories</option>
+		
+		<option value="//api/name/followWrappers">followWrappers</option>
+		
+		<option value="//api/name/fullscreenButtonConfiguration">fullscreenButtonConfiguration</option>
+		
+		<option value="//api/name/iconFadeInDuration">iconFadeInDuration</option>
+		
+		<option value="//api/name/isAdTrackingLimited">isAdTrackingLimited</option>
+		
+		<option value="//api/name/locationCoordinates">locationCoordinates</option>
+		
+		<option value="//api/name/multipleAdsConflictsPolicy">multipleAdsConflictsPolicy</option>
+		
+		<option value="//api/name/prefferedVideoMimeTypes">prefferedVideoMimeTypes</option>
+		
+		<option value="//api/name/repeatAfter">repeatAfter</option>
+		
+		<option value="//api/name/scalingMode">scalingMode</option>
+		
+		<option value="//api/name/skipButtonConfiguration">skipButtonConfiguration</option>
+		
+		<option value="//api/name/sources">sources</option>
+		
+		<option value="//api/name/transactionId">transactionId</option>
+		
+		<option value="//api/name/type">type</option>
+		
+		<option value="//api/name/userAgent">userAgent</option>
+		
+		<option value="//api/name/wrappersCountLimit">wrappersCountLimit</option>
+		
+	</optgroup>
+	
 
 	
 
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/configureFromDictionary:">- configureFromDictionary:</option>
+		
+	</optgroup>
+	
 	
 </select>
 						</label>
@@ -59,22 +147,1716 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title"></h1>
+					<h1 class="title">APSVASTAdBreak Class Reference</h1>
 
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/APSMediaEvent.html">APSMediaEvent</a> : NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/APSMediaTrackableObject.html">APSMediaTrackableObject</a><br />NSCopying</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>APSVASTAdBreak.h<br />APSVASTAdBreak.m</td>
+</tr>
+						</tbody></table></div>
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An <code>APSVASTAdBreak</code> object defines an ad break for which the builder plugin will try to generate <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a>s and insert them into the playlist.</p>
+					</div>
+					
+					
 
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Main Configuration" name="task_Main Configuration"></a>
+						<h2 class="task-title">Main Configuration</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sources" title="sources"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sources">&nbsp;&nbsp;sources</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An array of <code>NSString</code> objects indicating the VAST URLs that will be called in order to populate the ad break with ads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *sources</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An array of <code>NSString</code> objects indicating the VAST URLs that will be called in order to populate the ad break with ads.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="method-title"><code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The ad break type. Specifies how the rezulting <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a>s and <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a>s need to be placed relative to the main content units. See <code>APSVASTConfigurationOptions</code> for more details about the possible values.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSVASTAdBreakType type</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The ad break type. Specifies how the rezulting <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a>s and <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a>s need to be placed relative to the main content units. See <code>APSVASTConfigurationOptions</code> for more details about the possible values.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adCount" title="adCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adCount">&nbsp;&nbsp;adCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The number of ads in this adBreak</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger adCount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The number of ads in this adBreak</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transactionId" title="transactionId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionId">&nbsp;&nbsp;transactionId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An identifier used to correlate a chain of ad requests from the origination (supply) end.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *transactionId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An identifier used to correlate a chain of ad requests from the origination (supply) end.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/advertisingIdentifier" title="advertisingIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/advertisingIdentifier">&nbsp;&nbsp;advertisingIdentifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The Apple IDFA or similar ad identifier</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *advertisingIdentifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The Apple IDFA or similar ad identifier</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/advertisingIdentifierType" title="advertisingIdentifierType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/advertisingIdentifierType">&nbsp;&nbsp;advertisingIdentifierType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The source of the IFA
+See <a href="https://iabtechlab.com/wp-content/uploads/2018/12/OTT-IFA-guidelines.final_Dec2018.pdf">https://iabtechlab.com/wp-content/uploads/2018/12/OTT-IFA-guidelines.final_Dec2018.pdf</a> for possible values</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *advertisingIdentifierType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The source of the IFA
+See <a href="https://iabtechlab.com/wp-content/uploads/2018/12/OTT-IFA-guidelines.final_Dec2018.pdf">https://iabtechlab.com/wp-content/uploads/2018/12/OTT-IFA-guidelines.final_Dec2018.pdf</a> for possible values</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isAdTrackingLimited" title="isAdTrackingLimited"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isAdTrackingLimited">&nbsp;&nbsp;isAdTrackingLimited</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether to limit ad tracking or not</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) BOOL isAdTrackingLimited</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Whether to limit ad tracking or not</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/locationCoordinates" title="locationCoordinates"></a>
+	<h3 class="method-title"><code><a href="#//api/name/locationCoordinates">&nbsp;&nbsp;locationCoordinates</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>GPS location coordinates in format <code>lat,lon</code></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *locationCoordinates</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>GPS location coordinates in format <code>lat,lon</code></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adOffset" title="adOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adOffset">&nbsp;&nbsp;adOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A string format that defines when midrolls and nonlinear ads should be inserted mid-unit for each content unit.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *adOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A string format that defines when midrolls and nonlinear ads should be inserted mid-unit for each content unit.</p>
+
+<p>The expected format for this property is: &ldquo;seconds&rdquo; or &ldquo;percentage%&rdquo;.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/repeatAfter" title="repeatAfter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/repeatAfter">&nbsp;&nbsp;repeatAfter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the time interval in seconds after which the ad break will be repeated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval repeatAfter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the time interval in seconds after which the ad break will be repeated.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userAgent" title="userAgent"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userAgent">&nbsp;&nbsp;userAgent</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The user agent that should be used when making HTTP requests.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *userAgent</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The user agent that should be used when making HTTP requests.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate object</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;APSVASTAdBreakDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Delegate object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/configureFromDictionary:" title="configureFromDictionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configureFromDictionary:">&ndash;&nbsp;configureFromDictionary:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Configure an AdBreak from a dictionary structure.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configureFromDictionary:(NSDictionary *)<em>configuration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>Configuration dictionary.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Configure an AdBreak from a dictionary structure.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Configuring the Playback Controls Bar" name="task_Configuring the Playback Controls Bar"></a>
+						<h2 class="task-title">Configuring the Playback Controls Bar</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/controlsDisplayForAds" title="controlsDisplayForAds"></a>
+	<h3 class="method-title"><code><a href="#//api/name/controlsDisplayForAds">&nbsp;&nbsp;controlsDisplayForAds</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Specifies how the controls bar will be displayed on top of video ads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMediaControlsDisplay controlsDisplayForAds</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Specifies how the controls bar will be displayed on top of video ads.</p>
+
+<p>See <a href="../Constants/APSMediaControlsDisplay.html"><code>APSMediaControlsDisplay</code></a> for more details. Defaults to <code>APSMediaControlsDisplayNone</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/controlsParametersForAds" title="controlsParametersForAds"></a>
+	<h3 class="method-title"><code><a href="#//api/name/controlsParametersForAds">&nbsp;&nbsp;controlsParametersForAds</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The configuration for the controls bar overlay on top of video ads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSDictionary *controlsParametersForAds</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The configuration for the controls bar overlay on top of video ads.</p>
+
+<p>See <a href="../Classes/APSMediaUnit.html#//api/name/controlsParameters">[APSMediaUnit controlsParameters]</a> for details on creating this dictionary.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="VAST 3.0 Icon Support" name="task_VAST 3.0 Icon Support"></a>
+						<h2 class="task-title">VAST 3.0 Icon Support</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/defaultIconHeightPercentage" title="defaultIconHeightPercentage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultIconHeightPercentage">&nbsp;&nbsp;defaultIconHeightPercentage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Icons are rendered to a height that&rsquo;s proportional to the current player view height. This property defines the percentage of the current height to render ads to, while preserving the original aspect ration in calculating the rendered width.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat defaultIconHeightPercentage</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Icons are rendered to a height that&rsquo;s proportional to the current player view height. This property defines the percentage of the current height to render ads to, while preserving the original aspect ration in calculating the rendered width.</p>
+
+<p>Defaults to 10.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/iconFadeInDuration" title="iconFadeInDuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iconFadeInDuration">&nbsp;&nbsp;iconFadeInDuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The fade-in animation duration for displaying icons, in seconds.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat iconFadeInDuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The fade-in animation duration for displaying icons, in seconds.</p>
+
+<p>Defaults to 0.5.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Skip Button Configuration" name="task_Skip Button Configuration"></a>
+						<h2 class="task-title">Skip Button Configuration</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/skipButtonConfiguration" title="skipButtonConfiguration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/skipButtonConfiguration">&nbsp;&nbsp;skipButtonConfiguration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Holds the configuration object for the skip button that appears on top of video ads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSVASTSkipButtonConfiguration *skipButtonConfiguration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Holds the configuration object for the skip button that appears on top of video ads.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Fullscreen Button Configuration" name="task_Fullscreen Button Configuration"></a>
+						<h2 class="task-title">Fullscreen Button Configuration</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/fullscreenButtonConfiguration" title="fullscreenButtonConfiguration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fullscreenButtonConfiguration">&nbsp;&nbsp;fullscreenButtonConfiguration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Holds the configuration object for the fullscreen button that appears on top of video ads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSVASTFullscreenButtonConfiguration *fullscreenButtonConfiguration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Holds the configuration object for the fullscreen button that appears on top of video ads.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Countdown to Next Unit Overlay Configuration" name="task_Countdown to Next Unit Overlay Configuration"></a>
+						<h2 class="task-title">Countdown to Next Unit Overlay Configuration</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/countdownConfiguration" title="countdownConfiguration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/countdownConfiguration">&nbsp;&nbsp;countdownConfiguration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Holds the configuration object for the countdown overlay that appears on top of video ads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSVASTCountdownConfiguration *countdownConfiguration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Holds the configuration object for the countdown overlay that appears on top of video ads.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bannerConfiguration" title="bannerConfiguration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bannerConfiguration">&nbsp;&nbsp;bannerConfiguration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<h2>@name Non-linear Ads Configuration</h2>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSVASTBannerConfiguration *bannerConfiguration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<h2>@name Non-linear Ads Configuration</h2>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Ad Retrieval Settings" name="task_Ad Retrieval Settings"></a>
+						<h2 class="task-title">Ad Retrieval Settings</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/allowMultipleAds" title="allowMultipleAds"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allowMultipleAds">&nbsp;&nbsp;allowMultipleAds</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines whether the break should allow more than one ad to be played, even if more ads are retrieved.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL allowMultipleAds</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines whether the break should allow more than one ad to be played, even if more ads are retrieved.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/followWrappers" title="followWrappers"></a>
+	<h3 class="method-title"><code><a href="#//api/name/followWrappers">&nbsp;&nbsp;followWrappers</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines whether VAST Wrappers should be followed for the given URL <a href="#//api/name/sources">sources</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL followWrappers</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines whether VAST Wrappers should be followed for the given URL <a href="#//api/name/sources">sources</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/wrappersCountLimit" title="wrappersCountLimit"></a>
+	<h3 class="method-title"><code><a href="#//api/name/wrappersCountLimit">&nbsp;&nbsp;wrappersCountLimit</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the number of wrappers to be received with no Inline response.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSInteger wrappersCountLimit</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the number of wrappers to be received with no Inline response.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/multipleAdsConflictsPolicy" title="multipleAdsConflictsPolicy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/multipleAdsConflictsPolicy">&nbsp;&nbsp;multipleAdsConflictsPolicy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSResolvMultipleAdsConflictsBy multipleAdsConflictsPolicy</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.</p>
+
+<p>See <a href="../Constants/APSResolvMultipleAdsConflictsBy.html"><code>APSResolvMultipleAdsConflictsBy</code></a> for possible values. Defaults to <code>APSResolvMultipleAdsConflictsBySelectingFirst</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adPodFallbackStrategy" title="adPodFallbackStrategy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adPodFallbackStrategy">&nbsp;&nbsp;adPodFallbackStrategy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>VAST 3.0 defines Ad Pods, with fallback mechanisms that allow loading an ad buffet of commercials to playback if the main ads fail. This value specifies how to treat backwards compatibility issues with VAST 2.0 and 1.0, by choosing what ads are promoted to the main Ad Pod if no valid Pods are detected.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSAdPodFallback adPodFallbackStrategy</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>VAST 3.0 defines Ad Pods, with fallback mechanisms that allow loading an ad buffet of commercials to playback if the main ads fail. This value specifies how to treat backwards compatibility issues with VAST 2.0 and 1.0, by choosing what ads are promoted to the main Ad Pod if no valid Pods are detected.</p>
+
+<p>See <a href="../Constants/APSAdPodFallback.html"><code>APSAdPodFallback</code></a> for possible values. Defaults to <code>APSAdPodFallbackSelectAll</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/prefferedVideoMimeTypes" title="prefferedVideoMimeTypes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/prefferedVideoMimeTypes">&nbsp;&nbsp;prefferedVideoMimeTypes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An array that defines the mime-types supported when choosing a media file from the VAST response.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *prefferedVideoMimeTypes</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An array that defines the mime-types supported when choosing a media file from the VAST response.</p>
+
+<p>Items are ordered from most preferred to least preferred. The default value for this property is <code>@[@"audio/mpeg", @"audio/mp3", @"audio/aac", @"audio/mp4", @"audio/flac", @"mobile/m3u8",@"application/x-mpegURL",@"application/vnd.apple.mpegURL",@"vnd.apple.mpegURL",@"video/m3u8",@"mobile/mp4",@"video/mp4"]</code></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Other Configurations" name="task_Other Configurations"></a>
+						<h2 class="task-title">Other Configurations</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/desiredAdCategories" title="desiredAdCategories"></a>
+	<h3 class="method-title"><code><a href="#//api/name/desiredAdCategories">&nbsp;&nbsp;desiredAdCategories</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>List of desired ad categories. Encoded with IABN-N values as specified in the &ldquo;Content Categories&rdquo; list of AdCOM 1.0.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *desiredAdCategories</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>List of desired ad categories. Encoded with IABN-N values as specified in the &ldquo;Content Categories&rdquo; list of AdCOM 1.0.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/blockedAdCategories" title="blockedAdCategories"></a>
+	<h3 class="method-title"><code><a href="#//api/name/blockedAdCategories">&nbsp;&nbsp;blockedAdCategories</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A list of blocked ad categories from wrappers</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray&lt;NSString*&gt; *blockedAdCategories</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A list of blocked ad categories from wrappers</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scalingMode" title="scalingMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scalingMode">&nbsp;&nbsp;scalingMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The ad video clip scaling mode, relative to the player surface.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMovieScalingMode scalingMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The ad video clip scaling mode, relative to the player surface.</p>
+
+<p>Defaults to <code>APSMovieScalingModeAspectFit</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/allowPinchToFullscreen" title="allowPinchToFullscreen"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allowPinchToFullscreen">&nbsp;&nbsp;allowPinchToFullscreen</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines if the pinch-to-fullscreen gesture should be activated for generated video ads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL allowPinchToFullscreen</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines if the pinch-to-fullscreen gesture should be activated for generated video ads.</p>
+
+<p>Defaults to YES;</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/afterBannerTapped" title="afterBannerTapped"></a>
+	<h3 class="method-title"><code><a href="#//api/name/afterBannerTapped">&nbsp;&nbsp;afterBannerTapped</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the behavior of the player after a banner ad is tapped and the built-in web browser is dismissed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSWebviewDismissedAction afterBannerTapped</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the behavior of the player after a banner ad is tapped and the built-in web browser is dismissed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/afterVideoAdTapped" title="afterVideoAdTapped"></a>
+	<h3 class="method-title"><code><a href="#//api/name/afterVideoAdTapped">&nbsp;&nbsp;afterVideoAdTapped</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the behavior of the player after a video ad is tapped and the built-in web browser is dismissed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSWebviewDismissedAction afterVideoAdTapped</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the behavior of the player after a video ad is tapped and the built-in web browser is dismissed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/debug" title="debug"></a>
+	<h3 class="method-title"><code><a href="#//api/name/debug">&nbsp;&nbsp;debug</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines if the break should log debug information to the console.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL debug</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines if the break should log debug information to the console.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTAdBreak.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
 					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Veeplay. All rights reserved. Updated: 2018-12-06</p>
+						<p class="copyright">Copyright &copy; 2019 Veeplay. All rights reserved. Updated: 2019-03-19</p>
 						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

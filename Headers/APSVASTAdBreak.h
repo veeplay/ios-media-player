@@ -15,6 +15,8 @@
 #import "APSVASTBannerConfiguration.h"
 #import "APSMediaUnit.h"
 
+extern const double MAX_VAST_VERSION;
+
 /**
  *  Defines how an `APSVASTAdBreak` should be placed relative to the main content units.
  */
@@ -74,6 +76,48 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 };
 
 /**
+ *  Protocol definition for APSVASTAdBreakDelegate
+ */
+@protocol APSVASTAdBreakDelegate <NSObject>
+
+@optional
+/**
+ *  Asks the delegate for the advertising identifier for this adbreak.
+ *
+ *  @param adBreak The AdBreak object which asks for this information
+ */
+- (NSString *)advertisingIdentifierForAdBreak:(APSVASTAdBreak *)adBreak;
+/**
+ *  Asks the delegate for the type of the advertising identifier for this adbreak.
+ *  See https://iabtechlab.com/wp-content/uploads/2018/12/OTT-IFA-guidelines.final_Dec2018.pdf for available types
+ *
+ *  @param adBreak The AdBreak object which asks for this information
+ */
+- (NSString *)advertisingIdentifierTypeForAdBreak:(APSVASTAdBreak *)adBreak;
+/**
+ *  Asks the delegate if Limit Ad Tracking is enabled for this adbreak.
+ *
+ *  @param adBreak The AdBreak object which asks for this information
+ */
+- (BOOL)limitAdTrackingStatusForAdBreak:(APSVASTAdBreak *)adBreak;
+/**
+ *  Asks the delegate for the current coordinates
+ *  Return the coordinates in format `lat,lon`
+ *
+ *  @param adBreak The AdBreak object which asks for this information
+ */
+- (NSString *)locationCoordinatesForAdBreak:(APSVASTAdBreak *)adBreak;
+
+/**
+ *  Asks the delegate if a conditional ad should be played or not
+ *
+ *  @param adBreak The AdBreak object which wants to play a conditional ad
+ */
+- (BOOL)shouldPlayConditionalAdForAdBreak:(APSVASTAdBreak *)adBreak;
+
+@end
+
+/**
  *  An `APSVASTAdBreak` object defines an ad break for which the builder plugin will try to generate `APSMediaUnit`s and insert them into the playlist.
  */
 @interface APSVASTAdBreak : APSMediaEvent <NSCopying, APSMediaTrackableObject>
@@ -90,6 +134,31 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  */
 @property (nonatomic) APSVASTAdBreakType type;
 /**
+ *  The number of ads in this adBreak
+ */
+@property (nonatomic, readonly) NSInteger adCount;
+/**
+ *  An identifier used to correlate a chain of ad requests from the origination (supply) end.
+ */
+@property (nonatomic, readonly) NSString *transactionId;
+/**
+ *  The Apple IDFA or similar ad identifier
+ */
+@property (nonatomic, readonly) NSString *advertisingIdentifier;
+/**
+ *  The source of the IFA
+ *  See https://iabtechlab.com/wp-content/uploads/2018/12/OTT-IFA-guidelines.final_Dec2018.pdf for possible values
+ */
+@property (nonatomic, readonly) NSString *advertisingIdentifierType;
+/**
+ *  Whether to limit ad tracking or not
+ */
+@property (readonly) BOOL isAdTrackingLimited;
+/**
+ *  GPS location coordinates in format `lat,lon`
+ */
+@property (nonatomic, readonly) NSString *locationCoordinates;
+/**
  A string format that defines when midrolls and nonlinear ads should be inserted mid-unit for each content unit.
  
  The expected format for this property is: "seconds" or "percentage%".
@@ -103,6 +172,10 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  *  The user agent that should be used when making HTTP requests.
  */
 @property (nonatomic) NSString *userAgent;
+/**
+ *  Delegate object
+ */
+@property (nonatomic, weak) id<APSVASTAdBreakDelegate> delegate;
 /**
  *  Configure an AdBreak from a dictionary structure.
  *
@@ -192,6 +265,10 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  */
 @property (nonatomic) BOOL followWrappers;
 /**
+ *  Defines the number of wrappers to be received with no Inline response.
+ */
+@property (nonatomic) NSInteger wrappersCountLimit;
+/**
  The VMAP standard permits allowing only one ad from a certain ad source. This constant defines how the VAST builder plugin deals with situations when multiple valid ads are retrieved from a source that is disallowed to load several ads at one time.
  
  See `APSResolvMultipleAdsConflictsBy` for possible values. Defaults to `APSResolvMultipleAdsConflictsBySelectingFirst`.
@@ -207,7 +284,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  An array that defines the mime-types supported when choosing a media file from the VAST response.
  
- Items are ordered from most preferred to least preferred. The default value for this property is `@[@"mobile/m3u8",@"application/x-mpegURL",@"application/vnd.apple.mpegURL",@"vnd.apple.mpegURL",@"video/m3u8",@"mobile/mp4",@"video/mp4"]`
+ Items are ordered from most preferred to least preferred. The default value for this property is `@[@"audio/mpeg", @"audio/mp3", @"audio/aac", @"audio/mp4", @"audio/flac", @"mobile/m3u8",@"application/x-mpegURL",@"application/vnd.apple.mpegURL",@"vnd.apple.mpegURL",@"video/m3u8",@"mobile/mp4",@"video/mp4"]`
  */
 @property (nonatomic) NSArray *prefferedVideoMimeTypes;
 
@@ -215,6 +292,16 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  * @name Other Configurations
  * -----------------------------------------------------------------------------
  */
+/**
+ *  List of desired ad categories. Encoded with IABN-N values as specified in the "Content Categories" list of AdCOM 1.0.
+ */
+@property (nonatomic) NSArray *desiredAdCategories;
+
+/**
+ *  A list of blocked ad categories from wrappers
+ */
+@property (nonatomic, readonly) NSArray<NSString*> *blockedAdCategories;
+
 /**
  The ad video clip scaling mode, relative to the player surface.
  

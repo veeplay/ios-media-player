@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<title></title>
+	<title>APSMediaPlayerOverlayControllerProtocol Protocol Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -43,9 +43,65 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
 
 	
 
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/currentPlaybackTime">- currentPlaybackTime</option>
+		
+		<option value="//api/name/didEnterFullscreen">- didEnterFullscreen</option>
+		
+		<option value="//api/name/didExitFullscreen">- didExitFullscreen</option>
+		
+		<option value="//api/name/didStartPictureInPicture">- didStartPictureInPicture</option>
+		
+		<option value="//api/name/didStopPictureInPicture">- didStopPictureInPicture</option>
+		
+		<option value="//api/name/duration">- duration</option>
+		
+		<option value="//api/name/load">- load</option>
+		
+		<option value="//api/name/loadState">- loadState</option>
+		
+		<option value="//api/name/movieSourceType">- movieSourceType</option>
+		
+		<option value="//api/name/onWebviewDismiss">- onWebviewDismiss</option>
+		
+		<option value="//api/name/overlayWillBeRemoved">- overlayWillBeRemoved</option>
+		
+		<option value="//api/name/pause">- pause</option>
+		
+		<option value="//api/name/play">- play</option>
+		
+		<option value="//api/name/playableDuration">- playableDuration</option>
+		
+		<option value="//api/name/playbackState">- playbackState</option>
+		
+		<option value="//api/name/preload">- preload</option>
+		
+		<option value="//api/name/setCurrentPlaybackTime:">- setCurrentPlaybackTime:</option>
+		
+		<option value="//api/name/stop">- stop</option>
+		
+		<option value="//api/name/thumbnailAt:withCompletionBlock:">- thumbnailAt:withCompletionBlock:</option>
+		
+		<option value="//api/name/update">- update</option>
+		
+	</optgroup>
+	
 	
 </select>
 						</label>
@@ -59,22 +115,1074 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title"></h1>
+					<h1 class="title">APSMediaPlayerOverlayControllerProtocol Protocol Reference</h1>
 
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/KRAdapter.html">KRAdapter</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>APSMediaPlayerOverlayController.h</td>
+</tr>
+						</tbody></table></div>
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<ul>
+<li>The <a href="../Classes/APSMediaPlayerOverlayController.html"><code>APSMediaPlayerOverlayController</code></a> defines all the methods that a <code>UIViewController</code> subclass must or can implement to be able to register as an overlay controller with the player. This protocol extends the <a href="../Protocols/KRAdapter.html"><code>KRAdapter</code></a> protocol, so objects should also implement a <code>type</code> method, returning a unique string to register under.</li>
+</ul>
 
+
+<p>  To use:</p>
+
+<ul>
+<li>Create a new class that implements this protocol</li>
+<li><p>Register it with the player shared instance:</p>
+
+<pre><code>        [[APSMediaPlayer sharedInstance] registerClass:[&lt;YOURCLASS&gt; class] inGroup:kAPSMediaPlayerOverlayControllersGroup];
+</code></pre></li>
+<li><p>Set up with the <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a>:</p>
+
+<pre><code>        overlay.type = @"&lt;YOURSTRINGCONSTANT&gt;"
+</code></pre></li>
+</ul>
+
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Overlay Initialization" name="task_Overlay Initialization"></a>
+						<h2 class="task-title">Overlay Initialization</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/load" title="load"></a>
+	<h3 class="method-title"><code><a href="#//api/name/load">&ndash;&nbsp;load</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)load</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/preload" title="preload"></a>
+	<h3 class="method-title"><code><a href="#//api/name/preload">&ndash;&nbsp;preload</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is invoked by the player on a background thread, before the overlay start point, as set by the [APSMediaEvent preTriggerInterval] property.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)preload</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked by the player on a background thread, before the overlay start point, as set by the [APSMediaEvent preTriggerInterval] property.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Callbacks" name="task_Callbacks"></a>
+						<h2 class="task-title">Callbacks</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/update" title="update"></a>
+	<h3 class="method-title"><code><a href="#//api/name/update">&ndash;&nbsp;update</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is called whenever the playback state of the player is changed (e.g. current playback time changes, playback state changes etc.). If the overlay controller needs to update its interface as a result of these changes, the updates should be performed in this method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)update</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called whenever the playback state of the player is changed (e.g. current playback time changes, playback state changes etc.). If the overlay controller needs to update its interface as a result of these changes, the updates should be performed in this method.</p>
+
+<p>The method is invoked on the main application thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/overlayWillBeRemoved" title="overlayWillBeRemoved"></a>
+	<h3 class="method-title"><code><a href="#//api/name/overlayWillBeRemoved">&ndash;&nbsp;overlayWillBeRemoved</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is invoked by the player, before the overlay controller&rsquo;s view is removed from the player surface. Any overlay cleanup code should be performed in this method.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)overlayWillBeRemoved</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked by the player, before the overlay controller&rsquo;s view is removed from the player surface. Any overlay cleanup code should be performed in this method.</p>
+
+<p>The method is invoked on the main application thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didEnterFullscreen" title="didEnterFullscreen"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didEnterFullscreen">&ndash;&nbsp;didEnterFullscreen</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is invoked by the player, when fullscreen mode is enabled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didEnterFullscreen</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked by the player, when fullscreen mode is enabled.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didExitFullscreen" title="didExitFullscreen"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didExitFullscreen">&ndash;&nbsp;didExitFullscreen</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is invoked by the player, when fullscreen mode is disabled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didExitFullscreen</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked by the player, when fullscreen mode is disabled.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didStartPictureInPicture" title="didStartPictureInPicture"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didStartPictureInPicture">&ndash;&nbsp;didStartPictureInPicture</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is invoked by the player, when picture in picture mode is enabled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didStartPictureInPicture</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked by the player, when picture in picture mode is enabled.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/didStopPictureInPicture" title="didStopPictureInPicture"></a>
+	<h3 class="method-title"><code><a href="#//api/name/didStopPictureInPicture">&ndash;&nbsp;didStopPictureInPicture</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is invoked by the player, when picture in picture mode is disabled.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)didStopPictureInPicture</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is invoked by the player, when picture in picture mode is disabled.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Handling Playback" name="task_Handling Playback"></a>
+						<h2 class="task-title">Handling Playback</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/currentPlaybackTime" title="currentPlaybackTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentPlaybackTime">&ndash;&nbsp;currentPlaybackTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay controller to return a current playback time in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)currentPlaybackTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay controller to return a current playback time in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*
+*  @return The current overlay-managed playback time, in seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playableDuration" title="playableDuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playableDuration">&ndash;&nbsp;playableDuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay controller to return a total playable (buffered) time in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)playableDuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay controller to return a total playable (buffered) time in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*
+*  @return The current overlay-managed total playable (buffered) time, in seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCurrentPlaybackTime:" title="setCurrentPlaybackTime:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCurrentPlaybackTime:">&ndash;&nbsp;setCurrentPlaybackTime:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay that handles media playback in place of the parent unit to internally set the current playback time.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setCurrentPlaybackTime:(NSTimeInterval)<em>playbackTime</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playbackTime</code></th>
+						<td><p>The required playback time to seek to, in seconds.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay that handles media playback in place of the parent unit to internally set the current playback time.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/duration" title="duration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/duration">&ndash;&nbsp;duration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay controller to return a total playback duration in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)duration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay controller to return a total playback duration in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*
+*  @param playbackTime The total overlay-managed playback duration, in seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/playbackState" title="playbackState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/playbackState">&ndash;&nbsp;playbackState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay controller to return a playback state in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (APSMoviePlaybackState)playbackState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay controller to return a playback state in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*
+*  @return The current overlay-managed playback state.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadState" title="loadState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadState">&ndash;&nbsp;loadState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay controller to return a <a href="#//api/name/load">load</a> state in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (APSMovieLoadState)loadState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay controller to return a <a href="#//api/name/load">load</a> state in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*
+*  @return The current overlay-managed <a href="#//api/name/load">load</a> state.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/movieSourceType" title="movieSourceType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/movieSourceType">&ndash;&nbsp;movieSourceType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay controller to return a media source type in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (APSMovieSourceType)movieSourceType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay controller to return a media source type in place of the parent <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*
+*  @return The current overlay-managed media source type.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/play" title="play"></a>
+	<h3 class="method-title"><code><a href="#//api/name/play">&ndash;&nbsp;play</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay that handles media playback in place of the parent unit to start playback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)play</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay that handles media playback in place of the parent unit to start playback.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay that handles media playback in place of the parent unit to stop playback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay that handles media playback in place of the parent unit to stop playback.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pause" title="pause"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pause">&ndash;&nbsp;pause</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay that handles media playback in place of the parent unit to pause playback.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)pause</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay that handles media playback in place of the parent unit to pause playback.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/thumbnailAt:withCompletionBlock:" title="thumbnailAt:withCompletionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/thumbnailAt:withCompletionBlock:">&ndash;&nbsp;thumbnailAt:withCompletionBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay that handles media playback in place of the parent unit to return a thumbnail image at a specific time interval from the managed video.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)thumbnailAt:(NSTimeInterval)<em>playbackTime</em> withCompletionBlock:(APSThumbnailGeneratedBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>playbackTime</code></th>
+						<td><p>The time when the thumbnail should be taken from the video.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to be invoked on thumbnail generation completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay that handles media playback in place of the parent unit to return a thumbnail image at a specific time interval from the managed video.</p><div class="warning"><p><strong>Warning:</strong> This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Defining Behavior for Webview Dismiss Events" name="task_Defining Behavior for Webview Dismiss Events"></a>
+						<h2 class="task-title">Defining Behavior for Webview Dismiss Events</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onWebviewDismiss" title="onWebviewDismiss"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onWebviewDismiss">&ndash;&nbsp;onWebviewDismiss</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows an overlay controller to specify what action the player should take when it comes back into focus, after a modal in-app web browser was triggered and dismissed by user interaction.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (APSWebviewDismissedAction)onWebviewDismiss</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The desired action. See <a href="../Constants/APSWebviewDismissedAction.html"><code>APSWebviewDismissedAction</code></a> for more details.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows an overlay controller to specify what action the player should take when it comes back into focus, after a modal in-app web browser was triggered and dismissed by user interaction.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerOverlayController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
 					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Veeplay. All rights reserved. Updated: 2018-12-06</p>
+						<p class="copyright">Copyright &copy; 2019 Veeplay. All rights reserved. Updated: 2019-03-19</p>
 						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

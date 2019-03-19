@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<title></title>
+	<title>APSVASTBannerConfiguration Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -43,9 +43,57 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/closeButtonBackgroundColor">closeButtonBackgroundColor</option>
+		
+		<option value="//api/name/closeButtonFinalAlpha">closeButtonFinalAlpha</option>
+		
+		<option value="//api/name/closeButtonImage">closeButtonImage</option>
+		
+		<option value="//api/name/closeButtonInitialAlpha">closeButtonInitialAlpha</option>
+		
+		<option value="//api/name/closeButtonOffset">closeButtonOffset</option>
+		
+		<option value="//api/name/closeButtonProgressColor">closeButtonProgressColor</option>
+		
+		<option value="//api/name/closeButtonSize">closeButtonSize</option>
+		
+		<option value="//api/name/closeButtonTrackColor">closeButtonTrackColor</option>
+		
+		<option value="//api/name/closeButtonXColor">closeButtonXColor</option>
+		
+		<option value="//api/name/defaultAdBreakDuration">defaultAdBreakDuration</option>
+		
+		<option value="//api/name/fadeInDuration">fadeInDuration</option>
+		
+		<option value="//api/name/maxSize">maxSize</option>
+		
+		<option value="//api/name/position">position</option>
+		
+		<option value="//api/name/showCloseButton">showCloseButton</option>
+		
+		<option value="//api/name/skipOffset">skipOffset</option>
+		
+		<option value="//api/name/stretchToMaxSize">stretchToMaxSize</option>
+		
+	</optgroup>
+	
 
 	
 
+	
 	
 </select>
 						</label>
@@ -59,22 +107,826 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title"></h1>
+					<h1 class="title">APSVASTBannerConfiguration Class Reference</h1>
 
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSCopying</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>APSVASTBannerConfiguration.h<br />APSVASTBannerConfiguration.m</td>
+</tr>
+						</tbody></table></div>
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Holds all configuration parameters for the banner ads displayed.</p>
+					</div>
+					
+					
 
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/maxSize" title="maxSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maxSize">&nbsp;&nbsp;maxSize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The maximum allowed size for a non-linear ad. Non-linear ads that define sizes larger than this will be truncated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGSize maxSize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The maximum allowed size for a non-linear ad. Non-linear ads that define sizes larger than this will be truncated.</p>
+
+<p>Defaults to <code>CGSizeMake(320, 50)</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stretchToMaxSize" title="stretchToMaxSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stretchToMaxSize">&nbsp;&nbsp;stretchToMaxSize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines if non-linear ads should be stretched to the defined <code>bannerMaxSize</code>, should they declare a size smaller than that.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL stretchToMaxSize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines if non-linear ads should be stretched to the defined <code>bannerMaxSize</code>, should they declare a size smaller than that.</p>
+
+<p>Defaults to <code>NO</code>;</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/position" title="position"></a>
+	<h3 class="method-title"><code><a href="#//api/name/position">&nbsp;&nbsp;position</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines how a non-linear banner overlay should be placed relative to the player surface.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMediaOverlayPosition position</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines how a non-linear banner overlay should be placed relative to the player surface.</p>
+
+<p>See <a href="../Constants/APSMediaOverlayPosition.html"><code>APSMediaOverlayPosition</code></a> for possible values. Defaults to <code>kAPSMediaOverlayPositionBottom</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fadeInDuration" title="fadeInDuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fadeInDuration">&nbsp;&nbsp;fadeInDuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the fade-in animation duration for non-linear ads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat fadeInDuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the fade-in animation duration for non-linear ads.</p>
+
+<p>Defaults to 0.5.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultAdBreakDuration" title="defaultAdBreakDuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultAdBreakDuration">&nbsp;&nbsp;defaultAdBreakDuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the default number of seconds that a non-linear ad will be kept on display. This can be overridden by VAST ad configuration.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) int defaultAdBreakDuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the default number of seconds that a non-linear ad will be kept on display. This can be overridden by VAST ad configuration.</p>
+
+<p>Defaults to 10.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/skipOffset" title="skipOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/skipOffset">&nbsp;&nbsp;skipOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the default number of seconds after which the non-linear ad close button becomes active.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) int skipOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the default number of seconds after which the non-linear ad close button becomes active.</p>
+
+<p>Defaults to 3.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showCloseButton" title="showCloseButton"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showCloseButton">&nbsp;&nbsp;showCloseButton</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates whether a close button should be displayed on top of non-linear ads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL showCloseButton</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates whether a close button should be displayed on top of non-linear ads.</p>
+
+<p>Defaults to <code>YES</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeButtonImage" title="closeButtonImage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeButtonImage">&nbsp;&nbsp;closeButtonImage</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the image that should be displayed in the non-linear ads close button, instead of the default progress wheel.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) UIImage *closeButtonImage</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the image that should be displayed in the non-linear ads close button, instead of the default progress wheel.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeButtonBackgroundColor" title="closeButtonBackgroundColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeButtonBackgroundColor">&nbsp;&nbsp;closeButtonBackgroundColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the background color for the close button displayed on top of non-linear ads.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *closeButtonBackgroundColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the background color for the close button displayed on top of non-linear ads.</p>
+
+<p>Set this to a <code>NSString</code> containing the hex color reprezentation. Defaults to [UIColor clearColor].</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeButtonXColor" title="closeButtonXColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeButtonXColor">&nbsp;&nbsp;closeButtonXColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the color for the X symbol in the center of the close button.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *closeButtonXColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the color for the X symbol in the center of the close button.</p>
+
+<p>Set this to a <code>NSString</code> containing the hex color reprezentation. Defaults to [UIColor darkGrayColor].</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeButtonSize" title="closeButtonSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeButtonSize">&nbsp;&nbsp;closeButtonSize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates the lenght of a side of the non-linear ads close button square.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) int closeButtonSize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates the lenght of a side of the non-linear ads close button square.</p>
+
+<p>Defaults to 20.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeButtonInitialAlpha" title="closeButtonInitialAlpha"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeButtonInitialAlpha">&nbsp;&nbsp;closeButtonInitialAlpha</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates the opacity of the non-linear ads close button before it is activated for receiving taps.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) float closeButtonInitialAlpha</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates the opacity of the non-linear ads close button before it is activated for receiving taps.</p>
+
+<p>Defaults to 0.5.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeButtonFinalAlpha" title="closeButtonFinalAlpha"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeButtonFinalAlpha">&nbsp;&nbsp;closeButtonFinalAlpha</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicates the opacity of the non-linear close button after it has been activated for receiving taps.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) float closeButtonFinalAlpha</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Indicates the opacity of the non-linear close button after it has been activated for receiving taps.</p>
+
+<p>Defaults to 0.7.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeButtonProgressColor" title="closeButtonProgressColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeButtonProgressColor">&nbsp;&nbsp;closeButtonProgressColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The color of the circular bar that indicates the currently elapsed time until the close button can be tapped.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *closeButtonProgressColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The color of the circular bar that indicates the currently elapsed time until the close button can be tapped.</p>
+
+<p>Set this to a <code>NSString</code> containing the hex color reprezentation. Defaults to [UIColor darkGrayColor].</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeButtonTrackColor" title="closeButtonTrackColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeButtonTrackColor">&nbsp;&nbsp;closeButtonTrackColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The color of the circular bar that indicates the total time until the close button can be tapped.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *closeButtonTrackColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The color of the circular bar that indicates the total time until the close button can be tapped.</p>
+
+<p>Set this to a <code>NSString</code> containing the hex color reprezentation. Defaults to [UIColor lightGrayColor].</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/closeButtonOffset" title="closeButtonOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/closeButtonOffset">&nbsp;&nbsp;closeButtonOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the offset that the non-linear ads close button should have from the top-right edge of the banner itself.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGPoint closeButtonOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the offset that the non-linear ads close button should have from the top-right edge of the banner itself.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSVASTBannerConfiguration.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
 					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Veeplay. All rights reserved. Updated: 2018-12-06</p>
+						<p class="copyright">Copyright &copy; 2019 Veeplay. All rights reserved. Updated: 2019-03-19</p>
 						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

@@ -23,7 +23,7 @@ extern NSString* const APSTextOverlay;
  To create an `APSMediaOverlay` of text type:
  
  - set the overlay object's `type` property to `APSTextOverlay`
- - set the overlay object's `properties` property to a `NSDictionary` that can have the following keys and values:
+ - set the overlay object's `parameters` property to a `NSDictionary` that can have the following keys and values:
  
     - *kAPSTextOverlayString*: the `NSString` to be rendered.
     - *kAPSTextOverlayStringColor*: Font color for the rendered text. Set this to a `NSString` containing the hex color reprezentation. Defaults to `[UIColor whiteColor]`.

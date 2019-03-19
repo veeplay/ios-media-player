@@ -160,6 +160,9 @@ extern NSString *const APSMediaPlayerEventPlaylistFinish;
 extern NSString *const APSMediaPlayerEventExitFullscreen;
 extern NSString *const APSMediaPlayerEventFullscreen;
 extern NSString *const APSMediaPlayerEventImpression;
+extern NSString *const APSMediaPlayerEventViewableImpressionViewable;
+extern NSString *const APSMediaPlayerEventViewableImpressionNotViewable;
+extern NSString *const APSMediaPlayerEventViewableImpressionUndetermined;
 extern NSString *const APSMediaPlayerEventCreativeView;
 extern NSString *const APSMediaPlayerEventResume;
 extern NSString *const APSMediaPlayerEventPause;
@@ -205,7 +208,23 @@ extern NSString *const APSMediaPlayerEventSeeked;
  */
 typedef void (^APSMediaPlayerFinishBlock)();
 
-
+/**
+ *  Defines the viewability status of the player according to VAST 4 specifications
+ */
+typedef NS_ENUM(NSInteger, APSViewability) {
+    /**
+     *  Player's viewport is more than 50% viewable
+     */
+    APSViewabilityViewable,
+    /**
+     *  Player's viewport is less than 50% viewable
+     */
+    APSViewabilityNotViewable,
+    /**
+     *  Player's viewpoer could not be determined
+     */
+    APSViewabilityUndetermined
+};
 
 /**
  The APSMediaPlayer handles playback and rendering of APSMediaUnits and APSMediaOverlays.
@@ -262,6 +281,12 @@ typedef void (^APSMediaPlayerFinishBlock)();
  *  @return The shared `APSMediaPlayer` instance
  */
 + (instancetype)sharedInstance;
+/**
+ *  List of supported media types
+ *
+ *  @return An array of supported media types by APSMediaPlayer
+ */
++ (NSArray<NSString*> *)supportedMimeTypes;
 /**
  *  The container `UIView` of the player.
  */
@@ -552,6 +577,12 @@ typedef void (^APSMediaPlayerFinishBlock)();
  */
 -(BOOL)getMute;
 /**
+ *  Get the player's viewability state
+ *
+ *  @return Player's viewability state
+ */
+@property (nonatomic, readonly) APSViewability viewability;
+/**
  *  Returns a NSDictionary with available subtitles
  *  The dictionary has the form {"language_code" : "Language Name"}
  *
@@ -706,7 +737,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
 /**
  *  Use this property to store the unique device advertising identifier, that can then be used by 3rd party components.
  */
-@property (nonatomic) NSString *advertisingIdentifier;
+@property (nonatomic) NSString *advertisingIdentifier __deprecated_msg("Use APSVASTAdBreak delegate.");
 
 /**
  *  Resets the media player backend.

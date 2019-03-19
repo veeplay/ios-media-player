@@ -1,3 +1,7 @@
+### 3.0.0
+VAST 4.1 and DAST support
+Rewrote overlays to use Autolayout
+
 ### 2.9.6
 Preliminary VAST 4 support
 

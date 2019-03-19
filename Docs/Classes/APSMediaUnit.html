@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<title></title>
+	<title>APSMediaUnit Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -43,9 +43,95 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
-
+	<option value="overview">Overview</option>
 	
 
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/adbreak">adbreak</option>
+		
+		<option value="//api/name/buffet">buffet</option>
+		
+		<option value="//api/name/canReplay">canReplay</option>
+		
+		<option value="//api/name/controlsDisplay">controlsDisplay</option>
+		
+		<option value="//api/name/controlsParameters">controlsParameters</option>
+		
+		<option value="//api/name/debug">debug</option>
+		
+		<option value="//api/name/initialPlaybackTime">initialPlaybackTime</option>
+		
+		<option value="//api/name/managerType">managerType</option>
+		
+		<option value="//api/name/metadata">metadata</option>
+		
+		<option value="//api/name/mezzanineUrl">mezzanineUrl</option>
+		
+		<option value="//api/name/midcontentAdMinimumFinalOffset">midcontentAdMinimumFinalOffset</option>
+		
+		<option value="//api/name/midcontentAdMinimumInitialOffset">midcontentAdMinimumInitialOffset</option>
+		
+		<option value="//api/name/midcontentAdMinimumSpacing">midcontentAdMinimumSpacing</option>
+		
+		<option value="//api/name/pinchToFullscreen">pinchToFullscreen</option>
+		
+		<option value="//api/name/scalingMode">scalingMode</option>
+		
+		<option value="//api/name/seekHandling">seekHandling</option>
+		
+		<option value="//api/name/shouldAutoplay">shouldAutoplay</option>
+		
+		<option value="//api/name/subtitlesURL">subtitlesURL</option>
+		
+		<option value="//api/name/url">url</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/scalingModeFromString:">+ scalingModeFromString:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addEvent:">- addEvent:</option>
+		
+		<option value="//api/name/addOverlay:">- addOverlay:</option>
+		
+		<option value="//api/name/clearEvents">- clearEvents</option>
+		
+		<option value="//api/name/clearOverlays">- clearOverlays</option>
+		
+		<option value="//api/name/dynamicEvents">- dynamicEvents</option>
+		
+		<option value="//api/name/events">- events</option>
+		
+		<option value="//api/name/initWithURL:">- initWithURL:</option>
+		
+		<option value="//api/name/overlays">- overlays</option>
+		
+		<option value="//api/name/removeEvent:">- removeEvent:</option>
+		
+		<option value="//api/name/setEvents:">- setEvents:</option>
+		
+		<option value="//api/name/setOverlays:">- setOverlays:</option>
+		
+	</optgroup>
+	
 	
 </select>
 						</label>
@@ -59,22 +145,1648 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title"></h1>
+					<h1 class="title">APSMediaUnit Class Reference</h1>
 
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/APSMediaTrackableObject.html">APSMediaTrackableObject</a><br />NSCopying</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>APSMediaUnit.h<br />APSMediaUnit.m</td>
+</tr>
+						</tbody></table></div>
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>APSMediaUnit</code> class represents a clip that&rsquo;s ready to be rendered by the player. A media unit also references an array of <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> objects, defining the <a href="#//api/name/overlays">overlays</a> connected to the unit.</p>
+					</div>
+					
+					
 
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Creating a media unit" name="task_Creating a media unit"></a>
+						<h2 class="task-title">Creating a media unit</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithURL:" title="initWithURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithURL:">&ndash;&nbsp;initWithURL:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes a media unit object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (APSMediaUnit *)initWithURL:(NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The video clip URL.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new <code>APSMediaUnit</code> object</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes a media unit object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Managing the media overlays connected to the current unit" name="task_Managing the media overlays connected to the current unit"></a>
+						<h2 class="task-title">Managing the media overlays connected to the current unit</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/addOverlay:" title="addOverlay:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addOverlay:">&ndash;&nbsp;addOverlay:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds an <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> object to the unit, to be rendered together.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addOverlay:(APSMediaOverlay *)<em>overlay</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>overlay</code></th>
+						<td><p>The <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> object to be connected to the unit.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds an <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> object to the unit, to be rendered together.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setOverlays:" title="setOverlays:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setOverlays:">&ndash;&nbsp;setOverlays:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Connects an array of <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> objects to the current unit.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setOverlays:(NSArray *)<em>overlays</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>overlays</code></th>
+						<td><p>An array of <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> objects to be connected to the unit.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Connects an array of <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> objects to the current unit.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearOverlays" title="clearOverlays"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearOverlays">&ndash;&nbsp;clearOverlays</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes all currently connected <a href="#//api/name/overlays">overlays</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearOverlays</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Removes all currently connected <a href="#//api/name/overlays">overlays</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/overlays" title="overlays"></a>
+	<h3 class="method-title"><code><a href="#//api/name/overlays">&ndash;&nbsp;overlays</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an array containing all <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> objects currently connected to the unit.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)overlays</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An array of <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> objects.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an array containing all <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> objects currently connected to the unit.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addEvent:" title="addEvent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addEvent:">&ndash;&nbsp;addEvent:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds an object that implements the <a href="../Classes/APSMediaEvent.html"><code>APSMediaEvent</code></a> protocol to the unit.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addEvent:(APSMediaEvent *)<em>overlay</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>overlay</code></th>
+						<td><p>The event to be connected to the unit.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Adds an object that implements the <a href="../Classes/APSMediaEvent.html"><code>APSMediaEvent</code></a> protocol to the unit.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEvents:" title="setEvents:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEvents:">&ndash;&nbsp;setEvents:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Connects an array of objects that implement the <a href="../Classes/APSMediaEvent.html"><code>APSMediaEvent</code></a> protocol to the current unit.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setEvents:(NSArray *)<em>events</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>overlays</code></th>
+						<td><p>An array of <a href="#//api/name/events">events</a> to be connected to the unit.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Connects an array of objects that implement the <a href="../Classes/APSMediaEvent.html"><code>APSMediaEvent</code></a> protocol to the current unit.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearEvents" title="clearEvents"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearEvents">&ndash;&nbsp;clearEvents</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes all currently connected <a href="#//api/name/events">events</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearEvents</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Removes all currently connected <a href="#//api/name/events">events</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeEvent:" title="removeEvent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeEvent:">&ndash;&nbsp;removeEvent:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes a specific media event.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeEvent:(APSMediaEvent *)<em>event</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Removes a specific media event.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/events" title="events"></a>
+	<h3 class="method-title"><code><a href="#//api/name/events">&ndash;&nbsp;events</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an array containing all event objects currently connected to the unit, that are not dynamic (see <a href="../Classes/APSMediaEvent.html#//api/name/dynamicPosition">[APSMediaEvent dynamicPosition]</a>).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)events</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An array of objects that implement the <a href="../Classes/APSMediaEvent.html"><code>APSMediaEvent</code></a> protocol.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an array containing all event objects currently connected to the unit, that are not dynamic (see <a href="../Classes/APSMediaEvent.html#//api/name/dynamicPosition">[APSMediaEvent dynamicPosition]</a>).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dynamicEvents" title="dynamicEvents"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dynamicEvents">&ndash;&nbsp;dynamicEvents</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns an array containing all event objects currently connected to the unit, that are dynamic (see <a href="../Classes/APSMediaEvent.html#//api/name/dynamicPosition">[APSMediaEvent dynamicPosition]</a>).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)dynamicEvents</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An array of objects that implement the <a href="../Classes/APSMediaEvent.html"><code>APSMediaEvent</code></a> protocol.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns an array containing all event objects currently connected to the unit, that are dynamic (see <a href="../Classes/APSMediaEvent.html#//api/name/dynamicPosition">[APSMediaEvent dynamicPosition]</a>).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Unit Properties" name="task_Unit Properties"></a>
+						<h2 class="task-title">Unit Properties</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/url" title="url"></a>
+	<h3 class="method-title"><code><a href="#//api/name/url">&nbsp;&nbsp;url</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The video clip URL.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSURL *url</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The video clip URL.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mezzanineUrl" title="mezzanineUrl"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mezzanineUrl">&nbsp;&nbsp;mezzanineUrl</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If an ad, the URL to mezzanine file which was the source of this ad</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSURL *mezzanineUrl</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If an ad, the URL to mezzanine file which was the source of this ad</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initialPlaybackTime" title="initialPlaybackTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initialPlaybackTime">&nbsp;&nbsp;initialPlaybackTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initial video playback time in seconds.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval initialPlaybackTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initial video playback time in seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/controlsDisplay" title="controlsDisplay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/controlsDisplay">&nbsp;&nbsp;controlsDisplay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines how the controls bar will be displayed for the unit. See <a href="../Constants/APSMediaControlsDisplay.html"><code>APSMediaControlsDisplay</code></a> for possible values.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMediaControlsDisplay controlsDisplay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines how the controls bar will be displayed for the unit. See <a href="../Constants/APSMediaControlsDisplay.html"><code>APSMediaControlsDisplay</code></a> for possible values.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/managerType" title="managerType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/managerType">&nbsp;&nbsp;managerType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Assigns a unit manager to the current unit. See <a href="../Protocols/APSUnitManagerProtocol.html">APSUnitManagerProtocol</a> for more information.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *managerType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Assigns a unit manager to the current unit. See <a href="../Protocols/APSUnitManagerProtocol.html">APSUnitManagerProtocol</a> for more information.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/subtitlesURL" title="subtitlesURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/subtitlesURL">&nbsp;&nbsp;subtitlesURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A NSURL pointing to the SRT subtitles to be loaded</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSURL *subtitlesURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A NSURL pointing to the SRT subtitles to be loaded</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/controlsParameters" title="controlsParameters"></a>
+	<h3 class="method-title"><code><a href="#//api/name/controlsParameters">&nbsp;&nbsp;controlsParameters</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The configuration for the controls bar overlay.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSDictionary *controlsParameters</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The configuration for the controls bar overlay.</p>
+
+<p>The following keys are available:</p>
+
+<ul>
+<li><em>kAPSControlsBarColor</em>: Set this to a <code>UIColor</code> that represents the background color of the controls bar.</li>
+<li><em>kAPSControlsBarAlpha</em>: <code>NSNumber</code> that represents the opacity of the controls bar.</li>
+<li><em>kAPSControlsComponents</em>: Set this to a mask that you get using OR operations on <a href="../Constants/APSControlsOverlayComponents.html"><code>APSControlsOverlayComponents</code></a> constants.</li>
+<li><em>kAPSControlsPlayedTrackColor</em>: The <code>UIColor</code> of the portion of the seek bar that indicates the currently played duration of the movie.</li>
+<li><em>kAPSControlsBufferedTrackColor</em>: The <code>UIColor</code> of the portion of the seek bar that indicates the currently buffered duration of the movie.</li>
+<li><em>kAPSControlsEmptyTrackColor</em>: The <code>UIColor</code> of the portion of the seek bar that indicates the currently unbuffered duration of the movie.</li>
+<li><em>kAPSControlsPlayImage</em>: The <code>UIImage</code> of the play button to use in the playback controls bar. Only displayed if the playback component is selected.</li>
+<li><em>kAPSControlsPauseImage</em>: The <code>UIImage</code> of the pause button to use in the playback controls bar. Only displayed if the playback component is selected.</li>
+<li><em>kAPSControlsFullscreenImage</em>: The <code>UIImage</code> of the fullscreen button to use in the playback controls bar. Only displayed if the playback component is selected.</li>
+<li><em>kAPSControlsPreviousImage</em>: The <code>UIImage</code> of the back button to use in the playback controls bar. Only displayed if the back button component is selected.</li>
+<li><em>kAPSControlsNextImage</em>: The <code>UIImage</code> of the forward button to use in the playback controls bar. Only displayed if the forward button component is selected.</li>
+<li><em>kAPSControlsVisibileOnlyInFullscreen</em>: Defines whether the playback controls bar should only be visible while the player is in fullscreen mode. This is useful if implementing a custom player UX for normal mode. Set this to a <code>NSNumber</code> boolean.</li>
+<li><em>kAPSControlsAutohideDuration</em>: The number of seconds the playback controls bar should automatically become hidden after. Set this to a <code>NSNumber</code>.</li>
+<li><em>kAPSControlsLiveText</em>: The text to display instead of the total video duration, for live streams. Only has effect when the total duration component is selected. Defaults to <code>@"LIVE"</code>.</li>
+<li><em>kAPSControlsPlaybackTimeText</em>: The text to display instead of the current playback time, for live streams. Only has effect when the current playback time component is selected.</li>
+<li><em>kAPSControlsUpdateCurrentTimeWhileSeeking</em>: The current time text is showing the current seek position when dragging the seek bar</li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scalingMode" title="scalingMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scalingMode">&nbsp;&nbsp;scalingMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The video clip scaling mode, relative to the player surface. Defaults to <code>APSMovieScalingModeNone</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMovieScalingMode scalingMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The video clip scaling mode, relative to the player surface. Defaults to <code>APSMovieScalingModeNone</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/buffet" title="buffet"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buffet">&nbsp;&nbsp;buffet</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An array of other media units to be played instead of the current one, should an error be encountered. The unit at index 0 has the highest priority.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSMutableArray *buffet</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An array of other media units to be played instead of the current one, should an error be encountered. The unit at index 0 has the highest priority.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/pinchToFullscreen" title="pinchToFullscreen"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pinchToFullscreen">&nbsp;&nbsp;pinchToFullscreen</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines if pinch-to-fullscreen should be allowed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL pinchToFullscreen</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines if pinch-to-fullscreen should be allowed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shouldAutoplay" title="shouldAutoplay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldAutoplay">&nbsp;&nbsp;shouldAutoplay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines if the unit should start playing as soon as it loads or wait for a play command.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL shouldAutoplay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines if the unit should start playing as soon as it loads or wait for a play command.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/canReplay" title="canReplay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/canReplay">&nbsp;&nbsp;canReplay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines whether the player can replay the current unit or not after it has ended in the playlist.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL canReplay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines whether the player can replay the current unit or not after it has ended in the playlist.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/debug" title="debug"></a>
+	<h3 class="method-title"><code><a href="#//api/name/debug">&nbsp;&nbsp;debug</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Toggle to enable logs.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL debug</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Toggle to enable logs.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/metadata" title="metadata"></a>
+	<h3 class="method-title"><code><a href="#//api/name/metadata">&nbsp;&nbsp;metadata</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Additional unit key-value information.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSMutableDictionary *metadata</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Additional unit key-value information.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adbreak" title="adbreak"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adbreak">&nbsp;&nbsp;adbreak</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The <a href="../Classes/APSVASTAdBreak.html">APSVASTAdBreak</a> objects which created this unit</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) APSVASTAdBreak *adbreak</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The <a href="../Classes/APSVASTAdBreak.html">APSVASTAdBreak</a> objects which created this unit</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Ad Handling" name="task_Ad Handling"></a>
+						<h2 class="task-title">Ad Handling</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/seekHandling" title="seekHandling"></a>
+	<h3 class="method-title"><code><a href="#//api/name/seekHandling">&nbsp;&nbsp;seekHandling</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines how mid content ads should be handled when the user has skipped over several batches. Use this parameter to instruct the player to render: only the first ad batch, only the last ad batch or all passed ad batches. Defaults to <code>APSHandleSeekEventPlayLastBreak</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) APSHandleSeekEvent seekHandling</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines how mid content ads should be handled when the user has skipped over several batches. Use this parameter to instruct the player to render: only the first ad batch, only the last ad batch or all passed ad batches. Defaults to <code>APSHandleSeekEventPlayLastBreak</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/midcontentAdMinimumInitialOffset" title="midcontentAdMinimumInitialOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/midcontentAdMinimumInitialOffset">&nbsp;&nbsp;midcontentAdMinimumInitialOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait before displaying the first ad batch. Defaults to 300 seconds.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumInitialOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait before displaying the first ad batch. Defaults to 300 seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/midcontentAdMinimumFinalOffset" title="midcontentAdMinimumFinalOffset"></a>
+	<h3 class="method-title"><code><a href="#//api/name/midcontentAdMinimumFinalOffset">&nbsp;&nbsp;midcontentAdMinimumFinalOffset</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds (relative to the end of the video) that should be ad-free. Defaults to 300 seconds.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumFinalOffset</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds (relative to the end of the video) that should be ad-free. Defaults to 300 seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/midcontentAdMinimumSpacing" title="midcontentAdMinimumSpacing"></a>
+	<h3 class="method-title"><code><a href="#//api/name/midcontentAdMinimumSpacing">&nbsp;&nbsp;midcontentAdMinimumSpacing</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait between ad batches. Defaults to 300 seconds.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval midcontentAdMinimumSpacing</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For ad breaks assigned to this unit without an ad offset (breaks that should be auto-positioned within the content), this parameter defines the minimum time interval in seconds to wait between ad batches. Defaults to 300 seconds.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Utility Methods" name="task_Utility Methods"></a>
+						<h2 class="task-title">Utility Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/scalingModeFromString:" title="scalingModeFromString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scalingModeFromString:">+&nbsp;scalingModeFromString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Converts a string format to a <a href="../Constants/APSMovieScalingMode.html"><code>APSMovieScalingMode</code></a> value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (APSMovieScalingMode)scalingModeFromString:(NSString *)<em>string</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>A string format to be converted.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A <a href="../Constants/APSMovieScalingMode.html"><code>APSMovieScalingMode</code></a> value.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Converts a string format to a <a href="../Constants/APSMovieScalingMode.html"><code>APSMovieScalingMode</code></a> value.</p>
+
+<p>Possible input values are:</p>
+
+<ul>
+<li><em>&ldquo;aspectFit&rdquo;</em>, that will be converted to <code>APSMovieScalingModeAspectFit</code></li>
+<li><em>&ldquo;aspectFill&rdquo;</em>, that will be converted to <code>APSMovieScalingModeAspectFill</code></li>
+<li><em>&ldquo;fill&rdquo;</em>, that will be converted to <code>APSMovieScalingModeFill</code></li>
+</ul>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
 					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Veeplay. All rights reserved. Updated: 2018-12-06</p>
+						<p class="copyright">Copyright &copy; 2019 Veeplay. All rights reserved. Updated: 2019-03-19</p>
 						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

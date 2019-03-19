@@ -97,7 +97,7 @@ extern NSString *const APSPipPlayerDidStopPictureInPicture;
 /**
  *  Get or set the scaling mode of the video according to its viewport
  */
-@property (nonatomic) MPMovieScalingMode scalingMode;
+@property (nonatomic) APSMovieScalingMode scalingMode;
 
 /**
  *  Get or set if the player should autoplay an URL as soon as it is provided
@@ -107,22 +107,22 @@ extern NSString *const APSPipPlayerDidStopPictureInPicture;
 /**
  *  Get the current playback state
  */
-@property (nonatomic, readonly) MPMoviePlaybackState playbackState;
+@property (nonatomic, readonly) APSMoviePlaybackState playbackState;
 
 /**
  *  Get the current state of the buffer
  */
-@property (nonatomic, readonly) MPMovieLoadState loadState;
+@property (nonatomic, readonly) APSMovieLoadState loadState;
 
 /**
  *  Get the current media's source type (e.g. file or stream)
  */
-@property (nonatomic) MPMovieSourceType movieSourceType;
+@property (nonatomic) APSMovieSourceType movieSourceType;
 
 /**
  *  Set how the player controls will appear
  */
-@property (nonatomic) MPMovieControlStyle controlStyle;
+@property (nonatomic) APSMovieControlStyle controlStyle;
 
 /**
  *  Obtains the most recent time-based metadata provided by the streamed movie.
