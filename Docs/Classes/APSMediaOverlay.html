@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 
-	<title></title>
+	<title>APSMediaOverlay Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
-	
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
 </head>
 <body class="appledoc">
 	<header>
@@ -43,9 +43,63 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
-
+	<option value="overview">Overview</option>
 	
 
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/absoluteOffsetX">absoluteOffsetX</option>
+		
+		<option value="//api/name/absoluteOffsetY">absoluteOffsetY</option>
+		
+		<option value="//api/name/controller">controller</option>
+		
+		<option value="//api/name/fadeInDuration">fadeInDuration</option>
+		
+		<option value="//api/name/height">height</option>
+		
+		<option value="//api/name/metadata">metadata</option>
+		
+		<option value="//api/name/parameters">parameters</option>
+		
+		<option value="//api/name/parentUnit">parentUnit</option>
+		
+		<option value="//api/name/position">position</option>
+		
+		<option value="//api/name/removeWhenHidden">removeWhenHidden</option>
+		
+		<option value="//api/name/type">type</option>
+		
+		<option value="//api/name/width">width</option>
+		
+		<option value="//api/name/zIndex">zIndex</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/positionFromString:">+ positionFromString:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/onTrigger">- onTrigger</option>
+		
+	</optgroup>
+	
 	
 </select>
 						</label>
@@ -59,22 +113,799 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title"></h1>
+					<h1 class="title">APSMediaOverlay Class Reference</h1>
 
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/APSMediaEvent.html">APSMediaEvent</a> : NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/APSMediaTrackableObject.html">APSMediaTrackableObject</a><br />NSCopying</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>APSMediaOverlay.h<br />APSMediaOverlay.m</td>
+</tr>
+						</tbody></table></div>
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>APSMediaOverlay</code> describes any overlay that the <a href="../Classes/APSMediaPlayer.html"><code>APSMediaPlayer</code></a> instance needs to render during playback.</p>
+					</div>
+					
+					
 
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Setting the Overlay Type and Parameters" name="task_Setting the Overlay Type and Parameters"></a>
+						<h2 class="task-title">Setting the Overlay Type and Parameters</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="method-title"><code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Overlay type. The values that can be used with this property are usually constants defined by each individual overlay <a href="#//api/name/controller">controller</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *type</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Overlay type. The values that can be used with this property are usually constants defined by each individual overlay <a href="#//api/name/controller">controller</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/parameters" title="parameters"></a>
+	<h3 class="method-title"><code><a href="#//api/name/parameters">&nbsp;&nbsp;parameters</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Overlay parameters. Implementation-specific to overlay controllers.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSMutableDictionary *parameters</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Overlay parameters. Implementation-specific to overlay controllers.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Positioning the Overlay On-Screen" name="task_Positioning the Overlay On-Screen"></a>
+						<h2 class="task-title">Positioning the Overlay On-Screen</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/position" title="position"></a>
+	<h3 class="method-title"><code><a href="#//api/name/position">&nbsp;&nbsp;position</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Describes the position the overlay should take when placed on-screen by the player. See <a href="../Constants/APSMediaOverlayPosition.html"><code>APSMediaOverlayPosition</code></a> for available values.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMediaOverlayPosition position</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Describes the position the overlay should take when placed on-screen by the player. See <a href="../Constants/APSMediaOverlayPosition.html"><code>APSMediaOverlayPosition</code></a> for available values.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/zIndex" title="zIndex"></a>
+	<h3 class="method-title"><code><a href="#//api/name/zIndex">&nbsp;&nbsp;zIndex</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The order of the overlay in the current view stack.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) int zIndex</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The order of the overlay in the current view stack.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/width" title="width"></a>
+	<h3 class="method-title"><code><a href="#//api/name/width">&nbsp;&nbsp;width</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The width of the overlay. Supports pixels (e.g.: @&ldquo;320&rdquo;) or percentages, relative to the total width (e.g.: @&ldquo;50%&rdquo;).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *width</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The width of the overlay. Supports pixels (e.g.: @&ldquo;320&rdquo;) or percentages, relative to the total width (e.g.: @&ldquo;50%&rdquo;).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/height" title="height"></a>
+	<h3 class="method-title"><code><a href="#//api/name/height">&nbsp;&nbsp;height</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The height of the overlay. Supports pixels (e.g.: @&ldquo;320&rdquo;) or percentages, relative to the total height (e.g.: @&ldquo;50%&rdquo;).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *height</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The height of the overlay. Supports pixels (e.g.: @&ldquo;320&rdquo;) or percentages, relative to the total height (e.g.: @&ldquo;50%&rdquo;).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/absoluteOffsetX" title="absoluteOffsetX"></a>
+	<h3 class="method-title"><code><a href="#//api/name/absoluteOffsetX">&nbsp;&nbsp;absoluteOffsetX</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The overlay&rsquo;s absolute horizontal offset, relative to the current origin. The current origin is determined by the overlay&rsquo;s <a href="#//api/name/position"><code>position</code></a> parameter, while the positive direction is always toward the center of the player surface. Supports pixels (e.g.: @&ldquo;320&rdquo;) or percentages, relative to the total <a href="#//api/name/width">width</a> (e.g.: @&ldquo;50%&rdquo;).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *absoluteOffsetX</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The overlay&rsquo;s absolute horizontal offset, relative to the current origin. The current origin is determined by the overlay&rsquo;s <a href="#//api/name/position"><code>position</code></a> parameter, while the positive direction is always toward the center of the player surface. Supports pixels (e.g.: @&ldquo;320&rdquo;) or percentages, relative to the total <a href="#//api/name/width">width</a> (e.g.: @&ldquo;50%&rdquo;).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/absoluteOffsetY" title="absoluteOffsetY"></a>
+	<h3 class="method-title"><code><a href="#//api/name/absoluteOffsetY">&nbsp;&nbsp;absoluteOffsetY</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The overlay&rsquo;s absolute vertical offset, relative to the current origin. The current origin is determined by the overlay&rsquo;s <a href="#//api/name/position"><code>position</code></a> parameter, while the positive direction is always toward the center of the player surface. Supports pixels (e.g.: @&ldquo;320&rdquo;) or percentages, relative to the total <a href="#//api/name/height">height</a> (e.g.: @&ldquo;50%&rdquo;).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *absoluteOffsetY</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The overlay&rsquo;s absolute vertical offset, relative to the current origin. The current origin is determined by the overlay&rsquo;s <a href="#//api/name/position"><code>position</code></a> parameter, while the positive direction is always toward the center of the player surface. Supports pixels (e.g.: @&ldquo;320&rdquo;) or percentages, relative to the total <a href="#//api/name/height">height</a> (e.g.: @&ldquo;50%&rdquo;).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Overlay Properties" name="task_Overlay Properties"></a>
+						<h2 class="task-title">Overlay Properties</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/fadeInDuration" title="fadeInDuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fadeInDuration">&nbsp;&nbsp;fadeInDuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The duration (in seconds) for the fade in effect of the overlay, when it is placed on and taken off screen.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGFloat fadeInDuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The duration (in seconds) for the fade in effect of the overlay, when it is placed on and taken off screen.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeWhenHidden" title="removeWhenHidden"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeWhenHidden">&nbsp;&nbsp;removeWhenHidden</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines if the overlay should be removed from memory when its' opacity becomes zero.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL removeWhenHidden</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines if the overlay should be removed from memory when its' opacity becomes zero.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/parentUnit" title="parentUnit"></a>
+	<h3 class="method-title"><code><a href="#//api/name/parentUnit">&nbsp;&nbsp;parentUnit</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>After being added to a <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, a reference to this parent can be found here.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) APSMediaUnit *parentUnit</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>After being added to a <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, a reference to this parent can be found here.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/controller" title="controller"></a>
+	<h3 class="method-title"><code><a href="#//api/name/controller">&nbsp;&nbsp;controller</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A refence to the overlay controller object. This is set by the player, on the overlay&rsquo;s initial render.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) APSMediaPlayerOverlayController *controller</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A refence to the overlay controller object. This is set by the player, on the overlay&rsquo;s initial render.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/metadata" title="metadata"></a>
+	<h3 class="method-title"><code><a href="#//api/name/metadata">&nbsp;&nbsp;metadata</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Additional overlay information.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSMutableDictionary *metadata</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Additional overlay information.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Other" name="task_Other"></a>
+						<h2 class="task-title">Other</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/positionFromString:" title="positionFromString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/positionFromString:">+&nbsp;positionFromString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Converts a string format to a <a href="../Constants/APSMediaOverlayPosition.html">APSMediaOverlayPosition</a> value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (APSMediaOverlayPosition)positionFromString:(NSString *)<em>position</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>position</code></th>
+						<td><p>The <a href="#//api/name/position">position</a> of the overlay. Possible values are:
+- &ldquo;top&rdquo;
+- &ldquo;topLeft&rdquo;
+- &ldquo;topRight&rdquo;
+- &ldquo;bottomLeft&rdquo;
+- &ldquo;bottomRight&rdquo;
+- &ldquo;bottom&rdquo;
+- &ldquo;fullscreen&rdquo;</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The <a href="../Constants/APSMediaOverlayPosition.html">APSMediaOverlayPosition</a> value coresponding to the string format.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Converts a string format to a <a href="../Constants/APSMediaOverlayPosition.html">APSMediaOverlayPosition</a> value.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaOverlay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onTrigger" title="onTrigger"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onTrigger">&ndash;&nbsp;onTrigger</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onTrigger</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
 					
 
                     
+                    
+          
 				</main>
 
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Veeplay. All rights reserved. Updated: 2018-12-06</p>
+						<p class="copyright">Copyright &copy; 2019 Veeplay. All rights reserved. Updated: 2019-05-03</p>
 						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
 						
 					</div>
 				</footer>

@@ -1,3 +1,6 @@
+### 2.9.7
+Migrate UI to AutoLayout for iPhone X support
+
 ### 2.9.6
 Preliminary VAST 4 support
 

@@ -30,6 +30,7 @@ extern NSString *const kAPSVASTNonlinearAd;
 #define kAPSMetadataCurrentAdIndex @"adbreak.current"
 #define kAPSMetadataTotalAdBreakAds @"adbreak.total"
 #define kAPSMetadataVASTId @"adbreak.vastid"
+#define kAPSMetadataUniversalVASTId @"adbreak.universalvastid"
 
 /**
  The VAST Media Builder plugin extends an `APSMediaBuilder` object by inserting preroll, postroll, midroll and non-linear ad breaks, loaded from VAST 1.0, VAST 2.0, VAST 3.0 and VMAP 1.0 sources.

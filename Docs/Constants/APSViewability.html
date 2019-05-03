@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>APSMovieControlStyle Constants Reference</title>
+	<title>APSViewability Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">APSMovieControlStyle Constants Reference</h1>
+					<h1 class="title">APSViewability Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>APSTypes.h</td>
+	<td>APSMediaPlayer.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,27 +75,19 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">APSMovieControlStyle</h3>
+                    <h3 class="subsubtitle method-title">APSViewability</h3>
                     
-					
-					<div class="section section-overview">
-                        <p>Types of native controls that some backend renderers can use. These are provided by the OS, and are separate from the controls bar provided by the library.</p>
-					</div>
-					
-					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSInteger, APSMovieControlStyle ) {<br>
+                        <code>typedef NS_ENUM(NSInteger, APSViewability ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">APSMovieControlStyleNone</a>,<br>
+                            &nbsp;&nbsp; <a href="">APSViewabilityViewable</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">APSMovieControlStyleEmbedded</a>,<br>
+                            &nbsp;&nbsp; <a href="">APSViewabilityNotViewable</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">APSMovieControlStyleFullscreen</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">APSMovieControlStyleDefault</a> = APSMovieControlStyleNone,<br>
+                            &nbsp;&nbsp; <a href="">APSViewabilityUndetermined</a>,<br>
                             
                             };</code>
                     
@@ -105,70 +97,32 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="APSMovieControlStyleNone"></a><code>APSMovieControlStyleNone</code></dt>
+                            <dt><a name="" title="APSViewabilityViewable"></a><code>APSViewabilityViewable</code></dt>
 <dd>
-
-
-<p>No controls</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">APSTypes.h</code>.
+		Declared In <code class="declared-in-ref">APSMediaPlayer.m</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="APSMovieControlStyleEmbedded"></a><code>APSMovieControlStyleEmbedded</code></dt>
+                            <dt><a name="" title="APSViewabilityNotViewable"></a><code>APSViewabilityNotViewable</code></dt>
 <dd>
-
-
-<p>Controls for an embedded view</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">APSTypes.h</code>.
+		Declared In <code class="declared-in-ref">APSMediaPlayer.m</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="APSMovieControlStyleFullscreen"></a><code>APSMovieControlStyleFullscreen</code></dt>
+                            <dt><a name="" title="APSViewabilityUndetermined"></a><code>APSViewabilityUndetermined</code></dt>
 <dd>
-
-
-<p>Controls for fullscreen playback</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">APSTypes.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="APSMovieControlStyleDefault"></a><code>APSMovieControlStyleDefault</code></dt>
-<dd>
-
-
-<p>Types of native controls that some backend renderers can use. These are provided by the OS, and are separate from the controls bar provided by the library.</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">APSTypes.h</code>.
+		Declared In <code class="declared-in-ref">APSMediaPlayer.m</code>.
 	</p>
 	
 </dd>
@@ -177,17 +131,6 @@
                     </div>
                     
 
-                    
-                    
-
-                    
-
-                    
-                    <div class="method-subsection declared-in-section">
-                        <h4 class="method-subtitle">Declared In</h4>
-                        <p><code class="declared-in-ref">APSTypes.h</code></p>
-                    </div>
-                    
                     
                     
                     

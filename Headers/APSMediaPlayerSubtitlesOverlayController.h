@@ -14,9 +14,5 @@
 
 extern NSString* const APSSubtilesOverlay;
 
-@interface APSMediaPlayerSubtitlesOverlayView : UIView
-@end
-
 @interface APSMediaPlayerSubtitlesOverlayController : APSMediaPlayerOverlayController
-@property (strong, nonatomic) APSMediaPlayerSubtitlesOverlayView *view;
 @end

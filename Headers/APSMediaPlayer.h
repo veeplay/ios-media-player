@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
-#import <TSMiniWebBrowser/TSMiniWebBrowser.h>
+#import "KINWebBrowserViewController.h"
 
 #import "KRHub.h"
 #import "APSMediaBuilder.h"
@@ -160,6 +160,9 @@ extern NSString *const APSMediaPlayerEventPlaylistFinish;
 extern NSString *const APSMediaPlayerEventExitFullscreen;
 extern NSString *const APSMediaPlayerEventFullscreen;
 extern NSString *const APSMediaPlayerEventImpression;
+extern NSString *const APSMediaPlayerEventViewableImpressionViewable;
+extern NSString *const APSMediaPlayerEventViewableImpressionNotViewable;
+extern NSString *const APSMediaPlayerEventViewableImpressionUndetermined;
 extern NSString *const APSMediaPlayerEventCreativeView;
 extern NSString *const APSMediaPlayerEventResume;
 extern NSString *const APSMediaPlayerEventPause;
@@ -249,7 +252,7 @@ typedef void (^APSMediaPlayerFinishBlock)();
  - *kAPSMediaPlayerBackendsGroup* - The group name that 3rd party backend renderers must use when registering with the player. See `APSMediaPlayerProtocol` for more details.
  - *kAPSMediaPlayerControlPluginsGroup* - The group name that 3rd party control plugins must use when registering with the player. See `APSControlPluginProtocol` for more details.
  */
-@interface APSMediaPlayer : KRHub <TSMiniWebBrowserDelegate, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
+@interface APSMediaPlayer : KRHub <UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning, KINWebBrowserDelegate>
 
 /**-----------------------------------------------------------------------------
  * @name Accessing the APSMediaPlayer Instance and its View

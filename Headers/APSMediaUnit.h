@@ -162,6 +162,10 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  */
 @property (nonatomic) NSURL *url;
 /**
+ *  If an ad, the URL to mezzanine file which was the source of this ad
+ */
+@property (nonatomic) NSURL *mezzanineUrl;
+/**
  *  Initial video playback time in seconds.
  */
 @property (nonatomic) NSTimeInterval initialPlaybackTime;
