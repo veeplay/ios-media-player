@@ -1,3 +1,6 @@
+### 2.9.8
+Fix build dependency issue
+
 ### 2.9.7
 Migrate UI to AutoLayout for iPhone X support
 
