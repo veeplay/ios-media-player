@@ -1,3 +1,6 @@
+### 2.9.9
+Fix `APSMediaPlayerEventPlaylistFinish` being called when setting up the player
+
 ### 2.9.8
 Fix build dependency issue
 
