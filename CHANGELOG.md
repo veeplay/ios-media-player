@@ -1,3 +1,6 @@
+### 2.9.10
+Fix a bug when ad breaks from an old playlist would act on the current one
+
 ### 2.9.9
 Fix `APSMediaPlayerEventPlaylistFinish` being called when setting up the player
 
