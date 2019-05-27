@@ -12,8 +12,8 @@
 #define APSVASTError_h
 
 #define kAPSVASTErrorXMLParsingError 100
-#define kAPSVASTErrorSchemaValidationError 101
-#define kAPSVASTVersionNotSupportedError 102
+#define kAPSVASTErrorSchemaValidation 101
+#define kAPSVASTErrorVersionNotSupported 102
 
 #define kAPSVASTTraffickingError 200
 #define kAPSVASTLinearityError 201
@@ -56,8 +56,8 @@
 
 static inline NSString *descriptionForVASTError(int err) {
     if (err == kAPSVASTErrorXMLParsingError) return @"XML parsing error";
-    else if (err == kAPSVASTErrorSchemaValidationError) return @"VAST schema validation error";
-    else if (err == kAPSVASTVersionNotSupportedError) return @"VAST version of response not supported";
+    else if (err == kAPSVASTErrorSchemaValidation) return @"VAST schema validation error";
+    else if (err == kAPSVASTErrorVersionNotSupported) return @"VAST version of response not supported";
     else if (err == kAPSVASTTraffickingError) return @"Trafficking error. Media player received an Ad type that it was not expecting and/or cannot play";
     else if (err == kAPSVASTLinearityError) return @"Media player expecting different linearity";
     else if (err == kAPSVASTDurationError) return @"Media player expecting different duration";

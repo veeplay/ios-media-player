@@ -1,6 +1,21 @@
+### 3.0.1
+Process macros in VAST URLs
+
 ### 3.0.0
 VAST 4.1 and DAST support
 Rewrote overlays to use Autolayout
+
+### 2.9.10
+Fix a bug when ad breaks from an old playlist would act on the current one
+
+### 2.9.9
+Fix `APSMediaPlayerEventPlaylistFinish` being called when setting up the player
+
+### 2.9.8
+Fix build dependency issue
+
+### 2.9.7
+Migrate UI to AutoLayout for iPhone X support
 
 ### 2.9.6
 Preliminary VAST 4 support
