@@ -1,3 +1,6 @@
+### 3.0.2
+Fix missing dependency in pod variant
+
 ### 3.0.1
 Process macros in VAST URLs
 
