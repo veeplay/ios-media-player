@@ -1,3 +1,6 @@
+### 3.0.3
+Use `userAgent` property for [CLIENTUA], if available
+
 ### 3.0.2
 Fix missing dependency in pod variant
 
