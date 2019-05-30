@@ -1,3 +1,7 @@
+### 3.0.4
+Show loading activity indicator while VAST data is retrieved.
+Support for `LIMITADTRACKING`, `REGULATIONS` and `GDPRCONSENT` VAST Macros.
+
 ### 3.0.3
 Use `userAgent` property for [CLIENTUA], if available
 

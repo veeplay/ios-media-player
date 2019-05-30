@@ -15,6 +15,7 @@
 #import "APSMediaOverlay.h"
 #import "APSMediaUnit.h"
 #import "APSTypes.h"
+#import "APSVASTRegulationInformation.h"
 
 #define kAPSMediaPlayerEventType @"event.type"
 #define kAPSMediaPlayerEvent @"event"
@@ -311,6 +312,12 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *  The user agent that should be used when making HTTP requests.
  */
 @property (nonatomic) NSString *userAgent;
+
+/**
+ * Consent information regarding GDPR and other regulations
+ */
+@property (nonatomic) APSVASTRegulationInformation *regulationInformation;
+
 /**
  *  Set this to NO to disable internal fullscreen handling. Fullscreen functionality should be implemented externally, using the available methods and notifications emitted by the player.
  */
