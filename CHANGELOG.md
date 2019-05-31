@@ -1,3 +1,6 @@
+### 3.0.5
+Fix loading activity indicator appearing over playing video
+
 ### 3.0.4
 Show loading activity indicator while VAST data is retrieved.
 Support for `LIMITADTRACKING`, `REGULATIONS` and `GDPRCONSENT` VAST Macros.
