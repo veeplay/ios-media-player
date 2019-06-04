@@ -1,3 +1,6 @@
+### 3.0.6
+Minor bugfix regarding ad counter
+
 ### 3.0.5
 Fix loading activity indicator appearing over playing video
 
