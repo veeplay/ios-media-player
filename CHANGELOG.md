@@ -1,3 +1,7 @@
+### 3.0.7
+Fix UI calls from background threads
+Support for LIMITADTRACKING, REGULATIONS and GDPRCONSENT macros
+
 ### 3.0.6
 Minor bugfix regarding ad counter
 
