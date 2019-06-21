@@ -15,6 +15,7 @@
 #import "APSMediaOverlay.h"
 #import "APSMediaUnit.h"
 #import "APSTypes.h"
+#import "APSEvent.h"
 #import "APSVASTRegulationInformation.h"
 
 #define kAPSMediaPlayerEventType @"event.type"
@@ -25,6 +26,7 @@
 #define kAPSMediaPlayerCurrentDuration @"current_duration"
 #define kAPSMediaPlayerError @"error"
 #define kAPSMediaPlayerSeekStart @"seek_start"
+#define kAPSMediaPlayerSeekTo @"seek_to"
 
 #define kAPSMediaPlayerPlaybackDidFinishReason @"finish_reason"
 #define KAPSMediaPlayerCurrentUnit @"unit"
@@ -116,6 +118,7 @@ extern NSString *const APSMediaPlayerStatusChangedNotification;
  *  - the `kAPSMediaPlayerCurrentDuration` key returns the total duration of the unit that triggered the event
  *  - the `kAPSMediaPlayerError` is present in case the event signals an error
  *  - the `kAPSMediaPlayerSeekStart` is present for `APSMediaPlayerEventSeeked` events and indicates the playback time when the seek started
+ *  - the `kAPSMediaPlayerSeekTo` is present for `APSMediaPlayerEventSeeked` events and indicates the requested playback time to seek to
  */
 extern NSString *const APSMediaPlayerTrackedEventNotification;
 /**
@@ -181,7 +184,10 @@ extern NSString *const APSMediaPlayerEventIconView;
 extern NSString *const APSMediaPlayerEventExpand;
 extern NSString *const APSMediaPlayerEventCollapse;
 extern NSString *const APSMediaPlayerEventUpdate;
+extern NSString *const APSMediaPlayerEventPosition;
 extern NSString *const APSMediaPlayerEventSeeked;
+extern NSString *const APSMediaPlayerEventSSAIAdStarted;
+extern NSString *const APSMediaPlayerEventSSAIAdEnded;
 
 /**
  *  The `APSMediaPlayerActionDelegate` protocol declares the two methods that a class must implement in order to become an `APSMediaPlayer` actionDelegate. The object implementing `APSMediaPlayer` will receive information about the URLs that need to be executed as the user interacts with the player.
@@ -253,6 +259,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  - the `kAPSMediaPlayerCurrentDuration` key returns the total duration of the unit that triggered the event
  - the `kAPSMediaPlayerError` is present in case the event signals an error
  - the `kAPSMediaPlayerSeekStart` is present for `APSMediaPlayerEventSeeked` events and indicates the playback time when the seek started
+ - the `kAPSMediaPlayerSeekTo` is present for `APSMediaPlayerEventSeeked` events and indicates the requested playback time to seek to
  - **APSMediaPlayerInvalidLicenseNotification** - Posted when the player license is invalid. Playback will be disabled.
  - **APSMediaPlayerWillOpenMiniBrowser** - Posted when the internal minibrowser will be opened.
  - **APSMediaPlayerWillCloseMiniBrowser** - Posted when the internal minibrowser will be dismissed.
@@ -411,13 +418,19 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *  This method triggers an `APSMediaPlayerTrackedEventNotification` notification.
  *  @warning Also sends tracking information to one or more servers. All specified URLs will be requested via GET. If the given object is an instance of the `APSMediaUnit` or the `APSMediaOverlay` classes, the `trackingURLs` dictionary property will be searched for the `type` key to identify the URLs that need to be pinged. Alternatively, you can pass a `NSArray`, a `NSURL` or a `NSString` as the object parameter. See "Available Tracking Events" for a list of supported event types.
  *
- *  @param event The specific event subtype. May be nil for simple events.
- *  @param type  The tracked event type. See "Available Tracking Events".
- *  @param object The `APSMediaUnit` or `APSMediaOverlay` instance that generated the notification. Can be nil for non-unit related events.
- *  @param metadata Additional key-value pairs to send via the notification's userInfo to subscribers.
- *  @param urls An array of `NSURL` objects representing addresses that should be pinged. Also accepts an array of `NSString` objects, a single `NSURL` or a single `NSString`.
+ *  @param event The APSEvent object containing event info.
  */
-- (void)trackEvent:(NSString*)event type:(NSString*)type forObject:(id)object metadata:(NSDictionary*)metadata urls:(id)urls;
+- (void)trackEvent:(APSEvent *)event;
+/*
+*  Old method to track event. This is deprecated now, please use `-trackEvent:(APSEvent *)event`.
+*
+*  @param event The specific event subtype. May be nil for simple events.
+*  @param type  The tracked event type. See "Available Tracking Events".
+*  @param object The `APSMediaUnit` or `APSMediaOverlay` instance that generated the notification. Can be nil for non-unit related events.
+*  @param metadata Additional key-value pairs to send via the notification's userInfo to subscribers.
+*  @param urls An array of `NSURL` objects representing addresses that should be pinged. Also accepts an array of `NSString` objects, a single `NSURL` or a single `NSString`.
+*/
+- (void)trackEvent:(NSString*)event type:(NSString*)type forObject:(id)object metadata:(NSDictionary*)metadata urls:(id)urls __deprecated_msg("use trackEvent: instead");
 
 /**
  *  This is a wrapper for trackEvent:type:forObject:metadata:urls:
@@ -426,7 +439,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *  @param type  The tracked event type. See "Available Tracking Events".
  *  @param object The `APSMediaUnit` or `APSMediaOverlay` instance that generated the notification. Can be nil for non-unit related events.
  */
-- (void)trackEvent:(NSString*)event type:(NSString*)type forObject:(id)object;
+- (void)trackEvent:(NSString*)event type:(NSString*)type forObject:(id)object __deprecated_msg("use trackEvent: instead");
 
 /**-----------------------------------------------------------------------------
  * @name URL Handling

@@ -17,6 +17,7 @@
 #import "APSMediaPlayerYoutubeOverlayController.h"
 #import "APSMediaPlayerVimeoOverlayController.h"
 #import "APSMediaPlayerSubtitlesOverlayController.h"
+#import "APSMediaPlayerSSAIOverlayController.h"
 #import "APSMediaEvent.h"
 
 @class APSMediaUnit;

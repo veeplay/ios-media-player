@@ -36,6 +36,12 @@
  *  @param unit The currently loading unit.
  */
 - (void)startForUnit:(APSMediaUnit*)unit;
+
+/*
+ *  Called regularly during the playback
+ */
+- (void)update;
+
 /**
  *  When an `APSMediaUnit` ends playback, if it declares requiring a manager that matches the current object's [KRAdapter type], this method will be invoked. 
  */

@@ -1,3 +1,6 @@
+### 3.0.8
+SSAI streams support
+
 ### 3.0.7
 Fix UI calls from background threads
 Support for LIMITADTRACKING, REGULATIONS and GDPRCONSENT macros
