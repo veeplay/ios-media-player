@@ -1,3 +1,6 @@
+### 3.0.9
+Disabled MPMoviePlayerController-based backend on iOS 13
+
 ### 3.0.8
 SSAI streams support
 
