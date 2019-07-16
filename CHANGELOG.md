@@ -1,3 +1,6 @@
+### 2.9.11
+Disabled MPMoviePlayerController-based backend on iOS 13
+
 ### 2.9.10
 Fix a bug when ad breaks from an old playlist would act on the current one
 
