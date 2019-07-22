@@ -1,3 +1,6 @@
+### 3.0.10
+Fix a bug when fullscreen overlays weren't properly removed from screen after an unit ends playing
+
 ### 3.0.9
 Disabled MPMoviePlayerController-based backend on iOS 13
 
