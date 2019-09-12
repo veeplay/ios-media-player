@@ -1,3 +1,6 @@
+### 3.0.11
+Fix a crash which occured when an invalid URL was provided as a tracking URL
+
 ### 3.0.10
 Fix a bug when fullscreen overlays weren't properly removed from screen after an unit ends playing
 
