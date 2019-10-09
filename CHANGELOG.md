@@ -1,3 +1,6 @@
+### 3.0.12
+Use an iOS 10 compatible way to create ISO 8601 dates.
+
 ### 3.0.11
 Fix a crash which occured when an invalid URL was provided as a tracking URL
 
