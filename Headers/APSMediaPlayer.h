@@ -760,6 +760,11 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 @property (nonatomic) NSString *advertisingIdentifier __deprecated_msg("Use APSVASTAdBreak delegate.");
 
 /**
+ *  A NSURLSession used for retrieving data from the internet
+ */
+@property (nonatomic, readonly, nonnull) NSURLSession *urlSession;
+
+/**
  *  Resets the media player backend.
  */
 - (void) clear;

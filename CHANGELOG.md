@@ -1,3 +1,6 @@
+### 3.0.14
+Fix a condition when the video player would continue playing media units after it was stopped
+
 ### 3.0.13
 Stability improvements
 
