@@ -1,3 +1,6 @@
+### 3.0.15
+Fix a layout issue in default controls bar
+
 ### 3.0.14
 Fix a condition when the video player would continue playing media units after it was stopped
 
