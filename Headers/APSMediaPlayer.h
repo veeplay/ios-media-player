@@ -341,6 +341,11 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 @property (nonatomic) BOOL fullscreenOnLandscapeRotate;
 
 /**
+ *  Enable Google's IMA SDK
+ */
+@property (nonatomic) BOOL preferGoogleIma;
+
+/**
  *  Define allowed orientations for fullscreen mode
  */
 @property (nonatomic) APSFullscreenOrientationBehaviour fullscreenOrientationBehaviour;

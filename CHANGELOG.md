@@ -1,3 +1,6 @@
+### 3.1.0
+Opt-in support for using Google IMA SDK instead of internal VAST parser
+
 ### 3.0.15
 Fix a layout issue in default controls bar
 

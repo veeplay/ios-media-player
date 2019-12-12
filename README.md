@@ -160,6 +160,16 @@ Also, you can configure this programatically by adding kAPSChromecastControl to 
 
         unit.controlsParameters = @{kAPSControlsComponents: @(APSPlaybackControl|APSCurrentTimeControl|APSTimeSliderControl|APSTotalTimeControl|kAPSChromecastControl|APSFullScreenControl)};
 
+## Using Google IMA SDK
+
+Optionally, Veeplay allows to use Google's IMA SDK instead of the internal VAST ad player. To do this, first add the VeeplayIma integration:
+
+    pod "VeeplayIma", "~> 1.0"
+    
+Then, as soon as possible, enable Veeplay to use Google IMA:
+
+    [[APSMediaPlayer sharedInstance] setPreferGoogleIma:YES];
+
 ## Using Marlin DRM
 
 APSMediaPlayer provides support for [Marlin DRM](http://www.marlin-community.com/), using the SDKs provided by [ExpressPlay](http://expressplay.com). See full documentation [here](http://veeplay.github.io/ios-marlin-drm/).

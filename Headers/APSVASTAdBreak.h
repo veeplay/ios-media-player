@@ -128,7 +128,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  An array of `NSString` objects indicating the VAST URLs that will be called in order to populate the ad break with ads.
  */
-@property (nonatomic) NSArray *sources;
+@property (nonatomic) NSArray<NSString*> *sources;
 /**
  *  The ad break type. Specifies how the rezulting `APSMediaUnit`s and `APSMediaOverlay`s need to be placed relative to the main content units. See `APSVASTConfigurationOptions` for more details about the possible values.
  */
