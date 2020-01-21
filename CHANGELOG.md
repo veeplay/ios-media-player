@@ -1,3 +1,9 @@
+### 3.1.2
+Fix a crash caused by invalid VAST files
+
+### 3.1.1
+Move IMA support in a different Pod
+
 ### 3.1.0
 Opt-in support for using Google IMA SDK instead of internal VAST parser
 
