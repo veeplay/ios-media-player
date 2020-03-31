@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
-#import "KINWebBrowserViewController.h"
 
 #import "KRHub.h"
 #import "APSMediaBuilder.h"
@@ -39,6 +38,7 @@
 typedef NSString* APSBackendPlayer;
 
 @protocol APSUnitManagerProtocol;
+@protocol KINWebBrowserDelegate;
 
 ///--------------------
 /// @name Notifications
@@ -188,6 +188,8 @@ extern NSString *const APSMediaPlayerEventPosition;
 extern NSString *const APSMediaPlayerEventSeeked;
 extern NSString *const APSMediaPlayerEventSSAIAdStarted;
 extern NSString *const APSMediaPlayerEventSSAIAdEnded;
+extern NSString *const APSMediaPlayerEventAdBreakTriggered;
+extern NSString *const APSMediaPlayerEventAdRequested;
 
 /**
  *  The `APSMediaPlayerActionDelegate` protocol declares the two methods that a class must implement in order to become an `APSMediaPlayer` actionDelegate. The object implementing `APSMediaPlayer` will receive information about the URLs that need to be executed as the user interacts with the player.

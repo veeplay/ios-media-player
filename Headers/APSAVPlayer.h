@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "KRAdapter.h"
-#import "APSAVPlayerView.h"
-#import "AVPlayer+View.h"
 #import "APSMediaPlayerProtocol.h"
 
 /** The `APSAVPlayer` is a media backend renderer that handles playback via the native `AVPlayer` classes. See `APSMediaPlayerProtocol` for more details.

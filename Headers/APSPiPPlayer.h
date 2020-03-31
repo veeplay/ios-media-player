@@ -11,7 +11,6 @@
 #import <AVKit/AVKit.h>
 #import "KRAdapter.h"
 #import "APSMediaPlayerProtocol.h"
-#import "AVPlayer+View.h"
 
 /**
  *  Posted when Picture in Picture mode is not possible

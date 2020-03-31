@@ -1,3 +1,6 @@
+### 3.1.3
+Added `adBreakRequested` and `adBreakTriggered` tracking events
+
 ### 3.1.2
 Fix a crash caused by invalid VAST files
 

@@ -32,13 +32,13 @@
 /**
  An URL to the icon or a UIImage instance which will be used for the "enter fullscreen" action
  
- Defaults to APSMediaPlayer.bundle/Controls/fullscreen.png
+ Defaults to Controls/fullscreen.png
  */
 @property (nonatomic, strong) id enterIconLocation;
 /**
  An URL to the icon or a UIImage instance which will be used for the "leave fullscreen" action
  
- Defaults to APSMediaPlayer.bundle/Controls/fullscreen-exit.png
+ Defaults to Controls/fullscreen-exit.png
  */
 @property (nonatomic, strong) id leaveIconLocation;
 /**
