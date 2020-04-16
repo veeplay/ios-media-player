@@ -1,3 +1,6 @@
+### 3.1.4
+Fix "complete", "close" and "closeLinear" events not being tracked
+
 ### 3.1.3
 Added `adBreakRequested` and `adBreakTriggered` tracking events
 
