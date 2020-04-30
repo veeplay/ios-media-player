@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SafariServices/SafariServices.h>
 #import <MediaPlayer/MediaPlayer.h>
 
 #import "KRHub.h"
@@ -38,7 +39,6 @@
 typedef NSString* APSBackendPlayer;
 
 @protocol APSUnitManagerProtocol;
-@protocol KINWebBrowserDelegate;
 
 ///--------------------
 /// @name Notifications
@@ -278,7 +278,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  - *kAPSMediaPlayerBackendsGroup* - The group name that 3rd party backend renderers must use when registering with the player. See `APSMediaPlayerProtocol` for more details.
  - *kAPSMediaPlayerControlPluginsGroup* - The group name that 3rd party control plugins must use when registering with the player. See `APSControlPluginProtocol` for more details.
  */
-@interface APSMediaPlayer : KRHub <UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning, KINWebBrowserDelegate>
+@interface APSMediaPlayer : KRHub <UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning, SFSafariViewControllerDelegate>
 
 /**-----------------------------------------------------------------------------
  * @name Accessing the APSMediaPlayer Instance and its View

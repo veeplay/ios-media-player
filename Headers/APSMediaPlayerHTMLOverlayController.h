@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 #import "APSMediaPlayerOverlayController.h"
 #import "APSMediaPlayerClosableOverlayController.h"
 
@@ -38,5 +39,5 @@ extern NSString* const APSHTMLOverlay;
      - *kAPSHTMLHeight*: `NSNumber` corresponding to the integer value to be set for the meta viewport height property.
      - *kAPSHTMLErrorURLs*: `NSArray` containing `NSURL`s to be tracked in case of error.
  */
-@interface APSMediaPlayerHTMLOverlayController : APSMediaPlayerClosableOverlayController <UIWebViewDelegate>
+@interface APSMediaPlayerHTMLOverlayController : APSMediaPlayerClosableOverlayController <WKNavigationDelegate>
 @end

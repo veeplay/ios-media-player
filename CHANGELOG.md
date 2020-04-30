@@ -1,3 +1,7 @@
+### 3.1.5
+Replaced UIWebView with WKWebView
+Removed YouTube and Vimeo overlays and replaced them with unit managers
+
 ### 3.1.4
 Fix "complete", "close" and "closeLinear" events not being tracked
 
