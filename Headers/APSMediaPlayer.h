@@ -318,6 +318,10 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  */
 @property (nonatomic, strong) Class backendPlayerClass;
 /**
+ *  Enable debug logging
+ */
+@property (nonatomic) BOOL debug;
+/**
  *  The user agent that should be used when making HTTP requests.
  */
 @property (nonatomic) NSString *userAgent;
