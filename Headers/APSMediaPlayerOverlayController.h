@@ -177,7 +177,7 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
  *
  *  @warning This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.
  */
-- (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock)block;
+- (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock _Nonnull)block;
 
 /**-----------------------------------------------------------------------------
  * @name Defining Behavior for Webview Dismiss Events
@@ -198,5 +198,5 @@ typedef NS_ENUM(NSInteger, APSWebviewDismissedAction) {
 /**
  *  A reference to the `APSMediaOverlay` object associated with the current overlay controller.
  */
-@property (nonatomic, weak) APSMediaOverlay *overlay;
+@property (nonatomic, weak) APSMediaOverlay *_Nullable overlay;
 @end

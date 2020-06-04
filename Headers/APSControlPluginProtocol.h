@@ -47,8 +47,8 @@
 - (void)willLoad;
 - (void)didLoad;
 - (NSUInteger)constant;
-- (NSString*)stringConstant;
+- (NSString*_Nonnull)stringConstant;
 - (CGFloat)width;
-- (UIButton*)buttonForOverlayController:(APSMediaPlayerControlsOverlayController *)overlayController;
+- (UIButton*_Nullable)buttonForOverlayController:(APSMediaPlayerControlsOverlayController *_Nonnull)overlayController;
 
 @end

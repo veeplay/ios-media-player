@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface APSEvent : NSObject
 
-@property (nonatomic, strong, nullable) NSString *name;
-@property (nonatomic, strong) NSString *type;
-@property (nonatomic, strong, nullable) id object;
-@property (nonatomic, strong) NSDictionary *metadata;
-@property (nonatomic, strong, nullable) NSArray<NSURL*> *trackingURLs;
+@property (nonatomic, strong) NSString *_Nonnull name;
+@property (nonatomic, strong) NSString *_Nonnull type;
+@property (nonatomic, strong) id _Nullable object;
+@property (nonatomic, strong) NSDictionary *_Nullable metadata;
+@property (nonatomic, strong) NSArray<NSURL*> *_Nullable trackingURLs;
 @property (nonatomic) BOOL shouldEmitEvent;
 @property (nonatomic) BOOL synchronized;
 

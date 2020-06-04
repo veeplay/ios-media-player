@@ -19,7 +19,7 @@
 /**
  *  Get the AVPlayer instance associated with the current view.
  */
-- (AVPlayer*)player;
+- (AVPlayer *_Nullable)player;
 
 /**
  *  Set an AVPlayer instance to the current view.
@@ -27,6 +27,6 @@
  *  @param player An AVPlayer instance
  *
  */
-- (void)setPlayer:(AVPlayer *)player;
+- (void)setPlayer:(AVPlayer *_Nullable)player;
 
 @end
