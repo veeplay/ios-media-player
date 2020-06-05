@@ -215,7 +215,7 @@ extern NSString * _Nonnull const APSMediaPlayerEventAdRequested;
  * The block to be executed when the current playlist is completed
  * @since v1.7
  */
-typedef void (^APSMediaPlayerFinishBlock)();
+typedef void (^APSMediaPlayerFinishBlock)(void);
 
 /**
  *  Defines the viewability status of the player according to VAST 4 specifications

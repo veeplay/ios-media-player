@@ -84,7 +84,7 @@
  *  @param url   The URL of the JSON structure to load. This can be a remote file or a local file.
  *  @param block The block to be executed after configuration is finished.
  */
-- (void)configureFromURL:(NSURL *_Nonnull)url onComplete:(void (^_Nonnull)())block;
+- (void)configureFromURL:(NSURL *_Nonnull)url onComplete:(void (^_Nonnull)(void))block;
 /**
  *  Configures the builder from a `NSData` object.
  *  @warning UTF8 encoding is assumed.

@@ -242,7 +242,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  Holds the configuration object for the countdown overlay that appears on top of video ads.
  */
-@property (nonatomic) APSVASTCountdownConfiguration *_Nonnull countdownConfiguration;
+@property (nonatomic) APSVASTCountdownConfiguration *_Nullable countdownConfiguration;
 
 
 /**-----------------------------------------------------------------------------
