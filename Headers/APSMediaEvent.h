@@ -85,14 +85,14 @@ typedef NS_ENUM(NSInteger, APSMediaEventState) {
  *
  *  @param startPoint A string format describing the time point when the player needs to trigger the event. Possible values are seconds (e.g.: @"60") or a percentage relative to the total duration of the parent clip (e.g.: @"50%").
  */
-- (void)setStartPoint:(NSString*)startPoint;
+- (void)setStartPoint:(NSString*_Nonnull)startPoint;
 
 /**
  *  Sets the ending time point of the event.
  *
  *  @param endPoint A string format describing the time point when the player needs to unload the event. Possible values are seconds (e.g.: @"60") or a percentage relative to the total duration of the parent clip (e.g.: @"50%").
  */
-- (void)setEndPoint:(NSString*)endPoint;
+- (void)setEndPoint:(NSString*_Nonnull)endPoint;
 
 /**
  *  The time interval (in seconds) when the player needs to trigger the event.

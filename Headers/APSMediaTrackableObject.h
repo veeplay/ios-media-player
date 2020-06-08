@@ -15,5 +15,5 @@
 /**
  *  This dictionary defines all URLs that need to be notified of specific events from the object's lifecycle. The keys are event constants, as defined in `APSMediaPlayer`, and the values are `NSArrays` containing `NSURL` objects.
  */
-@property (nonatomic) NSMutableDictionary *trackingURLs;
+@property (nonatomic) NSMutableDictionary *_Nullable trackingURLs;
 @end

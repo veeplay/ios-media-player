@@ -11,7 +11,7 @@
 #import "APSMediaPlayerOverlayController.h"
 #import "APSMediaPlayerClosableOverlayController.h"
 
-extern NSString* const APSHTMLOverlay;
+extern NSString *_Nonnull const APSHTMLOverlay;
 #define kAPSHTMLCodeContent @"code"
 #define kAPSHTMLIframeSource @"iframe"
 #define kAPSHTMLScriptSource @"script"

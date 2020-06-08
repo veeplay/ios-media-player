@@ -28,25 +28,25 @@
 /**
  *  The text to be displayed in the countdown overlay. Use the "__remaining__" placeholder for the number of seconds.
  */
-@property (nonatomic) NSString *text;
+@property (nonatomic) NSString *_Nullable text;
 /**
  The width of the countdown overlay.
  
  Defaults to @"64%".
  */
-@property (nonatomic) NSString *width;
+@property (nonatomic) NSString *_Nonnull width;
 /**
  *  The height of the countdown overlay.
  
  Defaults to @"30".
  */
-@property (nonatomic) NSString *height;
+@property (nonatomic) NSString *_Nonnull height;
 /**
  The font family to be used for the text in the countdown overlay.
  
  Defaults to @"Helvetica".
  */
-@property (nonatomic) NSString *font;
+@property (nonatomic) NSString *_Nullable font;
 /**
  The size of the font to be used for the text in the countdown overlay.
  
@@ -58,5 +58,5 @@
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to `[UIColor whiteColor]`.
  */
-@property (nonatomic) NSString *color;
+@property (nonatomic) NSString *_Nullable color;
 @end

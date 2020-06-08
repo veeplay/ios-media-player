@@ -1,10 +1,7 @@
-### 3.1.7
-Fix an issue with encoding tracking URLs
-
 ### 3.1.6
-* Fix an issue when `[APSMediaPlayer stop]` is called when an item finishes playing and the "complete" tracking is not sent
-* Add `debug` property on `APSMediaPlayer` to enable logging
-* Fix `debug` property on `APSVASTAdBreak` not being passed to generated units
+Fix an issue when `[APSMediaPlayer stop]` is called when an item finishes playing and the "complete" tracking is not sent
+Add `debug` property on `APSMediaPlayer` to enable logging
+Fix `debug` property on `APSVASTAdBreak` not being passed to generated units
 
 ### 3.1.5
 Replaced UIWebView with WKWebView

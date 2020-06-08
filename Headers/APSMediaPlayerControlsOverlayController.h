@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "APSMediaPlayerOverlayController.h"
 
-extern NSString* const APSControlsOverlay;
+extern NSString *_Nonnull const APSControlsOverlay;
 #define kAPSControlsBarColor @"barColor"
 #define kAPSControlsBarAlpha @"barAlpha"
 #define kAPSControlsComponents @"components"
@@ -32,10 +32,10 @@ extern NSString* const APSControlsOverlay;
 #define kAPSControlsPlaybackTimeText @"playbackTimeText"
 #define kAPSControlsUpdateCurrentTimeWhileSeeking @"updateTimeWhileSeeking"
 
-extern NSString* const APSMoviePlayerCommandHideControls;
-extern NSString* const APSMoviePlayerCommandShowControls;
+extern NSString *_Nonnull const APSMoviePlayerCommandHideControls;
+extern NSString *_Nonnull const APSMoviePlayerCommandShowControls;
 
-extern NSString* const APSMoviePlayerCommandExtendControlPlugin;
+extern NSString *_Nonnull const APSMoviePlayerCommandExtendControlPlugin;
 
 /**
  *  Controls bar components.

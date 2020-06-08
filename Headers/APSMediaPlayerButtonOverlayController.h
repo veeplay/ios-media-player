@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "APSMediaPlayerOverlayController.h"
 
-extern NSString* const APSButtonOverlay;
+extern NSString *_Nonnull const APSButtonOverlay;
 #define kAPSButtonOverlayClickthrough @"clickThrough"
 #define kAPSButtonOverlayClicktracking @"clickTracking"
 #define kAPSButtonOverlayWebviewDismissAction @"dismissAction"

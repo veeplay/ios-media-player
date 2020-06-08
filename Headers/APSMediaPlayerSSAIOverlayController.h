@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString *const APSSSAIOverlay;
-extern NSString *const APSAdParamsMap;
+extern NSString *_Nonnull const APSSSAIOverlay;
+extern NSString *_Nonnull const APSAdParamsMap;
 
 @interface APSMediaPlayerSSAIOverlayController : APSMediaPlayerOverlayController
 
