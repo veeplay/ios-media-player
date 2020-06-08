@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "APSMediaPlayerOverlayController.h"
 
-extern NSString *_Nonnull const APSTextOverlay;
+extern NSString* const APSTextOverlay;
 #define kAPSTextOverlayString @"text"
 #define kAPSTextOverlayStringColor @"color"
 #define kAPSTextOverlayStringFont @"font"

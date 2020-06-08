@@ -59,19 +59,19 @@
 /**
  *  Defines the image that should be displayed in the non-linear ads close button, instead of the default progress wheel.
  */
-@property (nonatomic) UIImage *_Nullable closeButtonImage;
+@property (nonatomic) UIImage *closeButtonImage;
 /**
  Defines the background color for the close button displayed on top of non-linear ads.
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to [UIColor clearColor].
  */
-@property (nonatomic) NSString *_Nullable closeButtonBackgroundColor;
+@property (nonatomic) NSString *closeButtonBackgroundColor;
 /**
  Defines the color for the X symbol in the center of the close button.
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to [UIColor darkGrayColor].
  */
-@property (nonatomic) NSString *_Nullable closeButtonXColor;
+@property (nonatomic) NSString *closeButtonXColor;
 /**
  Indicates the lenght of a side of the non-linear ads close button square.
  
@@ -95,13 +95,13 @@
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to [UIColor darkGrayColor].
  */
-@property (nonatomic) NSString *_Nullable closeButtonProgressColor;
+@property (nonatomic) NSString *closeButtonProgressColor;
 /**
  The color of the circular bar that indicates the total time until the close button can be tapped.
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to [UIColor lightGrayColor].
  */
-@property (nonatomic) NSString *_Nullable closeButtonTrackColor;
+@property (nonatomic) NSString *closeButtonTrackColor;
 /**
  *  Defines the offset that the non-linear ads close button should have from the top-right edge of the banner itself.
  */

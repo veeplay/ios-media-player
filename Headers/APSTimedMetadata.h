@@ -24,6 +24,6 @@
  *  @param item An AVMetadataItem instance
  *
  */
-- (id _Nullable) initWithMetadataItem:(AVMetadataItem*_Nonnull)item;
+- (id) initWithMetadataItem:(AVMetadataItem*)item;
 
 @end

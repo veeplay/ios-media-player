@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, APSSkipOverlayProgressPosition) {
     kAPSSkipOverlayProgressPositionHidden
 };
 
-extern NSString *_Nonnull const APSSkipOverlay;
+extern NSString* const APSSkipOverlay;
 #define kAPSSkipOverlayOffset @"aps_skip_offset"
 #define kAPSSkipOverlayString @"aps_skip_text"
 #define kAPSSkipOverlayStringColor @"aps_skip_textcolor"

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "APSUnitManagerProtocol.h"
 
-extern NSString *_Nonnull const kVeeplayVimeoManager;
+extern NSString* const kVeeplayVimeoManager;
 
 @interface APSVimeoManager : NSObject <APSUnitManagerProtocol>
 

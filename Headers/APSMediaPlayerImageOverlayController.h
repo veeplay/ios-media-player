@@ -10,7 +10,7 @@
 #import "APSMediaPlayerOverlayController.h"
 #import "APSMediaPlayerClosableOverlayController.h"
 
-extern NSString *_Nonnull const APSImageOverlay;
+extern NSString* const APSImageOverlay;
 #define kAPSImageOverlayClickthrough @"clickThrough"
 #define kAPSImageOverlayClicktracking @"clickTracking"
 #define kAPSImageOverlayViewtracking @"viewTracking"

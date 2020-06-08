@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString *_Nonnull const APSSSAIClientType;
+extern NSString* const APSSSAIClientType;
 
 @interface APSSSAIClient : NSObject <APSUnitManagerProtocol>
 

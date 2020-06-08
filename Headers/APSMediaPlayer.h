@@ -47,67 +47,67 @@ typedef NSString* APSBackendPlayer;
 /**
  *  Posted when the fullscreen button was pressed and internal fullscreen handling is disabled
  */
-extern NSString * _Nonnull const APSMediaPlayerToggleFullscreenNotification;
+extern NSString *const APSMediaPlayerToggleFullscreenNotification;
 /**
  *  Posted before the media player enters fullscreen
  */
-extern NSString * _Nonnull const APSMediaPlayerWillEnterFullscreenNotification;
+extern NSString *const APSMediaPlayerWillEnterFullscreenNotification;
 /**
  *  Posted after the media player enters fullscreen
  */
-extern NSString * _Nonnull const APSMediaPlayerDidEnterFullscreenNotification;
+extern NSString *const APSMediaPlayerDidEnterFullscreenNotification;
 /**
  *  Posted before the media player exists fullscreen
  */
-extern NSString * _Nonnull const APSMediaPlayerWillExitFullscreenNotification;
+extern NSString *const APSMediaPlayerWillExitFullscreenNotification;
 /**
  *  Posted after the media player exists fullscreen
  */
-extern NSString * _Nonnull const APSMediaPlayerDidExitFullscreenNotification;
+extern NSString *const APSMediaPlayerDidExitFullscreenNotification;
 /**
  *  Posted before starting Picture in Picture mode
  */
-extern NSString * _Nonnull const APSMediaPlayerWillStartPictureInPictureNotification;
+extern NSString *const APSMediaPlayerWillStartPictureInPictureNotification;
 /**
  *  Posted after Picture in Picture mode was started
  */
-extern NSString * _Nonnull const APSMediaPlayerDidStartPictureInPictureNotification;
+extern NSString *const APSMediaPlayerDidStartPictureInPictureNotification;
 /**
  *  Posted before stopping Picture in Picture mode
  */
-extern NSString * _Nonnull const APSMediaPlayerWillStopPictureInPictureNotification;
+extern NSString *const APSMediaPlayerWillStopPictureInPictureNotification;
 /**
  *  Posted after stopping Picture in Picture mode
  */
-extern NSString * _Nonnull const APSMediaPlayerDidStopPictureInPictureNotification;
+extern NSString *const APSMediaPlayerDidStopPictureInPictureNotification;
 /**
  *  Posted when the user taps on the media player surface
  */
-extern NSString * _Nonnull const APSMediaPlayerWasTappedNotification;
+extern NSString *const APSMediaPlayerWasTappedNotification;
 /**
  *  Posted when the video controls bar becomes visible
  */
-extern NSString * _Nonnull const APSMediaPlayerControlsDisplayedNotification;
+extern NSString *const APSMediaPlayerControlsDisplayedNotification;
 /**
  *  Posted when the video controls bar becomes hidden
  */
-extern NSString * _Nonnull const APSMediaPlayerControlsHiddenNotification;
+extern NSString *const APSMediaPlayerControlsHiddenNotification;
 /**
  *  Posted every time the internal status of the media player changes. This will happen roughly once every second.
  */
-extern NSString * _Nonnull const APSMediaPlayerUpdateNotification;
+extern NSString *const APSMediaPlayerUpdateNotification;
 /**
  *  Posted when a media unit finishes playback, before the remaining playlist units are processed. The `userInfo` dictionary contains the APSMediaUnit object that just finished playback under the `KAPSMediaPlayerCurrentUnit` key.
  */
-extern NSString * _Nonnull const APSMediaPlayerUnitFinishedNotification;
+extern NSString *const APSMediaPlayerUnitFinishedNotification;
 /**
  *  Posted when the media player encounters an error in the process of unit playback. The `userInfo` dictionary contains the NSError object that represents the error under the `error` key.
  */
-extern NSString * _Nonnull const APSMediaPlayerErrorNotification;
+extern NSString *const APSMediaPlayerErrorNotification;
 /**
  *  Posted when the media player playback state has changed. You can immediately get the new state using the `playbackState` method of the APSMediaPlayer instance.
  */
-extern NSString * _Nonnull const APSMediaPlayerStatusChangedNotification;
+extern NSString *const APSMediaPlayerStatusChangedNotification;
 /**
  *  Posted when a trackable playback event occurs.
  *  The `userinfo` dictionary contains additional information about the tracked event:
@@ -120,76 +120,76 @@ extern NSString * _Nonnull const APSMediaPlayerStatusChangedNotification;
  *  - the `kAPSMediaPlayerSeekStart` is present for `APSMediaPlayerEventSeeked` events and indicates the playback time when the seek started
  *  - the `kAPSMediaPlayerSeekTo` is present for `APSMediaPlayerEventSeeked` events and indicates the requested playback time to seek to
  */
-extern NSString * _Nonnull const APSMediaPlayerTrackedEventNotification;
+extern NSString *const APSMediaPlayerTrackedEventNotification;
 /**
  *  Posted when the player license is invalid. Playback will be disabled.
  */
-extern NSString * _Nonnull const APSMediaPlayerInvalidLicenseNotification;
+extern NSString *const APSMediaPlayerInvalidLicenseNotification;
 /**
  *  Posted when the internal minibrowser will open because an ad was tapped
  */
-extern NSString * _Nonnull const APSMediaPlayerWillOpenMiniBrowser;
+extern NSString *const APSMediaPlayerWillOpenMiniBrowser;
 /**
  *  Posted when the internal minibrowser will be dismissed
  */
-extern NSString * _Nonnull const APSMediaPlayerWillCloseMiniBrowser;
+extern NSString *const APSMediaPlayerWillCloseMiniBrowser;
 /**
  *  Posted when the internal player backend finished playback
  */
-extern NSString * _Nonnull const APSMediaPlayerPlaybackDidFinishNotification;
+extern NSString *const APSMediaPlayerPlaybackDidFinishNotification;
 /**
  *  Posted when the media load state changed
  */
-extern NSString * _Nonnull const APSMediaPlayerLoadStateDidChangeNotification;
+extern NSString *const APSMediaPlayerLoadStateDidChangeNotification;
 /**
  *  Posted when the duration of the played media becomes available
  */
-extern NSString * _Nonnull const APSMediaPlayerDurationAvailableNotification;
+extern NSString *const APSMediaPlayerDurationAvailableNotification;
 /**
  *  Posted when the media playback state changed
  */
-extern NSString * _Nonnull const APSMediaPlayerPlaybackStateDidChangeNotification;
+extern NSString *const APSMediaPlayerPlaybackStateDidChangeNotification;
 /**
  *  Posted when the volume changed
  */
-extern NSString * _Nonnull const APSMediaPlayerVolumeDidChangeNotification;
+extern NSString *const APSMediaPlayerVolumeDidChangeNotification;
 
 ///-------------------------------------
 /// @name Available Tracking Events
 ///-------------------------------------
-extern NSString * _Nonnull const APSMediaPlayerEventLaunch;
-extern NSString * _Nonnull const APSMediaPlayerEventStart;
-extern NSString * _Nonnull const APSMediaPlayerEventFinish;
-extern NSString * _Nonnull const APSMediaPlayerEventPlaylistFinish;
-extern NSString * _Nonnull const APSMediaPlayerEventExitFullscreen;
-extern NSString * _Nonnull const APSMediaPlayerEventFullscreen;
-extern NSString * _Nonnull const APSMediaPlayerEventImpression;
-extern NSString * _Nonnull const APSMediaPlayerEventViewableImpressionViewable;
-extern NSString * _Nonnull const APSMediaPlayerEventViewableImpressionNotViewable;
-extern NSString * _Nonnull const APSMediaPlayerEventViewableImpressionUndetermined;
-extern NSString * _Nonnull const APSMediaPlayerEventCreativeView;
-extern NSString * _Nonnull const APSMediaPlayerEventResume;
-extern NSString * _Nonnull const APSMediaPlayerEventPause;
-extern NSString * _Nonnull const APSMediaPlayerEventRewind;
-extern NSString * _Nonnull const APSMediaPlayerEventForward;
-extern NSString * _Nonnull const APSMediaPlayerEventMute;
-extern NSString * _Nonnull const APSMediaPlayerEventUnmute;
-extern NSString * _Nonnull const APSMediaPlayerEventError;
-extern NSString * _Nonnull const APSMediaPlayerEventComplete;
-extern NSString * _Nonnull const APSMediaPlayerEventClose;
-extern NSString * _Nonnull const APSMediaPlayerEventCloseLinear;
-extern NSString * _Nonnull const APSMediaPlayerEventSkip;
-extern NSString * _Nonnull const APSMediaPlayerEventClick;
-extern NSString * _Nonnull const APSMediaPlayerEventIconView;
-extern NSString * _Nonnull const APSMediaPlayerEventExpand;
-extern NSString * _Nonnull const APSMediaPlayerEventCollapse;
-extern NSString * _Nonnull const APSMediaPlayerEventUpdate;
-extern NSString * _Nonnull const APSMediaPlayerEventPosition;
-extern NSString * _Nonnull const APSMediaPlayerEventSeeked;
-extern NSString * _Nonnull const APSMediaPlayerEventSSAIAdStarted;
-extern NSString * _Nonnull const APSMediaPlayerEventSSAIAdEnded;
-extern NSString * _Nonnull const APSMediaPlayerEventAdBreakTriggered;
-extern NSString * _Nonnull const APSMediaPlayerEventAdRequested;
+extern NSString *const APSMediaPlayerEventLaunch;
+extern NSString *const APSMediaPlayerEventStart;
+extern NSString *const APSMediaPlayerEventFinish;
+extern NSString *const APSMediaPlayerEventPlaylistFinish;
+extern NSString *const APSMediaPlayerEventExitFullscreen;
+extern NSString *const APSMediaPlayerEventFullscreen;
+extern NSString *const APSMediaPlayerEventImpression;
+extern NSString *const APSMediaPlayerEventViewableImpressionViewable;
+extern NSString *const APSMediaPlayerEventViewableImpressionNotViewable;
+extern NSString *const APSMediaPlayerEventViewableImpressionUndetermined;
+extern NSString *const APSMediaPlayerEventCreativeView;
+extern NSString *const APSMediaPlayerEventResume;
+extern NSString *const APSMediaPlayerEventPause;
+extern NSString *const APSMediaPlayerEventRewind;
+extern NSString *const APSMediaPlayerEventForward;
+extern NSString *const APSMediaPlayerEventMute;
+extern NSString *const APSMediaPlayerEventUnmute;
+extern NSString *const APSMediaPlayerEventError;
+extern NSString *const APSMediaPlayerEventComplete;
+extern NSString *const APSMediaPlayerEventClose;
+extern NSString *const APSMediaPlayerEventCloseLinear;
+extern NSString *const APSMediaPlayerEventSkip;
+extern NSString *const APSMediaPlayerEventClick;
+extern NSString *const APSMediaPlayerEventIconView;
+extern NSString *const APSMediaPlayerEventExpand;
+extern NSString *const APSMediaPlayerEventCollapse;
+extern NSString *const APSMediaPlayerEventUpdate;
+extern NSString *const APSMediaPlayerEventPosition;
+extern NSString *const APSMediaPlayerEventSeeked;
+extern NSString *const APSMediaPlayerEventSSAIAdStarted;
+extern NSString *const APSMediaPlayerEventSSAIAdEnded;
+extern NSString *const APSMediaPlayerEventAdBreakTriggered;
+extern NSString *const APSMediaPlayerEventAdRequested;
 
 /**
  *  The `APSMediaPlayerActionDelegate` protocol declares the two methods that a class must implement in order to become an `APSMediaPlayer` actionDelegate. The object implementing `APSMediaPlayer` will receive information about the URLs that need to be executed as the user interacts with the player.
@@ -202,20 +202,20 @@ extern NSString * _Nonnull const APSMediaPlayerEventAdRequested;
  *
  *  @return `YES` if the object can interpret and react to the given input URL, `NO` otherwise.
  */
-- (BOOL)canRespondTo:(NSURL*_Nonnull)url;
+- (BOOL)canRespondTo:(NSURL*)url;
 /**
  *  If the `APSMediaPlayerActionDelegate` implementing object returns `YES` from the `canRespondTo` method for a certain URL, this method will be triggered to request effective execution.
  *
  *  @param url The URL that needs to be launched.
  */
-- (void)respondTo:(NSURL*_Nonnull)url;
+- (void)respondTo:(NSURL*)url;
 @end
 
 /**
  * The block to be executed when the current playlist is completed
  * @since v1.7
  */
-typedef void (^APSMediaPlayerFinishBlock)(void);
+typedef void (^APSMediaPlayerFinishBlock)();
 
 /**
  *  Defines the viewability status of the player according to VAST 4 specifications
@@ -290,17 +290,17 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *
  *  @return The shared `APSMediaPlayer` instance
  */
-+ (instancetype _Nonnull )sharedInstance;
++ (instancetype)sharedInstance;
 /**
  *  List of supported media types
  *
  *  @return An array of supported media types by APSMediaPlayer
  */
-+ (NSArray<NSString*> *_Nonnull)supportedMimeTypes;
++ (NSArray<NSString*> *)supportedMimeTypes;
 /**
  *  The container `UIView` of the player.
  */
-@property (nonatomic, readonly) UIView *_Nonnull view;
+@property (nonatomic, readonly) UIView *view;
 /**
  *  Call this method to set the player view frame.
  *
@@ -311,12 +311,12 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 /**
  *  The backend player to use - call this if you are using constants instead of classes. Otherwise, use `backendPlayerClass`.
  */
-@property (nonatomic) _Nonnull APSBackendPlayer backendPlayer;
+@property (nonatomic) APSBackendPlayer backendPlayer;
 
 /**
  *  A class which is compliant to `APSMediaPlayerProtocol` and which will be used as a backend player. Use `[APSAVPlayer class]` for the AVPlayer-based backend or `[APSMPMoviePlayer class]` for the MPMoviePlayerController-based backend.
  */
-@property (nonatomic, strong) Class _Nonnull backendPlayerClass;
+@property (nonatomic, strong) Class backendPlayerClass;
 /**
  *  Enable debug logging
  */
@@ -324,12 +324,12 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 /**
  *  The user agent that should be used when making HTTP requests.
  */
-@property (nonatomic) NSString * _Nullable userAgent;
+@property (nonatomic) NSString *userAgent;
 
 /**
  * Consent information regarding GDPR and other regulations
  */
-@property (nonatomic) APSVASTRegulationInformation * _Nullable regulationInformation;
+@property (nonatomic) APSVASTRegulationInformation *regulationInformation;
 
 /**
  *  Set this to NO to disable internal fullscreen handling. Fullscreen functionality should be implemented externally, using the available methods and notifications emitted by the player.
@@ -371,55 +371,55 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *  @param mediaUnits An array of `APSMediaUnit` objects.
  *
  */
-- (void)prepareMediaUnits:(NSArray *_Nonnull)mediaUnits;
+- (void)prepareMediaUnits:(NSArray *)mediaUnits;
 /**
  *  Sets and begins playback of an array of media units.
  *
  *  @param mediaUnits An array of `APSMediaUnit` objects.
  */
-- (void)playMediaUnits:(NSArray *_Nonnull)mediaUnits;
+- (void)playMediaUnits:(NSArray*)mediaUnits;
 /**
  *  Inserts new media units after the current one, in the current playlist.
  *
  *  @param mediaUnits An array of `APSMediaUnit` objects to be inserted into the playlist after the current unit.
  */
-- (void)insertMediaUnits:(NSArray *_Nonnull)mediaUnits;
+- (void)insertMediaUnits:(NSArray*)mediaUnits;
 /**
  *  Replaces the currently running media unit with multiple other units. Playback of the new units is started automatically.
  *
  *  @param mediaUnits An array of `APSMediaUnit` objects to be inserted into the playlist instead of the current unit.
  */
-- (void)replaceCurrentUnitWithUnits:(NSArray *_Nonnull)mediaUnits;
+- (void)replaceCurrentUnitWithUnits:(NSArray*)mediaUnits;
 /**
  *  Sets new units to the playlist, clearing any old ones.
  *
  *  @param mediaUnits An array of `APSMediaUnit` objects to create a new playlist.
  */
-- (void)setMediaUnits:(NSArray *_Nonnull)mediaUnits;
+- (void)setMediaUnits:(NSArray*)mediaUnits;
 /**
  *  Returns the currently playing media unit.
  *
  *  @return An `APSMediaUnit` object representing the current unit.
  */
-- (APSMediaUnit *_Nullable)currentUnit;
+- (APSMediaUnit*)currentUnit;
 /**
  *  Sets the video clip URL for the current media unit. The clip is processeed immmediately.
  *
  *  @param url The URL of the video clip.
  */
-- (void)setCurrentURL:(NSURL *_Nonnull)url;
+- (void)setCurrentURL:(NSURL*)url;
 /**
  *  Adds additional overlays to display over the current unit.
  *
  *  @param overlays Additional `APSMediaOverlay` objects to inject.
  */
-- (void)addOverlays:(NSArray *_Nonnull)overlays;
+- (void)addOverlays:(NSArray*)overlays;
 /**
  *  Adds additional events to the current unit's timeline.
  *
  *  @param overlays Additional `APSMediaEvent` objects to inject.
  */
-- (void)addEvents:(NSArray *_Nonnull)events;
+- (void)addEvents:(NSArray*)events;
 
 /**-----------------------------------------------------------------------------
  * @name Tracking Playback Events
@@ -431,7 +431,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *
  *  @param event The APSEvent object containing event info.
  */
-- (void)trackEvent:(APSEvent *_Nonnull)event;
+- (void)trackEvent:(APSEvent *)event;
 /*
 *  Old method to track event. This is deprecated now, please use `-trackEvent:(APSEvent *)event`.
 *
@@ -441,7 +441,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 *  @param metadata Additional key-value pairs to send via the notification's userInfo to subscribers.
 *  @param urls An array of `NSURL` objects representing addresses that should be pinged. Also accepts an array of `NSString` objects, a single `NSURL` or a single `NSString`.
 */
-- (void)trackEvent:(NSString *_Nonnull)event type:(NSString *_Nonnull)type forObject:(id _Nullable)object metadata:(NSDictionary *_Nullable)metadata urls:(id _Nullable )urls __deprecated_msg("use trackEvent: instead");
+- (void)trackEvent:(NSString*)event type:(NSString*)type forObject:(id)object metadata:(NSDictionary*)metadata urls:(id)urls __deprecated_msg("use trackEvent: instead");
 
 /**
  *  This is a wrapper for trackEvent:type:forObject:metadata:urls:
@@ -450,7 +450,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *  @param type  The tracked event type. See "Available Tracking Events".
  *  @param object The `APSMediaUnit` or `APSMediaOverlay` instance that generated the notification. Can be nil for non-unit related events.
  */
-- (void)trackEvent:(NSString *_Nonnull)event type:(NSString *_Nonnull)type forObject:(id _Nullable)object __deprecated_msg("use trackEvent: instead");
+- (void)trackEvent:(NSString*)event type:(NSString*)type forObject:(id)object __deprecated_msg("use trackEvent: instead");
 
 /**-----------------------------------------------------------------------------
  * @name URL Handling
@@ -459,24 +459,24 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 /**
  *  The player's action delegate. Any intent to execute specific URLs as a result of user interaction will be notified to the delegate for action.
  */
-@property (nonatomic, weak) id<APSMediaPlayerActionDelegate> _Nullable actionDelegate;
+@property (nonatomic, weak) id<APSMediaPlayerActionDelegate> actionDelegate;
 /**
  *  The view controller that will be used to present any modal views by the player.
  */
-@property (nonatomic, weak) UIViewController *_Nullable modalViewControllerRoot;
+@property (nonatomic, weak) UIViewController *modalViewControllerRoot;
 /**
  *  Instructs the player that a new URL needs to be interpreted and executed. This method will first ask the actionDelegate to respond to the given URL. If the actionDelegate declines to respond and the URL has a web scheme (`http://' or 'https://') then an in-app web browser window will be displayed modally.
  *
  *  @param url The URL that needs to be loaded.
  */
-- (void)openURL:(NSURL*_Nonnull)url;
+- (void)openURL:(NSURL*)url;
 /**
  *  Instructs the player that a new URL needs to be interpreted and executed. This method also specifies the calling overlay controller, as it can define specific behavior for the player upon returning to the foreground after the playback interruption (see `onWebviewDismiss` in `APSMediaPlayerOverlayController.h`).
  *
  *  @param url     The URL that needs to be loaded.
  *  @param overlayController The calling overlay controller.
  */
-- (void)openURL:(NSURL*_Nonnull)url from:(APSMediaPlayerOverlayController*_Nullable)overlayController;
+- (void)openURL:(NSURL*)url from:(APSMediaPlayerOverlayController*)overlayController;
 
 /**-----------------------------------------------------------------------------
  * @name Handling Playback
@@ -521,7 +521,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 /**
  *  A block object that will get executed when a playlist of units is finished rendering by the player.
  */
-@property (nonatomic, copy) APSMediaPlayerFinishBlock _Nullable onFinish;
+@property (nonatomic, copy) APSMediaPlayerFinishBlock onFinish;
 
 /**-----------------------------------------------------------------------------
  * @name Getting Playback Information
@@ -580,9 +580,9 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 /**
  *  Obtains the most recent time-based metadata provided by the streamed movie.
  *
- *  @return An array of the most recent `MPTimedMetadata` objects provided by the streamed movie. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/mediaplayer/reference/MPTimedMetadata_Class/Reference/Reference.html#//apple_ref/occ/cl/MPTimedMetadata) for_Nullable more details about `MPTimedMetadata`.
+ *  @return An array of the most recent `MPTimedMetadata` objects provided by the streamed movie. See Apple's [documentation](https://developer.apple.com/library/ios/documentation/mediaplayer/reference/MPTimedMetadata_Class/Reference/Reference.html#//apple_ref/occ/cl/MPTimedMetadata) for more details about `MPTimedMetadata`.
  */
-- (NSArray*_Nullable)timedMetadata;
+- (NSArray*)timedMetadata;
 /**
  *  Set the sound volume of the player, in the range of 0.0 to 1.0.
  *
@@ -619,14 +619,14 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *
  *  @return A `NSDictionary` with available subtitles
  */
-- (NSDictionary *_Nonnull)availableSubtitles;
+- (NSDictionary *)availableSubtitles;
 /**
  *  Enable the corresponding subtitle for the given language
  *
  *  @param language `NSString` the language code to enable
  *
  */
-- (void)enableSubtitle:(NSString *_Nonnull)language;
+- (void)enableSubtitle:(NSString *)language;
 
 /**-----------------------------------------------------------------------------
  * @name Getting Video Thumbnails
@@ -640,7 +640,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *
  *  @warning This method executes blocking operations on a background thread, and invokes the callback block on the main thread.
  */
-- (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock _Nonnull)block;
+- (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock)block;
 
 /**-----------------------------------------------------------------------------
  * @name Handling Fullscreen
@@ -693,7 +693,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *
  *  @param controllerClass The class of the new overlay controller.
  */
-- (void)registerOverlayController:(Class<APSMediaPlayerOverlayControllerProtocol>_Nonnull)controllerClass;
+- (void)registerOverlayController:(Class<APSMediaPlayerOverlayControllerProtocol>)controllerClass;
 /**
  *  This method instantiates and returns a new object of the class registered for the given overlay type.
  *
@@ -701,13 +701,13 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *
  *  @return A new object that implements `APSMediaPlayerOverlayControllerProtocol` or `nil` if no controllers are registered for the given type.
  */
-- (NSObject<APSMediaPlayerOverlayControllerProtocol>*_Nullable)overlayControllerForType:(NSString*_Nonnull)type;
+- (NSObject<APSMediaPlayerOverlayControllerProtocol>*)overlayControllerForType:(NSString*)type;
 /**
  *  Registers a new unit manager to dynamically handle media playback.
  *
  *  @param managerClass The new unit manager object.
  */
-- (void)registerUnitManager:(NSObject<APSUnitManagerProtocol>*_Nonnull)managerClass;
+- (void)registerUnitManager:(NSObject<APSUnitManagerProtocol>*)managerClass;
 /**-----------------------------------------------------------------------------
  * @name Airplay
  * -----------------------------------------------------------------------------
@@ -744,11 +744,11 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 /**
  *  Returns an array of units owned by an APSVASTAdbreak object
  */
-- (NSArray *_Nonnull)unitsForAdbreak:(APSVASTAdBreak *_Nonnull)adbreak;
+- (NSArray*)unitsForAdbreak:(APSVASTAdBreak *)adbreak;
 /*
  *  Returns an array of current unit's adbreaks
  */
-- (NSArray *_Nonnull)adbreaks;
+- (NSArray *)adbreaks;
 /**
  *  Parses a string format and returns a translated time interval in seconds.
  *
@@ -756,7 +756,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *
  *  @return The translated time interval in seconds.
  */
-+ (NSTimeInterval)durationFromString:(NSString*_Nonnull)string;
++ (NSTimeInterval)durationFromString:(NSString*)string;
 /**
  *  Specifies whether the player should ignore the device silent switch setting.
  */
@@ -768,7 +768,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 /**
  *  Use this property to store the unique device advertising identifier, that can then be used by 3rd party components.
  */
-@property (nonatomic) NSString *_Nullable advertisingIdentifier __deprecated_msg("Use APSVASTAdBreak delegate.");
+@property (nonatomic) NSString *advertisingIdentifier __deprecated_msg("Use APSVASTAdBreak delegate.");
 
 /**
  *  A NSURLSession used for retrieving data from the internet
@@ -779,11 +779,5 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *  Resets the media player backend.
  */
 - (void) clear;
-
-- (void)log:(NSString *_Nonnull)format, ...;
-/**
- *  Test symbol for Shopkick
- */
-@property (nonatomic, strong, nonnull) NSString *shopkick;
 
 @end

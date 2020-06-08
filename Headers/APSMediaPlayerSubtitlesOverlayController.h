@@ -12,7 +12,7 @@
 #define kAPSSubtitlesOverlayTextSize @"subtitlesTextSize"
 #define kAPSSubtitlesOverlayTextEncoding @"subtitlesTextEncoding"
 
-extern NSString *_Nonnull const APSSubtilesOverlay;
+extern NSString* const APSSubtilesOverlay;
 
 @interface APSMediaPlayerSubtitlesOverlayController : APSMediaPlayerOverlayController
 @end

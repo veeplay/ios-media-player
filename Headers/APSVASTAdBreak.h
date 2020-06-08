@@ -86,34 +86,34 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  *
  *  @param adBreak The AdBreak object which asks for this information
  */
-- (NSString *_Nullable )advertisingIdentifierForAdBreak:(APSVASTAdBreak *_Nonnull )adBreak;
+- (NSString *)advertisingIdentifierForAdBreak:(APSVASTAdBreak *)adBreak;
 /**
  *  Asks the delegate for the type of the advertising identifier for this adbreak.
  *  See https://iabtechlab.com/wp-content/uploads/2018/12/OTT-IFA-guidelines.final_Dec2018.pdf for available types
  *
  *  @param adBreak The AdBreak object which asks for this information
  */
-- (NSString *_Nullable)advertisingIdentifierTypeForAdBreak:(APSVASTAdBreak *_Nonnull)adBreak;
+- (NSString *)advertisingIdentifierTypeForAdBreak:(APSVASTAdBreak *)adBreak;
 /**
  *  Asks the delegate if Limit Ad Tracking is enabled for this adbreak.
  *
  *  @param adBreak The AdBreak object which asks for this information
  */
-- (BOOL)limitAdTrackingStatusForAdBreak:(APSVASTAdBreak *_Nonnull)adBreak;
+- (BOOL)limitAdTrackingStatusForAdBreak:(APSVASTAdBreak *)adBreak;
 /**
  *  Asks the delegate for the current coordinates
  *  Return the coordinates in format `lat,lon`
  *
  *  @param adBreak The AdBreak object which asks for this information
  */
-- (NSString *_Nullable)locationCoordinatesForAdBreak:(APSVASTAdBreak *_Nonnull)adBreak;
+- (NSString *)locationCoordinatesForAdBreak:(APSVASTAdBreak *)adBreak;
 
 /**
  *  Asks the delegate if a conditional ad should be played or not
  *
  *  @param adBreak The AdBreak object which wants to play a conditional ad
  */
-- (BOOL)shouldPlayConditionalAdForAdBreak:(APSVASTAdBreak *_Nonnull)adBreak;
+- (BOOL)shouldPlayConditionalAdForAdBreak:(APSVASTAdBreak *)adBreak;
 
 @end
 
@@ -128,7 +128,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  An array of `NSString` objects indicating the VAST URLs that will be called in order to populate the ad break with ads.
  */
-@property (nonatomic) NSArray<NSString*> *_Nonnull sources;
+@property (nonatomic) NSArray<NSString*> *sources;
 /**
  *  The ad break type. Specifies how the rezulting `APSMediaUnit`s and `APSMediaOverlay`s need to be placed relative to the main content units. See `APSVASTConfigurationOptions` for more details about the possible values.
  */
@@ -140,16 +140,16 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  An identifier used to correlate a chain of ad requests from the origination (supply) end.
  */
-@property (nonatomic, readonly) NSString *_Nullable transactionId;
+@property (nonatomic, readonly) NSString *transactionId;
 /**
  *  The Apple IDFA or similar ad identifier
  */
-@property (nonatomic, readonly) NSString *_Nullable advertisingIdentifier;
+@property (nonatomic, readonly) NSString *advertisingIdentifier;
 /**
  *  The source of the IFA
  *  See https://iabtechlab.com/wp-content/uploads/2018/12/OTT-IFA-guidelines.final_Dec2018.pdf for possible values
  */
-@property (nonatomic, readonly) NSString *_Nullable advertisingIdentifierType;
+@property (nonatomic, readonly) NSString *advertisingIdentifierType;
 /**
  *  Whether to limit ad tracking or not
  */
@@ -157,13 +157,13 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  GPS location coordinates in format `lat,lon`
  */
-@property (nonatomic, readonly) NSString *_Nullable locationCoordinates;
+@property (nonatomic, readonly) NSString *locationCoordinates;
 /**
  A string format that defines when midrolls and nonlinear ads should be inserted mid-unit for each content unit.
  
  The expected format for this property is: "seconds" or "percentage%".
  */
-@property (nonatomic) NSString *_Nullable adOffset;
+@property (nonatomic) NSString *adOffset;
 /**
  *  Defines the time interval in seconds after which the ad break will be repeated.
  */
@@ -171,17 +171,17 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  The user agent that should be used when making HTTP requests.
  */
-@property (nonatomic) NSString *_Nullable userAgent;
+@property (nonatomic) NSString *userAgent;
 /**
  *  Delegate object
  */
-@property (nonatomic, weak) id<APSVASTAdBreakDelegate> _Nullable delegate;
+@property (nonatomic, weak) id<APSVASTAdBreakDelegate> delegate;
 /**
  *  Configure an AdBreak from a dictionary structure.
  *
  *  @param configuration Configuration dictionary.
  */
-- (void)configureFromDictionary:(NSDictionary *_Nonnull)configuration;
+- (void)configureFromDictionary:(NSDictionary *)configuration;
 /**-----------------------------------------------------------------------------
  * @name Configuring the Playback Controls Bar
  * -----------------------------------------------------------------------------
@@ -197,7 +197,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  
  See [APSMediaUnit controlsParameters] for details on creating this dictionary.
  */
-@property (nonatomic) NSDictionary *_Nullable controlsParametersForAds;
+@property (nonatomic) NSDictionary *controlsParametersForAds;
 
 
 /**-----------------------------------------------------------------------------
@@ -224,7 +224,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  Holds the configuration object for the skip button that appears on top of video ads.
  */
-@property (nonatomic) APSVASTSkipButtonConfiguration *_Nonnull skipButtonConfiguration;
+@property (nonatomic) APSVASTSkipButtonConfiguration *skipButtonConfiguration;
 
 /**-----------------------------------------------------------------------------
 * @name Fullscreen Button Configuration
@@ -233,7 +233,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  Holds the configuration object for the fullscreen button that appears on top of video ads.
  */
-@property (nonatomic) APSVASTFullscreenButtonConfiguration *_Nonnull fullscreenButtonConfiguration;
+@property (nonatomic) APSVASTFullscreenButtonConfiguration *fullscreenButtonConfiguration;
 
 /**-----------------------------------------------------------------------------
  * @name Countdown to Next Unit Overlay Configuration
@@ -242,7 +242,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  Holds the configuration object for the countdown overlay that appears on top of video ads.
  */
-@property (nonatomic) APSVASTCountdownConfiguration *_Nullable countdownConfiguration;
+@property (nonatomic) APSVASTCountdownConfiguration *countdownConfiguration;
 
 
 /**-----------------------------------------------------------------------------
@@ -250,7 +250,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  * -----------------------------------------------------------------------------
  */
 
-@property (nonatomic) APSVASTBannerConfiguration *_Nonnull bannerConfiguration;
+@property (nonatomic) APSVASTBannerConfiguration *bannerConfiguration;
 
 /**-----------------------------------------------------------------------------
  * @name Ad Retrieval Settings
@@ -286,7 +286,7 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  
  Items are ordered from most preferred to least preferred. The default value for this property is `@[@"audio/mpeg", @"audio/mp3", @"audio/aac", @"audio/mp4", @"audio/flac", @"mobile/m3u8",@"application/x-mpegURL",@"application/vnd.apple.mpegURL",@"vnd.apple.mpegURL",@"video/m3u8",@"mobile/mp4",@"video/mp4"]`
  */
-@property (nonatomic) NSArray<NSString *> *_Nonnull prefferedVideoMimeTypes;
+@property (nonatomic) NSArray *prefferedVideoMimeTypes;
 
 /**-----------------------------------------------------------------------------
  * @name Other Configurations
@@ -295,12 +295,12 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  List of desired ad categories. Encoded with IABN-N values as specified in the "Content Categories" list of AdCOM 1.0.
  */
-@property (nonatomic) NSArray<NSString *> *_Nullable desiredAdCategories;
+@property (nonatomic) NSArray *desiredAdCategories;
 
 /**
  *  A list of blocked ad categories from wrappers
  */
-@property (nonatomic, readonly) NSArray<NSString*> *_Nullable blockedAdCategories;
+@property (nonatomic, readonly) NSArray<NSString*> *blockedAdCategories;
 
 /**
  The ad video clip scaling mode, relative to the player surface.
@@ -331,6 +331,6 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  */
 @property (nonatomic) BOOL debug;
 
-@property (nonatomic) NSMutableDictionary<id, id> *_Nullable metadata;
+@property (nonatomic) NSMutableDictionary *metadata;
 
 @end

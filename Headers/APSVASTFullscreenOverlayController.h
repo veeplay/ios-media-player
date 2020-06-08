@@ -13,7 +13,7 @@
 #define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
 
-extern NSString *_Nonnull const APSFullscreenOverlay;
+extern NSString* const APSFullscreenOverlay;
 #define kAPSFullscreenOverlayPadding @"aps_fullscreen_padding"
 #define kAPSFullscreenOverlayBorderColor @"aps_fullscreen_bordercolor"
 #define kAPSFullscreenOverlayBorderRadius @"aps_fullscreen_borderradius"

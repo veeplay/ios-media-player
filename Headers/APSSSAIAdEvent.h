@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface APSSSAIAdEvent : NSObject
 
-@property (nonatomic, strong, readonly) NSArray<NSString*> *_Nullable beaconURLs;
+@property (nonatomic, strong, readonly) NSArray<NSString*> *beaconURLs;
 @property (nonatomic, readonly) NSTimeInterval durationInSeconds;
 @property (nonatomic, readonly) NSTimeInterval startTimeInSeconds;
-@property (nonatomic, strong, readonly) NSString *_Nullable eventType;
+@property (nonatomic, strong, readonly) NSString *eventType;
 
-- (instancetype _Nonnull) initWithEventMap:(NSDictionary *_Nonnull)eventMap;
+- (instancetype) initWithEventMap:(NSDictionary *)eventMap;
 
 @end
+
+NS_ASSUME_NONNULL_END
