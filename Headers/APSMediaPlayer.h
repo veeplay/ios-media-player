@@ -781,9 +781,5 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 - (void) clear;
 
 - (void)log:(NSString *_Nonnull)format, ...;
-/**
- *  Test symbol for Shopkick
- */
-@property (nonatomic, strong, nonnull) NSString *shopkick;
 
 @end
