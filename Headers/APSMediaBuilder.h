@@ -34,7 +34,7 @@
 *
 *  @return An instance of `APSMediaUnit` or nil if error.
 */
-+ (APSMediaUnit*)unitFromDictionary:(NSDictionary*)unitConfigurations;
++ (APSMediaUnit *_Nullable)unitFromDictionary:(NSDictionary *_Nonnull)unitConfigurations;
 /**
  *  Factory method to generate new instance of `APSMediaOverlay` via `NSDictionary` configuration.
  *
@@ -42,7 +42,7 @@
  *
  *  @return An instance of `APSMediaOverlay` or nil if error.
  */
-+ (APSMediaOverlay*)overlayFromDictionary:(NSDictionary*)overlayConfigurations;
++ (APSMediaOverlay *_Nullable)overlayFromDictionary:(NSDictionary *_Nonnull)overlayConfigurations;
 
 /**-----------------------------------------------------------------------------
  * @name Media Builder Initialization
@@ -55,7 +55,7 @@
  *
  *  @return `APSMediaBuilder` object.
  */
-- (instancetype)initWithMediaUnit:(APSMediaUnit*)contentUnit;
+- (instancetype _Nullable)initWithMediaUnit:(APSMediaUnit *_Nonnull)contentUnit;
 /**
  *  Initializes builder with a playlist of media units.
  *
@@ -63,7 +63,7 @@
  *
  *  @return `APSMediaBuilder` object.
  */
-- (instancetype)initWithMediaUnits:(NSArray*)contentUnits;
+- (instancetype _Nullable)initWithMediaUnits:(NSArray *_Nonnull)contentUnits;
 
 /**-----------------------------------------------------------------------------
  * @name Media Builder Configuration
@@ -77,14 +77,14 @@
  *
  *  @return `YES` on succes.
  */
-- (BOOL)configureFromURL:(NSURL*)url;
+- (BOOL)configureFromURL:(NSURL *_Nonnull)url;
 /**
  *  Configures the builder asynchronously from a JSON structure.
  *
  *  @param url   The URL of the JSON structure to load. This can be a remote file or a local file.
  *  @param block The block to be executed after configuration is finished.
  */
-- (void)configureFromURL:(NSURL*)url onComplete:(void (^)())block;
+- (void)configureFromURL:(NSURL *_Nonnull)url onComplete:(void (^_Nonnull)(void))block;
 /**
  *  Configures the builder from a `NSData` object.
  *  @warning UTF8 encoding is assumed.
@@ -93,7 +93,7 @@
  *
  *  @return `YES` on succes.
  */
-- (BOOL)configureFromData:(NSData*)data;
+- (BOOL)configureFromData:(NSData *_Nonnull)data;
 /**
  *  Configures the builder from a `NSDictionary` object.
  *
@@ -101,21 +101,21 @@
  *
  *  @return `YES` on succes.
  */
-- (BOOL)configureFromDictionary:(NSDictionary*)configuration;
+- (BOOL)configureFromDictionary:(NSDictionary *_Nonnull)configuration;
 /**
  Array containing the main content `APSMediaUnit`s that will make up the playlist.
  
  In the finally rendered playlist, units from `bumperUnits` will be prefixed to the main content units, while units from `exitUnits` will be inserted after the main content units. Every array's content may be modified by attached builder plugins.
  */
-@property (nonatomic) NSArray *contentUnits;
+@property (nonatomic) NSArray *_Nullable contentUnits;
 /**
  *  Array containing `APSMediaUnit`s that will be scheduled before ones in contentUnits in the generated playlist.
  */
-@property (nonatomic) NSArray *bumperUnits;
+@property (nonatomic) NSArray *_Nullable bumperUnits;
 /**
  *  Array containing `APSMediaUnit`s that will be scheduled after ones in contentUnits in the generated playlist.
  */
-@property (nonatomic) NSArray *exitUnits;
+@property (nonatomic) NSArray *_Nullable exitUnits;
 
 /**-----------------------------------------------------------------------------
  * @name Properties
@@ -124,7 +124,7 @@
 /**
  *  The user agent that should be used when making HTTP requests.
  */
-@property (nonatomic) NSString *userAgent;
+@property (nonatomic) NSString *_Nullable userAgent;
 /**
  *  This property enables or disables console logging on all generated units.
  */
@@ -140,13 +140,13 @@
  *
  *  @return An array of `APSMediaUnit`s.
  */
-- (NSArray*)mediaUnits;
+- (NSArray *_Nonnull)mediaUnits;
 /**
  *  Asynchronously generates a playlist of `APSMediaUnit`s, based on builder configuration and registered plugins.
  *
  *  @param block The block to be executed when playlist is generated.
  */
-- (void)requestMediaUnitsWithCompletionBlock:(void (^)(NSArray*))block;
+- (void)requestMediaUnitsWithCompletionBlock:(void (^_Nonnull)(NSArray *_Nonnull))block;
 
 /**-----------------------------------------------------------------------------
  * @name Adding Plugins
@@ -157,6 +157,6 @@
  *
  *  @param plugin The new plugin object. Must implement `APSMediaBuilderPlugin`.
  */
-- (void)addPlugin:(NSObject<APSMediaBuilderPlugin>*)plugin;
+- (void)addPlugin:(NSObject<APSMediaBuilderPlugin>*_Nonnull)plugin;
 
 @end

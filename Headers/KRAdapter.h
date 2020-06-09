@@ -16,5 +16,5 @@
  *
  *  @return An adapter type in string format.
  */
-- (NSString*)type;
+- (NSString *_Nonnull)type;
 @end

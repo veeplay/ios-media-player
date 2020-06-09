@@ -106,6 +106,8 @@
 		
 		<option value="//api/name/appendURL:">- appendURL:</option>
 		
+		<option value="//api/name/availableAudioTracks">- availableAudioTracks</option>
+		
 		<option value="//api/name/availableSubtitles">- availableSubtitles</option>
 		
 		<option value="//api/name/beginSeekingBackward">- beginSeekingBackward</option>
@@ -115,6 +117,8 @@
 		<option value="//api/name/clear">- clear</option>
 		
 		<option value="//api/name/didSetURL:">- didSetURL:</option>
+		
+		<option value="//api/name/enableAudioTrack:">- enableAudioTrack:</option>
 		
 		<option value="//api/name/enableSubtitle:">- enableSubtitle:</option>
 		
@@ -1409,7 +1413,7 @@ a VOD stream or a live stream.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)thumbnailAt:(NSTimeInterval)<em>playbackTime</em> withCompletionBlock:(APSThumbnailGeneratedBlock)<em>block</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)thumbnailAt:(NSTimeInterval)<em>playbackTime</em> withCompletionBlock:(APSThumbnailGeneratedBlock _Nonnull)<em>block</em></code></div>
 
 		    
 			
@@ -1698,7 +1702,7 @@ a VOD stream or a live stream.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)appendURL:(NSURL *)<em>url</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)appendURL:(NSURL *_Nonnull)<em>url</em></code></div>
 
 		    
 			
@@ -1756,7 +1760,7 @@ a VOD stream or a live stream.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)insertURL:(NSURL *)<em>url</em> atIndex:(NSInteger)<em>index</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)insertURL:(NSURL *_Nonnull)<em>url</em> atIndex:(NSInteger)<em>index</em></code></div>
 
 		    
 			
@@ -1862,7 +1866,7 @@ a VOD stream or a live stream.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)willSetURL:(NSURL *)<em>url</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)willSetURL:(NSURL *_Nonnull)<em>url</em></code></div>
 
 		    
 			
@@ -1920,7 +1924,7 @@ a VOD stream or a live stream.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)didSetURL:(NSURL *)<em>url</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)didSetURL:(NSURL *_Nonnull)<em>url</em></code></div>
 
 		    
 			
@@ -2162,7 +2166,7 @@ a VOD stream or a live stream.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (NSDictionary *)availableSubtitles</code></div>
+			<div class="method-subsection method-declaration"><code>- (NSDictionary&lt;NSString*,NSString*&gt; *_Nonnull)availableSubtitles</code></div>
 
 		    
 			
@@ -2213,7 +2217,7 @@ a VOD stream or a live stream.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)enableSubtitle:(NSString *)<em>language</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)enableSubtitle:(NSString *_Nonnull)<em>language</em></code></div>
 
 		    
 			
@@ -2254,6 +2258,115 @@ a VOD stream or a live stream.</p>
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/availableAudioTracks" title="availableAudioTracks"></a>
+	<h3 class="method-title"><code><a href="#//api/name/availableAudioTracks">&ndash;&nbsp;availableAudioTracks</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get a list of available audio tracks</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *_Nonnull)availableAudioTracks</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A <code>NSDictionary</code> of available audio tracks in format {&ldquo;track_id&rdquo;: &ldquo;Track name&rdquo;}</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get a list of available audio tracks</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableAudioTrack:" title="enableAudioTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableAudioTrack:">&ndash;&nbsp;enableAudioTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Select a track id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableAudioTrack:(NSString *_Nonnull)<em>trackId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>trackId</code></th>
+						<td><p><code>NSString</code> the ID of the audio track to enable</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Select a track id</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaPlayerProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -2269,7 +2382,7 @@ a VOD stream or a live stream.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2020 Veeplay. All rights reserved. Updated: 2020-06-04</p>
+						<p class="copyright">Copyright &copy; 2020 Veeplay. All rights reserved. Updated: 2020-06-09</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

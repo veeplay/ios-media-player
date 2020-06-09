@@ -22,7 +22,7 @@
 #define kAPSMetadataType @"type"
 #endif
 
-extern NSString *const APSContentUnit;
+extern NSString *_Nonnull const APSContentUnit;
 
 #ifndef NS_ENUM
 #define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
@@ -79,7 +79,7 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  *
  *  @return A new `APSMediaUnit` object
  */
-- (APSMediaUnit*)initWithURL:(NSURL*)url;
+- (APSMediaUnit*_Nullable)initWithURL:(NSURL*_Nonnull)url;
 
 /**-----------------------------------------------------------------------------
  * @name Managing the media overlays connected to the current unit
@@ -90,14 +90,14 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  *
  *  @param overlay The `APSMediaOverlay` object to be connected to the unit.
  */
-- (void)addOverlay:(APSMediaOverlay*)overlay;
+- (void)addOverlay:(APSMediaOverlay*_Nonnull)overlay;
 
 /**
  *  Connects an array of `APSMediaOverlay` objects to the current unit.
  *
  *  @param overlays An array of `APSMediaOverlay` objects to be connected to the unit.
  */
-- (void)setOverlays:(NSArray*)overlays;
+- (void)setOverlays:(NSArray<APSMediaOverlay *>*_Nonnull)overlays;
 
 /**
  *  Removes all currently connected overlays.
@@ -109,7 +109,7 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  *
  *  @return An array of `APSMediaOverlay` objects.
  */
-- (NSArray*)overlays;
+- (NSArray*_Nullable)overlays;
 
 /**-----------------------------------------------------------------------------
  * @name Managing the media overlays connected to the current unit
@@ -120,14 +120,14 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  *
  *  @param overlay The event to be connected to the unit.
  */
-- (void)addEvent:(APSMediaEvent*)overlay;
+- (void)addEvent:(APSMediaEvent*_Nonnull)overlay;
 
 /**
  *  Connects an array of objects that implement the `APSMediaEvent` protocol to the current unit.
  *
  *  @param overlays An array of events to be connected to the unit.
  */
-- (void)setEvents:(NSArray*)events;
+- (void)setEvents:(NSArray<APSMediaEvent *>*_Nonnull)events;
 
 /**
  *  Removes all currently connected events.
@@ -137,21 +137,21 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
 /**
  *  Removes a specific media event.
  */
-- (void)removeEvent:(APSMediaEvent*)event;
+- (void)removeEvent:(APSMediaEvent*_Nonnull)event;
 
 /**
  *  Returns an array containing all event objects currently connected to the unit, that are not dynamic (see [APSMediaEvent dynamicPosition]).
  *
  *  @return An array of objects that implement the `APSMediaEvent` protocol.
  */
-- (NSArray*)events;
+- (NSArray*_Nonnull)events;
 
 /**
  *  Returns an array containing all event objects currently connected to the unit, that are dynamic (see [APSMediaEvent dynamicPosition]).
  *
  *  @return An array of objects that implement the `APSMediaEvent` protocol.
  */
-- (NSArray*)dynamicEvents;
+- (NSArray*_Nonnull)dynamicEvents;
 
 /**-----------------------------------------------------------------------------
  * @name Unit Properties
@@ -160,11 +160,11 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
 /**
  *  The video clip URL.
  */
-@property (nonatomic) NSURL *url;
+@property (nonatomic) NSURL *_Nullable url;
 /**
  *  If an ad, the URL to mezzanine file which was the source of this ad
  */
-@property (nonatomic) NSURL *mezzanineUrl;
+@property (nonatomic) NSURL *_Nullable mezzanineUrl;
 /**
  *  Initial video playback time in seconds.
  */
@@ -176,11 +176,11 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
 /**
  *  Assigns a unit manager to the current unit. See APSUnitManagerProtocol for more information.
  */
-@property (nonatomic) NSString *managerType;
+@property (nonatomic) NSString *_Nullable managerType;
 /**
  *  A NSURL pointing to the SRT subtitles to be loaded
  */
-@property (nonatomic) NSURL *subtitlesURL;
+@property (nonatomic) NSURL *_Nullable subtitlesURL;
 /**
  The configuration for the controls bar overlay.
  
@@ -203,7 +203,7 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  - *kAPSControlsPlaybackTimeText*: The text to display instead of the current playback time, for live streams. Only has effect when the current playback time component is selected.
  - *kAPSControlsUpdateCurrentTimeWhileSeeking*: The current time text is showing the current seek position when dragging the seek bar
  */
-@property (nonatomic) NSDictionary *controlsParameters;
+@property (nonatomic) NSDictionary<NSString *, id> *_Nullable controlsParameters;
 /**
  *  The video clip scaling mode, relative to the player surface. Defaults to `APSMovieScalingModeNone`.
  */
@@ -211,7 +211,7 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
 /**
  *  An array of other media units to be played instead of the current one, should an error be encountered. The unit at index 0 has the highest priority.
  */
-@property (nonatomic) NSMutableArray *buffet;
+@property (nonatomic) NSMutableArray <APSMediaUnit *> *_Nullable buffet;
 /**
  *  Defines if pinch-to-fullscreen should be allowed.
  */
@@ -231,11 +231,11 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
 /**
  *  Additional unit key-value information.
  */
-@property (nonatomic) NSMutableDictionary *metadata;
+@property (nonatomic) NSMutableDictionary *_Nullable metadata;
 /**
  *  The APSVASTAdBreak objects which created this unit
  */
-@property (nonatomic, strong) APSVASTAdBreak *adbreak;
+@property (nonatomic, strong) APSVASTAdBreak *_Nullable adbreak;
 
 /**-----------------------------------------------------------------------------
  * @name Ad Handling
@@ -275,5 +275,5 @@ typedef NS_ENUM(NSInteger, APSHandleSeekEvent) {
  
  @return A `APSMovieScalingMode` value.
  */
-+ (APSMovieScalingMode)scalingModeFromString:(NSString*)string;
++ (APSMovieScalingMode)scalingModeFromString:(NSString *_Nonnull)string;
 @end

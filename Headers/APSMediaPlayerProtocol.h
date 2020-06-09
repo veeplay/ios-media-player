@@ -42,7 +42,7 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
 /**
  *  The container `UIView` of the player.
  */
-@property (nonatomic, readonly) UIView *view;
+@property (nonatomic, readonly) UIView *_Nullable view;
 
 /**-----------------------------------------------------------------------------
  * @name Properties
@@ -82,7 +82,7 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
 /**
  *  Get or set the current media's URL
  */
-@property (nonatomic, strong) NSURL *contentURL;
+@property (nonatomic, strong) NSURL *_Nullable contentURL;
 
 /**
  *  Get or set the scaling mode of the video according to its viewport
@@ -124,7 +124,7 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  *
  *  Returns an array of the most recent MPTimedMetadata objects provided by the media stream.
  */
-@property (nonatomic, readonly) NSArray *timedMetadata;
+@property (nonatomic, readonly) NSArray *_Nullable timedMetadata;
 
 /**
  *  Specifies whether the movie player allows AirPlay movie playback.
@@ -193,7 +193,7 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  *
  *  @warning This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.
  */
-- (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock)block;
+- (void) thumbnailAt:(NSTimeInterval) playbackTime withCompletionBlock:(APSThumbnailGeneratedBlock _Nonnull)block;
 
 /**
  *  Set the sound volume of the player, in the range of 0.0 to 1.0.
@@ -237,7 +237,7 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  *  @param url A NSURL instance pointing to the media location
  *
  */
-- (void) appendURL:(NSURL *)url;
+- (void) appendURL:(NSURL *_Nonnull )url;
 
 /**
  *  Insert an URL to the current play queue at the given position
@@ -247,7 +247,7 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  *  @param index
  *
  */
-- (void) insertURL:(NSURL *)url atIndex:(NSInteger)index;
+- (void) insertURL:(NSURL *_Nonnull)url atIndex:(NSInteger)index;
 
 /**
  *  The priority based on which the backend will be selected
@@ -260,7 +260,7 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  *  @param url A NSURL instance pointing to the media location
  *
  */
-- (void) willSetURL:(NSURL*)url;
+- (void) willSetURL:(NSURL*_Nonnull)url;
 
 /**
  *  This is invoked by the player after setting a new URL for playback
@@ -268,7 +268,7 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  *  @param url A NSURL instance pointing to the media location
  *
  */
-- (void) didSetURL:(NSURL*)url;
+- (void) didSetURL:(NSURL*_Nonnull)url;
 
 /**
  *  This is invoked by the player after playback is complete
@@ -295,12 +295,26 @@ typedef NS_ENUM(NSInteger, APSAVPlayerSeekStatus) {
  *
  *  @return A `NSDictionary` containing the subtitles in format {"language_code": "Language name"}
  */
-- (NSDictionary *) availableSubtitles;
+- (NSDictionary<NSString*, NSString*> *_Nonnull) availableSubtitles;
 /**
  *  Enable the corresponding subtitle for the given language
  *
  *  @param language `NSString` the language code to enable
  */
-- (void)enableSubtitle:(NSString *)language;
+- (void)enableSubtitle:(NSString *_Nonnull)language;
+
+/**
+*  Get a list of available audio tracks
+*
+*  @return A `NSDictionary` of available audio tracks in format {"track_id": "Track name"}
+*/
+- (NSDictionary *_Nonnull)availableAudioTracks;
+
+/**
+*  Select a track id
+*
+*  @param trackId `NSString` the ID of the audio track to enable
+*/
+- (void) enableAudioTrack:(NSString *_Nonnull)trackId;
 
 @end

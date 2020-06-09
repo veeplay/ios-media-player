@@ -104,6 +104,6 @@ typedef NS_ENUM(NSInteger, APSFullscreenOrientationBehaviour) {
 };
 
 /** A block that is used by the thumbnail generation methods to asynchronously return an image */
-typedef void (^APSThumbnailGeneratedBlock)(UIImage *thumbnail);
+typedef void (^APSThumbnailGeneratedBlock)(UIImage *_Nullable thumbnail);
 
 #endif /* APSTypes_h */

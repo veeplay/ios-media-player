@@ -31,13 +31,13 @@
  
  Defaults to "Skip".
  */
-@property (nonatomic) NSString *text;
+@property (nonatomic) NSString *_Nullable text;
 /**
  The color of the text diplayed in the skip button.
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to `[UIColor whiteColor]`.
  */
-@property (nonatomic) NSString *textColor;
+@property (nonatomic) NSString *_Nullable textColor;
 /**
  Defines where inside the skip overlay should the progress circle be rendered.
  
@@ -49,19 +49,19 @@
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to `[UIColor lightGrayColor]`.
  */
-@property (nonatomic) NSString *progressCircleColor;
+@property (nonatomic) NSString *_Nullable progressCircleColor;
 /**
  Defines the color of the text in the middle of the progress circle, indicating the number of seconds left until skip activation.
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to `[UIColor clearColor]`.
  */
-@property (nonatomic) NSString *progressCircleTextColor;
+@property (nonatomic) NSString *_Nullable progressCircleTextColor;
 /**
  Defines the color of the progress bar indicating the total duration of the ad.
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to `[UIColor darkGrayColor]`.
  */
-@property (nonatomic) NSString *progressCircleTrackColor;
+@property (nonatomic) NSString *_Nullable progressCircleTrackColor;
 /**
  The internal padding that the skip overlay should apply to its content.
  
@@ -73,7 +73,7 @@
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to `[UIColor lightGrayColor]`.
  */
-@property (nonatomic) NSString *borderColor;
+@property (nonatomic) NSString *_Nullable borderColor;
 /**
  The corner radius of the border for the skip overlay.
  
@@ -85,17 +85,17 @@
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to `[UIColor clearColor]`.
  */
-@property (nonatomic) NSString *backgroundColor;
+@property (nonatomic) NSString *_Nullable backgroundColor;
 /**
  The width of the skip overlay.
  
  Defaults to @"75".
  */
-@property (nonatomic) NSString *width;
+@property (nonatomic) NSString *_Nonnull width;
 /**
  The height of the skip overlay.
  
  Defaults to @"30".
  */
-@property (nonatomic) NSString *height;
+@property (nonatomic) NSString *_Nonnull height;
 @end

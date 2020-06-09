@@ -1,3 +1,8 @@
+### 3.1.8
+* Fix an issue when `complete` tracking is not sent when calling `[APSMediaPlayer stop]` right after video ends
+* Added nullability annotations
+* Added multiple audio track support
+
 ### 3.1.7
 Fix an issue with encoding tracking URLs
 

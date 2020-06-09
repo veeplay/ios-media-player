@@ -50,7 +50,7 @@
  - `kAPSCloseTrackingURLs`: a `NSArray` of `NSURL`s that will be tracked by the player when the close button is tapped and the overlay is removed (see `[APSMediaPlayer track:forEvent:type:]`).
  @param parameters A dictionary containing configuration information.
  */
-- (UIView *)addCloseButtonWithParameters:(NSDictionary*)parameters;
+- (UIView *_Nullable)addCloseButtonWithParameters:(NSDictionary<NSString*, id> *_Nonnull)parameters;
 /**
  *  This method removes the close button from the current view stack.
  */

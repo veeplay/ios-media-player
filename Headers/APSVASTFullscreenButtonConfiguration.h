@@ -34,19 +34,19 @@
  
  Defaults to Controls/fullscreen.png
  */
-@property (nonatomic, strong) id enterIconLocation;
+@property (nonatomic, strong) id _Nonnull enterIconLocation;
 /**
  An URL to the icon or a UIImage instance which will be used for the "leave fullscreen" action
  
  Defaults to Controls/fullscreen-exit.png
  */
-@property (nonatomic, strong) id leaveIconLocation;
+@property (nonatomic, strong) id _Nonnull leaveIconLocation;
 /**
  The color of the border for the fullscreen overlay.
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to `[UIColor lightGrayColor]`.
  */
-@property (nonatomic) NSString *borderColor;
+@property (nonatomic) NSString *_Nullable borderColor;
 /**
  The corner radius of the border for the fullscreen overlay.
  
@@ -58,17 +58,17 @@
  
  Set this to a `NSString` containing the hex color reprezentation. Defaults to `[UIColor clearColor]`.
  */
-@property (nonatomic) NSString *backgroundColor;
+@property (nonatomic) NSString *_Nullable backgroundColor;
 /**
  The width of the fullscreen overlay.
  
  Defaults to @"75".
  */
-@property (nonatomic) NSString *width;
+@property (nonatomic) NSString *_Nullable width;
 /**
  The height of the fullscreen overlay.
  
  Defaults to @"30".
  */
-@property (nonatomic) NSString *height;
+@property (nonatomic) NSString *_Nullable height;
 @end

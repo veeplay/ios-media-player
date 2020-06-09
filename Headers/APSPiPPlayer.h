@@ -15,31 +15,31 @@
 /**
  *  Posted when Picture in Picture mode is not possible
  */
-extern NSString *const APSPipPlayerNotPossible;
+extern NSString *_Nonnull const APSPipPlayerNotPossible;
 /**
  *  Posted when Picture in Picture mode is not supported
  */
-extern NSString *const APSPipPlayerNotSupported;
+extern NSString *_Nonnull const APSPipPlayerNotSupported;
 /**
  *  Posted when the the player failed to initiate Picture in Picture mode
  */
-extern NSString *const APSPipPlayerFailedToStartPictureInPictureWithError;
+extern NSString *_Nonnull const APSPipPlayerFailedToStartPictureInPictureWithError;
 /**
  *  Posted before the player will start Picture in Picture mode
  */
-extern NSString *const APSPipPlayerWillStartPictureInPicture;
+extern NSString *_Nonnull const APSPipPlayerWillStartPictureInPicture;
 /**
  *  Posted after the player did start Picture in Picture mode
  */
-extern NSString *const APSPipPlayerDidStartPictureInPicture;
+extern NSString *_Nonnull const APSPipPlayerDidStartPictureInPicture;
 /**
  *  Posted before the player will stop Picture in Picture mode
  */
-extern NSString *const APSPipPlayerWillStopPictureInPicture;
+extern NSString *_Nonnull const APSPipPlayerWillStopPictureInPicture;
 /**
  *  Posted after the player did stop Picture in Picture mode
  */
-extern NSString *const APSPipPlayerDidStopPictureInPicture;
+extern NSString *_Nonnull const APSPipPlayerDidStopPictureInPicture;
 
 @interface APSPiPPlayer : NSObject <MPMediaPlayback, APSMediaPlayerProtocol, AVPictureInPictureControllerDelegate, KRAdapter>
 
@@ -51,7 +51,7 @@ extern NSString *const APSPipPlayerDidStopPictureInPicture;
 /**
  *  The container `UIView` of the player.
  */
-@property (nonatomic, strong) UIView *view;
+@property (nonatomic, strong) UIView *_Nullable view;
 
 /**-----------------------------------------------------------------------------
  * @name Properties
@@ -91,7 +91,7 @@ extern NSString *const APSPipPlayerDidStopPictureInPicture;
 /**
  *  Get or set the current media's URL
  */
-@property (nonatomic, strong) NSURL *contentURL;
+@property (nonatomic, strong) NSURL *_Nullable contentURL;
 
 /**
  *  Get or set the scaling mode of the video according to its viewport
@@ -128,7 +128,7 @@ extern NSString *const APSPipPlayerDidStopPictureInPicture;
  *
  *  Returns an array of the most recent MPTimedMetadata objects provided by the media stream.
  */
-@property (nonatomic, readonly) NSArray *timedMetadata;
+@property (nonatomic, readonly) NSArray *_Nullable timedMetadata;
 
 
 /**

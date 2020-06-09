@@ -29,6 +29,6 @@
  */
 @property (nonatomic, nonnull) NSString *gdprConsentCookie;
 
-+ (APSVASTRegulationInformation *)regulationInformationWithLimitAdTracking:(BOOL)limitAdTracking applicableRegulations:(NSArray<NSString*>*)applicableRegulations gdprConsentCookie:(NSString *)gdprConsentCookie;
++ (APSVASTRegulationInformation * _Nonnull)regulationInformationWithLimitAdTracking:(BOOL)limitAdTracking applicableRegulations:(NSArray<NSString*>*_Nullable)applicableRegulations gdprConsentCookie:(NSString *_Nullable)gdprConsentCookie;
 
 @end

@@ -24,7 +24,7 @@
  *
  *  @param builder A reference to the calling `APSMediaBuilder` object.
  */
-- (void)startForBuilder:(APSMediaBuilder*)builder;
+- (void)startForBuilder:(APSMediaBuilder*_Nonnull)builder;
 /**-----------------------------------------------------------------------------
  * @name Plugin Dictionary Configuration
  * -----------------------------------------------------------------------------
@@ -34,12 +34,12 @@
  *
  *  @return String key.
  */
-- (NSString*)dictionaryConfigurationKey;
+- (NSString *_Nonnull)dictionaryConfigurationKey;
 /**
  *  This method is called by the `APSMediaBuilder` object, in the process of its configuration. The method is only called if in the root of the configuring JSON or `NSDictionary` there is a key equal to the string defined by the plugin using the `dictionaryConfigurationKey` method.
  *
  *  @param configuration A `NSDictionary` object containing the specific plugin configuration data.
  */
-- (void)configureFromDictionary:(NSDictionary*)configuration;
+- (void)configureFromDictionary:(NSDictionary *_Nonnull)configuration;
 
 @end
