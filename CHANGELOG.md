@@ -1,3 +1,6 @@
+### 3.1.9
+* Added opt-in support for playing videos while the app is in background
+
 ### 3.1.8
 * Fix an issue when `complete` tracking is not sent when calling `[APSMediaPlayer stop]` right after video ends
 * Added nullability annotations

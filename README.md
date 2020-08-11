@@ -228,6 +228,12 @@ To enable Picture in Picture support please make sure you configured your projec
                 }
             ]
         }
+        
+## Enabling background playback
+
+To enable video playback while the application is in background, first [enable Background Audio](https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio) in your app capabilities then set the APSMediaPlayer's `enableBackgroundPlayback` property to `true`:
+
+    [APSMediaPlayer sharedInstance].enableBackgroundPlayback = YES;
 
 ### Example Unit Configurations
 

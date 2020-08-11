@@ -780,6 +780,10 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  */
 @property (nonatomic, assign) BOOL detectBreachedDevice;
 /**
+ *  Set this to true to continue playing videos while the app is in background
+ */
+@property (nonatomic) BOOL enableBackgroundPlayback;
+/**
  *  Use this property to store the unique device advertising identifier, that can then be used by 3rd party components.
  */
 @property (nonatomic) NSString *_Nullable advertisingIdentifier __deprecated_msg("Use APSVASTAdBreak delegate.");
