@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SafariServices/SafariServices.h>
+#if !TARGET_OS_TV
+    #import <SafariServices/SafariServices.h>
+#endif
 #import <MediaPlayer/MediaPlayer.h>
 
 #import "KRHub.h"
@@ -278,7 +280,13 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  - *kAPSMediaPlayerBackendsGroup* - The group name that 3rd party backend renderers must use when registering with the player. See `APSMediaPlayerProtocol` for more details.
  - *kAPSMediaPlayerControlPluginsGroup* - The group name that 3rd party control plugins must use when registering with the player. See `APSControlPluginProtocol` for more details.
  */
-@interface APSMediaPlayer : KRHub <UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning, SFSafariViewControllerDelegate>
+@interface APSMediaPlayer : KRHub <
+    UIViewControllerTransitioningDelegate,
+    UIViewControllerAnimatedTransitioning
+#if !TARGET_OS_TV
+    , SFSafariViewControllerDelegate
+#endif
+>
 
 /**-----------------------------------------------------------------------------
  * @name Accessing the APSMediaPlayer Instance and its View
@@ -359,7 +367,9 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 /**
  *  Overwrite orientations allowed by the app. This is used for fullscreen support. Falls back to settings from the app's plist as well as settings on the root view controller.
  */
-@property (nonatomic) UIInterfaceOrientation allowedAppInterfaceOrientation;
+#if !TARGET_OS_TV
+    @property (nonatomic) UIInterfaceOrientation allowedAppInterfaceOrientation;
+#endif
 
 /**-----------------------------------------------------------------------------
  * @name Working with Media Units

@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = "Veeplay"
-  s.version          = "3.1.9"
+  s.version          = "3.2.0"
   s.summary          = "Veeplay Media Player - Crossplatform media player with video ads support"
   s.homepage         = "http://veeplay.com"
   s.license          = { :type => "Commercial", :text => "Contact office@veeplay.com" }
   s.author           = { "Veeplay" => "gabi@veeplay.com" }
   s.source           = { :git => "https://github.com/veeplay/ios-media-player.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, "10.0"
+  s.platforms    = { :ios => "10.0", :tvos => "11.0" }
   s.requires_arc = true
 
   s.documentation_url = 'http://veeplay.github.io/ios-media-player'
@@ -17,12 +17,15 @@ Pod::Spec.new do |s|
   s.public_header_files  = "Headers/*.h"
   s.preserve_paths       = "Docs/*"
   s.library              = "z"
-  s.vendored_libraries   = "libVeeplay.a"
+  s.ios.vendored_libraries   = "libVeeplay.a"
+  s.tvos.vendored_libraries   = "libVeeplayTvOS.a"
 
-  s.frameworks = "AVFoundation", "MediaPlayer", "CoreMedia", "AVKit", "SystemConfiguration", "SafariServices", "WebKit"
-  s.dependency "KAProgressLabel", "~> 3.0"
+  s.ios.frameworks = "AVFoundation", "MediaPlayer", "CoreMedia", "AVKit", "SystemConfiguration", "SafariServices", "WebKit"
+  s.tvos.frameworks = "AVFoundation", "MediaPlayer", "CoreMedia", "AVKit", "SystemConfiguration"
+  
+  s.ios.dependency "KAProgressLabel", "~> 3.0"
+  s.ios.dependency "Reachability"
   s.dependency "TBXML", "~> 1.5"
-  s.dependency "Reachability"
   s.dependency "XCDYouTubeKit", "~> 2.5"
   s.dependency "YTVimeoExtractor", "~> 1.2"
   s.dependency "KVOController", "~> 1.2.0"
