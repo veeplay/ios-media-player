@@ -11,7 +11,6 @@
 /**
  This class encapsulates timed metadata information retrieved from the video stream. See `[APSMediaPlayer timedMetadata]`.
  */
-#if !TARGET_OS_TV
 @interface APSTimedMetadata : MPTimedMetadata
 
 /**-----------------------------------------------------------------------------
@@ -28,4 +27,3 @@
 - (id _Nullable) initWithMetadataItem:(AVMetadataItem*_Nonnull)item;
 
 @end
-#endif

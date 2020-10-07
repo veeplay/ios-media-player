@@ -1,6 +1,3 @@
-### 3.2.0
-* Preliminary (alpha) tvOS support
-
 ### 3.1.9
 * Added opt-in support for playing videos while the app is in background
 

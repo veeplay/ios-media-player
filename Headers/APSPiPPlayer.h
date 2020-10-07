@@ -11,7 +11,7 @@
 #import <AVKit/AVKit.h>
 #import "KRAdapter.h"
 #import "APSMediaPlayerProtocol.h"
-#if !TARGET_OS_TV
+
 /**
  *  Posted when Picture in Picture mode is not possible
  */
@@ -143,4 +143,3 @@ extern NSString *_Nonnull const APSPipPlayerDidStopPictureInPicture;
 @property(nonatomic, readonly) BOOL airPlayVideoActive;
 
 @end
-#endif
