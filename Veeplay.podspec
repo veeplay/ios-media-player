@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Veeplay"
-  s.version          = "3.2.0"
+  s.version          = "3.2.1"
   s.summary          = "Veeplay Media Player - Crossplatform media player with video ads support"
   s.homepage         = "http://veeplay.com"
   s.license          = { :type => "Commercial", :text => "Contact office@veeplay.com" }
@@ -22,6 +22,11 @@ Pod::Spec.new do |s|
 
   s.ios.frameworks = "AVFoundation", "MediaPlayer", "CoreMedia", "AVKit", "SystemConfiguration", "SafariServices", "WebKit"
   s.tvos.frameworks = "AVFoundation", "MediaPlayer", "CoreMedia", "AVKit", "SystemConfiguration"
+
+  s.pod_target_xcconfig = {
+    'VALID_ARCHS' => ''
+  }
+  s.user_target_xcconfig = { 'VALID_ARCHS' => '' }
   
   s.ios.dependency "KAProgressLabel", "~> 3.0"
   s.ios.dependency "Reachability"

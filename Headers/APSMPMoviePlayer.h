@@ -17,6 +17,8 @@
  [sharedInstance setBackendPlayerClass:[APSMPMoviePlayer class]];
  
  */
+#if !TARGET_OS_TV
 @interface APSMPMoviePlayer : MPMoviePlayerController <APSMediaPlayerProtocol, KRAdapter>
 
 @end
+#endif
