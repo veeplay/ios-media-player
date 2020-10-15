@@ -355,6 +355,16 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 @property (nonatomic) BOOL fullscreenOnLandscapeRotate;
 
 /**
+ *  Pauses video when player loses viewability
+ */
+@property (nonatomic) BOOL autoPauseWhenNotVisible;
+
+/**
+ *  Enables advanced viewability tracking algorithms, which are more CPU expensive but more precise
+ */
+@property (nonatomic) BOOL advancedViewabilityTracking;
+
+/**
  *  Enable Google's IMA SDK
  */
 @property (nonatomic) BOOL preferGoogleIma;

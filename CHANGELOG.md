@@ -1,3 +1,8 @@
+### 3.2.1
+* Fix a crash when using invalid URLs in JSON configs
+* Viewability improvements
+* Added `pausesOnViewabilityLost` to automatically pause the video when media player goes out of the view
+
 ### 3.2.0
 * Preliminary (alpha) tvOS support
 
