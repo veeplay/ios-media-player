@@ -357,7 +357,12 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 /**
  *  Pauses video when player loses viewability
  */
-@property (nonatomic) BOOL pausesOnViewabilityLost;
+@property (nonatomic) BOOL autoPauseWhenNotVisible;
+
+/**
+ *  Enables advanced viewability tracking algorithms, which are more CPU expensive but more precise
+ */
+@property (nonatomic) BOOL advancedViewabilityTracking;
 
 /**
  *  Enable Google's IMA SDK
