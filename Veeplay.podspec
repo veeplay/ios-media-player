@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/veeplay/ios-media-player.git", :tag => s.version.to_s }
 
   s.platforms    = { :ios => "10.0", :tvos => "11.0" }
-  s.platforms    = { :ios => "10.0" }
   s.requires_arc = true
 
   s.documentation_url = 'http://veeplay.github.io/ios-media-player'
