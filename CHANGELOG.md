@@ -1,3 +1,10 @@
+### 3.2.4
+* Fix tvOS build
+* Fix build issue
+
+### 3.2.3
+* Improved viewability support
+
 ### 3.2.1
 * Fix a crash when using invalid URLs in JSON configs
 * Viewability improvements
