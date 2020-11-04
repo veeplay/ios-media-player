@@ -12,10 +12,9 @@ Pod::Spec.new do |s|
 
   s.documentation_url = 'http://veeplay.github.io/ios-media-player'
 
-  s.ios.source_files     = "Headers/*.h"
+  s.ios.source_files = ['Headers/APSMediaPlayerOverlayController.h', 'Headers/APSTypes.h', 'Headers/APSEvent.h', 'Headers/APSMediaEvent.h', 'Headers/KRAdapter.h', 'Headers/APSMediaPlayerSSAIOverlayController.h', 'Headers/APSSSAIAd.h', 'Headers/APSVASTFullscreenButtonConfiguration.h', 'Headers/APSMediaUnit.h', 'Headers/APSControlPluginProtocol.h', 'Headers/APSVASTAdBreak.h', 'Headers/APSMediaPlayerImageOverlayController.h', 'Headers/APSMediaPlayerClosableOverlayController.h', 'Headers/APSMediaTrackableObject.h', 'Headers/APSVASTError.h', 'Headers/APSMediaOverlay.h', 'Headers/APSMediaPlayerControlsOverlayController.h', 'Headers/KRHub.h', 'Headers/APSAVPlayerView.h', 'Headers/APSTimedMetadata.h', 'Headers/APSYouTubeManager.h', 'Headers/APSVASTSkipOverlayController.h', 'Headers/APSMediaPlayerButtonOverlayController.h', 'Headers/APSUnitManagerProtocol.h', 'Headers/APSVASTSkipButtonConfiguration.h', 'Headers/APSAVPlayer.h', 'Headers/APSVASTFullscreenOverlayController.h', 'Headers/APSMediaPlayerHTMLOverlayController.h', 'Headers/APSMediaBuilderPlugin.h', 'Headers/APSMediaPlayer.h', 'Headers/APSMediaPlayerProtocol.h', 'Headers/APSVimeoManager.h', 'Headers/APSMediaPlayerTextOverlayController.h', 'Headers/APSMediaPlayerSubtitlesOverlayController.h', 'Headers/APSSSAIAdEvent.h', 'Headers/APSPiPPlayer.h', 'Headers/APSMediaBuilder.h', 'Headers/APSVASTBannerConfiguration.h', 'Headers/APSVASTCountdownConfiguration.h', 'Headers/APSVASTRegulationInformation.h', 'Headers/APSVASTMediaBuilderPlugin.h', 'Headers/APSAVPlayerViewController.h', 'Headers/AVPlayer+View.h', 'Headers/APSSSAIClient.h', 'Headers/APSMPMoviePlayer.h']
   s.tvos.source_files    = "Headers/*.h"
   s.resources            = "Assets/*.bundle"
-  s.public_header_files  = "Headers/*.h"
   s.preserve_paths       = "Docs/*"
   s.library              = "z"
   s.ios.vendored_libraries   = "libVeeplay.a"
@@ -32,3 +31,8 @@ Pod::Spec.new do |s|
   s.dependency "KVOController", "~> 1.2.0"
   s.dependency "PureLayout", "~> 3.1"
 end
+
+
+
+
+
