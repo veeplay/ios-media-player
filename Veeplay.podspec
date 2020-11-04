@@ -12,7 +12,8 @@ Pod::Spec.new do |s|
 
   s.documentation_url = 'http://veeplay.github.io/ios-media-player'
 
-  s.source_files         = "Headers/*.h"
+  s.ios.source_files     = "Headers/*.h"
+  s.tvos.source_files    = "Headers/*.h"
   s.resources            = "Assets/*.bundle"
   s.public_header_files  = "Headers/*.h"
   s.preserve_paths       = "Docs/*"
