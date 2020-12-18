@@ -13,6 +13,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 #import "KRHub.h"
+#import "APSMediaPlayerView.h"
 #import "APSMediaBuilder.h"
 #import "APSMediaOverlay.h"
 #import "APSMediaUnit.h"
@@ -308,7 +309,7 @@ typedef NS_ENUM(NSInteger, APSViewability) {
 /**
  *  The container `UIView` of the player.
  */
-@property (nonatomic, readonly) UIView *_Nonnull view;
+@property (nonatomic, readonly) APSMediaPlayerView *_Nonnull view;
 /**
  *  Call this method to set the player view frame.
  *

@@ -182,6 +182,11 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
  *  @param configuration Configuration dictionary.
  */
 - (void)configureFromDictionary:(NSDictionary *_Nonnull)configuration;
+/**
+ *  Retrieve the media units for the current ad break
+ *
+ */
+- (NSArray<APSMediaUnit*> *)getMediaUnits;
 /**-----------------------------------------------------------------------------
  * @name Configuring the Playback Controls Bar
  * -----------------------------------------------------------------------------
