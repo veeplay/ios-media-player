@@ -185,8 +185,15 @@ typedef NS_ENUM(NSInteger, APSAdPodFallback) {
 /**
  *  Retrieve the media units for the current ad break
  *
+ *  @return Media units generated from the ad break
  */
 - (NSArray<APSMediaUnit*> *)getMediaUnits;
+/**
+ *  Asynchronous retrieve the media units for the current ad break
+ *
+ *  @param completion The block which will be called when media units are retrieved
+ */
+- (void)getMediaUnits:(void (^_Nonnull)(NSArray<APSMediaUnit*> *mediaUnits))completion;
 /**-----------------------------------------------------------------------------
  * @name Configuring the Playback Controls Bar
  * -----------------------------------------------------------------------------
