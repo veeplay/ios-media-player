@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>APSMediaPlayerOverlayControllerProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Protocol/APSMediaPlayerOverlayControllerProtocol" class="dashAnchor"></a>
+
+    <a title="APSMediaPlayerOverlayControllerProtocol Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+        
+      </p>
+    
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      APSMediaPlayerOverlayControllerProtocol Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Getting%20Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../readme.html">README</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaPlayer.html">APSMediaPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaBuilder.html">APSMediaBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaUnit.html">APSMediaUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaEvent.html">APSMediaEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSVASTAdBreak.html">APSVASTAdBreak</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSAVPlayer">APSAVPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaOverlay.html">APSMediaOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerButtonOverlayController">APSMediaPlayerButtonOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaPlayerClosableOverlayController.html">APSMediaPlayerClosableOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerHTMLOverlayController">APSMediaPlayerHTMLOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerImageOverlayController">APSMediaPlayerImageOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaPlayerOverlayController.html">APSMediaPlayerOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerTextOverlayController">APSMediaPlayerTextOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSVASTBannerConfiguration.html">APSVASTBannerConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSVASTCountdownConfiguration.html">APSVASTCountdownConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSVASTMediaBuilderPlugin.html">APSVASTMediaBuilderPlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSVASTSkipButtonConfiguration.html">APSVASTSkipButtonConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KRHub.html">KRHub</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Constants.html">Other Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerControlsDisplayedNotification">APSMediaPlayerControlsDisplayedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerControlsHiddenNotification">APSMediaPlayerControlsHiddenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidEnterFullscreenNotification">APSMediaPlayerDidEnterFullscreenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidExitFullscreenNotification">APSMediaPlayerDidExitFullscreenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidStartPictureInPictureNotification">APSMediaPlayerDidStartPictureInPictureNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidStopPictureInPictureNotification">APSMediaPlayerDidStopPictureInPictureNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDurationAvailableNotification">APSMediaPlayerDurationAvailableNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerErrorNotification">APSMediaPlayerErrorNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerEventLaunch">APSMediaPlayerEventLaunch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerInvalidLicenseNotification">APSMediaPlayerInvalidLicenseNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerLoadStateDidChangeNotification">APSMediaPlayerLoadStateDidChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerPlaybackDidFinishNotification">APSMediaPlayerPlaybackDidFinishNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerPlaybackStateDidChangeNotification">APSMediaPlayerPlaybackStateDidChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerStatusChangedNotification">APSMediaPlayerStatusChangedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerToggleFullscreenNotification">APSMediaPlayerToggleFullscreenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerTrackedEventNotification">APSMediaPlayerTrackedEventNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerUnitFinishedNotification">APSMediaPlayerUnitFinishedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerUpdateNotification">APSMediaPlayerUpdateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerVolumeDidChangeNotification">APSMediaPlayerVolumeDidChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWasTappedNotification">APSMediaPlayerWasTappedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillCloseMiniBrowser">APSMediaPlayerWillCloseMiniBrowser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillEnterFullscreenNotification">APSMediaPlayerWillEnterFullscreenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillExitFullscreenNotification">APSMediaPlayerWillExitFullscreenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillOpenMiniBrowser">APSMediaPlayerWillOpenMiniBrowser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillStartPictureInPictureNotification">APSMediaPlayerWillStartPictureInPictureNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillStopPictureInPictureNotification">APSMediaPlayerWillStopPictureInPictureNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerDidStartPictureInPicture">APSPipPlayerDidStartPictureInPicture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerDidStopPictureInPicture">APSPipPlayerDidStopPictureInPicture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerFailedToStartPictureInPictureWithError">APSPipPlayerFailedToStartPictureInPictureWithError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerNotPossible">APSPipPlayerNotPossible</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerNotSupported">APSPipPlayerNotSupported</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerWillStartPictureInPicture">APSPipPlayerWillStartPictureInPicture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerWillStopPictureInPicture">APSPipPlayerWillStopPictureInPicture</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSAdPodFallback.html">APSAdPodFallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSControlsOverlayComponents.html">APSControlsOverlayComponents</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSFullscreenOrientationBehaviour.html">APSFullscreenOrientationBehaviour</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSHandleSeekEvent.html">APSHandleSeekEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMediaControlsDisplay.html">APSMediaControlsDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMediaEventState.html">APSMediaEventState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMediaOverlayPosition.html">APSMediaOverlayPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieControlStyle.html">APSMovieControlStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieFinishReason.html">APSMovieFinishReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieLoadState.html">APSMovieLoadState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMoviePlaybackState.html">APSMoviePlaybackState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieScalingMode.html">APSMovieScalingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieSourceType.html">APSMovieSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieStreamSourceType.html">APSMovieStreamSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSResolvMultipleAdsConflictsBy.html">APSResolvMultipleAdsConflictsBy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSSkipOverlayProgressPosition.html">APSSkipOverlayProgressPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSVASTAdBreakType.html">APSVASTAdBreakType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSViewability.html">APSViewability</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSWebviewDismissedAction.html">APSWebviewDismissedAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Protocols.html#/c:objc(pl)APSControlPluginProtocol">APSControlPluginProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaBuilderPlugin.html">APSMediaBuilderPlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaEventProtocol.html">APSMediaEventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaPlayerActionDelegate.html">APSMediaPlayerActionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaPlayerOverlayControllerProtocol.html">APSMediaPlayerOverlayControllerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaPlayerProtocol.html">APSMediaPlayerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaTrackableObject.html">APSMediaTrackableObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSUnitManagerProtocol.html">APSUnitManagerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSVASTAdBreakDelegate.html">APSVASTAdBreakDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/KRAdapter.html">KRAdapter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Type%20Definitions.html">Other Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Type%20Definitions.html#/c:APSMediaPlayer.h@T@APSMediaPlayerFinishBlock">APSMediaPlayerFinishBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Type%20Definitions.html#/c:APSTypes.h@T@APSThumbnailGeneratedBlock">APSThumbnailGeneratedBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>APSMediaPlayerOverlayControllerProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">APSMediaPlayerOverlayControllerProtocol</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/KRAdapter.html">KRAdapter</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">APSMediaPlayerOverlayControllerProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code><a href="../Classes/APSMediaPlayerOverlayController.html">APSMediaPlayerOverlayController</a></code> defines all the methods that a <code>UIViewController</code> subclass must or can implement to be able to register as an overlay controller with the player. This protocol extends the <code><a href="../Protocols/KRAdapter.html">KRAdapter</a></code> protocol, so objects should also implement a <code>type</code> method, returning a unique string to register under.</p>
+
+<p>To use:</p>
+
+<ul>
+<li>Create a new class that implements this protocol</li>
+<li><p>Register it with the player shared instance:</p>
+<pre class="highlight objective_c"><code>      <span class="p">[[</span><span class="n">APSMediaPlayer</span> <span class="nf">sharedInstance</span><span class="p">]</span> <span class="nf">registerClass</span><span class="p">:[</span><span class="o">&lt;</span><span class="n">YOURCLASS</span><span class="o">&gt;</span> <span class="nf">class</span><span class="p">]</span> <span class="nf">inGroup</span><span class="p">:</span><span class="n">kAPSMediaPlayerOverlayControllersGroup</span><span class="p">];</span>
+</code></pre></li>
+<li><p>Set up with the <code><a href="../Classes/APSMediaOverlay.html">APSMediaOverlay</a></code>:</p>
+<pre class="highlight objective_c"><code>      <span class="n">overlay</span><span class="p">.</span><span class="n">type</span> <span class="o">=</span> <span class="s">@"&lt;YOURSTRINGCONSTANT&gt;"</span>
+</code></pre></li>
+</ul>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overlay%20Initialization"></a>
+                <a name="//apple_ref/objc/Section/Overlay Initialization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Overlay%20Initialization"></a>
+                  <h3 class="section-name"><p>Overlay Initialization</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)load"></a>
+                    <a name="//apple_ref/objc/Method/-load" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)load">-load</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is invoked by the player when first diplaying the overlay controller object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">load</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">load</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)preload"></a>
+                    <a name="//apple_ref/objc/Method/-preload" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)preload">-preload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is invoked by the player on a background thread, before the overlay start point, as set by the [APSMediaEvent preTriggerInterval] property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">preload</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">preload</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Callbacks"></a>
+                <a name="//apple_ref/objc/Section/Callbacks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Callbacks"></a>
+                  <h3 class="section-name"><p>Callbacks</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)update"></a>
+                    <a name="//apple_ref/objc/Method/-update" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)update">-update</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is called whenever the playback state of the player is changed (e.g. current playback time changes, playback state changes etc.). If the overlay controller needs to update its interface as a result of these changes, the updates should be performed in this method.</p>
+
+<p>The method is invoked on the main application thread.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">update</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">update</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)overlayWillBeRemoved"></a>
+                    <a name="//apple_ref/objc/Method/-overlayWillBeRemoved" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)overlayWillBeRemoved">-overlayWillBeRemoved</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is invoked by the player, before the overlay controller&rsquo;s view is removed from the player surface. Any overlay cleanup code should be performed in this method.</p>
+
+<p>The method is invoked on the main application thread.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">overlayWillBeRemoved</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">overlayWillBeRemoved</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)didEnterFullscreen"></a>
+                    <a name="//apple_ref/objc/Method/-didEnterFullscreen" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)didEnterFullscreen">-didEnterFullscreen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is invoked by the player, when fullscreen mode is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didEnterFullscreen</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didEnterFullscreen</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)didExitFullscreen"></a>
+                    <a name="//apple_ref/objc/Method/-didExitFullscreen" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)didExitFullscreen">-didExitFullscreen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is invoked by the player, when fullscreen mode is disabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didExitFullscreen</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didExitFullscreen</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)didStartPictureInPicture"></a>
+                    <a name="//apple_ref/objc/Method/-didStartPictureInPicture" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)didStartPictureInPicture">-didStartPictureInPicture</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is invoked by the player, when picture in picture mode is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didStartPictureInPicture</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didStartPictureInPicture</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)didStopPictureInPicture"></a>
+                    <a name="//apple_ref/objc/Method/-didStopPictureInPicture" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)didStopPictureInPicture">-didStopPictureInPicture</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is invoked by the player, when picture in picture mode is disabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didStopPictureInPicture</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didStopPictureInPicture</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Handling%20Playback"></a>
+                <a name="//apple_ref/objc/Section/Handling Playback" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Handling%20Playback"></a>
+                  <h3 class="section-name"><p>Handling Playback</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)currentPlaybackTime"></a>
+                    <a name="//apple_ref/objc/Method/-currentPlaybackTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)currentPlaybackTime">-currentPlaybackTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay controller to return a current playback time in place of the parent <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*</p>
+
+<ul>
+<li>- returns: The current overlay-managed playback time, in seconds.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="n">currentPlaybackTime</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">currentPlaybackTime</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">TimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)playableDuration"></a>
+                    <a name="//apple_ref/objc/Method/-playableDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)playableDuration">-playableDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay controller to return a total playable (buffered) time in place of the parent <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*</p>
+
+<ul>
+<li>- returns: The current overlay-managed total playable (buffered) time, in seconds.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="n">playableDuration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">playableDuration</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">TimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)setCurrentPlaybackTime:"></a>
+                    <a name="//apple_ref/objc/Method/-setCurrentPlaybackTime:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)setCurrentPlaybackTime:">-setCurrentPlaybackTime:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay that handles media playback in place of the parent unit to internally set the current playback time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCurrentPlaybackTime</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">playbackTime</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setCurrentPlaybackTime</span><span class="p">(</span><span class="n">_</span> <span class="nv">playbackTime</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>playbackTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The required playback time to seek to, in seconds.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)duration"></a>
+                    <a name="//apple_ref/objc/Method/-duration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)duration">-duration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay controller to return a total playback duration in place of the parent <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*</p>
+
+<ul>
+<li>- parameter: playbackTime The total overlay-managed playback duration, in seconds.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="n">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">duration</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">TimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)playbackState"></a>
+                    <a name="//apple_ref/objc/Method/-playbackState" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)playbackState">-playbackState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay controller to return a playback state in place of the parent <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*</p>
+
+<ul>
+<li>- returns: The current overlay-managed playback state.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Enums/APSMoviePlaybackState.html">APSMoviePlaybackState</a></span><span class="p">)</span><span class="n">playbackState</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">playbackState</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/APSMoviePlaybackState.html">APSMoviePlaybackState</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)loadState"></a>
+                    <a name="//apple_ref/objc/Method/-loadState" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)loadState">-loadState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay controller to return a load state in place of the parent <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*</p>
+
+<ul>
+<li>- returns: The current overlay-managed load state.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Enums/APSMovieLoadState.html">APSMovieLoadState</a></span><span class="p">)</span><span class="n">loadState</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">loadState</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/APSMovieLoadState.html">APSMovieLoadState</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)movieSourceType"></a>
+                    <a name="//apple_ref/objc/Method/-movieSourceType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)movieSourceType">-movieSourceType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay controller to return a media source type in place of the parent <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> object, if the <code>url</code> property of that object is nil.</p>
+
+<p>This occurs for overlays that handle media playback in place of the parent unit, for e.g. the Youtube player overlay controller.
+*</p>
+
+<ul>
+<li>- returns: The current overlay-managed media source type.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Enums/APSMovieSourceType.html">APSMovieSourceType</a></span><span class="p">)</span><span class="n">movieSourceType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">movieSourceType</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/APSMovieSourceType.html">APSMovieSourceType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)play"></a>
+                    <a name="//apple_ref/objc/Method/-play" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)play">-play</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay that handles media playback in place of the parent unit to start playback.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">play</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">play</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)stop"></a>
+                    <a name="//apple_ref/objc/Method/-stop" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)stop">-stop</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay that handles media playback in place of the parent unit to stop playback.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stop</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)pause"></a>
+                    <a name="//apple_ref/objc/Method/-pause" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)pause">-pause</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay that handles media playback in place of the parent unit to pause playback.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">pause</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">pause</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)thumbnailAt:withCompletionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-thumbnailAt:withCompletionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)thumbnailAt:withCompletionBlock:">-thumbnailAt:<wbr>withCompletionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay that handles media playback in place of the parent unit to return a thumbnail image at a specific time interval from the managed video.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method should execute blocking operations on a background thread, and should invoke the callback block on the main thread.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">thumbnailAt</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">playbackTime</span>
+    <span class="nf">withCompletionBlock</span><span class="p">:(</span><span class="n"><a href="../Other%20Type%20Definitions.html#/c:APSTypes.h@T@APSThumbnailGeneratedBlock">APSThumbnailGeneratedBlock</a></span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">thumbnail</span><span class="p">(</span><span class="n">at</span> <span class="nv">playbackTime</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="n">withCompletionBlock</span> <span class="nv">block</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Other%20Type%20Definitions.html#/c:APSTypes.h@T@APSThumbnailGeneratedBlock">APSThumbnailGeneratedBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>playbackTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time when the thumbnail should be taken from the video.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to be invoked on thumbnail generation completion.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Defining%20Behavior%20for%20Webview%20Dismiss%20Events"></a>
+                <a name="//apple_ref/objc/Section/Defining Behavior for Webview Dismiss Events" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Defining%20Behavior%20for%20Webview%20Dismiss%20Events"></a>
+                  <h3 class="section-name"><p>Defining Behavior for Webview Dismiss Events</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)onWebviewDismiss"></a>
+                    <a name="//apple_ref/objc/Method/-onWebviewDismiss" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)APSMediaPlayerOverlayControllerProtocol(im)onWebviewDismiss">-onWebviewDismiss</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows an overlay controller to specify what action the player should take when it comes back into focus, after a modal in-app web browser was triggered and dismissed by user interaction.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Enums/APSWebviewDismissedAction.html">APSWebviewDismissedAction</a></span><span class="p">)</span><span class="n">onWebviewDismiss</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">onWebviewDismiss</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/APSWebviewDismissedAction.html">APSWebviewDismissedAction</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The desired action. See <code><a href="../Enums/APSWebviewDismissedAction.html">APSWebviewDismissedAction</a></code> for more details.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://veeplay.com" target="_blank" rel="external">Veeplay</a>. All rights reserved. (Last updated: 2021-04-22)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

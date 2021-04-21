@@ -1,0 +1,649 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSAVPlayerView.h",
+      "line": 13,
+      "symbol": "APSAVPlayerView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSControlPluginProtocol.h",
+      "line": 47,
+      "symbol": "APSControlPluginProtocol.-willLoad",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSControlPluginProtocol.h",
+      "line": 48,
+      "symbol": "APSControlPluginProtocol.-didLoad",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSControlPluginProtocol.h",
+      "line": 49,
+      "symbol": "APSControlPluginProtocol.-constant",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSControlPluginProtocol.h",
+      "line": 50,
+      "symbol": "APSControlPluginProtocol.-stringConstant",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSControlPluginProtocol.h",
+      "line": 51,
+      "symbol": "APSControlPluginProtocol.-width",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSControlPluginProtocol.h",
+      "line": 52,
+      "symbol": "APSControlPluginProtocol.-buttonForOverlayController:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSEvent.h",
+      "line": 13,
+      "symbol": "APSEvent",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMPMoviePlayer.h",
+      "line": 21,
+      "symbol": "APSMPMoviePlayer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaOverlay.h",
+      "line": 81,
+      "symbol": "APSContentOverlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 41,
+      "symbol": "APSBackendPlayer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 163,
+      "symbol": "APSMediaPlayerEventStart",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 164,
+      "symbol": "APSMediaPlayerEventFinish",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 165,
+      "symbol": "APSMediaPlayerEventPlaylistFinish",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 166,
+      "symbol": "APSMediaPlayerEventExitFullscreen",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 167,
+      "symbol": "APSMediaPlayerEventFullscreen",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 168,
+      "symbol": "APSMediaPlayerEventImpression",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 169,
+      "symbol": "APSMediaPlayerEventViewableImpressionViewable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 170,
+      "symbol": "APSMediaPlayerEventViewableImpressionNotViewable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 171,
+      "symbol": "APSMediaPlayerEventViewableImpressionUndetermined",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 172,
+      "symbol": "APSMediaPlayerEventCreativeView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 173,
+      "symbol": "APSMediaPlayerEventResume",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 174,
+      "symbol": "APSMediaPlayerEventPause",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 175,
+      "symbol": "APSMediaPlayerEventRewind",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 176,
+      "symbol": "APSMediaPlayerEventForward",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 177,
+      "symbol": "APSMediaPlayerEventMute",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 178,
+      "symbol": "APSMediaPlayerEventUnmute",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 179,
+      "symbol": "APSMediaPlayerEventError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 180,
+      "symbol": "APSMediaPlayerEventComplete",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 181,
+      "symbol": "APSMediaPlayerEventClose",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 182,
+      "symbol": "APSMediaPlayerEventCloseLinear",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 183,
+      "symbol": "APSMediaPlayerEventSkip",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 184,
+      "symbol": "APSMediaPlayerEventClick",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 185,
+      "symbol": "APSMediaPlayerEventIconView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 186,
+      "symbol": "APSMediaPlayerEventExpand",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 187,
+      "symbol": "APSMediaPlayerEventCollapse",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 188,
+      "symbol": "APSMediaPlayerEventUpdate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 189,
+      "symbol": "APSMediaPlayerEventPosition",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 190,
+      "symbol": "APSMediaPlayerEventSeeked",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 191,
+      "symbol": "APSMediaPlayerEventSSAIAdStarted",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 192,
+      "symbol": "APSMediaPlayerEventSSAIAdEnded",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 193,
+      "symbol": "APSMediaPlayerEventAdBreakTriggered",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 194,
+      "symbol": "APSMediaPlayerEventAdRequested",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 381,
+      "symbol": "APSMediaPlayer.allowedAppInterfaceOrientation",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 464,
+      "symbol": "APSMediaPlayer.-trackEvent:type:forObject:metadata:urls:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayer.h",
+      "line": 785,
+      "symbol": "APSMediaPlayer.-adbreaks",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerButtonOverlayController.h",
+      "line": 12,
+      "symbol": "APSButtonOverlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerControlsOverlayController.h",
+      "line": 12,
+      "symbol": "APSControlsOverlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerControlsOverlayController.h",
+      "line": 35,
+      "symbol": "APSMoviePlayerCommandHideControls",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerControlsOverlayController.h",
+      "line": 36,
+      "symbol": "APSMoviePlayerCommandShowControls",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerControlsOverlayController.h",
+      "line": 38,
+      "symbol": "APSMoviePlayerCommandExtendControlPlugin",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerControlsOverlayController.h",
+      "line": 91,
+      "symbol": "APSMediaPlayerControlsOverlayController",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerHTMLOverlayController.h",
+      "line": 16,
+      "symbol": "APSHTMLOverlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerImageOverlayController.h",
+      "line": 13,
+      "symbol": "APSImageOverlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerProtocol.h",
+      "line": 14,
+      "symbol": "APSAVPlayerSeekStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerProtocol.h",
+      "line": 14,
+      "symbol": "APSAVPlayerSeekStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerProtocol.h",
+      "line": 115,
+      "symbol": "APSMediaPlayerProtocol.isStreamingLive",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerProtocol.h",
+      "line": 226,
+      "symbol": "APSMediaPlayerProtocol.-needsInitialPlaybackTimeDispatch",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerSSAIOverlayController.h",
+      "line": 13,
+      "symbol": "APSSSAIOverlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerSSAIOverlayController.h",
+      "line": 14,
+      "symbol": "APSAdParamsMap",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerSSAIOverlayController.h",
+      "line": 16,
+      "symbol": "APSMediaPlayerSSAIOverlayController",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerSubtitlesOverlayController.h",
+      "line": 15,
+      "symbol": "APSSubtilesOverlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerSubtitlesOverlayController.h",
+      "line": 17,
+      "symbol": "APSMediaPlayerSubtitlesOverlayController",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaPlayerTextOverlayController.h",
+      "line": 12,
+      "symbol": "APSTextOverlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSMediaUnit.h",
+      "line": 25,
+      "symbol": "APSContentUnit",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSPiPPlayer.h",
+      "line": 44,
+      "symbol": "APSPiPPlayer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSSSAIAd.h",
+      "line": 12,
+      "symbol": "APSSSAIAd",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSSSAIAdEvent.h",
+      "line": 11,
+      "symbol": "APSSSAIAdEvent",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSSSAIClient.h",
+      "line": 14,
+      "symbol": "APSSSAIClientType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSSSAIClient.h",
+      "line": 16,
+      "symbol": "APSSSAIClient",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSTimedMetadata.h",
+      "line": 15,
+      "symbol": "APSTimedMetadata",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSUnitManagerProtocol.h",
+      "line": 50,
+      "symbol": "APSUnitManagerProtocol.-update",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTAdBreak.h",
+      "line": 18,
+      "symbol": "MAX_VAST_VERSION",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTAdBreak.h",
+      "line": 334,
+      "symbol": "APSVASTAdBreak.metadata",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTError.h",
+      "line": 57,
+      "symbol": "descriptionForVASTError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTFullscreenButtonConfiguration.h",
+      "line": 13,
+      "symbol": "APSVASTFullscreenButtonConfiguration",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTFullscreenOverlayController.h",
+      "line": 16,
+      "symbol": "APSFullscreenOverlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTFullscreenOverlayController.h",
+      "line": 24,
+      "symbol": "APSVASTFullscreenOverlayController",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTMediaBuilderPlugin.h",
+      "line": 19,
+      "symbol": "kAPSVASTPrerollUnit",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTMediaBuilderPlugin.h",
+      "line": 20,
+      "symbol": "kAPSVASTMidrollUnit",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTMediaBuilderPlugin.h",
+      "line": 21,
+      "symbol": "kAPSVASTPostrollUnit",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTMediaBuilderPlugin.h",
+      "line": 22,
+      "symbol": "kAPSVASTNonlinearAd",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTMediaBuilderPlugin.h",
+      "line": 54,
+      "symbol": "APSVASTMediaBuilderPlugin.-adBreaksForVMAP",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTRegulationInformation.h",
+      "line": 11,
+      "symbol": "APSVASTRegulationInformation",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTSkipOverlayController.h",
+      "line": 34,
+      "symbol": "APSSkipOverlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVASTSkipOverlayController.h",
+      "line": 48,
+      "symbol": "APSVASTSkipOverlayController",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVimeoManager.h",
+      "line": 12,
+      "symbol": "kVeeplayVimeoManager",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSVimeoManager.h",
+      "line": 14,
+      "symbol": "APSVimeoManager",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSYouTubeManager.h",
+      "line": 12,
+      "symbol": "kVeeplayYouTubeManager",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/APSYouTubeManager.h",
+      "line": 14,
+      "symbol": "APSYouTubeManager",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/VeeplayFramework.h",
+      "line": 12,
+      "symbol": "VeeplayFrameworkVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/user/projects/Veeplay/veeplay-ios/Framework/VeeplayFramework.framework/Headers/VeeplayFramework.h",
+      "line": 15,
+      "symbol": "VeeplayFrameworkVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/user/projects/Veeplay/veeplay-ios/Project"
+}

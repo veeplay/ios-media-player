@@ -1,5 +1,0 @@
-platform :ios, '8.0'
-
-target "VeeplayDemo" do
-  pod 'Veeplay', :path => "../Veeplay.podspec"
-end
