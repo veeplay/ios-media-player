@@ -192,6 +192,9 @@ extern NSString * _Nonnull const APSMediaPlayerEventSSAIAdStarted;
 extern NSString * _Nonnull const APSMediaPlayerEventSSAIAdEnded;
 extern NSString * _Nonnull const APSMediaPlayerEventAdBreakTriggered;
 extern NSString * _Nonnull const APSMediaPlayerEventAdRequested;
+extern NSString * _Nonnull const APSMediaPlayerEventAdRequestComplete;
+extern NSString * _Nonnull const APSMediaPlayerEventAdRequestError;
+extern NSString * _Nonnull const APSMediaPlayerEventAdBreakEmpty;
 
 /**
  *  The `APSMediaPlayerActionDelegate` protocol declares the two methods that a class must implement in order to become an `APSMediaPlayer` actionDelegate. The object implementing `APSMediaPlayer` will receive information about the URLs that need to be executed as the user interacts with the player.

@@ -1,7 +1,7 @@
 
 ## About
 
-[<img src="http://veeplay.com/wp-content/themes/veeplay/images/logo_veeplay_small.png">](http://veeplay.com)
+[<img src="https://veeplay.com/images/veeplay_logo.svg">](https://veeplay.com)
 
 The Veeplay Media Player allows you to:
 
@@ -64,7 +64,7 @@ There are currently two integration paths: via CocoaPods or via standard library
 
 ## Getting Started
 
-Set up an account at http://panel.veeplay.com and add your application's bundle identifier under "License Management".
+Set up an account at https://panel.veeplay.com and add your application's bundle identifier under "License Management".
 
 Import the Player’s header file, as well as the VAST/VMAP or other plugins:
 
