@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>APSMediaBuilder Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/APSMediaBuilder" class="dashAnchor"></a>
+
+    <a title="APSMediaBuilder Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+        
+      </p>
+    
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      APSMediaBuilder Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Getting%20Started.html">Getting Started</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../readme.html">README</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaPlayer.html">APSMediaPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaBuilder.html">APSMediaBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaUnit.html">APSMediaUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaEvent.html">APSMediaEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSVASTAdBreak.html">APSVASTAdBreak</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSAVPlayer">APSAVPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaOverlay.html">APSMediaOverlay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerButtonOverlayController">APSMediaPlayerButtonOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaPlayerClosableOverlayController.html">APSMediaPlayerClosableOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerHTMLOverlayController">APSMediaPlayerHTMLOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerImageOverlayController">APSMediaPlayerImageOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSMediaPlayerOverlayController.html">APSMediaPlayerOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerTextOverlayController">APSMediaPlayerTextOverlayController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSVASTBannerConfiguration.html">APSVASTBannerConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSVASTCountdownConfiguration.html">APSVASTCountdownConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSVASTMediaBuilderPlugin.html">APSVASTMediaBuilderPlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/APSVASTSkipButtonConfiguration.html">APSVASTSkipButtonConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KRHub.html">KRHub</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Constants.html">Other Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerControlsDisplayedNotification">APSMediaPlayerControlsDisplayedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerControlsHiddenNotification">APSMediaPlayerControlsHiddenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidEnterFullscreenNotification">APSMediaPlayerDidEnterFullscreenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidExitFullscreenNotification">APSMediaPlayerDidExitFullscreenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidStartPictureInPictureNotification">APSMediaPlayerDidStartPictureInPictureNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidStopPictureInPictureNotification">APSMediaPlayerDidStopPictureInPictureNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDurationAvailableNotification">APSMediaPlayerDurationAvailableNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerErrorNotification">APSMediaPlayerErrorNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerEventLaunch">APSMediaPlayerEventLaunch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerInvalidLicenseNotification">APSMediaPlayerInvalidLicenseNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerLoadStateDidChangeNotification">APSMediaPlayerLoadStateDidChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerPlaybackDidFinishNotification">APSMediaPlayerPlaybackDidFinishNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerPlaybackStateDidChangeNotification">APSMediaPlayerPlaybackStateDidChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerStatusChangedNotification">APSMediaPlayerStatusChangedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerToggleFullscreenNotification">APSMediaPlayerToggleFullscreenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerTrackedEventNotification">APSMediaPlayerTrackedEventNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerUnitFinishedNotification">APSMediaPlayerUnitFinishedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerUpdateNotification">APSMediaPlayerUpdateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerVolumeDidChangeNotification">APSMediaPlayerVolumeDidChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWasTappedNotification">APSMediaPlayerWasTappedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillCloseMiniBrowser">APSMediaPlayerWillCloseMiniBrowser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillEnterFullscreenNotification">APSMediaPlayerWillEnterFullscreenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillExitFullscreenNotification">APSMediaPlayerWillExitFullscreenNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillOpenMiniBrowser">APSMediaPlayerWillOpenMiniBrowser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillStartPictureInPictureNotification">APSMediaPlayerWillStartPictureInPictureNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillStopPictureInPictureNotification">APSMediaPlayerWillStopPictureInPictureNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerDidStartPictureInPicture">APSPipPlayerDidStartPictureInPicture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerDidStopPictureInPicture">APSPipPlayerDidStopPictureInPicture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerFailedToStartPictureInPictureWithError">APSPipPlayerFailedToStartPictureInPictureWithError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerNotPossible">APSPipPlayerNotPossible</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerNotSupported">APSPipPlayerNotSupported</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerWillStartPictureInPicture">APSPipPlayerWillStartPictureInPicture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerWillStopPictureInPicture">APSPipPlayerWillStopPictureInPicture</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSAdPodFallback.html">APSAdPodFallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSControlsOverlayComponents.html">APSControlsOverlayComponents</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSFullscreenOrientationBehaviour.html">APSFullscreenOrientationBehaviour</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSHandleSeekEvent.html">APSHandleSeekEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMediaControlsDisplay.html">APSMediaControlsDisplay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMediaEventState.html">APSMediaEventState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMediaOverlayPosition.html">APSMediaOverlayPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieControlStyle.html">APSMovieControlStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieFinishReason.html">APSMovieFinishReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieLoadState.html">APSMovieLoadState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMoviePlaybackState.html">APSMoviePlaybackState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieScalingMode.html">APSMovieScalingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieSourceType.html">APSMovieSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSMovieStreamSourceType.html">APSMovieStreamSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSResolvMultipleAdsConflictsBy.html">APSResolvMultipleAdsConflictsBy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSSkipOverlayProgressPosition.html">APSSkipOverlayProgressPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSVASTAdBreakType.html">APSVASTAdBreakType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSViewability.html">APSViewability</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/APSWebviewDismissedAction.html">APSWebviewDismissedAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Protocols.html#/c:objc(pl)APSControlPluginProtocol">APSControlPluginProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaBuilderPlugin.html">APSMediaBuilderPlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaEventProtocol.html">APSMediaEventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaPlayerActionDelegate.html">APSMediaPlayerActionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaPlayerOverlayControllerProtocol.html">APSMediaPlayerOverlayControllerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaPlayerProtocol.html">APSMediaPlayerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSMediaTrackableObject.html">APSMediaTrackableObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSUnitManagerProtocol.html">APSUnitManagerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/APSVASTAdBreakDelegate.html">APSVASTAdBreakDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/KRAdapter.html">KRAdapter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Type%20Definitions.html">Other Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Type%20Definitions.html#/c:APSMediaPlayer.h@T@APSMediaPlayerFinishBlock">APSMediaPlayerFinishBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Other%20Type%20Definitions.html#/c:APSTypes.h@T@APSThumbnailGeneratedBlock">APSThumbnailGeneratedBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>APSMediaBuilder</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">APSMediaBuilder</span> <span class="p">:</span> <span class="nc"><a href="../Classes/KRHub.html">KRHub</a></span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">APSMediaBuilder</span> <span class="p">:</span> <span class="kt"><a href="../Classes/KRHub.html">KRHub</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>APSMediaBuilder</code> assists in creating playlists of fully configurable <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code>s, together with attached, configurable <code><a href="../Classes/APSMediaOverlay.html">APSMediaOverlay</a></code>s, using JSON files or using a <code>NSDictionary</code>, both following the same structure.</p>
+
+<p>The media builder also has class methods that assist with the generation of individual <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> and <code><a href="../Classes/APSMediaOverlay.html">APSMediaOverlay</a></code> objects from corresponding JSON or <code>NSDictionary</code> structures.</p>
+
+<p>Plugins can be attached to a media builder. Each plugin can dynamically insert, edit or remove units and/or overlays from the generated playlist.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Unit%20and%20Overlay%20Factory%20Methods"></a>
+                <a name="//apple_ref/objc/Section/Unit and Overlay Factory Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Unit%20and%20Overlay%20Factory%20Methods"></a>
+                  <h3 class="section-name"><p>Unit and Overlay Factory Methods</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(cm)unitFromDictionary:"></a>
+                    <a name="//apple_ref/objc/Method/+unitFromDictionary:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(cm)unitFromDictionary:">+unitFromDictionary:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Factory method to generate new instance of <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> via <code>NSDictionary</code> configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n"><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">unitFromDictionary</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">unitConfigurations</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">unit</span><span class="p">(</span><span class="n">from</span> <span class="nv">unitConfigurations</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unitConfigurations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary unit configuration.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> or nil if error.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(cm)overlayFromDictionary:"></a>
+                    <a name="//apple_ref/objc/Method/+overlayFromDictionary:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(cm)overlayFromDictionary:">+overlayFromDictionary:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Factory method to generate new instance of <code><a href="../Classes/APSMediaOverlay.html">APSMediaOverlay</a></code> via <code>NSDictionary</code> configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n"><a href="../Classes/APSMediaOverlay.html">APSMediaOverlay</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nf">overlayFromDictionary</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">overlayConfigurations</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">overlay</span><span class="p">(</span><span class="n">from</span> <span class="nv">overlayConfigurations</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/APSMediaOverlay.html">APSMediaOverlay</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>overlayConfigurations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary overlay configuration.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of <code><a href="../Classes/APSMediaOverlay.html">APSMediaOverlay</a></code> or nil if error.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Media%20Builder%20Initialization"></a>
+                <a name="//apple_ref/objc/Section/Media Builder Initialization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Media%20Builder%20Initialization"></a>
+                  <h3 class="section-name"><p>Media Builder Initialization</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(im)initWithMediaUnit:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithMediaUnit:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(im)initWithMediaUnit:">-initWithMediaUnit:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes builder with a playlist of a single media unit.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nf">initWithMediaUnit</span><span class="p">:(</span><span class="n"><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">contentUnit</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">?(</span><span class="n">mediaUnit</span> <span class="nv">contentUnit</span><span class="p">:</span> <span class="kt"><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentUnit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> object to be played.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>APSMediaBuilder</code> object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(im)initWithMediaUnits:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithMediaUnits:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(im)initWithMediaUnits:">-initWithMediaUnits:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes builder with a playlist of media units.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nf">initWithMediaUnits</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">contentUnits</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">?(</span><span class="n">mediaUnits</span> <span class="nv">contentUnits</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentUnits</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> objects to be played.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>APSMediaBuilder</code> object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Media%20Builder%20Configuration"></a>
+                <a name="//apple_ref/objc/Section/Media Builder Configuration" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Media%20Builder%20Configuration"></a>
+                  <h3 class="section-name"><p>Media Builder Configuration</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(im)configureFromURL:"></a>
+                    <a name="//apple_ref/objc/Method/-configureFromURL:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(im)configureFromURL:">-configureFromURL:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures the builder from a JSON structure.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method may execute blocking network I/O on the calling thread.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">configureFromURL</span><span class="p">:(</span><span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">url</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="n">from</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL of the JSON structure to load. This can be a remote file or a local file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>YES</code> on succes.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(im)configureFromURL:onComplete:"></a>
+                    <a name="//apple_ref/objc/Method/-configureFromURL:onComplete:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(im)configureFromURL:onComplete:">-configureFromURL:<wbr>onComplete:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures the builder asynchronously from a JSON structure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">configureFromURL</span><span class="p">:(</span><span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">url</span>
+              <span class="nf">onComplete</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="n">from</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="n">onComplete</span> <span class="nv">block</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL of the JSON structure to load. This can be a remote file or a local file.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to be executed after configuration is finished.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(im)configureFromData:"></a>
+                    <a name="//apple_ref/objc/Method/-configureFromData:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(im)configureFromData:">-configureFromData:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures the builder from a <code>NSData</code> object.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>UTF8 encoding is assumed.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">configureFromData</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">data</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="n">from</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Configuration data - UTF8 encoded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>YES</code> on succes.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(im)configureFromDictionary:"></a>
+                    <a name="//apple_ref/objc/Method/-configureFromDictionary:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(im)configureFromDictionary:">-configureFromDictionary:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures the builder from a <code>NSDictionary</code> object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">configureFromDictionary</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">configuration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="n">from</span> <span class="nv">configuration</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The configuration dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>YES</code> on succes.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(py)contentUnits"></a>
+                    <a name="//apple_ref/objc/Property/contentUnits" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(py)contentUnits">contentUnits</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array containing the main content <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code>s that will make up the playlist.</p>
+
+<p>In the finally rendered playlist, units from <code><a href="../Classes/APSMediaBuilder.html#/c:objc(cs)APSMediaBuilder(py)bumperUnits">bumperUnits</a></code> will be prefixed to the main content units, while units from <code><a href="../Classes/APSMediaBuilder.html#/c:objc(cs)APSMediaBuilder(py)exitUnits">exitUnits</a></code> will be inserted after the main content units. Every array&rsquo;s content may be modified by attached builder plugins.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">contentUnits</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contentUnits</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(py)bumperUnits"></a>
+                    <a name="//apple_ref/objc/Property/bumperUnits" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(py)bumperUnits">bumperUnits</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array containing <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code>s that will be scheduled before ones in contentUnits in the generated playlist.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">bumperUnits</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bumperUnits</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(py)exitUnits"></a>
+                    <a name="//apple_ref/objc/Property/exitUnits" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(py)exitUnits">exitUnits</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array containing <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code>s that will be scheduled after ones in contentUnits in the generated playlist.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">exitUnits</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">exitUnits</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(py)userAgent"></a>
+                    <a name="//apple_ref/objc/Property/userAgent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(py)userAgent">userAgent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user agent that should be used when making HTTP requests.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">userAgent</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">userAgent</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(py)debugMode"></a>
+                    <a name="//apple_ref/objc/Property/debugMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(py)debugMode">debugMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This property enables or disables console logging on all generated units.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">debugMode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">debugMode</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Generating%20the%20Final%20Playlist"></a>
+                <a name="//apple_ref/objc/Section/Generating the Final Playlist" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Generating%20the%20Final%20Playlist"></a>
+                  <h3 class="section-name"><p>Generating the Final Playlist</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(im)mediaUnits"></a>
+                    <a name="//apple_ref/objc/Method/-mediaUnits" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(im)mediaUnits">-mediaUnits</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a generated playlist of <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code>s, based on builder configuration and registered plugins.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This method may execute blocking network I/O on the calling thread.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="n">mediaUnits</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">mediaUnits</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code>s.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(im)requestMediaUnitsWithCompletionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-requestMediaUnitsWithCompletionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(im)requestMediaUnitsWithCompletionBlock:">-requestMediaUnitsWithCompletionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Asynchronously generates a playlist of <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code>s, based on builder configuration and registered plugins.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">requestMediaUnitsWithCompletionBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">requestMediaUnits</span><span class="p">(</span><span class="n">completionBlock</span> <span class="nv">block</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to be executed when playlist is generated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Adding%20Plugins"></a>
+                <a name="//apple_ref/objc/Section/Adding Plugins" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Adding%20Plugins"></a>
+                  <h3 class="section-name"><p>Adding Plugins</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)APSMediaBuilder(im)addPlugin:"></a>
+                    <a name="//apple_ref/objc/Method/-addPlugin:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)APSMediaBuilder(im)addPlugin:">-addPlugin:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a new plugin.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addPlugin</span><span class="p">:(</span><span class="n">NSObject</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/APSMediaBuilderPlugin.html">APSMediaBuilderPlugin</a></span><span class="o">&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">plugin</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>plugin</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new plugin object. Must implement <code><a href="../Protocols/APSMediaBuilderPlugin.html">APSMediaBuilderPlugin</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://veeplay.com" target="_blank" rel="external">Veeplay</a>. All rights reserved. (Last updated: 2021-04-22)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
