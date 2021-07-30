@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>APSMediaPlayerImageOverlayController Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Veeplay Media Player </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Veeplay</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	
+
+	
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">APSMediaPlayerImageOverlayController Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/APSMediaPlayerClosableOverlayController.html">APSMediaPlayerClosableOverlayController</a> : <a href="../Classes/APSMediaPlayerOverlayController.html">APSMediaPlayerOverlayController</a> : UIViewController</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>APSMediaPlayerImageOverlayController.h<br />APSMediaPlayerImageOverlayController.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>APSMediaPlayerImageOverlayController</code> allows placing an image on top of video content.</p>
+
+<h2>Configuration</h2>
+
+<p>To create an <a href="../Classes/APSMediaOverlay.html"><code>APSMediaOverlay</code></a> of image type:</p>
+
+<ul>
+<li>set the overlay object&rsquo;s <code>type</code> property to <code>APSImageOverlay</code></li>
+<li><p>set the overlay object&rsquo;s <code>properties</code> property to a <code>NSDictionary</code> that can have the following keys and values:</p>
+
+<ul>
+<li> <em>kAPSImageOverlayClickthrough</em>: set this key to a <code>NSURL</code> reprezenting the URL that should be launched when the overlay is tapped.</li>
+<li> <em>kAPSImageOverlayClicktracking</em>: set this key to a <code>NSArray</code> of <code>NSURL</code> objects that will be tracked by the player when the overlay is tapped (see <code>[APSMediaPlayer track:forEvent:type:]</code>). Note that the <code>kAPSImageOverlayClickthrough</code> key must also be set for tracking to happen.</li>
+<li> <em>kAPSImageOverlayWebviewDismissAction</em>: set this key to a NSNumber created from the <a href="../Constants/APSWebviewDismissedAction.html"><code>APSWebviewDismissedAction</code></a> value that defines the expected playlist behavior on in-app web browser dismiss.</li>
+<li> <em>kAPSImageOverlayViewtracking</em>: set this key to a <code>NSArray</code> of <code>NSURL</code> objects that will be tracked by the player when the overlay is displayed (see <code>[APSMediaPlayer track:forEvent:type:]</code>).</li>
+<li> <em>kAPSImageOverlayResourceURL</em>: <code>NSURL</code> reprezenting the image to be loaded.</li>
+<li> <em>kAPSImageOverlayErrorURLs</em>: set this key to a <code>NSArray</code> of <code>NSURL</code> objects that will be tracked by the player when there is an error loading the image (see <code>[APSMediaPlayer track:forEvent:type:]</code>).</li>
+<li> <em>kAPSImageOverlayBackgroundColor</em>: the background color of the overlay. Set this to a <code>NSString</code> containing the hex color reprezentation. Defaults to <code>[UIColor clearColor]</code>.</li>
+<li><p> <em>kAPSImageOverlayStretchMode</em>: <code>NSString</code> reprezenting the possible ways of scaling the image in the overlay surface. Possible values are:</p>
+
+<ul>
+<li>&ldquo;aspectFit&rdquo;, that will set the overlay&rsquo;s <code>contentMode</code> to <code>UIViewContentModeScaleAspectFit</code></li>
+<li>&ldquo;aspectFill&rdquo;, that will set the overlay&rsquo;s <code>contentMode</code> to <code>UIViewContentModeScaleAspectFill</code></li>
+<li>&ldquo;fill&rdquo;, that will set the overlay&rsquo;s <code>contentMode</code> to <code>UIViewContentModeScaleToFill</code></li>
+<li>&ldquo;center&rdquo;, that will set the overlay&rsquo;s <code>contentMode</code> to <code>UIViewContentModeCenter</code></li>
+<li>&ldquo;bottom&rdquo;, that will set the overlay&rsquo;s <code>contentMode</code> to <code>UIViewContentModeTop</code></li>
+<li>&ldquo;top&rdquo;, that will set the overlay&rsquo;s <code>contentMode</code> to <code>UIViewContentModeBottom</code></li>
+<li>&ldquo;left&rdquo;, that will set the overlay&rsquo;s <code>contentMode</code> to <code>UIViewContentModeLeft</code></li>
+<li>&ldquo;right&rdquo;, that will set the overlay&rsquo;s <code>contentMode</code> to <code>UIViewContentModeRight</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+					</div>
+					
+					
+
+					
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Veeplay. All rights reserved. Updated: 2020-12-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

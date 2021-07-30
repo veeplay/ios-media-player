@@ -1,936 +1,999 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>APSMediaEvent Class Reference</title>
-    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
-    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
-    <meta charset="utf-8">
-    <script src="../js/jquery.min.js" defer></script>
-    <script src="../js/jazzy.js" defer></script>
-    
-  </head>
-  <body>
+<html>
+<head>
+	<meta charset="utf-8">
 
-    <a name="//apple_ref/objc/Class/APSMediaEvent" class="dashAnchor"></a>
+	<title>APSMediaEvent Class Reference</title>
 
-    <a title="APSMediaEvent Class Reference"></a>
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Veeplay Media Player </a>
+			</h1>
 
-    <header class="header">
-      <p class="header-col header-col--primary">
-        <a class="header-link" href="../index.html">
-           Docs
-        </a>
-        
-      </p>
-    
-    
-    
-    </header>
+			<p id="developer-home">
+				<a href="../index.html">Veeplay</a>
+			</p>
+			
+		</div>
+	</header>
 
-    <p class="breadcrumbs">
-      <a class="breadcrumb" href="../index.html"> Reference</a>
-      <img class="carat" src="../img/carat.png" />
-      APSMediaEvent Class Reference
-    </p>
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
 
-    <div class="content-wrapper">
-      <nav class="navigation">
-        <ul class="nav-groups">
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Getting%20Started.html">Getting Started</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../readme.html">README</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSMediaPlayer.html">APSMediaPlayer</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSMediaBuilder.html">APSMediaBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSMediaUnit.html">APSMediaUnit</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSMediaEvent.html">APSMediaEvent</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSVASTAdBreak.html">APSVASTAdBreak</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Other%20Classes.html">Other Classes</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSAVPlayer">APSAVPlayer</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSMediaOverlay.html">APSMediaOverlay</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerButtonOverlayController">APSMediaPlayerButtonOverlayController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSMediaPlayerClosableOverlayController.html">APSMediaPlayerClosableOverlayController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerHTMLOverlayController">APSMediaPlayerHTMLOverlayController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerImageOverlayController">APSMediaPlayerImageOverlayController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSMediaPlayerOverlayController.html">APSMediaPlayerOverlayController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Classes.html#/c:objc(cs)APSMediaPlayerTextOverlayController">APSMediaPlayerTextOverlayController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSVASTBannerConfiguration.html">APSVASTBannerConfiguration</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSVASTCountdownConfiguration.html">APSVASTCountdownConfiguration</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSVASTMediaBuilderPlugin.html">APSVASTMediaBuilderPlugin</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/APSVASTSkipButtonConfiguration.html">APSVASTSkipButtonConfiguration</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/KRHub.html">KRHub</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Other%20Constants.html">Other Constants</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerControlsDisplayedNotification">APSMediaPlayerControlsDisplayedNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerControlsHiddenNotification">APSMediaPlayerControlsHiddenNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidEnterFullscreenNotification">APSMediaPlayerDidEnterFullscreenNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidExitFullscreenNotification">APSMediaPlayerDidExitFullscreenNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidStartPictureInPictureNotification">APSMediaPlayerDidStartPictureInPictureNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDidStopPictureInPictureNotification">APSMediaPlayerDidStopPictureInPictureNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerDurationAvailableNotification">APSMediaPlayerDurationAvailableNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerErrorNotification">APSMediaPlayerErrorNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerEventLaunch">APSMediaPlayerEventLaunch</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerInvalidLicenseNotification">APSMediaPlayerInvalidLicenseNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerLoadStateDidChangeNotification">APSMediaPlayerLoadStateDidChangeNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerPlaybackDidFinishNotification">APSMediaPlayerPlaybackDidFinishNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerPlaybackStateDidChangeNotification">APSMediaPlayerPlaybackStateDidChangeNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerStatusChangedNotification">APSMediaPlayerStatusChangedNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerToggleFullscreenNotification">APSMediaPlayerToggleFullscreenNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerTrackedEventNotification">APSMediaPlayerTrackedEventNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerUnitFinishedNotification">APSMediaPlayerUnitFinishedNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerUpdateNotification">APSMediaPlayerUpdateNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerVolumeDidChangeNotification">APSMediaPlayerVolumeDidChangeNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWasTappedNotification">APSMediaPlayerWasTappedNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillCloseMiniBrowser">APSMediaPlayerWillCloseMiniBrowser</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillEnterFullscreenNotification">APSMediaPlayerWillEnterFullscreenNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillExitFullscreenNotification">APSMediaPlayerWillExitFullscreenNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillOpenMiniBrowser">APSMediaPlayerWillOpenMiniBrowser</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillStartPictureInPictureNotification">APSMediaPlayerWillStartPictureInPictureNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSMediaPlayerWillStopPictureInPictureNotification">APSMediaPlayerWillStopPictureInPictureNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerDidStartPictureInPicture">APSPipPlayerDidStartPictureInPicture</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerDidStopPictureInPicture">APSPipPlayerDidStopPictureInPicture</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerFailedToStartPictureInPictureWithError">APSPipPlayerFailedToStartPictureInPictureWithError</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerNotPossible">APSPipPlayerNotPossible</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerNotSupported">APSPipPlayerNotSupported</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerWillStartPictureInPicture">APSPipPlayerWillStartPictureInPicture</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Constants.html#/c:@APSPipPlayerWillStopPictureInPicture">APSPipPlayerWillStopPictureInPicture</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Other%20Enums.html">Other Enumerations</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSAdPodFallback.html">APSAdPodFallback</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSControlsOverlayComponents.html">APSControlsOverlayComponents</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSFullscreenOrientationBehaviour.html">APSFullscreenOrientationBehaviour</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSHandleSeekEvent.html">APSHandleSeekEvent</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSMediaControlsDisplay.html">APSMediaControlsDisplay</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSMediaEventState.html">APSMediaEventState</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSMediaOverlayPosition.html">APSMediaOverlayPosition</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSMovieControlStyle.html">APSMovieControlStyle</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSMovieFinishReason.html">APSMovieFinishReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSMovieLoadState.html">APSMovieLoadState</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSMoviePlaybackState.html">APSMoviePlaybackState</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSMovieScalingMode.html">APSMovieScalingMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSMovieSourceType.html">APSMovieSourceType</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSMovieStreamSourceType.html">APSMovieStreamSourceType</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSResolvMultipleAdsConflictsBy.html">APSResolvMultipleAdsConflictsBy</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSSkipOverlayProgressPosition.html">APSSkipOverlayProgressPosition</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSVASTAdBreakType.html">APSVASTAdBreakType</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSViewability.html">APSViewability</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/APSWebviewDismissedAction.html">APSWebviewDismissedAction</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Other%20Protocols.html">Other Protocols</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Protocols.html#/c:objc(pl)APSControlPluginProtocol">APSControlPluginProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/APSMediaBuilderPlugin.html">APSMediaBuilderPlugin</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/APSMediaEventProtocol.html">APSMediaEventProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/APSMediaPlayerActionDelegate.html">APSMediaPlayerActionDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/APSMediaPlayerOverlayControllerProtocol.html">APSMediaPlayerOverlayControllerProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/APSMediaPlayerProtocol.html">APSMediaPlayerProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/APSMediaTrackableObject.html">APSMediaTrackableObject</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/APSUnitManagerProtocol.html">APSUnitManagerProtocol</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/APSVASTAdBreakDelegate.html">APSVASTAdBreakDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Protocols/KRAdapter.html">KRAdapter</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Other%20Type%20Definitions.html">Other Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Type%20Definitions.html#/c:APSMediaPlayer.h@T@APSMediaPlayerFinishBlock">APSMediaPlayerFinishBlock</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other%20Type%20Definitions.html#/c:APSTypes.h@T@APSThumbnailGeneratedBlock">APSThumbnailGeneratedBlock</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <article class="main-content">
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
 
-        <section class="section">
-          <div class="section-content top-matter">
-            <h1>APSMediaEvent</h1>
-              <div class="declaration">
-                <div class="language">
-                  <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">APSMediaEvent</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols/APSMediaEventProtocol.html">APSMediaEventProtocol</a></span><span class="o">&gt;</span></code></pre>
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
 
-                </div>
-                <div class="language">
-                  <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">APSMediaEvent</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/APSMediaEventProtocol.html">APSMediaEventProtocol</a></span></code></pre>
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
 
-                </div>
-              </div>
-            <p>The <code>APSMediaEvent</code> class describes a container that developers can use to instruct the player to run specific blocks of code at specific moments of time. Objects extending this class and implementing the corresponding <code><a href="../Protocols/APSMediaEventProtocol.html">APSMediaEventProtocol</a></code> protocol can be added to the player&rsquo;s main queue and can also be attached to a specific <code><a href="../Classes/APSMediaUnit.html">APSMediaUnit</a></code> object, for runtime triggering.</p>
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
 
-          </div>
-        </section>
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/dynamicPosition">dynamicPosition</option>
+		
+		<option value="//api/name/preloadInterval">preloadInterval</option>
+		
+		<option value="//api/name/preloadPoint">preloadPoint</option>
+		
+		<option value="//api/name/repeatAfter">repeatAfter</option>
+		
+		<option value="//api/name/state">state</option>
+		
+		<option value="//api/name/timeout">timeout</option>
+		
+	</optgroup>
+	
 
-        <section class="section">
-          <div class="section-content">
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Configuring%20the%20Event%20Interval"></a>
-                <a name="//apple_ref/objc/Section/Configuring the Event Interval" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Configuring%20the%20Event%20Interval"></a>
-                  <h3 class="section-name"><p>Configuring the Event Interval</p>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/adjustRelativeToDuration:">- adjustRelativeToDuration:</option>
+		
+		<option value="//api/name/endPoint">- endPoint</option>
+		
+		<option value="//api/name/incrementStartAndEndPointsWithInterval:">- incrementStartAndEndPointsWithInterval:</option>
+		
+		<option value="//api/name/onTrigger">- onTrigger</option>
+		
+		<option value="//api/name/preload">- preload</option>
+		
+		<option value="//api/name/setEndPoint:">- setEndPoint:</option>
+		
+		<option value="//api/name/setStartPoint:">- setStartPoint:</option>
+		
+		<option value="//api/name/setStateWithoutTriggeringKVO:">- setStateWithoutTriggeringKVO:</option>
+		
+		<option value="//api/name/startPoint">- startPoint</option>
+		
+		<option value="//api/name/trigger">- trigger</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">APSMediaEvent Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/APSMediaEventProtocol.html">APSMediaEventProtocol</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>APSMediaEvent.h<br />APSMediaEvent.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>APSMediaEvent</code> class describes a container that developers can use to instruct the player to run specific blocks of code at specific moments of time. Objects extending this class and implementing the corresponding <a href="../Protocols/APSMediaEventProtocol.html"><code>APSMediaEventProtocol</code></a> protocol can be added to the player&rsquo;s main queue and can also be attached to a specific <a href="../Classes/APSMediaUnit.html"><code>APSMediaUnit</code></a> object, for runtime triggering.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Configuring the Event Interval" name="task_Configuring the Event Interval"></a>
+						<h2 class="task-title">Configuring the Event Interval</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setStartPoint:" title="setStartPoint:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setStartPoint:">&ndash;&nbsp;setStartPoint:</a></code>
 </h3>
-                </div>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(im)setStartPoint:"></a>
-                    <a name="//apple_ref/objc/Method/-setStartPoint:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(im)setStartPoint:">-setStartPoint:<wbr></a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Sets the starting time point of the event.</p>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setStartPoint</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">startPoint</span><span class="p">;</span></code></pre>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setStartPoint</span><span class="p">(</span><span class="n">_</span> <span class="nv">startPoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the starting time point of the event.</p>
+			</div>
+			
+		    
 
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>startPoint</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A string format describing the time point when the player needs to trigger the event. Possible values are seconds (e.g.: @&ldquo;60&rdquo;) or a percentage relative to the total duration of the parent clip (e.g.: @&ldquo;50%&rdquo;).</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(im)setEndPoint:"></a>
-                    <a name="//apple_ref/objc/Method/-setEndPoint:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(im)setEndPoint:">-setEndPoint:<wbr></a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Sets the ending time point of the event.</p>
+			<div class="method-subsection method-declaration"><code>- (void)setStartPoint:(NSString *_Nonnull)<em>startPoint</em></code></div>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setEndPoint</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">endPoint</span><span class="p">;</span></code></pre>
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startPoint</code></th>
+						<td><p>A string format describing the time point when the player needs to <a href="#//api/name/trigger">trigger</a> the event. Possible values are seconds (e.g.: @&ldquo;60&rdquo;) or a percentage relative to the total duration of the parent clip (e.g.: @&ldquo;50%&rdquo;).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setEndPoint</span><span class="p">(</span><span class="n">_</span> <span class="nv">endPoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+			
 
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>endPoint</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>A string format describing the time point when the player needs to unload the event. Possible values are seconds (e.g.: @&ldquo;60&rdquo;) or a percentage relative to the total duration of the parent clip (e.g.: @&ldquo;50%&rdquo;).</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(im)startPoint"></a>
-                    <a name="//apple_ref/objc/Method/-startPoint" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(im)startPoint">-startPoint</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The time interval (in seconds) when the player needs to trigger the event.</p>
-<div class="aside aside-warning">
-    <p class="aside-title">Warning</p>
-    If percentual values were set via <code>setStartPoint</code>, this value will change immediately after the current clip&rsquo;s duration is available.
+			
 
-</div>
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the starting time point of the event.</p>
+			</div>
+			
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="n">startPoint</span><span class="p">;</span></code></pre>
+			
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startPoint</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">TimeInterval</span></code></pre>
+			
 
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The initial time interval.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(im)endPoint"></a>
-                    <a name="//apple_ref/objc/Method/-endPoint" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(im)endPoint">-endPoint</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The playback time (in seconds) when the player needs to unload the event. Defaults to -1 for events that should unload right after triggering.</p>
-<div class="aside aside-warning">
-    <p class="aside-title">Warning</p>
-    If percentual values were set via <code>setStartPoint</code>, this value will change immediately after the current clip&rsquo;s duration is available.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="n">endPoint</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">endPoint</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">TimeInterval</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The final time interval.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(py)repeatAfter"></a>
-                    <a name="//apple_ref/objc/Property/repeatAfter" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(py)repeatAfter">repeatAfter</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>If this parameter is greater than 0, then the event will be retriggered by the media player after the specific time interval (in seconds).</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSTimeInterval</span> <span class="n">repeatAfter</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">repeatAfter</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(im)incrementStartAndEndPointsWithInterval:"></a>
-                    <a name="//apple_ref/objc/Method/-incrementStartAndEndPointsWithInterval:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(im)incrementStartAndEndPointsWithInterval:">-incrementStartAndEndPointsWithInterval:<wbr></a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Shifts air-time for an event by a defined amount of time.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">incrementStartAndEndPointsWithInterval</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">incrementStartAndEndPoints</span><span class="p">(</span><span class="n">withInterval</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>duration</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Shift duration in seconds.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(im)adjustRelativeToDuration:"></a>
-                    <a name="//apple_ref/objc/Method/-adjustRelativeToDuration:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(im)adjustRelativeToDuration:">-adjustRelativeToDuration:<wbr></a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Translates percentual values set via <code>setStartPoint</code> and <code>setEndPoint</code> to actual time intervals in seconds, relative to a specified total duration.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">adjustRelativeToDuration</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">adjustRelative</span><span class="p">(</span><span class="n">toDuration</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>duration</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The total duration.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Asynchroneous%20Pre-Trigger"></a>
-                <a name="//apple_ref/objc/Section/Asynchroneous Pre-Trigger" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Asynchroneous%20Pre-Trigger"></a>
-                  <h3 class="section-name"><p>Asynchroneous Pre-Trigger</p>
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setEndPoint:" title="setEndPoint:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setEndPoint:">&ndash;&nbsp;setEndPoint:</a></code>
 </h3>
-                </div>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(im)trigger"></a>
-                    <a name="//apple_ref/objc/Method/-trigger" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(im)trigger">-trigger</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Call this to trigger the event.</p>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">trigger</span><span class="p">;</span></code></pre>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">trigger</span><span class="p">()</span></code></pre>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the ending time point of the event.</p>
+			</div>
+			
+		    
 
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(im)preload"></a>
-                    <a name="//apple_ref/objc/Method/-preload" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(im)preload">-preload</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Call this to preload the event.</p>
+			<div class="method-subsection method-declaration"><code>- (void)setEndPoint:(NSString *_Nonnull)<em>endPoint</em></code></div>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">preload</span><span class="p">;</span></code></pre>
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>endPoint</code></th>
+						<td><p>A string format describing the time point when the player needs to unload the event. Possible values are seconds (e.g.: @&ldquo;60&rdquo;) or a percentage relative to the total duration of the parent clip (e.g.: @&ldquo;50%&rdquo;).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">preload</span><span class="p">()</span></code></pre>
+			
 
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Asynchroneous%20Event%20Preloading"></a>
-                <a name="//apple_ref/objc/Section/Asynchroneous Event Preloading" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Asynchroneous%20Event%20Preloading"></a>
-                  <h3 class="section-name"><p>Asynchroneous Event Preloading</p>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets the ending time point of the event.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startPoint" title="startPoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startPoint">&ndash;&nbsp;startPoint</a></code>
 </h3>
-                </div>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(py)preloadInterval"></a>
-                    <a name="//apple_ref/objc/Property/preloadInterval" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(py)preloadInterval">preloadInterval</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Defines the number of seconds before the scheduled start point when the event should receive the [APSMediaEventProtocol preload] message (if the method is implemented).</p>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSTimeInterval</span> <span class="n">preloadInterval</span><span class="p">;</span></code></pre>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">preloadInterval</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The time interval (in seconds) when the player needs to <a href="#//api/name/trigger">trigger</a> the event.</p>
+			</div>
+			
+		    
 
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(py)timeout"></a>
-                    <a name="//apple_ref/objc/Property/timeout" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(py)timeout">timeout</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Defines the maximum number of seconds the event is allowed to live once it has been pretriggered, without setting the loaded property to <code>YES</code>.</p>
+			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)startPoint</code></div>
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSTimeInterval</span> <span class="n">timeout</span><span class="p">;</span></code></pre>
+		    
+			
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The initial time interval.</p>
+			</div>
+			
 
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(py)state"></a>
-                    <a name="//apple_ref/objc/Property/state" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(py)state">state</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The current lifecycle state of the event.</p>
+			
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n"><a href="../Enums/APSMediaEventState.html">APSMediaEventState</a></span> <span class="n">state</span><span class="p">;</span></code></pre>
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The time interval (in seconds) when the player needs to <a href="#//api/name/trigger">trigger</a> the event.</p><div class="warning"><p><strong>Warning:</strong> If percentual values were set via <code>setStartPoint</code>, this value will change immediately after the current clip&rsquo;s duration is available.</p></div>
+			</div>
+			
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/APSMediaEventState.html">APSMediaEventState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+			
 
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(py)preloadPoint"></a>
-                    <a name="//apple_ref/objc/Property/preloadPoint" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(py)preloadPoint">preloadPoint</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Set by the player to the current playback time in seconds, after the current event begins preloading. Defaults to -1 if the event did not start preloading.</p>
+			
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">NSTimeInterval</span> <span class="n">preloadPoint</span><span class="p">;</span></code></pre>
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/endPoint" title="endPoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/endPoint">&ndash;&nbsp;endPoint</a></code>
+</h3>
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">preloadPoint</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)APSMediaEvent(py)dynamicPosition"></a>
-                    <a name="//apple_ref/objc/Property/dynamicPosition" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)APSMediaEvent(py)dynamicPosition">dynamicPosition</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Set this to <code>YES</code> if the event has no specific start time, and the player should handle insertion.</p>
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The playback time (in seconds) when the player needs to unload the event. Defaults to -1 for events that should unload right after triggering.</p>
+			</div>
+			
+		    
 
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="n">BOOL</span> <span class="n">dynamicPosition</span><span class="p">;</span></code></pre>
+			<div class="method-subsection method-declaration"><code>- (NSTimeInterval)endPoint</code></div>
 
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">dynamicPosition</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+		    
+			
 
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The final time interval.</p>
+			</div>
+			
 
-      </article>
-    </div>
-    <section class="footer">
-      <p>&copy; 2021 <a class="link" href="https://veeplay.com" target="_blank" rel="external">Veeplay</a>. All rights reserved. (Last updated: 2021-04-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
-    </section>
-  </body>
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The playback time (in seconds) when the player needs to unload the event. Defaults to -1 for events that should unload right after triggering.</p><div class="warning"><p><strong>Warning:</strong> If percentual values were set via <code>setStartPoint</code>, this value will change immediately after the current clip&rsquo;s duration is available.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/repeatAfter" title="repeatAfter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/repeatAfter">&nbsp;&nbsp;repeatAfter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If this parameter is greater than 0, then the event will be retriggered by the media player after the specific time interval (in seconds).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval repeatAfter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If this parameter is greater than 0, then the event will be retriggered by the media player after the specific time interval (in seconds).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/incrementStartAndEndPointsWithInterval:" title="incrementStartAndEndPointsWithInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/incrementStartAndEndPointsWithInterval:">&ndash;&nbsp;incrementStartAndEndPointsWithInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Shifts air-time for an event by a defined amount of time.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)incrementStartAndEndPointsWithInterval:(NSTimeInterval)<em>duration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>duration</code></th>
+						<td><p>Shift duration in seconds.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Shifts air-time for an event by a defined amount of time.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/adjustRelativeToDuration:" title="adjustRelativeToDuration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/adjustRelativeToDuration:">&ndash;&nbsp;adjustRelativeToDuration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Translates percentual values set via <code>setStartPoint</code> and <code>setEndPoint</code> to actual time intervals in seconds, relative to a specified total duration.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)adjustRelativeToDuration:(NSTimeInterval)<em>duration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>duration</code></th>
+						<td><p>The total duration.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Translates percentual values set via <code>setStartPoint</code> and <code>setEndPoint</code> to actual time intervals in seconds, relative to a specified total duration.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
+						</div>
+						
+
+						<a title="Asynchroneous Pre-Trigger" name="task_Asynchroneous Pre-Trigger"></a>
+						<h2 class="task-title">Asynchroneous Pre-Trigger</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/trigger" title="trigger"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trigger">&ndash;&nbsp;trigger</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this to trigger the event.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)trigger</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this to trigger the event.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/preload" title="preload"></a>
+	<h3 class="method-title"><code><a href="#//api/name/preload">&ndash;&nbsp;preload</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this to preload the event.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)preload</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this to preload the event.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Asynchroneous Event Preloading" name="task_Asynchroneous Event Preloading"></a>
+						<h2 class="task-title">Asynchroneous Event Preloading</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/preloadInterval" title="preloadInterval"></a>
+	<h3 class="method-title"><code><a href="#//api/name/preloadInterval">&nbsp;&nbsp;preloadInterval</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the number of seconds before the scheduled start point when the event should receive the [APSMediaEventProtocol preload] message (if the method is implemented).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval preloadInterval</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the number of seconds before the scheduled start point when the event should receive the [APSMediaEventProtocol preload] message (if the method is implemented).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/timeout" title="timeout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/timeout">&nbsp;&nbsp;timeout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Defines the maximum number of seconds the event is allowed to live once it has been pretriggered, without setting the loaded property to <code>YES</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSTimeInterval timeout</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Defines the maximum number of seconds the event is allowed to live once it has been pretriggered, without setting the loaded property to <code>YES</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/state" title="state"></a>
+	<h3 class="method-title"><code><a href="#//api/name/state">&nbsp;&nbsp;state</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The current lifecycle state of the event.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property APSMediaEventState state</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The current lifecycle state of the event.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/preloadPoint" title="preloadPoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/preloadPoint">&nbsp;&nbsp;preloadPoint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set by the player to the current playback time in seconds, after the current event begins preloading. Defaults to -1 if the event did not start preloading.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSTimeInterval preloadPoint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set by the player to the current playback time in seconds, after the current event begins preloading. Defaults to -1 if the event did not start preloading.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dynamicPosition" title="dynamicPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dynamicPosition">&nbsp;&nbsp;dynamicPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set this to <code>YES</code> if the event has no specific start time, and the player should handle insertion.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property BOOL dynamicPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set this to <code>YES</code> if the event has no specific start time, and the player should handle insertion.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onTrigger" title="onTrigger"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onTrigger">&ndash;&nbsp;onTrigger</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This code will be executed once the event is triggered by the player.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)onTrigger</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This code will be executed once the event is triggered by the player.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setStateWithoutTriggeringKVO:" title="setStateWithoutTriggeringKVO:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setStateWithoutTriggeringKVO:">&ndash;&nbsp;setStateWithoutTriggeringKVO:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method allow setting event&rsquo;s state without triggering KVO observers
+To be used inside - observeValueForKeyPath:ofObject:change:context:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setStateWithoutTriggeringKVO:(APSMediaEventState)<em>state</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method allow setting event&rsquo;s state without triggering KVO observers
+To be used inside - observeValueForKeyPath:ofObject:change:context:</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">APSMediaEvent.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Veeplay. All rights reserved. Updated: 2020-12-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
 </html>
