@@ -191,6 +191,7 @@ extern NSString * _Nonnull const APSMediaPlayerEventSeeked;
 extern NSString * _Nonnull const APSMediaPlayerEventSSAIAdStarted;
 extern NSString * _Nonnull const APSMediaPlayerEventSSAIAdEnded;
 extern NSString * _Nonnull const APSMediaPlayerEventAdBreakTriggered;
+extern NSString * _Nonnull const APSMediaPlayerEventAdBreakLoad;
 extern NSString * _Nonnull const APSMediaPlayerEventAdRequested;
 extern NSString * _Nonnull const APSMediaPlayerEventAdRequestComplete;
 extern NSString * _Nonnull const APSMediaPlayerEventAdRequestError;
