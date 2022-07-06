@@ -16,6 +16,7 @@
 #import "APSMediaBuilder.h"
 #import "APSMediaOverlay.h"
 #import "APSMediaUnit.h"
+#import "APSImaAdBreak.h"
 #import "APSTypes.h"
 #import "APSEvent.h"
 #import "APSVASTRegulationInformation.h"
@@ -600,6 +601,21 @@ typedef NS_ENUM(NSInteger, APSViewability) {
  *  @return `YES` if the player is currently rendering a live stream.
  */
 - (BOOL)isStreamingLive;
+
+/**
+ *  Returns `YES` if an Google IMA ad is currently playing
+ */
+- (BOOL) isPlayingImaAd;
+
+/**
+ *  Returns the current playing Google IMA ad, or `nil` if no such ad is playing
+ */
+- (APSImaAdBreak * _Nullable) getCurrentImaAdBreak;
+
+/**
+ *  Sets the current playing Google IMA ad
+ */
+- (void) setCurrentImaAdBreak:(APSImaAdBreak * _Nullable) imaAdBreak;
 
 /**
  *  Obtains the most recent time-based metadata provided by the streamed movie.

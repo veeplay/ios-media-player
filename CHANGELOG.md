@@ -1,3 +1,7 @@
+### 3.2.9
+* Ability to pause/unpause and check the current status of IMA ad breaks
+* Fix an issue with fullscreen icon status when `internalFullscreenSupport` is disabled
+
 ### 3.2.8
 * Handle 303 VAST Error (no ads)
 * Added event for ad break load
