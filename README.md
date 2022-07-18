@@ -164,7 +164,7 @@ Also, you can configure this programatically by adding kAPSChromecastControl to 
 
 Optionally, Veeplay allows to use Google's IMA SDK instead of the internal VAST ad player. To do this, first add the VeeplayIma integration:
 
-    pod "VeeplayIma", "~> 1.1"
+    pod "VeeplayIma", "~> 1.0"
     
 Then, as soon as possible, enable Veeplay to use Google IMA:
 
