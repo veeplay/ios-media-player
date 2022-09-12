@@ -1,9 +1,12 @@
+### 3.2.11
+* Updated VAST dead end error handling
+
 ### 3.2.10
 * Fix an issue regarding a missing header file on setups without Google IMA
 
 ### 3.2.9
 * Ability to pause/unpause and check the current status of IMA ad breaks
-* Fix an issue with fullscreen icon status when `internalFullscreenSupport` is disabledg
+* Fix an issue with fullscreen icon status when `internalFullscreenSupport` is disabled
 
 ### 3.2.8
 * Handle 303 VAST Error (no ads)
