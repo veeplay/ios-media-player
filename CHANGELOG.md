@@ -1,3 +1,6 @@
+### 3.2.12
+* Alleviate a crash when retrieving ads from buffets
+
 ### 3.2.11
 * Updated VAST dead end error handling
 
