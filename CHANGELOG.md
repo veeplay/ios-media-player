@@ -1,3 +1,6 @@
+### 3.2.13
+* Fix a crash when retrieving ads with mezzanines from buffets
+
 ### 3.2.12
 * Alleviate a crash when retrieving ads from buffets
 
