@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = "Veeplay"
-  s.version          = "3.2.13"
+  s.version          = "3.2.14"
   s.summary          = "Veeplay Media Player - Crossplatform media player with video ads support"
   s.homepage         = "http://veeplay.com"
   s.license          = { :type => "Commercial", :text => "Contact office@veeplay.com" }
   s.author           = { "Veeplay" => "gabi@veeplay.com" }
   s.source           = { :git => "https://github.com/veeplay/ios-media-player.git", :tag => s.version.to_s }
 
-  s.platforms    = { :ios => "10.0", :tvos => "11.0" }
+  s.platforms    = { :ios => "13.0", :tvos => "13.0" }
   s.requires_arc = true
 
   s.documentation_url = 'http://veeplay.github.io/ios-media-player'
@@ -28,7 +28,6 @@ Pod::Spec.new do |s|
 
   s.ios.dependency "KAProgressLabel", "~> 3.0"
   s.ios.dependency "Reachability"
-  s.dependency "TBXML", "~> 1.5"
   s.dependency "XCDYouTubeKit", "~> 2.5"
   s.dependency "YTVimeoExtractor", "~> 1.2"
   s.dependency "KVOController", "~> 1.2.0"

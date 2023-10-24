@@ -1,3 +1,6 @@
+### 3.2.14
+* Removed TBXML dependency
+
 ### 3.2.13
 * Fix a crash when retrieving ads with mezzanines from buffets
 
